@@ -1,0 +1,17 @@
+{
+  "watch": [
+    {"id": "openai-math", "kind": "repo", "repo": "openai/math"},
+    {"id": "alphaevolve", "kind": "repo", "repo": "google-deepmind/alphaevolve_repository_of_problems"},
+    {"id": "formal-conjectures", "kind": "repo", "repo": "google-deepmind/formal-conjectures"},
+    {"id": "math-discussion", "kind": "issues", "query": "repo:openai/math"}
+  ],
+  "hunt": [
+    {"id": "new-math-repos", "kind": "repositories", "query": "\"mathematical discovery\" in:description stars:>=10 archived:false fork:false"},
+    {"id": "new-formal-repos", "kind": "repositories", "query": "\"AI\" \"theorem\" in:description stars:>=10 archived:false fork:false"},
+    {"id": "networkx-swaps", "kind": "issues", "query": "repo:networkx/networkx double_edge_swap"},
+    {"id": "networkx-reference", "kind": "issues", "query": "repo:networkx/networkx random_reference"},
+    {"id": "sage-bsd", "kind": "issues", "query": "repo:sagemath/sage prove_BSD"},
+    {"id": "hap-artin", "kind": "issues", "query": "repo:gap-packages/hap Artin"},
+    {"id": "own-target-prs", "kind": "issues", "query": "is:pr author:kodareef5 repo:networkx/networkx repo:sagemath/sage repo:gap-packages/hap repo:openai/math"}
+  ]
+}

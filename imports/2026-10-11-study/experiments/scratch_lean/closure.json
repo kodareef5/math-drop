@@ -1,0 +1,6187 @@
+[
+ {
+  "cfg": "AbhyankarSathaye",
+  "fam": [
+   "049"
+  ],
+  "solution": "OAI.AlgebraicGeometry.AbhyankarSathaye.Counterexample",
+  "files": 15,
+  "lines": 1445,
+  "ext": [],
+  "theorems": [
+   "OAI.AbhyankarSathaye.exists_noncoordinate_polynomial"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "AffineBernstein",
+  "fam": [
+   "353"
+  ],
+  "solution": "OAI.Analysis.AffineBernstein.Main",
+  "files": 322,
+  "lines": 40454,
+  "ext": [],
+  "theorems": [
+   "OAI.AffineBernstein.affine_bernstein"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "AlgorithmicThinTrees",
+  "fam": [
+   "174"
+  ],
+  "solution": "OAI.Combinatorics.ThinTrees.AlgorithmicMain",
+  "files": 736,
+  "lines": 101101,
+  "ext": [],
+  "theorems": [
+   "OAI.AlgorithmicThinTrees.algorithmic_strong_thin_trees"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "AmplitudeDamping",
+  "fam": [
+   "276"
+  ],
+  "solution": "OAI.InformationTheory.AmplitudeDamping.Main",
+  "files": 35,
+  "lines": 6206,
+  "ext": [],
+  "theorems": [
+   "OAI.GAD.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "ArnoldCounterexample",
+  "fam": [
+   "347"
+  ],
+  "solution": "OAI.Geometry.Arnold.Main",
+  "files": 36,
+  "lines": 5841,
+  "ext": [],
+  "theorems": [
+   "OAI.ArnoldCounterexample.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "ArtinCAT0",
+  "fam": [
+   "254"
+  ],
+  "solution": "OAI.GroupTheory.ArtinCAT0.Main",
+  "files": 20,
+  "lines": 9419,
+  "ext": [],
+  "theorems": [
+   "OAI.ArtinCAT0.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "ArtinParabolicIntersections",
+  "fam": [
+   "254"
+  ],
+  "solution": "OAI.Topology.ArtinGroups.ParabolicIntersections.Main",
+  "files": 782,
+  "lines": 73097,
+  "ext": [],
+  "theorems": [
+   "OAI.HarmonicArtin.ParabolicIntersections.unconditional_parabolic_intersections",
+   "OAI.HarmonicArtin.ParabolicIntersections.unconditional_arbitrary_intersections",
+   "OAI.HarmonicArtin.ParabolicIntersections.unconditional_parabolic_closure",
+   "OAI.HarmonicArtin.ParabolicIntersections.unconditional_nonclique_dynamics"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "AsymptoticallyMinimalLittlewood",
+  "fam": [
+   "076"
+  ],
+  "solution": "OAI.Analysis.Littlewood.Main",
+  "files": 24,
+  "lines": 9315,
+  "ext": [],
+  "theorems": [
+   "OAI.AsymptoticallyMinimalLittlewood.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "AtomicGaussian",
+  "fam": [
+   "090"
+  ],
+  "solution": "OAI.Analysis.Triangular.Main",
+  "files": 215,
+  "lines": 64626,
+  "ext": [],
+  "theorems": [
+   "OAI.AtomicTriangular.sharp_gaussian_minorants_atomic"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "AuslanderReiten",
+  "fam": [
+   "199"
+  ],
+  "solution": "OAI.Algebra.AuslanderReiten.All",
+  "files": 732,
+  "lines": 55531,
+  "ext": [],
+  "theorems": [
+   "OAI.ArExplicit.Statement.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "BackwardIntertwiners",
+  "fam": [
+   "293"
+  ],
+  "solution": "OAI.Analysis.BackwardIntertwiners.AlgebraCorollary",
+  "files": 23,
+  "lines": 5802,
+  "ext": [],
+  "theorems": [
+   "OAI.BackwardIntertwiners.direct_algebra_corollary"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "BalancedBoxRouting",
+  "fam": [
+   "376"
+  ],
+  "solution": "OAI.Analysis.BoxTransport.Routing",
+  "files": 7,
+  "lines": 3480,
+  "ext": [],
+  "theorems": [
+   "OAI.BoxTransport.Routing.balanced_box_routing"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "BalancedRyser",
+  "fam": [
+   "162"
+  ],
+  "solution": "OAI.Combinatorics.BalancedRyser.Main",
+  "files": 698,
+  "lines": 89028,
+  "ext": [],
+  "theorems": [
+   "OAI.Balanced.main_result"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "BalancedThreeStack",
+  "fam": [
+   "376"
+  ],
+  "solution": "OAI.MathematicalPhysics.NavierStokes.BalancedTransport.MainResult",
+  "files": 60,
+  "lines": 11109,
+  "ext": [],
+  "theorems": [
+   "OAI.BalancedTransport.balanced_three_stack_realization"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "BallPacking",
+  "fam": [
+   "343"
+  ],
+  "solution": "OAI.Geometry.BallPacking.Main",
+  "files": 169,
+  "lines": 89175,
+  "ext": [],
+  "theorems": [
+   "OAI.HigherDimensionalBallPacking.main_theorem"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "BallPackingNecessity",
+  "fam": [
+   "343"
+  ],
+  "solution": "OAI.Geometry.BallPacking.Necessity.Main",
+  "files": 65,
+  "lines": 33020,
+  "ext": [],
+  "theorems": [
+   "OAI.HigherDimensionalBallPacking.packing_necessity"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "BarnetteHamiltonian",
+  "fam": [
+   "180"
+  ],
+  "solution": "OAI.Combinatorics.Hamiltonian.Main",
+  "files": 31,
+  "lines": 8936,
+  "ext": [],
+  "theorems": [
+   "OAI.Barnette.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "BassTorsionFree",
+  "fam": [
+   "207"
+  ],
+  "solution": "OAI.RingTheory.BassTrace.TorsionFree",
+  "files": 73,
+  "lines": 24157,
+  "ext": [],
+  "theorems": [
+   "OAI.TorsionFreeBass.torsion_free_corollary"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "BassTrace",
+  "fam": [
+   "207"
+  ],
+  "solution": "OAI.RingTheory.BassTrace.Main",
+  "files": 69,
+  "lines": 23596,
+  "ext": [],
+  "theorems": [
+   "OAI.BassTrace.RightProjective.bassTraceModules_vanishing_and_support"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "BenjaminiSchramm",
+  "fam": [
+   "214"
+  ],
+  "solution": "OAI.Probability.BenjaminiSchramm.Main",
+  "files": 970,
+  "lines": 151059,
+  "ext": [],
+  "theorems": [
+   "OAI.Percolation.BenjaminiSchramm.full_main",
+   "OAI.Percolation.BenjaminiSchramm.cayley_main",
+   "OAI.Percolation.BenjaminiSchramm.critical_laws"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "BernoulliNonflatInSeven",
+  "fam": [
+   "367"
+  ],
+  "solution": "OAI.Analysis.BernoulliCone.Main",
+  "files": 91,
+  "lines": 13545,
+  "ext": [],
+  "theorems": [
+   "OAI.Bernoulli.nonflat_in_seven"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "BiholderTransport",
+  "fam": [
+   "360"
+  ],
+  "solution": "OAI.Analysis.BiholderTransport.Main",
+  "files": 645,
+  "lines": 74032,
+  "ext": [],
+  "theorems": [
+   "OAI.WeakMTWTransport.uniform_biHolder_transport"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "BinPackingGap",
+  "fam": [
+   "118"
+  ],
+  "solution": "OAI.Computability.BinPacking.Main",
+  "files": 284,
+  "lines": 158527,
+  "ext": [
+   "Lean",
+   "Std"
+  ],
+  "theorems": [
+   "OAI.BinPackingGap.main_results"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "BinaryEditLower",
+  "fam": [
+   "099"
+  ],
+  "solution": "OAI.Combinatorics.BinaryEdit.BinaryLowerBound",
+  "files": 84,
+  "lines": 10800,
+  "ext": [
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.TreeEdit.binary_lower_bound"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "BinaryMatching",
+  "fam": [
+   "113"
+  ],
+  "solution": "OAI.Computability.MatchingCount.BinarySolve",
+  "files": 112,
+  "lines": 14589,
+  "ext": [],
+  "theorems": [
+   "OAI.BinaryMatching.deterministic_approximate_counting"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "BinarySweep",
+  "fam": [
+   "238"
+  ],
+  "solution": "OAI.Probability.BinarySweep.Main",
+  "files": 192,
+  "lines": 26532,
+  "ext": [],
+  "theorems": [
+   "OAI.binary_sweep_contraction_and_mixing"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "BipartiteCrossing",
+  "fam": [
+   "165"
+  ],
+  "solution": "OAI.Combinatorics.Crossing.Main",
+  "files": 339,
+  "lines": 20617,
+  "ext": [
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.Zarankiewicz.mainTarget_proof"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "BogomolovPopInjectivity",
+  "fam": [
+   "009"
+  ],
+  "solution": "OAI.Algebra.BogomolovPop.Injectivity",
+  "files": 5,
+  "lines": 3339,
+  "ext": [],
+  "theorems": [
+   "OAI.BogomolovPop.main_graph_injective"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "BoltzmannNonuniqueness",
+  "fam": [
+   "363"
+  ],
+  "solution": "OAI.MathematicalPhysics.Boltzmann.Main",
+  "files": 525,
+  "lines": 159510,
+  "ext": [],
+  "theorems": [
+   "OAI.BoltzmannNonuniqueness.nonuniqueness"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "BooneHigman",
+  "fam": [
+   "250"
+  ],
+  "solution": "OAI.GroupTheory.BooneHigman.Main",
+  "files": 47,
+  "lines": 37197,
+  "ext": [],
+  "theorems": [
+   "OAI.FiniteAlgebraicEnvelopes.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "BorsukNine",
+  "fam": [
+   "156"
+  ],
+  "solution": "OAI.Geometry.Borsuk.Main",
+  "files": 269,
+  "lines": 78964,
+  "ext": [],
+  "theorems": [
+   "OAI.BorsukNine.main_theorem"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "BoundedRecovery",
+  "fam": [
+   "290"
+  ],
+  "solution": "OAI.Analysis.ModularRecovery.Main",
+  "files": 27,
+  "lines": 8104,
+  "ext": [],
+  "theorems": [
+   "OAI.BoundedRecovery.bounded_recovery"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "BoundedTreePotentials",
+  "fam": [
+   "331"
+  ],
+  "solution": "OAI.Analysis.TreePotential.Main",
+  "files": 46,
+  "lines": 13085,
+  "ext": [],
+  "theorems": [
+   "OAI.BoundedTreePotentials.TreeCalculus.main_counterexample"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "BoundedTreewidthL1",
+  "fam": [
+   "089"
+  ],
+  "solution": "OAI.Combinatorics.TreewidthL1.Main",
+  "files": 33,
+  "lines": 14913,
+  "ext": [],
+  "theorems": [
+   "OAI.BoundedTreewidthL1.main_theorem"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "Brenier",
+  "fam": [
+   "374"
+  ],
+  "solution": "OAI.Analysis.Brenier.Stability",
+  "files": 89,
+  "lines": 33020,
+  "ext": [],
+  "theorems": [
+   "OAI.Problem358.one_third_stability",
+   "OAI.Problem358.one_third_exponent_is_sharp"
+  ],
+  "defs": [
+   "OAI.Problem358.E",
+   "OAI.Problem358.uniformMeasure",
+   "OAI.Problem358.IsSupported",
+   "OAI.Problem358.IsCoupling",
+   "OAI.Problem358.quadraticPlanCost",
+   "OAI.Problem358.wasserstein2",
+   "OAI.Problem358.graphPlan",
+   "OAI.Problem358.IsQuadraticOptimalMap",
+   "OAI.Problem358.IsUniqueQuadraticOptimalMap",
+   "OAI.Problem358.mapL2Dist",
+   "OAI.Problem358.cube",
+   "OAI.Problem358.HasExactlyThreeAtoms"
+  ]
+ },
+ {
+  "cfg": "Brennan",
+  "fam": [
+   "072"
+  ],
+  "solution": "OAI.Analysis.IntegralMeans.Main",
+  "files": 38,
+  "lines": 13706,
+  "ext": [],
+  "theorems": [
+   "OAI.Brennan.main_theorem"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "BrennanSharp",
+  "fam": [
+   "072"
+  ],
+  "solution": "OAI.Analysis.IntegralMeans.SharpEndpoints",
+  "files": 47,
+  "lines": 14188,
+  "ext": [],
+  "theorems": [
+   "OAI.Brennan.Sharp.sharp_endpoints"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "BufferedIsing",
+  "fam": [
+   "218"
+  ],
+  "solution": "OAI.Probability.Ising.Main",
+  "files": 15,
+  "lines": 3114,
+  "ext": [],
+  "theorems": [
+   "OAI.BufferedIsing.finite_graph_comparison"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "C0Absorption",
+  "fam": [
+   "324"
+  ],
+  "solution": "OAI.Analysis.C0Absorption.Main",
+  "files": 34,
+  "lines": 7918,
+  "ext": [],
+  "theorems": [
+   "OAI.C0Absorption.main_result"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "C1EntropyCounterexample",
+  "fam": [
+   "151"
+  ],
+  "solution": "OAI.Dynamics.EntropyCounterexample.Counterexample",
+  "files": 201,
+  "lines": 22878,
+  "ext": [],
+  "theorems": [
+   "OAI.Problem340.exists_C1_entropy_counterexample"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "CHObstruction",
+  "fam": [
+   "240"
+  ],
+  "solution": "OAI.ModelTheory.Categoricity.Main",
+  "files": 15,
+  "lines": 5089,
+  "ext": [],
+  "theorems": [
+   "OAI.CHObstruction.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "CKSBondiPenrose",
+  "fam": [
+   "260"
+  ],
+  "solution": "OAI.Geometry.Relativity.CKS.ComparatorMain",
+  "files": 336,
+  "lines": 58903,
+  "ext": [],
+  "theorems": [
+   "OAI.CKSSourceExterior.area_controlled_end_replacement",
+   "OAI.CKSMain.schwarzschild_equality_examples"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "CannonGeometricAction",
+  "fam": [
+   "246"
+  ],
+  "solution": "OAI.Geometry.Cannon.Main",
+  "files": 299,
+  "lines": 69536,
+  "ext": [],
+  "theorems": [
+   "OAI.CannonRelease.cannon"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "CartierChartCompactnessSupport",
+  "fam": [
+   "066"
+  ],
+  "solution": "OAI.AlgebraicGeometry.CartierSections.ChartCompactness",
+  "files": 13,
+  "lines": 1620,
+  "ext": [],
+  "theorems": [
+   "OAI.CartierSections.isCompact_closedChartFieldRetraction_cone"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "Catalan",
+  "fam": [
+   "005"
+  ],
+  "solution": "OAI.NumberTheory.Catalan.Main",
+  "files": 988,
+  "lines": 574902,
+  "ext": [
+   "Lean",
+   "PrimeNumberTheoremAnd"
+  ],
+  "theorems": [
+   "OAI.InternalCatalan.catalan_irrational"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "CayleyPercolation",
+  "fam": [
+   "214"
+  ],
+  "solution": "OAI.Probability.UnimodularPercolation.CayleyMain",
+  "files": 78,
+  "lines": 55795,
+  "ext": [],
+  "theorems": [
+   "OAI.Percolation.arbitrary_cayley"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "CharacterCriterion",
+  "fam": [
+   "299"
+  ],
+  "solution": "OAI.Analysis.CharacterCriterion.Main",
+  "files": 62,
+  "lines": 25294,
+  "ext": [],
+  "theorems": [
+   "OAI.KirchbergRordam.character_criterion"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "CharacterVarietiesAllSeamsSupport",
+  "fam": [
+   "027"
+  ],
+  "solution": "OAI.AlgebraicGeometry.CharacterVarieties.Seams.ProducedSolution",
+  "files": 79,
+  "lines": 27381,
+  "ext": [],
+  "theorems": [
+   "OAI.IntegralCharacterVarieties.SurfacePresentation.Diagram.producedMarkedValues_allSeams"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "ChoicelessPolynomialTime",
+  "fam": [
+   "243"
+  ],
+  "solution": "OAI.ModelTheory.Choiceless.Separation",
+  "files": 26,
+  "lines": 18461,
+  "ext": [],
+  "theorems": [
+   "OAI.CPTSeparation.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "CirculantHadamard",
+  "fam": [
+   "179"
+  ],
+  "solution": "OAI.LinearAlgebra.CirculantHadamard.Main",
+  "files": 68,
+  "lines": 9496,
+  "ext": [
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.CirculantHadamard.exists_iff_order_one_or_four"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "ClassicalON",
+  "fam": [
+   "215"
+  ],
+  "solution": "OAI.Probability.ClassicalON.Main",
+  "files": 117,
+  "lines": 12907,
+  "ext": [],
+  "theorems": [
+   "OAI.ClassicalON.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "CliqueFreeLog",
+  "fam": [
+   "184"
+  ],
+  "solution": "OAI.Combinatorics.CliqueFree.Main",
+  "files": 31,
+  "lines": 5539,
+  "ext": [],
+  "theorems": [
+   "OAI.CliqueFreeLog.logarithmic_independence_bound"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "CoarseAssembly",
+  "fam": [
+   "307"
+  ],
+  "solution": "OAI.Topology.CoarseAssembly",
+  "files": 347,
+  "lines": 44622,
+  "ext": [],
+  "theorems": [
+   "OAI.CoarseAssembly.bounded_geometry_graph_counterexample_unconditional"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "CoboundaryExpanders",
+  "fam": [
+   "177"
+  ],
+  "solution": "OAI.Combinatorics.Coboundary.Main",
+  "files": 36,
+  "lines": 33125,
+  "ext": [],
+  "theorems": [
+   "OAI.CoboundaryExpanders.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "CommonBasesFPRAS",
+  "fam": [
+   "114"
+  ],
+  "solution": "OAI.Combinatorics.MatroidCounting.CommonBases",
+  "files": 1,
+  "lines": 26126,
+  "ext": [],
+  "theorems": [
+   "OAI.common_bases_fpras"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "CommutingDerivations",
+  "fam": [
+   "049"
+  ],
+  "solution": "OAI.AlgebraicGeometry.CommutingDerivations.OrdinaryExtraMain",
+  "files": 32,
+  "lines": 3240,
+  "ext": [],
+  "theorems": [
+   "OAI.AbhyankarSathaye.CommutingDerivations.commuting_derivations_with_ordinary_extras"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "CompactBanach",
+  "fam": [
+   "098"
+  ],
+  "solution": "OAI.Geometry.DoublingHilbert.CompactBanach",
+  "files": 28,
+  "lines": 4664,
+  "ext": [],
+  "theorems": [
+   "OAI.CompactBanach.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "CompleteCrossing",
+  "fam": [
+   "165"
+  ],
+  "solution": "OAI.Combinatorics.CompleteCrossing.Main",
+  "files": 300,
+  "lines": 33427,
+  "ext": [
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.Paper170.complete_graph_crossing_number"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "CompleteCrouzeix",
+  "fam": [
+   "325"
+  ],
+  "solution": "OAI.Analysis.NumericalRange.Main",
+  "files": 48,
+  "lines": 14195,
+  "ext": [],
+  "theorems": [
+   "OAI.CompleteCrouzeix.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "ComplexCancellation",
+  "fam": [
+   "047"
+  ],
+  "solution": "OAI.Algebra.AffineCancellation.Main",
+  "files": 55,
+  "lines": 5573,
+  "ext": [],
+  "theorems": [
+   "OAI.ComplexCancellation.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "Conductivity",
+  "fam": [
+   "365"
+  ],
+  "solution": "OAI.Analysis.Conductivity.Main",
+  "files": 595,
+  "lines": 75520,
+  "ext": [],
+  "theorems": [
+   "OAI.ScalarConductivity.main_nonuniqueness"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "ConjugatePoints",
+  "fam": [
+   "358"
+  ],
+  "solution": "OAI.Geometry.ConjugatePoints.ThreeManifold",
+  "files": 19,
+  "lines": 24974,
+  "ext": [],
+  "theorems": [
+   "OAI.ThreeManifold.main_theorem"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "ContingencyTables",
+  "fam": [
+   "115"
+  ],
+  "solution": "OAI.Combinatorics.ContingencyTables.UnconditionalMain",
+  "files": 1297,
+  "lines": 191813,
+  "ext": [
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.ContingencyTables.boundedSampling",
+   "OAI.ContingencyTables.exactSampling",
+   "OAI.ContingencyTables.counting"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "ContinuousCircleWeight",
+  "fam": [
+   "293"
+  ],
+  "solution": "OAI.Analysis.RotationWeights.Main",
+  "files": 51,
+  "lines": 18350,
+  "ext": [],
+  "theorems": [
+   "OAI.ContinuousCircleWeight.main_theorem"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "ContinuumCoulombHardness",
+  "fam": [
+   "275"
+  ],
+  "solution": "OAI.MathematicalPhysics.ContinuumCoulomb.Reduction.Hardness",
+  "files": 2086,
+  "lines": 222484,
+  "ext": [
+   "RellichKondrachov"
+  ],
+  "theorems": [
+   "OAI.ContinuumCoulomb.unit_coulomb_qmaHard",
+   "OAI.ContinuumCoulomb.binary_coulomb_qmaHard"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "ContinuumTransition",
+  "fam": [
+   "228"
+  ],
+  "solution": "OAI.Probability.ContinuumTransition.Main",
+  "files": 161,
+  "lines": 14988,
+  "ext": [],
+  "theorems": [
+   "OAI.ContinuumTemperature.main_theorem"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "CoordinateSweeps",
+  "fam": [
+   "238"
+  ],
+  "solution": "OAI.Probability.CoordinateSweeps.Main",
+  "files": 34,
+  "lines": 22897,
+  "ext": [],
+  "theorems": [
+   "OAI.CoordinateSweeps.conditional_main",
+   "OAI.CoordinateSweeps.all_grid_moment"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "CoordinateTrace",
+  "fam": [
+   "238"
+  ],
+  "solution": "OAI.Probability.ThorpRouting.RegularTrace",
+  "files": 28,
+  "lines": 20946,
+  "ext": [],
+  "theorems": [
+   "OAI.ThorpNine.Harmonic.Thorp.LowPlanes.regular_trace_smoothing"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "Cotype",
+  "fam": [
+   "326"
+  ],
+  "solution": "OAI.Analysis.Cotype.Main",
+  "files": 125,
+  "lines": 11759,
+  "ext": [],
+  "theorems": [
+   "OAI.Cotype.mainTarget_proved"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "CoulombCounterexample",
+  "fam": [
+   "373"
+  ],
+  "solution": "OAI.Analysis.CoulombTransport.Main",
+  "files": 97,
+  "lines": 10668,
+  "ext": [],
+  "theorems": [
+   "OAI.Problem356.coulomb_counterexample_and_equal_infima"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "CoulombIonization",
+  "fam": [
+   "263"
+  ],
+  "solution": "OAI.Analysis.CoulombIonization.Main",
+  "files": 607,
+  "lines": 95362,
+  "ext": [],
+  "theorems": [
+   "OAI.CoulombAtom.generalized_ionization"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "CoulombRadii",
+  "fam": [
+   "263"
+  ],
+  "solution": "OAI.Analysis.CoulombRadii.Main",
+  "files": 428,
+  "lines": 77246,
+  "ext": [],
+  "theorems": [
+   "OAI.NeutralAtom.generalized_outer_radii"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "CourtadeKumar",
+  "fam": [
+   "119"
+  ],
+  "solution": "OAI.InformationTheory.BooleanNoise.Main",
+  "files": 43,
+  "lines": 7790,
+  "ext": [],
+  "theorems": [
+   "OAI.LeanBlast.CourtadeKumar.courtadeKumarAndAttainment"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "CoveringDensity",
+  "fam": [
+   "092"
+  ],
+  "solution": "OAI.Geometry.CoveringDensity.Main",
+  "files": 143,
+  "lines": 40097,
+  "ext": [],
+  "theorems": [
+   "OAI.CoveringOrder.optimal_order"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "CriticalPercolation",
+  "fam": [
+   "213"
+  ],
+  "solution": "OAI.Probability.CriticalPercolation.Main",
+  "files": 627,
+  "lines": 68224,
+  "ext": [],
+  "theorems": [
+   "OAI.CriticalPercolation.BondGraph.no_percolation_at_criticality"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "CriticalSK",
+  "fam": [
+   "227"
+  ],
+  "solution": "OAI.MathematicalPhysics.CriticalSK.Main",
+  "files": 35,
+  "lines": 19040,
+  "ext": [],
+  "theorems": [
+   "OAI.CriticalSK.realized_equilibrium_initial_states",
+   "OAI.CriticalSK.covariance_and_linear_tests",
+   "OAI.CriticalSK.critical_mixing_lower_bounds"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "CriticalSKMixing",
+  "fam": [
+   "227"
+  ],
+  "solution": "OAI.MathematicalPhysics.CriticalMixing.Main",
+  "files": 593,
+  "lines": 119320,
+  "ext": [],
+  "theorems": [
+   "OAI.CriticalSK.critical_mixing_bounds"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "CriticalStripMass",
+  "fam": [
+   "237"
+  ],
+  "solution": "OAI.Combinatorics.StripMass.Main",
+  "files": 130,
+  "lines": 62844,
+  "ext": [],
+  "theorems": [
+   "OAI.CriticalStrip.critical_strip_mass"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "CriticalZ3",
+  "fam": [
+   "213"
+  ],
+  "solution": "OAI.Probability.CriticalZ3.Main",
+  "files": 34,
+  "lines": 10358,
+  "ext": [],
+  "theorems": [
+   "OAI.CriticalZ3.critical_no_infinite"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "CrouzeixHilbert",
+  "fam": [
+   "325"
+  ],
+  "solution": "OAI.Analysis.Crouzeix.Main",
+  "files": 90,
+  "lines": 15655,
+  "ext": [],
+  "theorems": [
+   "OAI.CrouzeixHilbert.hilbert"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "CubicTorus",
+  "fam": [
+   "354"
+  ],
+  "solution": "OAI.Geometry.CubicTorus.Main",
+  "files": 162,
+  "lines": 140491,
+  "ext": [],
+  "theorems": [
+   "OAI.CubicTorus.unit_cubic_isoperimetric"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "CycleCliqueRamsey",
+  "fam": [
+   "189"
+  ],
+  "solution": "OAI.Combinatorics.Ramsey.CycleClique.Main",
+  "files": 443,
+  "lines": 2795707,
+  "ext": [],
+  "theorems": [
+   "OAI.CycleClique.thm_main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "CycleDecomposition",
+  "fam": [
+   "181"
+  ],
+  "solution": "OAI.Combinatorics.CycleDecomposition.Main",
+  "files": 34,
+  "lines": 21451,
+  "ext": [],
+  "theorems": [
+   "OAI.ErdosGallai.erdos_gallai"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "CylinderCovering",
+  "fam": [
+   "100"
+  ],
+  "solution": "OAI.Geometry.CylinderCovering.Main",
+  "files": 641,
+  "lines": 70623,
+  "ext": [],
+  "theorems": [
+   "OAI.CylinderCovering.fourPaperMain"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "DaugavetModuli",
+  "fam": [
+   "331"
+  ],
+  "solution": "OAI.Analysis.Daugavet.Main",
+  "files": 28,
+  "lines": 4307,
+  "ext": [],
+  "theorems": [
+   "OAI.ExactModuli.exact_main",
+   "OAI.ExactModuli.kadets_werner_existence",
+   "OAI.ExactModuli.exact_example"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "DefocusingNLS",
+  "fam": [
+   "371"
+  ],
+  "solution": "OAI.MathematicalPhysics.DefocusingNLS.MainTheorems",
+  "files": 2415,
+  "lines": 180149,
+  "ext": [
+   "FixedPointTheorems"
+  ],
+  "theorems": [
+   "OAI.DefocusingNLS.stable_blowup",
+   "OAI.DefocusingNLS.gaussian_blowup",
+   "OAI.DefocusingNLS.gaussian_not_almost_sure_global"
+  ],
+  "defs": [
+   "OAI.DefocusingNLS.sobolevProduct",
+   "OAI.DefocusingNLS.schrodingerFlow",
+   "OAI.DefocusingNLS.sobolevOddPower"
+  ]
+ },
+ {
+  "cfg": "DegreeRigidity",
+  "fam": [
+   "241"
+  ],
+  "solution": "OAI.Computability.DegreeRigidity.Main",
+  "files": 974,
+  "lines": 84081,
+  "ext": [
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.TuringRigidity.ManuscriptMain.rigidity"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "DeligneDrinfeld",
+  "fam": [
+   "008"
+  ],
+  "solution": "OAI.Algebra.Drinfeld.Completion",
+  "files": 21,
+  "lines": 29733,
+  "ext": [],
+  "theorems": [
+   "OAI.DeligneDrinfeld.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "DepthFive",
+  "fam": [
+   "135"
+  ],
+  "solution": "OAI.Algebra.DepthFive.Bounds",
+  "files": 164,
+  "lines": 20323,
+  "ext": [],
+  "theorems": [
+   "OAI.Problem335.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "DepthThree",
+  "fam": [
+   "112"
+  ],
+  "solution": "OAI.Computability.DepthThree.Main",
+  "files": 175,
+  "lines": 24309,
+  "ext": [
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.DepthThreeLowerBound.exists_polynomial_time_language_depth_three_lower_bound"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "DiamondDistortion",
+  "fam": [
+   "331"
+  ],
+  "solution": "OAI.Analysis.DiamondDistortion.Descent",
+  "files": 32,
+  "lines": 10038,
+  "ext": [],
+  "theorems": [
+   "OAI.DiamondDistortion.headline_all_pairs"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "DilutedSpin",
+  "fam": [
+   "221"
+  ],
+  "solution": "OAI.Probability.DilutedSpin.Main",
+  "files": 405,
+  "lines": 56285,
+  "ext": [],
+  "theorems": [
+   "OAI.DilutedSpinGlass.mezard_parisi"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "DimensionTenChannel",
+  "fam": [
+   "272"
+  ],
+  "solution": "OAI.Analysis.Quantum.DimensionTen.Channel",
+  "files": 148,
+  "lines": 44673,
+  "ext": [],
+  "theorems": [
+   "OAI.DimensionTen.exists_channel_fin21"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "DimensionTenPair",
+  "fam": [
+   "272"
+  ],
+  "solution": "OAI.Analysis.Quantum.DimensionTen.Main",
+  "files": 129,
+  "lines": 30164,
+  "ext": [],
+  "theorems": [
+   "OAI.DimensionTen.main_pair"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "DirectCrouzeix",
+  "fam": [
+   "325"
+  ],
+  "solution": "OAI.Analysis.DirectCrouzeix.Main",
+  "files": 42,
+  "lines": 7389,
+  "ext": [],
+  "theorems": [
+   "OAI.DirectCrouzeix.complete_crouzeix",
+   "OAI.DirectCrouzeix.uniform_sharpness"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "DirectedFeedback",
+  "fam": [
+   "102"
+  ],
+  "solution": "OAI.Computability.DirectedFeedback.Main",
+  "files": 224,
+  "lines": 188149,
+  "ext": [],
+  "theorems": [
+   "OAI.DirectedFeedback.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "DirectionalBallisticity",
+  "fam": [
+   "220"
+  ],
+  "solution": "OAI.Probability.Ballisticity.Main",
+  "files": 513,
+  "lines": 98412,
+  "ext": [],
+  "theorems": [
+   "OAI.DirectionalTransience.directional_transience_implies_ballisticity"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "DirectionalWalk",
+  "fam": [
+   "220"
+  ],
+  "solution": "OAI.Probability.DirectionalWalk.Main",
+  "files": 69,
+  "lines": 18194,
+  "ext": [],
+  "theorems": [
+   "OAI.DirectionalZeroOne.directional_zero_one"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "DirichletSevenEighths",
+  "fam": [
+   "003"
+  ],
+  "solution": "OAI.NumberTheory.DirichletL.Nonvanishing",
+  "files": 2924,
+  "lines": 486490,
+  "ext": [
+   "Lean",
+   "PrimeNumberTheoremAnd",
+   "RellichKondrachov"
+  ],
+  "theorems": [
+   "OAI.DirichletCharacter.LFunction_ne_zero_of_seven_eighths_lt_re"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "DiscreteLipschitzFree",
+  "fam": [
+   "330"
+  ],
+  "solution": "OAI.Analysis.LipschitzFree.Main",
+  "files": 32,
+  "lines": 4341,
+  "ext": [],
+  "theorems": [
+   "OAI.DiscreteFree.source_endpoints"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "DiskMaximal",
+  "fam": [
+   "085"
+  ],
+  "solution": "OAI.Analysis.DiskMaximal.Main",
+  "files": 30,
+  "lines": 19397,
+  "ext": [],
+  "theorems": [
+   "OAI.CenteredDiskEndpoint.main_endpoint"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "Dixmier",
+  "fam": [
+   "251"
+  ],
+  "solution": "OAI.Analysis.Unitarizability.UniverseTransport",
+  "files": 32,
+  "lines": 3559,
+  "ext": [],
+  "theorems": [
+   "OAI.Dixmier.main_theorem_all_universes"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "DixmierAllDiscrete",
+  "fam": [
+   "251"
+  ],
+  "solution": "OAI.Analysis.Unitarizability.AllDiscrete",
+  "files": 39,
+  "lines": 4092,
+  "ext": [],
+  "theorems": [
+   "OAI.Dixmier.current_main_theorem"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "DoublingHilbert",
+  "fam": [
+   "098"
+  ],
+  "solution": "OAI.Geometry.DoublingHilbert.Main",
+  "files": 12,
+  "lines": 3459,
+  "ext": [],
+  "theorems": [
+   "OAI.DoublingHilbert.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "DukePrimeDegree",
+  "fam": [
+   "015"
+  ],
+  "solution": "OAI.NumberTheory.DukePrimeDegree.MainUnconditional",
+  "files": 877,
+  "lines": 130452,
+  "ext": [
+   "ClassFieldTheory"
+  ],
+  "theorems": [
+   "OAI.DukePrimeDegree.prime_degree_packet_measure_equidistribution_unconditional",
+   "OAI.DukePrimeDegree.prime_degree_packet_measures_tendsto_haar_unconditional"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "DuttaDomain",
+  "fam": [
+   "194"
+  ],
+  "solution": "OAI.RingTheory.Multiplicity.Main",
+  "files": 278,
+  "lines": 53953,
+  "ext": [],
+  "theorems": [
+   "OAI.Lech.dutta_domain"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "DyadicAvoidance",
+  "fam": [
+   "084"
+  ],
+  "solution": "OAI.MeasureTheory.DyadicAvoidance.Main",
+  "files": 75,
+  "lines": 8455,
+  "ext": [],
+  "theorems": [
+   "OAI.Problem310.dyadic_affine_avoidance"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "EditApproximation",
+  "fam": [
+   "121"
+  ],
+  "solution": "OAI.Combinatorics.EditApproximation.Specification.RawBandMain",
+  "files": 1024,
+  "lines": 137267,
+  "ext": [],
+  "theorems": [
+   "OAI.EditApproximation.almostLinearEditDistanceRawBand"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "EditDistance",
+  "fam": [
+   "099"
+  ],
+  "solution": "OAI.Combinatorics.EditDistance.Main",
+  "files": 46,
+  "lines": 25424,
+  "ext": [],
+  "theorems": [
+   "OAI.edit_distance_main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "EgyptianFractions",
+  "fam": [
+   "025"
+  ],
+  "solution": "OAI.NumberTheory.EgyptianFractions.Main",
+  "files": 290,
+  "lines": 36061,
+  "ext": [],
+  "theorems": [
+   "OAI.Problem337.egyptian_length_is_minimum",
+   "OAI.Problem337.main_double_log_order",
+   "OAI.Problem337.one_expansions_finite_and_bounded",
+   "OAI.Problem337.counting_double_log_order",
+   "OAI.Problem337.exact_marker_padding",
+   "OAI.Problem337.every_exact_marker_occurs",
+   "OAI.Problem337.quantitative_marked_length",
+   "OAI.Problem337.missing_denominator_semantics",
+   "OAI.Problem337.prescribed_denominator_corollary"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "EilenbergGanea",
+  "fam": [
+   "249"
+  ],
+  "solution": "OAI.Topology.EilenbergGanea.Main",
+  "files": 40,
+  "lines": 34123,
+  "ext": [],
+  "theorems": [
+   "OAI.EilenbergGanea.source_main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "EinsteinFour",
+  "fam": [
+   "348"
+  ],
+  "solution": "OAI.Geometry.EinsteinFour.Classification",
+  "files": 402,
+  "lines": 207815,
+  "ext": [
+   "Lean",
+   "RellichKondrachov"
+  ],
+  "theorems": [
+   "OAI.PositiveEinsteinFour.orientedClassification",
+   "OAI.PositiveEinsteinFour.classificationOn",
+   "OAI.PositiveEinsteinFour.classification"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "ElasticityUniqueness",
+  "fam": [
+   "372"
+  ],
+  "solution": "OAI.MathematicalPhysics.Elasticity.Uniqueness",
+  "files": 42,
+  "lines": 31645,
+  "ext": [],
+  "theorems": [
+   "OAI.Elasticity.global_uniqueness"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "ElementaryPositivity",
+  "fam": [
+   "169"
+  ],
+  "solution": "OAI.Combinatorics.Chromatic.Main",
+  "files": 549,
+  "lines": 74575,
+  "ext": [],
+  "theorems": [],
+  "defs": [
+   "OAI.elementaryPositivityWitness"
+  ]
+ },
+ {
+  "cfg": "EntangledGames",
+  "fam": [
+   "277"
+  ],
+  "solution": "OAI.Probability.EntangledGames.Main",
+  "files": 30,
+  "lines": 7234,
+  "ext": [],
+  "theorems": [
+   "OAI.ThresholdParallelRepetition.threshold_parallel_repetition"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "EntropyPhotonNumber",
+  "fam": [
+   "273"
+  ],
+  "solution": "OAI.InformationTheory.PhotonNumber.Inequality",
+  "files": 26,
+  "lines": 27838,
+  "ext": [],
+  "theorems": [
+   "OAI.EntropyPhotonNumber.entropy_photon_number_inequality"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "ErdosReciprocal",
+  "fam": [
+   "159"
+  ],
+  "solution": "OAI.Combinatorics.Progressions.Main",
+  "files": 4774,
+  "lines": 1122983,
+  "ext": [],
+  "theorems": [
+   "OAI.Erdos3.manuscriptReciprocalProgressionTheorem"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "EuclideanFiveColor",
+  "fam": [
+   "158"
+  ],
+  "solution": "OAI.Geometry.PlaneColoring.Five",
+  "files": 70,
+  "lines": 30336,
+  "ext": [],
+  "theorems": [
+   "OAI.EuclideanFiveColor.no_proper_five_coloring"
+  ],
+  "defs": [
+   "OAI.EuclideanFiveColor.ProperColoring"
+  ]
+ },
+ {
+  "cfg": "EuclideanRamsey",
+  "fam": [
+   "172"
+  ],
+  "solution": "OAI.Combinatorics.EuclideanRamsey.Main",
+  "files": 28,
+  "lines": 6558,
+  "ext": [],
+  "theorems": [
+   "OAI.EuclideanRamsey.classification"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "EuclideanRamseyCircle",
+  "fam": [
+   "172"
+  ],
+  "solution": "OAI.Combinatorics.EuclideanRamsey.Circle",
+  "files": 35,
+  "lines": 7309,
+  "ext": [],
+  "theorems": [
+   "OAI.EuclideanRamsey.CircleConsequence.at_most_five_circle_points_ramsey"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "EuclideanRamseyNine",
+  "fam": [
+   "172"
+  ],
+  "solution": "OAI.Combinatorics.EuclideanRamsey.NineStatement",
+  "files": 16,
+  "lines": 1898,
+  "ext": [],
+  "theorems": [
+   "OAI.EuclideanRamsey.NineStatement.nine_circle_configuration"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "EuclideanRamseyQuadratic",
+  "fam": [
+   "172"
+  ],
+  "solution": "OAI.Combinatorics.EuclideanRamsey.Quadratic",
+  "files": 29,
+  "lines": 6828,
+  "ext": [],
+  "theorems": [
+   "OAI.EuclideanRamsey.spherical_quadraticIndependent_ramsey_all"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "EuclideanRamseySpherical",
+  "fam": [
+   "172"
+  ],
+  "solution": "OAI.Combinatorics.EuclideanRamsey.Spherical",
+  "files": 31,
+  "lines": 6742,
+  "ext": [],
+  "theorems": [
+   "OAI.EuclideanRamsey.ramsey_cospherical"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "EuclideanRamseyTransitive",
+  "fam": [
+   "172"
+  ],
+  "solution": "OAI.Combinatorics.EuclideanRamsey.Transitive",
+  "files": 29,
+  "lines": 6718,
+  "ext": [],
+  "theorems": [
+   "OAI.EuclideanRamsey.TransitiveConsequence.subset_of_finite_transitive_ramsey"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "EvenBarker",
+  "fam": [
+   "179"
+  ],
+  "solution": "OAI.LinearAlgebra.Barker.Main",
+  "files": 73,
+  "lines": 9773,
+  "ext": [
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.CirculantHadamard.Barker.even_length_eq_two_or_four"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "ExactFourier",
+  "fam": [
+   "130"
+  ],
+  "solution": "OAI.Computability.FourierCircuit.Main",
+  "files": 51,
+  "lines": 19103,
+  "ext": [],
+  "theorems": [
+   "OAI.ExactFourier.main_theorem"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "ExactInfiniteness",
+  "fam": [
+   "303"
+  ],
+  "solution": "OAI.Analysis.WeakInfiniteness.Main",
+  "files": 1012,
+  "lines": 150750,
+  "ext": [],
+  "theorems": [
+   "OAI.WeakPureInfiniteness.exact_weaklyPurelyInfinite_individuallyProperlyInfinite_any",
+   "OAI.WeakPureInfiniteness.exact_weaklyPurelyInfinite_stronglyPurelyInfinite"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "ExactQuantumFactoring",
+  "fam": [
+   "279"
+  ],
+  "solution": "OAI.Computability.QuantumFactoring.Main",
+  "files": 546,
+  "lines": 54007,
+  "ext": [],
+  "theorems": [
+   "OAI.ExactQuantumFactoring.exact_quantum_factoring"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "FKCRT",
+  "fam": [
+   "211"
+  ],
+  "solution": "OAI.Probability.FKMaps.Convergence",
+  "files": 61,
+  "lines": 40208,
+  "ext": [],
+  "theorems": [
+   "OAI.FKCRT.finite_fk_maps_converge_to_brownian_crt"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "FactorGeneration",
+  "fam": [
+   "296"
+  ],
+  "solution": "OAI.Analysis.FactorGeneration.Main",
+  "files": 93,
+  "lines": 35135,
+  "ext": [
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.Generator.single_generation_of_II1_separable_predual"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "FalconerAllDimensions",
+  "fam": [
+   "073"
+  ],
+  "solution": "OAI.MeasureTheory.Falconer.Campaign123PlanarFurstenbergProof",
+  "files": 2384,
+  "lines": 185097,
+  "ext": [
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.Falconer.falconer_distance_conjecture"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "FillingCoefficient",
+  "fam": [
+   "337"
+  ],
+  "solution": "OAI.Geometry.IntegralFillings.Main",
+  "files": 112,
+  "lines": 15653,
+  "ext": [],
+  "theorems": [
+   "OAI.SharpIntegralFillings.coefficient_optimal"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "FiniteCircle",
+  "fam": [
+   "099"
+  ],
+  "solution": "OAI.Combinatorics.FiniteCircle.Main",
+  "files": 36,
+  "lines": 9787,
+  "ext": [],
+  "theorems": [
+   "OAI.finiteCircle_fullMain"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "FiniteCongruenceGraph",
+  "fam": [
+   "206"
+  ],
+  "solution": "OAI.Algebra.Universal.GraphCriterion",
+  "files": 2,
+  "lines": 469,
+  "ext": [],
+  "theorems": [
+   "OAI.FiniteCongruence.graph_criterion"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "FiniteEntropySeparation",
+  "fam": [
+   "298"
+  ],
+  "solution": "OAI.Analysis.FreeEntropy.Main",
+  "files": 153,
+  "lines": 15557,
+  "ext": [],
+  "theorems": [
+   "OAI.FiniteEntropySeparation.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "FiniteFactor",
+  "fam": [
+   "293"
+  ],
+  "solution": "OAI.Analysis.FiniteFactor.Main",
+  "files": 271,
+  "lines": 22601,
+  "ext": [],
+  "theorems": [
+   "OAI.FiniteFactor.main_theorem"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "FinitisticAsymmetry",
+  "fam": [
+   "198"
+  ],
+  "solution": "OAI.Algebra.FinitisticAsymmetry.Main",
+  "files": 588,
+  "lines": 50191,
+  "ext": [
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.LittleFinitistic.extreme_left_right_asymmetry"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "FixedClauseThreshold",
+  "fam": [
+   "235"
+  ],
+  "solution": "OAI.Probability.RandomSAT.Main",
+  "files": 15,
+  "lines": 4818,
+  "ext": [],
+  "theorems": [
+   "OAI.FixedClauseThreshold.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "ForcedNavierStokesComputation",
+  "fam": [
+   "376"
+  ],
+  "solution": "OAI.MathematicalPhysics.NavierStokes.BalancedTransport.MainResult",
+  "files": 60,
+  "lines": 11109,
+  "ext": [],
+  "theorems": [
+   "OAI.BalancedTransport.balanced_three_stack_realization"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "ForestSpace",
+  "fam": [
+   "331"
+  ],
+  "solution": "OAI.Analysis.ForestSpace.Main",
+  "files": 20,
+  "lines": 4631,
+  "ext": [],
+  "theorems": [
+   "OAI.ForestSpace.main_theorem"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "FormulaHitting",
+  "fam": [
+   "116"
+  ],
+  "solution": "OAI.Algebra.FormulaHitting.Hitting",
+  "files": 24,
+  "lines": 3281,
+  "ext": [
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.NCHitting.universal_hitting"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "FoulkesHowe",
+  "fam": [
+   "210"
+  ],
+  "solution": "OAI.RepresentationTheory.FoulkesHowe.Stabilization",
+  "files": 63,
+  "lines": 5029,
+  "ext": [],
+  "theorems": [
+   "OAI.Problem346.canonical_foulkes_howe_surjective"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "FourRowPermanent",
+  "fam": [
+   "238"
+  ],
+  "solution": "OAI.Combinatorics.Permanent.Main",
+  "files": 5,
+  "lines": 622,
+  "ext": [],
+  "theorems": [
+   "OAI.FourRow.robust_permanent"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "FourierLLogL",
+  "fam": [
+   "075"
+  ],
+  "solution": "OAI.Analysis.FourierLLogL.PaperMain",
+  "files": 156,
+  "lines": 29665,
+  "ext": [],
+  "theorems": [
+   "OAI.FourierLLogL.paperMain"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "FreeIsing",
+  "fam": [
+   "236"
+  ],
+  "solution": "OAI.Probability.FreeIsing.Main",
+  "files": 891,
+  "lines": 117435,
+  "ext": [],
+  "theorems": [
+   "OAI.Problem367.free_ising_factor_iff_threshold"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "FreeUniformSpanningForest",
+  "fam": [
+   "231"
+  ],
+  "solution": "OAI.Probability.SpanningForest.Factor",
+  "files": 224,
+  "lines": 25262,
+  "ext": [
+   "all"
+  ],
+  "theorems": [
+   "OAI.Problem336.fusf_is_factor_iid"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "GammaPassage",
+  "fam": [
+   "212"
+  ],
+  "solution": "OAI.Probability.GammaPassage.Differentiability",
+  "files": 203,
+  "lines": 20106,
+  "ext": [
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.GammaFPP.gamma_differentiability"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "GaussianFiniteEntropy",
+  "fam": [
+   "140"
+  ],
+  "solution": "OAI.Probability.Localization.Main",
+  "files": 15,
+  "lines": 2413,
+  "ext": [],
+  "theorems": [
+   "OAI.RepeatedLocalization.FiniteEntropy.finite_expected_regularization"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "GaussianInformation",
+  "fam": [
+   "140"
+  ],
+  "solution": "OAI.Probability.GaussianInformation.Main",
+  "files": 111,
+  "lines": 15373,
+  "ext": [],
+  "theorems": [
+   "OAI.RepeatedLocalization.repeated_localization",
+   "OAI.AllScaleInverseVolume.inverse_volume_without_support",
+   "OAI.KernelPotential.kernel_coercivity",
+   "OAI.KernelPotential.actual_row_drift"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "GaussianMoat",
+  "fam": [
+   "028"
+  ],
+  "solution": "OAI.NumberTheory.GaussianMoat.Main",
+  "files": 41,
+  "lines": 12703,
+  "ext": [],
+  "theorems": [
+   "OAI.GaussianMoat.fullMain"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "GaussianPropeller",
+  "fam": [
+   "096"
+  ],
+  "solution": "OAI.Probability.GaussianPropeller.Main",
+  "files": 47,
+  "lines": 11622,
+  "ext": [],
+  "theorems": [
+   "OAI.GaussianPropeller.all_partitions"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "GaussianReplacement",
+  "fam": [
+   "140"
+  ],
+  "solution": "OAI.Probability.GaussianReplacement.FiberEquality",
+  "files": 35,
+  "lines": 14380,
+  "ext": [],
+  "theorems": [
+   "OAI.CurrentProjection.mixedMomentMain",
+   "OAI.CurrentProjection.actualRowMain",
+   "OAI.CurrentProjection.actualRowRefinement",
+   "OAI.CurrentProjection.actualRowSourceMain",
+   "OAI.CurrentProjection.actualRowSourceRefinement",
+   "OAI.CurrentProjection.criticalComparisonMain",
+   "OAI.CurrentProjection.oneLevelComparisonMain",
+   "OAI.CurrentProjection.twoLabelComparisonMain",
+   "OAI.CurrentProjection.hybridBlockMain",
+   "OAI.CurrentProjection.fiberTwoPointMain",
+   "OAI.CurrentProjection.fiberBlockMain"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "GeneralMahler",
+  "fam": [
+   "087"
+  ],
+  "solution": "OAI.Geometry.Convex.GeneralMahler.Theorem",
+  "files": 302,
+  "lines": 40205,
+  "ext": [],
+  "theorems": [
+   "OAI.GeneralMahler.general_mahler"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "GeneralizedStarHeight",
+  "fam": [
+   "134"
+  ],
+  "solution": "OAI.Computability.StarHeight.Main",
+  "files": 37,
+  "lines": 11956,
+  "ext": [],
+  "theorems": [
+   "OAI.GeneralizedStarHeight.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "GotsmanLinial",
+  "fam": [
+   "127"
+  ],
+  "solution": "OAI.Combinatorics.GotsmanLinial.Main",
+  "files": 22,
+  "lines": 4022,
+  "ext": [],
+  "theorems": [
+   "OAI.LeanBlast.GotsmanLinial.gotsmanLinialStatement"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "GrahamSpherical",
+  "fam": [
+   "172"
+  ],
+  "solution": "OAI.Combinatorics.SphericalRamsey.Main",
+  "files": 18,
+  "lines": 969,
+  "ext": [
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.GrahamSpherical.full_main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "GrothendieckElementaryExpansion",
+  "fam": [
+   "312"
+  ],
+  "solution": "OAI.CategoryTheory.Globular.Main",
+  "files": 58,
+  "lines": 12753,
+  "ext": [],
+  "theorems": [
+   "OAI.Grothendieck.elementary_expansion"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "GroupRingDeterminant",
+  "fam": [
+   "197"
+  ],
+  "solution": "OAI.Analysis.GroupDeterminants.Main",
+  "files": 155,
+  "lines": 16337,
+  "ext": [],
+  "theorems": [
+   "OAI.GroupRingDeterminant.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "HadamardCubeFiber",
+  "fam": [
+   "266"
+  ],
+  "solution": "OAI.LinearAlgebra.Hadamard.Main",
+  "files": 6,
+  "lines": 980,
+  "ext": [],
+  "theorems": [
+   "OAI.HadamardSix.rowRatio_cubeFiber_sum_zero"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "HadwigerCounterexample",
+  "fam": [
+   "157"
+  ],
+  "solution": "OAI.Combinatorics.HadwigerCounterexample.Main",
+  "files": 288,
+  "lines": 39776,
+  "ext": [
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.HadwigerCounterexample.exists_counterexamples",
+   "OAI.HadwigerCounterexample.not_hadwiger_conjecture"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "HalvingLines",
+  "fam": [
+   "183"
+  ],
+  "solution": "OAI.Combinatorics.HalvingLines.Main",
+  "files": 47,
+  "lines": 18237,
+  "ext": [],
+  "theorems": [
+   "OAI.PlanarHalving.power_bounds"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "HardSphere",
+  "fam": [
+   "267"
+  ],
+  "solution": "OAI.Analysis.HardSphere.Main",
+  "files": 466,
+  "lines": 71853,
+  "ext": [],
+  "theorems": [
+   "OAI.HardSphere.condensation_with_mixed"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "HarmonicArtin",
+  "fam": [
+   "254"
+  ],
+  "solution": "OAI.Topology.ArtinGroups.Main",
+  "files": 660,
+  "lines": 62901,
+  "ext": [],
+  "theorems": [
+   "OAI.HarmonicArtin.salvetti_cover_contractible"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "HarmonicGrowth",
+  "fam": [
+   "361"
+  ],
+  "solution": "OAI.Geometry.HarmonicGrowth.Main",
+  "files": 36,
+  "lines": 36732,
+  "ext": [],
+  "theorems": [
+   "OAI.HarmonicCounterexample.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "HeckeSevenEighths",
+  "fam": [
+   "003"
+  ],
+  "solution": "OAI.NumberTheory.DirichletL.Hecke.Nonvanishing",
+  "files": 2925,
+  "lines": 486525,
+  "ext": [
+   "Lean",
+   "PrimeNumberTheoremAnd",
+   "RellichKondrachov"
+  ],
+  "theorems": [
+   "OAI.SevenEighths.HeckeFamily.LFunction_ne_zero_of_seven_eighths_lt_re"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "HeilbronnTriangle",
+  "fam": [
+   "191"
+  ],
+  "solution": "OAI.Geometry.HeilbronnTriangle.Main",
+  "files": 195,
+  "lines": 24275,
+  "ext": [],
+  "theorems": [
+   "OAI.Problem355.heilbronn_power_lower_bound",
+   "OAI.Problem355.almost_n_minus_two_refuted"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "Heisenberg",
+  "fam": [
+   "271"
+  ],
+  "solution": "OAI.MathematicalPhysics.Heisenberg.Main",
+  "files": 128,
+  "lines": 25400,
+  "ext": [],
+  "theorems": [
+   "OAI.Heisenberg.spontaneous_magnetization"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "HenonEmden",
+  "fam": [
+   "370"
+  ],
+  "solution": "OAI.Analysis.HenonEmden.Main",
+  "files": 96,
+  "lines": 12709,
+  "ext": [],
+  "theorems": [
+   "OAI.HenonLaneEmden.main_nonexistence"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "HilbertCrouzeix",
+  "fam": [
+   "325"
+  ],
+  "solution": "OAI.Analysis.HilbertCrouzeix.Main",
+  "files": 7,
+  "lines": 844,
+  "ext": [],
+  "theorems": [
+   "OAI.HilbertCrouzeix.numericalClosure_geometry",
+   "OAI.HilbertCrouzeix.exists_finite_compression",
+   "OAI.HilbertCrouzeix.rational_denominator_isUnit",
+   "OAI.HilbertCrouzeix.zeroConclusion"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "HoneycombBridgeFiniteness",
+  "fam": [
+   "237"
+  ],
+  "solution": "OAI.Combinatorics.HoneycombCorridor.BridgeFiniteness",
+  "files": 43,
+  "lines": 7790,
+  "ext": [],
+  "theorems": [
+   "OAI.PolynomialVacuumBridge.Corridor.finite_bridge_sums"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "HoneycombBridgeMassSupport",
+  "fam": [
+   "237"
+  ],
+  "solution": "OAI.Combinatorics.HoneycombChords.BridgeMass",
+  "files": 98,
+  "lines": 63223,
+  "ext": [
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.CriticalHoneycomb.finiteBridgeMassEstimate"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "HoneycombFreeEnergy",
+  "fam": [
+   "237"
+  ],
+  "solution": "OAI.Probability.Honeycomb.FreeEnergy",
+  "files": 1,
+  "lines": 985,
+  "ext": [],
+  "theorems": [
+   "OAI.HoneycombForce.logPartition_tendsto"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "HotSpots",
+  "fam": [
+   "369"
+  ],
+  "solution": "OAI.Analysis.HotSpots.Main",
+  "files": 31,
+  "lines": 29338,
+  "ext": [],
+  "theorems": [
+   "OAI.StrictHotSpots.main_theorem"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "HyperbolicCones",
+  "fam": [
+   "095"
+  ],
+  "solution": "OAI.Analysis.HyperbolicCones.Main",
+  "files": 86,
+  "lines": 5649,
+  "ext": [],
+  "theorems": [
+   "OAI.Paper256.main_result"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "HyperbolicObstruction",
+  "fam": [
+   "257"
+  ],
+  "solution": "OAI.Geometry.HyperbolicGroups.Main",
+  "files": 417,
+  "lines": 56644,
+  "ext": [],
+  "theorems": [
+   "OAI.HyperbolicObstruction.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "HyperinvariantSubspaces",
+  "fam": [
+   "293"
+  ],
+  "solution": "OAI.Analysis.Hyperinvariant.Main",
+  "files": 277,
+  "lines": 22976,
+  "ext": [],
+  "theorems": [
+   "OAI.Hyperinvariant.main_theorem"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "IndependentProducts",
+  "fam": [
+   "331"
+  ],
+  "solution": "OAI.Analysis.ProductSpaces.Main",
+  "files": 22,
+  "lines": 3878,
+  "ext": [],
+  "theorems": [
+   "OAI.IndependentProducts.main_general",
+   "OAI.IndependentProducts.main_exponential",
+   "OAI.IndependentProducts.main_gaussian_24",
+   "OAI.IndependentProducts.main_gaussian_12"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "IndependentSets",
+  "fam": [
+   "106"
+  ],
+  "solution": "OAI.Combinatorics.IndependentSets.Main",
+  "files": 454,
+  "lines": 94095,
+  "ext": [],
+  "theorems": [
+   "OAI.LargeIndependentSets.mainTheoremReal"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "IndividualStrongInfiniteness",
+  "fam": [
+   "303"
+  ],
+  "solution": "OAI.Analysis.CStarAlgebra.PureInfiniteness.Main",
+  "files": 25,
+  "lines": 6085,
+  "ext": [],
+  "theorems": [
+   "OAI.MainGap.Manuscript.individual_to_strong_main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "InfiniteMatroid",
+  "fam": [
+   "185"
+  ],
+  "solution": "OAI.Combinatorics.InfiniteMatroid.Main",
+  "files": 25,
+  "lines": 4016,
+  "ext": [],
+  "theorems": [
+   "OAI.InfiniteMatroidCounterexample.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "InfiniteMatroidCorollaries",
+  "fam": [
+   "185"
+  ],
+  "solution": "OAI.Combinatorics.InfiniteMatroid.Corollaries",
+  "files": 33,
+  "lines": 4477,
+  "ext": [],
+  "theorems": [
+   "OAI.InfiniteMatroidCounterexample.partitional_intersection_counterexample",
+   "OAI.InfiniteMatroidCounterexample.separate_covering_packing_counterexamples"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "InterpolatedFactors",
+  "fam": [
+   "287"
+  ],
+  "solution": "OAI.Analysis.InterpolatedFactors.Interpolation",
+  "files": 77,
+  "lines": 26804,
+  "ext": [],
+  "theorems": [
+   "OAI.FreeGroupFactorMain.Interpolation.allInterpolatedIsomorphic"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "InvariantIsing",
+  "fam": [
+   "234"
+  ],
+  "solution": "OAI.Probability.InvariantIsing.Unconditional",
+  "files": 2123,
+  "lines": 210755,
+  "ext": [],
+  "theorems": [
+   "OAI.InvariantIsing.limiting_pressure_of_extreme_limits_unconditional",
+   "OAI.InvariantIsing.limiting_wasserstein_field_pressure_of_extreme_limits_unconditional",
+   "OAI.InvariantIsing.positive_temperature_pressure_unconditional",
+   "OAI.InvariantIsing.ground_state_limit_unconditional",
+   "OAI.InvariantIsing.random_pressure_tendsto_in_measure_unconditional",
+   "OAI.InvariantIsing.random_pressure_limit_unconditional",
+   "OAI.InvariantIsing.random_pressure_tendsto_ae_unconditional",
+   "OAI.InvariantIsing.random_field_pressure_tendsto_ae_unconditional",
+   "OAI.InvariantIsing.gaussianPattern_pressure_limit_unconditional",
+   "OAI.InvariantIsing.gaussianPattern_ground_limit_unconditional",
+   "OAI.InvariantIsing.gaussianPattern_norm_limits_unconditional"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "IrrationalRotation",
+  "fam": [
+   "293"
+  ],
+  "solution": "OAI.Analysis.IrrationalRotation.Main",
+  "files": 735,
+  "lines": 81127,
+  "ext": [
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.Invariant233.Results.prescribed_irrational_counterexample",
+   "OAI.Invariant233.Results.product_realization"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "IrrationalTriangleBilliard",
+  "fam": [
+   "150"
+  ],
+  "solution": "OAI.Dynamics.TriangleBilliards.Main",
+  "files": 39,
+  "lines": 12363,
+  "ext": [],
+  "theorems": [
+   "OAI.TriangularBilliards.irrational_triangle_billiard"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "IsingFiniteness",
+  "fam": [
+   "222"
+  ],
+  "solution": "OAI.Probability.IsingPerceptron.VariationalFiniteness",
+  "files": 45,
+  "lines": 29170,
+  "ext": [],
+  "theorems": [
+   "OAI.IsingPerceptron.variationalValue_real_of_continuous"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "IsometricImmersion",
+  "fam": [
+   "334"
+  ],
+  "solution": "OAI.Geometry.IsometricImmersion.Main",
+  "files": 446,
+  "lines": 56586,
+  "ext": [],
+  "theorems": [
+   "OAI.SmoothLocal.Geometry.exists_local_metric_without_local_immersion"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "Jacobsthal",
+  "fam": [
+   "021"
+  ],
+  "solution": "OAI.NumberTheory.Jacobsthal.Main",
+  "files": 819,
+  "lines": 152494,
+  "ext": [
+   "AbsorptionCutoff",
+   "PrimeNumberTheoremAnd",
+   "StrongPNT"
+  ],
+  "theorems": [
+   "OAI.Erdos970.Erdos970Final.erdos_970_quadratic"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "JacobsthalImproved",
+  "fam": [
+   "021"
+  ],
+  "solution": "OAI.NumberTheory.Jacobsthal.Main",
+  "files": 819,
+  "lines": 152494,
+  "ext": [
+   "AbsorptionCutoff",
+   "PrimeNumberTheoremAnd",
+   "StrongPNT"
+  ],
+  "theorems": [
+   "OAI.Erdos970.Erdos970Final.erdos_970_iterated_log"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "JointDickman",
+  "fam": [
+   "012"
+  ],
+  "solution": "OAI.NumberTheory.JointDickman.PaperMain",
+  "files": 1792,
+  "lines": 176462,
+  "ext": [
+   "PrimeNumberTheoremAnd",
+   "StrongPNT"
+  ],
+  "theorems": [
+   "OAI.JointDickmanPaper.joint_law",
+   "OAI.JointDickmanPaper.increasing_order",
+   "OAI.JointDickmanPaper.decreasing_order"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "KLInvariance",
+  "fam": [
+   "168"
+  ],
+  "solution": "OAI.RepresentationTheory.KazhdanLusztig.Invariance",
+  "files": 34,
+  "lines": 42948,
+  "ext": [],
+  "theorems": [
+   "OAI.KLInvariance.combinatorial_invariance"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "KMedianRecovery",
+  "fam": [
+   "125"
+  ],
+  "solution": "OAI.Combinatorics.KMedianRecovery.Main",
+  "files": 506,
+  "lines": 69261,
+  "ext": [],
+  "theorems": [
+   "OAI.MetricKMedianRecovery.global_application"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "KMedianRefinedRecovery",
+  "fam": [
+   "125"
+  ],
+  "solution": "OAI.Combinatorics.KMedianRecovery.Refined.Recovery",
+  "files": 586,
+  "lines": 56960,
+  "ext": [],
+  "theorems": [
+   "OAI.MetricKMedianRecovery.RefinedRecovery.refined_recovery"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "KMedianThreshold",
+  "fam": [
+   "125"
+  ],
+  "solution": "OAI.Combinatorics.KMedian.Threshold",
+  "files": 765,
+  "lines": 72493,
+  "ext": [],
+  "theorems": [
+   "OAI.MetricKMedian.threshold"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "KServer",
+  "fam": [
+   "110"
+  ],
+  "solution": "OAI.Combinatorics.KServer.Main",
+  "files": 37,
+  "lines": 37365,
+  "ext": [],
+  "theorems": [
+   "OAI.KServer.main_theorem"
+  ],
+  "defs": [
+   "OAI.KServer.Configuration",
+   "OAI.KServer.LabelDistribution",
+   "OAI.KServer.Policy",
+   "OAI.KServer.serve",
+   "OAI.KServer.serviceCost",
+   "OAI.KServer.pathProbability",
+   "OAI.KServer.expectedCost",
+   "OAI.KServer.optimalCost",
+   "OAI.KServer.MainStatement"
+  ]
+ },
+ {
+  "cfg": "KadisonRingrose",
+  "fam": [
+   "295"
+  ],
+  "solution": "OAI.Analysis.BoundedHochschild.MainResult",
+  "files": 372,
+  "lines": 62822,
+  "ext": [],
+  "theorems": [
+   "OAI.BoundedHochschild.KadisonRingrose.main_result"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "KadisonSimilarity",
+  "fam": [
+   "288"
+  ],
+  "solution": "OAI.Analysis.KadisonSimilarity.UnconditionalSimilarity",
+  "files": 816,
+  "lines": 127680,
+  "ext": [],
+  "theorems": [
+   "OAI.KadisonSimilarity.universalCommutatorTheorem",
+   "OAI.KadisonSimilarity.universalHyperreflexivity",
+   "OAI.KadisonSimilarity.similarityTheorem"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "KahlerSplitting",
+  "fam": [
+   "052"
+  ],
+  "solution": "OAI.Geometry.KahlerSplitting.Main",
+  "files": 46,
+  "lines": 14985,
+  "ext": [],
+  "theorems": [
+   "OAI.UniversalCoverSplitting.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "KaplanskyDirectFiniteness",
+  "fam": [
+   "197"
+  ],
+  "solution": "OAI.RingTheory.DirectFiniteness.Main",
+  "files": 121,
+  "lines": 13010,
+  "ext": [],
+  "theorems": [
+   "OAI.KaplanskyCounterexample.main_theorem"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "KaplanskyFinitelyPresented",
+  "fam": [
+   "197"
+  ],
+  "solution": "OAI.RingTheory.DirectFiniteness.FinitelyPresented",
+  "files": 126,
+  "lines": 13310,
+  "ext": [],
+  "theorems": [
+   "OAI.KaplanskyCounterexample.finitelyPresented_counterexample"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "KaplanskyQuasitrace",
+  "fam": [
+   "294"
+  ],
+  "solution": "OAI.Analysis.Kaplansky.Main",
+  "files": 123,
+  "lines": 32206,
+  "ext": [
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.Kaplansky.kaplansky_quasitrace_counterexample"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "KaplanskyStableFiniteness",
+  "fam": [
+   "294"
+  ],
+  "solution": "OAI.Analysis.Kaplansky.StableFiniteness",
+  "files": 181,
+  "lines": 37896,
+  "ext": [
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.KaplanskyConsequences.stable_finiteness_bundle"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "Kervaire",
+  "fam": [
+   "256"
+  ],
+  "solution": "OAI.GroupTheory.Kervaire.Main",
+  "files": 47,
+  "lines": 11273,
+  "ext": [],
+  "theorems": [
+   "OAI.Kervaire.coefficient_injective"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "KoebeCircleDomains",
+  "fam": [
+   "071"
+  ],
+  "solution": "OAI.Analysis.CircleDomains.Main",
+  "files": 2790,
+  "lines": 272799,
+  "ext": [
+   "Schoenflies",
+   "all"
+  ],
+  "theorems": [
+   "OAI.Problem047.koebe_circle_domain",
+   "OAI.Problem047.removability_implies_rigidity"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "Laughlin",
+  "fam": [
+   "269"
+  ],
+  "solution": "OAI.Analysis.Laughlin.Main",
+  "files": 1258,
+  "lines": 75092,
+  "ext": [],
+  "theorems": [
+   "OAI.Laughlin.mainTarget_proved"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "LaughlinFock",
+  "fam": [
+   "269"
+  ],
+  "solution": "OAI.Analysis.LaughlinFock.Main",
+  "files": 293,
+  "lines": 124088,
+  "ext": [],
+  "theorems": [
+   "OAI.LaughlinFock.thm_fock"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "LaughlinGap",
+  "fam": [
+   "269"
+  ],
+  "solution": "OAI.Analysis.LaughlinGap.Main",
+  "files": 106,
+  "lines": 27741,
+  "ext": [],
+  "theorems": [
+   "OAI.LaughlinGap.thm_main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "LaughlinPlanar",
+  "fam": [
+   "269"
+  ],
+  "solution": "OAI.Analysis.Laughlin.UniformGap",
+  "files": 1279,
+  "lines": 77130,
+  "ext": [],
+  "theorems": [
+   "OAI.Laughlin.planar_gap"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "LiebThirring",
+  "fam": [
+   "262"
+  ],
+  "solution": "OAI.Analysis.LiebThirring.Main",
+  "files": 38,
+  "lines": 13717,
+  "ext": [],
+  "theorems": [
+   "OAI.SharpLiebThirring.sharp_lieb_thirring"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "LipschitzEquivalence",
+  "fam": [
+   "324"
+  ],
+  "solution": "OAI.Analysis.LipschitzEquivalence.Main",
+  "files": 60,
+  "lines": 10807,
+  "ext": [],
+  "theorems": [
+   "OAI.LipschitzCounterexample.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "LipschitzHilbert",
+  "fam": [
+   "083"
+  ],
+  "solution": "OAI.Analysis.LipschitzHilbert.Main",
+  "files": 1910,
+  "lines": 185580,
+  "ext": [
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.LipschitzHilbert.main",
+   "OAI.LipschitzHilbert.uniform_truncation"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "ListHadwiger",
+  "fam": [
+   "157"
+  ],
+  "solution": "OAI.Combinatorics.ListHadwiger.Main",
+  "files": 53,
+  "lines": 19965,
+  "ext": [],
+  "theorems": [
+   "OAI.LinearListHadwiger.main_theorem"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "LittleFinitistic",
+  "fam": [
+   "198"
+  ],
+  "solution": "OAI.Algebra.Finitistic.Main",
+  "files": 546,
+  "lines": 45195,
+  "ext": [
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.LittleFinitistic.Main.exists_counterexample"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "LittlewoodFiniteFlatness",
+  "fam": [
+   "076"
+  ],
+  "solution": "OAI.Analysis.Littlewood.FiniteFlatness",
+  "files": 28,
+  "lines": 9712,
+  "ext": [
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.AsymptoticallyMinimalLittlewoodFiniteFlatness.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "LogBrunnMinkowski",
+  "fam": [
+   "091"
+  ],
+  "solution": "OAI.Geometry.LogVolume.BrunnMinkowski",
+  "files": 1,
+  "lines": 24490,
+  "ext": [],
+  "theorems": [
+   "OAI.LogBrunnMinkowski.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "LogConcaveQuery",
+  "fam": [
+   "139"
+  ],
+  "solution": "OAI.Probability.LogConcave.Main",
+  "files": 326,
+  "lines": 63748,
+  "ext": [],
+  "theorems": [
+   "OAI.LogConcaveSampling.exact_source_main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "LogKodairaFiberNegative",
+  "fam": [
+   "033"
+  ],
+  "solution": "OAI.AlgebraicGeometry.LogKodaira.FiberNegative",
+  "files": 14,
+  "lines": 3902,
+  "ext": [],
+  "theorems": [
+   "OAI.ReverseLogKodaira.SmoothProjectiveVariety.veryGenerally_fiber_negative_branch"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "LogspaceEquality",
+  "fam": [
+   "103"
+  ],
+  "solution": "OAI.Computability.Logspace.Equality",
+  "files": 39,
+  "lines": 43045,
+  "ext": [],
+  "theorems": [
+   "OAI.ExactDerandomization.exact_logarithmic_space_derandomization"
+  ],
+  "defs": [
+   "OAI.ExactDerandomization.Word",
+   "OAI.ExactDerandomization.Language",
+   "OAI.ExactDerandomization.CoinTape",
+   "OAI.ExactDerandomization.Direction.move",
+   "OAI.ExactDerandomization.Direction.moveInput",
+   "OAI.ExactDerandomization.readInput",
+   "OAI.ExactDerandomization.Machine.initial",
+   "OAI.ExactDerandomization.Machine.step",
+   "OAI.ExactDerandomization.Machine.run",
+   "OAI.ExactDerandomization.Machine.spaceThrough",
+   "OAI.ExactDerandomization.Machine.LogSpace",
+   "OAI.ExactDerandomization.Machine.Deterministic",
+   "OAI.ExactDerandomization.Machine.HaltsBy",
+   "OAI.ExactDerandomization.Machine.Decides",
+   "OAI.ExactDerandomization.Machine.extendCoins",
+   "OAI.ExactDerandomization.Machine.acceptanceProbability",
+   "OAI.ExactDerandomization.polynomialClock",
+   "OAI.ExactDerandomization.L",
+   "OAI.ExactDerandomization.RL",
+   "OAI.ExactDerandomization.BPL"
+  ]
+ },
+ {
+  "cfg": "MUBSix",
+  "fam": [
+   "266"
+  ],
+  "solution": "OAI.Analysis.MutuallyUnbiased.Main",
+  "files": 3381,
+  "lines": 2834627,
+  "ext": [
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.MUB6.fourier_and_family_bound"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "MahlerConjecture",
+  "fam": [
+   "087"
+  ],
+  "solution": "OAI.Analysis.Mahler.MainTheorem",
+  "files": 229,
+  "lines": 21379,
+  "ext": [],
+  "theorems": [
+   "OAI.SymmetricMahler.symmetric_mahler"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "MarkovType",
+  "fam": [
+   "327"
+  ],
+  "solution": "OAI.Analysis.MarkovType.Main",
+  "files": 207,
+  "lines": 27054,
+  "ext": [
+   "Init",
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.MarkovSuperreflexivity.hasNontrivialMarkovType_iff_hasEquivalentUCNorm"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "MassAction",
+  "fam": [
+   "149"
+  ],
+  "solution": "OAI.Analysis.MassAction.Main",
+  "files": 71,
+  "lines": 7758,
+  "ext": [],
+  "theorems": [
+   "OAI.Problem326.global_bounded_persistent_solution"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "MatchingAffineLift",
+  "fam": [
+   "126"
+  ],
+  "solution": "OAI.Combinatorics.MatchingPSD.AffineLift",
+  "files": 66,
+  "lines": 7542,
+  "ext": [],
+  "theorems": [
+   "OAI.PerfectMatchingPSD.affine_lift_lower_bound"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "MatchingEntropy",
+  "fam": [
+   "113"
+  ],
+  "solution": "OAI.Combinatorics.PerfectMatching.Main",
+  "files": 18,
+  "lines": 3607,
+  "ext": [],
+  "theorems": [
+   "OAI.MatchingEntropy.entropy_main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "MatchingEntropyBounds",
+  "fam": [
+   "113"
+  ],
+  "solution": "OAI.Combinatorics.MatchingEntropy.Main",
+  "files": 35,
+  "lines": 7833,
+  "ext": [],
+  "theorems": [
+   "OAI.MatchingEntropyBounds.Refined.pointwise_entropy"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "MatchingFPRAS",
+  "fam": [
+   "113"
+  ],
+  "solution": "OAI.Combinatorics.MatchingCount.Main",
+  "files": 415,
+  "lines": 66246,
+  "ext": [],
+  "theorems": [
+   "OAI.MatchingFPRAS.thm_main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "MatchingPSD",
+  "fam": [
+   "126"
+  ],
+  "solution": "OAI.Combinatorics.MatchingPSD.Main",
+  "files": 53,
+  "lines": 6867,
+  "ext": [],
+  "theorems": [
+   "OAI.PerfectMatchingPSD.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "MatrixFields",
+  "fam": [
+   "107"
+  ],
+  "solution": "OAI.LinearAlgebra.MatrixFields.Main",
+  "files": 354,
+  "lines": 181751,
+  "ext": [],
+  "theorems": [
+   "OAI.MatrixAllFields.MatrixMultiplication.AllFieldMain.omega_lt_source_constant"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "MatrixMultiplication",
+  "fam": [
+   "107"
+  ],
+  "solution": "OAI.LinearAlgebra.MatrixMultiplication.Main",
+  "files": 504,
+  "lines": 82623,
+  "ext": [
+   "FixedPointTheorems",
+   "Lean",
+   "Std"
+  ],
+  "theorems": [
+   "OAI.MatrixMultiplication.complex_omega_le_nine_quarters",
+   "OAI.MatrixMultiplication.complex_alpha_gt_93_div_200",
+   "OAI.MatrixMultiplication.complex_rectangular_omega_lt_523_div_250"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "MatrixRemoval",
+  "fam": [
+   "190"
+  ],
+  "solution": "OAI.Combinatorics.MatrixRemoval.Main",
+  "files": 61,
+  "lines": 7609,
+  "ext": [],
+  "theorems": [
+   "OAI.Problem348.no_polynomial_removal_bound"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "MatroidProphet",
+  "fam": [
+   "111"
+  ],
+  "solution": "OAI.Probability.MatroidProphet.Main",
+  "files": 125,
+  "lines": 14585,
+  "ext": [],
+  "theorems": [
+   "OAI.MatroidProphet.one_sample"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "MatroidSecretary",
+  "fam": [
+   "111"
+  ],
+  "solution": "OAI.Probability.MatroidSecretary.Main",
+  "files": 243,
+  "lines": 25927,
+  "ext": [],
+  "theorems": [
+   "OAI.MatroidProphet.Assigned.one_sample",
+   "OAI.MatroidProphet.Assigned.hidden_vector",
+   "OAI.MatroidProphet.Assigned.secretary"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "MaximalSeshadriConstants",
+  "fam": [
+   "039"
+  ],
+  "solution": "OAI.AlgebraicGeometry.Seshadri.Main",
+  "files": 421,
+  "lines": 56552,
+  "ext": [],
+  "theorems": [
+   "OAI.MaximalSeshadri.Geometry.maximalSeshadriConstants"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "MemoryPrecision",
+  "fam": [
+   "140"
+  ],
+  "solution": "OAI.Probability.MemoryPrecision.Main",
+  "files": 88,
+  "lines": 16263,
+  "ext": [],
+  "theorems": [
+   "OAI.MemoryPrecision.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "MetricEntropyDuality",
+  "fam": [
+   "329"
+  ],
+  "solution": "OAI.Analysis.MetricEntropy.Main",
+  "files": 52,
+  "lines": 6520,
+  "ext": [
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.MetricEntropyDuality.exists_entropy_duality_counterexample_with_covers"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "MetricKMedian",
+  "fam": [
+   "125"
+  ],
+  "solution": "OAI.Combinatorics.KMedian.Main",
+  "files": 569,
+  "lines": 54583,
+  "ext": [],
+  "theorems": [
+   "OAI.MetricKMedian.main_finite_work"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "MidpointLenses",
+  "fam": [
+   "331"
+  ],
+  "solution": "OAI.Analysis.SegmentLenses.Main",
+  "files": 11,
+  "lines": 3297,
+  "ext": [],
+  "theorems": [
+   "OAI.SegmentLenses.midpoint_lens_main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "MinUncut",
+  "fam": [
+   "102"
+  ],
+  "solution": "OAI.Computability.MinUncut.Main",
+  "files": 375,
+  "lines": 124869,
+  "ext": [],
+  "theorems": [
+   "OAI.MinUncut.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "Nagata",
+  "fam": [
+   "039"
+  ],
+  "solution": "OAI.AlgebraicGeometry.PlaneCurves.Nagata",
+  "files": 117,
+  "lines": 36997,
+  "ext": [
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.Nagata.Workers.W30.exists_positive_degree_equation_of_homogeneous_cycle",
+   "OAI.Nagata.nagata_conjecture",
+   "OAI.Nagata.nagata_conjecture_coordinates"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "Naimark",
+  "fam": [
+   "297"
+  ],
+  "solution": "OAI.Analysis.Naimark.Tracial",
+  "files": 16,
+  "lines": 25931,
+  "ext": [],
+  "theorems": [
+   "OAI.NaimarkZFC.main"
+  ],
+  "defs": [
+   "OAI.NaimarkZFC.IsSimpleCStar",
+   "OAI.NaimarkZFC.IsState",
+   "OAI.NaimarkZFC.IsFaithfulTracialState",
+   "OAI.NaimarkZFC.IsIrreducible",
+   "OAI.NaimarkZFC.UnitarilyEquivalent",
+   "OAI.NaimarkZFC.HasUniqueIrreducibleRepresentation",
+   "OAI.NaimarkZFC.IsIsomorphicToCompacts"
+  ]
+ },
+ {
+  "cfg": "NavierStokesAlternating",
+  "fam": [
+   "376"
+  ],
+  "solution": "OAI.MathematicalPhysics.AlternatingFlow.Development",
+  "files": 41,
+  "lines": 7871,
+  "ext": [],
+  "theorems": [
+   "OAI.AlternatingNS.alternating"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "NavierStokesVelocity",
+  "fam": [
+   "376"
+  ],
+  "solution": "OAI.MathematicalPhysics.NavierStokes.VelocityDetection.Main",
+  "files": 152,
+  "lines": 22602,
+  "ext": [],
+  "theorems": [
+   "OAI.VelocityDetection.main_result"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "NodalLength",
+  "fam": [
+   "350"
+  ],
+  "solution": "OAI.Analysis.NodalLength.Main",
+  "files": 59,
+  "lines": 32394,
+  "ext": [],
+  "theorems": [
+   "OAI.SharpNodal.Main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "NoiselessRegression",
+  "fam": [
+   "140"
+  ],
+  "solution": "OAI.Probability.GaussianRegression.Main",
+  "files": 22,
+  "lines": 4490,
+  "ext": [],
+  "theorems": [
+   "OAI.NoiselessRegression.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "NuclearUltrapower",
+  "fam": [
+   "292"
+  ],
+  "solution": "OAI.Analysis.NuclearUltrapower.Main",
+  "files": 39,
+  "lines": 18473,
+  "ext": [],
+  "theorems": [
+   "OAI.NuclearUltrapower.main_no_embedding"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "OccupiedOverlap",
+  "fam": [
+   "238"
+  ],
+  "solution": "OAI.RepresentationTheory.RowColumn.Occupied",
+  "files": 56,
+  "lines": 24287,
+  "ext": [],
+  "theorems": [
+   "OAI.RowColumn.occupied_overlap_endpoint",
+   "OAI.RowColumn.occupied_overlap"
+  ],
+  "defs": [
+   "OAI.CubeShuffle.UnitaryFinite.IsUnitary",
+   "OAI.CubeShuffle.Specht.hilbertSpace",
+   "OAI.CubeShuffle.Specht.unitaryRepresentation",
+   "OAI.CubeShuffle.Specht.relabelledUnitary",
+   "OAI.RowColumn.OccupiedOverlapEndpoint"
+  ]
+ },
+ {
+  "cfg": "OddKaplansky",
+  "fam": [
+   "197"
+  ],
+  "solution": "OAI.Algebra.OddKaplansky.Main",
+  "files": 138,
+  "lines": 18517,
+  "ext": [],
+  "theorems": [
+   "OAI.OddKaplansky.main_theorem"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "OneTapeSpace",
+  "fam": [
+   "137"
+  ],
+  "solution": "OAI.Computability.SpaceSimulation.Main",
+  "files": 49,
+  "lines": 8328,
+  "ext": [],
+  "theorems": [
+   "OAI.Fifths.Single.capped",
+   "OAI.Fifths.Single.unknown"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "OneWayLiveness",
+  "fam": [
+   "129"
+  ],
+  "solution": "OAI.Combinatorics.Automata.Main",
+  "files": 16,
+  "lines": 4054,
+  "ext": [],
+  "theorems": [
+   "OAI.OneWayLiveness.main_theorem"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "OptimalMaxCut",
+  "fam": [
+   "102"
+  ],
+  "solution": "OAI.Computability.MaxCut.Main",
+  "files": 372,
+  "lines": 186763,
+  "ext": [],
+  "theorems": [
+   "OAI.OptimalMaxCut.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "OrdinaryElliott",
+  "fam": [
+   "007"
+  ],
+  "solution": "OAI.NumberTheory.OrdinaryCorrelations.Elliott.Main",
+  "files": 628,
+  "lines": 70806,
+  "ext": [],
+  "theorems": [
+   "OAI.OrdinaryCorrelations.binary_corrected_elliott"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "OrdinaryTwoPointCorrelations",
+  "fam": [
+   "007"
+  ],
+  "solution": "OAI.NumberTheory.TwoPointCorrelations.FinalMain",
+  "files": 1539,
+  "lines": 153427,
+  "ext": [
+   "PrimeNumberTheoremAnd",
+   "StrongPNT"
+  ],
+  "theorems": [
+   "OAI.OrdinaryTwoPointCorrelations.liouville_log_saving",
+   "OAI.OrdinaryTwoPointCorrelations.binary_corrected_elliott",
+   "OAI.OrdinaryTwoPointCorrelations.affine_corrected_elliott"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "OstmannComplete",
+  "fam": [
+   "013"
+  ],
+  "solution": "OAI.NumberTheory.Ostmann.Complete",
+  "files": 3207,
+  "lines": 286925,
+  "ext": [
+   "BernoulliRegular",
+   "PrimeNumberTheoremAnd"
+  ],
+  "theorems": [
+   "OAI.Ostmann.inverseGoldbach",
+   "OAI.Ostmann.twoInfiniteSummandsImpossible"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "OstmannPrimes",
+  "fam": [
+   "013"
+  ],
+  "solution": "OAI.NumberTheory.Ostmann.Main",
+  "files": 4358,
+  "lines": 364516,
+  "ext": [
+   "PrimeNumberTheoremAnd",
+   "StrongPNT"
+  ],
+  "theorems": [
+   "OAI.Ostmann.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "ParityLifts",
+  "fam": [
+   "133"
+  ],
+  "solution": "OAI.Combinatorics.ParityLifts.Main",
+  "files": 22,
+  "lines": 4700,
+  "ext": [],
+  "theorems": [
+   "OAI.ParityWL.parity_reduction"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "PartialPermutation",
+  "fam": [
+   "238"
+  ],
+  "solution": "OAI.RepresentationTheory.PartialPermutation.Main",
+  "files": 62,
+  "lines": 5967,
+  "ext": [],
+  "theorems": [
+   "OAI.PartialPermutation.complementaryCosets_finite"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "PartitionConsistency",
+  "fam": [
+   "244"
+  ],
+  "solution": "OAI.SetTheory.PartitionConsistency.Main",
+  "files": 75,
+  "lines": 32558,
+  "ext": [],
+  "theorems": [
+   "OAI.PartitionConsistency.main_consistency"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "PartitionPrinciple",
+  "fam": [
+   "244"
+  ],
+  "solution": "OAI.SetTheory.PartitionPrinciple.Main",
+  "files": 943,
+  "lines": 233891,
+  "ext": [
+   "Init",
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.PartitionPilot.Forcing.TransitiveGround.exists_model_partitionPrinciple_without_choice"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "PattersonFirstMoment",
+  "fam": [
+   "023"
+  ],
+  "solution": "OAI.NumberTheory.CubicMoment.Theta.CubicThetaMains",
+  "files": 3594,
+  "lines": 306361,
+  "ext": [
+   "PrimeNumberTheoremAnd",
+   "RellichKondrachov",
+   "StrongPNT"
+  ],
+  "theorems": [
+   "OAI.CubicFirstMoment.patterson_firstMoment",
+   "OAI.CubicFirstMoment.patterson_angularComparison",
+   "OAI.CubicFirstMoment.patterson_angularCancellation"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "PerceptronFreeEnergy",
+  "fam": [
+   "222"
+  ],
+  "solution": "OAI.Probability.Perceptron.Main",
+  "files": 411,
+  "lines": 71237,
+  "ext": [],
+  "theorems": [
+   "OAI.SphericalPerceptronFreeEnergy.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "PerfectCompleteness",
+  "fam": [
+   "105"
+  ],
+  "solution": "OAI.Computability.PerfectCompleteness.Main",
+  "files": 863,
+  "lines": 257263,
+  "ext": [
+   "Lean",
+   "Std"
+  ],
+  "theorems": [
+   "OAI.PerfectCompleteness.Theorem11.exists_reduction"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "PeriodicGroup",
+  "fam": [
+   "247"
+  ],
+  "solution": "OAI.GroupTheory.PeriodicGroups.Main",
+  "files": 63,
+  "lines": 38076,
+  "ext": [],
+  "theorems": [
+   "OAI.SourceBurnside.thm_main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "PeriodicTilingThree",
+  "fam": [
+   "155"
+  ],
+  "solution": "OAI.Geometry.PeriodicTiling.Main",
+  "files": 122,
+  "lines": 16899,
+  "ext": [
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.PeriodicTilingThree.periodic_tiling_counterexample_and_minimality"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "PermanentCubic",
+  "fam": [
+   "108"
+  ],
+  "solution": "OAI.Algebra.Determinantal.Main",
+  "files": 51,
+  "lines": 20739,
+  "ext": [],
+  "theorems": [
+   "OAI.PermanentBorder.permanent_cubic_lower_bounds"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "PettyProjectionVolume",
+  "fam": [
+   "088"
+  ],
+  "solution": "OAI.Geometry.ProjectionBodies.Main",
+  "files": 33,
+  "lines": 13670,
+  "ext": [],
+  "theorems": [
+   "OAI.PettyProjection.petty_projection_volume"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "PiExponent",
+  "fam": [
+   "017"
+  ],
+  "solution": "OAI.NumberTheory.PiExponent.Main",
+  "files": 869,
+  "lines": 94948,
+  "ext": [
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.PiExponent.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "PinchedKahler",
+  "fam": [
+   "359"
+  ],
+  "solution": "OAI.Geometry.Kahler.Main",
+  "files": 119,
+  "lines": 18688,
+  "ext": [],
+  "theorems": [
+   "OAI.PinchedHartogs.main_theorem",
+   "OAI.PinchedHartogs.controlled_potential",
+   "OAI.PinchedHartogs.metric_transfer"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "PinnedDistances",
+  "fam": [
+   "167"
+  ],
+  "solution": "OAI.Geometry.PinnedDistances.Main",
+  "files": 47,
+  "lines": 15657,
+  "ext": [],
+  "theorems": [
+   "OAI.WeakPinned.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "PlanarAndersonSpectrum",
+  "fam": [
+   "261"
+  ],
+  "solution": "OAI.MathematicalPhysics.PlanarAnderson.Spectrum",
+  "files": 1,
+  "lines": 767,
+  "ext": [],
+  "theorems": [
+   "OAI.PlanarAnderson.anderson_spectrum_ae"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "PlanarFalconer",
+  "fam": [
+   "073"
+  ],
+  "solution": "OAI.MeasureTheory.Falconer.Main",
+  "files": 719,
+  "lines": 53272,
+  "ext": [
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.PlanarFalconer.mainTarget_proved"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "PlanarFirstPassage",
+  "fam": [
+   "212"
+  ],
+  "solution": "OAI.Probability.FirstPassage.BoundaryCurve",
+  "files": 195,
+  "lines": 18741,
+  "ext": [
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.PlanarFPP.manuscriptMain"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "PlanarL1",
+  "fam": [
+   "089"
+  ],
+  "solution": "OAI.Combinatorics.PlanarL1.Embedding",
+  "files": 63,
+  "lines": 33806,
+  "ext": [],
+  "theorems": [
+   "OAI.PlanarL1.planar_graph_metrics_embed_L1"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "PlanarPacking",
+  "fam": [
+   "090"
+  ],
+  "solution": "OAI.Analysis.PlanarPacking.Main",
+  "files": 563,
+  "lines": 916202,
+  "ext": [],
+  "theorems": [
+   "OAI.sharp_fourier_certificate"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "PlanarUnitDistances",
+  "fam": [
+   "167"
+  ],
+  "solution": "OAI.Geometry.UnitDistances.Main",
+  "files": 40,
+  "lines": 28113,
+  "ext": [],
+  "theorems": [
+   "OAI.PlanarUnitDistances.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "PlaneColoring",
+  "fam": [
+   "158"
+  ],
+  "solution": "OAI.Geometry.PlaneColoring.Main",
+  "files": 9,
+  "lines": 519,
+  "ext": [],
+  "theorems": [
+   "OAI.Problem160.properColoring_seven"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "PolycyclicRecognition",
+  "fam": [
+   "255"
+  ],
+  "solution": "OAI.GroupTheory.PolycyclicRecognition.Recognition",
+  "files": 2679,
+  "lines": 232617,
+  "ext": [
+   "Gromov",
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.PolycyclicRecognition.group_recognition",
+   "OAI.PolycyclicRecognition.main_uniform_bounded_height",
+   "OAI.PolycyclicRecognition.lattice_recognition"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "PosteriorReplicas",
+  "fam": [
+   "140"
+  ],
+  "solution": "OAI.Probability.PosteriorReplicas.Main",
+  "files": 136,
+  "lines": 14760,
+  "ext": [],
+  "theorems": [
+   "OAI.PosteriorReplicas.source_main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "PowerFreeValues",
+  "fam": [
+   "020"
+  ],
+  "solution": "OAI.NumberTheory.PowerFree.Main",
+  "files": 63,
+  "lines": 23269,
+  "ext": [],
+  "theorems": [
+   "OAI.QuarticPowerFree.allDegrees"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "PrimeGaps",
+  "fam": [
+   "026"
+  ],
+  "solution": "OAI.NumberTheory.PrimeGaps.RatioCorollary",
+  "files": 56,
+  "lines": 22533,
+  "ext": [],
+  "theorems": [
+   "OAI.Problem344.large_gaps_and_ratio_density"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "ProductBrown",
+  "fam": [
+   "293"
+  ],
+  "solution": "OAI.Analysis.BrownMeasure.Main",
+  "files": 292,
+  "lines": 24357,
+  "ext": [],
+  "theorems": [
+   "OAI.FiniteFactor.productBrown"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "ProjectionCounterexample",
+  "fam": [
+   "088"
+  ],
+  "solution": "OAI.Geometry.ProjectionBody.Counterexample",
+  "files": 41,
+  "lines": 3378,
+  "ext": [],
+  "theorems": [
+   "OAI.ProjectionCounterexample.universal_simplex_upper_bound_false"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "ProjectionMoments",
+  "fam": [
+   "140"
+  ],
+  "solution": "OAI.Probability.ProjectionMoments.Main",
+  "files": 46,
+  "lines": 10678,
+  "ext": [],
+  "theorems": [
+   "OAI.ProjectionMoments.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "ProjectionVolume",
+  "fam": [
+   "088"
+  ],
+  "solution": "OAI.Geometry.ProjectionVolume.ProductCounterexample",
+  "files": 29,
+  "lines": 3002,
+  "ext": [],
+  "theorems": [
+   "OAI.Paper092.product_counterexample"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "QACParity",
+  "fam": [
+   "274"
+  ],
+  "solution": "OAI.InformationTheory.QuantumCircuit.Parity",
+  "files": 21,
+  "lines": 3613,
+  "ext": [],
+  "theorems": [
+   "OAI.QAC.parity_lower_bound"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "QuadricBundles",
+  "fam": [
+   "050"
+  ],
+  "solution": "OAI.Geometry.QuadricBundles.Main",
+  "files": 34,
+  "lines": 12256,
+  "ext": [],
+  "theorems": [
+   "OAI.QuadricCounterexample.main_theorem"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "QuantitativeVanDerWaerden",
+  "fam": [
+   "160"
+  ],
+  "solution": "OAI.Combinatorics.ProgressionColoring.Main",
+  "files": 115,
+  "lines": 14837,
+  "ext": [
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.QuantitativeVanDerWaerden.uniform_lower_bound"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "QuasiRiemannHypothesis",
+  "fam": [
+   "003"
+  ],
+  "solution": "OAI.NumberTheory.DirichletL.Nonvanishing",
+  "files": 2924,
+  "lines": 486490,
+  "ext": [
+   "Lean",
+   "PrimeNumberTheoremAnd",
+   "RellichKondrachov"
+  ],
+  "theorems": [
+   "OAI.riemannZeta_ne_zero_of_seven_eighths_lt_re"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "QuinticLienard",
+  "fam": [
+   "143"
+  ],
+  "solution": "OAI.Analysis.LienardCycles.Main",
+  "files": 146,
+  "lines": 16659,
+  "ext": [],
+  "theorems": [
+   "OAI.QuinticLienard.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "RadialDensityInterval",
+  "fam": [
+   "228"
+  ],
+  "solution": "OAI.Probability.RadialTransition.DensityInterval",
+  "files": 104,
+  "lines": 14330,
+  "ext": [],
+  "theorems": [
+   "OAI.RadialTransition.densityInterval"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "RadialTransition",
+  "fam": [
+   "228"
+  ],
+  "solution": "OAI.Probability.RadialTransition.Main",
+  "files": 103,
+  "lines": 14221,
+  "ext": [],
+  "theorems": [
+   "OAI.RadialTransition.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "RamseyFive",
+  "fam": [
+   "170"
+  ],
+  "solution": "OAI.Combinatorics.RamseyFive.Main",
+  "files": 482,
+  "lines": 73678,
+  "ext": [],
+  "theorems": [
+   "OAI.SharpRamseyFive.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "RandomizedMeanPayoff",
+  "fam": [
+   "104"
+  ],
+  "solution": "OAI.Computability.RandomMean.Main",
+  "files": 89,
+  "lines": 27355,
+  "ext": [],
+  "theorems": [
+   "OAI.randomized_quasipolynomial_mean_payoff"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "RationalHitting",
+  "fam": [
+   "116"
+  ],
+  "solution": "OAI.Computability.RationalHitting.Main",
+  "files": 53,
+  "lines": 15304,
+  "ext": [],
+  "theorems": [
+   "OAI.RationalHitting.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "RealL1Renorming",
+  "fam": [
+   "330"
+  ],
+  "solution": "OAI.Analysis.LipschitzFree.Renorming",
+  "files": 33,
+  "lines": 4516,
+  "ext": [],
+  "theorems": [
+   "OAI.DiscreteFree.real_l1_quantitative_renorming"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "RecursivePotentials",
+  "fam": [
+   "331"
+  ],
+  "solution": "OAI.Analysis.RecursivePotentials.Challenge",
+  "files": 12,
+  "lines": 10140,
+  "ext": [],
+  "theorems": [
+   "OAI.ComparatorModel.RecursivePotentials.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "ReflexiveFixedPoints",
+  "fam": [
+   "328"
+  ],
+  "solution": "OAI.Analysis.Nonexpansive.Main",
+  "files": 86,
+  "lines": 11540,
+  "ext": [
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.ReflexiveFixedPoints.exists_fixedPoint_of_canonicallyReflexive"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "RegularParity",
+  "fam": [
+   "274"
+  ],
+  "solution": "OAI.InformationTheory.QuantumCircuit.Main",
+  "files": 22,
+  "lines": 3658,
+  "ext": [],
+  "theorems": [
+   "OAI.QAC.parity_lower_bound_polynomial_size"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "RelativeGeneration",
+  "fam": [
+   "296"
+  ],
+  "solution": "OAI.Analysis.RelativeGeneration.Main",
+  "files": 102,
+  "lines": 36021,
+  "ext": [
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.RelativeGeneration.main_theorem"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "RieszQuantitative",
+  "fam": [
+   "081"
+  ],
+  "solution": "OAI.Analysis.RieszRectifiability.Main",
+  "files": 824,
+  "lines": 65638,
+  "ext": [
+   "FixedPointTheorems"
+  ],
+  "theorems": [
+   "OAI.RieszRectifiability.quantitative_higher_codimension_riesz_rectifiability"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "Rokhlin",
+  "fam": [
+   "145"
+  ],
+  "solution": "OAI.Dynamics.MultipleMixing.Main",
+  "files": 13,
+  "lines": 27889,
+  "ext": [],
+  "theorems": [
+   "OAI.Rokhlin.mixing_all_finite_orders"
+  ],
+  "defs": [
+   "OAI.Rokhlin.timeMap",
+   "OAI.Rokhlin.IsMixing",
+   "OAI.Rokhlin.layoutTime",
+   "OAI.Rokhlin.MixingOfOrder"
+  ]
+ },
+ {
+  "cfg": "RuledCovering",
+  "fam": [
+   "100"
+  ],
+  "solution": "OAI.Geometry.RuledCovering.Main",
+  "files": 30,
+  "lines": 4303,
+  "ext": [],
+  "theorems": [
+   "OAI.RuledApproximation.fullMain"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "RyserCovering",
+  "fam": [
+   "162"
+  ],
+  "solution": "OAI.Combinatorics.Ryser.Construction.Main",
+  "files": 217,
+  "lines": 26678,
+  "ext": [
+   "Lean",
+   "all"
+  ],
+  "theorems": [
+   "OAI.RyserCoveringCounterexample.exists_prime_eventually_counterexampleRank"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "RyserOddExtensions",
+  "fam": [
+   "162"
+  ],
+  "solution": "OAI.Combinatorics.Ryser.OddExtensions",
+  "files": 219,
+  "lines": 26954,
+  "ext": [
+   "Lean",
+   "all"
+  ],
+  "theorems": [
+   "OAI.RyserOdd.eventualOddFailures_and_infinite"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SATComputability",
+  "fam": [
+   "235"
+  ],
+  "solution": "OAI.Probability.SATComputability.Main",
+  "files": 592,
+  "lines": 87536,
+  "ext": [],
+  "theorems": [
+   "OAI.FixedClauseThreshold.Computability.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SATSharpness",
+  "fam": [
+   "235"
+  ],
+  "solution": "OAI.Probability.SATVariance.Sharpness",
+  "files": 26,
+  "lines": 5273,
+  "ext": [],
+  "theorems": [
+   "OAI.RandomKSAT.sharpness"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SATVariance",
+  "fam": [
+   "235"
+  ],
+  "solution": "OAI.Probability.SATVariance.Main",
+  "files": 35,
+  "lines": 6740,
+  "ext": [],
+  "theorems": [
+   "OAI.RandomKSAT.variance_main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SKBarriers",
+  "fam": [
+   "227"
+  ],
+  "solution": "OAI.Probability.SKBarriers.Main",
+  "files": 574,
+  "lines": 56621,
+  "ext": [],
+  "theorems": [
+   "OAI.SK.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SKFullSupport",
+  "fam": [
+   "281"
+  ],
+  "solution": "OAI.Probability.SKSupport.Main",
+  "files": 135,
+  "lines": 20357,
+  "ext": [],
+  "theorems": [
+   "OAI.ZeroTemperatureSK.full_support"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SKHighTemperature",
+  "fam": [
+   "227"
+  ],
+  "solution": "OAI.Probability.SKGap.Main",
+  "files": 556,
+  "lines": 100110,
+  "ext": [],
+  "theorems": [
+   "OAI.SKGap.sk_main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SKRatio",
+  "fam": [
+   "227"
+  ],
+  "solution": "OAI.Probability.SKRatio.Main",
+  "files": 260,
+  "lines": 45616,
+  "ext": [],
+  "theorems": [
+   "OAI.SKRatio.ratio_cutoff"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SKValue",
+  "fam": [
+   "281"
+  ],
+  "solution": "OAI.Probability.SKValue.Main",
+  "files": 212,
+  "lines": 29844,
+  "ext": [],
+  "theorems": [
+   "OAI.SKValue.value_consequences"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SLELowerPositivity",
+  "fam": [
+   "230"
+  ],
+  "solution": "OAI.Probability.SLE.LowerPositivity",
+  "files": 65,
+  "lines": 45103,
+  "ext": [],
+  "theorems": [
+   "OAI.SLEExactGauge.sourceLowerMain_proved"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "Saxl",
+  "fam": [
+   "205"
+  ],
+  "solution": "OAI.RepresentationTheory.Saxl.Main",
+  "files": 38,
+  "lines": 7558,
+  "ext": [],
+  "theorems": [
+   "OAI.Saxl.saxl_conjecture"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SecondKahnKalai",
+  "fam": [
+   "176"
+  ],
+  "solution": "OAI.Combinatorics.GraphThreshold.Main",
+  "files": 37,
+  "lines": 6753,
+  "ext": [],
+  "theorems": [
+   "OAI.LeanBlast.SecondKahnKalai.secondKahnKalaiBounds"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SelfSimilar",
+  "fam": [
+   "148"
+  ],
+  "solution": "OAI.MeasureTheory.SelfSimilar.Main",
+  "files": 57,
+  "lines": 11278,
+  "ext": [],
+  "theorems": [
+   "OAI.EntropyRateDimension.entropy_rate_dimension"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SelfSimilarCorollaries",
+  "fam": [
+   "148"
+  ],
+  "solution": "OAI.MeasureTheory.SelfSimilar.DimensionCorollaries",
+  "files": 64,
+  "lines": 12093,
+  "ext": [],
+  "theorems": [
+   "OAI.EntropyRateDimension.Extensions.homogeneous_dimension_direct",
+   "OAI.CorSetReference.cor_set"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SensitivitySeparation",
+  "fam": [
+   "132"
+  ],
+  "solution": "OAI.Combinatorics.Sensitivity.Separation",
+  "files": 42,
+  "lines": 3836,
+  "ext": [],
+  "theorems": [
+   "OAI.Paper320.quantitative_separation"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SeparableQuotientNegative",
+  "fam": [
+   "323"
+  ],
+  "solution": "OAI.Analysis.SeparableQuotients.Main",
+  "files": 51,
+  "lines": 14178,
+  "ext": [],
+  "theorems": [
+   "OAI.SeparableQuotient.negative_main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SeymourSecondNeighborhood",
+  "fam": [
+   "173"
+  ],
+  "solution": "OAI.Combinatorics.SecondNeighborhood.Main",
+  "files": 43,
+  "lines": 4861,
+  "ext": [
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.SeymourSecondNeighborhood.exists_goodVertex"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SharpCAT0Filling",
+  "fam": [
+   "337"
+  ],
+  "solution": "OAI.Geometry.CAT0Fillings.Main",
+  "files": 330,
+  "lines": 50219,
+  "ext": [],
+  "theorems": [
+   "OAI.CAT0Fillings.sharp_integral_filling"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SharpLogRamsey",
+  "fam": [
+   "170"
+  ],
+  "solution": "OAI.Combinatorics.SharpRamsey.Main",
+  "files": 408,
+  "lines": 63795,
+  "ext": [],
+  "theorems": [
+   "OAI.SharpLogRamsey.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SharpThreshold",
+  "fam": [
+   "186"
+  ],
+  "solution": "OAI.Combinatorics.SharpThreshold.Main",
+  "files": 78,
+  "lines": 7699,
+  "ext": [],
+  "theorems": [
+   "OAI.Problem313.sharp_threshold_width"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "ShortEgyptianFractions",
+  "fam": [
+   "025"
+  ],
+  "solution": "OAI.NumberTheory.ShortEgyptian.Main",
+  "files": 58,
+  "lines": 8140,
+  "ext": [],
+  "theorems": [
+   "OAI.ShortEgyptian.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SidorenkoCounterexample",
+  "fam": [
+   "161"
+  ],
+  "solution": "OAI.Combinatorics.Sidorenko.RandomHost",
+  "files": 35,
+  "lines": 23761,
+  "ext": [],
+  "theorems": [
+   "OAI.SidorenkoCounterexample.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SiegelZeros",
+  "fam": [
+   "003"
+  ],
+  "solution": "OAI.NumberTheory.SiegelZeros.Main",
+  "files": 306,
+  "lines": 69818,
+  "ext": [
+   "Lean",
+   "PrimeNumberTheoremAnd"
+  ],
+  "theorems": [
+   "OAI.SiegelZeros.WeightedTorusJets.exists_absolute_real_zero_gap",
+   "OAI.SiegelZeros.WeightedTorusJets.dirichletRealZeroBound_proof"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SignedFiniteBand",
+  "fam": [
+   "085"
+  ],
+  "solution": "OAI.Analysis.SignedDisk.Main",
+  "files": 39,
+  "lines": 17107,
+  "ext": [],
+  "theorems": [
+   "OAI.SignedDisk.CenteredDiskEndpoint.main_signed_finite_band"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SignedSweepMoment",
+  "fam": [
+   "238"
+  ],
+  "solution": "OAI.Probability.SignedSweeps.Main",
+  "files": 174,
+  "lines": 25778,
+  "ext": [],
+  "theorems": [
+   "OAI.SignedSweeps.signed_occurrence_moment_bound"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SimpleAmenable",
+  "fam": [
+   "253"
+  ],
+  "solution": "OAI.GroupTheory.SimpleAmenable.Main",
+  "files": 550,
+  "lines": 84848,
+  "ext": [],
+  "theorems": [
+   "OAI.SimpleAmenable.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SimpleOvergroups",
+  "fam": [
+   "250"
+  ],
+  "solution": "OAI.GroupTheory.SimpleOvergroups.Main",
+  "files": 238,
+  "lines": 90766,
+  "ext": [],
+  "theorems": [
+   "OAI.SimpleFInftyOvergroups.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SingleFold",
+  "fam": [
+   "242"
+  ],
+  "solution": "OAI.NumberTheory.SingleFold.Main",
+  "files": 28,
+  "lines": 7598,
+  "ext": [],
+  "theorems": [
+   "OAI.SingleFold.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SingleLatticeCovering",
+  "fam": [
+   "092"
+  ],
+  "solution": "OAI.Geometry.LatticeCovering.Main",
+  "files": 41,
+  "lines": 25913,
+  "ext": [],
+  "theorems": [
+   "OAI.SingleLatticeCovering.single_lattice_covering"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SingletonLoopMatching",
+  "fam": [
+   "113"
+  ],
+  "solution": "OAI.Computability.LoopMatching.Endpoint",
+  "files": 136,
+  "lines": 17234,
+  "ext": [],
+  "theorems": [
+   "OAI.LoopMatching.fullEndpoint"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SmoothInitialForm",
+  "fam": [
+   "108"
+  ],
+  "solution": "OAI.Algebra.Determinantal.InitialForm",
+  "files": 17,
+  "lines": 6551,
+  "ext": [],
+  "theorems": [
+   "OAI.PermanentBorder.smooth_initial_form_lower_bound"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SmoothObstruction",
+  "fam": [
+   "152"
+  ],
+  "solution": "OAI.Dynamics.SmoothObstruction.Main",
+  "files": 53,
+  "lines": 30090,
+  "ext": [],
+  "theorems": [
+   "OAI.SmoothObstruction.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SmoothYau",
+  "fam": [
+   "350"
+  ],
+  "solution": "OAI.Geometry.SmoothYau.Main",
+  "files": 436,
+  "lines": 99645,
+  "ext": [],
+  "theorems": [
+   "OAI.YauCounterexamples.sphere_three",
+   "OAI.YauCounterexamples.sphere_two_torus_two"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SnakyCertificate",
+  "fam": [
+   "187"
+  ],
+  "solution": "OAI.Combinatorics.SnakyCertificate.Main",
+  "files": 51,
+  "lines": 20237,
+  "ext": [],
+  "theorems": [
+   "OAI.SnakyCertificate.certificate_correct"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SnakyConditional",
+  "fam": [
+   "187"
+  ],
+  "solution": "OAI.GameTheory.SnakyConditional.Main",
+  "files": 209,
+  "lines": 37837,
+  "ext": [],
+  "theorems": [
+   "OAI.SnakyConditional.snaky_winning_strategy_with_legal_states"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SnakyTwentyOne",
+  "fam": [
+   "187"
+  ],
+  "solution": "OAI.GameTheory.SnakyTwentyOne.Main",
+  "files": 94,
+  "lines": 71326,
+  "ext": [],
+  "theorems": [
+   "OAI.SnakyPrototype.snaky_winning_strategy_21_with_legal_states"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SoftChannel204",
+  "fam": [
+   "119"
+  ],
+  "solution": "OAI.InformationTheory.SoftChannel.Main",
+  "files": 70,
+  "lines": 11590,
+  "ext": [],
+  "theorems": [
+   "OAI.SoftChannel204.fullMain"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SolenoidalSheetPrograms",
+  "fam": [
+   "376"
+  ],
+  "solution": "OAI.MathematicalPhysics.SheetFlows.SheetProgram",
+  "files": 26,
+  "lines": 6744,
+  "ext": [],
+  "theorems": [
+   "OAI.Solenoidal.sheet_theorem"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SphericalField",
+  "fam": [
+   "222"
+  ],
+  "solution": "OAI.Probability.SphericalField.Main",
+  "files": 142,
+  "lines": 25018,
+  "ext": [],
+  "theorems": [
+   "OAI.SphericalPerceptron.spherical_linear_field_formula"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SpinAngle",
+  "fam": [
+   "238"
+  ],
+  "solution": "OAI.RepresentationTheory.SpinAngle.TypeAngle",
+  "files": 3,
+  "lines": 5259,
+  "ext": [],
+  "theorems": [
+   "OAI.SpinAngle.TypeAngle.one_sided_type_angle"
+  ],
+  "defs": [
+   "OAI.SpinAngle.TypeAngle.row",
+   "OAI.SpinAngle.TypeAngle.column",
+   "OAI.SpinAngle.TypeAngle.phi"
+  ]
+ },
+ {
+  "cfg": "SplitTangentIntegrability",
+  "fam": [
+   "052"
+  ],
+  "solution": "OAI.Geometry.SplitTangent.RationalVariation",
+  "files": 15,
+  "lines": 17281,
+  "ext": [],
+  "theorems": [
+   "OAI.SplitTangent.integrability_main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SquareDifference",
+  "fam": [
+   "182"
+  ],
+  "solution": "OAI.Combinatorics.SquareDifference.Main",
+  "files": 81,
+  "lines": 24221,
+  "ext": [],
+  "theorems": [
+   "OAI.SquareDifference.power_saving"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SquareRootDegree",
+  "fam": [
+   "192"
+  ],
+  "solution": "OAI.Combinatorics.BooleanFunctions.Main",
+  "files": 21,
+  "lines": 3641,
+  "ext": [],
+  "theorems": [
+   "OAI.SquareRootDegree.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "StableCoordinateFour",
+  "fam": [
+   "049"
+  ],
+  "solution": "OAI.AlgebraicGeometry.StableCoordinate.Principal",
+  "files": 109,
+  "lines": 14606,
+  "ext": [],
+  "theorems": [
+   "OAI.StableCoordinate.principal_package"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "StandardMapComponents",
+  "fam": [
+   "146"
+  ],
+  "solution": "OAI.Dynamics.StandardMap.ComponentsMain",
+  "files": 274,
+  "lines": 54864,
+  "ext": [],
+  "theorems": [
+   "OAI.StandardMapEntropy.main_components"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "StandardMapEntropy",
+  "fam": [
+   "146"
+  ],
+  "solution": "OAI.Dynamics.StandardMap.EntropyEndpoint",
+  "files": 205,
+  "lines": 24683,
+  "ext": [],
+  "theorems": [
+   "OAI.StandardMapEntropy.main_entropy"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "StandardMapLyapunov",
+  "fam": [
+   "146"
+  ],
+  "solution": "OAI.Dynamics.StandardMap.EntropyLyapunov",
+  "files": 211,
+  "lines": 26018,
+  "ext": [],
+  "theorems": [
+   "OAI.StandardMapEntropy.main_entropy_complete"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SteinitzBergstrom",
+  "fam": [
+   "097"
+  ],
+  "solution": "OAI.Analysis.Steinitz.Main",
+  "files": 29,
+  "lines": 15082,
+  "ext": [],
+  "theorems": [
+   "OAI.EuclideanSteinitzBergstrom.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "StrictMeans",
+  "fam": [
+   "072"
+  ],
+  "solution": "OAI.Analysis.StrictMeans.Main",
+  "files": 94,
+  "lines": 15740,
+  "ext": [],
+  "theorems": [
+   "OAI.StrictInverseFirstPower.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "StrongKadisonKastler",
+  "fam": [
+   "289"
+  ],
+  "solution": "OAI.Analysis.KadisonKastler.StrongStability",
+  "files": 2652,
+  "lines": 326060,
+  "ext": [],
+  "theorems": [
+   "OAI.KadisonKastler.universal_strong_stability"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "StrongThinTree",
+  "fam": [
+   "174"
+  ],
+  "solution": "OAI.Combinatorics.ThinTrees.Main",
+  "files": 72,
+  "lines": 17363,
+  "ext": [],
+  "theorems": [
+   "OAI.StrongThinTree.strongThinTree"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "StronglyRayleighDPP",
+  "fam": [
+   "231"
+  ],
+  "solution": "OAI.Probability.StrongRayleigh.Main",
+  "files": 107,
+  "lines": 12110,
+  "ext": [],
+  "theorems": [
+   "OAI.Problem336AdditiveD139.finite_strongly_rayleigh_response",
+   "OAI.Problem336AdditiveD139.strongly_rayleigh_group_factor",
+   "OAI.Problem336AdditiveD139.finite_positive_contraction_dpp_is_strongly_rayleigh",
+   "OAI.Problem336AdditiveD139.countable_positive_contraction_dpp_exists_unique",
+   "OAI.Problem336AdditiveD139.invariant_positive_contraction_dpp_factor",
+   "OAI.Problem336AdditiveD139.translation_invariant_kernel_dpp_factor"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "StructuralCrouzeix",
+  "fam": [
+   "325"
+  ],
+  "solution": "OAI.Analysis.StructuralCrouzeix.Endpoint",
+  "files": 60,
+  "lines": 15245,
+  "ext": [],
+  "theorems": [
+   "OAI.StructuralCrouzeixReference.challenge"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SubpolynomialLp",
+  "fam": [
+   "094"
+  ],
+  "solution": "OAI.Analysis.LpDimension.Main",
+  "files": 44,
+  "lines": 7844,
+  "ext": [],
+  "theorems": [
+   "OAI.SubpolynomialLp.source_main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SubsphereCurrent",
+  "fam": [
+   "140"
+  ],
+  "solution": "OAI.Probability.Subsphere.Main",
+  "files": 25,
+  "lines": 9970,
+  "ext": [],
+  "theorems": [
+   "OAI.SubsphereCurrent.full_current_main_scope"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "Superstring",
+  "fam": [
+   "128"
+  ],
+  "solution": "OAI.Computability.Superstring.Main",
+  "files": 51,
+  "lines": 20361,
+  "ext": [],
+  "theorems": [
+   "OAI.Superstring.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SurfaceConeCandidateSupport",
+  "fam": [
+   "195"
+  ],
+  "solution": "OAI.AlgebraicGeometry.SurfaceCones.CandidateRing",
+  "files": 11,
+  "lines": 7844,
+  "ext": [],
+  "theorems": [
+   "OAI.SmallCM.candidate_ring_properties"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SurfaceImmersion",
+  "fam": [
+   "333"
+  ],
+  "solution": "OAI.Geometry.SurfaceImmersion.Main",
+  "files": 1883,
+  "lines": 167865,
+  "ext": [
+   "SphereEversion"
+  ],
+  "theorems": [
+   "OAI.ClosedSurfaceR4.FiniteOrderSmoothing.smooth_isometric_immersion"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SwitchChain",
+  "fam": [
+   "131"
+  ],
+  "solution": "OAI.Probability.SwitchChain.Main",
+  "files": 165,
+  "lines": 22691,
+  "ext": [],
+  "theorems": [
+   "OAI.Problem315.switch_chain_main",
+   "OAI.Problem315.switch_chain_tv_bound",
+   "OAI.Problem315.switch_connectivity"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SymmetricDomains",
+  "fam": [
+   "058"
+  ],
+  "solution": "OAI.Analysis.SymmetricDomains.Main",
+  "files": 335,
+  "lines": 48720,
+  "ext": [],
+  "theorems": [
+   "OAI.Release061.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SymmetricMahlerEquality",
+  "fam": [
+   "087"
+  ],
+  "solution": "OAI.Analysis.Mahler.Classification",
+  "files": 237,
+  "lines": 28389,
+  "ext": [],
+  "theorems": [
+   "OAI.SymmetricMahler.symmetric_mahler_equality"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "SymmetricPolar",
+  "fam": [
+   "087"
+  ],
+  "solution": "OAI.Geometry.PolarProducts.Main",
+  "files": 46,
+  "lines": 12175,
+  "ext": [],
+  "theorems": [
+   "OAI.SymmetricPolar.symmetric_polar_main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "Tachikawa",
+  "fam": [
+   "199"
+  ],
+  "solution": "OAI.RingTheory.Tachikawa.Counterexample",
+  "files": 31,
+  "lines": 28942,
+  "ext": [],
+  "theorems": [
+   "OAI.Tachikawa.main_theorem"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "TalagrandDiscreteConvexity",
+  "fam": [
+   "175"
+  ],
+  "solution": "OAI.Combinatorics.DiscreteConvexity.Main",
+  "files": 36,
+  "lines": 4259,
+  "ext": [
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.TalagrandDiscreteConvexity.talagrand_discrete_convexity"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "TalagrandExpectationThreshold",
+  "fam": [
+   "175"
+  ],
+  "solution": "OAI.Combinatorics.ExpectationThreshold.Main",
+  "files": 47,
+  "lines": 4834,
+  "ext": [
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.TalagrandThreshold.talagrand_expectation_threshold_equivalence"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "TamingCompatibility",
+  "fam": [
+   "342"
+  ],
+  "solution": "OAI.Geometry.TamingCompatibility.Main",
+  "files": 582,
+  "lines": 83060,
+  "ext": [],
+  "theorems": [
+   "OAI.TamingCompatibility.taming_implies_compatibility"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "ThomasonModelStructures",
+  "fam": [
+   "317"
+  ],
+  "solution": "OAI.CategoryTheory.Thomason.RankedFaithfulness",
+  "files": 85,
+  "lines": 65284,
+  "ext": [],
+  "theorems": [
+   "OAI.Thomason.main",
+   "OAI.Thomason.nerveDetection_allDimensions"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "ThompsonNonamenability",
+  "fam": [
+   "248"
+  ],
+  "solution": "OAI.GroupTheory.Thompson.Main",
+  "files": 68,
+  "lines": 9457,
+  "ext": [
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.ThompsonNonamenability.thompson_F_nonamenable_composition"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "ThorpFirstReciprocal",
+  "fam": [
+   "238"
+  ],
+  "solution": "OAI.Probability.ThorpShuffle.FirstMain",
+  "files": 51,
+  "lines": 8680,
+  "ext": [],
+  "theorems": [
+   "OAI.Thorp.Current.first_reciprocal_main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "ThorpRemaining",
+  "fam": [
+   "238"
+  ],
+  "solution": "OAI.Probability.ThorpResults.FullDevelopment",
+  "files": 92,
+  "lines": 30574,
+  "ext": [],
+  "theorems": [
+   "OAI.ThorpResults.remaining_main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "ThorpRouting",
+  "fam": [
+   "238"
+  ],
+  "solution": "OAI.Probability.ThorpRouting.Main",
+  "files": 170,
+  "lines": 142145,
+  "ext": [],
+  "theorems": [
+   "OAI.ThorpNine.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "ThorpWeightedCompatibility",
+  "fam": [
+   "238"
+  ],
+  "solution": "OAI.Probability.ThorpCompatibility.Main",
+  "files": 34,
+  "lines": 3341,
+  "ext": [],
+  "theorems": [
+   "OAI.ThorpCompatibility.weightedCompatibility_main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "ThreeMachine",
+  "fam": [
+   "124"
+  ],
+  "solution": "OAI.Computability.Scheduling.Main",
+  "files": 53,
+  "lines": 18572,
+  "ext": [],
+  "theorems": [
+   "OAI.ThreeMachine.main_theorem"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "ThreeStateSupercritical",
+  "fam": [
+   "229"
+  ],
+  "solution": "OAI.Probability.ThreeState.Main",
+  "files": 27,
+  "lines": 7691,
+  "ext": [],
+  "theorems": [
+   "OAI.ThreeState.regular_supercritical",
+   "OAI.ThreeState.poisson_supercritical"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "ThreeStateTreeClauses",
+  "fam": [
+   "229"
+  ],
+  "solution": "OAI.Probability.ThreeStateClauses.Main",
+  "files": 31,
+  "lines": 7792,
+  "ext": [],
+  "theorems": [
+   "OAI.ThreeState.TreeClauses.Tree.regular_reconstructs_above_KS",
+   "OAI.ThreeState.TreeClauses.Tree.poisson_reconstructs_above_KS"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "ThreeTorus",
+  "fam": [
+   "144"
+  ],
+  "solution": "OAI.Dynamics.ThreeTorus.Main",
+  "files": 37,
+  "lines": 33818,
+  "ext": [],
+  "theorems": [
+   "OAI.ThreeTorus.simple_lebesgue_spectrum"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "TingleySphereIsometry",
+  "fam": [
+   "322"
+  ],
+  "solution": "OAI.Analysis.SphereIsometry.Main",
+  "files": 67,
+  "lines": 9273,
+  "ext": [
+   "Lean"
+  ],
+  "theorems": [
+   "OAI.Tingley.tingley_sphere_isometry_full"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "TorsionFreeHyperbolic",
+  "fam": [
+   "252"
+  ],
+  "solution": "OAI.GroupTheory.Hyperbolic.Main",
+  "files": 29,
+  "lines": 10737,
+  "ext": [],
+  "theorems": [
+   "OAI.Release075.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "TorsionFreeZeroDivisors",
+  "fam": [
+   "196"
+  ],
+  "solution": "OAI.Algebra.GroupRing.Main",
+  "files": 123,
+  "lines": 44340,
+  "ext": [],
+  "theorems": [
+   "OAI.TorsionFreeZeroDivisors.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "TotientAsymptotic",
+  "fam": [
+   "024"
+  ],
+  "solution": "OAI.NumberTheory.TotientAsymptotic.UnconditionalMain",
+  "files": 809,
+  "lines": 72764,
+  "ext": [
+   "PrimeNumberTheoremAnd"
+  ],
+  "theorems": [
+   "OAI.TotientAsymptotic.totient_asymptotic_formula",
+   "OAI.TotientAsymptotic.weighted_totient_asymptotic",
+   "OAI.TotientAsymptotic.weighted_totient_one_two",
+   "OAI.TotientAsymptotic.coefficient_nonnegative"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "TotientCompanionZero",
+  "fam": [
+   "024"
+  ],
+  "solution": "OAI.NumberTheory.TotientAsymptotic.Main",
+  "files": 811,
+  "lines": 73021,
+  "ext": [
+   "PrimeNumberTheoremAnd"
+  ],
+  "theorems": [
+   "OAI.TotientAsymptotic.companion_zero_case"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "TraceIdealTransportSupport",
+  "fam": [
+   "301"
+  ],
+  "solution": "OAI.Analysis.TraceCone.IdealTransport",
+  "files": 3,
+  "lines": 1147,
+  "ext": [],
+  "theorems": [
+   "OAI.TraceConeClassification.TraceConeEquiv.idealOrderIso_finIdeal",
+   "OAI.TraceConeClassification.TraceConeEquiv.idealOrderIso_zeroIdeal",
+   "OAI.TraceConeClassification.closed_ideal_weight_exists",
+   "OAI.TraceConeClassification.ExtendedTrace.zero_mem_finiteSquareSet",
+   "OAI.TraceConeClassification.ExtendedTrace.star_mem_finiteSquareSet",
+   "OAI.TraceConeClassification.ExtendedTrace.smul_mem_finiteSquareSet",
+   "OAI.TraceConeClassification.ExtendedTrace.add_mem_finiteSquareSet",
+   "OAI.TraceConeClassification.ExtendedTrace.mul_mem_finiteSquareSet_left",
+   "OAI.TraceConeClassification.ExtendedTrace.isClosed_finiteIdeal",
+   "OAI.TraceConeClassification.ExtendedTrace.mul_mem_finiteIdeal_left",
+   "OAI.TraceConeClassification.ExtendedTrace.mul_mem_finiteIdeal_right",
+   "OAI.TraceConeClassification.ExtendedTrace.lowerSemicontinuous_supportWeight",
+   "OAI.TraceConeClassification.ClosedIdeal.weight_idempotent",
+   "OAI.TraceConeClassification.ClosedIdeal.finiteIdeal_weight",
+   "OAI.TraceConeClassification.ClosedIdeal.le_iff_add_weight",
+   "OAI.TraceConeClassification.ExtendedTrace.idempotent_eq_weight",
+   "OAI.TraceConeClassification.closedIdealEquivOfAdditive_weight"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "TraceReconstruction",
+  "fam": [
+   "122"
+  ],
+  "solution": "OAI.Probability.TraceReconstruction",
+  "files": 31,
+  "lines": 33984,
+  "ext": [],
+  "theorems": [
+   "OAI.TraceReconstruction.quantitative_sample_lower_bound",
+   "OAI.TraceReconstruction.superpolynomial_one_trace",
+   "OAI.TraceReconstruction.superpolynomial_sample_complexity"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "TreeEdit",
+  "fam": [
+   "099"
+  ],
+  "solution": "OAI.Combinatorics.TreeEdit.TorusLowerBound",
+  "files": 22,
+  "lines": 5058,
+  "ext": [],
+  "theorems": [
+   "OAI.TreeEdit.binary_torus"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "TriangleFace",
+  "fam": [
+   "113"
+  ],
+  "solution": "OAI.Combinatorics.TriangleFace.Main",
+  "files": 37,
+  "lines": 7420,
+  "ext": [],
+  "theorems": [
+   "OAI.TriangleFace198.triangle_expansion_face"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "TriangleRemoval",
+  "fam": [
+   "188"
+  ],
+  "solution": "OAI.Combinatorics.TriangleRemoval.Main",
+  "files": 287,
+  "lines": 33800,
+  "ext": [],
+  "theorems": [
+   "OAI.SharpTerminalLeave.sharp_terminal_leave"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "TriangularCovering",
+  "fam": [
+   "100"
+  ],
+  "solution": "OAI.Geometry.TriangularCovering.Main",
+  "files": 9,
+  "lines": 2247,
+  "ext": [],
+  "theorems": [
+   "OAI.TriangularCovering.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "TriangularEnergy",
+  "fam": [
+   "090"
+  ],
+  "solution": "OAI.Analysis.Triangular.Energy.Universal",
+  "files": 227,
+  "lines": 65932,
+  "ext": [],
+  "theorems": [
+   "OAI.AtomicTriangular.universal_energy_minimum"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "TriangularGaussian",
+  "fam": [
+   "090"
+  ],
+  "solution": "OAI.Analysis.Triangular.GaussianMinorants",
+  "files": 216,
+  "lines": 64715,
+  "ext": [],
+  "theorems": [
+   "OAI.AtomicTriangular.sharp_gaussian_minorants_with_construction"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "TriangularHilbert",
+  "fam": [
+   "082"
+  ],
+  "solution": "OAI.Analysis.TriangularHilbert.Main",
+  "files": 105,
+  "lines": 10861,
+  "ext": [],
+  "theorems": [
+   "OAI.TriangularHilbert.main_estimate"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "TruffetCounterexample",
+  "fam": [
+   "104"
+  ],
+  "solution": "OAI.Optimization.Tropical.TruffetCounterexample",
+  "files": 2,
+  "lines": 269,
+  "ext": [],
+  "theorems": [
+   "OAI.TruffetV4Counterexample.finite_execution_not_optimal"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "TwoWayComplementation",
+  "fam": [
+   "129"
+  ],
+  "solution": "OAI.Combinatorics.TwoWayAutomata.Main",
+  "files": 19,
+  "lines": 4088,
+  "ext": [],
+  "theorems": [
+   "OAI.TwoWayComplementation.complementation_lower_bound_finite"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "TwoWayDeterminization",
+  "fam": [
+   "129"
+  ],
+  "solution": "OAI.Combinatorics.TwoWayAutomata.ExplicitFamily",
+  "files": 41,
+  "lines": 8477,
+  "ext": [],
+  "theorems": [
+   "OAI.TwoWayComplementation.explicit_family_main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "TypeSystemNormalization",
+  "fam": [
+   "245"
+  ],
+  "solution": "OAI.Computability.TypeSystem.Normalization",
+  "files": 33,
+  "lines": 29547,
+  "ext": [],
+  "theorems": [
+   "OAI.PureTypeSystem.weak_implies_strong"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "UniformCommutator",
+  "fam": [
+   "288"
+  ],
+  "solution": "OAI.Analysis.Commutator.Main",
+  "files": 656,
+  "lines": 67256,
+  "ext": [],
+  "theorems": [
+   "OAI.Kadison.uniform_commutator"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "UniformFourier",
+  "fam": [
+   "130"
+  ],
+  "solution": "OAI.Computability.FourierTransform.Main",
+  "files": 89,
+  "lines": 15329,
+  "ext": [],
+  "theorems": [
+   "OAI.PowerSaving.transform_main",
+   "OAI.PowerSaving.convolution_main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "UniformGamma",
+  "fam": [
+   "291"
+  ],
+  "solution": "OAI.Analysis.TracialSplitting.Challenge",
+  "files": 51,
+  "lines": 17302,
+  "ext": [],
+  "theorems": [
+   "OAI.ComparatorModel.CurrentMain.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "UniformKServer",
+  "fam": [
+   "110"
+  ],
+  "solution": "OAI.Combinatorics.UniformKServer.Main",
+  "files": 410,
+  "lines": 50260,
+  "ext": [],
+  "theorems": [
+   "OAI.UniformKServer.uniform_squared_logarithmic_main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "UniformSparsestCut",
+  "fam": [
+   "117"
+  ],
+  "solution": "OAI.Combinatorics.SparsestCut.Main",
+  "files": 55,
+  "lines": 9934,
+  "ext": [],
+  "theorems": [
+   "OAI.UniformSparsestCut.mainGap"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "UniqueGamesTheorem",
+  "fam": [
+   "102"
+  ],
+  "solution": "OAI.Computability.UniqueGames.Main",
+  "files": 478,
+  "lines": 186782,
+  "ext": [
+   "Lean",
+   "Std"
+  ],
+  "theorems": [
+   "OAI.UniqueGamesTheorem.theorem11"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "UniversalFInfinity",
+  "fam": [
+   "250"
+  ],
+  "solution": "OAI.GroupTheory.UniversalGroup.Main",
+  "files": 50,
+  "lines": 19991,
+  "ext": [],
+  "theorems": [
+   "OAI.UniversalFInfinity.universal_group_of_type_FInfinity"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "UniversalTensorSquares",
+  "fam": [
+   "205"
+  ],
+  "solution": "OAI.RepresentationTheory.UniversalSquare.Main",
+  "files": 573,
+  "lines": 217185,
+  "ext": [],
+  "theorems": [
+   "OAI.UniversalTensorSquares.universal_tensor_square"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "VariableWL",
+  "fam": [
+   "133"
+  ],
+  "solution": "OAI.Combinatorics.VariableWL.Completeness",
+  "files": 61,
+  "lines": 24602,
+  "ext": [],
+  "theorems": [
+   "OAI.VariableWL.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "VelocityHemisphere",
+  "fam": [
+   "220"
+  ],
+  "solution": "OAI.Probability.Ballisticity.VelocityHemisphere",
+  "files": 585,
+  "lines": 116839,
+  "ext": [],
+  "theorems": [
+   "OAI.DirectionalTransience.positive_probability_transience_velocity_hemisphere"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "VertexAlgebraNet",
+  "fam": [
+   "280"
+  ],
+  "solution": "OAI.RepresentationTheory.VertexAlgebra.MinimalComparator",
+  "files": 77,
+  "lines": 28634,
+  "ext": [],
+  "theorems": [
+   "OAI.MinimalVertex.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "VertexCover",
+  "fam": [
+   "102"
+  ],
+  "solution": "OAI.Computability.VertexCover.Main",
+  "files": 351,
+  "lines": 65911,
+  "ext": [],
+  "theorems": [
+   "OAI.VertexCover.explicit_cover_gap",
+   "OAI.VertexCover.every_fixed_factor_below_two"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "VlasovMaxwell",
+  "fam": [
+   "362"
+  ],
+  "solution": "OAI.Analysis.VlasovMaxwell.Main",
+  "files": 207,
+  "lines": 89993,
+  "ext": [],
+  "theorems": [
+   "OAI.RVM.global_classical_solution"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "WLIdentification",
+  "fam": [
+   "133"
+  ],
+  "solution": "OAI.Computability.WLIdentification.Main",
+  "files": 67,
+  "lines": 16897,
+  "ext": [],
+  "theorems": [
+   "OAI.WLIdentification.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "WeakHessian",
+  "fam": [
+   "356"
+  ],
+  "solution": "OAI.Geometry.WeakHessian.Main",
+  "files": 542,
+  "lines": 65542,
+  "ext": [],
+  "theorems": [
+   "OAI.WeakHessian.every_geodesic"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "WeakMTWGlobalSupport",
+  "fam": [
+   "360"
+  ],
+  "solution": "OAI.Geometry.WeakMTW.Main",
+  "files": 210,
+  "lines": 19463,
+  "ext": [],
+  "theorems": [
+   "OAI.WeakMTWGlobalSupport.current_main_convexity"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "WeightedSweepMoments",
+  "fam": [
+   "238"
+  ],
+  "solution": "OAI.Probability.CubeShuffle.WeightedMoments",
+  "files": 40,
+  "lines": 17383,
+  "ext": [],
+  "theorems": [
+   "OAI.CubeShuffle.WeightedSweep.weighted_sweep_moments"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "WeisfeilerLeman",
+  "fam": [
+   "133"
+  ],
+  "solution": "OAI.Computability.WeisfeilerLeman.Main",
+  "files": 43,
+  "lines": 19572,
+  "ext": [],
+  "theorems": [
+   "OAI.WLTime.unconditional_time_lower_bound"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "WitnessedChoice",
+  "fam": [
+   "243"
+  ],
+  "solution": "OAI.Computability.WitnessedChoice.Main",
+  "files": 27,
+  "lines": 26381,
+  "ext": [],
+  "theorems": [
+   "OAI.WitnessedChoice.main"
+  ],
+  "defs": []
+ },
+ {
+  "cfg": "YauCounterexample",
+  "fam": [
+   "350"
+  ],
+  "solution": "OAI.Geometry.NodalSets.Main",
+  "files": 1068,
+  "lines": 74773,
+  "ext": [],
+  "theorems": [
+   "OAI.Yau.Target.yau_nodal_set_upper_bound_counterexample"
+  ],
+  "defs": []
+ }
+]

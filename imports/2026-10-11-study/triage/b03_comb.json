@@ -1,0 +1,1395 @@
+[
+ {
+  "num": "155",
+  "title": "A counterexample to periodic tiling in dimension three",
+  "subject": "Combinatorics",
+  "plain_english": "There is a finite set of cubes in 3D that can tile space by translations but never in a repeating (periodic) pattern; it is the first such example in the lowest possible dimension.",
+  "constructive": "yes (finite tile selected by terminating finite searches; size not bounded)",
+  "explicit_constants": "none; paper says 'no practical bound on the size of the finite construction'",
+  "galactic": null,
+  "channels": [
+   "FOUND",
+   "CPLX"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 2,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "No applied channel. The only CS-relevant consequence is theoretical: 'search for a periodic tiling' is not a complete decision procedure for translational monotile tiling in Z^3 (consistent with Greenfeld-Tao undecidability work). The tile is astronomically large and has no materials/quasicrystal relevance.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Tile size unbounded; translational-only setting.",
+  "deep_dive": false,
+  "cross_links": [
+   "156"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/A-translational-tile-with-no-fully-periodic-tiling-in-dimension-three-September-23-2026/build/sections/01-introduction.tex",
+   "07-three-dimensions.tex remark 'Finite selection of the tile data'",
+   "lean/docs/155.md"
+  ]
+ },
+ {
+  "num": "156",
+  "title": "Borsuk's conjecture fails in dimension nine",
+  "subject": "Combinatorics",
+  "plain_english": "The set of all rank-one projection matrices for lines in R^4 (a 9-dimensional object) cannot be split into 10 pieces of smaller diameter, so Borsuk's conjecture fails already in dimension 9 (previous record 63).",
+  "constructive": "yes (explicit compact set; obstruction is topological)",
+  "explicit_constants": "n/a (dimension 9, diameter sqrt2)",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "No applied channel. The set is the space of real pure qubit-pair-like projectors and the proof uses orthogonality colourings reminiscent of Kochen-Specker arguments, but nothing transfers to quantum contextuality tests or clustering practice.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Continuous (not finite) counterexample; no benchmark value.",
+  "deep_dive": false,
+  "cross_links": [
+   "155",
+   "266"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/A-nine-dimensional-counterexample-to-Borsuks-covering-assertion-September-23-2026/build/sections/introduction.tex",
+   "lean/docs/156.md"
+  ]
+ },
+ {
+  "num": "157",
+  "title": "Graph coloring, clique minors, and Colin de Verdière invariants",
+  "subject": "Combinatorics",
+  "plain_english": "Hadwiger's famous conjecture (chromatic number <= largest clique minor) is false, even fractionally; but list-chromatic number is at most a universal constant times the Hadwiger number.",
+  "constructive": "partial (counterexamples sampled from a finite probability space with huge fixed parameters; list bound existential with unspecified C=2(Q+6K))",
+  "explicit_constants": "counterexample ratio h<26m/75; list constant C not numerically given",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 2,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "No benchmark value for colouring solvers: the counterexamples have independence number <=2, and colouring such graphs is polynomial (chi = m - maximum matching of the complement), so they are trivial for DSATUR/SAT colourers. Computing Hadwiger number is hard but nobody benchmarks it. The linear list-colouring bound has an unspecified constant and no algorithm.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Random construction with very large M_0; Colin de Verdiere and fractional parts not Lean-checked.",
+  "deep_dive": false,
+  "cross_links": [
+   "184",
+   "106"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/A-counterexample-to-Hadwigers-conjecture-September-23-2026/build/sections/01-introduction.tex (thm:main, cor:hadwiger)",
+   "/root/openai-math/preprints/A-linear-list-coloring-bound-in-terms-of-the-Hadwiger-number-September-23-2026/INPUTS.md",
+   "sections/08-recursion.tex (C=2(Q+6K))",
+   "lean/docs/157.md"
+  ]
+ },
+ {
+  "num": "158",
+  "title": "The Euclidean plane cannot be colored with five colors",
+  "subject": "Combinatorics",
+  "plain_english": "Any 5-colouring of the plane has two points at distance 1 with the same colour, so the chromatic number of the plane is 6 or 7.",
+  "constructive": "no (via de Bruijn-Erdos compactness a finite non-5-colourable unit-distance graph exists, but it is not exhibited and its size is unbounded)",
+  "explicit_constants": "none for the finite witness; badness constant delta=1/|E(H)| existential",
+  "galactic": null,
+  "channels": [
+   "FOUND",
+   "VERIF"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 1,
+   "directness": 2,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 2,
+   "time_to_value": 2
+  },
+  "opportunity": "Non-obvious channel: the SAT community (Heule's 509-553 vertex 5-chromatic unit-distance graphs, Polymath16) has been searching for a finite unit-distance graph needing 6 colours; this proves one exists, so SAT/cube-and-conquer searches for it are no longer potentially futile. If found, it would be a famous hard UNSAT benchmark. The proof gives no size bound, so the witness may be far beyond SAT reach.",
+  "targets": [
+   "Polymath16 / Hadwiger-Nelson SAT search (Heule, Parts)",
+   "SAT Competition benchmark track"
+  ],
+  "action": "RESEARCH",
+  "first_step": "Post to the Polymath16/SAT-search community that a finite 6-chromatic UDG is now guaranteed; ask whether the proof's Moser-spindle placement step suggests a candidate vertex set.",
+  "caveats": "Existence only; witness could be astronomically large.",
+  "deep_dive": false,
+  "cross_links": [
+   "172",
+   "106"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/The-Euclidean-plane-is-not-five-colorable-September-23-2026/build/sections/introduction.tex (thm:main, cor:positive-badness and proof)",
+   "lean/docs/158.md"
+  ]
+ },
+ {
+  "num": "159",
+  "title": "Erdős’s reciprocal-sum conjecture and quasipolynomial Szemerédi bounds",
+  "subject": "Combinatorics",
+  "plain_english": "Any set of integers whose reciprocals sum to infinity contains arithmetic progressions of every length; quantitatively, progression-free subsets of {1..N} are smaller than N/exp((log N)^eps_k).",
+  "constructive": "n/a (upper bound / density statement)",
+  "explicit_constants": "C_k,c_k,eps_k unspecified; only the qualitative reciprocal-sum statement is Lean-checked",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "No applied channel. Upper bounds on AP-free sets constrain, but do not help, Behrend/Salem-Spencer-type constructions used in matrix-multiplication and NOF-communication arguments; practical algorithms are unaffected.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Quantitative part not formalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "160",
+   "182"
+  ],
+  "evidence": [
+   "catalogue abstract",
+   "lean/docs/159.md"
+  ]
+ },
+ {
+  "num": "160",
+  "title": "Superexponential van der Waerden numbers",
+  "subject": "Combinatorics",
+  "plain_english": "Proves van der Waerden numbers grow faster than any exponential: W_r(k) > k^{c k floor(log2 r)}.",
+  "constructive": "partial (random perturbed-ellipsoid colouring with LLL; K_0 non-explicit)",
+  "explicit_constants": "c = 1e-5 (Lean: 1/100000); K_0 unspecified",
+  "galactic": true,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "No applied channel. Blunt check: for r=2 the bound k^{1e-5 k} beats Berlekamp's elementary p*2^p only when log2 k > 1e5, i.e. k > 2^100000, so SAT-based exact computations of small W(r,k) (the only practical activity here) gain nothing.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Galactic crossover vs classical constructions.",
+  "deep_dive": false,
+  "cross_links": [
+   "159"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Quantitative-Superexponential-Bounds-for-van-der-Waerden-Numbers-September-23-2026/build/sections/01-introduction.tex (c=10^-5, Berlekamp comparison)",
+   "06-perturbation.tex",
+   "lean/docs/160.md"
+  ]
+ },
+ {
+  "num": "161",
+  "title": "Counterexamples to Sidorenko’s conjecture and the forcing conjecture",
+  "subject": "Combinatorics",
+  "plain_english": "A specific 35-vertex, 66-edge bipartite graph appears less often in some graph than in a random graph of the same density, so Sidorenko's conjecture is false; matching its count and the edge density also does not force a graph to look random.",
+  "constructive": "partial (pattern H explicit: incidence graph of 22 triples on 13 points; host G only shown to exist by sampling a kernel)",
+  "explicit_constants": "H explicit; host size not given",
+  "galactic": null,
+  "channels": [
+   "FOUND",
+   "STAT"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 2,
+   "practicality": 2,
+   "confidence": 4,
+   "effort": 2,
+   "time_to_value": 1
+  },
+  "opportunity": "Faint STAT/network-science channel: subgraph-count tests for quasirandomness cannot rely on this H's density (forcing fails), but practical tests use C4 counts (Chung-Graham-Wilson), which remain valid. No practical change.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Only the Sidorenko part is Lean-checked; host graph existential.",
+  "deep_dive": false,
+  "cross_links": [
+   "190",
+   "186"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/introduction.tex (thm:main)",
+   "lean/docs/161.md"
+  ]
+ },
+ {
+  "num": "162",
+  "title": "Counterexamples to Ryser’s covering conjecture",
+  "subject": "Combinatorics",
+  "plain_english": "Builds intersecting r-partite hypergraphs needing r vertices to cover all edges, refuting Ryser's predicted r-1 (for r = q+1, q a large prime), and refutes Gyarfas's tree-cover conjecture.",
+  "constructive": "partial (algebraic/probabilistic constructions; prime thresholds existential)",
+  "explicit_constants": "'sufficiently large prime' thresholds non-explicit",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "No applied channel.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Existential thresholds.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "catalogue abstracts",
+   "lean/docs/162.md",
+   "/root/openai-math/preprints/Balanced-Counterexamples-to-Rysers-Conjecture-at-Prime-Orders-September-27-2026/build/deletion.tex (grep)"
+  ]
+ },
+ {
+  "num": "164",
+  "title": "Hindman’s finite sums and products conjecture",
+  "subject": "Combinatorics",
+  "plain_english": "In any finite colouring of the positive integers there are k-element sets whose subset sums and subset products all share one colour.",
+  "constructive": "no (Ramsey-type existence)",
+  "explicit_constants": "none",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "No applied channel.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Unformalized.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "catalogue abstract",
+   "/root/openai-math/preprints/Monochromatic-finite-sums-and-products-in-the-positive-integers-September-23-2026/build/sections (grep)"
+  ]
+ },
+ {
+  "num": "165",
+  "title": "The Harary–Hill and Zarankiewicz crossing-number formulas",
+  "subject": "Combinatorics",
+  "plain_english": "The minimum number of edge crossings when drawing the complete graph K_n, and the complete bipartite graph K_{m,n}, in the plane is exactly the classical conjectured formula (e.g. ~n^4/64 for K_n), proved for all n.",
+  "constructive": "yes (matching two-page / axis drawings are explicit; lower bound is an algebraic rank argument)",
+  "explicit_constants": "exact closed formulas",
+  "galactic": false,
+  "channels": [
+   "FOUND",
+   "GEO"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 4,
+   "practicality": 4,
+   "confidence": 5,
+   "effort": 5,
+   "time_to_value": 4
+  },
+  "opportunity": "Non-obvious channels checked: (1) single-layer photonic all-to-all waveguide meshes and graph-drawing benchmarks now have certified exact optima for K_n (previously exact only to n=14) and K_{m,n}; but the asymptotic lower bound was already within 1.5% (Balogh-Lidicky-Salazar 0.9856), and no heuristic ever beat Hill's drawing, so practice does not change. (2) VLSI area lower bounds use crossing number via Leighton, but multilayer VLSI crossings are free, and straight-line (rectilinear) drawings have a different, larger crossing number that this result does not settle. Real value: CERTIFY reference data (OEIS A000241, crossing-number surveys, OGDF/KnownCR benchmark ground truth) and RESEARCH reuse of the polynomial-interpolation lower-bound method for open cases (complete tripartite, hypercube Q_n).",
+  "targets": [
+   "OEIS A000241 (cr(K_n))",
+   "OGDF crossing-minimization (SubgraphPlanarizer) benchmarks",
+   "Schaefer's crossing-number survey",
+   "Chimani-Wiedera KnownCR instance set"
+  ],
+  "action": "CERTIFY",
+  "first_step": "Submit an OEIS edit marking A000241 (and the Zarankiewicz sequence) proved for all n, citing the Lean-checked theorem.",
+  "caveats": "Ordinary (curved-arc) crossing number only, not rectilinear; practical design decisions unchanged.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "/root/openai-math/preprints/The-crossing-number-of-complete-graphs-September-23-2026/build/main.tex (thm:main, intro history)",
+   "/root/openai-math/preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/sections/conclusion.tex",
+   "lean/docs/165.md",
+   "WebSearch: no ONoC literature uses cr(K_n) as a bound"
+  ]
+ },
+ {
+  "num": "166",
+  "title": "The higher-dimensional Erdős distinct-distances conjecture",
+  "subject": "Combinatorics",
+  "plain_english": "n points in d-dimensional space (d>=3) always determine at least c_d n^{2/d} distinct distances, which is optimal up to the constant.",
+  "constructive": "n/a",
+  "explicit_constants": "c_d unspecified",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "No applied channel; worst-case distance-count bounds do not affect distance-geometry or point-pattern-matching practice.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "167",
+   "183"
+  ],
+  "evidence": [
+   "catalogue abstract",
+   "/root/openai-math/preprints/The-higher-dimensional-Erdos-distinct-distances-conjecture-September-23-2026/build/sections (grep)"
+  ]
+ },
+ {
+  "num": "167",
+  "title": "Planar distinct distances and unit-distance bounds",
+  "subject": "Combinatorics",
+  "plain_english": "Almost every point of a planar set sees nearly n distinct distances; and n points in the plane have at most O(n^{beta}) unit-distance pairs for some fixed beta < 4/3, the first improvement on the 1984 bound.",
+  "constructive": "n/a",
+  "explicit_constants": "beta existential (proof via compactness: failure of 4/3-1/j for all j)",
+  "galactic": null,
+  "channels": [
+   "FOUND",
+   "GEO"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "Theory-only GEO channel: bounds on repeated-distance counts are the output-size bounds in worst-case analyses of congruent-pattern / point-pattern matching algorithms (Brass-style). With a non-explicit beta this changes no algorithm's analysis in a usable way.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Nonquantitative exponent.",
+  "deep_dive": false,
+  "cross_links": [
+   "166",
+   "183",
+   "191"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/A-power-saving-for-planar-unit-distances-September-23-2026/build/sections/01*.tex (grep: 4/3-1/j compactness)",
+   "lean/docs/167.md"
+  ]
+ },
+ {
+  "num": "168",
+  "title": "Combinatorial invariance of Kazhdan–Lusztig polynomials",
+  "subject": "Combinatorics",
+  "plain_english": "The Kazhdan-Lusztig polynomial of a Bruhat interval depends only on the interval's shape as a partially ordered set, in every Coxeter group.",
+  "constructive": "no (invariance via moment-graph sheaves; no algorithm computing P from the poset)",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "CAS",
+   "FOUND"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 2,
+   "confidence": 4,
+   "effort": 2,
+   "time_to_value": 2
+  },
+  "opportunity": "Faint CAS channel: in large KL computations (Coxeter3, SageMath KazhdanLusztigPolynomial, Atlas of Lie Groups) one could in principle memoize P by the isomorphism class of the interval poset, but poset-isomorphism testing is likely costlier than the standard recursion. Also validates the DeepMind ML-guided conjecture programme (Davies-Williamson et al.), a meta-point for AI-for-math rather than an applied action.",
+  "targets": [
+   "SageMath KazhdanLusztigPolynomial",
+   "Coxeter3"
+  ],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "No algorithm; invariance alone does not speed computation.",
+  "deep_dive": false,
+  "cross_links": [
+   "169"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Combinatorial-Invariance-of-Kazhdan-Lusztig-Polynomials-September-24-2026/build/01-introduction.tex (thm:main, history incl. BBDVW22)",
+   "lean/docs/168.md"
+  ]
+ },
+ {
+  "num": "169",
+  "title": "Shareshian–Wachs elementary positivity",
+  "subject": "Combinatorics",
+  "plain_english": "For natural unit interval graphs, the chromatic quasisymmetric function expands with nonnegative polynomial coefficients in the elementary symmetric basis, with an explicit permutation-indexed formula.",
+  "constructive": "yes (deterministic terminating procedure assigning a partition to each permutation; running time 'may be large')",
+  "explicit_constants": "n/a",
+  "galactic": false,
+  "channels": [
+   "CAS",
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 2,
+   "practicality": 2,
+   "confidence": 4,
+   "effort": 2,
+   "time_to_value": 1
+  },
+  "opportunity": "Algebraic combinatorics only (it implies Stanley-Stembridge). A SageMath implementation of the permutation rule would be a curiosity; summing over D_G^0 (factorial size) is slower than existing basis-change computations.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Procedure may be slow; no applied consumer.",
+  "deep_dive": false,
+  "cross_links": [
+   "168"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Elementary-Positivity-of-Chromatic-Quasisymmetric-Functions-September-24-2026/build/sections/01-introduction.tex (main:theorem)",
+   "lean/docs/169.md"
+  ]
+ },
+ {
+  "num": "170",
+  "title": "Sharp logarithmic exponents for off-diagonal Ramsey numbers",
+  "subject": "Combinatorics",
+  "plain_english": "Pins down how the Ramsey number r(s,t) grows for fixed s>=5: t^{s-1}/(log t)^{s-2+o(1)}.",
+  "constructive": "partial (lower bound by random/nibble constructions)",
+  "explicit_constants": "o(1) terms; upper C_s classical",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "No applied channel.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Asymptotic only.",
+  "deep_dive": false,
+  "cross_links": [
+   "184",
+   "171",
+   "189"
+  ],
+  "evidence": [
+   "catalogue abstracts",
+   "lean/docs/170.md"
+  ]
+ },
+ {
+  "num": "171",
+  "title": "The hypercube Ramsey conjecture",
+  "subject": "Combinatorics",
+  "plain_english": "Any red/blue colouring of a complete graph on C*2^n vertices contains a single-colour copy of the n-dimensional cube graph.",
+  "constructive": "n/a",
+  "explicit_constants": "C absolute, unspecified",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "No applied channel.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "170"
+  ],
+  "evidence": [
+   "catalogue abstract",
+   "/root/openai-math/preprints/The-hypercube-Ramsey-number-has-linear-order-September-23-2026/build/sections (grep)"
+  ]
+ },
+ {
+  "num": "172",
+  "title": "Classification of finite Euclidean Ramsey configurations",
+  "subject": "Combinatorics",
+  "plain_english": "Characterizes exactly which finite point patterns must appear in one colour, at their original size, in every finite colouring of high-dimensional space.",
+  "constructive": "yes (algebraic tensor criterion)",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "No applied channel.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [
+   "158"
+  ],
+  "evidence": [
+   "catalogue abstract",
+   "lean/docs/172.md"
+  ]
+ },
+ {
+  "num": "173",
+  "title": "Seymour’s second-neighborhood conjecture",
+  "subject": "Combinatorics",
+  "plain_english": "Every oriented graph has a vertex with at least as many vertices two steps away as one step away.",
+  "constructive": "no (existence)",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "No applied channel (tournament/ranking applications use the already-known tournament case, and nothing operational depends on it). A minor corollary: min in- and outdegree >= n/3 forces a directed triangle.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "/root/openai-math/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/00-introduction.tex (thm:main)",
+   "lean/docs/173.md"
+  ]
+ },
+ {
+  "num": "174",
+  "title": "Deterministic construction of strong thin spanning trees",
+  "subject": "Combinatorics",
+  "plain_english": "Every k-edge-connected multigraph has a spanning tree that uses at most a C/k fraction of every cut, and a deterministic polynomial-time algorithm finds it. This is the 'thin tree' object behind one route to approximating asymmetric TSP.",
+  "constructive": "yes (deterministic poly-bit algorithm: ellipsoid method, rational MSS/Ezeunala-Jiang signing, matroid partition)",
+  "explicit_constants": "C non-explicit; the iteration only runs while the packing number r >= R_0, a 'sufficiently large absolute cutoff' (needs r^{-1/16} small); for k < ~3R_0 the algorithm returns an arbitrary spanning tree",
+  "galactic": true,
+  "channels": [
+   "ALGO",
+   "OPT"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 4,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "Checked the ATSP channel: the paper itself states no new approximation claim, since constant-factor ATSP was already achieved (Svensson-Tarnawski-Vegh; Traub-Vygen). The thin-and-cheap rounding corollary resolves AGMOS Conjecture 6.1 with (24B,24B) constants, giving an O(1) ATSP algorithm with an unknown, enormous constant. The algorithm is non-trivial only for astronomically large connectivity (r^{-1/16} losses need a huge R_0), so it is galactic. Practical ATSP (LKH-3, Concorde via symmetric transform, OR-Tools) is unaffected. Remaining value is theory: the MSS-type sparsification with packing preservation may be reusable in network-design rounding (survivable network design, low-congestion spanning trees).",
+  "targets": [
+   "LKH-3 / Concorde (no change)",
+   "ATSP approximation literature"
+  ],
+  "action": "RESEARCH",
+  "first_step": "Extract an explicit value of R_0 and C from the extraction/sparsification lemmas to quantify how galactic it is (expect R_0 >> 2^{64}).",
+  "caveats": "Galactic constants; ATSP O(1) already known; Lean formalizes the algorithmic statement (interesting for VERIF) but not constants.",
+  "deep_dive": false,
+  "cross_links": [
+   "128",
+   "178",
+   "300"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/The-strong-thin-tree-conjecture-September-23-2026/build/source/sections/introduction.tex (thm:main)",
+   "/root/openai-math/preprints/A-polynomial-time-construction-of-strong-thin-trees-September-23-2026/build/source/sections/main-theorem.tex, introduction.tex, iteration.tex (lem:ta-sparsification, R_0 cutoff), fractional_rounding.tex (cor:ta-fractional-rounding, AGMOS Conj 6.1)",
+   "lean/docs/174.md",
+   "lean/ComparatorChallenges/AlgorithmicThinTrees.lean"
+  ]
+ },
+ {
+  "num": "175",
+  "title": "Talagrand’s expectation thresholds, discrete convexity, and graph decompositions",
+  "subject": "Combinatorics",
+  "plain_english": "Shows two ways of estimating when a random structure first appears (integral vs fractional 'expectation thresholds') agree up to a constant, and proves Talagrand's discrete-convexity and graph-decomposition conjectures.",
+  "constructive": "n/a (inequalities)",
+  "explicit_constants": "q_f <= 25*512^4 q; discrete convexity k = 2^75 (Lean)",
+  "galactic": true,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "No applied channel: threshold-location results are used in random-graph theory; constants 25*512^4 and 2^75 make any quantitative use (e.g. predicting motif emergence in network models) meaningless.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Galactic constants.",
+  "deep_dive": false,
+  "cross_links": [
+   "176",
+   "186"
+  ],
+  "evidence": [
+   "catalogue abstracts",
+   "lean/docs/175.md"
+  ]
+ },
+ {
+  "num": "176",
+  "title": "The second Kahn–Kalai conjecture with an edge-count bound",
+  "subject": "Combinatorics",
+  "plain_english": "The edge density at which a random graph G(n,p) first contains a copy of a given graph H is at most a constant times log(#edges of H) times a simple expectation-based prediction.",
+  "constructive": "n/a",
+  "explicit_constants": "C = 6144 e^50 (~3e25)",
+  "galactic": true,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "No applied channel. The constant 6144e^50 makes the bound useless for predicting subgraph appearance in network models; the qualitative statement is a random-graph theory milestone.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Galactic constant.",
+  "deep_dive": false,
+  "cross_links": [
+   "175",
+   "186"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/graphs.tex (C=6144e^50)",
+   "lean/docs/176.md"
+  ]
+ },
+ {
+  "num": "177",
+  "title": "Bounded-degree coboundary expanders",
+  "subject": "Combinatorics",
+  "plain_english": "Constructs high-dimensional 'expander' simplicial complexes (generalizations of expander graphs to triangles, tetrahedra, etc.) with bounded degree and strong mod-2 coboundary expansion in all dimensions below d, for every d.",
+  "constructive": "yes (algebraic coset complexes of unipotent subgroups of SL_{2d+1}(F_q[t]) mod t^m)",
+  "explicit_constants": "q a 'sufficiently large' prime (>= 2^{2d-1} plus an unspecified OVB requirement); vertex degree D = q^{C(2d+1,2)} * C(2d,d): for d=3 and q~37, D ~ 1e34; eps non-explicit",
+  "galactic": true,
+  "channels": [
+   "QUANT",
+   "COMM",
+   "CPLX"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 3,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "Checked the quantum-LDPC / LTC channel: coboundary and cosystolic expansion of HDX underlie distance proofs of qLDPC codes (Evra-Kaufman-Zemor) and c^3-LTCs, and coboundary expansion in degree >= 2 is the missing input for some agreement-testing/PCP results. But asymptotically good qLDPC codes and c^3-LTCs already exist via other routes (Panteleev-Kalachev, quantum Tanner codes, Dinur et al.), and degree ~1e34 makes these complexes unusable for any code. Value is theoretical: it may unlock new agreement tests or codes from higher-dimensional cochains.",
+  "targets": [
+   "HDX/agreement-testing and PCP research community",
+   "qLDPC theory (no practical code impact)"
+  ],
+  "action": "RESEARCH",
+  "first_step": "",
+  "caveats": "Existence of bounded degree only; constants galactic; not a code construction.",
+  "deep_dive": false,
+  "cross_links": [
+   "178",
+   "102",
+   "105"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Bounded-degree-coboundary-expanders-in-every-dimension-September-24-2026/build/source/sections/introduction.tex (thm:main, prior work)",
+   "construction.tex (q sufficiently large)",
+   "expansion.tex (eq:D degree bound, M=q^{C(N,2)})",
+   "geometry.tex (eq:M)",
+   "lean/docs/177.md"
+  ]
+ },
+ {
+  "num": "178",
+  "title": "Deterministic nonbipartite Ramanujan graphs in every fixed degree",
+  "subject": "Combinatorics",
+  "plain_english": "For every degree d>=3, a deterministic polynomial-time algorithm outputs a d-regular graph on any large even number of vertices whose nontrivial eigenvalues all lie strictly within the optimal Ramanujan bound 2*sqrt(d-1); these are optimal spectral expanders.",
+  "constructive": "yes (deterministic, poly(n) bit operations; outputs full adjacency list, not a local neighbour oracle)",
+  "explicit_constants": "exponent k_d and n_0(d) unspecified; internal scales such as girth exclusion q^{g_0} ~ n^{0.002a} with a = 1e-4 (i.e. n^{2e-7}) must dominate fixed constants, so n_0(d) is astronomically large (n^{2e-7} >= 2 already needs n >= 2^{5,000,000}); the repair stage also enumerates Bernstein approximations of degree n^{2(c+C)}",
+  "galactic": true,
+  "channels": [
+   "ALGO",
+   "COMM",
+   "NET"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 3,
+   "directness": 3,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "Checked the expander/LDPC/derandomization channels. (a) Practice: random d-regular graphs are Ramanujan with limiting probability ~0.69 (Huang-McKenzie-Yau), so 'sample, then verify' (NetworkX random_regular_expander_graph, which loops over maybe_regular_expander_graph and checks with is_regular_expander) is already an expected O(1)-trial Las Vegas method at real sizes; this algorithm is galactic. (b) Derandomization needs strongly explicit expanders (local neighbour queries), which the paper explicitly does not provide. (c) LDPC/expander codes use PEG / quasi-cyclic designs and do not require exact Ramanujan spectra. The paper's one practical by-product: exact certification of the Ramanujan property via rational inertia of B^T(4(d-1)I - A^2)B with B = [e_i - e_n], which could replace floating-point eigsh checks.",
+  "targets": [
+   "NetworkX is_regular_expander / random_regular_expander_graph",
+   "SageMath graphs"
+  ],
+  "action": "RESEARCH",
+  "first_step": "Optional small IMPLEMENT: propose an exact=True mode for networkx.is_regular_expander using the paper's exact test (an LDL^T inertia check of 4(d-1)B^TB - (AB)^T(AB)) for small graphs; low priority.",
+  "caveats": "Galactic; unformalized; 6.4k lines of delicate analysis; strongly explicit constructions (LPS/Morgenstern) remain the only usable deterministic ones in restricted degrees.",
+  "deep_dive": false,
+  "cross_links": [
+   "131",
+   "219",
+   "174",
+   "177",
+   "103"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/build/sections/introduction.tex (thm:main, cor:target-size, prior work incl. HMY2024 0.69)",
+   "sections/algorithm.tex (prop:bit-complexity, exact rational test)",
+   "sections/setup.tex (scale table: a=1e-4, q^{g_0}=n^{.002a})",
+   "networkx 3.6.1 source of is_regular_expander"
+  ]
+ },
+ {
+  "num": "179",
+  "title": "The circulant Hadamard and Barker-sequence conjectures",
+  "subject": "Combinatorics",
+  "plain_english": "Proves that +/-1 circulant Hadamard matrices (equivalently, binary sequences with perfectly zero periodic autocorrelation) exist only for lengths 1 and 4, and hence that binary Barker codes (peak sidelobe 1) exist only at lengths 2,3,4,5,7,11,13: no Barker code longer than 13 exists.",
+  "constructive": "yes (nonexistence proof; witnesses for n=1,4 explicit)",
+  "explicit_constants": "exact classification",
+  "galactic": false,
+  "channels": [
+   "COMM",
+   "FOUND"
+  ],
+  "tier": "T2",
+  "scores": {
+   "impact": 2,
+   "reach": 3,
+   "directness": 5,
+   "practicality": 5,
+   "confidence": 5,
+   "effort": 5,
+   "time_to_value": 5
+  },
+  "opportunity": "Yes, it settles the radar/sonar/spread-spectrum question: the even case is closed by the circulant Hadamard theorem and the odd case by Turyn-Storer (1961). It also proves no binary sequence of length > 4 has ideal periodic autocorrelation. Bluntly, practice will not change: Logan-Mossinghoff-type computations had already excluded every length 13 < n <= 4e33 except one (n ~ 3.98e33), and designers already use Barker-13, nested Barker, MPS-optimized binary codes, m-sequences or polyphase/Zadoff-Chu codes. The concrete actions are certification: update references that still say 'conjectured' (radar textbooks, Wikipedia, OEIS), close residual computational searches, and upstream the Lean proof to Mathlib.",
+  "targets": [
+   "Radar pulse-compression references (Levanon & Mozeson 'Radar Signals'; Richards 'Fundamentals of Radar Signal Processing'; Skolnik)",
+   "IEEE 802.11b DSSS (Barker-11) documentation",
+   "OEIS Barker-length / circulant-Hadamard entries",
+   "Wikipedia 'Barker code'",
+   "Mathlib (FORMALIZE upstream)"
+  ],
+  "action": "CERTIFY",
+  "first_step": "Upstream OAI/LinearAlgebra/CirculantHadamard (exists_iff_order_one_or_four) and the even-Barker lemma to Mathlib, then update OEIS/Wikipedia with the Lean-verified citation.",
+  "caveats": "Lean covers the circulant Hadamard theorem and the even-Barker part only; the odd Barker classification relies on the classical Turyn-Storer proof. Several earlier claimed proofs were false, but the Lean check mitigates this. Engineering decisions are unchanged.",
+  "deep_dive": true,
+  "cross_links": [
+   "076",
+   "266"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/The-circulant-Hadamard-conjecture-September-23-2026/build/sections/introduction.tex (thm:main, cor:barker, Logan-Mossinghoff context)",
+   "lean/docs/179.md",
+   "lean/ComparatorChallenges/CirculantHadamard.lean, EvenBarker.lean",
+   "arXiv 1306.0045 abstract (Barker excluded for 13<n<=4e33 except one n)"
+  ]
+ },
+ {
+  "num": "180",
+  "title": "Barnette’s Hamiltonian-cycle conjecture",
+  "subject": "Combinatorics",
+  "plain_english": "Every 3-connected cubic bipartite planar graph has a Hamiltonian cycle (a tour visiting each vertex once); moreover the cycle can avoid any chosen edge.",
+  "constructive": "no (existence via a nonvanishing finite exponential sum over Tutte state pairs; paper explicitly makes no polynomial-time claim)",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "ALGO",
+   "CPLX",
+   "FOUND"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 2,
+   "practicality": 3,
+   "confidence": 4,
+   "effort": 2,
+   "time_to_value": 1
+  },
+  "opportunity": "Two modest channels. (1) INSTANCES: every 3-connected cubic bipartite planar graph (generatable with plantri) is a guaranteed YES instance for Hamiltonian-cycle solvers (Concorde-as-HCP, FHCP Challenge-style benchmarks); before, only small cases were verified. (2) RESEARCH: the search problem becomes total (TFNP-like). The proof's sum Z(x) is a signed sum over matching-like 'state pairs' on a planar triangulation with Pfaffian structure, so asking whether Z or a self-reducible variant is computable by Kasteleyn/Pfaffian determinants is a concrete route to a polynomial-time algorithm.",
+  "targets": [
+   "plantri (cubic bipartite polyhedral generation)",
+   "FHCP Challenge Set / Concorde HCP benchmarks",
+   "TFNP complexity community"
+  ],
+  "action": "RESEARCH",
+  "first_step": "Check whether the exponential sum Z(x) over state pairs factors as a determinant/Pfaffian (Kasteleyn-Temperley correspondence noted in the paper); if so, self-reduction gives a poly-time Hamiltonian-cycle algorithm for this class.",
+  "caveats": "Existence only; HCP on this class may already be easy in practice for heuristics.",
+  "deep_dive": false,
+  "cross_links": [
+   "113"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex (thm:main, lines 95-170 strategy and 'does not assert a polynomial-time construction', sec:cancellation)",
+   "lean/docs/180.md"
+  ]
+ },
+ {
+  "num": "181",
+  "title": "The Erdős–Gallai cycle-decomposition conjecture",
+  "subject": "Combinatorics",
+  "plain_english": "The edges of any n-vertex graph can be split into at most C*n cycles and single edges.",
+  "constructive": "no (existence; probabilistic residue arguments)",
+  "explicit_constants": "C absolute, unspecified",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "No usable channel. Ring/cycle-cover design in survivable optical networks optimizes ring count heuristically, and an existential O(n) bound with unknown C changes nothing.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "/root/openai-math/preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/main.tex intro",
+   "lean/docs/181.md"
+  ]
+ },
+ {
+  "num": "182",
+  "title": "Power savings for intersective polynomial differences and prime arguments",
+  "subject": "Combinatorics",
+  "plain_english": "Sets of integers up to N avoiding differences of the form h(n) (e.g. perfect squares) have size at most N^{1-c}.",
+  "constructive": "n/a",
+  "explicit_constants": "c_k, c_h unspecified (square case: absolute c, C)",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "No applied channel. Note: the prime-argument paper imports the zero-free half-plane Re s > 7/8 for all Dirichlet L-functions from family 003 (quasi-RH), an extraordinary claim, so its confidence is tied to 003.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Prime-argument part depends on 003; only the square-difference case is Lean-checked.",
+  "deep_dive": false,
+  "cross_links": [
+   "003",
+   "159"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/A-Power-Saving-for-Polynomial-Differences-at-Prime-Arguments-October-5-2026/build/sections/introduction.tex, primes.tex (thm:zero-free-input from 003)",
+   "lean/docs/182.md"
+  ]
+ },
+ {
+  "num": "183",
+  "title": "Power savings for planar halving lines and <i>k</i>-sets",
+  "subject": "Combinatorics",
+  "plain_english": "n points in the plane (no three collinear) have at most O(n^{4/3-eps}) halving lines, and k-sets / k-levels in line arrangements have complexity O(n k^{1/3-eps0}), the first improvement on Dey's 1998 bound.",
+  "constructive": "n/a (combinatorial bound)",
+  "explicit_constants": "eps, C explicitly NONquantitative (paper says no numerical value)",
+  "galactic": null,
+  "channels": [
+   "GEO",
+   "STAT"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 1,
+   "reach": 2,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "Checked the computational-geometry channel: k-level size is the output-sensitive term in k-level construction (Chan), Tukey-depth-contour algorithms (R ddalpha/depth packages) and order-k Voronoi analyses, so worst-case bounds improve by an unspecified n^{eps}. Actual running times are unchanged (observed k-levels are far below worst case), and the eps is not even quantified. Textbook/worst-case-analysis update only.",
+  "targets": [
+   "CGAL arrangements (worst-case analysis only)",
+   "Tukey depth contour algorithms (ddalpha)"
+  ],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Nonquantitative eps; straight lines only (not pseudolines).",
+  "deep_dive": false,
+  "cross_links": [
+   "167",
+   "191"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/A-power-saving-for-planar-halving-lines-September-25-2026/build/sections/introduction.tex (thm, cor:k-sensitive, 'nonquantitative')",
+   "lean/docs/183.md"
+  ]
+ },
+ {
+  "num": "184",
+  "title": "Correspondence coloring with a fixed forbidden subgraph",
+  "subject": "Combinatorics",
+  "plain_english": "Graphs with no K_r (or any fixed F) and max degree Delta can be coloured with O(Delta/log Delta) colours, even in the strong 'correspondence' sense; and K_r-free graphs have independent sets of size Omega(n log d / d).",
+  "constructive": "no (random rounds + Lovasz local lemma; independence paper 'makes no claim of an efficient algorithm')",
+  "explicit_constants": "O_r constants unspecified; Delta 'sufficiently large'",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "No applied channel. In principle an algorithmic LLL (Moser-Tardos) could make the colouring constructive, but the hidden constants and huge Delta threshold make it irrelevant to frequency assignment or register allocation.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Colouring part unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "170",
+   "157"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/A-Logarithmic-Independence-Bound-for-Clique-Free-Graphs-September-25-2026/build/sections/introduction.tex (no efficient algorithm claim)",
+   "/root/openai-math/preprints/Correspondence-Coloring-Graphs-with-a-Forbidden-Clique-October-5-2026/build/sections/introduction.tex (grep)",
+   "lean/docs/184.md"
+  ]
+ },
+ {
+  "num": "185",
+  "title": "Counterexamples to infinite matroid intersection and packing/covering",
+  "subject": "Combinatorics",
+  "plain_english": "Two infinite (countable) matroids are built that violate the conjectured infinite matroid intersection and packing/covering theorems.",
+  "constructive": "yes (ZFC construction, non-finitary)",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "No applied channel; finite matroid intersection (used in OR) is untouched.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "catalogue abstract",
+   "lean/docs/185.md"
+  ]
+ },
+ {
+  "num": "186",
+  "title": "Uniform influence and sharp thresholds for graph and hypergraph properties",
+  "subject": "Combinatorics",
+  "plain_english": "Any symmetric monotone graph property switches from rare to likely within an edge-probability window of width O(1/(log n)^2), proving Friedgut-Kalai.",
+  "constructive": "n/a",
+  "explicit_constants": "width <= 2^19 log(1/2eps)/(ln n)^2 (natural log), so the width bound drops below 1 only once (ln n)^2 > 2^19 log(1/2eps), i.e. n > ~e^600",
+  "galactic": true,
+  "channels": [
+   "FOUND",
+   "STAT"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "No applied channel. Phase-transition sharpness in network/percolation models is known qualitatively (1/log n, Friedgut-Kalai 1996), and the explicit constant 2^19 makes the improved bound vacuous at any real n.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Galactic constant.",
+  "deep_dive": false,
+  "cross_links": [
+   "175",
+   "176",
+   "235",
+   "127"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/A-Sharp-Threshold-Bound-for-Monotone-Graph-Properties-September-25-2026/build/sections/introduction.tex (thm:threshold, 2^19, natural logs)",
+   "lean/docs/186.md"
+  ]
+ },
+ {
+  "num": "187",
+  "title": "Snaky in 21 Maker moves",
+  "subject": "Combinatorics",
+  "plain_english": "In the polyomino Maker-Breaker game on the infinite grid, Maker can force the six-cell 'Snaky' shape within 21 moves (and on a fixed 251-cell / 17x17 board), settling a 1970s-era open problem. The proof is a checked finite certificate.",
+  "constructive": "yes (explicit strategy certificate, 728 cards, Python verifier with SHA256, Lean check)",
+  "explicit_constants": "exact: 21 moves, 251 cells, 17x17 board",
+  "galactic": false,
+  "channels": [
+   "VERIF",
+   "ALGO"
+  ],
+  "tier": "T2",
+  "scores": {
+   "impact": 2,
+   "reach": 1,
+   "directness": 5,
+   "practicality": 4,
+   "confidence": 5,
+   "effort": 4,
+   "time_to_value": 4
+  },
+  "opportunity": "Non-obvious INSTANCES channel: QBF encodings of positional games are an active benchmark family (Shaik, Mayer-Eichberger, van de Pol & Saffidine 2023 encoded Snaky only on 5x5; Boucher-Villemaire). 'Maker wins Snaky within 21 moves on the fixed 251-cell board' is a true instance with a known certificate, likely far beyond current QBF solvers, which makes it a graded hard-benchmark family (vary move bound and board). The certificate format is also a test case for strategy-certificate checkers.",
+  "targets": [
+   "QBFEVAL / QBF Gallery positional-games track",
+   "Shaik et al. positional-game QBF encoder (COR/'polished' encodings)",
+   "SAT/QBF certificate checkers"
+  ],
+  "action": "INSTANCES",
+  "first_step": "Use the Shaik et al. encoder to generate QBF instances 'Maker wins Snaky in <= m moves on the 251-cell support' for m = 15..21 and submit them to QBFEVAL as known-TRUE (at m = 21) hard instances.",
+  "caveats": "The board is restricted to Maker's 251-cell support, but Breaker can play anywhere, so the encoding must model the infinite board or the 17x17 board result; the instances may be too hard to be useful, or too easy once Maker's cells are fixed.",
+  "deep_dive": false,
+  "cross_links": [
+   "189"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Snaky-in-21-Maker-moves-September-25-2026/build/introduction.tex (thm:main, QBF prior work)",
+   "verification/verify_certificate.py",
+   "lean/docs/187.md"
+  ]
+ },
+ {
+  "num": "188",
+  "title": "The sharp terminal leave in random triangle removal",
+  "subject": "Combinatorics",
+  "plain_english": "If you repeatedly delete a random triangle from the complete graph on n vertices until none remain, about n^{3/2}/(2*sqrt2) edges are left at the end.",
+  "constructive": "n/a (limit theorem for a randomized process)",
+  "explicit_constants": "sharp constant 1/(2*sqrt2), with o(1) rate",
+  "galactic": null,
+  "channels": [
+   "FOUND",
+   "COMM"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 2,
+   "practicality": 3,
+   "confidence": 4,
+   "effort": 5,
+   "time_to_value": 5
+  },
+  "opportunity": "No real applied channel. Random greedy triangle packing gives partial Steiner triple systems (weight-3 constant-weight codes), but practitioners use exact algebraic STS constructions. ",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Convergence may be slow. Optional study-internal sanity check: simulate n in {500..4000} and compare leave/n^1.5 with 0.3536.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "catalogue abstract",
+   "lean/docs/188.md"
+  ]
+ },
+ {
+  "num": "189",
+  "title": "Cycle–clique Ramsey numbers",
+  "subject": "Combinatorics",
+  "plain_english": "Exactly determines the smallest complete graph whose 2-colourings force a red m-cycle or a blue n-clique: (m-1)(n-1)+1 for m>=n>=3, except R(C3,K3)=6.",
+  "constructive": "n/a (exact formula; proof with 3,099 computer-checked cases)",
+  "explicit_constants": "exact",
+  "galactic": false,
+  "channels": [
+   "FOUND",
+   "VERIF"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 2,
+   "practicality": 3,
+   "confidence": 5,
+   "effort": 4,
+   "time_to_value": 3
+  },
+  "opportunity": "No applied channel. Methodological interest: ships certificates.jsonl plus two independent checkers, a model for certified computer-assisted combinatorics (cross-check value for the study).",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [
+   "187",
+   "170"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Cycle-clique-Ramsey-numbers-September-25-2026/verification/ (code, data/summary.json)",
+   "lean/docs/189.md"
+  ]
+ },
+ {
+  "num": "190",
+  "title": "Polynomial removal fails for ordered binary matrices",
+  "subject": "Combinatorics",
+  "plain_english": "There is a fixed 66x66 binary pattern such that a matrix can be far from pattern-free (needs many bit flips) while containing almost no copies of the pattern, so no polynomial 'removal lemma' exists; the canonical random-submatrix tester needs exp(Omega(eps^{-1/2})) samples.",
+  "constructive": "yes (explicit pattern and explicit host matrices A_h of size (386h+2)2^h)",
+  "explicit_constants": "explicit: eps_h=(386h+2)^-2, copy density <= eps_h 2^-h",
+  "galactic": false,
+  "channels": [
+   "CPLX",
+   "GEO"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 1,
+   "directness": 4,
+   "practicality": 3,
+   "confidence": 5,
+   "effort": 4,
+   "time_to_value": 2
+  },
+  "opportunity": "Checked the image property-testing channel: ordered binary matrices model binary images, and this kills polynomial-query canonical testers for 'ordered submatrix-freeness' (Alon-Ben-Eliezer-Fischer programme). Consequence for theory: stop trying to prove poly(1/eps) canonical testers for general ordered 0/1 patterns and target restricted pattern classes instead. No deployed image-analysis system uses such testers, so practical impact is nil.",
+  "targets": [
+   "Property-testing community (Alon, Ben-Eliezer, Fischer, Gishboliner-Shapira survey Conj. 4.5)"
+  ],
+  "action": "REDIRECT",
+  "first_step": "Notify the Gishboliner-Shapira survey authors that Conjecture 4.5 is refuted with a Lean-checked explicit pattern.",
+  "caveats": "Lower bound applies to canonical row/column-sampling testers; adaptive testers are not covered.",
+  "deep_dive": false,
+  "cross_links": [
+   "161"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/01-introduction.tex (thm:main)",
+   "05-conclusion.tex (cor:canonical-testing)",
+   "lean/docs/190.md"
+  ]
+ },
+ {
+  "num": "191",
+  "title": "A power improvement in the Heilbronn triangle lower bound",
+  "subject": "Combinatorics",
+  "plain_english": "One can place n points in the unit square so that every triangle they form has area at least n^{-2+eta}, refuting the conjectured near-n^{-2} upper bound.",
+  "constructive": "partial (randomized algebraic construction, explicit but extremely small exponent)",
+  "explicit_constants": "eta = 2/(45435k+16) (~4.4e-5 at k=1)",
+  "galactic": true,
+  "channels": [
+   "FOUND",
+   "GEO"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 2,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "No applied channel. Well-spread point sets for meshing/sampling (quasi-Monte Carlo, sensor layout) never operate in the regime where an n^{4.4e-5} gain matters (n^eta >= 2 needs n > 2^{22700}).",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Galactic exponent.",
+  "deep_dive": false,
+  "cross_links": [
+   "183",
+   "167"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/08-alteration.tex (eta formula)",
+   "01-introduction.tex",
+   "lean/docs/191.md"
+  ]
+ },
+ {
+  "num": "192",
+  "title": "Boolean functions violate the square-root degree bound by arbitrary factors",
+  "subject": "Combinatorics",
+  "plain_english": "For any C there is a Boolean function whose total correlation with its individual input bits exceeds C*sqrt(degree), refuting a Gopalan-Servedio conjecture.",
+  "constructive": "partial (finite construction; 'we do not obtain useful bounds on their growth')",
+  "explicit_constants": "none (dimension and copy counts unbounded)",
+  "galactic": null,
+  "channels": [
+   "FOUND",
+   "STAT"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "No applied channel; learning-theory analyses of the low-degree algorithm do not depend on this conjecture.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Nonquantitative.",
+  "deep_dive": false,
+  "cross_links": [
+   "132",
+   "127"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Unbounded-Violations-of-the-Square-Root-Degree-Bound-September-26-2026/build/sections/00-introduction.tex (thm:main)",
+   "lean/docs/192.md"
+  ]
+ }
+]

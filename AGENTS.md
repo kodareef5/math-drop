@@ -5,7 +5,8 @@ Find useful consequences of AI math releases and turn the best ones into reprodu
 ## Keep the work useful
 
 - Start with the question or defect being resolved. End with evidence, a patch, or a specific reason to stop.
-- Keep the public repo small. Reuse existing notes and checks. Avoid duplicate catalogs, elaborate scoring systems, and status reports without new findings.
+- Keep the presentation terse and publish the supporting work. Preserve the full classification, evidence, and experiments. Avoid duplicate catalogs, elaborate scoring systems, and status reports without new findings.
+- Treat `imports/` as a dated source record. Keep original files unchanged; record new checks and decisions separately.
 - For each promising idea, name the target repository, relevant function or document, expected benefit, and smallest test that could disprove it.
 - Check the current source and existing issues and PRs before preparing a contribution. Preserve links and commit IDs.
 - Separate published claims, inherited judgments, and checks run here. A Lean file alone does not establish that the paper's headline was proved.

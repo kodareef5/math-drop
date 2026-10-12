@@ -1,0 +1,1705 @@
+[
+ {
+  "num": "304",
+  "title": "The Hilbert–Smith conjecture in every dimension",
+  "subject": "Topology",
+  "plain_english": "Any locally compact group acting faithfully and continuously on a finite-dimensional manifold is a Lie group; in particular the p-adic integers cannot act this way.",
+  "constructive": "no - structural classification theorem",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 1,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. This is transformation-group theory. The continuous symmetry groups used in physics, robotics or vision are Lie groups by construction, so nothing downstream changes.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Long-open major conjecture with no formalization; treat as unverified claim.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "slice summary/abstract",
+   "/root/openai-math/preprints/The-Hilbert-Smith-conjecture-in-every-finite-dimension-September-23-2026/build (grep: Theorem 'Bounded comparison')"
+  ]
+ },
+ {
+  "num": "305",
+  "title": "Four-dimensional disk embedding and Wall's conjecture",
+  "subject": "Topology",
+  "plain_english": "In 4-dimensional topology the Freedman-Quinn disk-embedding tool fails without fundamental-group hypotheses (the free group F2 is not 'good'), and there is a 4-dimensional Poincare duality group that is not the fundamental group of any closed aspherical 4-manifold.",
+  "constructive": "yes - explicit 4-manifolds/disc maps and a finitely presented group, but purely topological objects",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. Topological 4-manifold surgery theory has no computational or engineering consumer.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Three unformalized manuscripts; resolves a central open question (F2 goodness), so high scrutiny is warranted.",
+  "deep_dive": false,
+  "cross_links": [
+   "315",
+   "320",
+   "321"
+  ],
+  "evidence": [
+   "slice abstracts (3 manuscripts)"
+  ]
+ },
+ {
+  "num": "306",
+  "title": "The purely cosmetic surgery conjecture",
+  "subject": "Topology",
+  "plain_english": "Two different Dehn surgeries on a nontrivial knot in the 3-sphere never give the same oriented 3-manifold.",
+  "constructive": "no - non-existence theorem (Floer/gauge-theoretic style)",
+  "explicit_constants": "none",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 1,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. Software that enumerates or identifies 3-manifolds (SnapPy, Regina) identifies surgeries computationally already; the theorem removes no computational step and gives no new invariant to implement.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Long-open conjecture, unformalized.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "slice abstract",
+   "/root/openai-math/preprints/Purely-Cosmetic-Surgery-on-Knots-in-the-Three-Sphere-September-23-2026/build (grep for computational content: none)"
+  ]
+ },
+ {
+  "num": "307",
+  "title": "Failure of rational injectivity for maximal coarse assembly",
+  "subject": "Topology",
+  "plain_english": "Builds an explicit family of bounded-degree finite graphs (finite quotients of SL3(Z) placed over discs in the triangular lattice) on which the coarse assembly map from index theory kills a nonzero K-homology class, disproving the coarse Novikov conjecture (reduced and maximal versions).",
+  "constructive": "yes - explicit graph family, but the phenomenon is asymptotic in disc radius and lives in operator K-theory/Roe algebras",
+  "explicit_constants": "graph family explicit; no quantitative sizes relevant to practice",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. Coarse assembly/Roe algebras are unrelated to topological data analysis (persistent homology does not compute coarse K-homology), and the graphs are just congruence Cayley graphs with property (T) -- no new expander construction or benchmark use beyond what Margulis/LPS graphs already give.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Reduced-assembly counterexample is Lean-formalized (CoarseAssembly); maximal version is not.",
+  "deep_dive": false,
+  "cross_links": [
+   "177",
+   "178"
+  ],
+  "evidence": [
+   "/root/openai-math/lean/docs/307.md",
+   "/root/openai-math/preprints/A-counterexample-to-the-coarse-Novikov-conjecture-September-23-2026/build/sections/01-introduction.tex (construction overview)",
+   "/root/openai-math/preprints/Failure-of-rational-injectivity-for-maximal-coarse-assembly-October-5-2026/build/sections/01-introduction.tex (grep)"
+  ]
+ },
+ {
+  "num": "308",
+  "title": "Finite Smith–Toda complexes at every height",
+  "subject": "Topology",
+  "plain_english": "Constructs finite spectra V(n) (generalized Moore spectra) with prescribed Brown-Peterson homology at every height, at a prime depending on n (e.g. V(4) at p=1009).",
+  "constructive": "yes - explicit finite spectra, but objects of stable homotopy theory",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. Chromatic stable homotopy theory has no applied consumer.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "309",
+   "311",
+   "313",
+   "314",
+   "316",
+   "318",
+   "319"
+  ],
+  "evidence": [
+   "slice abstracts (2 manuscripts)"
+  ]
+ },
+ {
+  "num": "309",
+  "title": "The Kervaire invariant problem at the prime three",
+  "subject": "Topology",
+  "plain_english": "At the prime 3, the Kervaire invariant classes survive in the Adams spectral sequence exactly in stems 10, 106, 322.",
+  "constructive": "partial - detection via equivariant Morava E-theory; no algorithmic output",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 1,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. Computational stable-homotopy software (Bruner's ext, Lin/Wang/Xu machine computations) works at p=2 in low stems; stem 106/322 at p=3 is far outside any computed range and the result changes no code.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Long-open problem, unformalized; relies on Belmont-Ray coefficient model proved here.",
+  "deep_dive": false,
+  "cross_links": [
+   "308",
+   "311",
+   "313",
+   "314",
+   "316",
+   "318",
+   "319"
+  ],
+  "evidence": [
+   "slice abstract",
+   "/root/openai-math/preprints/The-Kervaire-Invariant-Problem-at-the-Prime-Three-September-24-2026/build/sections/introduction.tex (grep)"
+  ]
+ },
+ {
+  "num": "310",
+  "title": "Quillen's conjecture in rational homology",
+  "subject": "Topology",
+  "plain_english": "If a finite group has no nontrivial normal p-subgroup, then the poset of its nontrivial elementary abelian p-subgroups has nonzero rational homology (Quillen's conjecture).",
+  "constructive": "no - non-vanishing theorem",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 1,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. Could be spot-checked in GAP/Magma for small groups, but no algorithm or application uses subgroup-poset contractibility.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Decades-old conjecture, unformalized.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "slice abstract"
+  ]
+ },
+ {
+  "num": "311",
+  "title": "The Hovey–Strickland and Chai conjectures",
+  "subject": "Topology",
+  "plain_english": "Classifies invariant prime ideals of Lubin-Tate rings (Chai's conjecture) and hence the thick tensor ideals of dualizable K(n)-local spectra (Hovey-Strickland).",
+  "constructive": "no - classification",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None (chromatic homotopy theory).",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "308",
+   "309",
+   "313",
+   "314",
+   "316",
+   "318",
+   "319"
+  ],
+  "evidence": [
+   "slice abstract"
+  ]
+ },
+ {
+  "num": "312",
+  "title": "The Grothendieck homotopy hypothesis",
+  "subject": "Topology",
+  "plain_english": "Grothendieck's algebraic definition of infinity-groupoids (freely add all coherence operations via a 'coherator') reproduces exactly the homotopy theory of topological spaces, for every coherator in the Ara-Henry convention; the key step is Henry's pushout conjecture.",
+  "constructive": "partial - explicit path/cylinder constructions interpreting every coherator operation, but the output is an equivalence of homotopy theories, not an algorithm",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "VERIF",
+   "FOUND"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 2,
+   "practicality": 2,
+   "confidence": 4,
+   "effort": 2,
+   "time_to_value": 1
+  },
+  "opportunity": "No effect on mainstream HoTT/proof-assistant practice: Coq-HoTT, Cubical Agda and Lean already rest on simplicial/cubical/infinity-topos semantics (Kapulkin-Lumsdaine, Shulman) that interpret types as spaces. The one real formal-methods touchpoint is coherator-based type theories such as CaTT (Finster-Mimram), whose models are Grothendieck-Maltsiniotis weak omega-categories (Benjamin-Finster-Mimram): if a groupoidal CaTT/Brunerie-style coherator fits the Ara-Henry height convention, this theorem gives it a 'models = spaces' semantics. The Lean development of the elementary-expansion theorem (~12.7k lines, OAI/CategoryTheory/Globular) is a possible Mathlib contribution on globular theories.",
+  "targets": [
+   "CaTT (Finster-Mimram type theory / proof assistant for weak omega-categories)",
+   "Mathlib (globular sets, higher category theory)"
+  ],
+  "action": "FORMALIZE",
+  "first_step": "Check whether Brunerie's groupoidal coherator / the CaTT groupoid fragment satisfies Definition 'coherator convention' (generating fillers of output dimension j have arity height <= j); if so, send the semantic corollary to the CaTT developers.",
+  "caveats": "Lean covers only the elementary-expansion (Henry pushout) theorem, not the semi-model structure or comparison with spaces; benefit is to type-theory semantics, not industrial verification.",
+  "deep_dive": false,
+  "cross_links": [
+   "317"
+  ],
+  "evidence": [
+   "/root/openai-math/lean/docs/312.md",
+   "/root/openai-math/preprints/The-Grothendieck-homotopy-hypothesis-via-elementary-expansions-September-24-2026/build/sections/00-introduction.tex (Theorem thm:main)",
+   "/root/openai-math/preprints/The-Grothendieck-homotopy-hypothesis-via-elementary-expansions-September-24-2026/build/sections/01-preliminaries.tex (Definition def:coherator)",
+   "/root/openai-math/lean/OAI/CategoryTheory/Globular (size)"
+  ]
+ },
+ {
+  "num": "313",
+  "title": "Finite generation for the $`K(n)`$-local sphere",
+  "subject": "Topology",
+  "plain_english": "Every homotopy group of the K(n)-local sphere is a finitely generated p-adic module.",
+  "constructive": "no - finiteness theorem",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None (chromatic homotopy theory).",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "308",
+   "309",
+   "311",
+   "314",
+   "316",
+   "318",
+   "319"
+  ],
+  "evidence": [
+   "slice abstract"
+  ]
+ },
+ {
+  "num": "314",
+  "title": "Cyclic length and chromatic fixed-point loss",
+  "subject": "Topology",
+  "plain_english": "For a subgroup H of a finite p-group G, the chromatic height lost passing from H- to G-geometric fixed points equals the shortest subnormal chain from H to G with cyclic quotients.",
+  "constructive": "partial - sharpness witnessed by finite spectra",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None (equivariant chromatic homotopy theory).",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "308",
+   "309",
+   "311",
+   "313",
+   "316",
+   "318",
+   "319"
+  ],
+  "evidence": [
+   "slice abstract"
+  ]
+ },
+ {
+  "num": "315",
+  "title": "The four-dimensional Singer conjecture",
+  "subject": "Topology",
+  "plain_english": "For closed aspherical 4-manifolds (and 4-dimensional Poincare complexes), L2-Betti numbers of the universal cover vanish outside the middle degree (Singer conjecture in dimension 4).",
+  "constructive": "no - vanishing theorem",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 1,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. L2-invariants have no applied consumer here.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Major conjecture, unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "305",
+   "320",
+   "321"
+  ],
+  "evidence": [
+   "slice abstract"
+  ]
+ },
+ {
+  "num": "316",
+  "title": "Curtis’s conjecture",
+  "subject": "Topology",
+  "plain_english": "The mod-2 stable Hurewicz image of the sphere is spanned by the Hopf-invariant-one and Kervaire-invariant-one classes (Curtis's conjecture).",
+  "constructive": "no",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None (stable homotopy theory).",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Unformalized; earlier proposed proof had a gap (Wellington), per the introduction.",
+  "deep_dive": false,
+  "cross_links": [
+   "308",
+   "309",
+   "311",
+   "313",
+   "314",
+   "318",
+   "319"
+  ],
+  "evidence": [
+   "slice abstract",
+   "/root/openai-math/preprints/The-Stable-Hurewicz-Image-of-the-Sphere-at-Two-September-25-2026/build/introduction.tex (grep)"
+  ]
+ },
+ {
+  "num": "317",
+  "title": "Thomason model structures in all strict higher dimensions",
+  "subject": "Topology",
+  "plain_english": "Strict n-categories (every finite n and n = omega) carry a Thomason-type model structure Quillen-equivalent to simplicial sets, so strict higher categories model all homotopy types.",
+  "constructive": "yes - explicit Quillen adjunction c_n Sd^2 -| Ex^2 N_n (Street nerve), fully Lean-formalized",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "VERIF",
+   "FOUND"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 1,
+   "reach": 2,
+   "directness": 3,
+   "practicality": 3,
+   "confidence": 5,
+   "effort": 2,
+   "time_to_value": 1
+  },
+  "opportunity": "Not a HoTT result (it concerns strict, not weak, categories) and changes no proof assistant's semantics. The concrete asset is the ~160k-line Lean 4 development (OAI/CategoryTheory/Thomason) built on Mathlib's SSet.modelCategoryQuillen: strict omega-categories, Street nerve, Sd/Ex, Gray-type prisms, model-structure transfer. Upstreaming reusable layers would fill gaps in Mathlib's higher-category/homotopical-algebra library and could serve the Lean infinity-cosmos effort and polygraph/higher-rewriting formalizations.",
+  "targets": [
+   "Mathlib (AlgebraicTopology.SimplicialSet, CategoryTheory, HomotopicalAlgebra)",
+   "Lean infinity-cosmos project (Riehl et al.)"
+  ],
+  "action": "FORMALIZE",
+  "first_step": "Extract the OmegaCategory/Street-nerve/Ex^2-Sd^2 layers into a standalone branch against current Mathlib and open a Zulip discussion with the homotopical-algebra maintainers about upstreaming.",
+  "caveats": "Value is to formal-mathematics infrastructure only; upstreaming 160k machine-written lines is a multi-month refactoring job.",
+  "deep_dive": false,
+  "cross_links": [
+   "312"
+  ],
+  "evidence": [
+   "/root/openai-math/lean/docs/317.md",
+   "/root/openai-math/lean/ComparatorChallenges/ThomasonModelStructures.lean (definitions)",
+   "/root/openai-math/preprints/Thomason-Model-Structures-in-Every-Strict-Higher-Dimension-September-25-2026/build/sections (Theorem thm:quillen-equivalence)",
+   "/root/openai-math/lean/OAI/CategoryTheory/Thomason (size; uses Mathlib SSet.modelCategoryQuillen)"
+  ]
+ },
+ {
+  "num": "318",
+  "title": "Chromatic splitting: filtrations and counterexamples",
+  "subject": "Topology",
+  "plain_english": "Disproves strong and weak chromatic splitting in several height/prime ranges, while showing the relevant chromatic overlap still admits a 2^n-stage filtration by the predicted pieces.",
+  "constructive": "partial - explicit filtrations and kernel classes",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None (chromatic homotopy theory).",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Five unformalized manuscripts.",
+  "deep_dive": false,
+  "cross_links": [
+   "308",
+   "309",
+   "311",
+   "313",
+   "314",
+   "316",
+   "319"
+  ],
+  "evidence": [
+   "slice abstracts (5 manuscripts)"
+  ]
+ },
+ {
+  "num": "319",
+  "title": "Counterexamples to finite generation at chromatic height two",
+  "subject": "Topology",
+  "plain_english": "For large primes, constructs a spectrum of fp-type two that cannot be built from completed BP<2> by finitely many cofibers, refuting the Hahn-Wilson conjecture at height two.",
+  "constructive": "yes - explicit spectrum (abstract)",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None (chromatic homotopy theory).",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "308",
+   "309",
+   "311",
+   "313",
+   "314",
+   "316",
+   "318"
+  ],
+  "evidence": [
+   "slice abstract"
+  ]
+ },
+ {
+  "num": "320",
+  "title": "Nonhomeomorphic closed aspherical four-manifolds",
+  "subject": "Topology",
+  "plain_english": "There are closed aspherical 4-manifolds that are homotopy equivalent but not homeomorphic (counterexample to the Borel conjecture in dimension 4).",
+  "constructive": "yes - explicit manifolds with hyperbolic fundamental group",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 1,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Counterexample to a famous conjecture, unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "305",
+   "315",
+   "321"
+  ],
+  "evidence": [
+   "slice abstract"
+  ]
+ },
+ {
+  "num": "321",
+  "title": "A counterexample to Wall's finite D(2) problem",
+  "subject": "Topology",
+  "plain_english": "A finite 3-dimensional CW complex that satisfies Wall's D(2) homological condition but has no 2-dimensional finite model (built via Quillen's plus construction; obstruction from rank-one local systems).",
+  "constructive": "yes - explicit complex via plus construction",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. Related to group presentations/relation gaps (and distantly to Andrews-Curtis), but gives no algorithm or benchmark of practical interest.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Unformalized; infinite fundamental group.",
+  "deep_dive": false,
+  "cross_links": [
+   "305"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/A-Counterexample-to-Walls-D2-Problem-October-6-2026/build/sections/01-introduction.tex"
+  ]
+ },
+ {
+  "num": "333",
+  "title": "Smooth isometric immersions of surfaces into ℝ<sup>4</sup>",
+  "subject": "Differential geometry",
+  "plain_english": "Every closed smooth Riemannian surface (any curvature, orientable or not) can be realized exactly as a smooth, possibly self-intersecting, surface in 4-dimensional Euclidean space.",
+  "constructive": "partial - Nash-type iteration with smoothing and an infinite correction scheme; existence, not an implementable algorithm",
+  "explicit_constants": "none",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 5,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. Graphics, shape analysis and manifold learning only need C^1 or approximate isometric embeddings (Nash-Kuiper corrugations already give C^1 isometric embeddings of surfaces in R^3; Verma-style manifold-learning embeddings aim at approximate isometry), and nobody processes exact smooth isometric immersions in R^4.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Lean-formalized top-line.",
+  "deep_dive": false,
+  "cross_links": [
+   "334"
+  ],
+  "evidence": [
+   "/root/openai-math/lean/docs/333.md",
+   "/root/openai-math/preprints/Smooth-isometric-immersions-of-closed-surfaces-into-Euclidean-four-space-September-23-2026/build/introduction.tex (Theorem thm:main)"
+  ]
+ },
+ {
+  "num": "334",
+  "title": "A smooth surface metric with no local isometric immersion in ℝ<sup>3</sup>",
+  "subject": "Differential geometry",
+  "plain_english": "There is a smooth surface metric, flat to infinite order at a point, that cannot be realized as a smooth surface in 3-space on any neighbourhood of that point.",
+  "constructive": "yes - explicit metric construction",
+  "explicit_constants": "explicit construction, but not useful as test data",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 5,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. The obvious applied consumer would be inverse design of shape-morphing sheets (non-Euclidean plates, nematic-elastomer and growth-programmed surfaces), but designed metrics are analytic or have nondegenerate curvature, where local immersions exist (Janet-Cartan, Lin). The counterexample needs curvature sign changes accumulating at an infinitely degenerate point -- physically irrelevant.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Lean-formalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "333"
+  ],
+  "evidence": [
+   "/root/openai-math/lean/docs/334.md",
+   "/root/openai-math/preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/build/main.tex (curvature discussion)"
+  ]
+ },
+ {
+  "num": "335",
+  "title": "Gromov’s integral scalar-curvature bound for simplicial volume",
+  "subject": "Differential geometry",
+  "plain_english": "Negative scalar curvature, integrated suitably, bounds the simplicial volume of a manifold; also manifolds with positive scalar curvature are rationally inessential (Gromov-Lawson aspherical conjecture).",
+  "constructive": "no",
+  "explicit_constants": "a_n > 0 dimension-only, not explicit",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. Positive-mass-type consequences in general relativity are already known by other methods.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Unformalized; constant a_n not explicit.",
+  "deep_dive": false,
+  "cross_links": [
+   "336"
+  ],
+  "evidence": [
+   "slice abstracts (2 manuscripts)"
+  ]
+ },
+ {
+  "num": "336",
+  "title": "Spectral scalar curvature, Urysohn width, and macroscopic dimension",
+  "subject": "Differential geometry",
+  "plain_english": "Manifolds with (spectral) positive scalar curvature are macroscopically at most (n-2)-dimensional: they map to an (n-2)-complex with uniformly small fibres.",
+  "constructive": "partial - existence of maps; explicit fibre bound 500/sqrt(lambda) in dimension 3",
+  "explicit_constants": "3D: fibre diameter <= 500/sqrt(lambda); higher n: dimension-only constant",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "335"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Spectral-scalar-curvature-and-Urysohn-width-in-dimension-three-October-5-2026 (Theorem thm:main)"
+  ]
+ },
+ {
+  "num": "337",
+  "title": "Sharp Cartan–Hadamard isoperimetry and rigidity",
+  "subject": "Differential geometry",
+  "plain_english": "In simply connected spaces of nonpositive curvature, no region of a given volume has smaller boundary than the model ball; and any cycle in a CAT(0) space bounds a filling no larger than in Euclidean space, with the sharp constant.",
+  "constructive": "partial - filling existence with sharp Euclidean constant",
+  "explicit_constants": "sharp Euclidean isoperimetric constant",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None found. CAT(0) spaces do appear in practice -- BHV phylogenetic tree space (statistics on trees), CAT(0) cube complexes of reconfigurable-robot state spaces (Ghrist; Ardila et al. motion planning), hyperbolic embeddings in ML -- but those algorithms use geodesics and Frechet means, never filling/isoperimetric bounds.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "CAT(0) filling version Lean-formalized; manifold Cartan-Hadamard version is not.",
+  "deep_dive": false,
+  "cross_links": [
+   "257",
+   "254",
+   "354"
+  ],
+  "evidence": [
+   "/root/openai-math/lean/docs/337.md",
+   "/root/openai-math/preprints/Sharp-integral-fillings-in-CAT(0)-spaces-September-23-2026/build/sections/01-introduction.tex (Theorem thm:main)"
+  ]
+ },
+ {
+  "num": "338",
+  "title": "Yau's uniformization conjecture",
+  "subject": "Differential geometry",
+  "plain_english": "A complete noncompact Kahler manifold with positive bisectional curvature is biholomorphic to C^n (Yau's uniformization conjecture).",
+  "constructive": "no",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 1,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Famous conjecture, unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "359"
+  ],
+  "evidence": [
+   "slice abstract"
+  ]
+ },
+ {
+  "num": "339",
+  "title": "Katok's entropy rigidity conjecture",
+  "subject": "Differential geometry",
+  "plain_english": "For negatively curved closed manifolds of dimension >= 3, the Liouville measure is the measure of maximal entropy for the geodesic flow only if the metric is locally symmetric (Katok's conjecture).",
+  "constructive": "no",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 1,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Famous conjecture, unformalized.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "slice abstract"
+  ]
+ },
+ {
+  "num": "340",
+  "title": "A counterexample to the nearby Lagrangian conjecture",
+  "subject": "Differential geometry",
+  "plain_english": "In a cotangent bundle of S^9 x S^(N-1) for some large even N there is an exact Lagrangian diffeomorphic to the zero section but not Hamiltonian isotopic to it (nearby Lagrangian conjecture fails).",
+  "constructive": "partial - existence for unspecified large N",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Unformalized; dimension unspecified/large.",
+  "deep_dive": false,
+  "cross_links": [
+   "347"
+  ],
+  "evidence": [
+   "slice abstract"
+  ]
+ },
+ {
+  "num": "341",
+  "title": "Donaldson's hypersymplectic deformation conjecture",
+  "subject": "Differential geometry",
+  "plain_english": "Any normalized hypersymplectic triple of 2-forms on a closed 4-manifold can be deformed to a hyperkahler triple in the same cohomology classes (Donaldson).",
+  "constructive": "no",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Manuscript was revised on Oct 7 2026 (dependency removed); unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "342"
+  ],
+  "evidence": [
+   "slice abstract",
+   "/root/openai-math/history.md (repair note)"
+  ]
+ },
+ {
+  "num": "342",
+  "title": "Donaldson's tamed-to-compatible conjecture",
+  "subject": "Differential geometry",
+  "plain_english": "On a closed 4-manifold, an almost complex structure tamed by some symplectic form is compatible with some symplectic form (Donaldson's tamed-to-compatible conjecture).",
+  "constructive": "no",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Lean-formalized main statement; the paper's cone-equality claim was corrected on Oct 7 2026.",
+  "deep_dive": false,
+  "cross_links": [
+   "341"
+  ],
+  "evidence": [
+   "/root/openai-math/lean/docs/342.md",
+   "/root/openai-math/history.md (repair note)"
+  ]
+ },
+ {
+  "num": "343",
+  "title": "Symplectic ball packing in higher dimensions",
+  "subject": "Differential geometry",
+  "plain_english": "In dimension 6 and up, finitely many symplectic balls fit disjointly into a symplectic ball exactly when total volume fits and every pair of radii (capacities) sums to less than the big one.",
+  "constructive": "partial - embeddings produced by deformation/Moser arguments over toric models; no explicit symplectomorphisms",
+  "explicit_constants": "criterion explicit; embeddings not explicit",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 5,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. Applied phase-space uses of symplectic rigidity (beam emittance and the 'symplectic camel', de Gosson's quantum blobs, symplectic integrators) rely on single-ball non-squeezing, not multi-ball packing in dimension >= 6, and the theorem says the only obstructions there are volume plus Gromov's two-ball bound -- i.e., less rigidity, nothing to design against.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Lean-formalized (full equivalence and necessity).",
+  "deep_dive": false,
+  "cross_links": [
+   "087",
+   "340",
+   "347"
+  ],
+  "evidence": [
+   "/root/openai-math/lean/docs/343.md",
+   "/root/openai-math/preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/build/sections/introduction.tex (Theorem intro:main and proof outline)"
+  ]
+ },
+ {
+  "num": "344",
+  "title": "The metric Blaschke conjecture",
+  "subject": "Differential geometry",
+  "plain_english": "A closed manifold whose injectivity radius equals its diameter is a round sphere or projective space up to scale (metric Blaschke conjecture).",
+  "constructive": "no",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 1,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Famous conjecture, unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "345"
+  ],
+  "evidence": [
+   "slice abstract"
+  ]
+ },
+ {
+  "num": "345",
+  "title": "Infinitely many closed geodesics on Riemannian spheres and closed three-manifolds",
+  "subject": "Differential geometry",
+  "plain_english": "Every Riemannian metric on a sphere (and on every closed 3-manifold) has infinitely many geometrically distinct closed geodesics.",
+  "constructive": "no - existence via variational/topological methods",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 1,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. Geodesic computation on meshes (heat method, MMP) does not depend on counts of closed geodesics.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Famous problem, unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "344"
+  ],
+  "evidence": [
+   "slice abstract"
+  ]
+ },
+ {
+  "num": "346",
+  "title": "Sharp singular-set bounds for stationary integral varifolds",
+  "subject": "Differential geometry",
+  "plain_english": "For every stationary (minimal-surface-like) integral varifold, the singular set has dimension at most m-1, and is measure-zero; sharp in all dimensions/codimensions.",
+  "constructive": "no - regularity theorem",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. Physical soap films already obey Taylor's classification of singularities, and computational tools (Surface Evolver; varifold shape metrics of Charon-Trouve used in Deformetrica) use varifolds as measures or meshes, independent of this regularity.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Unformalized; resolves a recent Brena-Decio-De Lellis conjecture with a sharp bound.",
+  "deep_dive": false,
+  "cross_links": [
+   "349",
+   "355"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/A-Codimension-One-Bound-for-the-Singular-Set-of-a-Stationary-Integral-Varifold-October-5-2026 (Theorem thm:main)"
+  ]
+ },
+ {
+  "num": "347",
+  "title": "Counterexamples to stable-Morse and strong Arnold fixed-point bounds",
+  "subject": "Differential geometry",
+  "plain_english": "Hamiltonian diffeomorphisms can have fewer fixed points than Morse theory of the underlying manifold suggests (counterexamples in dimensions 6, 12, 22, 3332).",
+  "constructive": "yes - explicit Kahler manifolds/Hamiltonians, but very high dimensional",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. Counts of periodic orbits in applied Hamiltonian dynamics (celestial mechanics, plasma) live on low-dimensional, non-compact or specific phase spaces; these Kahler examples change no lower bound anyone uses.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Only the quadric-threefold (degenerate) example is Lean-formalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "340",
+   "343"
+  ],
+  "evidence": [
+   "/root/openai-math/lean/docs/347.md",
+   "slice abstracts (5 manuscripts)"
+  ]
+ },
+ {
+  "num": "348",
+  "title": "Nonnegative-curvature Einstein classification and an <i>L</i><sup>2</sup> topological gap",
+  "subject": "Differential geometry",
+  "plain_english": "Classifies positive Einstein 4-manifolds with nonnegative sectional curvature (S^4, CP^2, S^2xS^2) and gives an L^2 trace-free-Ricci gap theorem.",
+  "constructive": "no",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Strictly-positive-curvature classification Lean-formalized; zero-plane and L^2 gap parts not.",
+  "deep_dive": false,
+  "cross_links": [
+   "351"
+  ],
+  "evidence": [
+   "/root/openai-math/lean/docs/348.md",
+   "slice abstracts"
+  ]
+ },
+ {
+  "num": "349",
+  "title": "The Solomon–Yau least-volume conjecture",
+  "subject": "Differential geometry",
+  "plain_english": "Every non-totally-geodesic closed minimal hypersurface in a round sphere has at least the area of the smallest Clifford minimal hypersurface (Solomon-Yau).",
+  "constructive": "no",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "346"
+  ],
+  "evidence": [
+   "slice abstract"
+  ]
+ },
+ {
+  "num": "350",
+  "title": "Yau’s nodal bounds: surfaces and higher dimensions",
+  "subject": "Differential geometry",
+  "plain_english": "On any fixed smooth closed surface, the zero set of a Laplace eigenfunction with eigenvalue lambda has length at most C*sqrt(lambda); in dimensions 3-5 the analogous bound fails for some smooth (non-analytic) metrics.",
+  "constructive": "no - existence of a metric-dependent constant obtained through compactness/contradiction arguments; counterexamples are explicit but non-analytic",
+  "explicit_constants": "C = C(M,g), not explicit",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 5,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None in practice. Users of eigenfunction nodal sets (spectral mesh segmentation and manifold harmonics in geometry processing, Laplacian positional encodings in geometric deep learning, Chladni/vibration analysis, quantum-chaos random-wave statistics) work with PL meshes or analytic metrics, where sqrt(k) scaling was already known (Donnelly-Fefferman) or observed; the constant is non-explicit, and the 3D-5D counterexamples require infinitely fine smooth metric tuning that no physical or discretized metric has.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "All three top-line results Lean-formalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "369"
+  ],
+  "evidence": [
+   "/root/openai-math/lean/docs/350.md",
+   "/root/openai-math/preprints/Sharp-nodal-length-on-smooth-surfaces-September-23-2026/build/introduction.tex (Theorem thm:main, proof outline)",
+   "/root/openai-math/preprints/Smooth-counterexamples-to-Yaus-nodal-upper-bound-in-dimensions-three-and-four-September-23-2026/build/sections/introduction.tex (Theorems thm:main, thm:four)"
+  ]
+ },
+ {
+  "num": "351",
+  "title": "Scalar curvature and finite-time Ricci-flow singularities",
+  "subject": "Differential geometry",
+  "plain_english": "4-dimensional Ricci flow continues as long as scalar curvature stays bounded; in high dimensions this fails.",
+  "constructive": "partial - explicit high-dimensional counterexample flows",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. Applied 'Ricci flow' is either discrete 2D surface Ricci flow for conformal parametrization (Gu-Yau; fully understood) or Ollivier/Forman graph curvature flows for networks/GNN rewiring -- neither is 4D smooth flow.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "352",
+   "355",
+   "348"
+  ],
+  "evidence": [
+   "slice abstracts (3 manuscripts)"
+  ]
+ },
+ {
+  "num": "352",
+  "title": "A finite-time singularity of Calabi flow",
+  "subject": "Differential geometry",
+  "plain_english": "Calabi flow on CP^10 can blow up in finite time even in a class containing a constant scalar curvature metric.",
+  "constructive": "yes - explicit U(10)-invariant initial metric",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "351"
+  ],
+  "evidence": [
+   "slice abstract"
+  ]
+ },
+ {
+  "num": "353",
+  "title": "Affine Bernstein rigidity through dimension nine and a smooth dimension-ten counterexample",
+  "subject": "Differential geometry",
+  "plain_english": "Complete convex solutions of the affine maximal surface equation are paraboloids in dimensions 3-9, and a smooth non-quadratic entire solution exists in dimension 10.",
+  "constructive": "yes for the dimension-10 counterexample",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Dims 3-9 graph case Lean-formalized; dim-10 counterexample not.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "/root/openai-math/lean/docs/353.md",
+   "slice abstracts"
+  ]
+ },
+ {
+  "num": "354",
+  "title": "The isoperimetric profile of the cubic three-torus",
+  "subject": "Differential geometry",
+  "plain_english": "In a unit cube with periodic boundary conditions, the least-surface-area way to enclose a given volume fraction v (<=1/2) is a sphere for v <= 4*pi/81 (~0.155), a cylinder for v up to 1/pi (~0.318), and a flat slab beyond that -- and nothing else ever wins.",
+  "constructive": "yes - exact closed-form profile and complete list of minimizers (Theorem intro:main)",
+  "explicit_constants": "fully explicit: I(V)=min{(36pi)^(1/3) v^(2/3), 2 sqrt(pi v), 2}, transitions 4pi/81 and 1/pi",
+  "galactic": false,
+  "channels": [
+   "PHYS"
+  ],
+  "tier": "T2",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 4,
+   "practicality": 5,
+   "confidence": 5,
+   "effort": 5,
+   "time_to_value": 4
+  },
+  "opportunity": "Molecular simulations of liquid-vapour (or any two-phase) coexistence in cubic periodic boxes interpret finite-size effects with the capillarity approximation: the condensed phase is assumed to be a sphere, then a cylinder, then a slab, with crossovers at exactly 4pi/81 and 1/pi (Binder/MacDowell; Prestipino et al., PRE 92, 022141, 2015). Those values came from comparing only the three candidate shapes. The theorem proves that for isotropic sharp-interface energy no other morphology (perforated slabs, Schwarz/gyroid-type periodic surfaces) is ever a global minimizer, so the formulas are exact for the model. That certifies the shape assumption behind slab-geometry interfacial-tension estimates. It also confirms that triply periodic minimal-surface phases in materials (copolymer gyroid, lipid cubic phases) cannot come from interfacial area alone in a cubic cell. Some other energy term is needed.",
+  "targets": [
+   "Finite-size vapour-liquid coexistence analysis in periodic boxes (Binder, MacDowell, Virnau; Prestipino et al. 2015)",
+   "Slab/direct-coexistence interfacial-tension workflows in MD/MC codes (GROMACS, LAMMPS, NIST FEASST flat-histogram MC)",
+   "Sharp-interface limits of Cahn-Hilliard / Ohta-Kawasaki (block-copolymer) models on cubic periodic cells"
+  ],
+  "action": "CERTIFY",
+  "first_step": "Write a short note or comment for the finite-size coexistence literature saying that the sphere/cylinder/slab sequence and the 4pi/81, 1/pi crossovers are now a theorem for cubic boxes (Lean-formalized). Then list the non-cubic box shapes that slab simulations actually use, as the open extension.",
+  "caveats": "Applies only to the unit cubic torus. Elongated boxes, which slab simulations usually use, are not covered. Real systems add thermal fluctuations (the transitions are finite-size crossovers), Tolman/curvature corrections and anisotropic tension; copolymers add chain stretching. The transition values were already in the physics literature, and only the 'no other shapes' part is new. This is not the Kelvin/Weaire-Phelan foam-partition problem.",
+  "deep_dive": false,
+  "cross_links": [
+   "337"
+  ],
+  "evidence": [
+   "/root/openai-math/lean/docs/354.md",
+   "/root/openai-math/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/paper.tex (Theorem intro:main, completion of proof)",
+   "/root/openai-math/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/numerics.tex (rational certificates)",
+   "Web: arXiv 1509.02324 (Prestipino et al., droplet shapes in a periodic box; sph->cyl at 4pi/81, cyl->slab at 1/pi)"
+  ]
+ },
+ {
+  "num": "355",
+  "title": "Unique tangent flows at the first surface singularity",
+  "subject": "Differential geometry",
+  "plain_english": "When a smooth closed surface moving by mean curvature flow in R^3 first becomes singular, the blow-up limit at each singular point is unique (a single self-shrinker, including its position and axes).",
+  "constructive": "no - uniqueness theorem",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. Mean-curvature smoothing in geometry processing (Desbrun et al., conformalized MCF) and level-set MCF in imaging/grain-growth codes operate on discretizations and viscosity solutions; tangent-flow uniqueness is a step in the theory of flow through singularities, not an algorithmic input.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Unformalized; major step in MCF singularity theory.",
+  "deep_dive": false,
+  "cross_links": [
+   "346",
+   "351"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Tangent-flow-uniqueness-2026-09-24 (Theorem thm:main)"
+  ]
+ },
+ {
+  "num": "356",
+  "title": "Gigli’s characterization of Alexandrov curvature",
+  "subject": "Differential geometry",
+  "plain_english": "A metric space is an Alexandrov space with curvature >= kappa exactly when it is an RCD((n-1)kappa, n) space with Hausdorff measure whose distributional sectional curvature is >= kappa (Gigli's conjecture).",
+  "constructive": "no - characterization",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. The synthetic curvature notions used in ML (Ollivier/Forman graph Ricci curvature for over-squashing, network analysis) are discrete and not RCD; nothing here is computable from data.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Companion weak-Hessian theorem Lean-formalized; the main characterization is not.",
+  "deep_dive": false,
+  "cross_links": [
+   "357"
+  ],
+  "evidence": [
+   "/root/openai-math/lean/docs/356.md",
+   "/root/openai-math/preprints/Giglis-distributional-curvature-characterization-of-Alexandrov-spaces-September-24-2026/build/sections/comparison.tex (Theorem weight:every-geodesic, weight:alexandrov)"
+  ]
+ },
+ {
+  "num": "357",
+  "title": "Bi-Lipschitz coordinates at every regular RCD point",
+  "subject": "Differential geometry",
+  "plain_english": "In limits of manifolds with Ricci curvature bounded below (noncollapsed RCD spaces), every point whose tangent cones are all Euclidean has a neighbourhood that maps to R^n with distortion at most a constant depending only on the dimension.",
+  "constructive": "partial - charts built from harmonic coordinates plus a multiscale 'stretching' correction; neighbourhood size uncontrolled and L_n obtained via compactness",
+  "explicit_constants": "L_n depends only on n but is not computed; chart radius not quantified",
+  "galactic": null,
+  "channels": [
+   "STAT",
+   "GEO"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 1,
+   "reach": 2,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "The closest applied analogue is the theory behind eigenmap/diffusion-map manifold learning: Jones-Maggioni-Schul give local bi-Lipschitz charts from Laplacian eigenfunctions on smooth manifolds. This result extends 'bounded-distortion harmonic-type charts' to singular spaces with Ricci lower bounds, which could in principle support guarantees for data concentrated near singular sets. Without a quantitative chart scale it gives no sample-complexity or algorithmic statement.",
+  "targets": [
+   "Manifold-learning theory (Laplacian eigenmaps / diffusion maps guarantees)"
+  ],
+  "action": "RESEARCH",
+  "first_step": "Find out whether the chart radius can be bounded in terms of volume ratio or Reifenberg flatness. That is the minimum needed before any learning-theory use.",
+  "caveats": "Not constructive from samples. ML 'curvature' on graphs is not RCD. The constant comes from a compactness argument.",
+  "deep_dive": false,
+  "cross_links": [
+   "356",
+   "098"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Bi-Lipschitz-Coordinates-at-Regular-Points-of-Noncollapsed-RCD-Spaces-September-25-2026/build/source/introduction.tex (Theorem thm:main, Corollary cor:full-measure-atlas, proof outline)"
+  ]
+ },
+ {
+  "num": "358",
+  "title": "A three-manifold without conjugate points or nonpositive curvature",
+  "subject": "Differential geometry",
+  "plain_english": "There is a closed 3-manifold carrying a metric without conjugate points but no metric of nonpositive curvature.",
+  "constructive": "yes - explicit manifold",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 5,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Lean-formalized.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "/root/openai-math/lean/docs/358.md"
+  ]
+ },
+ {
+  "num": "359",
+  "title": "Negative Kähler curvature without bounded holomorphic coordinates",
+  "subject": "Differential geometry",
+  "plain_english": "A contractible domain in C^3 can carry a complete Kahler metric of pinched negative curvature yet not be biholomorphic to any bounded domain.",
+  "constructive": "yes - explicit potential",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Pinched example Lean-formalized; one-sided example not.",
+  "deep_dive": false,
+  "cross_links": [
+   "338"
+  ],
+  "evidence": [
+   "/root/openai-math/lean/docs/359.md"
+  ]
+ },
+ {
+  "num": "360",
+  "title": "Weak MTW curvature gives convexity and regular optimal transport",
+  "subject": "Differential geometry",
+  "plain_english": "On any compact Riemannian manifold satisfying the weak Ma-Trudinger-Wang curvature condition, the optimal-transport (squared geodesic distance) map between densities bounded above and below is a homeomorphism that is Holder continuous in both directions, with constants uniform over the density class. Injectivity domains are convex, which settles Villani's conjecture.",
+  "constructive": "no - regularity theorem; Holder exponent obtained by contradiction and compactness (paper: 'no explicit exponent')",
+  "explicit_constants": "none: alpha, C depend only on (M,g,lambda,Lambda) but are not computed",
+  "galactic": null,
+  "channels": [
+   "GEO",
+   "NUM",
+   "STAT"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 2,
+   "practicality": 2,
+   "confidence": 5,
+   "effort": 3,
+   "time_to_value": 2
+  },
+  "opportunity": "The only applied use is as a regularity input for convergence or consistency proofs of OT/Monge-Ampere solvers and OT-map estimators on curved domains: OT mesh adaptation on the sphere for atmospheric models (Weller-Browne-Budd-Cullen, McRae-Cotter-Budd), finite-difference OT on the sphere (Hamfeldt-Turnquist), semi-discrete Newton methods (Kitagawa-Merigot-Thibert), and Riemannian flow matching on spheres and tori. The manifolds people actually use there were already covered: round S^n (Loeper), flat tori (Cordero-Erausquin), RP^3=SO(3) (nonfocal case, Loeper-Villani) and products of round spheres (Figalli-Kim-McCann). So the marginal applied gain is close to zero. The one possibly new case is mixed products such as S^2 x T^k.",
+  "targets": [
+   "Convergence analyses of OT/Monge-Ampere solvers on the sphere (Hamfeldt-Turnquist; McRae-Cotter-Budd OT mesh adaptivity)",
+   "Riemannian flow matching / OT-map estimation on spheres and tori",
+   "Semi-discrete OT Newton solvers (Kitagawa-Merigot-Thibert) extended to manifolds"
+  ],
+  "action": "RESEARCH",
+  "first_step": "Check whether mixed products such as S^2 x T^k (nonnegative cross-curvature, hence weak MTW, by Kim-McCann) were already covered by Figalli-Kim-McCann 2013. If not, they are the only practically relevant manifolds that this result newly covers.",
+  "caveats": "Covers squared Riemannian distance cost only. It does NOT cover reflector-antenna (c=-log(1-x.y) or -2log|x-y|) or freeform-lens/refractor costs, whose MTW regularity theory (Wang, Loeper 2011, Gutierrez-Huang) is separate and older. Commercial freeform design (least-squares/SQP methods) does not use these regularity theorems. The exponent is non-explicit, and the result gives no algorithm.",
+  "deep_dive": false,
+  "cross_links": [
+   "374",
+   "373"
+  ],
+  "evidence": [
+   "/root/openai-math/lean/docs/360.md",
+   "/root/openai-math/lean/ComparatorChallenges/BiholderTransport.lean (statement)",
+   "/root/openai-math/preprints/Global-Support-and-Convex-Injectivity-Domains-under-Weak-MTW-September-25-2026/build/sections/introduction.tex (Theorems thm:main, thm:foundation)",
+   "/root/openai-math/preprints/Uniform-Bi-Holder-Transport-from-Weak-MTW-September-25-2026/build/sections/introduction.tex (Theorem thm:main) and conclusion.tex (Remark: no explicit exponent)",
+   "Web: arXiv 2108.00088 (reflector antenna OT on sphere uses cost -2log|x-y|)"
+  ]
+ },
+ {
+  "num": "361",
+  "title": "Failure of integer-degree harmonic dimension comparison",
+  "subject": "Differential geometry",
+  "plain_english": "On R^n with nonnegative Ricci curvature, the space of harmonic functions of polynomial growth <= k can exceed the Euclidean dimension (Yau's integer-degree comparison fails; 3D examples with fixed-factor excess).",
+  "constructive": "yes - explicit metrics (Lean version: dimension 16, degree 50000)",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "16-dimensional example Lean-formalized; 3D version not.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "/root/openai-math/lean/docs/361.md",
+   "slice abstracts"
+  ]
+ }
+]

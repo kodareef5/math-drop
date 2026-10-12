@@ -1,0 +1,31 @@
+[
+ {
+  "d": [
+   3,
+   3,
+   3,
+   3,
+   3,
+   3
+  ],
+  "lib": "networkx.connected_double_edge_swap",
+  "N_connected": 70,
+  "TV_uniform": 0.0196,
+  "p_uniform": 0.978
+ },
+ {
+  "d": [
+   4,
+   4,
+   3,
+   3,
+   2,
+   2,
+   2
+  ],
+  "lib": "networkx.connected_double_edge_swap",
+  "N_connected": 249,
+  "TV_uniform": 0.0461,
+  "p_uniform": 0.123
+ }
+]

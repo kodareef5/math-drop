@@ -1,0 +1,118 @@
+[
+ {
+  "deg": [
+   4,
+   4,
+   2,
+   2,
+   2,
+   2
+  ],
+  "N": 13,
+  "sweep_persist=False": {
+   "TV": 1.3183898417423734e-16,
+   "ratio": 1.0000000000000016,
+   "rowsum_err": 4.440892098500626e-16,
+   "colsum_err": 6.661338147750939e-16
+  },
+  "nosweep_persist=False": {
+   "TV": 7.077671781985373e-16,
+   "ratio": 1.0000000000000082
+  },
+  "sweep_persist=True": {
+   "TV": 0.096773020412635,
+   "ratio": 2.5225019043331067,
+   "rowsum_err": 2.220446049250313e-16,
+   "colsum_err": 1.3509730878306878
+  },
+  "nosweep_persist=True": {
+   "TV": 0.05351170568561878,
+   "ratio": 1.8000000000000045
+  }
+ },
+ {
+  "deg": [
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "N": 70,
+  "sweep_persist=False": {
+   "TV": 3.478120569333498e-16,
+   "ratio": 1.000000000000004,
+   "rowsum_err": 5.551115123125783e-16,
+   "colsum_err": 8.881784197001252e-16
+  },
+  "nosweep_persist=False": {
+   "TV": 3.946495907847236e-16,
+   "ratio": 1.000000000000008
+  },
+  "sweep_persist=True": {
+   "TV": 0.057142857142857065,
+   "ratio": 1.5000000000000024,
+   "rowsum_err": 2.220446049250313e-16,
+   "colsum_err": 0.3999023437500002
+  },
+  "nosweep_persist=True": {
+   "TV": 0.057142857142856995,
+   "ratio": 1.5000000000000002
+  }
+ },
+ {
+  "deg": [
+   3,
+   3,
+   2,
+   2,
+   1,
+   1
+  ],
+  "N": 17,
+  "sweep_persist=False": {
+   "TV": 1.1796119636642288e-16,
+   "ratio": 1.0000000000000016,
+   "rowsum_err": 4.440892098500626e-16,
+   "colsum_err": 4.440892098500626e-16
+  },
+  "nosweep_persist=False": {
+   "TV": 1.5334955527634975e-15,
+   "ratio": 1.0000000000000115
+  },
+  "sweep_persist=True": "unswitchable edge: persist never returns",
+  "nosweep_persist=True": "unswitchable edge present"
+ },
+ {
+  "deg": [
+   3,
+   3,
+   3,
+   3,
+   2,
+   2
+  ],
+  "N": 54,
+  "sweep_persist=False": {
+   "TV": 7.8236028766554e-16,
+   "ratio": 1.0000000000000078,
+   "rowsum_err": 4.440892098500626e-16,
+   "colsum_err": 6.661338147750939e-16
+  },
+  "nosweep_persist=False": {
+   "TV": 1.3287981825982342e-15,
+   "ratio": 1.0000000000000169
+  },
+  "sweep_persist=True": {
+   "TV": 0.08004443371297401,
+   "ratio": 1.7176557436218125,
+   "rowsum_err": 4.440892098500626e-16,
+   "colsum_err": 0.28163166225258796
+  },
+  "nosweep_persist=True": {
+   "TV": 0.06307617661329463,
+   "ratio": 1.4196891191709904
+  }
+ }
+]

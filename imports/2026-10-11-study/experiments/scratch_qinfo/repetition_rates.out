@@ -1,0 +1,11 @@
+CHSH (4 uniform qs, d=4): kappa_mu=96 delta=0.01: rate=2.637e-13/round, k for 1e-10 = 8.73e+13 rounds
+CHSH (4 uniform qs, d=4): kappa_mu=96 delta=0.05: rate=3.296e-11/round, k for 1e-10 = 6.99e+11 rounds
+CHSH (4 uniform qs, d=4): kappa_mu=96 delta=0.1: rate=2.637e-10/round, k for 1e-10 = 8.73e+10 rounds
+CHSH (4 uniform qs, d=4): kappa_mu=96 delta=0.2: rate=2.109e-09/round, k for 1e-10 = 1.09e+10 rounds
+Magic square (9 uniform qs, d=16): kappa_mu=576 delta=0.01: rate=2.804e-14/round, k for 1e-10 = 8.21e+14 rounds
+Magic square (9 uniform qs, d=16): kappa_mu=576 delta=0.05: rate=3.505e-12/round, k for 1e-10 = 6.57e+12 rounds
+Magic square (9 uniform qs, d=16): kappa_mu=576 delta=0.1: rate=2.804e-11/round, k for 1e-10 = 8.21e+11 rounds
+Magic square (9 uniform qs, d=16): kappa_mu=576 delta=0.2: rate=2.243e-10/round, k for 1e-10 = 1.03e+11 rounds
+iid Hoeffding benchmark delta=0.01: k=1.15e+05
+iid Hoeffding benchmark delta=0.05: k=4.61e+03
+iid Hoeffding benchmark delta=0.1: k=1.15e+03

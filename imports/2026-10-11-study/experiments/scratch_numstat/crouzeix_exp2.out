@@ -1,0 +1,15 @@
+conv-diff m=200 c=0.6: actual GMRES iterations to 1e-8: 193 ; disk-FOV bound predicts ~1.56e5 (C=2) / 1.58e5 (C=2.414)
+
+Per-matrix optimal similarity constant kappa (Thm structural LMI) for Omega=disk(0,r), T=A/r:
+  shift n=  5, r=1.001*w(A): kappa = 1.7707  (theorem: <= 2)
+  shift n=  5, r=1.05*w(A): kappa = 1.4626  (theorem: <= 2)
+  shift n=  5, r=1.5*w(A): kappa = 1.0000  (theorem: <= 2)
+  shift n= 10, r=1.001*w(A): kappa = 1.4379  (theorem: <= 2)
+  shift n= 10, r=1.05*w(A): kappa = 1.0000  (theorem: <= 2)
+  shift n= 10, r=1.5*w(A): kappa = 1.0000  (theorem: <= 2)
+  shift n= 20, r=1.001*w(A): kappa = 1.2146  (theorem: <= 2)
+  shift n= 20, r=1.05*w(A): kappa = 1.0000  (theorem: <= 2)
+  shift n= 20, r=1.5*w(A): kappa = 1.0000  (theorem: <= 2)
+  shift n= 40, r=1.001*w(A): kappa = 1.0786  (theorem: <= 2)
+  shift n= 40, r=1.05*w(A): kappa = 1.0000  (theorem: <= 2)
+  shift n= 40, r=1.5*w(A): kappa = 1.0000  (theorem: <= 2)

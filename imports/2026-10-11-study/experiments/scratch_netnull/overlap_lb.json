@@ -1,0 +1,23 @@
+[
+ {
+  "network": "BA n=2000 m=2",
+  "m": 3996,
+  "overlap_random_reference_niter1": 0.138,
+  "overlap_R_igraph_default_100_trials": 0.953,
+  "overlap_after_100m": 0.012
+ },
+ {
+  "network": "powerlaw_cluster n=2000",
+  "m": 7980,
+  "overlap_random_reference_niter1": 0.148,
+  "overlap_R_igraph_default_100_trials": 0.977,
+  "overlap_after_100m": 0.019
+ },
+ {
+  "network": "karate",
+  "m": 78,
+  "overlap_random_reference_niter1": 0.436,
+  "overlap_R_igraph_default_100_trials": 0.577,
+  "overlap_after_100m": 0.321
+ }
+]

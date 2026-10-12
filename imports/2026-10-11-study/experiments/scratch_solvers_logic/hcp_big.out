@@ -1,0 +1,15 @@
+flag |V|=420 rep=0 runs=1: 1.8s non-edges=2
+flag |V|=420 rep=0 runs=10: 9.8s non-edges=0
+flag |V|=416 rep=1 runs=1: 1.7s non-edges=1
+flag |V|=416 rep=1 runs=10: 10.0s non-edges=0
+flag |V|=420 rep=2 runs=1: 1.9s non-edges=1
+flag |V|=420 rep=2 runs=10: 9.9s non-edges=0
+flag |V|=848 rep=0 runs=1: 8.4s non-edges=3
+flag |V|=848 rep=0 runs=10: 51.9s non-edges=1
+flag |V|=848 rep=0 runs=30: 165.2s non-edges=0
+flag |V|=852 rep=1 runs=1: 8.6s non-edges=4
+flag |V|=852 rep=1 runs=10: 49.5s non-edges=2
+flag |V|=852 rep=1 runs=30: 144.9s non-edges=0
+flag |V|=848 rep=2 runs=1: 9.5s non-edges=3
+flag |V|=848 rep=2 runs=10: 54.1s non-edges=2
+flag |V|=848 rep=2 runs=30: 131.0s non-edges=0

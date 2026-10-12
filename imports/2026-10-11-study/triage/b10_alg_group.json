@@ -1,0 +1,1187 @@
+[
+ {
+  "num": "193",
+  "title": "Serre’s intersection-multiplicity conjecture",
+  "subject": "Algebra",
+  "plain_english": "Take two modules over a regular local ring that meet only at the closed point and have complementary dimensions. Serre's alternating-Tor intersection multiplicity of the pair is always strictly positive. This now includes ramified mixed characteristic.",
+  "constructive": "no: a positivity proof built on perfectoid normalized lengths, Galois averaging and Land–Tamme K-theoretic descent; it gives no new computation",
+  "explicit_constants": "n/a (sign statement)",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. Macaulay2 and Singular compute intersection multiplicities via Tor for polynomial and equicharacteristic inputs, where positivity has been Serre's theorem since 1965. The only new case is ramified mixed-characteristic regular local rings, which never come up in applied computation. The symbolic-power corollary (P∩Q^(r) ⊆ m^{r+1}) is also pure.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Not formalized; this is a 60-year-old conjecture settled with heavy perfectoid and K-theory machinery. The paper's footnote mentions a competing AI-assisted public claim (Editan, Dec 2025).",
+  "deep_dive": false,
+  "cross_links": [
+   "194",
+   "195",
+   "209"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Positivity-of-Serres-Intersection-Multiplicity-September-23-2026/build/sections/introduction.tex (Thm thm:main, proof strategy, Kurano–Roberts consequence)"
+  ]
+ },
+ {
+  "num": "194",
+  "title": "Lech’s multiplicity conjecture",
+  "subject": "Algebra",
+  "plain_english": "Hilbert–Samuel multiplicity, which measures how singular a local ring is, never decreases along a flat local homomorphism.",
+  "constructive": "no: an inequality proved by reductions plus normalized-length and Dutta-multiplicity comparisons in each characteristic",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. Singular (`mult`) and Macaulay2 (`multiplicity`/`degree`) compute multiplicities. No algorithm or applied workflow uses a comparison across flat local maps.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Lean covers only a supporting characteristic-p Dutta-multiplicity lemma, not the full theorem. This is a major open conjecture (Lech 1960).",
+  "deep_dive": false,
+  "cross_links": [
+   "193",
+   "195"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Lechs-multiplicity-conjecture-September-23-2026/build/main.tex (Thm thm:main)",
+   "build/sections/charp.tex thm:positive-characteristic; charzero.tex thm:charzero; mixed.tex thm:mixed-characteristic",
+   "lean/docs/194.md"
+  ]
+ },
+ {
+  "num": "195",
+  "title": "A counterexample to the small Cohen–Macaulay module conjecture",
+  "subject": "Algebra",
+  "plain_english": "The ring is the completed vertex of the section-ring cone over an explicit Hirzebruch–Kummer cover surface (n=7). It is a 3-dimensional complete normal local domain over C with no nonzero finitely generated maximal Cohen–Macaulay module.",
+  "constructive": "partial: the ring is explicit (section ring of a specified surface and polarization); nonexistence follows from the numerical obstruction K^2−2c2 > 6H^2",
+  "explicit_constants": "H^2 = 1715, K^2−2c2 = 13377 > 10290 = 6H^2",
+  "galactic": false,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. Small MCM modules matter only inside the homological-conjectures programme. Macaulay2 tools for matrix factorizations and Ulrich modules work on small hypersurfaces or curves, not on degree-1715 section rings, so no test instance or software change follows.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Lean only checks that the candidate ring is a complete normal local domain, not the nonexistence. Overlaps with recent AI-assisted preprints by Anghel and Chen.",
+  "deep_dive": false,
+  "cross_links": [
+   "193",
+   "194"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/A-Complete-Local-Domain-Without-a-Small-Cohen-Macaulay-Module-September-23-2026/build/paper.tex (Thm thm:main, Thm thm:obstruction, Sec. 'The counterexample', Cor cor:affine-local)",
+   "build/surface.tex Prop prop:surface",
+   "lean/docs/195.md"
+  ]
+ },
+ {
+  "num": "196",
+  "title": "A counterexample to Kaplansky’s zero-divisor conjecture",
+  "subject": "Algebra",
+  "plain_english": "This refutes Kaplansky's zero-divisor conjecture. It gives a finitely presented torsion-free group G with nonzero α, β in the group algebra F2[G] and αβ = 0.",
+  "constructive": "partial: random construction over PG(2,128) labels (16516-letter alphabet, 8258 generators) with graphs on n vertices, n a multiple of 2·16513^2 ≈ 5.5×10^8 and 'sufficiently large'; no explicit presentation is ever produced",
+  "explicit_constants": "q=128, v=16513, |T|=16516; n ≥ 5.5×10^8 and otherwise ineffective",
+  "galactic": true,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. I checked the CAS/INSTANCES channel. Gardam's SAT-based unit searches and the Garg–Mineyev computations look for small-support zero divisors or units in specific small groups (Promislow/Hantzsche–Wendt, Ã₂ lattices). This group has more than 8000 generators and supports of size at least about 5×10^8, so it is not a test instance and says nothing about where small searches should look. Group-ring cryptosystems use finite groups (torsion), which this result does not touch.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "The top line is Lean-formalized. The object is astronomically large and random.",
+  "deep_dive": false,
+  "cross_links": [
+   "197",
+   "207"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/A-Torsion-Free-Group-Algebra-with-Zero-Divisors-September-23-2026/build/paper.tex (Thm thm:main, cancellation mechanism)",
+   "build/sections/types.tex (finite geometry q=128, sizes)",
+   "build/sections/factors.tex proof of thm:main",
+   "lean/docs/196.md"
+  ]
+ },
+ {
+  "num": "197",
+  "title": "A torsion-free group algebra that is not directly finite",
+  "subject": "Algebra",
+  "plain_english": "These are group algebras over finite fields with ab = 1 but ba ≠ 1. There are versions over F2 with a torsion-free finitely presented group, in characteristic 2 with odd torsion, and in odd characteristic; all the groups are therefore nonsofic. Consequences: injective but non-surjective cellular automata (refuting Gottschalk's conjecture), and an integer group-ring matrix whose Fuglede–Kadison determinant lies in (0,1).",
+  "constructive": "partial: char-2 version is a 'terminating prescription' that 'has not been executed' and 'need not be computationally practical'; odd-char version uses p = least prime factor of (C(1200,600)!)^2+1",
+  "explicit_constants": "odd case: |K| = p^4 with p dividing (C(1200,600)!)^2+1 (never evaluated); F2 torsion-free case inherits the random-graph sizes of 196",
+  "galactic": true,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. Three channels checked. (1) Cellular automata: the counterexample automaton lives on a nonsofic group. Practical CA (Z^d lattices, Golly, CA-based PRNG/crypto proposals) use amenable groups, where the Garden-of-Eden and surjunctivity theorems still hold. (2) L² invariants: L²-Betti and L²-torsion computations via Lück approximation are done for residually finite or sofic groups, where the Determinant Conjecture is a theorem. (3) The first finitely presented nonsofic group is a major structural fact (its labelled Cayley graph is not a Benjamini–Schramm limit of finite graphs), but it changes no computation.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Lean covers the char-2, odd-char and determinant top lines. Nonsoficity is a one-line deduction via Elek–Szabó and is outside Lean scope.",
+  "deep_dive": false,
+  "cross_links": [
+   "196",
+   "207"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/A-Counterexample-to-Kaplanskys-Direct-Finiteness-Conjecture-in-Characteristic-Two-September-23-2026/build/sections/01-introduction.tex (Thm thm:main, 'has not been executed')",
+   "/root/openai-math/preprints/A-Torsion-Free-Group-Algebra-That-Is-Not-Directly-Finite-October-4-2026/build/sections/introduction.tex Thm thm:main",
+   "/root/openai-math/preprints/A-Counterexample-to-the-Group-Ring-Determinant-Conjecture-September-23-2026/build/main.tex Thm thm:main",
+   "/root/openai-math/preprints/A-Counterexample-to-Kaplanskys-Direct-Finiteness-Conjecture-in-Odd-Characteristic-September-26-2026/build/sections/01-introduction.tex Thm op:main",
+   "lean/docs/197.md"
+  ]
+ },
+ {
+  "num": "198",
+  "title": "A counterexample to finitistic-dimension finiteness",
+  "subject": "Algebra",
+  "plain_english": "This refutes the little finitistic-dimension conjecture. One fixed finite-dimensional complex algebra has finitely generated modules of finite but unboundedly large projective dimension.",
+  "constructive": "partial: A = D ⋉ X is fixed and is obtained by a three-stage realization of a selection process on a finitely presented group algebra, but its quiver and dimension are never written down",
+  "explicit_constants": "pd N_m ≥ 2m−2; algebra size not stated",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. QPA (GAP) computes projective resolutions for explicit small quiver algebras. This algebra is not given in a usable explicit form, and no applied area relies on finitistic-dimension bounds.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Lean-formalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "199"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/build/sections/01-introduction.tex (Thm thm:main, Cor cor:left-right-asymmetry, construction stages)",
+   "build/sections/02-selection-process.tex Prop prop:selection",
+   "build/sections/06-square-zero-and-conclusion.tex proof of thm:main",
+   "lean/docs/198.md"
+  ]
+ },
+ {
+  "num": "199",
+  "title": "Counterexamples to Auslander–Reiten, Tachikawa and related homological conjectures",
+  "subject": "Algebra",
+  "plain_english": "Explicit finite-dimensional algebras over F2(q,H1,H2) carry a nonprojective module with no positive self-extensions and no extensions into the algebra. This refutes the Auslander–Reiten conjecture, the Gorenstein-projective conjecture and Tachikawa's second conjecture. The associated endomorphism algebra also refutes the Nakayama and Auslander–Gorenstein conjectures.",
+  "constructive": "yes: C (dim 10) → T = C⋉DC (dim 20) → A = T⊗T (dim 400) → Λ of dim 800+dim F, with an explicit Hochschild cocycle table (18^4 = 104976 finite checks)",
+  "explicit_constants": "8 simples; rad^4 ≠ 0; dims 10/20/400/800+dim F",
+  "galactic": false,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. I checked the INSTANCES angle and rejected it. QPA (GAP) computes Ext over finite fields and Q. This example needs transcendental parameters (H1/H2 must have infinite multiplicative order), so it does not specialize to any finite field. Vanishing in every Ext degree also cannot be confirmed by finite computation.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "The AR and Tachikawa top lines are Lean-formalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "198"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/An-explicit-counterexample-to-the-Auslander-Reiten-conjecture-September-23-2026/build/01-introduction.tex (Thm thm:main, Table tab:objects)",
+   "build/09-cochain.tex (cochain table)",
+   "lean/docs/199.md"
+  ]
+ },
+ {
+  "num": "200",
+  "title": "Eisenbud–Green–Harris and lex-plus-powers",
+  "subject": "Algebra",
+  "plain_english": "Over any characteristic-0 field, take a homogeneous ideal containing a regular sequence of degrees a_1,…,a_c. It has the same Hilbert function as an explicit monomial 'lex-plus-powers' ideal (lex segment plus x_i^{a_i}), and every graded Betti number is at most that ideal's.",
+  "constructive": "partial: the extremal LPP ideal is explicit and computable from the Hilbert function; the proof itself is an existence argument via commuting linear forms over a division algebra over a finitely generated extension of C",
+  "explicit_constants": "none needed (sharp extremal comparison)",
+  "galactic": false,
+  "channels": [
+   "CAS"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 1,
+   "reach": 2,
+   "directness": 3,
+   "practicality": 4,
+   "confidence": 2,
+   "effort": 4,
+   "time_to_value": 2
+  },
+  "opportunity": "This is the only algebra result here that touches commutative-algebra software, and only slightly. Over char-0 fields: (i) a Hilbert function is realizable by S/I with I containing a regular sequence of degrees a exactly when it is realized by a quotient of k[x]/(x_i^{a_i}), which the Clements–Lindström growth condition decides; (ii) the LPP ideal bounds every graded Betti number in advance. Macaulay2's LexIdeals package already ships `LPP`, `isLPP` and `generateLPPs`, but its docs still say LPP ideals are 'conjectured' to play the lex-ideal role. Those docs could be updated and a realizability predicate added. I checked the coding-theory channel: EGH Cayley–Bacharach statements bound minimum distance and hyp_I(d) for evaluation codes on complete-intersection point sets (Tohăneanu–Van Tuyl; Cooper–Seceleanu–Tohăneanu–Vaz Pinto–Villarreal 2020). That channel fails because codes live over F_q and this proof is char 0 only. Gröbner-basis cryptanalysis over F_q is blocked for the same reason.",
+  "targets": [
+   "Macaulay2 LexIdeals (LPP, isLPP, generateLPPs, isHF)",
+   "Singular / CoCoA Hilbert-function utilities"
+  ],
+  "action": "CERTIFY",
+  "first_step": "Propose a documentation note for the LexIdeals `LPP` node (and optionally an `isLPPHilbertFunction(a,h)` helper based on Clements–Lindström) that cites the char-0 claim as unrefereed.",
+  "caveats": "Char 0 only; positive characteristic, the case coding and cryptanalysis need, stays open. Not formalized, and spread over two long companion papers on a classic conjecture. Gives extremal bounds, not an algorithmic speedup.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "/root/openai-math/preprints/The-Artinian-Lex-Plus-Powers-Betti-Theorem-September-23-2026/build/sections/01-introduction.tex (Thm thm:main, Cor cor:characteristic-zero)",
+   "/root/openai-math/preprints/Commuting-Division-Coefficient-Forms-and-the-Artinian-Eisenbud-Green-Harris-Conjecture-September-23-2026/build/sections/01-introduction.tex Thm thm:construction",
+   "Macaulay2 LexIdeals docs (LPP node: 'conjectured to play a role analogous...')",
+   "arXiv:1812.06529 Conj. 6.3 (EGH CB10 / Tohăneanu–Van Tuyl)"
+  ]
+ },
+ {
+  "num": "201",
+  "title": "A counterexample to Kurosh’s division-ring problem",
+  "subject": "Algebra",
+  "plain_english": "A countable characteristic-0 division ring is generated by two elements over its center, every element is algebraic, and yet it is infinite-dimensional over the center.",
+  "constructive": "no: built by scheduling all polynomial expressions in a countable diagonal lifting construction; not an explicit object",
+  "explicit_constants": "none",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. I checked COMM: space-time block codes (perfect codes) use finite-dimensional cyclic division algebras over number fields, which this infinite-dimensional object does not affect.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Not formalized; long (150KB); resolves the 1941 Kurosh problem.",
+  "deep_dive": false,
+  "cross_links": [
+   "247"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/A-Counterexample-to-Kuroshs-Division-Ring-Problem-September-23-2026/build/sections/introduction.tex (Thm thm:main, historical context)",
+   "build/sections/lifting.tex Thm thm:lifting"
+  ]
+ },
+ {
+  "num": "202",
+  "title": "The blockwise Alperin weight conjecture",
+  "subject": "Algebra",
+  "plain_english": "For every finite group and prime p, the number of irreducible Brauer characters in each p-block equals the number of conjugacy classes of its 'weights', which are local data attached to p-subgroups.",
+  "constructive": "no: an equality of counts from block-algebra traces and divisibility of tuple counts via covers of genus-one curves in mixed characteristic",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 1,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. I checked CAS (GAP/Magma modular representation theory, Modular Atlas). l(B) is already computable from the ordinary character table as the rank of Irr(B) restricted to p-regular classes. Weight counts need classification of radical p-subgroups, which is harder. The theorem therefore offers no cheaper route; at most it removes 'assuming AWC' hedges in a few verification papers.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "This is an extraordinary claim: a proof of AWC that avoids the classification of finite simple groups (CFSG), via arithmetic geometry. It is not formalized and is long (215KB). Treat with caution.",
+  "deep_dive": false,
+  "cross_links": [
+   "203"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/The-Blockwise-Alperin-Weight-Conjecture-September-23-2026/build/sections/intro.tex (Thm thm:main, prior work, counting problem and curve construction)"
+  ]
+ },
+ {
+  "num": "203",
+  "title": "Donovan's conjecture over fields and complete mixed-characteristic DVRs",
+  "subject": "Algebra",
+  "plain_english": "Blocks of finite groups whose defect groups have bounded order fall into finitely many Morita-equivalence classes, over a fixed algebraically closed field of characteristic p and over complete DVRs such as W(F̄_p).",
+  "constructive": "no: finiteness with no explicit bound on the number of classes",
+  "explicit_constants": "none (ineffective)",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. The only computational touchpoint is the classification of Morita classes of blocks with small defect groups (Eaton's Block Library). An ineffective finiteness theorem tells those classifiers neither when a list is complete nor what is missing.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Not formalized (about 437KB of TeX). It relies on the coefficient comparison from 202, which is also unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "202"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Donovans-Conjecture-over-Algebraic-Closures-of-Prime-Fields-September-24-2026/build/sections/00_introduction.tex (Thm thm:donovan, uniformity problems, proof outline)",
+   "/root/openai-math/preprints/Integral-Donovan-Finiteness-over-Witt-Vectors-September-25-2026/build/sections/01_introduction.tex (Thm thm:main, Cor cor:complete-dvr)"
+  ]
+ },
+ {
+  "num": "204",
+  "title": "Tensor saturation for even spin groups",
+  "subject": "Algebra",
+  "plain_english": "Take Spin(2n) and three dominant weights whose sum lies in the root lattice. If some dilation Nλ, Nμ, Nν has a tensor invariant, then λ, μ, ν already do. This is the Kapovich–Millson saturation conjecture with factor 1 in type D.",
+  "constructive": "no for the theorem; it does yield an algorithmic consequence (see opportunity)",
+  "explicit_constants": "saturation factor 1 (no constants)",
+  "galactic": false,
+  "channels": [
+   "CAS",
+   "ALGO"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 1,
+   "directness": 3,
+   "practicality": 4,
+   "confidence": 3,
+   "effort": 3,
+   "time_to_value": 3
+  },
+  "opportunity": "This is a non-obvious ALGO channel. With saturation factor 1 plus the root-lattice condition, a Spin(2n) tensor invariant exists exactly when the rational Berenstein–Zelevinsky (or Littelmann) polytope for (λ,μ,ν) is nonempty. That is LP feasibility, so positivity of type-D tensor multiplicities is decidable in polynomial time. The GCT3 argument (Mulmuley–Narayanan–Sohoni: Littlewood–Richardson positivity is in P via Knutson–Tao saturation) explicitly said it did not extend to types B, C, D; it now extends to D. Current tools (LiE, SageMath WeylCharacterRing, LieART) compute full decompositions, at a cost that grows with the weights. The beneficiaries are a small group: representation-theory and Horn-problem researchers for so(2n), plus model builders, who usually want multiplicities rather than positivity.",
+  "targets": [
+   "LiE",
+   "SageMath WeylCharacterRing tensor decompositions",
+   "LieART",
+   "Berenstein–Zelevinsky polytope code"
+  ],
+  "action": "RESEARCH",
+  "first_step": "Write down the type-D_n BZ polytope inequalities, implement 'positivity = root-lattice check + LP feasibility' in Sage, and cross-check against LiE tensor decompositions for n ≤ 8 with random large weights.",
+  "caveats": "The paper does not state the algorithm. Polytope-size and lattice details for type D still need checking. The test decides positivity only, not multiplicities. Types B and C remain at factor 2. Not formalized, though it agrees with the known Spin(8), Spin(10) and Spin(12) cases.",
+  "deep_dive": false,
+  "cross_links": [
+   "205",
+   "210"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Tensor-Saturation-for-Even-Spin-Groups-September-24-2026/build/sections/01-introduction.tex (Thm thm:main, prior factor-2/4 results, proof outline)",
+   "arXiv cs/0501076 (GCT3: 'proof does not generalize... saturation false for B, C, D')",
+   "arXiv math/0501446 (De Loera–McAllister)"
+  ]
+ },
+ {
+  "num": "205",
+  "title": "Saxl’s conjecture and universal tensor squares",
+  "subject": "Algebra",
+  "plain_english": "The tensor square of the staircase irreducible representation of S_n contains every irreducible (Saxl). More generally, for every n other than 2, 4 and 9, some irreducible representation of S_n has a tensor square containing all irreducibles.",
+  "constructive": "yes: explicit partitions (staircase or modified staircase); degrees n ≤ 64 certified by a C++ mod-p computation of the whole Kronecker-coefficient vector",
+  "explicit_constants": "finite range n ≤ 64 by computer (about 117 s at n = 64); large n by explicit constructions",
+  "galactic": false,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 5,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. Two requested channels were checked and rejected. (a) GCT: occurrence obstructions need vanishing of Kronecker or plethysm coefficients, and Bürgisser–Ikenmeyer–Panova already ruled them out for permanent vs determinant, so a universal-positivity result gives no lower bound. (b) Quantum marginal problem: positivity of g(ρ_m,ρ_m,ν) just places rational points inside the Kronecker polytope, which Klyachko's inequalities already describe. Minor point: the verifier (a whole-vector Murnaghan–Nakayama recursion modulo 10^9+7) produces g(λ,λ,·) residues for all 1.7M partitions of 64 in about 2 minutes. That is a handy research tool, but it certifies only nonvanishing.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Both top lines are fully Lean-formalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "210",
+   "204",
+   "108"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Universal-Tensor-Squares-for-Symmetric-Groups-September-24-2026/build/sections/introduction.tex (Thm thm:main, Cor unipotent squares)",
+   "build/sections/finite.tex (mod-p recurrence)",
+   "verification/code/smallcode_submitted.cpp; verification/computation/character-61-degrees.log",
+   "/root/openai-math/preprints/A-Cyclic-Polytabloid-Proof-of-Saxls-Conjecture-September-24-2026/build/sections/introduction.tex Thm thm:saxl",
+   "lean/docs/205.md"
+  ]
+ },
+ {
+  "num": "206",
+  "title": "Finite lattice representation and undecidability",
+  "subject": "Algebra",
+  "plain_english": "Some finite lattices are not the congruence lattice of any finite algebra, and no algorithm can decide which ones are. Recognizing full subgroup intervals [H,G] of finite groups is also undecidable.",
+  "constructive": "partial: the positive side is an effective semi-decision (colored-graph search, Lean-formalized). The minimal nonrepresentable lattice is pinned down via a Busy Beaver constant that is never evaluated, and the nonrepresentable family comes from Larsen–Pink-type bounds",
+  "explicit_constants": "|L_0| > 7, otherwise defined via Busy Beaver; every lattice with at most 7 elements is representable (L_7 = [PGL2(F2), PGL2(F64)])",
+  "galactic": true,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None in practice. The only consumers are universal-algebra research tools: UACalc and GAP searches over subgroup intervals in the style of DeMeo's work. Small lattices remain representable, and any nonrepresentable lattice is astronomically large, so such searches are unaffected; only the hope of a complete decision procedure is gone. Algebraic CSP algorithms never need congruence-lattice representability.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Lean formalizes only the graph criterion, not the undecidability. The companion negative-solution paper is not formalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "242"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Finite-Congruence-Lattices-Characterization-and-Undecidability-September-24-2026/build/sections/introduction.tex (Thm m:main i–iv)",
+   "build/sections/graph.tex Thm f:criterion",
+   "build/sections/small.tex Prop f:prop-l7-interval",
+   "/root/openai-math/preprints/A-Negative-Solution-to-the-Finite-Lattice-Representation-Problem-September-24-2026/build/sections/introduction.tex Thms main:congruences, main:group",
+   "lean/docs/206.md"
+  ]
+ },
+ {
+  "num": "207",
+  "title": "The ℓ¹-Bass conjecture for all discrete groups",
+  "subject": "Algebra",
+  "plain_english": "For any group, the Hattori–Stallings traces of idempotent matrices over C[G] and over ℓ¹(G) live only on finitely many conjugacy classes of finite-order elements. Consequently, for torsion-free G, group rings over char-0 domains have no idempotents other than 0 and 1.",
+  "constructive": "no",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. This is K-theory of group rings and Banach algebras, with no computational or applied consumer.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Lean covers the complex Bass trace conjecture and the char-0 Kaplansky idempotent statement.",
+  "deep_dive": false,
+  "cross_links": [
+   "196",
+   "197"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/The-l1-Bass-Conjecture-for-Discrete-Groups-October-5-2026/build/sections/01-introduction.tex Thm thm:main",
+   "/root/openai-math/preprints/The-Bass-trace-conjecture-for-complex-group-rings-September-24-2026/build/sections/01-introduction.tex Thm thm:bass",
+   "lean/docs/207.md"
+  ]
+ },
+ {
+  "num": "208",
+  "title": "Finite symmetric tensor categories and the Verlinde tower",
+  "subject": "Algebra",
+  "plain_english": "Every finite symmetric tensor category in characteristic p has a fiber functor to some higher Verlinde category Ver_{p^n}, so it is a representation category of a group scheme inside that category.",
+  "constructive": "no",
+  "explicit_constants": "level n depends on the category",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. Tensor categories reach applications through characteristic-0 modular and fusion categories (anyon models for topological quantum computation), not through symmetric categories in characteristic p.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Not formalized.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "/root/openai-math/preprints/Fiber-functors-for-finite-symmetric-tensor-categories-in-positive-characteristic-September-24-2026/build/sections/introduction.tex Thm thm:main"
+  ]
+ },
+ {
+  "num": "209",
+  "title": "Integral counterexamples to Gersten’s conjecture",
+  "subject": "Algebra",
+  "plain_english": "Explicit two-dimensional ramified regular local rings of mixed characteristic (0,5), for example V[x,y]/(5+x^4+y^4) localized, have nonzero K_3 and K_5 classes that vanish over the fraction field.",
+  "constructive": "yes: the rings are explicit; the classes are detected mod 5",
+  "explicit_constants": "V = unramified degree-8 extension of Z_5; relation 5 + x^4 + y^4",
+  "galactic": false,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. Higher algebraic K-theory of ramified regular local rings has no applied or computational consumer.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Not formalized; plausible.",
+  "deep_dive": false,
+  "cross_links": [
+   "193"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/An-Integral-Counterexample-to-Gerstens-Conjecture-September-25-2026/build/source/sections/introduction.tex Thm thm:main",
+   "/root/openai-math/preprints/An-Integral-Degree-Three-Gersten-Counterexample-September-26-2026/build/sections/introduction.tex Thm thm:main"
+  ]
+ },
+ {
+  "num": "210",
+  "title": "Foulkes' conjecture for sixth powers and quadratic stabilization",
+  "subject": "Algebra",
+  "plain_english": "For b ≥ 6, Sym^6(Sym^b V) embeds GL(V)-equivariantly in Sym^b(Sym^6 V). More generally, the canonical Foulkes–Howe multiplication map Sym^b(Sym^a V) → Sym^a(Sym^b V) is surjective once b ≥ a(a−1), in every dimension of V.",
+  "constructive": "partial: the canonical map is explicit; the finite range 6 ≤ b ≤ 29 is closed by certified C++ multiplicity computations",
+  "explicit_constants": "b ≥ a(a−1), a polynomial bound that answers Landsberg's GCT-survey Problem 7.19",
+  "galactic": false,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None for practice. The GCT link is real but stays inside theory. For b ≥ a(a−1), the coordinate ring of the Chow variety of products of linear forms agrees with its normalization in degree b, and its GL-multiplicities are exactly the plethysm coefficients of Sym^a(Sym^b V). That can tidy multiplicity bookkeeping in GCT papers on orbit closures of x1⋯xn, but it gives no occurrence obstruction or circuit lower bound (compare family 108). The quantum-marginal channel does not apply.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Lean covers quadratic stabilization and the a = 6 case for b ≥ 30. The range 6 ≤ b ≤ 29 rests on computer certificates.",
+  "deep_dive": false,
+  "cross_links": [
+   "205",
+   "108"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Foulkes-Conjecture-for-the-Sixth-Symmetric-Power-September-25-2026/build/sections/introduction.tex (Thm thm:main, strategy)",
+   "build/sections/certificates.tex (base interval table)",
+   "/root/openai-math/preprints/Quadratic-Stabilization-of-the-Canonical-Foulkes-Howe-Map-September-25-2026/build/paper.tex (Thm thm:main; Landsberg Problem 7.19)",
+   "lean/docs/210.md"
+  ]
+ },
+ {
+  "num": "246",
+  "title": "Cannon's conjecture",
+  "subject": "Group theory",
+  "plain_english": "Every hyperbolic group whose boundary is a 2-sphere acts geometrically on hyperbolic 3-space. Torsion-free ones are therefore fundamental groups of closed hyperbolic 3-manifolds.",
+  "constructive": "no: a modulus bound plus Bourdon–Kleiner uniformization and Sullivan–Tukia straightening",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. I checked the algorithmic channel. Given a word-problem solution, recognizing closed hyperbolic 3-manifold groups is already decidable unconditionally (Groves–Manning–Wilton, using geometrization). 3-manifold software such as SnapPy and Regina works from triangulations and never depends on Cannon's conjecture.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Lean-formalized top line.",
+  "deep_dive": false,
+  "cross_links": [
+   "257"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026/build/main.tex (Thm thm:main, history, outline)",
+   "lean/docs/246.md",
+   "arXiv 1210.2101 (GMW, no Cannon dependence)"
+  ]
+ },
+ {
+  "num": "247",
+  "title": "An infinite finitely presented residually finite 2-group and a finitely presented nil algebra",
+  "subject": "Group theory",
+  "plain_english": "An infinite group with an ordinary finite presentation in which every element has finite order. It is a Steinberg group St_12(R) over an F2-algebra and has property (T); a finite-index subgroup is a residually finite 2-group. The same construction gives finitely presented nil algebras that are not nilpotent.",
+  "constructive": "partial: the presentation is built from self-simulating rule tables over alphabets of size up to 2^{10000h}, with h ≥ h_0 never specified",
+  "explicit_constants": "c = 10000, k = 10 in the hierarchy proposition; h_0 is ineffective",
+  "galactic": true,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. I checked the CAS test-instance angle. GAP, ACE, kbmag and Magma could in principle use an infinite periodic finitely presented group as a stress test for coset enumeration or Knuth–Bendix, but this presentation is astronomically large and is never written out.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Lean covers the periodic group; the nil-algebra claims are outside Lean scope.",
+  "deep_dive": false,
+  "cross_links": [
+   "201",
+   "253"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/An-infinite-finitely-presented-periodic-group-September-23-2026/build/paper.tex (Thm thm:main, Cor cor:kazhdan)",
+   "build/sections/finite-rules.tex Prop prop:hierarchy",
+   "/root/openai-math/preprints/An-infinite-finitely-presented-residually-finite-2-group-October-5-2026 (abstract)",
+   "lean/docs/247.md"
+  ]
+ },
+ {
+  "num": "248",
+  "title": "Thompson's group F is nonamenable",
+  "subject": "Group theory",
+  "plain_english": "Thompson's group F (dyadic piecewise-linear homeomorphisms of [0,1]) has no invariant mean. Equivalently, it has no Følner sets: every finite subset moves a fixed fraction of itself under some element of a fixed finite set.",
+  "constructive": "partial: explicit Følner-defect lower bound (δ²/L² − 4/D)/(4(1−1/D)) for a finite transport set S that depends on D; nothing is given for the standard generators x0, x1",
+  "explicit_constants": "δ = 1/2 from an explicit Lipschitz map on L²([0,1];R²); L and D not instantiated; no cogrowth or spectral-radius number for standard generators (the Lean doc also says no explicit constant)",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 5,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "No applied action. Three channels checked. (1) Group-based crypto: F was proposed as a platform (Shpilrain–Ushakov 2005) and those schemes were broken by length-based and other attacks. Nonamenability implies random words have linearly growing normal-form length (positive speed), which neither revives nor newly breaks anything. (2) Numerical group theory: it confirms the Elder–Rechnitzer–Janse van Rensburg–Wong cogrowth extrapolations (growth constant about 15 < 16) and closes that computational line. (3) Percolation (p_c < p_u on Cayley graphs of F, via 214) and non-unitarizable representations (via 251) are pure corollaries.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Lean-formalized with a short proof (36KB). This is the cleanest result in the group-theory half.",
+  "deep_dive": false,
+  "cross_links": [
+   "214",
+   "251",
+   "253"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Thompsons-group-F-is-nonamenable-September-23-2026/build/sections/introduction.tex (Thm thm:main, strategy)",
+   "build/sections/finite-proof.tex Prop avg:boundary",
+   "build/sections/consequences.tex (Cor cor:nonunitarizable, cor:percolation)",
+   "lean/docs/248.md",
+   "arXiv 1706.07571 (numerical cogrowth studies)"
+  ]
+ },
+ {
+  "num": "249",
+  "title": "A finitely generated Eilenberg–Ganea counterexample",
+  "subject": "Group theory",
+  "plain_english": "A finitely generated, residually finite group has cohomological dimension 2 but admits no 2-dimensional classifying space. It is a Bestvina–Brady height kernel of a right-angled Artin group (RAAG) built over an explicit acyclic 2-complex.",
+  "constructive": "yes: explicit seed presentation <x,y | x^2=y^5, x^2=(xy^{-1})^3>; the group is finitely generated but not finitely presented",
+  "explicit_constants": "cd = 2, gd = 3",
+  "galactic": false,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. This is classifying-space topology, with no computational or applied consumer, and the group is not finitely presented.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Lean-formalized.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "/root/openai-math/preprints/A-finitely-generated-counterexample-to-the-Eilenberg-Ganea-conjecture-September-23-2026/build/sections/introduction.tex Thm thm:main",
+   "lean/docs/249.md"
+  ]
+ },
+ {
+  "num": "250",
+  "title": "Boone–Higman embeddings with higher finiteness",
+  "subject": "Group theory",
+  "plain_english": "A finitely generated group has a solvable word problem exactly when it embeds in a finitely presented simple group, which can even be taken of type F∞. A single F∞ group also contains every finitely presented group.",
+  "constructive": "partial: an effective 'compiler' turns a word-problem decider into a finite monoid or group presentation (Higman-style); the sizes are huge and never stated",
+  "explicit_constants": "none",
+  "galactic": true,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. Higman-type embeddings are tools for proving undecidability. Nothing in GAP, Magma or formal verification uses them, and the simple overgroups are not practical objects.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Lean-formalized (all three statements, with a ComputablePred word-problem definition).",
+  "deep_dive": false,
+  "cross_links": [
+   "253"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Finite-algebraic-envelopes-and-the-Boone-Higman-conjecture-September-23-2026/build/introduction.tex (Thm thm:main, Thm thm:envelope)",
+   "build/compiler.tex",
+   "lean/docs/250.md; lean/ComparatorChallenges/BooneHigman.lean"
+  ]
+ },
+ {
+  "num": "251",
+  "title": "Amenability, unitarizability, and strong Ulam stability",
+  "subject": "Group theory",
+  "plain_english": "A discrete group is amenable exactly when every uniformly bounded Hilbert-space representation is similar to a unitary one (Dixmier). A countable group is amenable exactly when every sufficiently accurate unitary 'almost representation', on any Hilbert space and in operator norm uniformly over the group, is close to a true representation.",
+  "constructive": "partial: for nonamenable groups it builds explicit unstable almost-representations from boundary-action markings, with a 1/10 distance gap",
+  "explicit_constants": "distance > 1/10; nonunitarizable representation with bound ≤ 1+ε (separable witness with bound 101)",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. I checked QUANT and rejected it. Self-testing and nonlocal-game rigidity use Gowers–Hatami-type stability: finite or amenable groups, normalized Hilbert–Schmidt norm, finite dimensions, and relations checked on generators. Uniform operator-norm stability over the whole group on infinite-dimensional spaces is not a property those protocols rely on, so the new instability direction redirects nobody.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Lean covers Dixmier and the nonunitarizable witnesses.",
+  "deep_dive": false,
+  "cross_links": [
+   "248"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Strong-Ulam-Stability-Characterizes-Amenability-October-5-2026/build/strong-ulam-stability.tex (Thm thm:main, context, construction)",
+   "/root/openai-math/preprints/Unitarizability-Implies-Amenability-for-Countable-Groups-September-23-2026 (abstract)",
+   "lean/docs/251.md"
+  ]
+ },
+ {
+  "num": "252",
+  "title": "A torsion-free hyperbolic group that is neither residually finite nor linear over any field",
+  "subject": "Group theory",
+  "plain_english": "A torsion-free word-hyperbolic group, the fundamental group of a finite Euclidean triangle complex, in which some fixed nontrivial element dies in every finite quotient and in every finite-dimensional linear representation over any field.",
+  "constructive": "partial: the complex comes from random affine lines over a large prime q, and the argument is existential ('one fixed member of a finite family' works, unidentified)",
+  "explicit_constants": "none (q 'sufficiently large')",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. I checked group-based crypto. Platform groups with no faithful linear representation would resist linear-representation attacks of the kind that broke braid-group schemes via Lawrence–Krammer. But attacks only need a useful non-faithful image, this group is not explicit, and hyperbolic-group crypto proposals are not deployed.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Lean-formalized (non-residual-finiteness; nonlinearity is a corollary outside Lean scope).",
+  "deep_dive": false,
+  "cross_links": [
+   "257",
+   "246"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/paper.tex (Thm thm:main, Cor cor:nonlinear, proof sketch)",
+   "build/sections/construction.tex",
+   "lean/docs/252.md"
+  ]
+ },
+ {
+  "num": "253",
+  "title": "An infinite finitely presented simple amenable group",
+  "subject": "Group theory",
+  "plain_english": "There is a group that is simultaneously infinite, finitely presented, simple and amenable. It is an alternating subgroup of a polygon-exchange group on sufficiently many squares.",
+  "constructive": "partial: finite generators and relators exist, but 'no uniform bound on their sizes is needed'",
+  "explicit_constants": "none",
+  "galactic": true,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. A pure existence question in group theory, with no computational or applied use.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Lean-formalized top line.",
+  "deep_dive": false,
+  "cross_links": [
+   "248",
+   "250",
+   "247"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026/build/sections/introduction.tex Thm thm:main",
+   "lean/docs/253.md"
+  ]
+ },
+ {
+  "num": "254",
+  "title": "Classifying spaces and geometric obstructions for Artin groups",
+  "subject": "Group theory",
+  "plain_english": "For every Artin group with finitely many generators, the following hold. The Salvetti complex is a K(π,1), giving a finite classifying space, torsion-freeness and center Z^k. Intersections of parabolic subgroups are parabolic. The word and parabolic-membership problems are decidable by an explicit uniform algorithm. Separately, an explicit Artin group on 116 generators has no geometric CAT(0) action.",
+  "constructive": "yes for the algorithm: a finite graded algebra Z over Q(ζ_N) built from Temperley–Lieb–Jones fusion data, a braid action by complexes of projectives, and Gaussian-elimination cancellation to a minimal complex (Cor. cor:membership). The K(π,1) statement is a contractibility proof",
+  "explicit_constants": "No complexity bound is asserted. The algebra has (|S|+2)·∏_e(m_e−1) unfolded vertices over edges with label ≥ 4, which is exponential in that edge count. Complex size probably grows exponentially with word length (compare Khovanov–Seidel intersection numbers)",
+  "galactic": false,
+  "channels": [
+   "CAS",
+   "ALGO"
+  ],
+  "tier": "T2",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 4,
+   "practicality": 3,
+   "confidence": 4,
+   "effort": 4,
+   "time_to_value": 4
+  },
+  "opportunity": "There are two concrete CAS wins. (1) GAP HAP's `ResolutionArtin(D)` (Salvetti/Squier resolution for general Coxeter diagrams) is documented as valid only 'in those cases where the [K(π,1)] conjecture is known to hold'. The Lean-formalized theorem makes integral (co)homology computations unconditional for every finite-rank Artin group. SageMath's `ArtinGroup` docs likewise list torsion-freeness, the center, a solvable word problem and K(π,1) as conjectures 'known when the Artin group is finite type and a number of other cases'. (2) This is the first uniform word-problem and parabolic-membership algorithm for all Artin groups. Sage's general `ArtinGroup` falls back to GAP finitely-presented-group (fp-group) methods, which need not terminate. Existing efficient algorithms cover only spherical type (Garside normal forms), large type (Holt–Rees) and diagrams without A3/B3 subdiagrams (quadratic time, Blasco-García et al. 2026). The beneficiaries are geometric group theorists and the HAP and Sage maintainers. Braid-group cryptography (spherical type) gains nothing, because Garside normal forms are already polynomial.",
+  "targets": [
+   "GAP HAP: ResolutionArtin, ResolutionArtinGroup, CoxeterDiagramIsSpherical (aboutArtinGroups page)",
+   "SageMath sage.groups.artin (ArtinGroup, FiniteTypeArtinGroup docstrings)",
+   "GAP/Magma fp-group word problem for Artin groups"
+  ],
+  "action": "CERTIFY",
+  "first_step": "Open a HAP issue proposing to drop the K(π,1) caveat for `ResolutionArtin`, citing the formalized comparator OAI.HarmonicArtin.salvetti_cover_contractible, and propose the matching Sage docstring change. In parallel, prototype the Section 8 membership algorithm in Sage for a small non-FC diagram (labels 4 and ∞) and measure complex growth against word length.",
+  "caveats": "The K(π,1), parabolic-intersection and CAT(0) top lines are Lean-formalized. The algorithmic corollary is outside Lean scope, and the paper claims no complexity bound. Expect exponential blow-up in word length and in the number of label≥4 edges, so the existing normal-form algorithms will be much faster wherever they apply. Maintainers may hesitate to change documentation on the strength of unrefereed preprints.",
+  "deep_dive": true,
+  "cross_links": [
+   "257",
+   "249"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Harmonic-heights-and-the-Artin-K-pi-1-conjecture-September-23-2026/build/sections/introduction.tex (Thm main)",
+   "build/sections/consequences.tex Cor cor:artin-structural",
+   "/root/openai-math/preprints/Parabolic-intersections-in-Artin-groups-September-23-2026/build/sections/01_intro.tex (Thm thm:main, Cor cor:arbitrary-intersections, Cor cor:membership, word-problem history)",
+   "build/sections/08_stabilizers.tex Sec sec:algorithms (proof of Cor cor:membership)",
+   "build/sections/02_category.tex (label category and algebra Z)",
+   "/root/openai-math/preprints/An-Artin-group-with-no-geometric-CAT-0-action-September-23-2026 (abstract)",
+   "lean/docs/254.md; lean/ComparatorChallenges/HarmonicArtin.lean; ArtinParabolicIntersections.lean",
+   "docs.gap-system.org HAP aboutArtinGroups ('In those cases where the conjecture is known to hold')",
+   "doc.sagemath.org sage/groups/artin.html (conjectured properties list)"
+  ]
+ },
+ {
+  "num": "255",
+  "title": "Quasi-isometric recognition of virtually polycyclic groups",
+  "subject": "Group theory",
+  "plain_english": "Any finitely generated group with the same large-scale geometry as a virtually polycyclic group is itself virtually polycyclic, and virtually a uniform lattice in a solvable Lie group (Eskin–Fisher–Whyte conjecture).",
+  "constructive": "no: a quasi-isometric rigidity statement",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. There is no algorithm here. GAP's Polycyclic package works with presentations already known to be polycyclic and has no use for quasi-isometry data.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Lean-formalized.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "/root/openai-math/preprints/quasi-isometric-recognition-of-virtually-polycyclic-groups-September-24-2026/build/introduction.tex (Thm thm:recognition, Cor cor:lattice-recognition)",
+   "lean/docs/255.md"
+  ]
+ },
+ {
+  "num": "256",
+  "title": "Nonsingular systems of equations over arbitrary groups",
+  "subject": "Group theory",
+  "plain_english": "Take a finite system of equations with coefficients in any group whose exponent-sum matrix has full rank over Q. It always has a solution in some larger group (Howie's conjecture). Adding one generator and one relator can never kill a nontrivial group (Kervaire's conjecture).",
+  "constructive": "no: proves that G embeds in the quotient (spectral-phase and planar-surface argument); no solution is computed",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. Equation solvers (Makanin–Razborov-type solvers for free groups, Diophantine problems in group-based crypto) look for solutions inside a given group. This result only guarantees solutions in some unspecified overgroup.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Lean covers the unimodular Kervaire statement; Howie's multi-equation version is not formalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "258"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Nonsingular-systems-of-equations-over-arbitrary-groups-October-5-2026/build/sections/introduction.tex (Thm thm:main, proof outline)",
+   "/root/openai-math/preprints/The-Kervaire-Theorem-for-Groups-September-24-2026 (abstract)",
+   "lean/docs/256.md"
+  ]
+ },
+ {
+  "num": "257",
+  "title": "A hyperbolic group without a geometric CAT(0) action",
+  "subject": "Group theory",
+  "plain_english": "A word-hyperbolic group with a finite 2-dimensional classifying space has no geometric action on any proper CAT(0) space, so no finite model of it carries a locally CAT(0) or CAT(−1) metric.",
+  "constructive": "no: 'an existence argument [that] does not give an effective size'",
+  "explicit_constants": "none",
+  "galactic": true,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. This is pure geometric group theory.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Lean-formalized (except the 2-dimensionality refinement).",
+  "deep_dive": false,
+  "cross_links": [
+   "254",
+   "252",
+   "246"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/A-hyperbolic-group-with-no-geometric-CAT0-action-September-25-2026/build/sections/01-introduction.tex Thm thm:main",
+   "lean/docs/257.md"
+  ]
+ },
+ {
+  "num": "258",
+  "title": "Gersten’s conjecture and virtual compact specialness of one-relator groups",
+  "subject": "Group theory",
+  "plain_english": "A one-relator group is word-hyperbolic exactly when it contains no Baumslag–Solitar subgroup BS(m,n). Hyperbolic one-relator groups are virtually compact special, hence linear over Z and virtually free-by-cyclic.",
+  "constructive": "no: a structural dichotomy with no algorithm and no bounds",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "CAS"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 2,
+   "practicality": 2,
+   "confidence": 2,
+   "effort": 2,
+   "time_to_value": 2
+  },
+  "opportunity": "Weak CAS channel. In practice, hyperbolicity of one-relator groups is checked with kbmag, GAP walrus and small-cancellation tests; for example, the Cashen–Hoffmann census (rank 2–4, relator length ≤ 16) records a 'hyperbolicreason' per entry. Gersten's dichotomy suggests a two-sided procedure. One side runs a hyperbolicity semi-decision (Papasoglu, kbmag). The other searches for Baumslag–Solitar witnesses (a b^m a^{-1} = b^n with [a,b] ≠ 1), checked with Magnus's word-problem algorithm. Whether Z² = BS(1,1) witnesses can be certified, and hence whether hyperbolicity is decidable for one-relator groups, needs real research. If it works, it could settle the irank-2 census entries.",
+  "targets": [
+   "GAP walrus",
+   "kbmag",
+   "Cashen–Hoffmann one-relator group census"
+  ],
+  "action": "RESEARCH",
+  "first_step": "Determine whether every non-hyperbolic one-relator group has a Baumslag–Solitar witness certifiable by the Magnus word-problem solver. Then run a witness search on irank-2 census entries that kbmag and walrus leave unclassified.",
+  "caveats": "Not formalized and very long (about 760KB of TeX across two papers). The decision-procedure consequence is my inference, not the paper's claim. kbmag already verifies many cases.",
+  "deep_dive": false,
+  "cross_links": [
+   "256"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Baumslag-Solitar-free-one-relator-groups-are-hyperbolic-September-25-2026/build/source/introduction.tex (Thm thm:main, Thm thm:magnus, prior work)",
+   "/root/openai-math/preprints/Virtual-compact-specialness-of-hyperbolic-one-relator-groups-September-25-2026 (abstract)",
+   "mat.univie.ac.at/~cashen/orgcensus (hyperbolicreason codes w/k)",
+   "arXiv 2202.11324 (Linton hierarchies)"
+  ]
+ },
+ {
+  "num": "259",
+  "title": "A group without fixed price",
+  "subject": "Group theory",
+  "plain_english": "A finitely generated group, an amalgam of a free group of rank 100 with a direct product, has two free measure-preserving actions whose 'costs' differ. The cost is the average number of edges needed per point to connect orbits.",
+  "constructive": "yes for the group: Γ = F(a,b1..b99) *_J (J × Z); the cost gap is proved, not computed",
+  "explicit_constants": "rank-100 free factor; Bernoulli cost bounded away from 1 (no explicit gap stated in the abstract)",
+  "galactic": false,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. Cost belongs to measured group theory and orbit equivalence, and has no applied consumer.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Not formalized.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "/root/openai-math/preprints/A-group-without-fixed-price-October-5-2026/build/introduction.tex (group and two actions)"
+  ]
+ }
+]

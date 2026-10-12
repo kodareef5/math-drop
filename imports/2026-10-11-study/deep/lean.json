@@ -1,0 +1,296 @@
+[
+ {
+  "id": "lean-1",
+  "title": "Independent Comparator replay + human statement-fidelity review of the ~20 configs behind the opportunity matrix",
+  "families": [3, 12, 21, 95, 131, 149, 165, 179, 187, 238, 254, 266, 276, 317, 325, 374],
+  "channels": ["VERIF"],
+  "tier": "T2",
+  "action": "CERTIFY",
+  "summary": "The library has zero sorry/admit/native_decide/extern/custom axioms in 26M lines, and all 416 configs allow only the three standard axioms. However, no Comparator run or attestation is published, and formalization.yaml says review: unchecked (agent-written statements). Replaying Comparator with nanoda in the documented sandbox, plus a domain-expert sign-off on each challenge file, turns the confidence column from claimed into verified.",
+  "targets": [
+   {"name": "Comparator guarantees (README L46-49)", "url": "https://github.com/leanprover/comparator/blob/ca04cfc72b550331658ec314bf47685281bfd4bf/README.md#L46-L49"},
+   {"name": "openai/math Comparator instructions", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/ComparatorChallenges/README.md"},
+   {"name": "formalization.yaml review: unchecked (L1773-1778)", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/formalization.yaml#L1773-L1778"},
+   {"name": "QRH challenge (Mathlib-only statement)", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/ComparatorChallenges/QuasiRiemannHypothesis.lean#L5-L7"},
+   {"name": "SwitchChain challenge", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/ComparatorChallenges/SwitchChain.lean#L155-L165"},
+   {"name": "HarmonicArtin challenge (needs expert check of Salvetti encoding)", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/ComparatorChallenges/HarmonicArtin.lean#L54-L61"}
+  ],
+  "benefit_type": "guarantee",
+  "beneficiaries": "Everyone citing the drop: this study's opportunity matrix, formal-conjectures, erdosproblems.com, practitioners who want to cite 131/179/276/325 as theorems",
+  "first_step": "On a machine that can reach the Mathlib cache, run lake update && lake exe cache get, then comparator on ComparatorChallenges/CirculantHadamard.json (9.8k-line closure) to validate the pipeline, then the rest of the list. Use nanoda as an external kernel.",
+  "measurement": "Per-config pass/fail log, #print axioms output, hashes, plus a signed reviewer note per challenge file (statement matches paper: yes/no/caveat).",
+  "risks": "The fresh build may break: 23 dependency patches are applied by Lake hooks. 003 (556k lines + patched PNT+) and 266 (2.8M lines) closures are heavy and need high vm.max_map_count. A reviewer may find a mis-stated predicate, which is a useful outcome.",
+  "scores": {"impact": 4, "reach": 3, "directness": 5, "practicality": 4, "confidence": 4, "effort": 4, "time_to_value": 5},
+  "verdict": "pursue now"
+ },
+ {
+  "id": "lean-2",
+  "title": "Bridge OAI theorems to independently written formal-conjectures statements (30 FC files already link openai/math proofs)",
+  "families": [179, 21, 12, 266, 13, 28, 25, 5],
+  "channels": ["VERIF"],
+  "tier": "T2",
+  "action": "FORMALIZE",
+  "summary": "formal-conjectures holds 36 formal_proof links to openai/math, attached to statements written independently with sorry (e.g. circulant Hadamard via Hadamard.IsHadamard' and Matrix.circulant; Erdos 970 via jacobsthalFunction). A short Lean bridge deriving each FC statement from the OAI theorem leaves only a small, human-checkable bridge as the fidelity risk, and lets FC drop sorry on 'research solved' entries.",
+  "targets": [
+   {"name": "FC circulant_hadamard_conjecture (links OAI proof)", "url": "https://github.com/google-deepmind/formal-conjectures/blob/cd6912171c5a1de06905795e5533ec7120f34ddc/FormalConjectures/Arxiv/2402.13202/CirculantHadamard.lean#L58-L67"},
+   {"name": "FC Erdos 970 (Jacobsthal) entries", "url": "https://github.com/google-deepmind/formal-conjectures/blob/cd6912171c5a1de06905795e5533ec7120f34ddc/FormalConjectures/ErdosProblems/970.lean#L57-L71"},
+   {"name": "FC MUB dim-6 upper_five (only <=5 recorded; =3 still 'open')", "url": "https://github.com/google-deepmind/formal-conjectures/blob/cd6912171c5a1de06905795e5533ec7120f34ddc/FormalConjectures/OpenQuantumProblems/13.lean#L541-L554"},
+   {"name": "OAI circulant Hadamard main theorem", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/LinearAlgebra/CirculantHadamard/Main.lean#L19-L22"}
+  ],
+  "benefit_type": "formalization",
+  "beneficiaries": "formal-conjectures maintainers, erdosproblems.com (which plans to link checkable Lean), anyone needing a statement with two independent authors",
+  "first_step": "Write CirculantHadamardBridge.lean proving FC's circulant_hadamard_conjecture from OAI.CirculantHadamard.exists_iff_order_one_or_four. Both sides use elementary definitions.",
+  "measurement": "Number of FC 'research solved' entries whose sorry is replaced by a compiled bridge.",
+  "risks": "Toolchain/Mathlib version skew between FC HEAD and the OAI pin (v4.34.1, Mathlib d13f23b) may require extracting OAI closures. FC policy may prefer not to depend on a 1.5 GB external library.",
+  "scores": {"impact": 3, "reach": 2, "directness": 5, "practicality": 4, "confidence": 4, "effort": 4, "time_to_value": 4},
+  "verdict": "pursue now"
+ },
+ {
+  "id": "lean-3",
+  "title": "Metadata/hygiene PRs to openai/math: index 227 missing configs, flag support-only results, fix stale links, remove challenge axiom",
+  "families": [131, 374, 266, 149, 12, 187, 317, 342, 376, 361],
+  "channels": ["VERIF"],
+  "tier": "T2",
+  "action": "CERTIFY",
+  "summary": "formalization.yaml lists 189 of 416 configs; the other 227 configs (106 families, including 131, 374, 266, 149, 012, 187, 317) are missing. It does not distinguish the 14 support-only docs. Docs 342 and 376 link pre-repair manuscripts, and HarmonicGrowth's challenge proves main from 'axiom mainStatement'. Fifteen required packages (11 lana-agents/*, carleson, Zeta3Irrational, leancert, PrimeCert) are never imported. Fixing these makes the machine-readable catalogue trustworthy; this study's own catalogue.json inherits the yaml gap.",
+  "targets": [
+   {"name": "formalization.yaml status.main_results", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/formalization.yaml#L969-L972"},
+   {"name": "HarmonicGrowth challenge axiom", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/ComparatorChallenges/HarmonicGrowth.lean#L100-L102"},
+   {"name": "docs/342.md links Sept 23 (pre-repair) manuscript", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/docs/342.md"},
+   {"name": "lakefile requires (unused lana-agents packages, patch hooks)", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/lakefile.lean#L161-L164"}
+  ],
+  "benefit_type": "guarantee",
+  "beneficiaries": "Downstream catalogue consumers (formal-conjectures, emergentmind explorer, this study), Comparator users",
+  "first_step": "Generate the missing main_results entries from ComparatorChallenges/*.json, mapping configs to families through lean/docs, and add a 'support: true' field for the 14 support-only docs.",
+  "measurement": "yaml covers 416/416 configs; support-only flagged; the axiom grep on ComparatorChallenges returns 0.",
+  "risks": "Upstream may not accept external PRs (the README mentions community-hosted repos are being explored).",
+  "scores": {"impact": 2, "reach": 2, "directness": 5, "practicality": 5, "confidence": 5, "effort": 5, "time_to_value": 5},
+  "verdict": "pursue now"
+ },
+ {
+  "id": "lean-4",
+  "title": "Comparator: enforce or warn on definition holes whose challenge body is not sorry",
+  "families": [374, 103, 110, 297, 238, 145, 158],
+  "channels": ["VERIF"],
+  "tier": "T1",
+  "action": "IMPLEMENT",
+  "summary": "Comparator compares only name, type, universes and safety for definition_names targets, never bodies. In this repo, 8 of 10 hole configs show complete non-sorry bodies, e.g. all 12 Brenier OT definitions, which a reader would assume are enforced. A manual diff found no exploitation, but the guarantee as published is weaker than it looks. A mode that requires body equality when the challenge body is not sorry closes a silent-weakening channel for every AI-proof evaluation using Comparator.",
+  "targets": [
+   {"name": "Comparator definitionHoleMatches (type-only check)", "url": "https://github.com/leanprover/comparator/blob/ca04cfc72b550331658ec314bf47685281bfd4bf/Comparator/Compare.lean#L63-L65"},
+   {"name": "Comparator definition-target loop", "url": "https://github.com/leanprover/comparator/blob/ca04cfc72b550331658ec314bf47685281bfd4bf/Comparator/Compare.lean#L89-L104"},
+   {"name": "Brenier.json: 12 non-sorry defs listed as holes", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/ComparatorChallenges/Brenier.json#L8-L21"}
+  ],
+  "benefit_type": "guarantee",
+  "beneficiaries": "Lean FRO / AIMO-style evaluations, every lab publishing AI-generated Lean with Comparator configs",
+  "first_step": "Open an issue/PR on leanprover/comparator: when a definition_names target's challenge value is not sorryAx-headed, compare values (or emit a warning), with an explicit opt-out flag.",
+  "measurement": "PR merged; rerun on the 10 OAI hole configs flags exactly the non-sorry ones.",
+  "risks": "Some legitimate challenges expect different bodies; needs a clear opt-out. Small user base outside AI-eval settings.",
+  "scores": {"impact": 3, "reach": 3, "directness": 5, "practicality": 5, "confidence": 5, "effort": 5, "time_to_value": 4},
+  "verdict": "pursue now"
+ },
+ {
+  "id": "lean-5",
+  "title": "Close 266's headline N(6)=3: publish/rerun the binary64 execution archive, then kernel-check it via interval certificates",
+  "families": [266],
+  "channels": ["QUANT", "VERIF"],
+  "tier": "T2",
+  "action": "FORMALIZE",
+  "summary": "Lean proves only N(6)<=5 (plus Fourier vanishing off Tao's class). The headline 'four MUBs impossible' is a 4,470 s binary64 branch-and-bound whose cited archive (verification/computation, REPRODUCE.md) is absent from the repo, although 30 other manuscripts ship verification/. Stage 1 (publish and rerun) is cheap. Stage 2 (Lean interval certificates over a 12^5-cell base cover) is a large, GB-scale project. Application value is modest, because the design-relevant 'no complete set of 7' is already formal.",
+  "targets": [
+   {"name": "MUBSix challenge (only <=5 and Fourier vanishing)", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/ComparatorChallenges/MUBSix.lean#L50-L60"},
+   {"name": "docs/266.md scope (does not establish the bound three)", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/docs/266.md"},
+   {"name": "leancert (already pinned, unused)", "url": "https://github.com/alerad/leancert/tree/7f91b6eb3567437f6cfac03ed279706603ee22f4"}
+  ],
+  "benefit_type": "formalization",
+  "beneficiaries": "Quantum-information community (Zauner's problem), formal-conjectures OpenQuantumProblems/13",
+  "first_step": "Request the execution archive from OpenAI, or open an issue; rerun the 100-process pipeline on two different platforms and compare the published SHA-256 hashes.",
+  "measurement": "Archive published and reproduced (stage 1); Lean statement 'Attainable n -> n <= 3' Comparator-checked (stage 2).",
+  "risks": "The archive may not be releasable. A binary64 to interval translation may need re-engineering of the cover. The Lean artifact would be very large (<=5 alone is 2.8M lines/205 MB).",
+  "scores": {"impact": 2, "reach": 2, "directness": 4, "practicality": 2, "confidence": 3, "effort": 2, "time_to_value": 2},
+  "verdict": "pursue as research"
+ },
+ {
+  "id": "lean-6",
+  "title": "Upstream a finite reversible Markov chain API (spectral gap -> TV/mixing time, Dirichlet form, canonical paths) to Mathlib, seeded by 131",
+  "families": [131, 238, 227],
+  "channels": ["STAT", "VERIF"],
+  "tier": "T3",
+  "action": "FORMALIZE",
+  "summary": "Mathlib HEAD has measure-theoretic Kernel.IsReversible/Invariant but no MarkovChain, mixing time, spectral gap, Dirichlet form or TV distance. The OAI library re-defines mixingTime 15 times and TV 40 times. 131's generic layer (~800 lines, Mathlib-only imports: matrix_tv_bound_of_gap, energy algebra, spectral-from-square) is a good seed but assumes a symmetric kernel with uniform stationary law. It must be generalized to reversible pi and rewritten to Mathlib style.",
+  "targets": [
+   {"name": "OAI matrix_tv_bound_of_gap (seed)", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/Probability/SwitchChain/FiniteKernelTV.lean#L151-L190"},
+   {"name": "Mathlib Kernel.IsReversible / Invariant", "url": "https://github.com/leanprover-community/mathlib4/blob/d6416ab0f09d3a2e090f403fc80f37754f6181a9/Mathlib/Probability/Kernel/Invariance.lean#L56-L65"},
+   {"name": "Mathlib rowStochastic", "url": "https://github.com/leanprover-community/mathlib4/blob/d6416ab0f09d3a2e090f403fc80f37754f6181a9/Mathlib/LinearAlgebra/Matrix/Stochastic.lean#L43"}
+  ],
+  "benefit_type": "formalization",
+  "beneficiaries": "Formal verification of MCMC samplers (switch/Curveball, card shuffles, Glauber dynamics), Mathlib probability maintainers",
+  "first_step": "Zulip RFC in #mathlib4 > probability proposing Matrix.IsReversible pi, spectralGap, tvDist and the gap-to-TV theorem, with 131's proof as the reference.",
+  "measurement": "Merged PRs; 131's switch_chain_tv_bound re-proved on the Mathlib API.",
+  "risks": "Design debates (finite matrices vs Kernel) can stall PRs. The code needs substantial rewriting (30,858 OAI files use bare 'import Mathlib', non-Mathlib style). Maintainer bandwidth.",
+  "scores": {"impact": 2, "reach": 3, "directness": 3, "practicality": 4, "confidence": 5, "effort": 2, "time_to_value": 2},
+  "verdict": "pursue as research"
+ },
+ {
+  "id": "lean-7",
+  "title": "Upstream circulant Hadamard (n in {1,4}) and even-Barker classification onto Mathlib's new Matrix.IsHadamard",
+  "families": [179],
+  "channels": ["COMM", "VERIF"],
+  "tier": "T2",
+  "action": "FORMALIZE",
+  "summary": "Mathlib added Matrix.IsHadamard in 2026 and has Matrix.circulant, so the classical theorem can be stated natively over R. OAI's proof is 68 files/9.5k lines with Mathlib-only imports (cyclotomic, 2-adic, Kronecker root-of-unity arguments), much of which probably overlaps existing Mathlib API. A small, self-contained, classic first upstream.",
+  "targets": [
+   {"name": "Mathlib Matrix.IsHadamard", "url": "https://github.com/leanprover-community/mathlib4/blob/d6416ab0f09d3a2e090f403fc80f37754f6181a9/Mathlib/LinearAlgebra/Matrix/HadamardMatrix.lean#L51-L54"},
+   {"name": "Mathlib Matrix.circulant", "url": "https://github.com/leanprover-community/mathlib4/blob/d6416ab0f09d3a2e090f403fc80f37754f6181a9/Mathlib/LinearAlgebra/Matrix/Circulant.lean#L51"},
+   {"name": "OAI exists_iff_order_one_or_four", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/LinearAlgebra/CirculantHadamard/Main.lean#L19-L22"}
+  ],
+  "benefit_type": "formalization",
+  "beneficiaries": "Mathlib combinatorial-design users, formal-conjectures, sequence-design references",
+  "first_step": "State Matrix.IsHadamard (circulant v) over R implies card n in {1,4} in Mathlib terms; port OAI's proof file by file, replacing local cyclotomic lemmas with Mathlib ones.",
+  "measurement": "Merged Mathlib PR(s); line count after deduplication vs the 9.5k original.",
+  "risks": "Licensing/attribution of AI-generated code in Mathlib (Apache-2.0 on both sides; norms still evolving); reviewer time.",
+  "scores": {"impact": 2, "reach": 2, "directness": 4, "practicality": 5, "confidence": 5, "effort": 3, "time_to_value": 3},
+  "verdict": "pursue now"
+ },
+ {
+  "id": "lean-8",
+  "title": "Upstream numerical range + Toeplitz-Hausdorff convexity (from 325), then the Crouzeix 2-bound",
+  "families": [325],
+  "channels": ["NUM", "VERIF"],
+  "tier": "T3",
+  "action": "FORMALIZE",
+  "summary": "Mathlib has no numerical range. OAI proves its convexity four separate times (142-333 lines each). A few-hundred-line PR gives Mathlib W(A), compactness, convexity and the spectrum-in-closure lemma. The 15k-line complete-Crouzeix proof is a natural follow-up that formally underpins field-of-values bounds used in GMRES/Arnoldi analyses.",
+  "targets": [
+   {"name": "OAI convex_quadratic_range (Toeplitz-Hausdorff)", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/Analysis/DirectCrouzeix/Convexity.lean#L201"},
+   {"name": "OAI numericalRange_convex (second copy)", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/Analysis/NumericalRange/Convexity.lean#L324"},
+   {"name": "DirectCrouzeix challenge (UniversalBound 2, sharp)", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/ComparatorChallenges/DirectCrouzeix.lean#L28-L37"}
+  ],
+  "benefit_type": "formalization",
+  "beneficiaries": "Mathlib operator-theory users; numerical-linear-algebra formalization efforts",
+  "first_step": "PR Mathlib/Analysis/InnerProductSpace/NumericalRange.lean with the definition for continuous linear maps plus Toeplitz-Hausdorff, ported from OAI HilbertCrouzeix/NumericalRange.lean.",
+  "measurement": "Merged PR; Crouzeix bound stated against the Mathlib definition.",
+  "risks": "Low; the main risk is reviewer bandwidth. The Crouzeix follow-up is heavy.",
+  "scores": {"impact": 2, "reach": 2, "directness": 4, "practicality": 5, "confidence": 5, "effort": 4, "time_to_value": 3},
+  "verdict": "pursue now"
+ },
+ {
+  "id": "lean-9",
+  "title": "Specht modules / unitary S_n representations from 238 (YoungSymmetry + FiniteUnitary)",
+  "families": [238],
+  "channels": ["VERIF"],
+  "tier": "T4",
+  "action": "FORMALIZE",
+  "summary": "Mathlib has YoungDiagram and SemistandardTableau but no Specht modules. OAI has 1.9k + 3.2k lines building unitary Specht representations for the Thorp analysis. This is a long-standing Mathlib gap, but the OAI code is purpose-built and needs redesign.",
+  "targets": [
+   {"name": "OAI RepresentationTheory/YoungSymmetry", "url": "https://github.com/openai/math/tree/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/RepresentationTheory/YoungSymmetry"}
+  ],
+  "benefit_type": "formalization",
+  "beneficiaries": "Mathlib representation theory",
+  "first_step": "Zulip RFC comparing OAI's construction with planned Mathlib designs.",
+  "measurement": "RFC outcome; any merged Specht definition.",
+  "risks": "Design mismatch with Mathlib's Representation API; no applied pull.",
+  "scores": {"impact": 1, "reach": 1, "directness": 3, "practicality": 4, "confidence": 5, "effort": 2, "time_to_value": 2},
+  "verdict": "monitor"
+ },
+ {
+  "id": "lean-10",
+  "title": "Strict omega-categories, Street nerve, Kan-Quillen model structure from 317",
+  "families": [317],
+  "channels": ["VERIF", "FOUND"],
+  "tier": "T4",
+  "action": "FORMALIZE",
+  "summary": "The 317 closure (65k live lines; 94.7k of Thomason's 160k lines are dead code) contains a full ModelCategory SSet (Kan-Quillen). Mathlib HEAD lacks this, but it duplicates Joel Riou's in-flight formalization, and the weak equivalences use a custom pi_n-bijection definition. OmegaCategory, Steiner complexes, orientals and the Street nerve are genuinely new to Lean, but have no applied users.",
+  "targets": [
+   {"name": "OAI geometricModel : KanQuillenModel", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/CategoryTheory/Thomason/KanQuillen.lean#L149-L158"},
+   {"name": "OAI KanQuillenModel structure + custom weak equivalences", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/CategoryTheory/Thomason/Definitions.lean#L2347-L2376"},
+   {"name": "Mathlib SSet.modelCategoryQuillen (cofibrations/fibrations only)", "url": "https://github.com/leanprover-community/mathlib4/blob/d6416ab0f09d3a2e090f403fc80f37754f6181a9/Mathlib/AlgebraicTopology/SimplicialSet/CategoryWithFibrations.lean#L36-L50"}
+  ],
+  "benefit_type": "formalization",
+  "beneficiaries": "Lean homotopy-theory formalizers (Riou; infinity-cosmos project)",
+  "first_step": "Send Riou/ infinity-cosmos maintainers a pointer to the Kan-Quillen and Street-nerve files as reference material, not as a PR.",
+  "measurement": "Whether any lemma or design is adopted.",
+  "risks": "Duplication with in-flight work; 2.5k-line challenge with 99 defs is hard to review; zero applied value.",
+  "scores": {"impact": 1, "reach": 1, "directness": 3, "practicality": 3, "confidence": 4, "effort": 2, "time_to_value": 1},
+  "verdict": "monitor"
+ },
+ {
+  "id": "lean-11",
+  "title": "DO NOT: 'formalize 003's quasi-RH top line'",
+  "families": [3],
+  "channels": ["CAS", "VERIF"],
+  "tier": "T4",
+  "action": "NONE",
+  "summary": "Already done. riemannZeta s != 0 and DirichletCharacter.LFunction chi s != 0 for 7/8 < Re s (every modulus and character, pole excluded) are Comparator targets stated purely with Mathlib objects, and Hecke over Q(sqrt-3) and the Siegel gap are also formal. The 11/12 alternate proof adds nothing. The Siegel constant is ineffective, so no formal explicit constant is available for CAS/explicit-PNT use. Effort belongs in lean-1 (replaying these four configs).",
+  "targets": [
+   {"name": "QRH challenge", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/ComparatorChallenges/QuasiRiemannHypothesis.lean#L5-L7"},
+   {"name": "Dirichlet 7/8 challenge", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/ComparatorChallenges/DirichletSevenEighths.lean#L8-L12"},
+   {"name": "OAI Nonvanishing.lean (solution)", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean#L17-L31"}
+  ],
+  "benefit_type": "formalization",
+  "beneficiaries": "n/a",
+  "first_step": "n/a; fold into lean-1.",
+  "measurement": "n/a",
+  "risks": "Misallocating formalization budget to finished work.",
+  "scores": {"impact": 1, "reach": 1, "directness": 1, "practicality": 5, "confidence": 5, "effort": 5, "time_to_value": 5},
+  "verdict": "do not pursue"
+ },
+ {
+  "id": "lean-12",
+  "title": "DO NOT: use the triage lean=true flag (or catalogue 'formalized') as the confidence column",
+  "families": [266, 95, 149, 27, 66, 152, 194, 195, 212, 237, 260, 261, 280, 281, 301],
+  "channels": ["VERIF"],
+  "tier": "T4",
+  "action": "NONE",
+  "summary": "lean=true (242 families) overrates 14 families whose formalization is only supporting or weaker (incl. 266 N(6)=3, 195, 261, 194) and ~8 where a headline clause is omitted (095 no-lift, 149 permanence). Conversely, catalogue.json's per-manuscript 'formalized' flag comes from yaml sources only (172) and marks Comparator-backed 131/374/266/012/187/317 as unformalized. Use lean_confidence.json and each doc's scope paragraph instead.",
+  "targets": [
+   {"name": "docs/266.md (weaker five-basis bound only)", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/docs/266.md"},
+   {"name": "docs/095.md (nonspectrahedral only, not no-lift)", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/docs/095.md"},
+   {"name": "docs/149.md (x0-dependent bounds, not uniform permanence)", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/docs/149.md"}
+  ],
+  "benefit_type": "guarantee",
+  "beneficiaries": "Opportunity-matrix builders",
+  "first_step": "Join lean_confidence.json into the matrix.",
+  "measurement": "n/a",
+  "risks": "Inflated confidence on 266/095/149 rows.",
+  "scores": {"impact": 2, "reach": 1, "directness": 5, "practicality": 5, "confidence": 5, "effort": 5, "time_to_value": 5},
+  "verdict": "do not pursue"
+ },
+ {
+  "id": "lean-13",
+  "title": "DO NOT: build, vendor, or bulk-upstream the 26M-line OAI library",
+  "families": [],
+  "channels": ["VERIF"],
+  "tier": "T4",
+  "action": "NONE",
+  "summary": "The library is 1.57 GB of source (16x Mathlib) with 1.21M dead lines, 30,858 files using bare 'import Mathlib', machine-certificate bulk (Ramsey 223 MB, MUB 205 MB, 444k kernel decide calls), and 15 unused git dependencies. The README itself recommends compiling small portions. Verify per closure (lean-1) and upstream by extraction and rewrite (lean-6/7/8).",
+  "targets": [
+   {"name": "openai/math lean/README.md (compile small portions; mmap note)", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/README.md"}
+  ],
+  "benefit_type": "formalization",
+  "beneficiaries": "n/a",
+  "first_step": "n/a",
+  "measurement": "n/a",
+  "risks": "Weeks of CI time and maintainer friction for no marginal assurance.",
+  "scores": {"impact": 1, "reach": 1, "directness": 2, "practicality": 1, "confidence": 5, "effort": 1, "time_to_value": 1},
+  "verdict": "do not pursue"
+ },
+ {
+  "id": "lean-14",
+  "title": "DO NOT: rely on or formalize explicit constants (Thorp round counts, 374 C*, 021 C, 149 eps) for applications",
+  "families": [238, 374, 21, 149],
+  "channels": ["CRYPTO", "STAT", "VERIF"],
+  "tier": "T4",
+  "action": "NONE",
+  "summary": "The formal statements are existential or asymptotic: Thorp TV->0 'eventually in d' after 2048d shuffles (1600d only in the library), 32,800d from worst start, and (1/2)N^-5 after an unspecified sweep count. That is 51k-65k shuffles at N=2^32 versus a ~64 lower bound, so no fixed-N certificate for FPE. 374/021/149 assert 'exists C/eps'. Formalizing the papers' explicit constants (e.g. 374's C*~96) would certify bounds too loose for practice.",
+  "targets": [
+   {"name": "Thorp OptimalOrderMain / InformationMain (2048d, eventually-in-d)", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/ComparatorChallenges/ThorpRemaining.lean#L492-L546"},
+   {"name": "CoordinateTrace MainStatement (existential sweep count)", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/ComparatorChallenges/CoordinateTrace.lean#L360-L367"}
+  ],
+  "benefit_type": "guarantee",
+  "beneficiaries": "n/a",
+  "first_step": "n/a",
+  "measurement": "n/a",
+  "risks": "Overstating 'Lean-verified' guarantees in FPE/OT/CRN contexts.",
+  "scores": {"impact": 1, "reach": 1, "directness": 2, "practicality": 1, "confidence": 5, "effort": 2, "time_to_value": 1},
+  "verdict": "do not pursue"
+ }
+]

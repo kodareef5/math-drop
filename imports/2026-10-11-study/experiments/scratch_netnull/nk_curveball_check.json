@@ -1,0 +1,30 @@
+[
+ {
+  "d": [
+   4,
+   4,
+   2,
+   2,
+   2,
+   2
+  ],
+  "lib": "networkit.Curveball uniform trades",
+  "samples": 15000,
+  "TV_uniform": 0.007,
+  "p_uniform": 0.983
+ },
+ {
+  "d": [
+   3,
+   3,
+   3,
+   3,
+   3,
+   3
+  ],
+  "lib": "networkit.Curveball uniform trades",
+  "samples": 15000,
+  "TV_uniform": 0.0296,
+  "p_uniform": 0.12
+ }
+]

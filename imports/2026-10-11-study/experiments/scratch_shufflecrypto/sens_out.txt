@@ -1,0 +1,6 @@
+u=1 only (paper's C1): N=2^20 eps=2^-32: SN-lift (14014, {'b': 8, 'u': 1.0, 'p': 11, 'r_per_block': 1274})  Thorp-lift (33000, {'b': 8, 'u': 1.0, 'p': 11, 'r_per_block': 3000})
+u=1 only (paper's C1): N=2^20 eps=2^-64: SN-lift (39220, {'b': 8, 'u': 1.0, 'p': 20, 'r_per_block': 1961})  Thorp-lift (88800, {'b': 8, 'u': 1.0, 'p': 20, 'r_per_block': 4440})
+u=1 only (paper's C1): N=2^32 eps=2^-32: SN-lift (11438, {'b': 8, 'u': 1.0, 'p': 7, 'r_per_block': 1634})  Thorp-lift (26432, {'b': 8, 'u': 1.0, 'p': 7, 'r_per_block': 3776})
+u=1 only (paper's C1): N=2^32 eps=2^-64: SN-lift (25564, {'b': 8, 'u': 1.0, 'p': 11, 'r_per_block': 2324})  Thorp-lift (57376, {'b': 8, 'u': 1.0, 'p': 11, 'r_per_block': 5216})
+u=1 only (paper's C1): N=2^64 eps=2^-32: SN-lift (10532, {'b': 8, 'u': 1.0, 'p': 4, 'r_per_block': 2633})  Thorp-lift (23808, {'b': 8, 'u': 1.0, 'p': 4, 'r_per_block': 5952})
+u=1 only (paper's C1): N=2^64 eps=2^-64: SN-lift (19950, {'b': 8, 'u': 1.0, 'p': 6, 'r_per_block': 3325})  Thorp-lift (44160, {'b': 8, 'u': 1.0, 'p': 6, 'r_per_block': 7360})

@@ -1,0 +1,4 @@
+n=1000 SA E/n=0.7489 (0.9813 P*) in 0.29s single core -> equivalent n->inf QAOA depth p~142; ZZ-gate count ~ p*n(n-1)/2 = 7.11e+07
+n=1000 SA E/n=0.7539 (0.9879 P*) in 2.97s single core -> equivalent n->inf QAOA depth p~238; ZZ-gate count ~ p*n(n-1)/2 = 1.19e+08
+n=2000 SA E/n=0.7496 (0.9822 P*) in 1.74s single core -> equivalent n->inf QAOA depth p~151; ZZ-gate count ~ p*n(n-1)/2 = 3.02e+08
+n=2000 SA E/n=0.7578 (0.9930 P*) in 20.03s single core -> equivalent n->inf QAOA depth p~455; ZZ-gate count ~ p*n(n-1)/2 = 9.09e+08

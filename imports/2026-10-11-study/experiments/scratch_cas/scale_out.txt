@@ -1,0 +1,66 @@
+A3 (spherical) random L=4: max minimal size 10, max peak 10, max secs 0.000223, timeouts(30s) 0/4
+A3 (spherical) random L=6: max minimal size 16, max peak 18, max secs 0.000288, timeouts(30s) 0/4
+A3 (spherical) random L=8: max minimal size 18, max peak 38, max secs 0.000672, timeouts(30s) 0/4
+A3 (spherical) random L=10: max minimal size 60, max peak 60, max secs 0.0134, timeouts(30s) 0/4
+A3 (spherical) random L=12: max minimal size 36, max peak 57, max secs 0.0134, timeouts(30s) 0/4
+A3 (spherical) random L=14: max minimal size 25, max peak 36, max secs 0.0125, timeouts(30s) 0/4
+A3 (spherical) random L=16: max minimal size 41, max peak 93, max secs 0.0013, timeouts(30s) 0/4
+A3 (spherical) c^1 (len 3): minimal size 7, peak 7, 0.00s
+A3 (spherical) c^2 (len 6): minimal size 11, peak 21, 0.00s
+A3 (spherical) c^3 (len 9): minimal size 15, peak 29, 0.02s
+A3 (spherical) c^4 (len 12): minimal size 21, peak 42, 0.00s
+A3 (spherical) c^5 (len 15): minimal size 27, peak 52, 0.00s
+A3 (spherical) c^6 (len 18): minimal size 31, peak 66, 0.01s
+A3 (spherical) c^7 (len 21): minimal size 35, peak 76, 0.02s
+A3 (spherical) c^8 (len 24): minimal size 41, peak 90, 0.01s
+A3 (spherical) c^9 (len 27): minimal size 47, peak 100, 0.01s
+A3 (spherical) c^10 (len 30): minimal size 51, peak 114, 0.02s
+A3 (spherical) c^11 (len 33): minimal size 55, peak 124, 0.03s
+A~2 (affine) random L=4: max minimal size 8, max peak 12, max secs 0.000104, timeouts(30s) 0/4
+A~2 (affine) random L=6: max minimal size 14, max peak 30, max secs 0.000338, timeouts(30s) 0/4
+A~2 (affine) random L=8: max minimal size 26, max peak 42, max secs 0.000546, timeouts(30s) 0/4
+A~2 (affine) random L=10: max minimal size 36, max peak 66, max secs 0.0087, timeouts(30s) 0/4
+A~2 (affine) random L=12: max minimal size 96, max peak 162, max secs 0.0145, timeouts(30s) 0/4
+A~2 (affine) random L=14: max minimal size 387, max peak 591, max secs 0.0475, timeouts(30s) 0/4
+A~2 (affine) random L=16: max minimal size 432, max peak 1040, max secs 0.144, timeouts(30s) 0/4
+A~2 (affine) c^1 (len 3): minimal size 8, peak 8, 0.00s
+A~2 (affine) c^2 (len 6): minimal size 28, peak 44, 0.00s
+A~2 (affine) c^3 (len 9): minimal size 62, peak 110, 0.01s
+A~2 (affine) c^4 (len 12): minimal size 109, peak 209, 0.02s
+A~2 (affine) c^5 (len 15): minimal size 170, peak 338, 0.07s
+A~2 (affine) c^6 (len 18): minimal size 244, peak 500, 0.13s
+A~2 (affine) c^7 (len 21): minimal size 332, peak 692, 0.21s
+A~2 (affine) c^8 (len 24): minimal size 433, peak 917, 0.37s
+A~2 (affine) c^9 (len 27): minimal size 548, peak 1172, 0.66s
+A~2 (affine) c^10 (len 30): minimal size 676, peak 1460, 1.15s
+A~2 (affine) c^11 (len 33): minimal size 818, peak 1778, 1.94s
+(3,3,oo) random L=4: max minimal size 16, max peak 28, max secs 0.000195, timeouts(30s) 0/4
+(3,3,oo) random L=6: max minimal size 16, max peak 28, max secs 0.00013, timeouts(30s) 0/4
+(3,3,oo) random L=8: max minimal size 138, max peak 146, max secs 0.0176, timeouts(30s) 0/4
+(3,3,oo) random L=10: max minimal size 40, max peak 72, max secs 0.017, timeouts(30s) 0/4
+(3,3,oo) random L=12: max minimal size 693, max peak 905, max secs 0.062, timeouts(30s) 0/4
+(3,3,oo) random L=14: max minimal size 9052, max peak 12812, max secs 14.7, timeouts(30s) 0/4
+(3,3,oo) random L=16: max minimal size 1335, max peak 1820, max secs 0.356, timeouts(30s) 0/4
+(3,3,oo) c^1 (len 3): minimal size 9, peak 9, 0.00s
+(3,3,oo) c^2 (len 6): minimal size 65, peak 85, 0.00s
+(3,3,oo) c^3 (len 9): minimal size 393, peak 537, 0.03s
+(3,3,oo) c^4 (len 12): minimal size 2305, peak 3173, 0.66s
+(3,3,oo) c^5: timeout
+A~3 (affine,rank4) random L=4: max minimal size 8, max peak 12, max secs 0.00016, timeouts(30s) 0/4
+A~3 (affine,rank4) random L=6: max minimal size 22, max peak 22, max secs 0.000173, timeouts(30s) 0/4
+A~3 (affine,rank4) random L=8: max minimal size 16, max peak 36, max secs 0.00456, timeouts(30s) 0/4
+A~3 (affine,rank4) random L=10: max minimal size 58, max peak 88, max secs 0.00112, timeouts(30s) 0/4
+A~3 (affine,rank4) random L=12: max minimal size 114, max peak 153, max secs 0.0131, timeouts(30s) 0/4
+A~3 (affine,rank4) random L=14: max minimal size 210, max peak 234, max secs 0.019, timeouts(30s) 0/4
+A~3 (affine,rank4) random L=16: max minimal size 130, max peak 212, max secs 0.014, timeouts(30s) 0/4
+A~3 (affine,rank4) c^1 (len 4): minimal size 12, peak 12, 0.00s
+A~3 (affine,rank4) c^2 (len 8): minimal size 44, peak 64, 0.00s
+A~3 (affine,rank4) c^3 (len 12): minimal size 97, peak 157, 0.02s
+A~3 (affine,rank4) c^4 (len 16): minimal size 172, peak 292, 0.06s
+A~3 (affine,rank4) c^5 (len 20): minimal size 268, peak 472, 0.11s
+A~3 (affine,rank4) c^6 (len 24): minimal size 385, peak 693, 0.19s
+A~3 (affine,rank4) c^7 (len 28): minimal size 524, peak 956, 0.49s
+A~3 (affine,rank4) c^8 (len 32): minimal size 684, peak 1264, 1.02s
+A~3 (affine,rank4) c^9 (len 36): minimal size 865, peak 1613, 1.93s
+A~3 (affine,rank4) c^10 (len 40): minimal size 1068, peak 2004, 2.85s
+A~3 (affine,rank4) c^11 (len 44): minimal size 1292, peak 2440, 4.37s

@@ -1,0 +1,34 @@
+[
+ {
+  "d": [
+   4,
+   4,
+   2,
+   2,
+   2,
+   2
+  ],
+  "lib": "networkx.random_reference(conn=False) [pinned, unpatched]",
+  "K": 3,
+  "TV_uniform": 0.0242,
+  "pred_TV": 0.0223,
+  "p_uniform": 2.03e-47,
+  "p_pred": 0.698
+ },
+ {
+  "d": [
+   3,
+   3,
+   3,
+   3,
+   3,
+   3
+  ],
+  "lib": "networkx.random_reference(conn=False) [pinned, unpatched]",
+  "K": 3,
+  "TV_uniform": 0.0301,
+  "pred_TV": 0.0245,
+  "p_uniform": 1.27e-13,
+  "p_pred": 0.352
+ }
+]

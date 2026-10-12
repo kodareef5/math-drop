@@ -1,0 +1,37 @@
+=== (1) log10 of n(p) bounds by bit size ===
+bits          Bach GRH 2(ln p)^2        LLS GRH (ln p)^2        003 C=1 (ln p)^8       003 C=1 (ln p)^16       003 C=1 (ln p)^32   Norton 4.7 p^1/4 ln p  Trevino 0.9 p^1/4 ln p  Burgess-Vinogradov p^(
+64                           3.6                     3.3                    13.2                    26.4                    52.7                     7.1                     6.4                     2.9
+128                          4.2                     3.9                    15.6                    31.2                    62.3                    12.3                    11.5                     5.8
+256                          4.8                     4.5                    18.0                    36.0                    72.0                    22.2                    21.5                    11.7
+512                          5.4                     5.1                    20.4                    40.8                    81.6                    41.8                    41.0                    23.4
+1024                         6.0                     5.7                    22.8                    45.6                    91.2                    80.6                    79.9                    46.7
+2048                         6.6                     6.3                    25.2                    50.4                   100.9                   158.0                   157.2                    93.5
+3072                         7.0                     6.7                    26.6                    53.3                   106.5                   235.2                   234.5                   140.2
+4096                         7.2                     6.9                    27.6                    55.3                   110.5                   312.4                   311.7                   187.0
+8192                         7.8                     7.5                    30.0                    60.1                   120.1                   620.9                   620.2                   373.9
+16384                        8.4                     8.1                    32.4                    64.9                   129.8                  1237.7                  1237.0                   747.9
+
+=== crossover bit sizes (003 with C=1 beats competitor) ===
+A= 8 vs Trevino 0.9 p^1/4 ln p             : 200 bits
+A= 8 vs Burgess-Vinogradov p^(1/4sqrt e)   : 435 bits
+A=16 vs Trevino 0.9 p^1/4 ln p             : 509 bits
+A=16 vs Burgess-Vinogradov p^(1/4sqrt e)   : 996 bits
+A=32 vs Trevino 0.9 p^1/4 ln p             : 1205 bits
+A=32 vs Burgess-Vinogradov p^(1/4sqrt e)   : 2237 bits
+A= 8 vs Bach GRH at 2048 bits: 10^18.6 times larger
+A=16 vs Bach GRH at 2048 bits: 10^43.8 times larger
+A=32 vs Bach GRH at 2048 bits: 10^94.3 times larger
+
+=== (2) empirical least non-residue for random primes ===
+  256-bit primes: n=400, mean n(p)=3.83, max n(p)=23
+ 1024-bit primes: n=120, mean n(p)=4.00, max n(p)=23
+ 2048-bit primes: n=40, mean n(p)=3.17, max n(p)=13
+
+=== (3) 029-derived Bach-type bound vs Minkowski for imaginary quadratic d ===
+|d| ~ 2^512       (log|d|)^1e6 = 10^2.55e+06   Minkowski = 10^76.9   GRH 6 log^2 = 10^5.88
+|d| ~ 2^1024      (log|d|)^1e6 = 10^2.85e+06   Minkowski = 10^154   GRH 6 log^2 = 10^6.48
+|d| ~ 2^2048      (log|d|)^1e6 = 10^3.15e+06   Minkowski = 10^308   GRH 6 log^2 = 10^7.08
+|d| ~ 2^10000     (log|d|)^1e6 = 10^3.84e+06   Minkowski = 10^1.5e+03   GRH 6 log^2 = 10^8.46
+|d| ~ 2^1000000   (log|d|)^1e6 = 10^5.84e+06   Minkowski = 10^1.51e+05   GRH 6 log^2 = 10^12.46
+|d| ~ 2^10000000  (log|d|)^1e6 = 10^6.84e+06   Minkowski = 10^1.51e+06   GRH 6 log^2 = 10^14.46
+crossover: (ln|d|)^1e6 < sqrt|d| once ln|d| > 3.47e+07, i.e. |d| has > 5.01e+07 bits

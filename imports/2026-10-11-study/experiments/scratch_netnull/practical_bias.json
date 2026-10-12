@@ -1,0 +1,254 @@
+[
+ {
+  "network": "florentine_families",
+  "n": 15,
+  "m": 20,
+  "samples": 3000,
+  "K": 2,
+  "deg_sw_CV": 0.0242,
+  "assortativity": {
+   "null_mean_uniform": -0.1846,
+   "null_sd": 0.1591,
+   "shift_double_edge_swap_in_sd": -0.017,
+   "shift_random_reference_in_sd": -0.009
+  },
+  "transitivity": {
+   "null_mean_uniform": 0.1624,
+   "null_sd": 0.0778,
+   "shift_double_edge_swap_in_sd": 0.003,
+   "shift_random_reference_in_sd": 0.002
+  },
+  "avg_clustering": {
+   "null_mean_uniform": 0.1323,
+   "null_sd": 0.0713,
+   "shift_double_edge_swap_in_sd": 0.007,
+   "shift_random_reference_in_sd": 0.004
+  },
+  "rich_club_k3": {
+   "null_mean_uniform": 0.5748,
+   "null_sd": 0.2495,
+   "shift_double_edge_swap_in_sd": -0.01,
+   "shift_random_reference_in_sd": -0.005
+  },
+  "rich_club_k4": {
+   "null_mean_uniform": NaN,
+   "null_sd": NaN,
+   "shift_double_edge_swap_in_sd": NaN,
+   "shift_random_reference_in_sd": NaN
+  }
+ },
+ {
+  "network": "karate_club",
+  "n": 34,
+  "m": 78,
+  "samples": 3000,
+  "K": 4,
+  "deg_sw_CV": 0.0304,
+  "assortativity": {
+   "null_mean_uniform": -0.303,
+   "null_sd": 0.0486,
+   "shift_double_edge_swap_in_sd": -0.029,
+   "shift_random_reference_in_sd": -0.021
+  },
+  "transitivity": {
+   "null_mean_uniform": 0.2232,
+   "null_sd": 0.0255,
+   "shift_double_edge_swap_in_sd": -0.022,
+   "shift_random_reference_in_sd": -0.016
+  },
+  "avg_clustering": {
+   "null_mean_uniform": 0.3548,
+   "null_sd": 0.0526,
+   "shift_double_edge_swap_in_sd": -0.003,
+   "shift_random_reference_in_sd": -0.002
+  },
+  "rich_club_k5": {
+   "null_mean_uniform": 0.653,
+   "null_sd": 0.0723,
+   "shift_double_edge_swap_in_sd": -0.019,
+   "shift_random_reference_in_sd": -0.014
+  },
+  "rich_club_k9": {
+   "null_mean_uniform": 0.8389,
+   "null_sd": 0.1411,
+   "shift_double_edge_swap_in_sd": -0.022,
+   "shift_random_reference_in_sd": -0.016
+  },
+  "rich_club_k13": {
+   "null_mean_uniform": 0.9237,
+   "null_sd": 0.2655,
+   "shift_double_edge_swap_in_sd": -0.014,
+   "shift_random_reference_in_sd": -0.01
+  }
+ },
+ {
+  "network": "les_miserables",
+  "n": 77,
+  "m": 254,
+  "samples": 3000,
+  "K": 6,
+  "deg_sw_CV": 0.0107,
+  "assortativity": {
+   "null_mean_uniform": -0.1681,
+   "null_sd": 0.0314,
+   "shift_double_edge_swap_in_sd": -0.01,
+   "shift_random_reference_in_sd": -0.01
+  },
+  "transitivity": {
+   "null_mean_uniform": 0.2105,
+   "null_sd": 0.0129,
+   "shift_double_edge_swap_in_sd": -0.008,
+   "shift_random_reference_in_sd": -0.007
+  },
+  "avg_clustering": {
+   "null_mean_uniform": 0.21,
+   "null_sd": 0.0222,
+   "shift_double_edge_swap_in_sd": 0.001,
+   "shift_random_reference_in_sd": 0.001
+  },
+  "rich_club_k11": {
+   "null_mean_uniform": 0.5259,
+   "null_sd": 0.05,
+   "shift_double_edge_swap_in_sd": -0.005,
+   "shift_random_reference_in_sd": -0.005
+  },
+  "rich_club_k13": {
+   "null_mean_uniform": 0.6378,
+   "null_sd": 0.0912,
+   "shift_double_edge_swap_in_sd": -0.005,
+   "shift_random_reference_in_sd": -0.005
+  },
+  "rich_club_k16": {
+   "null_mean_uniform": 0.7541,
+   "null_sd": 0.165,
+   "shift_double_edge_swap_in_sd": -0.004,
+   "shift_random_reference_in_sd": -0.004
+  }
+ },
+ {
+  "network": "davis_southern_women(projected-free bipartite)",
+  "n": 32,
+  "m": 89,
+  "samples": 3000,
+  "K": 5,
+  "deg_sw_CV": 0.0103,
+  "assortativity": {
+   "null_mean_uniform": -0.1329,
+   "null_sd": 0.0734,
+   "shift_double_edge_swap_in_sd": -0.009,
+   "shift_random_reference_in_sd": -0.009
+  },
+  "transitivity": {
+   "null_mean_uniform": 0.2158,
+   "null_sd": 0.025,
+   "shift_double_edge_swap_in_sd": -0.004,
+   "shift_random_reference_in_sd": -0.004
+  },
+  "avg_clustering": {
+   "null_mean_uniform": 0.2382,
+   "null_sd": 0.0392,
+   "shift_double_edge_swap_in_sd": 0.002,
+   "shift_random_reference_in_sd": 0.002
+  },
+  "rich_club_k8": {
+   "null_mean_uniform": 0.697,
+   "null_sd": 0.2545,
+   "shift_double_edge_swap_in_sd": -0.005,
+   "shift_random_reference_in_sd": -0.005
+  },
+  "rich_club_k10": {
+   "null_mean_uniform": 0.7537,
+   "null_sd": 0.4309,
+   "shift_double_edge_swap_in_sd": -0.004,
+   "shift_random_reference_in_sd": -0.004
+  }
+ },
+ {
+  "network": "barabasi_albert_n200_m2",
+  "n": 200,
+  "m": 396,
+  "samples": 3000,
+  "K": 3,
+  "deg_sw_CV": 0.0043,
+  "assortativity": {
+   "null_mean_uniform": -0.0681,
+   "null_sd": 0.0408,
+   "shift_double_edge_swap_in_sd": -0.004,
+   "shift_random_reference_in_sd": -0.004
+  },
+  "transitivity": {
+   "null_mean_uniform": 0.0467,
+   "null_sd": 0.0082,
+   "shift_double_edge_swap_in_sd": -0.003,
+   "shift_random_reference_in_sd": -0.003
+  },
+  "avg_clustering": {
+   "null_mean_uniform": 0.0555,
+   "null_sd": 0.0135,
+   "shift_double_edge_swap_in_sd": 0.0,
+   "shift_random_reference_in_sd": 0.0
+  },
+  "rich_club_k4": {
+   "null_mean_uniform": 0.1236,
+   "null_sd": 0.0068,
+   "shift_double_edge_swap_in_sd": -0.003,
+   "shift_random_reference_in_sd": -0.003
+  },
+  "rich_club_k8": {
+   "null_mean_uniform": 0.2498,
+   "null_sd": 0.0256,
+   "shift_double_edge_swap_in_sd": -0.003,
+   "shift_random_reference_in_sd": -0.003
+  },
+  "rich_club_k13": {
+   "null_mean_uniform": 0.3471,
+   "null_sd": 0.0702,
+   "shift_double_edge_swap_in_sd": -0.003,
+   "shift_random_reference_in_sd": -0.003
+  }
+ },
+ {
+  "network": "powerlaw_cluster_n500",
+  "n": 500,
+  "m": 1487,
+  "samples": 3000,
+  "K": 5,
+  "deg_sw_CV": 0.0021,
+  "assortativity": {
+   "null_mean_uniform": -0.0595,
+   "null_sd": 0.0166,
+   "shift_double_edge_swap_in_sd": -0.002,
+   "shift_random_reference_in_sd": -0.002
+  },
+  "transitivity": {
+   "null_mean_uniform": 0.0335,
+   "null_sd": 0.0031,
+   "shift_double_edge_swap_in_sd": -0.002,
+   "shift_random_reference_in_sd": -0.002
+  },
+  "avg_clustering": {
+   "null_mean_uniform": 0.0414,
+   "null_sd": 0.0043,
+   "shift_double_edge_swap_in_sd": -0.0,
+   "shift_random_reference_in_sd": -0.0
+  },
+  "rich_club_k8": {
+   "null_mean_uniform": 0.0806,
+   "null_sd": 0.003,
+   "shift_double_edge_swap_in_sd": -0.001,
+   "shift_random_reference_in_sd": -0.001
+  },
+  "rich_club_k10": {
+   "null_mean_uniform": 0.1177,
+   "null_sd": 0.0064,
+   "shift_double_edge_swap_in_sd": -0.001,
+   "shift_random_reference_in_sd": -0.001
+  },
+  "rich_club_k14": {
+   "null_mean_uniform": 0.2074,
+   "null_sd": 0.0187,
+   "shift_double_edge_swap_in_sd": -0.001,
+   "shift_random_reference_in_sd": -0.001
+  }
+ }
+]

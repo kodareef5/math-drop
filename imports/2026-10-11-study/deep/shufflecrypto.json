@@ -1,0 +1,145 @@
+[
+ {
+  "id": "shufflecrypto-1",
+  "title": "Full-domain (q = N) security of plain swap-or-not via the generic eight-block Fourier lift",
+  "families": [238],
+  "channels": ["CRYPTO", "ALGO"],
+  "tier": "T2",
+  "action": "RESEARCH",
+  "summary": "The coset-cap-to-Fourier transfer (Thm l:main with Lemmas l:trim and l:plancherel) is Lean-proved for any law on S_N. Swap-or-not supplies all three inputs it needs: HMR Thm 3 for any designated (1-1/b)N set, sign mean exactly 0, and i.i.d. rounds. This gives the first fixed-round-count proof that plain swap-or-not is secure against all N adaptive two-sided queries, at about 9.0k/16.2k rounds for N=2^64 and eps=2^-32/2^-64. That is about 3x fewer than mix-and-cut but about 7-11x more than Sometimes-Recurse's expected cost, and it is worse than mix-and-cut at N=2^20.",
+  "targets": [
+   {"name": "Fourier companion Thm l:main (generic transfer)", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/From-partial-permutation-information-to-Fourier-bounds-September-26-2026/build/sections/introduction.tex#L18-L35"},
+   {"name": "Lean ComplementaryCosetsFiniteStatement (generic, proved)", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/ComparatorChallenges/PartialPermutation.lean#L93-L108"},
+   {"name": "Trimming / Plancherel / amplification lemmas", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/From-partial-permutation-information-to-Fourier-bounds-September-26-2026/build/sections/foundations.tex#L43-L90"},
+   {"name": "Hoang-Morris-Rogaway swap-or-not (Thm 3, full-security conjecture)", "url": "https://arxiv.org/abs/1208.1176"},
+   {"name": "Sometimes-Recurse (comparison baseline)", "url": "https://eprint.iacr.org/2013/560"},
+   {"name": "Mix-and-cut (comparison baseline)", "url": "https://rist.tech.cornell.edu/papers/mixandcut.pdf"}
+  ],
+  "benefit_type": "guarantee",
+  "beneficiaries": "Small-domain/format-preserving-encryption theory: Hoang, Morris, Rogaway, Tessaro, Ristenpart. Also designers who need a constant-time, fully secure PRP on a small domain with a citable proof.",
+  "first_step": "Write a 2-3 page corollary: TV(SN^{pr}) <= 1/2[p*delta + sqrt((p*delta)^2 + delta^{2p} + (b C_u)^p Z_{p(1-(u+2)/b)-1}(N))] with delta = b*HMR(N, N - N/b, r). Certify C_u with a rigorous tail bound. Reproduce the round table from scratch_shufflecrypto/bounds.py, then send it to the swap-or-not and SR authors for review.",
+  "measurement": "An independently checked note and table. Success means a reviewer confirms the corollary and the round counts (e.g. 16,160 rounds at N=2^64, eps=2^-64) within a few percent.",
+  "risks": "The composition is my own and unreviewed. C_u is currently numerical (sup over m<=45). HMR Thm 3 is peer-reviewed but not formalized. The cost of 10^4 rounds means essentially no deployment demand. SR already gives full security at about 1/10 the expected cost, and its variable time is argued harmless.",
+  "scores": {"impact": 2, "reach": 2, "directness": 4, "practicality": 2, "confidence": 3, "effort": 4, "time_to_value": 4},
+  "verdict": "pursue as research"
+ },
+ {
+  "id": "shufflecrypto-2",
+  "title": "Updated Thorp-cipher parameter sheet: explicit partial-domain (q<=(1-a)N) and full-domain bounds",
+  "families": [238],
+  "channels": ["CRYPTO"],
+  "tier": "T2",
+  "action": "RESEARCH",
+  "summary": "Lemma noise:halves in the conditional-information companion is explicit for every d and uniform over specified lists. It lifts MRS'09's Thorp ceiling of q < N/(4 lg N) to q <= (1-a)N in O(lg N / a) rounds. At N=2^64 and eps=2^-64 it gives CCA at q=N/2 in 3,580 rounds (716 AES calls with MRS 5x batching). Combined with the lift, it gives full domain in 37k rounds (7.4k AES calls), the cheapest fixed-time full-security option in AES calls for N >= 2^32.",
+  "targets": [
+   {"name": "Conditional information, Lemma noise:halves and Prop noise:uniform-marginals", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Conditional-information-under-deterministic-coordinate-sweeps-September-26-2026/build/sections/02-first-route.tex#L141-L200"},
+   {"name": "Morris-Rogaway-Stegers CRYPTO'09 (Thm 5 baseline)", "url": "https://www.math.ucdavis.edu/static/research/infovault/morris/Lecture_Notes-5677-09.pdf"}
+  ],
+  "benefit_type": "guarantee",
+  "beneficiaries": "Anyone who cites MRS'09 Thorp bounds, and researchers comparing oblivious small-domain ciphers.",
+  "first_step": "Check that the half-density lemma also holds for the inverse (reverse-coordinate) shuffle, which the MRS nCPA->CCA step needs. Then publish the table together with opportunity 1.",
+  "measurement": "Reviewer-checked table of rounds and AES calls against MRS'09, HMR'12, MaC and SR at N = 2^20, 2^32, 2^64.",
+  "risks": "The inverse-direction lemma is unchecked. Thorp only covers N = 2^d natively; decimal domains need cycle-walking, which brings back variable time. The 5x AES batching requires 32 | N. There is no deployment demand.",
+  "scores": {"impact": 2, "reach": 1, "directness": 4, "practicality": 2, "confidence": 3, "effort": 4, "time_to_value": 4},
+  "verdict": "pursue as research"
+ },
+ {
+  "id": "shufflecrypto-3",
+  "title": "Make the spectral exponent p* (Compatibility-entropy / Random-subspace companions) effective",
+  "families": [238],
+  "channels": ["CRYPTO", "FOUND"],
+  "tier": "T3",
+  "action": "RESEARCH",
+  "summary": "The spectral companions prove a bounded regular moment Z_N(p*) <= 1+1/16, so each extra sweep cuts TV by a factor of about N^{-c} with no round-independent floor. That is the right shape for a cipher. However, p*, P, L and C_0 are existential: 'sufficiently large' thresholds plus a compactness base case from Lemma lem:finitegap. An effective p* of about 10 or less would make fixed-time Thorp competitive with SR.",
+  "targets": [
+   {"name": "Compatibility entropy Thm tra:duality:moment and Cor cor:intro-consequences", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Compatibility-entropy-and-the-spectrum-of-a-Thorp-sweep-September-26-2026/build/sections/00-introduction.tex#L45-L63"},
+   {"name": "Random-subspace Thm ten:lowplanes:main (1/2 N^-5, P absolute)", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Random-subspace-tests-and-trace-smoothing-for-coordinate-sweeps-September-26-2026/build/sections/introduction.tex#L24-L30"}
+  ],
+  "benefit_type": "redirect",
+  "beneficiaries": "Mixing-time and small-domain-encryption researchers.",
+  "first_step": "Trace every 'sufficiently large' threshold in the Random-subspace proof (proof.tex) and see whether the base-case gap for n < n_0 can be replaced by an explicit recursion.",
+  "measurement": "An explicit numeric P with the TV <= 1/2 N^-5 conclusion holding for all d.",
+  "risks": "Base cases need n! state spaces, so the compactness step may not be effectivizable. The constants may come out galactic anyway.",
+  "scores": {"impact": 3, "reach": 2, "directness": 2, "practicality": 1, "confidence": 3, "effort": 1, "time_to_value": 1},
+  "verdict": "monitor"
+ },
+ {
+  "id": "shufflecrypto-4",
+  "title": "Change Ethereum SHUFFLE_ROUND_COUNT (90) on the basis of the new results",
+  "families": [238],
+  "channels": ["CRYPTO", "NET"],
+  "tier": "T4",
+  "action": "NONE",
+  "summary": "Ethereum's compute_shuffled_index is public-seed swap-or-not (no key), and the notion that matters is statistical near-uniformity plus limited RANDAO grinding. No full-permutation bound covers 90 rounds before or after family 238. The lift would need about 14k rounds at N ~ 2^20, while HMR already gives TV <= 2^-21.5 for any committee-sized set at 90 rounds. Exact small-N computations suggest true mixing takes only a few lg N rounds.",
+  "targets": [
+   {"name": "consensus-specs compute_shuffled_permutation / compute_shuffled_index", "url": "https://github.com/ethereum/consensus-specs/blob/9a8fdd0703d6ccc18e2c6c52eb08576cace262eb/specs/phase0/beacon-chain.md#L1211-L1245"},
+   {"name": "SHUFFLE_ROUND_COUNT = 90", "url": "https://github.com/ethereum/consensus-specs/blob/9a8fdd0703d6ccc18e2c6c52eb08576cace262eb/specs/phase0/beacon-chain.md#L592"},
+   {"name": "Lighthouse compute_shuffled_index", "url": "https://github.com/sigp/lighthouse/blob/6db6ae9382b7d6f5bd1e0ca0d349bc0dc94adba2/consensus/swap_or_not_shuffle/src/compute_shuffled_index.rs#L21-L50"}
+  ],
+  "benefit_type": "guarantee",
+  "beneficiaries": "None.",
+  "first_step": "None. Optionally, a one-line note to eth2book that HMR's bound is vacuous for q >= N/2 at 90 rounds and that only the support bound (~2 lg N) is known for the full permutation.",
+  "measurement": "n/a",
+  "risks": "A change would require a hard fork, and the provable version costs about 150x for no practical gain.",
+  "scores": {"impact": 1, "reach": 4, "directness": 1, "practicality": 1, "confidence": 4, "effort": 1, "time_to_value": 1},
+  "verdict": "do not pursue"
+ },
+ {
+  "id": "shufflecrypto-5",
+  "title": "Replace FF1 (or revive FF3-1) with Thorp/swap-or-not in FPE libraries, tokenization products or NIST SP 800-38G",
+  "families": [238],
+  "channels": ["CRYPTO"],
+  "tier": "T4",
+  "action": "NONE",
+  "summary": "Deployed FPE is FF1: 10 Feistel rounds and about 10-30 AES calls, as in str4d/fpe, capitalone/fpe and Google SDP's FFX. NIST's 2025 Rev.1 draft handles small-domain attacks with a 10^6 domain floor and removed FF3/FF3-1. Provable full-domain Thorp or swap-or-not costs 10^3-10^4 AES calls, a 100-1000x slowdown, so nothing in these libraries or standards changes.",
+  "targets": [
+   {"name": "str4d/fpe FF1 domain floor and 10-round loop", "url": "https://github.com/str4d/fpe/blob/e2654af6072f4d83588a29064f97ccbdb04eb34e/src/ff1.rs#L32-L41"},
+   {"name": "capitalone/fpe FF1 constants (feistelMin=100, 10 rounds)", "url": "https://github.com/capitalone/fpe/blob/b7dcc90b924e240eac5af5ff2d4d913fbf9985f0/ff1/ff1.go#L35-L41"},
+   {"name": "NIST SP 800-38G Rev.1 2pd", "url": "https://csrc.nist.gov/pubs/sp/800/38/g/r1/2pd"}
+  ],
+  "benefit_type": "guarantee",
+  "beneficiaries": "None.",
+  "first_step": "None. Unrelated side observation: capitalone/fpe defaults to feistelMin = 100, below the Rev.1 requirement of 10^6.",
+  "measurement": "n/a",
+  "risks": "n/a",
+  "scores": {"impact": 1, "reach": 3, "directness": 1, "practicality": 1, "confidence": 4, "effort": 2, "time_to_value": 1},
+  "verdict": "do not pursue"
+ },
+ {
+  "id": "shufflecrypto-6",
+  "title": "Use the paper's literal 1600d / 512d / 1/2 N^-5 statements as cipher round counts",
+  "families": [238],
+  "channels": ["CRYPTO"],
+  "tier": "T4",
+  "action": "NONE",
+  "summary": "The 1600d bound has a round-independent floor of 8.6e7 N^{-3/2}: 2^-3.6 at 2^20, 2^-21.6 at 2^32, 2^-69.6 at 2^64. The Lean-certified fullRate is cruder and vacuous at 2^20. 512d is asymptotic with floor 18.6 N^{-1/8}. The N^-5 and spectral results have non-explicit sweep counts. None is a usable parameter; the optimized lift (rows 1-2) is the only explicit route.",
+  "targets": [
+   {"name": "main.tex completion of proof", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Optimal-order-mixing-of-the-Thorp-shuffle-September-26-2026/build/main.tex#L552-L598"},
+   {"name": "Lean fullRate", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/Probability/ThorpShuffle/EightBlocks.lean#L24-L26"}
+  ],
+  "benefit_type": "guarantee",
+  "beneficiaries": "None.",
+  "first_step": "None.",
+  "measurement": "n/a",
+  "risks": "n/a",
+  "scores": {"impact": 1, "reach": 1, "directness": 3, "practicality": 1, "confidence": 5, "effort": 3, "time_to_value": 1},
+  "verdict": "do not pursue"
+ },
+ {
+  "id": "shufflecrypto-7",
+  "title": "Iterated Thorp/butterfly networks for oblivious shuffles (MPC, ORAM, mixnets) or physical card shuffling",
+  "families": [238],
+  "channels": ["ALGO", "NET"],
+  "tier": "T4",
+  "action": "NONE",
+  "summary": "Production oblivious shuffles route a sampled permutation through a Benes/Waksman network, which is exact at depth 2 lg N - 1, or use sorting networks. Iterated Thorp layers need 1600 lg N layers, or about 10^4 by the optimized bound, and each layer costs a communication round in MPC. Card-game software uses PRNG plus Fisher-Yates.",
+  "targets": [],
+  "benefit_type": "capability",
+  "beneficiaries": "None.",
+  "first_step": "None.",
+  "measurement": "n/a",
+  "risks": "n/a",
+  "scores": {"impact": 1, "reach": 2, "directness": 2, "practicality": 1, "confidence": 4, "effort": 2, "time_to_value": 1},
+  "verdict": "do not pursue"
+ }
+]

@@ -1,0 +1,323 @@
+[
+ {
+  "d": [
+   3,
+   3,
+   2,
+   2,
+   2,
+   2
+  ],
+  "N": 54,
+  "m": 7,
+  "networkx.double_edge_swap": {
+   "TV": 0.03205,
+   "max/min": 1.2727,
+   "kernel_symmetric": false
+  },
+  "networkx.random_reference(conn=False)": {
+   "TV": 0.01182,
+   "max/min": 1.1,
+   "kernel_symmetric": false
+  },
+  "igraph_rewire": {
+   "TV": 0.0,
+   "max/min": 1.0,
+   "kernel_symmetric": true
+  },
+  "networkit.EdgeSwitching": {
+   "TV": 0.0,
+   "max/min": 1.0,
+   "kernel_symmetric": true
+  },
+  "graph-tool random_rewire (persist=False)": {
+   "TV": 0.0,
+   "max/min": 1.0,
+   "kernel_symmetric": true
+  },
+  "graph-tool random_rewire (persist=True)": "HANGS (an edge with no valid switch partner; persist loops forever)"
+ },
+ {
+  "d": [
+   4,
+   4,
+   2,
+   2,
+   2,
+   2
+  ],
+  "N": 13,
+  "m": 8,
+  "networkx.double_edge_swap": {
+   "TV": 0.06593,
+   "max/min": 2.0,
+   "kernel_symmetric": false
+  },
+  "networkx.random_reference(conn=False)": {
+   "TV": 0.02227,
+   "max/min": 1.3214,
+   "kernel_symmetric": false
+  },
+  "igraph_rewire": {
+   "TV": 0.0,
+   "max/min": 1.0,
+   "kernel_symmetric": true
+  },
+  "networkit.EdgeSwitching": {
+   "TV": 0.0,
+   "max/min": 1.0,
+   "kernel_symmetric": true
+  },
+  "graph-tool random_rewire (persist=False)": {
+   "TV": 0.0,
+   "max/min": 1.0,
+   "kernel_symmetric": true
+  },
+  "graph-tool random_rewire (persist=True)": {
+   "TV": 0.05351,
+   "max/min": 1.8,
+   "kernel_symmetric": false
+  }
+ },
+ {
+  "d": [
+   3,
+   3,
+   3,
+   3,
+   3,
+   3
+  ],
+  "N": 70,
+  "m": 9,
+  "networkx.double_edge_swap": {
+   "TV": 0.05714,
+   "max/min": 1.5,
+   "kernel_symmetric": false
+  },
+  "networkx.random_reference(conn=False)": {
+   "TV": 0.02454,
+   "max/min": 1.2063,
+   "kernel_symmetric": false
+  },
+  "igraph_rewire": {
+   "TV": 0.0,
+   "max/min": 1.0,
+   "kernel_symmetric": true
+  },
+  "networkit.EdgeSwitching": {
+   "TV": 0.0,
+   "max/min": 1.0,
+   "kernel_symmetric": true
+  },
+  "graph-tool random_rewire (persist=False)": {
+   "TV": 0.0,
+   "max/min": 1.0,
+   "kernel_symmetric": true
+  },
+  "graph-tool random_rewire (persist=True)": {
+   "TV": 0.03896,
+   "max/min": 1.3333,
+   "kernel_symmetric": false
+  }
+ },
+ {
+  "d": [
+   3,
+   3,
+   3,
+   3,
+   1,
+   1
+  ],
+  "N": 13,
+  "m": 7,
+  "networkx.double_edge_swap": {
+   "TV": 0.06593,
+   "max/min": 2.0,
+   "kernel_symmetric": false
+  },
+  "networkx.random_reference(conn=False)": {
+   "TV": 0.01742,
+   "max/min": 1.25,
+   "kernel_symmetric": false
+  },
+  "igraph_rewire": {
+   "TV": 0.0,
+   "max/min": 1.0,
+   "kernel_symmetric": true
+  },
+  "networkit.EdgeSwitching": {
+   "TV": 0.0,
+   "max/min": 1.0,
+   "kernel_symmetric": true
+  },
+  "graph-tool random_rewire (persist=False)": {
+   "TV": 0.0,
+   "max/min": 1.0,
+   "kernel_symmetric": true
+  },
+  "graph-tool random_rewire (persist=True)": "HANGS (an edge with no valid switch partner; persist loops forever)"
+ },
+ {
+  "d": [
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "N": 465,
+  "m": 7,
+  "networkx.double_edge_swap": {
+   "TV": 0.0395,
+   "max/min": 1.2381,
+   "kernel_symmetric": false
+  },
+  "networkx.random_reference(conn=False)": {
+   "TV": 0.02808,
+   "max/min": 1.1667,
+   "kernel_symmetric": false
+  },
+  "igraph_rewire": {
+   "TV": 0.0,
+   "max/min": 1.0,
+   "kernel_symmetric": true
+  },
+  "networkit.EdgeSwitching": {
+   "TV": 0.0,
+   "max/min": 1.0,
+   "kernel_symmetric": true
+  },
+  "graph-tool random_rewire (persist=False)": {
+   "TV": 0.0,
+   "max/min": 1.0,
+   "kernel_symmetric": true
+  },
+  "graph-tool random_rewire (persist=True)": {
+   "TV": 0.0405,
+   "max/min": 1.2444,
+   "kernel_symmetric": false
+  }
+ },
+ {
+  "d": [
+   4,
+   3,
+   3,
+   3,
+   1,
+   1,
+   1
+  ],
+  "N": 30,
+  "m": 8,
+  "networkx.double_edge_swap": {
+   "TV": 0.07826,
+   "max/min": 1.75,
+   "kernel_symmetric": false
+  },
+  "networkx.random_reference(conn=False)": {
+   "TV": 0.01752,
+   "max/min": 1.1579,
+   "kernel_symmetric": false
+  },
+  "igraph_rewire": {
+   "TV": 0.0,
+   "max/min": 1.0,
+   "kernel_symmetric": true
+  },
+  "networkit.EdgeSwitching": {
+   "TV": 0.0,
+   "max/min": 1.0,
+   "kernel_symmetric": true
+  },
+  "graph-tool random_rewire (persist=False)": {
+   "TV": 0.0,
+   "max/min": 1.0,
+   "kernel_symmetric": true
+  },
+  "graph-tool random_rewire (persist=True)": "HANGS (an edge with no valid switch partner; persist loops forever)"
+ },
+ {
+  "d": [
+   5,
+   5,
+   5,
+   3,
+   3,
+   3,
+   2
+  ],
+  "N": 30,
+  "m": 13,
+  "networkx.double_edge_swap": {
+   "TV": 0.07826,
+   "max/min": 1.75,
+   "kernel_symmetric": false
+  },
+  "networkx.random_reference(conn=False)": {
+   "TV": 0.01468,
+   "max/min": 1.1281,
+   "kernel_symmetric": false
+  },
+  "igraph_rewire": {
+   "TV": 0.0,
+   "max/min": 1.0,
+   "kernel_symmetric": true
+  },
+  "networkit.EdgeSwitching": {
+   "TV": 0.0,
+   "max/min": 1.0,
+   "kernel_symmetric": true
+  },
+  "graph-tool random_rewire (persist=False)": {
+   "TV": 0.0,
+   "max/min": 1.0,
+   "kernel_symmetric": true
+  },
+  "graph-tool random_rewire (persist=True)": "HANGS (an edge with no valid switch partner; persist loops forever)"
+ },
+ {
+  "d": [
+   6,
+   3,
+   2,
+   2,
+   2,
+   2,
+   2,
+   1
+  ],
+  "N": 145,
+  "m": 10,
+  "networkx.double_edge_swap": {
+   "TV": 0.04059,
+   "max/min": 1.5,
+   "kernel_symmetric": false
+  },
+  "networkx.random_reference(conn=False)": {
+   "TV": 0.00951,
+   "max/min": 1.1045,
+   "kernel_symmetric": false
+  },
+  "igraph_rewire": {
+   "TV": 0.0,
+   "max/min": 1.0,
+   "kernel_symmetric": true
+  },
+  "networkit.EdgeSwitching": {
+   "TV": 0.0,
+   "max/min": 1.0,
+   "kernel_symmetric": true
+  },
+  "graph-tool random_rewire (persist=False)": {
+   "TV": 0.0,
+   "max/min": 1.0,
+   "kernel_symmetric": true
+  },
+  "graph-tool random_rewire (persist=True)": "HANGS (an edge with no valid switch partner; persist loops forever)"
+ }
+]

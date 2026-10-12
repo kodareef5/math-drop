@@ -1,0 +1,7 @@
+Prop 2.1 check  f(p',s',F',J) == p  mod H : True
+H + p w maps to 0: True
+image of x1: Delta-nilpotency index 2, 561 terms, total degree 24, t=0s
+image of x2: Delta-nilpotency index 4, 24356 terms, total degree 56, t=18s
+image of x3: Delta-nilpotency index 6, 212512 terms, total degree 88, t=1072s
+image of x4: Delta-nilpotency index 3, 3137 terms, total degree 37, t=1072s
+image of w: Delta-nilpotency index 1, 79 terms, total degree 13, t=1072s

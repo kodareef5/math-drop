@@ -1,0 +1,28 @@
+[
+ {
+  "id": "netnull-1",
+  "status": "confirmed",
+  "note": "Re-read swap.py/smallworld.py at networkx 6da4704c and built my own exact kernels: double_edge_swap stationary law is exactly proportional to the number of successful oriented proposals (closed-form error 1e-15), and an exhaustive sweep of all 278 graphical sequences with n<=7 reproduces max TV 0.0783 and max/min 2.5 exactly; the real nx 3.6.1 code (40k runs on d=442222) rejects uniform (chi2=2590, p~0) and matches the predicted law (p=0.79), random_reference (30k runs) rejects uniform p=3e-39 and matches predicted p=0.25. random_reference with ntries=int(2m/(n-1))=0 returned the input unchanged in 200/200 runs (n=10,m=4 and n=12,m=4); no uniformity statement exists in either docstring."
+ },
+ {
+  "id": "netnull-5",
+  "status": "confirmed",
+  "note": "bctpy randmio_und (c28931c7) breaks at first success within round(m/(n-1))+1 attempts; real bctpy (30k runs, d=442222) rejects uniform p=1e-38 and matches my exact law p=0.53. The original MATLAB BCT randmio_und.m (FieldTrip external/bct and brainlife BCT 2019_03_03 copies; 'Mar 2012: Limit number of rewiring attempts', Sporns) has the identical loop, as do randmio_und_connected/randmio_dir/randmio_dir_connected/randmio_und_signed, and running the MATLAB file under Octave (30k runs) rejects uniform p=8e-43 while matching the predicted law p=0.69, so the bias reaches the far more widely used MATLAB toolbox.",
+  "scores": {"reach": 4}
+ },
+ {
+  "id": "netnull-2",
+  "status": "corrected",
+  "note": "Read graph_rewiring.hh in the 2.98 orig tarball (loop identical to installed 2.59 apart from renames) and ran real graph-tool 2.59: persist=True with the default edge_sweep=True rejects uniform (30k runs, chi2=3990, p~0) and matches my exact sweep-kernel law (p=0.89), persist=False is uniform (p=0.55), and a 28-vertex 3-regular graph plus a universal hub hangs with persist=True (killed at 45 s) while persist=False returns instantly. Correction: the stated TV 0.039-0.054 is the edge_sweep=False kernel; under the default edge_sweep=True the exact TV is 0.097 (max/min 2.52) on d=442222 and 0.080 on 333322, so the range is 0.039-0.097."
+ },
+ {
+  "id": "netnull-4",
+  "status": "confirmed",
+  "note": "From vegan nestedness.c (a574546b) I built exact laws on 44 margin pairs up to 4x4: swap is proportional to the number of swappable 2x2 submatrices (TV up to 0.078), quasiswap at thin=1 has TV up to 0.0720 (matching 0.072) and <=1.6e-4 at thin=100, and curveball/tswap are exactly uniform with curveball gap >= 1/C(r,2) on 49 pairs; R vegan 2.6.4 on a 3x4 matrix (60k draws each) rejects uniform for swap (p=6e-199) and quasiswap thin=1 (p=5e-219) while matching my exact laws (p=0.21, 0.34), accepts it for curveball (0.49), tswap (0.45) and quasiswap thin=100 (0.65), and sipoo NODF z run-to-run SD at defaults is 1.04 (stated 1.05); caveat: vegan's commsim.Rd already says ordinary swap 'may lead to biased sequences' (Miklos & Podani 2004) and that quasiswap thinning reduces 'the bias', so the novelty is the quantification and the default thin=1, not the bias itself."
+ },
+ {
+  "id": "netnull-7",
+  "status": "confirmed",
+  "note": "rigraph main (b4a4d338, 2.3.3.9042) R/rewire.R has keeping_degseq(loops=FALSE, niter=100) passed straight to rewire_impl(n=niter), and the vendored C igraph_rewire loops while(num_swaps < n) over total trials; python-igraph 1.0.0 documents a default of 10*ecount and the C degree_sequence_game uses 10*igraph_ecount. With R igraph 1.6.0 on simplified BA(2000, m=2) (3997 edges), 95.2% of edges survived a default rewire, versus 0.9% at niter=10m; I could not verify the arXiv:2405.05400 'already flagged' remark from its abstract or search the rigraph tracker."
+ }
+]

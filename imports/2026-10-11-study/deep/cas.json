@@ -1,0 +1,505 @@
+[
+ {
+  "id": "cas-1",
+  "title": "GAP HAP: make ResolutionArtinGroup documented as a resolution for the Artin group for every finite diagram; fix stale/wrong wording",
+  "families": [
+   254
+  ],
+  "channels": [
+   "CAS"
+  ],
+  "tier": "T2",
+  "action": "CERTIFY",
+  "summary": "The Lean-formalized K(pi,1) theorem makes HAP's Salvetti/Squier resolution exact for every finite-rank Artin group. Integral homology computed by HAP is therefore a group invariant, not just a monoid invariant, e.g. E10 or [5,3,3,3], which HAP handles in seconds. Independently of the preprint, the tutorial says B7 exactness 'depends on' K(pi,1), which has been Deligne's theorem since 1972, and the about page names a non-existent ResolutionArtin(D).",
+  "targets": [
+   {
+    "name": "HAP manual: ResolutionArtinGroup entry",
+    "url": "https://github.com/gap-packages/hap/blob/415d3655c99f1e0aa95e042b20b80b8eb404b4e1/doc/newResolutions.xml#L18"
+   },
+   {
+    "name": "HAP aboutArtinGroups.html ('In those cases where the conjecture is known to hold')",
+    "url": "https://github.com/gap-packages/hap/blob/415d3655c99f1e0aa95e042b20b80b8eb404b4e1/www/SideLinks/About/aboutArtinGroups.html#L292-L307"
+   },
+   {
+    "name": "HAP tutorialResolutions.xml (B7 'depends on' K(pi,1))",
+    "url": "https://github.com/gap-packages/hap/blob/415d3655c99f1e0aa95e042b20b80b8eb404b4e1/tutorial/tutorialResolutions.xml#L276-L280"
+   },
+   {
+    "name": "HAP tutorialGroupCohomology.xml (E8 remark)",
+    "url": "https://github.com/gap-packages/hap/blob/415d3655c99f1e0aa95e042b20b80b8eb404b4e1/tutorial/tutorialGroupCohomology.xml#L342"
+   },
+   {
+    "name": "HAP aboutCohomologyRings.html",
+    "url": "https://github.com/gap-packages/hap/blob/415d3655c99f1e0aa95e042b20b80b8eb404b4e1/www/SideLinks/About/aboutCohomologyRings.html#L259-L263"
+   },
+   {
+    "name": "HAP resArtin.gi (cells = spherical subsets; homotopy:=fail)",
+    "url": "https://github.com/gap-packages/hap/blob/415d3655c99f1e0aa95e042b20b80b8eb404b4e1/lib/ArtinCoxeter/resArtin.gi#L44-L50"
+   },
+   {
+    "name": "K(pi,1) theorem (Thm 1.1)",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Harmonic-heights-and-the-Artin-K-pi-1-conjecture-September-23-2026/build/sections/introduction.tex#L22-L30"
+   },
+   {
+    "name": "Lean comparator salvetti_cover_contractible",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/ComparatorChallenges/HarmonicArtin.lean#L57-L61"
+   }
+  ],
+  "benefit_type": "guarantee",
+  "beneficiaries": "HAP users computing Artin-group (co)homology; geometric group theorists using HAP examples; HAP maintainer (G. Ellis)",
+  "first_step": "Open a HAP issue/PR in two parts: (a) the uncontroversial fixes (Deligne for spherical type; ResolutionArtin -> ResolutionArtinGroup); (b) the hedged K(pi,1) text drafted in cas.md, citing OAI.HarmonicArtin.salvetti_cover_contractible.",
+  "measurement": "Merged doc change. As a sanity check, compare HAP Betti numbers with Euler characteristics from cell counts; done for [5,3,3,3] and E10.",
+  "risks": "Maintainer may wait for refereeing. Corollaries (BA+ ~ BA, center) are not formalized. Contracting homotopy still unimplemented. GitHub issue search was blocked here, so a duplicate issue was not ruled out.",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 5,
+   "practicality": 5,
+   "confidence": 5,
+   "effort": 5,
+   "time_to_value": 5
+  },
+  "verdict": "pursue now"
+ },
+ {
+  "id": "cas-2",
+  "title": "SageMath ArtinGroup: replace 'conjectured properties' docstring, correct center statement, warn that == may not terminate",
+  "families": [
+   254
+  ],
+  "channels": [
+   "CAS"
+  ],
+  "tier": "T2",
+  "action": "CERTIFY",
+  "summary": "The ArtinGroup docstring lists torsion-freeness, the center, the solvable word problem and K(pi,1) as conjectures known only for finite type and some other cases. Its center claim is also wrong for reducible diagrams. Measured: the generic ArtinGroup == hangs on the defining braid relation of affine A~2 (60 s timeout) and large-type (4,4,4).",
+  "targets": [
+   {
+    "name": "sage/groups/artin.py conjectured-properties docstring",
+    "url": "https://github.com/sagemath/sage/blob/0835358cba62dc19fccdff54f32e52fded9f22b0/src/sage/groups/artin.py#L526-L536"
+   },
+   {
+    "name": "ArtinGroup dispatch (non-finite, non-RAAG -> plain fp group)",
+    "url": "https://github.com/sagemath/sage/blob/0835358cba62dc19fccdff54f32e52fded9f22b0/src/sage/groups/artin.py#L615-L623"
+   },
+   {
+    "name": "ArtinGroupElement (no own comparison)",
+    "url": "https://github.com/sagemath/sage/blob/0835358cba62dc19fccdff54f32e52fded9f22b0/src/sage/groups/artin.py#L42-L58"
+   },
+   {
+    "name": "libGAP fallback _richcmp_",
+    "url": "https://github.com/sagemath/sage/blob/0835358cba62dc19fccdff54f32e52fded9f22b0/src/sage/groups/libgap_wrapper.pyx#L638-L656"
+   }
+  ],
+  "benefit_type": "guarantee",
+  "beneficiaries": "Sage users of Artin groups; Sage reviewers (T. Scrimshaw maintains artin.py)",
+  "first_step": "Submit a Sage PR with the docstring text drafted in cas.md. Split it into (i) a center fix plus non-termination warning and (ii) the K(pi,1)/word-problem status, which cites the preprints.",
+  "measurement": "Merged PR; doctest added with '# not tested' for the hang.",
+  "risks": "Sage may require published references for part (ii); part (i) stands alone.",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 5,
+   "practicality": 5,
+   "confidence": 4,
+   "effort": 5,
+   "time_to_value": 5
+  },
+  "verdict": "pursue now"
+ },
+ {
+  "id": "cas-3",
+  "title": "Implement the uniform categorical word/parabolic-membership algorithm (Cor. cor:membership) as an opt-in Sage method",
+  "families": [
+   254
+  ],
+  "channels": [
+   "CAS",
+   "ALGO"
+  ],
+  "tier": "T1",
+  "action": "IMPLEMENT",
+  "summary": "A ~170-line prototype for labels {2,3,oo} (zigzag algebra over Q, evaluation cones, Gaussian elimination) is correct on every test: 300/300 against Garside normal forms on B4, 200/200 relator-insertion identities across 6 non-spherical groups, no Burau contradictions. It runs in milliseconds for short words on affine and hyperbolic groups and on the 116-generator group. Complex size grows exponentially with word length when the Coxeter element has spectral radius >1 (x5.9 per power for (3,3,oo)), so it is a terminating fallback, not a fast algorithm.",
+  "targets": [
+   {
+    "name": "Algorithm proof (sec:algorithms)",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Parabolic-intersections-in-Artin-groups-September-23-2026/build/sections/08_stabilizers.tex#L221-L311"
+   },
+   {
+    "name": "Algebra Z and edge labels",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Parabolic-intersections-in-Artin-groups-September-23-2026/build/sections/02_category.tex#L130-L170"
+   },
+   {
+    "name": "Categorical action (Prop cat:action)",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Parabolic-intersections-in-Artin-groups-September-23-2026/build/sections/02_category.tex#L392-L427"
+   },
+   {
+    "name": "Sage ArtinGroup dispatch where the fallback would hook in",
+    "url": "https://github.com/sagemath/sage/blob/0835358cba62dc19fccdff54f32e52fded9f22b0/src/sage/groups/artin.py#L615-L623"
+   },
+   {
+    "name": "Sage TODO: affine type support",
+    "url": "https://github.com/sagemath/sage/blob/0835358cba62dc19fccdff54f32e52fded9f22b0/src/sage/groups/artin.py#L14-L18"
+   }
+  ],
+  "benefit_type": "capability",
+  "beneficiaries": "Geometric group theorists experimenting with non-spherical, non-FC Artin groups in Sage/GAP (small community)",
+  "first_step": "Port /home/claude/work/repos/scratch_cas/artin_wp.py into a Sage ticket (labels 2,3,oo) with doctests that cross-check against BraidGroup/RAAG normal forms. Then add Temperley-Lieb-Jones fusion for labels >= 4 over Q(zeta_N).",
+  "measurement": "Agreement with existing normal forms on random words; a timing table of minimal-complex size vs word length per diagram class.",
+  "risks": "The algorithmic corollary is not Lean-formalized. Cost is exponential in word length for hyperbolic-type diagrams. Labels >= 4 need nontrivial fusion-category code. Reviewers may want a refereed reference. Should dispatch to faster known algorithms (Garside, Holt-Rees, no-A3/B3 rewriting) where they apply.",
+  "scores": {
+   "impact": 2,
+   "reach": 1,
+   "directness": 5,
+   "practicality": 3,
+   "confidence": 4,
+   "effort": 3,
+   "time_to_value": 3
+  },
+  "verdict": "pursue now"
+ },
+ {
+  "id": "cas-4",
+  "title": "Macaulay2 LexIdeals: update LPP doc ('conjectured') to note the char-0 EGH/LPP theorem; char-0 realizability via LPP() non-null",
+  "families": [
+   200
+  ],
+  "channels": [
+   "CAS"
+  ],
+  "tier": "T3",
+  "action": "CERTIFY",
+  "summary": "The LPP doc node still calls the lex-plus-powers role conjectural. The preprint claims full EGH plus LPP Betti extremality over every char-0 field, so in char 0 'LPP(R,h,a) =!= null' becomes an exact test for realizability of h by an ideal containing a regular sequence of degrees a. The claim is unformalized, char 0 only, and spread over two long companion papers.",
+  "targets": [
+   {
+    "name": "LexIdeals.m2 LPP doc ('conjectured to play a role')",
+    "url": "https://github.com/Macaulay2/M2/blob/1a37f6fe95badb1e5f99707a485503d213fd9d49/M2/Macaulay2/packages/LexIdeals.m2#L870-L872"
+   },
+   {
+    "name": "LexIdeals.m2 LPP implementation (full-length powers only)",
+    "url": "https://github.com/Macaulay2/M2/blob/1a37f6fe95badb1e5f99707a485503d213fd9d49/M2/Macaulay2/packages/LexIdeals.m2#L246-L277"
+   },
+   {
+    "name": "Main theorem and char-0 corollary",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-Artinian-Lex-Plus-Powers-Betti-Theorem-September-23-2026/build/sections/01-introduction.tex#L41-L94"
+   }
+  ],
+  "benefit_type": "guarantee",
+  "beneficiaries": "Commutative algebraists using LexIdeals; Hilbert-function / Betti-bound researchers",
+  "first_step": "After independent verification or acceptance, submit a 3-sentence doc PR that explicitly marks it char 0 and preprint.",
+  "measurement": "Merged doc PR. Random-instance checks in M2/Sage (36/36 consistent here) as regression examples.",
+  "risks": "Unformalized proof of a 30-year-old conjecture. Doc examples use ZZ/32003 (char p), where the result says nothing. Applications in coding and cryptanalysis need F_q.",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 4,
+   "practicality": 5,
+   "confidence": 2,
+   "effort": 5,
+   "time_to_value": 2
+  },
+  "verdict": "monitor"
+ },
+ {
+  "id": "cas-5",
+  "title": "Polynomial-time type-D tensor-multiplicity positivity: root-lattice check + LP over BZ polytope",
+  "families": [
+   204
+  ],
+  "channels": [
+   "CAS",
+   "ALGO"
+  ],
+  "tier": "T3",
+  "action": "RESEARCH",
+  "summary": "Saturation factor 1 makes the GCT3 (Mulmuley-Narayanan-Sohoni) LP positivity algorithm unconditional for D_n; it was previously conditional for B, C, D. Empirically I confirmed saturation factor 1 on 8,481 D4-D7 triples with 0 failures (B2/B3 controls fail as expected). Today's full decompositions take 51 s (D4) and 413 s (D5) at 8x weights. No public code exposes type-D BZ inequalities, and demand is from a niche of representation-theory researchers.",
+  "targets": [
+   {
+    "name": "Saturation theorem",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Tensor-Saturation-for-Even-Spin-Groups-September-24-2026/build/sections/01-introduction.tex#L33-L42"
+   },
+   {
+    "name": "Sage WeylCharacterRing Brauer-Klimyk product (current practice)",
+    "url": "https://github.com/sagemath/sage/blob/0835358cba62dc19fccdff54f32e52fded9f22b0/src/sage/combinat/root_system/weyl_characters.py#L490-L513"
+   },
+   {
+    "name": "GCT3 journal version (conditional B,C,D algorithm)",
+    "url": "https://emis.univie.ac.at/journals/JACO/Volume36_1/rg1w9655642r84t8.fulltext.pdf"
+   }
+  ],
+  "benefit_type": "speed",
+  "beneficiaries": "Researchers on Horn-type problems for so(2n); LieART/Sage users needing positivity at large weights (few)",
+  "first_step": "Generate BZ i-trail inequalities for D4 for one reduced word of w0, then test LP feasibility <=> positivity on the E4 triple set.",
+  "measurement": "Exact agreement with WeylCharacterRing on all test triples; LP time vs Brauer-Klimyk time as weights scale.",
+  "risks": "The paper does not give the algorithm. Type-D polytope inequalities must be derived. Unformalized. Low demand: users want multiplicities, not positivity. GCT/quantum-marginal work needs Kronecker/plethysm, not Spin(2n).",
+  "scores": {
+   "impact": 2,
+   "reach": 1,
+   "directness": 3,
+   "practicality": 4,
+   "confidence": 3,
+   "effort": 2,
+   "time_to_value": 2
+  },
+  "verdict": "monitor"
+ },
+ {
+  "id": "cas-6",
+  "title": "047/049 explicit stabilizations as test instances for polynomial-automorphism / LND code",
+  "families": [
+   47,
+   49
+  ],
+  "channels": [
+   "CAS"
+  ],
+  "tier": "T4",
+  "action": "INSTANCES",
+  "summary": "The objects are tiny: 049 f has 16 terms and degree 5; 047 H has 12 terms and degree 7. The 'yes' half (stabilization) is explicit and verified: symbolic identities, plus phi(f)=x1 at 200/200 random points mod 1000003. But expanded coordinate images reach 212,512 terms (049) and 128,842 terms (047, degree 211), and no CAS routine decides coordinate-hood, so the 'no' half tests nothing.",
+  "targets": [
+   {
+    "name": "049 theorem",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-stable-coordinate-that-is-not-a-coordinate-in-four-variables-October-5-2026/build/source/sections/01-introduction.tex#L8-L16"
+   },
+   {
+    "name": "047 equation and theorem",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/An-explicit-failure-of-complex-affine-space-cancellation-September-23-2026/build/sections/01-introduction.tex#L49-L70"
+   },
+   {
+    "name": "Singular algebra.lib is_surjective/is_bijective",
+    "url": "https://github.com/Singular/Singular/blob/4d253ff427cae6718de42b81149e3c3953f8e866/Singular/LIB/algebra.lib#L676-L760"
+   },
+   {
+    "name": "Singular ainvar.lib invariantRing (LND kernels)",
+    "url": "https://github.com/Singular/Singular/blob/4d253ff427cae6718de42b81149e3c3953f8e866/Singular/LIB/ainvar.lib#L500"
+   }
+  ],
+  "benefit_type": "instances",
+  "beneficiaries": "Developers of LND/automorphism code in Singular (very few)",
+  "first_step": "If wanted, add the 5-variable LND Delta (Delta(H)=p) and the composite automorphism as a Singular/Sage doctest; scripts are in scratch_cas.",
+  "measurement": "Doctest runtime and pass/fail.",
+  "risks": "No user demand. Expanded forms are large, so tests should use the composite form.",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 4,
+   "practicality": 3,
+   "confidence": 5,
+   "effort": 5,
+   "time_to_value": 4
+  },
+  "verdict": "monitor"
+ },
+ {
+  "id": "cas-7",
+  "title": "Deterministic black-box NC identity testing in CAS via the rational hitting point",
+  "families": [
+   116
+  ],
+  "channels": [
+   "CAS",
+   "VERIF"
+  ],
+  "tier": "T3",
+  "action": "NONE",
+  "summary": "The prototype works and needs only s series operations (f(T)e0 = pi_d(h_f)). But d = 2ns^2 with d*log2(n+1)-bit rationals: size-25 formulas take 2-23 s, and S4 (size 215) would need d = 369,800 against 0.7 ms for a random 3x3 test mod 2^61-1. Actual vanishing orders (3-6) are far below the bound (323-3749). Real NC systems (NCAlgebra, NCSOStools) are white-box.",
+  "targets": [
+   {
+    "name": "Hitting-point theorem",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/One-Rational-Matrix-Hitting-Point-for-Noncommutative-Formulas-September-24-2026/build/introduction.tex#L24-L42"
+   },
+   {
+    "name": "NCAlgebra NCPolyPossibleZeroQ (white-box)",
+    "url": "https://github.com/NCAlgebra/NC/blob/4156ae48f9540dc1547b8a42df4ac89cce15d814/NCPoly/NCPoly.m#L167-L169"
+   },
+   {
+    "name": "NCAlgebra NCMinimalRealization",
+    "url": "https://github.com/NCAlgebra/NC/blob/4156ae48f9540dc1547b8a42df4ac89cce15d814/NCAlgebra/NCRealization.m#L607-L640"
+   }
+  ],
+  "benefit_type": "guarantee",
+  "beneficiaries": "None identified in practice",
+  "first_step": "",
+  "measurement": "",
+  "risks": "Infeasible beyond formula size of a few dozen; randomized tests have negligible error and are 10^4x+ faster.",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 4,
+   "practicality": 2,
+   "confidence": 4,
+   "effort": 4,
+   "time_to_value": 3
+  },
+  "verdict": "do not pursue"
+ },
+ {
+  "id": "cas-8",
+  "title": "Use the categorical algorithm for braid-group crypto or to speed up spherical/large-type word problems",
+  "families": [
+   254
+  ],
+  "channels": [
+   "CRYPTO",
+   "CAS"
+  ],
+  "tier": "T4",
+  "action": "NONE",
+  "summary": "Garside normal forms (spherical), Holt-Rees (large type) and no-A3/B3 rewriting are polynomial, and the categorical complex grows at least linearly even in A3. It grows exponentially in hyperbolic-type diagrams. It offers no speed or security relevance where existing algorithms apply.",
+  "targets": [
+   {
+    "name": "Sage FiniteTypeArtinGroupElement normal-form comparison",
+    "url": "https://github.com/sagemath/sage/blob/0835358cba62dc19fccdff54f32e52fded9f22b0/src/sage/groups/artin.py#L318-L350"
+   }
+  ],
+  "benefit_type": "speed",
+  "beneficiaries": "None",
+  "first_step": "",
+  "measurement": "",
+  "risks": "",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 2,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 3,
+   "time_to_value": 2
+  },
+  "verdict": "do not pursue"
+ },
+ {
+  "id": "cas-9",
+  "title": "Kaplansky/Kurosh counterexamples (196/197/201) as CAS or SAT test instances",
+  "families": [
+   196,
+   197,
+   201
+  ],
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "action": "NONE",
+  "summary": "196 needs a random 8258-generator presentation on n >= 545,358,338 (and 'sufficiently large') vertices. 197 odd-char needs the least prime factor of ((C(1200,600))!)^2+1, where C(1200,600) ~ 10^359.6; the char-2 prescription is unexecuted. 201 is a countable diagonal construction. None is a usable object for Gardam-style SAT searches or group-ring code.",
+  "targets": [
+   {
+    "name": "196 finite geometry sizes",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-Torsion-Free-Group-Algebra-with-Zero-Divisors-September-23-2026/build/sections/types.tex#L10-L30"
+   },
+   {
+    "name": "197 odd-char prime",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-Counterexample-to-Kaplanskys-Direct-Finiteness-Conjecture-in-Odd-Characteristic-September-26-2026/build/sections/01-introduction.tex#L13-L20"
+   }
+  ],
+  "benefit_type": "instances",
+  "beneficiaries": "None",
+  "first_step": "",
+  "measurement": "",
+  "risks": "",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "verdict": "do not pursue"
+ },
+ {
+  "id": "cas-10",
+  "title": "Thompson's F nonamenability: consequences for F-based cryptography or numerical group theory",
+  "families": [
+   248
+  ],
+  "channels": [
+   "CRYPTO",
+   "FOUND"
+  ],
+  "tier": "T4",
+  "action": "NONE",
+  "summary": "The Shpilrain-Ushakov F-based key exchange was already broken (Matucci; Ruinskiy-Shamir-Tsaban length-based attacks). Nonamenability implies linear drift of normal-form length, consistent with those attacks, so nothing is revived or newly broken. The proof gives no cogrowth or spectral constant for x0, x1. It only confirms the sign of Elvey Price-Guttmann's numerical estimate (~15 < 16).",
+  "targets": [
+   {
+    "name": "Folner-defect bound (Prop avg:boundary)",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Thompsons-group-F-is-nonamenable-September-23-2026/build/sections/finite-proof.tex#L194-L200"
+   }
+  ],
+  "benefit_type": "redirect",
+  "beneficiaries": "None",
+  "first_step": "",
+  "measurement": "",
+  "risks": "",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 5,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "verdict": "do not pursue"
+ },
+ {
+  "id": "cas-11",
+  "title": "QI recognition of virtually polycyclic groups (255) as a GAP Polycyclic/recognition tool",
+  "families": [
+   255
+  ],
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "action": "NONE",
+  "summary": "A pure rigidity theorem with no algorithm. Virtual polycyclicity is not decidable from finite presentations, and GAP Polycyclic starts from pc presentations.",
+  "targets": [],
+  "benefit_type": "capability",
+  "beneficiaries": "None",
+  "first_step": "",
+  "measurement": "",
+  "risks": "",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "verdict": "do not pursue"
+ },
+ {
+  "id": "cas-12",
+  "title": "EGH/LPP (200) for evaluation-code minimum distance or Groebner cryptanalysis over F_q",
+  "families": [
+   200
+  ],
+  "channels": [
+   "COMM",
+   "CRYPTO"
+  ],
+  "tier": "T4",
+  "action": "NONE",
+  "summary": "Both applications live over finite fields. The proof is characteristic 0 only, via division algebras over extensions of C; positive characteristic remains open.",
+  "targets": [],
+  "benefit_type": "guarantee",
+  "beneficiaries": "None",
+  "first_step": "",
+  "measurement": "",
+  "risks": "",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "verdict": "do not pursue"
+ }
+]

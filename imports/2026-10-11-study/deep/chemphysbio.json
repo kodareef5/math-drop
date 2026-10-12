@@ -1,0 +1,219 @@
+[
+ {
+  "id": "chemphysbio-1",
+  "title": "Add a weak-reversibility + mass-action branch (and ispermanent) to CatalystNetworkAnalysis.ispersistent; update Catalyst CRNT docs to global (GAC) statements",
+  "families": [149],
+  "channels": ["BIO", "PHYS"],
+  "tier": "T2",
+  "action": "IMPLEMENT",
+  "summary": "Family 149 proves that every weakly reversible mass-action network with fixed positive rates is bounded and persistent; the Lean-checked part covers every number of linkage classes and every deficiency. A second, unformalized paper adds classwise permanence, and the global attractor conclusion follows for complex-balanced systems. CatalystNetworkAnalysis.ispersistent today only implements the Angeli-De Leenheer-Sontag siphon test and returns :INCONCLUSIVE otherwise; its file header lists 'permanence in networks' as a TODO. A two-line structural rule closes this gap for 15.6% of random weakly reversible networks that no earlier theorem covers.",
+  "targets": [
+   {"name": "CatalystNetworkAnalysis.jl ispersistent (decision logic to extend)", "url": "https://github.com/SciML/CatalystNetworkAnalysis.jl/blob/cac50dd89b5f2baf4d0d689ba3b4b58501382a45/src/persistence.jl#L24-L37"},
+   {"name": "CatalystNetworkAnalysis.jl TODO 'permanence in networks'", "url": "https://github.com/SciML/CatalystNetworkAnalysis.jl/blob/cac50dd89b5f2baf4d0d689ba3b4b58501382a45/src/persistence.jl#L1-L4"},
+   {"name": "CatalystNetworkAnalysis.jl INCONCLUSIVE weakly reversible test fixture", "url": "https://github.com/SciML/CatalystNetworkAnalysis.jl/blob/cac50dd89b5f2baf4d0d689ba3b4b58501382a45/test/persistence.jl#L64-L76"},
+   {"name": "CatalystNetworkAnalysis.jl networksummary :NOT_PERSISTENT message bug (prints 'is persistent')", "url": "https://github.com/SciML/CatalystNetworkAnalysis.jl/blob/cac50dd89b5f2baf4d0d689ba3b4b58501382a45/src/steadystates.jl#L112-L120"},
+   {"name": "Catalyst.jl isweaklyreversible (structural test reused; docstring uses sir/rn inconsistently)", "url": "https://github.com/SciML/Catalyst.jl/blob/e9162784b4fc463af2ae250ecb09debf185365d8/src/network_analysis.jl#L810-L837"},
+   {"name": "Catalyst.jl CRNT docs, deficiency-zero section (states only local stability)", "url": "https://github.com/SciML/Catalyst.jl/blob/e9162784b4fc463af2ae250ecb09debf185365d8/docs/src/network_analysis/crn_theory.md#L210-L280"},
+   {"name": "Catalyst.jl ismassaction (excludes time-dependent rates)", "url": "https://github.com/SciML/Catalyst.jl/blob/e9162784b4fc463af2ae250ecb09debf185365d8/src/reactionsystem_conversions.jl#L358-L394"},
+   {"name": "149 Lean theorem global_bounded_persistent_solution", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/Analysis/MassAction/Main.lean#L73-L84"},
+   {"name": "149 permanence theorem (unformalized)", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Uniform-Permanence-in-Weakly-Reversible-Mass-Action-Systems-October-5-2026/build/sections/introduction.tex#L43-L60"},
+   {"name": "149 complex-balanced (GAC) remark", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Boundedness-and-persistence-of-weakly-reversible-mass-action-systems-September-25-2026/build/sections/03-dynamics.tex#L437-L461"}
+  ],
+  "benefit_type": "guarantee",
+  "beneficiaries": "Catalyst/SciML systems-biology users, molecular-programming (DNA strand displacement) CRN designers, CRNT educators; any tool that reports persistence verdicts",
+  "first_step": "Open an issue on CatalystNetworkAnalysis.jl proposing: if all reactions are mass action and isweaklyreversible holds, return :PERSISTENT (and :PERMANENT from a new ispermanent), citing the Lean-checked boundedness/persistence theorem and the permanence preprint. Add the test network 0->X1+X2->X0+X1->0, 2X1->2X2->X0->2X1 (2 linkage classes, deficiency 1, dim S=3, open, so the siphon test is inconclusive). Fix the swapped :NOT_PERSISTENT message and the isweaklyreversible docstring.",
+  "measurement": "Count of :INCONCLUSIVE verdicts eliminated on a benchmark corpus. In a synthetic set of 591 random weakly reversible networks, 15.6% are decided only by 149 and 40.4% more by 149 or Craciun's GAC. On curated BioModels, 0 verified-mass-action models change verdict. Spot-check by ODE simulation; done for 30 random rate sets of the test network, where concentrations stay in [2.6e-2, 1.9e3].",
+  "risks": "Unrefereed results; permanence half not Lean-formalized; constant rates only (time-varying rates are not covered); maintainers may wait for peer review; Catalyst's ismassaction is syntactic, so a mis-specified model passes the precondition.",
+  "scores": {"impact": 2, "reach": 2, "directness": 5, "practicality": 5, "confidence": 4, "effort": 5, "time_to_value": 5},
+  "verdict": "pursue now"
+ },
+ {
+  "id": "chemphysbio-2",
+  "title": "Flag weakly reversible mass-action models in BioModels/ODEbase metadata with a persistence/permanence (and GAC when deficiency 0) certificate",
+  "families": [149],
+  "channels": ["BIO"],
+  "tier": "T2",
+  "action": "CERTIFY",
+  "summary": "About 40% of curated BioModels reaction networks are structurally weakly reversible (236 of 597; 194 by rate-law-aware reversibility). But only 21 also have pure mass-action kinetics, and 13 have no events or rules. All 13 clean ones were already persistent by the siphon test or by older single-linkage or deficiency-zero theorems. A metadata flag is cheap but changes nothing for curated models; it is more relevant to exact-mass-action molecular-programming CRNs.",
+  "targets": [
+   {"name": "ODEbase (computes deficiency and a mass-action heuristic for BioModels)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9710575"},
+   {"name": "BioModels curated mirror used for the scan (sys-bio/temp-biomodels)", "url": "https://github.com/sys-bio/temp-biomodels/tree/6a09daf46af1bb89e4857436b623a7b8720863ad/final"}
+  ],
+  "benefit_type": "guarantee",
+  "beneficiaries": "Model curators, ODEbase maintainers, symbolic-computation users of ODEbase",
+  "first_step": "Send ODEbase the scan script (scan_wr.py) and the list of 21 weakly reversible mass-action models; propose a 'WR+MA: bounded, persistent, permanent' field.",
+  "measurement": "Number of models flagged (about 21 of 597 networks, about 3.5%); number whose qualitative verdict changes versus the existing siphon test (0 in this scan).",
+  "risks": "Very low applicability; Michaelis-Menten/Hill kinetics dominate curated models; the mass-action detection heuristic can mislabel models.",
+  "scores": {"impact": 1, "reach": 2, "directness": 4, "practicality": 4, "confidence": 4, "effort": 5, "time_to_value": 4},
+  "verdict": "monitor"
+ },
+ {
+  "id": "chemphysbio-3",
+  "title": "Five-ball non-Monge Coulomb instance as a regression test for multi-marginal OT / SCE solvers; warn against Monge-like product ansatz and barycentric co-motion extraction",
+  "families": [373],
+  "channels": ["PHYS", "GEO", "OPT"],
+  "tier": "T2",
+  "action": "INSTANCES",
+  "summary": "Family 373 proves that a smooth 3D density exists whose three-marginal Coulomb optimum is attained only by a branch-splitting Kantorovich plan. I instantiated it with explicit K=3 and radii of 0.02-0.03; the certificate inequality holds by sampling up to radius 0.1. An exact LP equals the dual certificate to 4e-16 and splits every centre atom 50/50, and multi-marginal Sinkhorn at eps=0.01 reproduces the split. The Hu-Chen-Liu product ansatz is stuck 1.4% (5 atoms) and 0.4% (35 atoms) above the optimum, and barycentric map extraction costs 13.8% (41% on centre atoms) above it.",
+  "targets": [
+   {"name": "Paper certificate (Prop certificate) used for the exact dual value", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/build/sections/certificate.tex#L9-L31"},
+   {"name": "Paper local branch lemma (explicit potentials u0, v_k, K)", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/build/sections/local.tex#L21-L46"},
+   {"name": "Hu-Chen-Liu Monge-like ansatz global optimization (SISC)", "url": "https://arxiv.org/abs/2110.07352"},
+   {"name": "Genetic column generation for MMOT (Friesecke-Schulz-Voegler)", "url": "https://arxiv.org/abs/2103.12624"},
+   {"name": "POT multi-marginal module (only 1D Monge dmmot; natural home for a Coulomb MMOT example)", "url": "https://github.com/PythonOT/POT/blob/604c47f28770eda10fe3cf0023c946d19c28e7ca/ot/lp/dmmot.py#L60-L64"}
+  ],
+  "benefit_type": "instances",
+  "beneficiaries": "SCE-DFT and multi-marginal OT method developers (Friesecke, Gori-Giorgi, Nenna, Hu-Chen-Liu groups); OT library maintainers",
+  "first_step": "Publish the instance builder (monge373_lp.py) with the exact optimum, dual certificate and expected 50/50 split; send it to GenCol and Hu-Chen-Liu authors as a validation case.",
+  "measurement": "Solvers must hit the LP value within tolerance and reproduce the 50/50 branch split. Product or map ansatz results are reported as relative gaps; the reference gaps are +1.4% and +0.4% for the product ansatz and +13.8% for barycentric maps.",
+  "risks": "Artificial density with no external potential; the SCE energy (infimum) is unaffected, so atom and molecule SCE practice is unchanged; small community.",
+  "scores": {"impact": 2, "reach": 1, "directness": 4, "practicality": 5, "confidence": 4, "effort": 5, "time_to_value": 4},
+  "verdict": "pursue now"
+ },
+ {
+  "id": "chemphysbio-4",
+  "title": "Kohn-Sham inversion and ensemble-DFT documentation: treat non-convergence as possibly genuine non-representability; research test of the nodal-plane mechanism on real open-shell pi systems",
+  "families": [278],
+  "channels": ["PHYS"],
+  "tier": "T3",
+  "action": "RESEARCH",
+  "summary": "278 proves that a 3-electron, two-centre Coulomb ground-state density has no Kohn-Sham ensemble representation with potentials in L^{3/2}+L^inf, via a median-plane tail mechanism. The certified instance is galactic: D=10^200 and Z is specified only by a non-numerical supremum. Inversion tools such as n2v assume Aufbau occupation and tell users to 'try a different initial guess' on failure. A documentation note plus a research test of whether real HOMO-nodal-plane systems satisfy the obstruction's fixed-density hypotheses is the realistic scope.",
+  "targets": [
+   {"name": "278 fixed-density obstruction theorem (checkable hypotheses)", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/05-plane-obstruction.tex#L358-L372"},
+   {"name": "278 main theorem", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/main.tex#L131-L150"},
+   {"name": "n2v Aufbau occupation in diagonalize", "url": "https://github.com/wasserman-group/n2v/blob/64592d1bf56b77c5035b79d92198f33b24b55624/n2v/inverter.py#L197-L225"},
+   {"name": "n2v Wu-Yang failure message", "url": "https://github.com/wasserman-group/n2v/blob/64592d1bf56b77c5035b79d92198f33b24b55624/n2v/methods/wuyang.py#L56-L60"},
+   {"name": "Trushin-Erhard-Goerling PRA 2024 (numerical v-representability violations)", "url": "https://cris.fau.de/publications/327055796"}
+  ],
+  "benefit_type": "redirect",
+  "beneficiaries": "Density-inversion and exact-functional researchers; ML-functional training-data pipelines that use inverted v_xc; GOK/ensemble-DFT theorists",
+  "first_step": "Add a docs note to n2v (and similar PySCF/Psi4 inversion scripts) on representability failures with citations to 278, TEG24 and ETG25. Separately, scope a full-CI study of a pi-radical with a HOMO nodal plane extending to infinity, checking the plane-tail asymptotics that the obstruction needs.",
+  "measurement": "For research: whether exact-density tails on the nodal plane of a real molecule show the lambda*A(r)*r^-4 behaviour; for docs: fewer user reports of 'non-converging' inversions misdiagnosed as initial-guess problems.",
+  "risks": "Instance unphysical; only L^{3/2}+L^inf excluded (distributional potentials and spin-DFT open); TEG24 atomic failures have a different (symmetry/occupation) mechanism; finite-basis inversions always return some potential, so practice may not notice.",
+  "scores": {"impact": 2, "reach": 2, "directness": 2, "practicality": 2, "confidence": 3, "effort": 2, "time_to_value": 2},
+  "verdict": "pursue as research"
+ },
+ {
+  "id": "chemphysbio-5",
+  "title": "Cite continuum unit-charge QMA-hardness in quantum-advantage-for-chemistry framing",
+  "families": [275],
+  "channels": ["CPLX", "QUANT", "PHYS"],
+  "tier": "T2",
+  "action": "REDIRECT",
+  "summary": "Approximating the electronic ground-energy infimum for clamped unit-charge nuclei over the full spinful continuum is QMA-hard; this is Lean-checked including the source hardness, with 0 sorry. It removes the fixed-orbital-basis loophole of O'Gorman et al. 2022 and the designed potentials and fields of Schuch-Verstraete 2009. The instances have about n^(33A) unit nuclei for unspecified large A, mostly a background slab, with only polynomially many electrons, so they are hugely cationic. The result supports the existing view that any quantum advantage must come from structure (good guiding states), not generality.",
+  "targets": [
+   {"name": "275 main theorem and input model", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/QMA-hardness-of-continuum-Coulomb-energy-with-unit-nuclear-charges-September-24-2026/build/introduction.tex#L62-L100"},
+   {"name": "275 scale choices (k=ceil(C n^A), lambda=8k^3/rho)", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/QMA-hardness-of-continuum-Coulomb-energy-with-unit-nuclear-charges-September-24-2026/build/sections/implementation.tex#L17-L24"},
+   {"name": "275 Lean theorem unit_coulomb_qmaHard", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/MathematicalPhysics/ContinuumCoulomb/Reduction/Hardness.lean#L14-L18"},
+   {"name": "Lee et al. 2023 quantum-advantage assessment", "url": "https://research.google/pubs/evaluating-the-evidence-for-exponential-quantum-advantage-in-ground-state-quantum-chemistry/"}
+  ],
+  "benefit_type": "redirect",
+  "beneficiaries": "Quantum-chemistry complexity reviewers, quantum-resource-estimation authors, funding and strategy assessments",
+  "first_step": "Add a one-paragraph citation in complexity-of-chemistry review material: worst-case hardness now holds without basis truncation and with only protons. Note explicitly that it says nothing about typical molecules or BQP guided-state problems.",
+  "measurement": "Citations in quantum-chemistry advantage reviews; no technical metric.",
+  "risks": "Over-reading as evidence against quantum advantage for real molecules; QMA membership not shown; galactic instances.",
+  "scores": {"impact": 2, "reach": 2, "directness": 3, "practicality": 1, "confidence": 5, "effort": 5, "time_to_value": 4},
+  "verdict": "monitor"
+ },
+ {
+  "id": "chemphysbio-6",
+  "title": "Cite triangular-lattice universal optimality, BHS constant, cubic-torus isoperimetric profile as ground truths (verifiers re-run)",
+  "families": [90, 354],
+  "channels": ["PHYS", "GEO"],
+  "tier": "T2",
+  "action": "CERTIFY",
+  "summary": "090 makes the 2D triangular lattice a theorem-level ground state for completely monotone potentials (Gaussian core, Yukawa) and for renormalized Coulomb/Abrikosov energy. It also fixes C_BHS = -0.0556053 in the sphere's log-energy expansion. I re-ran the shipped interval verifiers successfully: 37,310 Bernstein checks and all scalar bounds. 354 makes the sphere/cylinder/slab sequence with crossovers 4pi/81 and 1/pi exact for cubic periodic boxes. These are certification-only citations for colloid, Wigner, vortex and coexistence simulation papers.",
+  "targets": [
+   {"name": "090 universal optimality theorem", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Universal-optimality-of-the-triangular-lattice-September-23-2026/build/sections/01-uniform-gaussian-theorem.tex#L31-L41"},
+   {"name": "090 BHS corollary", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Triangular-minimality-for-planar-Coulomb-renormalized-energy-September-23-2026/build/sections/01-introduction.tex#L105-L127"},
+   {"name": "090 verification scripts", "url": "https://github.com/openai/math/tree/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Universal-optimality-of-the-triangular-lattice-September-23-2026/verification"},
+   {"name": "354 cubic-torus profile theorem", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/paper.tex#L56-L82"},
+   {"name": "Prestipino et al. droplet shapes in a periodic box", "url": "https://arxiv.org/abs/1509.02324"}
+  ],
+  "benefit_type": "guarantee",
+  "beneficiaries": "2D colloid/dusty-plasma/Wigner-crystal and Ginzburg-Landau vortex-lattice simulation authors; sphere point-set designers; finite-size coexistence (droplet/slab) MC/MD studies in cubic boxes",
+  "first_step": "Use the proven C_BHS as the reference line when scoring sphere log-energy configurations. My L-BFGS sets are 0.0056 above it at n=100 and 0.0024 at n=1600. Cite 354 in cubic-box finite-size analyses.",
+  "measurement": "Citations; none technical. No algorithmic or accuracy gain.",
+  "risks": "Physicists already believed these; o(n) sphere error has no rate; 354 is cubic only (slab simulations use elongated boxes); 2D/completely-monotone only (no Lennard-Jones, no 3D).",
+  "scores": {"impact": 1, "reach": 2, "directness": 3, "practicality": 5, "confidence": 5, "effort": 5, "time_to_value": 5},
+  "verdict": "monitor"
+ },
+ {
+  "id": "chemphysbio-7",
+  "title": "Ship a trapping-polytope 'persistence certificate' object or numeric permanence bounds from 149",
+  "families": [149],
+  "channels": ["BIO"],
+  "tier": "T4",
+  "action": "NONE",
+  "summary": "The trapping polytope and eps_P come from a compactness and induction argument with h_P chosen 'sufficiently small'. There is no effective construction or bound, so an output certificate object would be fiction. The usable content is the structural yes/no rule in chemphysbio-1.",
+  "targets": [
+   {"name": "149 permanence scale choice (h_P sufficiently small)", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Uniform-Permanence-in-Weakly-Reversible-Mass-Action-Systems-October-5-2026/build/sections/trapping.tex#L80-L94"}
+  ],
+  "benefit_type": "capability",
+  "beneficiaries": "none",
+  "first_step": "",
+  "measurement": "",
+  "risks": "Would mislead users into trusting numerical bounds that the theorem does not provide.",
+  "scores": {"impact": 1, "reach": 1, "directness": 1, "practicality": 1, "confidence": 4, "effort": 2, "time_to_value": 1},
+  "verdict": "do not pursue"
+ },
+ {
+  "id": "chemphysbio-8",
+  "title": "Use 278's molecule or 275's hydrogen clouds as DFT / quantum-chemistry benchmark instances",
+  "families": [278, 275],
+  "channels": ["PHYS", "QUANT"],
+  "tier": "T4",
+  "action": "NONE",
+  "summary": "278 needs separation 2*10^200/Z with Z defined by a non-numerical supremum. 275 needs about n^(33A) unit nuclei with A an unspecified large constant, and only polynomially many electrons. Neither can be built in any electronic-structure code, and neither resembles chemistry. Any benchmark use should target the mechanism (nodal-plane tails; superexchange gadgets) on real systems instead.",
+  "targets": [
+   {"name": "278 charge definition (non-numerical)", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/06-parameters.tex#L268-L278"},
+   {"name": "275 slab/box scale H=ceil(lambda^5)", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/QMA-hardness-of-continuum-Coulomb-energy-with-unit-nuclear-charges-September-24-2026/build/sections/density.tex#L14"}
+  ],
+  "benefit_type": "instances",
+  "beneficiaries": "none",
+  "first_step": "",
+  "measurement": "",
+  "risks": "Wasted effort; misleading 'hard instance' claims.",
+  "scores": {"impact": 1, "reach": 1, "directness": 1, "practicality": 1, "confidence": 4, "effort": 1, "time_to_value": 1},
+  "verdict": "do not pursue"
+ },
+ {
+  "id": "chemphysbio-9",
+  "title": "Replace co-motion (Monge) SCE functionals for atoms/molecules, or declare ensemble-DFT (GOK/REKS) methods invalid",
+  "families": [373, 278],
+  "channels": ["PHYS"],
+  "tier": "T4",
+  "action": "NONE",
+  "summary": "373 leaves the SCE energy unchanged (Monge infimum = Kantorovich minimum), and its density is artificial. 278 removes only an exact-theory existence guarantee in one potential class; practical ensemble methods use approximate functionals in finite bases. Neither result justifies changing production SCE or ensemble-DFT workflows.",
+  "targets": [
+   {"name": "373 main theorem (infima equal)", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/build/sections/introduction.tex#L29-L45"},
+   {"name": "DFTB+ REKS (example ensemble-DFT production code)", "url": "https://dftbplus-recipes.readthedocs.io/en/stable/reks/introduction.html"}
+  ],
+  "benefit_type": "redirect",
+  "beneficiaries": "none",
+  "first_step": "",
+  "measurement": "",
+  "risks": "Overclaiming would damage credibility of the genuinely useful instance (chemphysbio-3).",
+  "scores": {"impact": 1, "reach": 1, "directness": 1, "practicality": 1, "confidence": 4, "effort": 3, "time_to_value": 1},
+  "verdict": "do not pursue"
+ },
+ {
+  "id": "chemphysbio-10",
+  "title": "Use the universal excess-charge constant C (263) in basis-set, anion or ionization-energy engineering",
+  "families": [263],
+  "channels": ["FOUND", "PHYS"],
+  "tier": "T4",
+  "action": "NONE",
+  "summary": "The bound n <= Z + C*M has a universal but non-numerical C. The two-sided ionization-energy and radius bounds are likewise non-numerical, and the TF asymptotics are large-Z limits. Chemistry already knows atoms bind at most about Z+1 or Z+2 electrons, so this gives nothing for computation or design. It is a landmark mathematical-physics result to cite in surveys.",
+  "targets": [
+   {"name": "263 uniform excess charge theorem", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Uniform-excess-charge-for-Coulomb-molecules-and-the-outer-radius-of-neutral-atoms-September-24-2026/build/sections/01-introduction.tex#L34-L43"}
+  ],
+  "benefit_type": "redirect",
+  "beneficiaries": "none (mathematical physics citations only)",
+  "first_step": "",
+  "measurement": "",
+  "risks": "None if not pursued.",
+  "scores": {"impact": 1, "reach": 1, "directness": 1, "practicality": 1, "confidence": 4, "effort": 1, "time_to_value": 1},
+  "verdict": "do not pursue"
+ }
+]

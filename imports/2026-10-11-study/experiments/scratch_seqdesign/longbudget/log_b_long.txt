@@ -1,0 +1,4 @@
+2053 random 1 seedgen=.674118186 ts=196.612207124 random N=2053 K=21 seedF_max=1.0814 seedF_mean=1.0035 | bestE 466370 bestF 4.5187 restarts 21 steps 40000 seedF_first 0.9135 seedF_best 1.0814
+2053 random 2 seedgen=.762474999 ts=226.034927442 random N=2053 K=21 seedF_max=1.0586 seedF_mean=0.9918 | bestE 455406 bestF 4.6275 restarts 21 steps 40000 seedF_first 1.0227 seedF_best 1.0586
+2053 random 3 seedgen=1.046559958 ts=263.216326369 random N=2053 K=21 seedF_max=1.1070 seedF_mean=1.0085 | bestE 457866 bestF 4.6027 restarts 19 steps 40000 seedF_first 1.0388 seedF_best 1.1070
+2053 legendre 1 seedgen=115.929654092 ts=309.934966512 legendre N=2053 K=21 seedF_max=6.3377 seedF_mean=6.3232 | bestE 331838 bestF 6.3507 restarts 21 steps 40000 seedF_first 6.3377 seedF_best 6.3377

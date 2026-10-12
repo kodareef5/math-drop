@@ -1,0 +1,15 @@
+{
+ "n_atoms": 5,
+ "masses": [
+  0.3333,
+  0.1667,
+  0.1667,
+  0.1667,
+  0.1667
+ ],
+ "kantorovich_opt": 2.4999999999999996,
+ "product_ansatz_best": 2.534517796864424,
+ "product_rel_gap": 0.013807118745769745,
+ "discrete_monge_best": 334.6094757082488,
+ "monge_rel_gap": 132.84379028329954
+}

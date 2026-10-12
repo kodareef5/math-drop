@@ -1,0 +1,96 @@
+{
+ "m1_r0.0": {
+  "lp_value": 2.4999999999999996,
+  "lp_split": [
+   0.5,
+   0.5,
+   0.0
+  ],
+  "lp_bary_centre_cost": 3.5355339059327373,
+  "sinkhorn": [
+   {
+    "eps": 0.05,
+    "iters": 19999,
+    "marginal_err": 1.1111049381395954e-05,
+    "cost": 2.5063688207706134,
+    "rel_gap": 0.0025475283082455396,
+    "branch1": 0.4846,
+    "branch2": 0.4846,
+    "other": 0.0308,
+    "min_branch_share_over_centre_atoms": 1.0,
+    "bary_centre_cost": Infinity
+   },
+   {
+    "eps": 0.02,
+    "iters": 19999,
+    "marginal_err": 1.1111049383505378e-05,
+    "cost": 2.500003417171963,
+    "rel_gap": 1.3668687854462294e-06,
+    "branch1": 0.5,
+    "branch2": 0.5,
+    "other": 0.0001,
+    "min_branch_share_over_centre_atoms": 1.0,
+    "bary_centre_cost": Infinity
+   },
+   {
+    "eps": 0.01,
+    "iters": 19999,
+    "marginal_err": 1.1111049377954263e-05,
+    "cost": 2.4999902373664233,
+    "rel_gap": -3.905053430486305e-06,
+    "branch1": 0.5,
+    "branch2": 0.5,
+    "other": 0.0,
+    "min_branch_share_over_centre_atoms": 1.0,
+    "bary_centre_cost": Infinity
+   }
+  ]
+ },
+ "m3_r0.02": {
+  "lp_value": 2.4996661124769046,
+  "lp_split": [
+   0.5000000000000001,
+   0.5,
+   0.0
+  ],
+  "lp_bary_centre_cost": 3.5345965484871504,
+  "sinkhorn": [
+   {
+    "eps": 0.05,
+    "iters": 19999,
+    "marginal_err": 3.464551533313709e-06,
+    "cost": 2.507009826736485,
+    "rel_gap": 0.0029378780721652565,
+    "branch1": 0.484,
+    "branch2": 0.484,
+    "other": 0.032,
+    "min_branch_share_over_centre_atoms": 0.976,
+    "bary_centre_cost": 5899665657.284778
+   },
+   {
+    "eps": 0.02,
+    "iters": 19999,
+    "marginal_err": 3.4786580356688246e-06,
+    "cost": 2.50050508929029,
+    "rel_gap": 0.0003356355511632098,
+    "branch1": 0.4999,
+    "branch2": 0.4999,
+    "other": 0.0001,
+    "min_branch_share_over_centre_atoms": 0.942,
+    "bary_centre_cost": 1442637.7749662525
+   },
+   {
+    "eps": 0.01,
+    "iters": 19999,
+    "marginal_err": 3.465564834603807e-06,
+    "cost": 2.5004664263122676,
+    "rel_gap": 0.0003201682942246699,
+    "branch1": 0.5,
+    "branch2": 0.5,
+    "other": 0.0,
+    "min_branch_share_over_centre_atoms": 0.891,
+    "bary_centre_cost": 2718440.212255995
+   }
+  ]
+ }
+}

@@ -1,0 +1,16 @@
+Grid check (N=4000^2) of the three-atom family on [-1,1]^2 (run separately): ratio ||T-T'||/W2^(1/3) ~ 0.63 constant for a=1e-1..3e-3; ratio/W2^(1/2) grows 1.26 -> 3.02
+C* for K=Y=[-1,1]^2 (R=L=sqrt2, P_K=4, |K|=4): 95.4 -> gap to the extremal 0.63 is ~150x
+
+Worst-case plug-in L2 rate exponents (known uniform convex source, empirical target, E W rates of Fournier-Guillin, logs ignored):
+  d= 2: DM23 W1^(1/6): n^-0.0833 | Merigot W1^(1/4): n^-0.1250 | OAI W2^(1/3): n^-0.0833
+  d= 3: DM23 W1^(1/6): n^-0.0556 | Merigot W1^(1/4): n^-0.0833 | OAI W2^(1/3): n^-0.0833
+  d= 4: DM23 W1^(1/6): n^-0.0417 | Merigot W1^(1/4): n^-0.0625 | OAI W2^(1/3): n^-0.0833
+  d= 5: DM23 W1^(1/6): n^-0.0333 | Merigot W1^(1/4): n^-0.0500 | OAI W2^(1/3): n^-0.0667
+  d=10: DM23 W1^(1/6): n^-0.0167 | Merigot W1^(1/4): n^-0.0250 | OAI W2^(1/3): n^-0.0333
+
+A-posteriori map certificate from target perturbation W2<=diam*sqrt(TV), unit square (C*=67.7):
+  TV=1e-02: C* (diam^2 TV)^(1/6) = 35.255  (trivial bound diam=1.414)
+  TV=1e-03: C* (diam^2 TV)^(1/6) = 24.019  (trivial bound diam=1.414)
+  TV=1e-06: C* (diam^2 TV)^(1/6) = 7.595  (trivial bound diam=1.414)
+  TV=1e-09: C* (diam^2 TV)^(1/6) = 2.402  (trivial bound diam=1.414)
+  TV=1e-12: C* (diam^2 TV)^(1/6) = 0.760  (trivial bound diam=1.414)

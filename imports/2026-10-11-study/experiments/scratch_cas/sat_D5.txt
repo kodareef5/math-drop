@@ -1,0 +1,1 @@
+{'type': 'D5', 'maxc': Fraction(3, 2), 'N': 2, 'pairs': 171, 'of': 171, 'triples_checked': 1779, 'failures': 0, 'examples': [], 'secs': 106.2}

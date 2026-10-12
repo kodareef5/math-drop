@@ -1,0 +1,624 @@
+[
+ {
+  "id": "qinfo-1",
+  "title": "Make pure-loss bosonic broadcast and trade-off capacity regions unconditional (EPnI vacuum-port corollary)",
+  "families": [
+   273
+  ],
+  "channels": [
+   "COMM",
+   "QUANT"
+  ],
+  "tier": "T2",
+  "action": "CERTIFY",
+  "summary": "Cor. thermal-attenuator at N_B=0 is exactly Guha-Shapiro-Erkmen 'Strong Conjecture 2' / De Palma's 'Conjecture 1 for the quantum-limited attenuator', for arbitrary entangled finite-energy n-mode inputs, and the EPnI itself is Lean-checked. This discharges the conditional converses of the GSE 2007 two-receiver broadcast region (done in-paper), the Wilde-Hayden-Guha 2012 pure-loss CQE and public/private/key trade-off regions (eta>1/2), De Palma 2019 Sec. VI and Cor. 12, and very likely Guha's m-receiver extension. Wiretap, quantum, private and single-user thermal capacities were already unconditional by other means (Wilde-Qi 2016-18, GGCH 2014, GHG 2015, MGH 2014).",
+  "targets": [
+   {
+    "name": "273 Cor. thermal-attenuator (introduction.tex L34-51)",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/00-introduction.tex#L34-L51"
+   },
+   {
+    "name": "273 Cor. broadcast-capacity and converse (06-broadcast.tex L28-151)",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/06-broadcast.tex#L28-L151"
+   },
+   {
+    "name": "Lean EPnI comparator statement",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/ComparatorChallenges/EntropyPhotonNumber.lean#L99-L106"
+   },
+   {
+    "name": "Wilde-Hayden-Guha PRA 86 062306 (converse Sec. III G-H assumes Strong Conjecture 2)",
+    "url": "https://arxiv.org/abs/1105.0119"
+   },
+   {
+    "name": "Wilde-Hayden-Guha PRL 108 140501",
+    "url": "https://arxiv.org/abs/1206.4886"
+   },
+   {
+    "name": "Guha-Shapiro-Erkmen PRA 76 032303 (broadcast, Strong Conj. 2)",
+    "url": "https://arxiv.org/abs/0706.3416"
+   },
+   {
+    "name": "De Palma 2019 IEEE-TIT (Sec. VI broadcast, Cor. 12 trade-off conditional on Conj. 1 for quantum-limited attenuator)",
+    "url": "https://arxiv.org/abs/1805.12469"
+   },
+   {
+    "name": "De Palma-Trevisan-Giovannetti-Ambrosio survey (Conj. V.1, V.15 listed open)",
+    "url": "https://arxiv.org/abs/1803.02360"
+   },
+   {
+    "name": "Guha PhD thesis MIT 2008 (m-receiver broadcast)",
+    "url": "https://dspace.mit.edu/handle/1721.1/44413"
+   },
+   {
+    "name": "Khatri-Wilde textbook (bosonic chapters; check wording)",
+    "url": "https://arxiv.org/abs/2011.04672"
+   }
+  ],
+  "benefit_type": "guarantee",
+  "beneficiaries": "Quantum Shannon theorists; authors of optical/satellite ultimate-capacity analyses; textbook and survey maintainers",
+  "first_step": "Line-by-line check of WHG 2012 Sec. III G-H converse against Cor. thermal-attenuator (N_B=0, transmissivity eta and (1-eta)/eta); then a short public note plus emails to Wilde/Guha/De Palma.",
+  "measurement": "Number of capacity regions moved from 'conditional' to 'theorem' in literature (target 4); author acknowledgements/errata; survey/textbook updates.",
+  "risks": "WHG may use SC2 in a form needing one extra lemma; corollary not Lean-formalized; all OpenAI work unrefereed; does NOT cover amplifiers, mode-dependent loss, thermal-channel trade-offs.",
+  "scores": {
+   "impact": 3,
+   "reach": 2,
+   "directness": 4,
+   "practicality": 5,
+   "confidence": 4,
+   "effort": 4,
+   "time_to_value": 4
+  },
+  "verdict": "pursue now"
+ },
+ {
+  "id": "qinfo-2",
+  "title": "Thermal-noise (and m-receiver) bosonic broadcast converse from the EPnI",
+  "families": [
+   273
+  ],
+  "channels": [
+   "COMM",
+   "QUANT"
+  ],
+  "tier": "T2",
+  "action": "RESEARCH",
+  "summary": "The loss-plus-thermal-noise broadcast region (Guha 2008 thesis; Anderson-Guha-Bash ISIT 2021, incl. covert broadcast) is conditional on a thermal strong-MOE conjecture. 273's thermal-attenuator corollary (N_B>0) supplies the entropy bound; what is missing is convexity of phi_{lam,N'}(u)=g(lam g^{-1}(u)+(1-lam)N') for N'>0 (the paper proves only N'=0) plus a degradation/noise-ordering argument. Our numerics found phi convex on the whole tested grid (min 2nd divided difference +5.3e-4).",
+  "targets": [
+   {
+    "name": "273 vacuum-only convexity proof (06-broadcast.tex L119-128)",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/06-broadcast.tex#L119-L128"
+   },
+   {
+    "name": "Anderson-Guha-Bash ISIT 2021 'Fundamental limits of bosonic broadcast channels'",
+    "url": "https://experts.arizona.edu/en/publications/fundamental-limits-of-bosonic-broadcast-channels/"
+   },
+   {
+    "name": "Guha PhD thesis (thermal broadcast)",
+    "url": "https://dspace.mit.edu/handle/1721.1/44413"
+   }
+  ],
+  "benefit_type": "guarantee",
+  "beneficiaries": "Bosonic network information theory; covert/LPI optical communication theory",
+  "first_step": "Attempt analytic phi'' >= 0 for N'>0 mirroring the paper's L119-128 computation; then write the converse with GHG 2015 for the strong receiver.",
+  "measurement": "Written proof (ideally Lean) of thermal broadcast converse; acceptance by Guha/Bash.",
+  "risks": "Convexity may fail at edge parameters or need restrictions; noise-ordering requirements could restrict the region's validity.",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 3,
+   "practicality": 4,
+   "confidence": 3,
+   "effort": 3,
+   "time_to_value": 3
+  },
+  "verdict": "pursue as research"
+ },
+ {
+  "id": "qinfo-3",
+  "title": "Exact GADC classical-capacity function as reference implementation and benchmark ground truth",
+  "families": [
+   276
+  ],
+  "channels": [
+   "QUANT",
+   "COMM"
+  ],
+  "tier": "T2",
+  "action": "IMPLEMENT",
+  "summary": "Thm main gives C = (1/ln2) max_p {h((1-g)p+g nu) - g_det(g nu(1-nu)+g(1-g)(p-nu)^2)}, Lean-checked and validated by us against brute-force Holevo optimisation (1e-15) and a 2-use entangled-ensemble search (no superadditivity to 1e-8). It replaces bound tables: KSW 2020 bounds overshoot by 0.10-0.37 bits (often >100%); Fang 2026's converse is within <=0.13 bits (N=0), 0.04-0.09 bits for N<=0.1, <0.003 bits for N>=0.4. Useful as exact ground truth for converse-bound methods; no engineering consequence.",
+  "targets": [
+   {
+    "name": "276 Thm main (paper.tex L208-228)",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/paper.tex#L208-L228"
+   },
+   {
+    "name": "Lean comparator AmplitudeDamping.lean",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/ComparatorChallenges/AmplitudeDamping.lean#L113-L122"
+   },
+   {
+    "name": "toqito amplitude_damping (GADC, prob = 1-nu); no capacity routine exists",
+    "url": "https://github.com/vprusso/toqito/blob/4baf22e6f3da78ac9a01352de1980e2441c6cc77/toqito/channels/amplitude_damping.py#L8-L77"
+   },
+   {
+    "name": "Khatri-Sharma-Wilde PRA 102 012401 bounds (Sec. VI)",
+    "url": "https://arxiv.org/abs/1903.07747"
+   },
+   {
+    "name": "Fang 2026 pretty-tight converse",
+    "url": "https://arxiv.org/abs/2609.14621"
+   }
+  ],
+  "benefit_type": "capability",
+  "beneficiaries": "Quantum Shannon theory researchers benchmarking converse/SDP bounds; educators",
+  "first_step": "Open a toqito PR adding gad_classical_capacity(gamma, nu) (~10 lines) with tests: unital closed form at nu=1/2, Tang et al. at nu=0, brute-force Holevo at random points.",
+  "measurement": "PR merged; reproduction of KSW Fig. 4 with the exact curve; gap tables (our gad_fine.json).",
+  "risks": "Very small audience; maintainers may reject channel-specific capacity functions.",
+  "scores": {
+   "impact": 1,
+   "reach": 2,
+   "directness": 5,
+   "practicality": 5,
+   "confidence": 5,
+   "effort": 5,
+   "time_to_value": 5
+  },
+  "verdict": "pursue now"
+ },
+ {
+  "id": "qinfo-4",
+  "title": "N(6)=3: obtain the missing verification artifacts and re-run independently (ideally in interval arithmetic)",
+  "families": [
+   266
+  ],
+  "channels": [
+   "QUANT",
+   "COMM"
+  ],
+  "tier": "T2",
+  "action": "CERTIFY",
+  "summary": "Thm main is explicitly conditional on a C++ pipeline (seed/covout/ub/patchx/atlas/stageB/stageC.cpp, extraction.json, proof_run.py, build-manifest, REPRODUCE.md, execution archive) that is absent from every public ref of openai/math (main fd4aeeb, PR ref 3014888, initial commit adc7f12), from the PDF (no attachments), lean/ and reasoning_traces/. The ~80 code routines analysed in the rounding appendix cannot be checked. Only N(6)<=5 (exact rational certificate + Weiner completion) is proved openly and Lean-checked. Confidence in the N(6)=3 proof: 2/5; as a fact it is very likely true (all numerics agree).",
+  "targets": [
+   {
+    "name": "266 execution.tex: cited verification/code files (L16-21)",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-maximum-number-of-mutually-unbiased-bases-in-dimension-six-September-24-2026/build/sections/execution.tex#L16-L21"
+   },
+   {
+    "name": "266 execution.tex: finite-execution theorem (L242-249)",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-maximum-number-of-mutually-unbiased-bases-in-dimension-six-September-24-2026/build/sections/execution.tex#L242-L249"
+   },
+   {
+    "name": "266 execution.tex: archive/REPRODUCE references (L380-392)",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-maximum-number-of-mutually-unbiased-bases-in-dimension-six-September-24-2026/build/sections/execution.tex#L380-L392"
+   },
+   {
+    "name": "266 execution.tex: data-file SHA-256 table (L357-378)",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-maximum-number-of-mutually-unbiased-bases-in-dimension-six-September-24-2026/build/sections/execution.tex#L357-L378"
+   },
+   {
+    "name": "Lean MUBSix comparator (proves only n<=5)",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/ComparatorChallenges/MUBSix.lean#L56-L60"
+   },
+   {
+    "name": "IQOQI OQP #13 Mutually unbiased bases",
+    "url": "https://oqp.iqoqi.oeaw.ac.at/mutually-unbiased-bases"
+   },
+   {
+    "name": "Five open problems in quantum information (problem 2, prize)",
+    "url": "https://arxiv.org/abs/2002.03233"
+   }
+  ],
+  "benefit_type": "guarantee",
+  "beneficiaries": "MUB/complex-Hadamard researchers; open-problem list maintainers; prize committee",
+  "first_step": "File an issue on github.com/openai/math requesting verification/code, extraction.json, proof_run.py, build-manifest.json, REPRODUCE.md and the full-run-01 archive; on release, rebuild with the stated flags and compare the 8 published SHA-256 data hashes.",
+  "measurement": "Artifacts published; independent re-run reproduces hashes and 0 unresolved records; independent interval-arithmetic re-check passes.",
+  "risks": "OpenAI may not release; interval port is weeks of work; a re-check could expose a soundness gap in the binary64 analysis.",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 4,
+   "practicality": 4,
+   "confidence": 2,
+   "effort": 3,
+   "time_to_value": 3
+  },
+  "verdict": "pursue now"
+ },
+ {
+  "id": "qinfo-5",
+  "title": "Update open-problem lists and references: OQP #24 (key from all entangled states), OQP #38 (PPT-squared), MUB d=6 status",
+  "families": [
+   272,
+   266
+  ],
+  "channels": [
+   "QUANT",
+   "CRYPTO"
+  ],
+  "tier": "T2",
+  "action": "CERTIFY",
+  "summary": "272 answers OQP #24 negatively (explicit 10x10 PPT-entangled state with K_D=0 in an admitted two-way model, uniform 1/10 trace-distance gap) and disproves PPT-squared in both the two-map and single-channel (M_21) forms, both Lean comparator-checked; via the Choi isomorphism this also refutes OQP #38's state-swapping form. For 266 the accurate status line is 'N(6)<=5 proved (exact + Lean); N(6)=3 claimed, computer-assisted, artifacts unpublished'.",
+  "targets": [
+   {
+    "name": "272 Thm main-state / main-pair / main-channel (introduction.tex L45-105)",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/introduction.tex#L45-L105"
+   },
+   {
+    "name": "Lean DimensionTenPair comparator",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/ComparatorChallenges/DimensionTenPair.lean#L112-L120"
+   },
+   {
+    "name": "Lean DimensionTenChannel comparator",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/ComparatorChallenges/DimensionTenChannel.lean#L45-L49"
+   },
+   {
+    "name": "IQOQI open quantum problems list (#13, #24, #38)",
+    "url": "https://oqp.iqoqi.oeaw.ac.at/open-quantum-problems"
+   },
+   {
+    "name": "OQP #38 PPT-squared conjecture page",
+    "url": "https://oqp.iqoqi.oeaw.ac.at/the-ppt-squared-conjecture/"
+   },
+   {
+    "name": "toqito mutually_unbiased_basis raises for d=6 (could return the 3 tensor MUBs)",
+    "url": "https://github.com/vprusso/toqito/blob/4baf22e6f3da78ac9a01352de1980e2441c6cc77/toqito/states/mutually_unbiased_basis.py#L56-L65"
+   }
+  ],
+  "benefit_type": "redirect",
+  "beneficiaries": "Quantum information researchers choosing problems; students",
+  "first_step": "Email OQP maintainers with precise statements and model caveats; open a toqito issue for d=6 behaviour.",
+  "measurement": "OQP entries updated; toqito issue/PR accepted.",
+  "risks": "Overstating 266; 272's zero-key result is model-specific (admitted completed protocols) and its secrecy theorem is not comparator-formalized.",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 5,
+   "practicality": 5,
+   "confidence": 4,
+   "effort": 5,
+   "time_to_value": 5
+  },
+  "verdict": "pursue now"
+ },
+ {
+  "id": "qinfo-6",
+  "title": "Key repeaters over PPT links: swap-then-distill still yields zero key (the operational consequence PPT-squared was wanted for)",
+  "families": [
+   272
+  ],
+  "channels": [
+   "QUANT",
+   "CRYPTO"
+  ],
+  "tier": "T3",
+  "action": "RESEARCH",
+  "summary": "PPT states are Choi matrices of PPT maps; swapping two of them with any BC effect M gives sigma_AD proportional to [(F^dag (x) G^dag)(M)]^T (verified numerically to 1.8e-12 relative), which lies in the paper's represented class C, so Thm zero-key gives K_D(sigma_AD)=0 even though Thm main-pair shows sigma_AD can be entangled. Likewise any end-to-end state through PPT link - arbitrary CP station operation - PPT link is in C. This rescues the 'PPT states are useless in (swap-then-distill) key repeaters' conclusion without PPT-squared, strengthening Bauml-Christandl-Horodecki-Winter's bound for this protocol class; fully adaptive tripartite LOCC repeaters remain open.",
+  "targets": [
+   {
+    "name": "272 represented class C (foundations.tex L140-152)",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/foundations.tex#L140-L152"
+   },
+   {
+    "name": "272 Thm zero-key (secret-key.tex L121-136)",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/secret-key.tex#L121-L136"
+   },
+   {
+    "name": "Bauml-Christandl-Horodecki-Winter, Limitations on quantum key repeaters (Nat. Commun. 2015)",
+    "url": "https://arxiv.org/abs/1402.5927"
+   },
+   {
+    "name": "Christandl-Ferrara, swapping of perfect secrecy (PRL 2017)",
+    "url": "https://arxiv.org/abs/1609.04696"
+   }
+  ],
+  "benefit_type": "redirect",
+  "beneficiaries": "Quantum-network / key-repeater capacity theorists",
+  "first_step": "Write a 3-page note: Choi-swap identity + flag trick placing station-conditioned states in C; check conditioning on the station's public outcome against Prop. operational-extensions; test adaptive station protocols.",
+  "measurement": "Note posted/refereed; acknowledgement by repeater-limitations authors.",
+  "risks": "Our derivation is unrefereed; zero-key theorem lacks a comparator formalization; protocol-model mismatches (aborts, adaptive multi-round station) could limit scope.",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 3,
+   "practicality": 4,
+   "confidence": 3,
+   "effort": 3,
+   "time_to_value": 3
+  },
+  "verdict": "pursue as research"
+ },
+ {
+  "id": "qinfo-7",
+  "title": "Explicit 10x10 PPT-entangled zero-key state as a hard benchmark for separability software",
+  "families": [
+   272
+  ],
+  "channels": [
+   "QUANT"
+  ],
+  "tier": "T2",
+  "action": "INSTANCES",
+  "summary": "We rebuilt rho=Z/trZ from the paper's integer pencil: PPT, rank 80/100, full local ranks; not detected by CCNR (||R(rho)||_1=0.539<1) or the reduction criterion (min eig +4.9e-4); entanglement is certified only by the product-free-range argument. toqito's full is_separable ran out of 7 GB memory on it. A natural stress test for separability toolkits.",
+  "targets": [
+   {
+    "name": "toqito is_separable (reduction and CCNR stages)",
+    "url": "https://github.com/vprusso/toqito/blob/4baf22e6f3da78ac9a01352de1980e2441c6cc77/toqito/state_props/is_separable.py#L575-L585"
+   },
+   {
+    "name": "toqito CCNR check",
+    "url": "https://github.com/vprusso/toqito/blob/4baf22e6f3da78ac9a01352de1980e2441c6cc77/toqito/state_props/is_separable.py#L1157-L1163"
+   },
+   {
+    "name": "272 explicit integer matrices (certificate.tex)",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/certificate.tex#L14-L31"
+   },
+   {
+    "name": "272 map construction (geometry.tex phi-pair)",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/geometry.tex#L98-L108"
+   }
+  ],
+  "benefit_type": "instances",
+  "beneficiaries": "Developers of toqito/QETLAB-style entanglement detection",
+  "first_step": "Publish the 100x100 matrix (scratch_qinfo/zero_key_state.py) and open a toqito issue proposing it as a regression test that must never return 'separable'.",
+  "measurement": "Inclusion in test suites; which criterion (if any) detects it and at what cost.",
+  "risks": "Limited uptake; DPS hierarchy at 10x10 is expensive, so tests may be skipped.",
+  "scores": {
+   "impact": 1,
+   "reach": 2,
+   "directness": 5,
+   "practicality": 4,
+   "confidence": 4,
+   "effort": 5,
+   "time_to_value": 5
+  },
+  "verdict": "pursue now"
+ },
+ {
+  "id": "qinfo-8",
+  "title": "DO NOT: use threshold parallel repetition for practical (parallel) DIQKD rates",
+  "families": [
+   277
+  ],
+  "channels": [
+   "QUANT",
+   "CRYPTO"
+  ],
+  "tier": "T3",
+  "action": "NONE",
+  "summary": "Explicit cubic rate delta^3/(16384(1+kappa_mu)(1+ln d)) needs ~8.7e10 rounds (CHSH, delta=0.1) to 8e11 (magic square) just for 1e-10 soundness concentration, versus 1.5e6 rounds in the EAT-based Nadlinger et al. 2022 experiment; the universal delta^5 rate has a non-explicit constant from an unrefereed lemma. Threshold concentration above v is not a min-entropy bound and does not apply directly to honest CHSH devices.",
+  "targets": [
+   {
+    "name": "277 Thm main and cubic bound (00-introduction.tex L50-88)",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/00-introduction.tex#L50-L88"
+   },
+   {
+    "name": "277 Song conditioning estimate, kappa0 (04-threshold.tex L193-231)",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/04-threshold.tex#L193-L231"
+   },
+   {
+    "name": "Nadlinger et al. 2022 DIQKD experiment (EAT)",
+    "url": "https://arxiv.org/abs/2109.14600"
+   },
+   {
+    "name": "Jain-Miller-Shi parallel DIQKD",
+    "url": "https://arxiv.org/abs/1703.05426"
+   },
+   {
+    "name": "Vidick parallel DIQKD from parallel repetition",
+    "url": "https://arxiv.org/abs/1703.08508"
+   }
+  ],
+  "benefit_type": "redirect",
+  "beneficiaries": "DIQKD theorists (stay with EAT)",
+  "first_step": "None.",
+  "measurement": "n/a",
+  "risks": "n/a",
+  "scores": {
+   "impact": 1,
+   "reach": 2,
+   "directness": 2,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "verdict": "do not pursue"
+ },
+ {
+  "id": "qinfo-9",
+  "title": "DO NOT: claim the EPnI settles amplifier, mode-dependent-loss, thermal wiretap or thermal-channel trade-off capacities",
+  "families": [
+   273
+  ],
+  "channels": [
+   "COMM",
+   "QUANT"
+  ],
+  "tier": "T4",
+  "action": "NONE",
+  "summary": "The paper disclaims amplifiers, mode-dependent attenuations, additive-noise channels, noisy broadcast, wiretap and quantum capacity. Non-degradable thermal channels need regularized converses; mode-dependent loss needs a non-identical-mode EPnI (open). Pure-loss wiretap/private/quantum and single-user thermal capacities were already unconditional (Wilde-Qi 2016-18; GGCH 2014; GHG 2015; MGH 2014), so citing 273 as 'resolving' them is wrong. Quantitatively, EPnI improves qEPI-based capacity upper bounds for non-Gaussian environments by only 0.02-0.055 bits in our test.",
+  "targets": [
+   {
+    "name": "273 scope disclaimer (intro L63)",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/00-introduction.tex#L63"
+   },
+   {
+    "name": "273 scope disclaimer (broadcast L301-304)",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/06-broadcast.tex#L301-L304"
+   },
+   {
+    "name": "Wilde-Qi energy-constrained private/quantum capacities",
+    "url": "https://arxiv.org/abs/1609.01997"
+   },
+   {
+    "name": "Giovannetti-Garcia-Patron-Cerf-Holevo 2014",
+    "url": "https://arxiv.org/abs/1312.6225"
+   }
+  ],
+  "benefit_type": "redirect",
+  "beneficiaries": "Authors citing 273",
+  "first_step": "None.",
+  "measurement": "n/a",
+  "risks": "n/a",
+  "scores": {
+   "impact": 1,
+   "reach": 2,
+   "directness": 1,
+   "practicality": 3,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "verdict": "do not pursue"
+ },
+ {
+  "id": "qinfo-10",
+  "title": "DO NOT: treat the GADC capacity as relevant to superconducting-qubit engineering or code design",
+  "families": [
+   276
+  ],
+  "channels": [
+   "QUANT"
+  ],
+  "tier": "T4",
+  "action": "NONE",
+  "summary": "At transmon-like parameters (nu=0.008-0.05, gamma=1e-3..1e-2) C=0.975-0.997 bits and prior bounds were already within 0.5-4.5e-3 bits; nobody operates qubits as classical channels at capacity, and the result says nothing about quantum capacity or error correction.",
+  "targets": [
+   {
+    "name": "qiskit-aer amplitude_damping_error / phase_amplitude_damping_error (GADC noise model)",
+    "url": "https://github.com/Qiskit/qiskit-aer/blob/fe964bf3ec37d27175325bb306e752d1c3cb9591/qiskit_aer/noise/errors/standard_errors.py#L351-L460"
+   }
+  ],
+  "benefit_type": "redirect",
+  "beneficiaries": "n/a",
+  "first_step": "None.",
+  "measurement": "n/a",
+  "risks": "n/a",
+  "scores": {
+   "impact": 1,
+   "reach": 2,
+   "directness": 2,
+   "practicality": 5,
+   "confidence": 5,
+   "effort": 5,
+   "time_to_value": 5
+  },
+  "verdict": "do not pursue"
+ },
+ {
+  "id": "qinfo-11",
+  "title": "DO NOT: redesign d=6 tomography/QKD or cite N(6)=3 as established",
+  "families": [
+   266
+  ],
+  "channels": [
+   "QUANT",
+   "COMM"
+  ],
+  "tier": "T4",
+  "action": "NONE",
+  "summary": "Practice (qubit-qutrit tomography, OAM HD-QKD, photonic 'qusix' tests) already assumes no complete MUB set in d=6 and uses 2-3 bases, SIC-POVMs or product measurements; nothing changes operationally. The upper bound 3 is not independently checkable until the artifacts are released.",
+  "targets": [
+   {
+    "name": "D'Ambrosio et al. 2013, six-dimensional photonic MUB test",
+    "url": "https://arxiv.org/abs/1304.4081"
+   },
+   {
+    "name": "McNulty-Weigert review, Quantum 2026",
+    "url": "https://quantum-journal.org/papers/q-2026-04-01-2051/"
+   }
+  ],
+  "benefit_type": "redirect",
+  "beneficiaries": "n/a",
+  "first_step": "None.",
+  "measurement": "n/a",
+  "risks": "n/a",
+  "scores": {
+   "impact": 1,
+   "reach": 2,
+   "directness": 3,
+   "practicality": 5,
+   "confidence": 2,
+   "effort": 5,
+   "time_to_value": 5
+  },
+  "verdict": "do not pursue"
+ },
+ {
+  "id": "qinfo-12",
+  "title": "DO NOT: change deployed QKD security proofs or key-rate software because of the zero-key state",
+  "families": [
+   272
+  ],
+  "channels": [
+   "CRYPTO",
+   "QUANT"
+  ],
+  "tier": "T4",
+  "action": "NONE",
+  "summary": "Fielded QKD computes protocol-specific key rates numerically and never treated entanglement as sufficient; PPT-squared was already known for Gaussian channels, so optical networks have no non-EB PPT links. The construction is a 10x10 abstract state with no physical source.",
+  "targets": [
+   {
+    "name": "Curty-Lewenstein-Lutkenhaus necessity of entanglement (context in 272 intro L128-142)",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/introduction.tex#L128-L142"
+   }
+  ],
+  "benefit_type": "redirect",
+  "beneficiaries": "n/a",
+  "first_step": "None.",
+  "measurement": "n/a",
+  "risks": "n/a",
+  "scores": {
+   "impact": 1,
+   "reach": 3,
+   "directness": 1,
+   "practicality": 3,
+   "confidence": 4,
+   "effort": 3,
+   "time_to_value": 2
+  },
+  "verdict": "do not pursue"
+ },
+ {
+  "id": "qinfo-13",
+  "title": "Threshold repetition as an MIP*/complexity tool (amplification without anchoring)",
+  "families": [
+   277
+  ],
+  "channels": [
+   "CPLX",
+   "QUANT"
+  ],
+  "tier": "T3",
+  "action": "RESEARCH",
+  "summary": "Cor. error-amplification gives two-sided amplification of two-prover one-round entangled games without the anchoring transformation, preserving the question distribution; Lean covers only the delta^13 rate. Value is theoretical (proof-system constructions), no practical constants.",
+  "targets": [
+   {
+    "name": "277 Cor. error-amplification (06-consequences.tex)",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/06-consequences.tex#L9-L49"
+   },
+   {
+    "name": "Lean EntangledGames comparator (delta^13)",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/ComparatorChallenges/EntangledGames.lean#L64-L74"
+   },
+   {
+    "name": "Song, gap exponent three (IACR ePrint 2026/1702)",
+    "url": "https://eprint.iacr.org/2026/1702"
+   }
+  ],
+  "benefit_type": "capability",
+  "beneficiaries": "Quantum complexity theorists",
+  "first_step": "Monitor refereeing of Song 2026 and 277; check whether MIP* constructions can drop anchoring.",
+  "measurement": "Citations in complexity papers.",
+  "risks": "Galactic constants; B4 non-explicit; unrefereed dependency.",
+  "scores": {
+   "impact": 2,
+   "reach": 1,
+   "directness": 3,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 2,
+   "time_to_value": 2
+  },
+  "verdict": "monitor"
+ }
+]

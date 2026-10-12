@@ -1,0 +1,15 @@
+== 101 sanity: uniform on standard simplex in R^n, slack h - (n + 1/2 logdet Cov) (total nats)
+  n=    1: slack=0.24245 nats total, 0.24245 per dim (>=0 required; -> 3/2 - log(2pi)/2 = 0.5811)
+  n=    2: slack=0.34107 nats total, 0.17053 per dim (>=0 required; -> 3/2 - log(2pi)/2 = 0.5811)
+  n=    3: slack=0.39499 nats total, 0.13166 per dim (>=0 required; -> 3/2 - log(2pi)/2 = 0.5811)
+  n=    5: slack=0.45256 nats total, 0.09051 per dim (>=0 required; -> 3/2 - log(2pi)/2 = 0.5811)
+  n=   10: slack=0.50854 nats total, 0.05085 per dim (>=0 required; -> 3/2 - log(2pi)/2 = 0.5811)
+  n=  100: slack=0.57285 nats total, 0.00573 per dim (>=0 required; -> 3/2 - log(2pi)/2 = 0.5811)
+  n= 1000: slack=0.58023 nats total, 0.00058 per dim (>=0 required; -> 3/2 - log(2pi)/2 = 0.5811)
+
+== 101 tightness: additive exponential noise (var 1), Gaussian input power P: I(X;X+Z) - 1/2 log2(1+P)  vs bound 0.6044 bits
+  P=       1: I_gauss-input=1.0557 bits, C_Gauss=0.5000, gap=0.5557 bits (upper bound 0.6044)
+  P=      10: I_gauss-input=2.3337 bits, C_Gauss=1.7297, gap=0.6040 bits (upper bound 0.6044)
+  P=     100: I_gauss-input=3.9335 bits, C_Gauss=3.3291, gap=0.6044 bits (upper bound 0.6044)
+  P=    1000: I_gauss-input=5.5880 bits, C_Gauss=4.9836, gap=0.6044 bits (upper bound 0.6044)
+  P=   10000: I_gauss-input=7.2483 bits, C_Gauss=6.6439, gap=0.6044 bits (upper bound 0.6044)

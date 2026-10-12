@@ -1,0 +1,19 @@
+=== literal 1600d bounds for Thorp (full-permutation TV) ===
+N=2^20: paper (main.tex, op-norm, B=4, u=1): TV <= 2^-3.6   Lean fullRate: TV <= 2^5.8   rounds=1600d=32000
+N=2^32: paper (main.tex, op-norm, B=4, u=1): TV <= 2^-21.6   Lean fullRate: TV <= 2^-6.2   rounds=1600d=51200
+N=2^64: paper (main.tex, op-norm, B=4, u=1): TV <= 2^-69.6   Lean fullRate: TV <= 2^-38.2   rounds=1600d=102400
+
+=== 512d (Random frames Cor shear:cor:512, p=2) floor ===
+N=2^20: p=2,b=8,u=1 floor TV ~ 2^1.8
+N=2^32: p=2,b=8,u=1 floor TV ~ 2^0.2
+N=2^64: p=2,b=8,u=1 floor TV ~ 2^-3.8
+
+N=2^20 eps=2^-32: Thorp-lift (33000, {'b': 8, 'u': 0.5, 'p': 11, 'r_per_block': 3000})  SN-lift (13959, {'b': 8, 'u': 0.5, 'p': 11, 'r_per_block': 1269})  SR(exp,worst,first)=(552.0, 4181, 283)  MaC(total,per-stage)=(5440, 272)  MRS q<2^13.7
+N=2^20 eps=2^-64: Thorp-lift (83980, {'b': 8, 'u': 0.5, 'p': 19, 'r_per_block': 4420})  SN-lift (37240, {'b': 8, 'u': 0.5, 'p': 19, 'r_per_block': 1960})  SR(exp,worst,first)=(855.0, 7042, 435)  MaC(total,per-stage)=(8460, 423)  MRS q<2^13.7
+N=2^20 eps=2^-128: Thorp-lift (246840, {'b': 8, 'u': 0.5, 'p': 34, 'r_per_block': 7260})  SN-lift (113526, {'b': 8, 'u': 0.5, 'p': 34, 'r_per_block': 3339})  SR(exp,worst,first)=(1463.9, 12822, 739)  MaC(total,per-stage)=(14560, 728)  MRS q<2^13.7
+N=2^32 eps=2^-32: Thorp-lift (22656, {'b': 8, 'u': 0.5, 'p': 6, 'r_per_block': 3776})  SN-lift (9792, {'b': 8, 'u': 0.5, 'p': 6, 'r_per_block': 1632})  SR(exp,worst,first)=(729.0, 8231, 372)  MaC(total,per-stage)=(11424, 357)  MRS q<2^25.0
+N=2^32 eps=2^-64: Thorp-lift (52160, {'b': 8, 'u': 0.5, 'p': 10, 'r_per_block': 5216})  SN-lift (23220, {'b': 8, 'u': 0.5, 'p': 10, 'r_per_block': 2322})  SR(exp,worst,first)=(1032.0, 12915, 523)  MaC(total,per-stage)=(16256, 508)  MRS q<2^25.0
+N=2^32 eps=2^-128: Thorp-lift (144576, {'b': 8, 'u': 0.5, 'p': 18, 'r_per_block': 8032})  SN-lift (66600, {'b': 8, 'u': 0.5, 'p': 18, 'r_per_block': 3700})  SR(exp,worst,first)=(1643.0, 22356, 829)  MaC(total,per-stage)=(26048, 814)  MRS q<2^25.0
+N=2^64 eps=2^-32: Thorp-lift (21056, {'b': 4, 'u': 0.5, 'p': 7, 'r_per_block': 3008})  SN-lift (8967, {'b': 4, 'u': 0.5, 'p': 7, 'r_per_block': 1281})  SR(exp,worst,first)=(1194.0, 24184, 604)  MaC(total,per-stage)=(37440, 585)  MRS q<2^56.0
+N=2^64 eps=2^-64: Thorp-lift (37120, {'b': 4, 'u': 0.5, 'p': 10, 'r_per_block': 3712})  SN-lift (16160, {'b': 4, 'u': 0.5, 'p': 10, 'r_per_block': 1616})  SR(exp,worst,first)=(1499.9, 33741, 757)  MaC(total,per-stage)=(47168, 737)  MRS q<2^56.0
+N=2^64 eps=2^-128: Thorp-lift (85952, {'b': 4, 'u': 0.5, 'p': 17, 'r_per_block': 5056})  SN-lift (38794, {'b': 4, 'u': 0.5, 'p': 17, 'r_per_block': 2282})  SR(exp,worst,first)=(2111.9, 52966, 1063)  MaC(total,per-stage)=(66752, 1043)  MRS q<2^56.0

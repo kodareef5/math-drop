@@ -1,0 +1,8 @@
+(500, 0) E/n mean=0.6845 min=0.6742 max=0.7005  t=0.00s  runs=3
+(500, 1000) E/n mean=0.7503 min=0.7462 max=0.7574  t=0.07s  runs=3
+(1000, 0) E/n mean=0.6902 min=0.6845 max=0.6987  t=0.00s  runs=3
+(1000, 1000) E/n mean=0.7489 min=0.7446 max=0.7515  t=0.29s  runs=3
+(1000, 10000) E/n mean=0.7539 min=0.7535 max=0.7542  t=2.97s  runs=6
+(2000, 0) E/n mean=0.6954 min=0.6840 max=0.7156  t=0.00s  runs=3
+(2000, 1000) E/n mean=0.7496 min=0.7472 max=0.7535  t=1.74s  runs=3
+(2000, 10000) E/n mean=0.7578 min=0.7558 max=0.7603  t=20.03s  runs=6

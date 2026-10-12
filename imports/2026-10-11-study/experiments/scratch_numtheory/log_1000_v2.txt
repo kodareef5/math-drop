@@ -1,0 +1,7 @@
+Analytic 5-rank is 2, actual 5-rank is at most 2.
+    by Stein-Wuthrich.
+
+conductor range 1000 1200 rank<=1 optimal curves 659
+fully proved by prove_BSD: 567
+primes left open: 73 timeout/error: 19
+elapsed 1657.3

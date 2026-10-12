@@ -1,0 +1,20 @@
+[
+ {
+  "n": 264,
+  "m": 3566,
+  "sec_per_1e6_trades": 2.65,
+  "certified_burnin_trades": "1.99e+08",
+  "burnin_seconds": 527.6,
+  "thin_trades_for_autocorr_0p01": "1.60e+05",
+  "thin_seconds": 0.423
+ },
+ {
+  "n": 1000,
+  "m": 10202,
+  "sec_per_1e6_trades": 2.03,
+  "certified_burnin_trades": "1.24e+10",
+  "burnin_seconds": 25297.8,
+  "thin_trades_for_autocorr_0p01": "2.30e+06",
+  "thin_seconds": 4.68
+ }
+]

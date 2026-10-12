@@ -1,0 +1,50 @@
+[
+ {
+  "network": "ER n=60 p=0.5 (dense)",
+  "n": 60,
+  "m": 860,
+  "dmax": 36,
+  "CV_deg_sw": 0.0008,
+  "valid_fraction": 0.269
+ },
+ {
+  "network": "ER n=40 p=0.8 (very dense)",
+  "n": 40,
+  "m": 624,
+  "dmax": 35,
+  "CV_deg_sw": 0.003,
+  "valid_fraction": 0.04
+ },
+ {
+  "network": "star+ring hubs (wheel W_60)",
+  "n": 60,
+  "m": 118,
+  "dmax": 59,
+  "CV_deg_sw": 0.0004,
+  "valid_fraction": 0.324
+ },
+ {
+  "network": "Chung-Lu power-law gamma=2.1 n=1000",
+  "n": 1000,
+  "m": 722,
+  "dmax": 99,
+  "CV_deg_sw": 0.0113,
+  "valid_fraction": 0.804
+ },
+ {
+  "network": "powerlaw_cluster n=500",
+  "n": 500,
+  "m": 1487,
+  "dmax": 67,
+  "CV_deg_sw": 0.0022,
+  "valid_fraction": 0.925
+ },
+ {
+  "network": "complete bipartite-ish K_{10,40} plus matching",
+  "n": 50,
+  "m": 420,
+  "dmax": 40,
+  "CV_deg_sw": 0.0255,
+  "valid_fraction": 0.103
+ }
+]

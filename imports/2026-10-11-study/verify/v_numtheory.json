@@ -1,0 +1,19 @@
+[
+  {
+    "id": "numtheory-1",
+    "status": "plausible-needs-expert",
+    "note": "The analytic implication holds. EKN Lemma 2 ties Tatuzawa's one exception to a real zero in (1-eps/4, 1), which is above 0.977 > 7/8 for eps = 1/log|D|. Hoffstein's single-character lemma (h > 0.041 sqrt|D|/log|D|, |D| > 1e6) and my own Hecke-integral argument from 003 alone reach the same no-exception conclusion; mine is about 3x stronger (2^40 covers h <= ~9,900, and h <= 457 needs only |D| <= 1.2e9). I reproduced the whole Watkins table for h <= 100 (counts and max|D|) by enumerating |D| <= 3.73e7. 'Unconditional' rests on 003 (no sorry/axiom in its 2,924-file OAI closure, but no independent Comparator run) and on PARI's documented, not certified, qfbclassno range |D| < 2e10. Mosunov-Jacobson's 2^40 run is unconditional but publishes no per-h lists.",
+    "verdict": "pursue now, gated on an independent Comparator/expert check of 003"
+  },
+  {
+    "id": "numtheory-3",
+    "status": "confirmed",
+    "note": "Both bugs are in sagemath/sage develop 0835358 (2026-10-11): BSD.py L845/L899 pass secs_dc= to heegner_index_bound(self, D=0, prec=5, max_height=None) (heegner.py L6815), and L805 assigns into a tuple. Both crash in passagemath 10.8.12: 1014e1 raises TypeError 'unexpected keyword argument secs_dc' and 1058d1 raises \"'tuple' object does not support item assignment\". The secs_dc call dates to commit 8b6a73af07 (2015), which un-commented '#, secs_dc=secs_dc'. With the obvious two-line fix, 1014e1/1050c1/1176d1/1200b1/1200h1 prove fully, 1058d1 and 1200q1 leave [5], and 1078m1 times out at 120 s. The L660 pattern is unreachable today (only p=2 is in BSD.bounds there and that loop skips p=2), so it is latent, not a live crash."
+  },
+  {
+    "id": "numtheory-4",
+    "status": "confirmed",
+    "note": "Caraiani-Newton Thm 1.1 (Cor 7.1.2, arXiv 2301.10509v3): if K is imaginary quadratic and X_0(15)(K) is finite, every E/K is modular. That holds iff 15a1^(d) has rank 0 over Q. Exact modular-symbol L-ratios are nonzero for exactly d = -3,-4,-8,-15,-19,-20,-23,-31,-35,-47,-79,-83,-87,-91 among the 32 LMFDB fields (|d| < 100 or h = 1). The other 18 twists have proved rank 1, or rank 2 for d = -68, -95. LMFDB has not done this: the live rcs.cande.ec knowl (last edited 2024-07-17) still says 'Assuming modularity' and never mentions Caraiani-Newton.",
+    "scores": {"confidence": 4}
+  }
+]

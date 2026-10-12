@@ -1,0 +1,45 @@
+[
+ {
+  "d": [
+   4,
+   4,
+   2,
+   2,
+   2,
+   2
+  ],
+  "connectivity": false,
+  "N": 13,
+  "patched_TV_uniform": 0.0091,
+  "p_uniform": 0.796
+ },
+ {
+  "d": [
+   3,
+   3,
+   3,
+   3,
+   3,
+   3
+  ],
+  "connectivity": false,
+  "N": 70,
+  "patched_TV_uniform": 0.0257,
+  "p_uniform": 0.785
+ },
+ {
+  "d": [
+   4,
+   4,
+   3,
+   3,
+   2,
+   2,
+   2
+  ],
+  "connectivity": true,
+  "N": 249,
+  "patched_TV_uniform": 0.0534,
+  "p_uniform": 0.104
+ }
+]

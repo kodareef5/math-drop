@@ -1,0 +1,231 @@
+[
+  {
+    "id": "optimization-1",
+    "title": "Ship the explicit 23-variable nonspectrahedral cone plus its exact 100x100 SDP lift as a paired solver test instance",
+    "families": [95],
+    "channels": ["OPT"],
+    "tier": "T2",
+    "action": "INSTANCES",
+    "summary": "This is the only known cone that is provably not spectrahedral yet has a certified exact SDP lift, so native hyperbolic solves and lifted SDP solves must agree exactly. I built it and verified it numerically. The lift boundary matches the true boundary to relative error at most 1e-5 on 34 rays, including singular-X boundary points. On 19 random instances the native barrier, Clarabel and SCS agree to about 4e-7. The lifted optimum is degenerate (rank 25 of 100), and Clarabel reports optimal_inaccurate on 18 of 19.",
+    "targets": [
+      {"name": "LMCO hyperbolic programming benchmark library", "url": "https://github.com/mehdi-karimi-math/Library-for-Modern-Convex-Optimization/tree/b9a92607d160b16bd5e02d045ebb3e9cef501c62/Hyperbolic%20Programming"},
+      {"name": "DDS 'HB' constraint input formats", "url": "https://github.com/mehdi-karimi-math/DDS/blob/c4dc57d6b4f0435ab6ff9258ffa7e0a33cd0d6c7/Test_Examples/hyperbolic-program/HB_Different_Formats.m#L18-L80"},
+      {"name": "Hypatia.jl generic cone oracle interface", "url": "https://github.com/jump-dev/Hypatia.jl/blob/fcb279a246294c7198eb8af9ed1f46ded02996a3/src/Cones/Cones.jl#L63-L141"},
+      {"name": "Lift definition (moment matrix, Thm 1.1)", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/An-Exact-Semidefinite-Lift-of-a-Nonspectrahedral-Hyperbolicity-Cone-October-5-2026/build/sections/lift.tex#L40-L207"}
+    ],
+    "benefit_type": "instances",
+    "beneficiaries": "Developers of hyperbolic-programming and moment-lift solvers (DDS, Hypatia, alfonso, research first-order codes); a small community",
+    "first_step": "Port /home/claude/work/repos/scratch_optimization/hyp_cone.py (q, slice pencil, lift builder) into LMCO .mat format, and encode q as a division-free (Berkowitz) straight-line program for DDS.",
+    "measurement": "Native vs lifted objective agreement, iteration counts and status flags. Baseline: native barrier median 71 Newton steps and 0.2 s; Clarabel median 9 iterations and 2.5 s, 18/19 inaccurate; SCS median 225 iterations and 0.74 s; max objective difference about 4e-7.",
+    "risks": "Tiny audience. Says nothing about scale. The lift paper is not Lean-formalized (numerics support it). The lift's 307 auxiliary variables include 126 that never appear in the matrix.",
+    "scores": {"impact": 1, "reach": 1, "directness": 5, "practicality": 5, "confidence": 4, "effort": 5, "time_to_value": 5},
+    "verdict": "pursue now"
+  },
+  {
+    "id": "optimization-2",
+    "title": "Treat 'hyperbolic programs are strictly more expressive than SDP' as a solver-roadmap driver",
+    "families": [95],
+    "channels": ["OPT"],
+    "tier": "T3",
+    "action": "NONE",
+    "summary": "The only proven non-liftable hyperbolicity cone has m=330, r=20N-1 with N>12,960, so ambient dimension and degree are each about 6.7e10. Every hyperbolicity cone used in practice or benchmarks is known liftable or merely large-lift (derivative relaxations: Saunderson-Parrilo; elementary-symmetric cones: Branden). DDS 3.0 already argues for native solvers on lift size, not lift existence, so no solver team (MOSEK, Clarabel, SCS, Hypatia) faces this decision.",
+    "targets": [
+      {"name": "Non-liftable construction parameters", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Hyperbolicity-Cones-Without-Semidefinite-Lifts-October-5-2026/build/source/01-introduction.tex#L33-L139"},
+      {"name": "DDS 3.0 paper (arXiv 2602.23260)", "url": "https://arxiv.org/abs/2602.23260"}
+    ],
+    "benefit_type": "redirect",
+    "beneficiaries": "None in practice; theoretical justification only",
+    "first_step": "None. At most, cite the result in hyperbolic-solver documentation as an existence-level justification.",
+    "measurement": "n/a",
+    "risks": "Overclaiming practical relevance. The non-liftable paper is not Lean-formalized.",
+    "scores": {"impact": 1, "reach": 1, "directness": 2, "practicality": 1, "confidence": 3, "effort": 5, "time_to_value": 5},
+    "verdict": "do not pursue"
+  },
+  {
+    "id": "optimization-3",
+    "title": "Update textbooks, surveys and benchmark docs: MIRUP is false and OPT+C bin packing is NP-hard",
+    "families": [118],
+    "channels": ["OPT", "CPLX"],
+    "tier": "T2",
+    "action": "REDIRECT",
+    "summary": "Lean-checked: for every c there is an instance with integral LP=B and OPT>B+c (sizes >1/6), and an OPT+C polynomial algorithm exists iff P=NP. This closes Williamson-Shmoys Ch.17 Problem 3 (conditionally on P!=NP) and the Scheithauer-Terno MIRUP conjecture. Witnesses are tower-sized: P0=100^11, d>=2.4e27 tree phases, denominators [100(D*+1)]^L. The hardness needs exponentially large denominators, so it says nothing about poly-capacity instances such as BPPLIB. No solver change is needed; ceil(LP) remains a valid bound, and VPSolver has no IRUP or MIRUP logic.",
+    "targets": [
+      {"name": "Theorem statements (thm:unbounded-gap, thm:additive-hardness, cor:complexity-equiv)", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Additive-hardness-and-unbounded-configuration-gaps-in-bin-packing-September-24-2026/build/source/introduction.tex#L87-L118"},
+      {"name": "BPPLIB (Delorme-Iori-Martello)", "url": "https://site.unibo.it/operations-research/en/research/bpplib-a-bin-packing-problem-library"},
+      {"name": "VPSolver (no IRUP/MIRUP logic)", "url": "https://github.com/fdabrandao/vpsolver/tree/c01e1d38a12ec25a6398aa36c7629bb2ceca8404"}
+    ],
+    "benefit_type": "redirect",
+    "beneficiaries": "Approximation-algorithms researchers (stop seeking OPT+O(1)); cutting-stock theorists; textbook and survey authors",
+    "first_step": "Send a short note to the cutting-stock community (Scheithauer, Kartak, Rietz) and the BPPLIB maintainers, stating precisely: MIRUP is false with integral LP; witnesses are astronomically large; ceil(LP) practice is unaffected.",
+    "measurement": "Errata, edition and survey updates; citations",
+    "risks": "Negligible. Readers may wrongly infer a practical impact on branch-and-price or arc-flow; the note must say there is none.",
+    "scores": {"impact": 2, "reach": 2, "directness": 4, "practicality": 5, "confidence": 5, "effort": 5, "time_to_value": 5},
+    "verdict": "pursue now"
+  },
+  {
+    "id": "optimization-4",
+    "title": "Find the smallest bin-packing / cutting-stock instance with OPT - LP >= 2",
+    "families": [118],
+    "channels": ["OPT"],
+    "tier": "T3",
+    "action": "RESEARCH",
+    "summary": "With MIRUP disproved, the size of the smallest witness is a well-posed open problem. The best computational gap remains 6/5 (non-proper) and 1.1 (proper, Kartak-Ripatti 2019). The paper's competing-tree reduction gives no usable size bound, so new ideas or large computational searches are needed. This is a real theory item but has no practical consequence, because ceil(LP) is used only as a lower bound.",
+    "targets": [
+      {"name": "Kartak et al., minimal proper non-IRUP instances (arXiv 1405.5988)", "url": "https://arxiv.org/abs/1405.5988"},
+      {"name": "Competing-trees lemma (source of tower-size growth)", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Additive-hardness-and-unbounded-configuration-gaps-in-bin-packing-September-24-2026/build/source/trees.tex#L22-L60"}
+    ],
+    "benefit_type": "instances",
+    "beneficiaries": "Cutting-stock theory researchers",
+    "first_step": "Check whether the vertex-cover/K4 mechanism admits a version with c=1 and small d (the d>=72K requirement comes from the P0 score slack), or seed Kartak-Ripatti search heuristics with gap-amplifying compositions of known 6/5 instances.",
+    "measurement": "Explicit instance with verified LP and OPT, gap >= 2",
+    "risks": "May need tower-scale instances in any construction; open-ended",
+    "scores": {"impact": 1, "reach": 1, "directness": 1, "practicality": 2, "confidence": 3, "effort": 1, "time_to_value": 1},
+    "verdict": "pursue as research"
+  },
+  {
+    "id": "optimization-5",
+    "title": "Use the MIRUP counterexample family as benchmark instances, or change branch-and-price/arc-flow stopping rules",
+    "families": [118],
+    "channels": ["OPT"],
+    "tier": "T4",
+    "action": "NONE",
+    "summary": "The gap instances cannot be written down. The competing-tree gadget runs 2d-1 (about 4.8e27) phases, with leaf counts 1 -> 2 -> 10 -> 699,050 -> about 2^699050 within the first four, so item denominators are tower-sized. Exact solvers use ceil(LP) only as a valid lower bound; nothing relies on OPT <= ceil(LP)+1.",
+    "targets": [
+      {"name": "Instance parameters", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Additive-hardness-and-unbounded-configuration-gaps-in-bin-packing-September-24-2026/build/source/instance.tex#L28-L45"}
+    ],
+    "benefit_type": "instances",
+    "beneficiaries": "None",
+    "first_step": "None",
+    "measurement": "n/a",
+    "risks": "n/a",
+    "scores": {"impact": 1, "reach": 1, "directness": 2, "practicality": 1, "confidence": 5, "effort": 1, "time_to_value": 1},
+    "verdict": "do not pursue"
+  },
+  {
+    "id": "optimization-6",
+    "title": "Replace zstd COVER/FASTCOVER segment concatenation with a superstring (2-approximation) packer",
+    "families": [128],
+    "channels": ["ALGO", "COMM"],
+    "tier": "T4",
+    "action": "NONE",
+    "summary": "Verified in code: COVER_selectSegment and FASTCOVER_selectSegment maximise distinct-dmer frequency coverage, zero out covered dmers, and memcpy segments back to front. The objective is coverage under a byte budget, not superstring length. Measured on 1,278 C++ files (17.8 MB, 112,640-byte dictionary, k=200, d=8): any superstring merge of the selected segments saves at most 1.06% (COVER) or 1.29% (FASTCOVER), by a cycle-cover bound. Plain greedy already achieves 1.05% and 1.29%.",
+    "targets": [
+      {"name": "zstd COVER_selectSegment", "url": "https://github.com/facebook/zstd/blob/49cf51799ea051457f57243527aa2058f999f005/lib/dictBuilder/cover.c#L481-L569"},
+      {"name": "zstd COVER_buildDictionary (memcpy L799)", "url": "https://github.com/facebook/zstd/blob/49cf51799ea051457f57243527aa2058f999f005/lib/dictBuilder/cover.c#L751-L807"},
+      {"name": "zstd FASTCOVER_selectSegment", "url": "https://github.com/facebook/zstd/blob/49cf51799ea051457f57243527aa2058f999f005/lib/dictBuilder/fastcover.c#L137-L219"},
+      {"name": "zstd FASTCOVER_buildDictionary (memcpy L445)", "url": "https://github.com/facebook/zstd/blob/49cf51799ea051457f57243527aa2058f999f005/lib/dictBuilder/fastcover.c#L391-L453"},
+      {"name": "zstd legacy ZDICT_tryMerge", "url": "https://github.com/facebook/zstd/blob/49cf51799ea051457f57243527aa2058f999f005/lib/dictBuilder/zdict.c#L356-L416"},
+      {"name": "zstd ZDICT_trainFromBuffer default = FASTCOVER", "url": "https://github.com/facebook/zstd/blob/49cf51799ea051457f57243527aa2058f999f005/lib/dictBuilder/zdict.c#L1111-L1127"}
+    ],
+    "benefit_type": "speed",
+    "beneficiaries": "None (at most about 1% of the dictionary budget could be freed, and greedy already does that)",
+    "first_step": "None. If anyone wants the ~1%, a greedy overlap post-pass suffices; the paper's algorithm is unnecessary.",
+    "measurement": "Done: seg_overlap.py in scratch_optimization",
+    "risks": "n/a",
+    "scores": {"impact": 1, "reach": 3, "directness": 2, "practicality": 2, "confidence": 5, "effort": 3, "time_to_value": 3},
+    "verdict": "do not pursue"
+  },
+  {
+    "id": "optimization-7",
+    "title": "Certify k-mer superstring tools (KmerCamel) with the paper's forced-count lower bound W",
+    "families": [128],
+    "channels": ["ALGO", "BIO"],
+    "tier": "T2",
+    "action": "BENCHMARK",
+    "summary": "I implemented W (extension rules, period rule with blocking functional) and validated W <= OPT on 2,342 tiny instances, with zero violations. On k=31 k-mer sets from 100 kb of S. pneumoniae, W equals KmerCamel's existing cycle-cover bound exactly; the period rule never raises a count, and certified greedy gaps are 0-0.012%. W costs 300-440 s in Python against 0.1-0.5 s for the cycle cover. Only on subsampled synthetic tandem-repeat sets did W beat the cycle cover, by 0.3% (4,969 vs 4,955). Incidental finding not from the paper: KmerCamel greedy is 12.5% above optimum on a tandem-repeat set (OPT bracketed in [5071, 5072]); its own existing bound already certifies this.",
+    "targets": [
+      {"name": "KmerCamel LowerBoundLength (cycle cover)", "url": "https://github.com/OndrejSladky/kmercamel/blob/474ea890c5f09aea1bf04f5ca2b5c6f98a299e5a/src/lower_bound.h#L7-L37"},
+      {"name": "KmerCamel OverlapHamiltonianPath (greedy / cycle-cover mode)", "url": "https://github.com/OndrejSladky/kmercamel/blob/474ea890c5f09aea1bf04f5ca2b5c6f98a299e5a/src/global.h#L38-L133"},
+      {"name": "Paper count rules and W", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-Polynomial-Time-2-Approximation-for-Shortest-Common-Superstring-September-24-2026/build/sections/02-counts.tex#L28-L107"}
+    ],
+    "benefit_type": "guarantee",
+    "beneficiaries": "k-mer set compression researchers working on extremely repetitive sequence (satellite arrays); otherwise none",
+    "first_step": "If pursued: port scs_W.py to C++ on KmerCamel's k-mer hash and evaluate on T2T centromeric satellite arrays, where the period rule could fire. Separately, report the 12.5% greedy gap on tandem-repeat sets to the KmerCamel authors (independent of this paper).",
+    "measurement": "W minus cycle-cover bound, as a percentage, on repetitive real data; runtime of a C++ W",
+    "risks": "Measured: no gain on genome k-mer sets and about 1000x cost. The gain appears only on short-k or pathological periodic inputs.",
+    "scores": {"impact": 1, "reach": 1, "directness": 4, "practicality": 3, "confidence": 5, "effort": 3, "time_to_value": 3},
+    "verdict": "monitor"
+  },
+  {
+    "id": "optimization-8",
+    "title": "Proven optima for K_n / K_{m,n} crossing numbers: OEIS, crossing-minimization benchmarks, OGDF test oracle",
+    "families": [165],
+    "channels": ["GEO", "FOUND"],
+    "tier": "T2",
+    "action": "CERTIFY",
+    "summary": "cr(K_n) and cr(K_{m,n}) are proven equal to the Hill and Zarankiewicz formulas for all n (Lean-checked). OEIS A000241 still lists terms only to n=14 with no 2026 'proved' edit. The Star-Struck benchmark sets 'Complete' (K5-K50, 46 graphs) and 'Complete-Bip.' (666 graphs) currently measure heuristics against the best solution found, and can now report gaps to proven optima. OGDF heuristic tests can use Z(n) as a valid lower-bound oracle for all n (today only K10 >= 60).",
+    "targets": [
+      {"name": "OEIS A000241", "url": "https://oeis.org/A000241"},
+      {"name": "OGDF crossing-minimizer tests (testComputation, K_n cases)", "url": "https://github.com/ogdf/ogdf/blob/1a40505ac00677a58ab5ce532e1dcc3bd63116e5/test/src/planarity/crossing-minimizer.cpp#L128-L291"},
+      {"name": "Chimani et al. benchmark sets (arXiv 2108.11443)", "url": "https://arxiv.org/pdf/2108.11443v3"}
+    ],
+    "benefit_type": "formalization",
+    "beneficiaries": "Graph-drawing heuristic researchers, OGDF maintainers, OEIS readers",
+    "first_step": "Submit the OEIS edit citing the Lean-checked theorem, and open an OGDF PR adding K_n/K_{m,n} lower-bound sanity tests from the formulas.",
+    "measurement": "OEIS entry updated; benchmark papers report exact optimality gaps on the 712 complete and complete-bipartite instances",
+    "risks": "Low value: heuristics already matched the Z(n) upper-bound drawings. The result does not cover rectilinear (straight-line) crossing numbers.",
+    "scores": {"impact": 1, "reach": 2, "directness": 5, "practicality": 5, "confidence": 5, "effort": 5, "time_to_value": 5},
+    "verdict": "pursue now"
+  },
+  {
+    "id": "optimization-9",
+    "title": "Use exact cr(K_n) for VLSI, photonic or layout design decisions",
+    "families": [165],
+    "channels": ["GEO"],
+    "tier": "T4",
+    "action": "NONE",
+    "summary": "Multilayer layouts make crossings free, and straight-line drawings use the rectilinear crossing number, which is larger and not settled by this result. The asymptotic constant was already known to within about 1.5%. No design decision changes.",
+    "targets": [
+      {"name": "Lean scope doc 165", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/docs/165.md"}
+    ],
+    "benefit_type": "capability",
+    "beneficiaries": "None",
+    "first_step": "None",
+    "measurement": "n/a",
+    "risks": "n/a",
+    "scores": {"impact": 1, "reach": 1, "directness": 2, "practicality": 2, "confidence": 5, "effort": 5, "time_to_value": 5},
+    "verdict": "do not pursue"
+  },
+  {
+    "id": "optimization-10",
+    "title": "Integer-programming proximity / DP state-space reduction via the Euclidean Steinitz bound",
+    "families": [97],
+    "channels": ["OPT", "ALGO"],
+    "tier": "T3",
+    "action": "NONE",
+    "summary": "The constant is C = 2 D* A0 / sigma with sigma = min{1/2, kappa*delta/(sqrt2*pi)} = 5.6e-4. That gives C >= 3554*A0, with A0 > c1*sqrt(C_phi) never quantified (about 1e4 if C_phi >= 1). An l2-ball DP beats the l_inf Steinitz bound m*Delta only when sqrt(m) > C*Delta2/Delta, i.e. m > C^2, about 1e7 constraints, far outside where (m*Delta)^m DPs run. The result is existential with no algorithm, and Aliev et al. 2026 already give an optimal Euclidean proximity bound without Steinitz.",
+    "targets": [
+      {"name": "Constant assembly C=2D*A0/sigma", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026/build/assembly.tex#L179-L244"},
+      {"name": "Non-algorithmic statement", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026/build/introduction.tex#L36-L51"},
+      {"name": "Aliev-Averkov-Jones-Oertel optimal proximity (arXiv 2606.13579)", "url": "https://arxiv.org/abs/2606.13579"}
+    ],
+    "benefit_type": "speed",
+    "beneficiaries": "None",
+    "first_step": "None",
+    "measurement": "n/a",
+    "risks": "n/a",
+    "scores": {"impact": 1, "reach": 1, "directness": 1, "practicality": 1, "confidence": 4, "effort": 1, "time_to_value": 1},
+    "verdict": "do not pursue"
+  },
+  {
+    "id": "optimization-11",
+    "title": "Planar / bounded-treewidth flow-cut gap constants for sparsest cut or graph partitioning",
+    "families": [89],
+    "channels": ["NET", "OPT"],
+    "tier": "T3",
+    "action": "NONE",
+    "summary": "The planar distortion is C = 16m/(pb) with p = 2^-(2*M_pack+10) and M_pack = 2+ceil(1600R/g) = 1.6e9 (R=1e-8, g=1e-14), so C >= 2^(3.2e9), about 10^(9.6e8). The triage's figure of about 1e60 is far too small. C_k for treewidth is non-explicit (compactness). Rao's O(sqrt(log n)) is smaller for every physically possible n, and partitioners (METIS, KaHIP, Scotch) are heuristic.",
+    "targets": [
+      {"name": "Planar constant assembly", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Planar-Graph-Metrics-Embed-into-L1-with-Constant-Distortion-September-23-2026/build/sections/assembly.tex#L56-L273"},
+      {"name": "M_pack definition", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Planar-Graph-Metrics-Embed-into-L1-with-Constant-Distortion-September-23-2026/build/sections/main-packing.tex#L330-L339"},
+      {"name": "Numerical scale constants", "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Planar-Graph-Metrics-Embed-into-L1-with-Constant-Distortion-September-23-2026/build/sections/scale-setup.tex#L30-L35"}
+    ],
+    "benefit_type": "guarantee",
+    "beneficiaries": "None in practice; approximation-algorithms theory only",
+    "first_step": "None",
+    "measurement": "n/a",
+    "risks": "n/a",
+    "scores": {"impact": 1, "reach": 1, "directness": 1, "practicality": 1, "confidence": 4, "effort": 1, "time_to_value": 1},
+    "verdict": "do not pursue"
+  }
+]

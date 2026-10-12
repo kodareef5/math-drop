@@ -1,0 +1,342 @@
+[
+  {
+    "id": "seqdesign-1",
+    "title": "Certify the Barker/circulant-Hadamard classification in reference works (Wikipedia, OEIS, MathWorld, MATLAB docs)",
+    "families": [
+      179
+    ],
+    "channels": [
+      "COMM",
+      "FOUND"
+    ],
+    "tier": "T2",
+    "action": "CERTIFY",
+    "summary": "The circulant Hadamard theorem (orders 1 and 4 only) is Lean-checked against a comparator statement using only the three standard axioms, and it closes the even-length Barker case, which was the only open case. Together with Turyn-Storer and Schmidt-Willms (odd lengths, peer-reviewed), binary Barker sequences of length n>1 exist exactly for n in {2,3,4,5,7,11,13}. As of Oct 2026, Wikipedia (Barker code, Hadamard matrix), OEIS A091704, MathWorld and MATLAB docs still say 'conjectured', 'open' or 'maximum known'.",
+    "targets": [
+      {
+        "name": "Lean theorem exists_iff_order_one_or_four (openai/math @fd4aeeb)",
+        "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/LinearAlgebra/CirculantHadamard/Main.lean#L19-L34"
+      },
+      {
+        "name": "Lean theorem even_length_eq_two_or_four",
+        "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/LinearAlgebra/Barker/Main.lean#L63-L73"
+      },
+      {
+        "name": "Wikipedia: Barker code (says even case open)",
+        "url": "https://en.wikipedia.org/wiki/Barker_code"
+      },
+      {
+        "name": "Wikipedia: Hadamard matrix (circulant conjecture listed as open)",
+        "url": "https://en.wikipedia.org/wiki/Hadamard_matrix"
+      },
+      {
+        "name": "OEIS A091704 (comment: 'conjectured', Borwein-Mossinghoff window)",
+        "url": "https://oeis.org/A091704"
+      },
+      {
+        "name": "MathWorld Barker Code",
+        "url": "https://mathworld.wolfram.com/BarkerCode.html"
+      },
+      {
+        "name": "MATLAB comm.BarkerCode docs ('maximum known Barker code length is 13')",
+        "url": "https://www.mathworks.com/help/comm/ref/comm.barkercode-system-object.html"
+      },
+      {
+        "name": "formal-conjectures Barker statement still tagged 'research open' (@cd69121)",
+        "url": "https://github.com/google-deepmind/formal-conjectures/blob/cd6912171c5a1de06905795e5533ec7120f34ddc/FormalConjectures/Arxiv/2104.00502/BarkerSequence.lean#L48-L51"
+      }
+    ],
+    "benefit_type": "guarantee",
+    "beneficiaries": "Radar/sonar/spread-spectrum engineers and students reading reference material; sequence-design researchers who would otherwise spend effort on even-length Barker searches",
+    "first_step": "Edit the Wikipedia 'Barker code' Conjecture section to say the even case follows from the circulant Hadamard theorem (OpenAI preprint, Sept 2026, with a Lean proof), while flagging that the paper is a non-peer-reviewed preprint. Also submit an OEIS A091704 comment edit and re-tag the formal-conjectures Barker statement 'solved' with a link to the Lean proof.",
+    "measurement": "Number of reference pages updated, and whether editors accept a Lean-verified preprint as a source. Wikipedia's reliable-source policy may require peer-reviewed publication first.",
+    "risks": "Citation politics: Wikipedia and OEIS editors may hold out for journal publication. Five earlier complete proofs had been claimed (2016-2025) without acceptance, so caution is reasonable even with Lean, since Lean checks the statement as formalized and the comparator statement must be read. The engineering decision is unchanged, because nobody has designed a system expecting a Barker code longer than 13 since 1961.",
+    "scores": {
+      "impact": 2,
+      "reach": 3,
+      "directness": 5,
+      "practicality": 5,
+      "confidence": 5,
+      "effort": 5,
+      "time_to_value": 5
+    },
+    "verdict": "pursue now"
+  },
+  {
+    "id": "seqdesign-2",
+    "title": "Upstream circulant-Hadamard + even-Barker proof to Mathlib (Archive first)",
+    "families": [
+      179
+    ],
+    "channels": [
+      "VERIF"
+    ],
+    "tier": "T2",
+    "action": "FORMALIZE",
+    "summary": "The proof is about 9.5k lines in 68 files, plus about 280 lines in 5 files for Barker. It depends only on Mathlib plus OAI-internal files (no other OAI library, no sorry, no native_decide), on pinned Mathlib d13f23b and Lean v4.34.1. Mathlib already has Matrix.circulant, Matrix.IsHadamard (2026) with four_dvd_card, and Kronecker's theorem NumberField.Embeddings.pow_eq_one_of_norm_eq_one, so the bridge statements are small. The bulk (cyclic group-ring, cyclotomic localizations, alternating character products) is reusable algebraic number theory, but it is written as a monolithic proof and not in Mathlib style.",
+    "targets": [
+      {
+        "name": "Mathlib Matrix.IsHadamard (@d6416ab)",
+        "url": "https://github.com/leanprover-community/mathlib4/blob/d6416ab0f09d3a2e090f403fc80f37754f6181a9/Mathlib/LinearAlgebra/Matrix/HadamardMatrix.lean#L51-L54"
+      },
+      {
+        "name": "Mathlib Matrix.circulant",
+        "url": "https://github.com/leanprover-community/mathlib4/blob/d6416ab0f09d3a2e090f403fc80f37754f6181a9/Mathlib/LinearAlgebra/Matrix/Circulant.lean#L48-L52"
+      },
+      {
+        "name": "Mathlib Kronecker: pow_eq_one_of_norm_eq_one",
+        "url": "https://github.com/leanprover-community/mathlib4/blob/d6416ab0f09d3a2e090f403fc80f37754f6181a9/Mathlib/NumberTheory/NumberField/InfinitePlace/Embeddings.lean#L137-L140"
+      },
+      {
+        "name": "OAI Kronecker wrapper (already reuses Mathlib)",
+        "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/LinearAlgebra/CirculantHadamard/Kronecker.lean#L19-L44"
+      },
+      {
+        "name": "Comparator challenge CirculantHadamard.lean",
+        "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/ComparatorChallenges/CirculantHadamard.lean#L24-L26"
+      }
+    ],
+    "benefit_type": "formalization",
+    "beneficiaries": "Mathlib users; formal-conjectures maintainers, whose circulant_hadamard_conjecture statement is already tagged 'solved' with a link to this proof; future formal work on difference sets and cyclotomic integers",
+    "first_step": "Port the 77-line Barker/Main.lean and the matrix bridge first, restated against Mathlib's Matrix.IsHadamard and Matrix.circulant, with the main theorem as an Archive entry (precedent: Archive/Sensitivity.lean). Then propose general lemmas (CyclicRing star, cyclotomic local DVR facts) as separate Mathlib PRs.",
+    "measurement": "PR merged into Archive or Mathlib, and build time. The formal-conjectures statement can then point to a Mathlib declaration instead of a third-party repo.",
+    "risks": "About 9.5k lines of non-idiomatic, AI-generated Lean is a large review burden. Mathlib reviewers will want the general algebra split out and golfed, and they may reject a monolith. The Archive route lowers this bar. There is also version drift between Mathlib d13f23b and current master.",
+    "scores": {
+      "impact": 2,
+      "reach": 2,
+      "directness": 5,
+      "practicality": 4,
+      "confidence": 5,
+      "effort": 2,
+      "time_to_value": 2
+    },
+    "verdict": "pursue as research"
+  },
+  {
+    "id": "seqdesign-3",
+    "title": "Retire 'bounded / Golay 12.32' framing in LABS, QAOA-benchmark and survey texts",
+    "families": [
+      76
+    ],
+    "channels": [
+      "COMM",
+      "QUANT",
+      "OPT"
+    ],
+    "tier": "T2",
+    "action": "REDIRECT",
+    "summary": "Corollary cor:merit, a Lean-checked consequence via m_N->1 and F >= 1/(m_N^2-1), shows that the maximum binary merit factor tends to infinity through all N. This disproves Turyn's bounded-merit-factor conjecture, so Golay's 12.32 cannot be the asymptotic optimum. Current LABS and quantum papers still describe 12.32 as the conjectured or 'proposed' asymptotic limit, or say the merit factor 'should stay approximately constant'. Only a wording change is needed, since no finite-N claim is affected.",
+    "targets": [
+      {
+        "name": "Shaydulin et al., Sci. Adv. 2024 (arXiv 2308.02342v2): main text 'asymptotic limit predicts ... approximately constant'; Supp. S1 'conjectured asymptotic limit F->12.32'",
+        "url": "https://arxiv.org/abs/2308.02342"
+      },
+      {
+        "name": "Zhang, Shen, Kumar, Pistoia (JPMorgan) 2025, arXiv 2504.00987: 'asymptotic merit factor F~12.3248 ... proposed by Golay'",
+        "url": "https://arxiv.org/abs/2504.00987"
+      },
+      {
+        "name": "Sciorilli et al. 2025, arXiv 2506.17391: Golay upper bound 12.3248 as conjectured asymptotic bound",
+        "url": "https://arxiv.org/abs/2506.17391"
+      },
+      {
+        "name": "Packebusch & Mertens 2016 (arXiv 1512.02475): 'common belief ... F_N bounded'",
+        "url": "https://arxiv.org/abs/1512.02475"
+      },
+      {
+        "name": "Bošković-Brglez-Brest git_labs archive (README frames BKV chase; solvers seed randomly)",
+        "url": "https://github.com/borkob/git_labs/blob/1aa123407636e48630174e0bf122037e369c1d68/README.md"
+      },
+      {
+        "name": "AlphaEvolve problem 28 'Golay's Merit Factor' (asks asymptotic behaviour of C^4(n), C^+(n))",
+        "url": "https://github.com/google-deepmind/alphaevolve_repository_of_problems/blob/8f447457957deac61e28bf1676746f0753b3b2f8/problems/28.html#L214-L232"
+      },
+      {
+        "name": "Wikipedia Littlewood polynomial (lists ultraflat and optimal asymptotic merit factor as open)",
+        "url": "https://en.wikipedia.org/wiki/Littlewood_polynomial"
+      }
+    ],
+    "benefit_type": "redirect",
+    "beneficiaries": "LABS benchmark maintainers and quantum-optimization groups (JPMorgan/Argonne, Quantinuum, Kipu/NVIDIA), sequence-design survey authors, Wikipedia/AlphaEvolve problem curators",
+    "first_step": "Send a short erratum note to the authors of arXiv 2308.02342 and 2504.00987, and edit Wikipedia 'Littlewood polynomial'. Suggested replacement text: 'Golay's 12.32 is a heuristic prediction for typical long sequences; the optimal merit factor is now known (OpenAI 2026, Lean-checked) to be unbounded as N->inf, with no effective rate; at all lengths of practical interest the best known values are ~9.5 (N<=225) declining to ~6.3-7.8 for N in 300-1000.'",
+    "measurement": "Revised arXiv versions or new papers that stop citing 12.32 as the limit. A finite-N claim needing retraction would count as a failure of this framing, and none is expected.",
+    "risks": "Overcorrection is the main risk: authors may wrongly read the result as 'large merit factors are findable'. The proof gives no N0 and no algorithm, and with the explicit constants it needs delta below 1e-15 just to certify F>6.34. A secondary risk is that the preprint is not peer-reviewed, although the Lean check covers the statement.",
+    "scores": {
+      "impact": 2,
+      "reach": 2,
+      "directness": 5,
+      "practicality": 5,
+      "confidence": 5,
+      "effort": 5,
+      "time_to_value": 4
+    },
+    "verdict": "pursue now"
+  },
+  {
+    "id": "seqdesign-4",
+    "title": "Use the 076 relax-and-round pipeline as a seed generator for LABS heuristics",
+    "families": [
+      76
+    ],
+    "channels": [
+      "OPT",
+      "COMM"
+    ],
+    "tier": "T3",
+    "action": "BENCHMARK",
+    "summary": "A finite analogue of the 076 construction was tested as tabu-search seeds at N in {101,257,509,1021,2053,4099}, 3 runs each at a fixed budget: a sampled quadratic-phase (chirp) waveform in [-1,1]^N on H blocks with exactly packed sweep intervals, then sign or greedy-L4 rounding. It beats random seeds at every N (+0.1 to +0.6 after search). It slightly beats Legendre at N=101 (6.17-6.24 vs 5.84-6.03, inconclusive), but loses clearly to rotated/appended Legendre seeds at every N>=257 (e.g. 4.97-5.10 vs 6.33 at N=1021; 4.52-4.74 vs 6.34 at N=4099). The proof's real auxiliary polynomial needs ~8/delta torus variables with doubly exponential Fourier support, so it cannot be instantiated.",
+    "targets": [
+      {
+        "name": "MA/TS solver random initialization LABSRandomSeq (git_labs @1aa1234)",
+        "url": "https://github.com/borkob/git_labs/blob/1aa123407636e48630174e0bf122037e369c1d68/solvers/lMAts-lRRts/src/LABS.c#L40-L44"
+      },
+      {
+        "name": "MA/TS initPopulation (where a structured seed would plug in)",
+        "url": "https://github.com/borkob/git_labs/blob/1aa123407636e48630174e0bf122037e369c1d68/solvers/lMAts-lRRts/src/GA.c#L161-L173"
+      },
+      {
+        "name": "lssOrel restart uses Sequence::random",
+        "url": "https://github.com/borkob/git_labs/blob/1aa123407636e48630174e0bf122037e369c1d68/solvers/lssOrel/src/sequence.cpp#L83-L89"
+      },
+      {
+        "name": "076 sampling formula X_{N,k} (sampling.tex eq. sampling-coefficients)",
+        "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Asymptotically-minimal-maxima-of-real-Littlewood-polynomials-September-23-2026/build/sampling.tex#L152-L157"
+      }
+    ],
+    "benefit_type": "instances",
+    "beneficiaries": "LABS heuristic developers at N=500-10^4 (radar/sonar long-code designers), only if a seed family above ~6.4 emerged",
+    "first_step": "Do not invest further. If anyone revisits it, the bar is Legendre-seeded tabu (6.33-6.38 at N=509-4099 in our runs) and the published N=450-527 records of up to 7.78.",
+    "measurement": "Best merit factor at a fixed TS budget versus Legendre-seeded runs at N in {509,1021,2053,4099}, at least 3 seeds each.",
+    "risks": "Confirmed in our small runs: the finite analogue is far below the classical algebraic seed. Our analogue simplified the construction (F=cos, a single mode) and the rounding (greedy, not Lovett-Meka), so it does not refute the pipeline in principle. However, the paper's own constants (rounding C=196608 in Lean, delta<1e-15 to beat 6.34) show the faithful version is useless at any feasible N.",
+    "scores": {
+      "impact": 1,
+      "reach": 1,
+      "directness": 2,
+      "practicality": 1,
+      "confidence": 4,
+      "effort": 4,
+      "time_to_value": 2
+    },
+    "verdict": "do not pursue"
+  },
+  {
+    "id": "seqdesign-5",
+    "title": "Expect better binary radar/CDMA codes or quantum-advantage implications from unbounded merit factor",
+    "families": [
+      76
+    ],
+    "channels": [
+      "COMM",
+      "QUANT"
+    ],
+    "tier": "T4",
+    "action": "NONE",
+    "summary": "The result is existential with no rate: N0(eta) is unspecified. The paper and the Lean doc both state that there is no useful convergence rate and no efficient signing algorithm. Practical code design uses N<=~10^4, where records are ~9.5 (N<=225), ~7-8 (N 300-530), ~6.3-6.4 (N~1000+), and practice already prefers PSL-optimized codes, mismatched filters or polyphase codes. Quantum LABS benchmarks are at N<=~40-100, where exact optima (N<=66) are what matters.",
+    "targets": [
+      {
+        "name": "076 introduction: 'no useful convergence rate or efficient signing algorithm is asserted'",
+        "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Asymptotically-minimal-maxima-of-real-Littlewood-polynomials-September-23-2026/build/introduction.tex#L34-L39"
+      },
+      {
+        "name": "Lean final bound with explicit rounding constant 393216 (= 2 x 196608)",
+        "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/Analysis/Littlewood/Main.lean#L187-L192"
+      }
+    ],
+    "benefit_type": "redirect",
+    "beneficiaries": "None directly; stating this prevents overclaiming",
+    "first_step": "None. Include this caveat wherever the REDIRECT note (seqdesign-3) is circulated.",
+    "measurement": "n/a",
+    "risks": "Hype risk: 'merit factor unbounded' is easily misreported as 'arbitrarily good binary codes now available'.",
+    "scores": {
+      "impact": 1,
+      "reach": 1,
+      "directness": 1,
+      "practicality": 1,
+      "confidence": 5,
+      "effort": 5,
+      "time_to_value": 1
+    },
+    "verdict": "do not pursue"
+  },
+  {
+    "id": "seqdesign-6",
+    "title": "Binary OFDM PMEPR -> 1 via ultraflat Littlewood polynomials",
+    "families": [
+      76
+    ],
+    "channels": [
+      "COMM"
+    ],
+    "tier": "T4",
+    "action": "NONE",
+    "summary": "For one BPSK-OFDM symbol with N subcarriers, the continuous-time PMEPR equals max|P|^2/N. Theorem 1.1 of the 076 papers therefore says the PMEPR infimum over binary words tends to 1, versus 2 for Rudin-Shapiro/Golay complementary codewords (our check: PR-Shapiro 2.00, best Legendre rotation 2.4-2.7, random 6.5-9.3 at N=256-4096). The result does not help a real channel. A single fixed data-free word has zero information rate, and real systems carry data, where Schmidt's covering-radius bound and coding constraints dominate. 5G NR uses pi/2-BPSK with DFT-s-OFDM plus FDSS rather than OFDM codeword selection, and the construction is non-effective anyway.",
+    "targets": [
+      {
+        "name": "Schmidt, PMEPR of phase-shifted binary codes (covering-radius lower bound)",
+        "url": "https://arxiv.org/abs/cs/0611161"
+      },
+      {
+        "name": "Davis-Jedwab 1999, Golay sequences / Reed-Muller cosets for OFDM",
+        "url": "https://scholarship.richmond.edu/mathcs-faculty-publications/137"
+      },
+      {
+        "name": "5G NR uplink pi/2-BPSK + DFT-s-OFDM low PAPR",
+        "url": "https://arxiv.org/abs/1907.05692"
+      }
+    ],
+    "benefit_type": "capability",
+    "beneficiaries": "Possibly preamble or pilot designers wanting a single binary training word with PMEPR near 1, but Zadoff-Chu/CAZAC polyphase sequences already give this and are standardized",
+    "first_step": "None.",
+    "measurement": "n/a",
+    "risks": "n/a",
+    "scores": {
+      "impact": 1,
+      "reach": 1,
+      "directness": 2,
+      "practicality": 1,
+      "confidence": 4,
+      "effort": 5,
+      "time_to_value": 1
+    },
+    "verdict": "do not pursue"
+  },
+  {
+    "id": "seqdesign-7",
+    "title": "Stop computational searches for circulant Hadamard orders / even Barker lengths (Logan-Mossinghoff-style)",
+    "families": [
+      179
+    ],
+    "channels": [
+      "CPLX",
+      "CAS"
+    ],
+    "tier": "T2",
+    "action": "REDIRECT",
+    "summary": "Number-theoretic sieves (Wieferich-pair conditions, field descent) had reduced the problem to 4,489 candidate orders up to 4e30, plus the single surviving Barker candidate n~3.98e33. These are now moot. This matters to a handful of researchers and should be recorded in formal-conjectures, where the Barker statement is still tagged open while the circulant statement is tagged solved.",
+    "targets": [
+      {
+        "name": "formal-conjectures circulant_hadamard_conjecture (already 'research solved')",
+        "url": "https://github.com/google-deepmind/formal-conjectures/blob/cd6912171c5a1de06905795e5533ec7120f34ddc/FormalConjectures/Arxiv/2402.13202/CirculantHadamard.lean#L55-L66"
+      },
+      {
+        "name": "formal-conjectures barker_conjecture (still 'research open')",
+        "url": "https://github.com/google-deepmind/formal-conjectures/blob/cd6912171c5a1de06905795e5533ec7120f34ddc/FormalConjectures/Arxiv/2104.00502/BarkerSequence.lean#L48-L51"
+      }
+    ],
+    "benefit_type": "redirect",
+    "beneficiaries": "Researchers in cyclotomic/difference-set computation and the formal-conjectures project",
+    "first_step": "Open a formal-conjectures PR re-tagging barker_conjecture as 'research solved'. The formal proof would need the odd case (Schmidt-Willms, short and elementary, Lean-formalizable in days to weeks) plus OAI's even case.",
+    "measurement": "Tag updated, and an optional Lean proof of the odd case added.",
+    "risks": "Low. The odd case is not in Lean, so a fully formal Barker classification still needs Schmidt-Willms formalized.",
+    "scores": {
+      "impact": 1,
+      "reach": 1,
+      "directness": 5,
+      "practicality": 5,
+      "confidence": 5,
+      "effort": 4,
+      "time_to_value": 4
+    },
+    "verdict": "pursue now"
+  }
+]

@@ -1,0 +1,9 @@
+{
+ "m3": {
+  "n_atoms": 35,
+  "kantorovich_opt": 2.4996661124769046,
+  "product_best": 2.509626285098641,
+  "rel_gap": 0.00398460121214627,
+  "independent_branch_prediction": 2.534183909341329
+ }
+}

@@ -1,0 +1,8 @@
+gam=0.1 nu=0.0: formula=0.840497 brute=0.840497 diff=-6.66e-16 channel-formula-err=3.3e-16
+gam=0.3 nu=0.1: formula=0.618888 brute=0.618888 diff=-8.88e-16 channel-formula-err=2.2e-16
+gam=0.5 nu=0.2: formula=0.418890 brute=0.418890 diff=-5.00e-16 channel-formula-err=3.3e-16
+gam=0.7 nu=0.05: formula=0.284527 brute=0.284527 diff=-3.89e-16 channel-formula-err=4.4e-16
+gam=0.9 nu=0.3: formula=0.077022 brute=0.077022 diff=-3.47e-16 channel-formula-err=2.2e-16
+gam=0.6 nu=0.45: formula=0.312236 brute=0.312236 diff=-5.00e-16 channel-formula-err=2.2e-16
+
+[exited with code 0]

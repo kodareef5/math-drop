@@ -1,0 +1,617 @@
+[
+ {
+  "id": "qadvantage-1",
+  "title": "Worst-case-ratio framing note for quantum optimization: beating GW / basic-SDP thresholds now implies NP in BQP",
+  "families": [
+   102
+  ],
+  "channels": [
+   "CPLX",
+   "QUANT",
+   "OPT"
+  ],
+  "tier": "T2",
+  "action": "REDIRECT",
+  "summary": "The direct Max-Cut theorem and the Unique Games Theorem give deterministic poly-time Karp reductions, so any poly-time quantum algorithm with worst-case (or expected) ratio > 0.8786 on Max-Cut, or above Raghavendra's SDP threshold on any Max-CSP, would put NP in BQP with no UGC caveat. Quantum-optimization papers and vendors should stop using GW's worst-case ratio as a target and benchmark instance-wise against GW+local search and class-specific classical baselines (e.g. 0.9326 on cubic graphs).",
+  "targets": [
+   {
+    "name": "Direct Max-Cut hardness thm:main/thm:gap",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-Direct-Proof-of-Optimal-Max-Cut-Hardness-September-23-2026/build/sections/introduction.tex#L39-L61"
+   },
+   {
+    "name": "Deterministic poly-time construction",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-Direct-Proof-of-Optimal-Max-Cut-Hardness-September-23-2026/build/sections/conclusion.tex#L40-L57"
+   },
+   {
+    "name": "Lean statement OptimalMaxCut.MainStatement",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/ComparatorChallenges/OptimalMaxCut.lean#L133-L149"
+   },
+   {
+    "name": "Qiskit GoemansWilliamsonOptimizer._solve_max_cut_sdp docstring",
+    "url": "https://github.com/qiskit-community/qiskit-optimization/blob/65ce191a4c3ed48f203d8dd6eea476d0deea9e71/qiskit_optimization/algorithms/goemans_williamson_optimizer.py#L237-L246"
+   },
+   {
+    "name": "Qiskit WarmStartQAOAOptimizer pre_solver",
+    "url": "https://github.com/qiskit-community/qiskit-optimization/blob/65ce191a4c3ed48f203d8dd6eea476d0deea9e71/qiskit_optimization/algorithms/warm_start_qaoa_optimizer.py#L202-L224"
+   }
+  ],
+  "benefit_type": "redirect",
+  "beneficiaries": "Quantum-optimization benchmarking groups (QAOA, annealing, Ising machines), referees, vendor technical marketing, Qiskit Optimization docs users",
+  "first_step": "Draft a 2-3 page note covering Max-Cut/Max-CSP (rows 1-4 of the claim table) citing thm:gap and OptimalMaxCut.lean; open a one-line docs PR on the Qiskit GW docstring.",
+  "measurement": "Share of new QAOA/annealing papers that make unqualified 'beats GW' claims; acceptance of the docs PR; citations of the note.",
+  "risks": "Unreviewed (mitigated: top-line Lean-formalized, 0 sorry in solution tree, not built by us). Marginal: UGC was widely assumed. Does not constrain average-case, instance-specific, restricted-class or super-polynomial-time claims.",
+  "scores": {
+   "impact": 2,
+   "reach": 3,
+   "directness": 4,
+   "practicality": 4,
+   "confidence": 4,
+   "effort": 5,
+   "time_to_value": 5
+  },
+  "verdict": "pursue now"
+ },
+ {
+  "id": "qadvantage-2",
+  "title": "Quantum Max-Cut UG-hardness becomes NP-hardness (product-state 0.9859; 0.956 modulo vector-Borell)",
+  "families": [
+   102
+  ],
+  "channels": [
+   "CPLX",
+   "QUANT"
+  ],
+  "tier": "T2",
+  "action": "CERTIFY",
+  "summary": "Hwang-Neeman-Parekh-Thompson-Wright and arXiv:2306.03912 prove Quantum Max-Cut approximation hardness under UGC; if their parameter order matches thm:ugc (errors fixed before alphabet), the hypothesis can be replaced by P != NP. The 0.956 bound still needs the vector-valued Borell conjecture.",
+  "targets": [
+   {
+    "name": "Unique Games Theorem thm:ugc",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-Unique-Games-Theorem-September-23-2026/build/sections/00-introduction.tex#L22-L39"
+   },
+   {
+    "name": "HNPTW arXiv:2111.01254",
+    "url": "https://arxiv.org/abs/2111.01254v2"
+   },
+   {
+    "name": "Sphere-valued noise stability arXiv:2306.03912",
+    "url": "https://export.arxiv.org/abs/2306.03912v2"
+   }
+  ],
+  "benefit_type": "guarantee",
+  "beneficiaries": "Quantum Hamiltonian-complexity / approximation theorists; survey authors",
+  "first_step": "Ask the HNPTW authors (or a UG expert) to confirm the quantifier compatibility; update survey tables accordingly.",
+  "measurement": "Written confirmation; updated statements in follow-up papers/surveys.",
+  "risks": "Quantifier mismatch (e.g. need for strong/left-regular UG) could block direct transfer; low practical stakes.",
+  "scores": {
+   "impact": 2,
+   "reach": 1,
+   "directness": 3,
+   "practicality": 3,
+   "confidence": 3,
+   "effort": 4,
+   "time_to_value": 4
+  },
+  "verdict": "monitor"
+ },
+ {
+  "id": "qadvantage-3",
+  "title": "Retire the 'GBS counts perfect matchings faster than classical' complexity claim",
+  "families": [
+   113
+  ],
+  "channels": [
+   "CPLX",
+   "QUANT",
+   "ALGO"
+  ],
+  "tier": "T2",
+  "action": "REDIRECT",
+  "summary": "Approximate counting of perfect matchings in arbitrary unweighted graphs (and polynomially bounded nonnegative integer weights via path gadgets) now has a classical FPRAS, while the GBS all-ones-event estimator of Bradler et al. 2018 needs exponentially many samples in general; the complexity-theoretic advantage is reversed. Practically nothing changes (exact O(n^3 2^{n/2}) counting beats the galactic FPRAS below n ~ 2.8e5).",
+  "targets": [
+   {
+    "name": "FPRAS thm:main",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-Fully-Polynomial-Randomized-Approximation-Scheme-for-Perfect-Matchings-in-General-Graphs-September-23-2026/build/main.tex#L132-L143"
+   },
+   {
+    "name": "Galactic constants eq:energy-constants",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-Fully-Polynomial-Randomized-Approximation-Scheme-for-Perfect-Matchings-in-General-Graphs-September-23-2026/build/main.tex#L1592-L1597"
+   },
+   {
+    "name": "The Walrus docs: approximate PM-counting methods",
+    "url": "https://github.com/XanaduAI/thewalrus/blob/54b1062e2b6759ddc733ca6bf636df580ff94968/docs/algorithms.rst#L35"
+   },
+   {
+    "name": "The Walrus hafnian_approx (Barvinok)",
+    "url": "https://github.com/XanaduAI/thewalrus/blob/54b1062e2b6759ddc733ca6bf636df580ff94968/thewalrus/_hafnian.py#L1069-L1085"
+   },
+   {
+    "name": "Bradler et al. arXiv:1712.06729",
+    "url": "https://arxiv.org/abs/1712.06729v1"
+   }
+  ],
+  "benefit_type": "redirect",
+  "beneficiaries": "GBS applications researchers (Xanadu, USTC Jiuzhang groups), quantum-advantage reviewers",
+  "first_step": "Write a short comment/blog post on the PM-counting claim citing thm:main and the cost table; optional one-sentence docs PR to The Walrus algorithms.rst.",
+  "measurement": "Docs PR merged; the claim no longer repeated in new GBS-application papers.",
+  "risks": "FPRAS unreviewed; Lean doc describes a formalization (MatchingCount, 0 sorry) but the catalogue/formalization.yaml do not list it.",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 4,
+   "practicality": 4,
+   "confidence": 3,
+   "effort": 5,
+   "time_to_value": 5
+  },
+  "verdict": "pursue now"
+ },
+ {
+  "id": "qadvantage-4",
+  "title": "Ideal unweighted-graph GBS sampling is classically poly-time in principle (ladder-graph reduction + FPRAS + JVV)",
+  "families": [
+   113
+  ],
+  "channels": [
+   "CPLX",
+   "QUANT",
+   "STAT"
+  ],
+  "tier": "T2",
+  "action": "RESEARCH",
+  "summary": "We verified exactly that sum_S x^{|S|} prod_{v not in S} r_v Haf(A_S)^2 = Haf(ladder), where the ladder is two copies of G joined by rungs; hence the collision-free lossless PNR GBS law Pr(S) ∝ x^{|S|} Haf(A_S)^2 on an unweighted graph is a perfect-matching marginal of an explicit graph, and the 113 FPRAS + its JVV deletion sampler give a classical poly-time approximate sampler, removing the obstacle (non-bipartite PM sampling) that limited Zhang et al. 2025 to dense graphs. A note should extend this to collision patterns and node weights and state precisely which GBS-application hardness arguments lose their basis.",
+  "targets": [
+   {
+    "name": "FPRAS deletion sampler lem:deletion-sampler",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-Fully-Polynomial-Randomized-Approximation-Scheme-for-Perfect-Matchings-in-General-Graphs-September-23-2026/build/main.tex#L3203-L3213"
+   },
+   {
+    "name": "Strawberry Fields apps.subgraph (GBS dense subgraph)",
+    "url": "https://github.com/XanaduAI/strawberryfields/blob/162125d8ad5fd5488322a30c520253189596adf5/strawberryfields/apps/subgraph.py#L14-L19"
+   },
+   {
+    "name": "Strawberry Fields apps.similarity (GBS graph kernels)",
+    "url": "https://github.com/XanaduAI/strawberryfields/blob/162125d8ad5fd5488322a30c520253189596adf5/strawberryfields/apps/similarity.py#L98-L106"
+   },
+   {
+    "name": "Zhang et al. arXiv:2505.02445 (dense-graph-only MCMC)",
+    "url": "https://arxiv.org/abs/2505.02445"
+   },
+   {
+    "name": "Oh-Fefferman-Jiang-Quesada arXiv:2302.00536",
+    "url": "https://arxiv.org/abs/2302.00536"
+   }
+  ],
+  "benefit_type": "redirect",
+  "beneficiaries": "GBS complexity theorists and applications community; quantum-advantage assessments",
+  "first_step": "Write up the ladder identity (scratch_qadvantage/gbs_ladder_identity.py), extend to collisions (vertex blow-up) and WAW node weights, and circulate to Quesada/Oh/Li groups.",
+  "measurement": "Acceptance as a note/preprint; citations in GBS-application papers; whether any remaining application claims are restated in terms of lossy/threshold/complex settings.",
+  "risks": "May be folklore; inherits galactic degree (~6,500) so zero practical impact; collision/threshold-detector (Torontonian) and lossy cases not covered.",
+  "scores": {
+   "impact": 3,
+   "reach": 2,
+   "directness": 3,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 4,
+   "time_to_value": 3
+  },
+  "verdict": "pursue as research"
+ },
+ {
+  "id": "qadvantage-5",
+  "title": "Time-to-epsilon benchmark for SK / large-girth Max-Cut: QAOA vs now-unconditional IAMP/EAMS and heuristics",
+  "families": [
+   281
+  ],
+  "channels": [
+   "QUANT",
+   "OPT",
+   "STAT"
+  ],
+  "tier": "T2",
+  "action": "BENCHMARK",
+  "summary": "281's companion (independently Chen 2026) makes the El Alaoui-Montanari-Sellke message-passing optimizer unconditional (C(eps) n^2 operations), so 'p=11 QAOA beats every unconditional classical algorithm' is obsolete and any QAOA advantage on SK can only lie in epsilon-scaling, which neither side has bounded. Our quick experiment shows 3 s of single-core SA at n=1000 matches infinite-size QAOA depth p~240 (~1.2e8 ZZ gates per shot). A public time-to-epsilon benchmark (QAOA p(eps) from QOKit tables vs IAMP vs SA/PT) would settle the remaining claim.",
+  "targets": [
+   {
+    "name": "QAOA-SK thm:main and no-depth-bound disclaimer",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/QAOA-attains-the-SK-ground-state-energy-in-the-thermodynamic-first-limit-September-25-2026/build/sections/01-introduction.tex#L111-L133"
+   },
+   {
+    "name": "Companion cor:algorithm (unconditional EAMS)",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Full-support-of-the-zero-temperature-Sherrington-Kirkpatrick-order-parameter-September-27-2026/build/algorithm-application.tex#L13-L35"
+   },
+   {
+    "name": "QOKit best_SK_QAOA_parameters.json (p=80 energy)",
+    "url": "https://github.com/jpmorganchase/QOKit/blob/a00cc72adc29ef72d04e7f72272431e641f7d1eb/qokit/assets/best_SK_QAOA_parameters.json#L1242"
+   },
+   {
+    "name": "QOKit _get_sk_gamma_beta",
+    "url": "https://github.com/jpmorganchase/QOKit/blob/a00cc72adc29ef72d04e7f72272431e641f7d1eb/qokit/parameter_utils.py#L193-L222"
+   },
+   {
+    "name": "QOKit sk_obj normalization",
+    "url": "https://github.com/jpmorganchase/QOKit/blob/a00cc72adc29ef72d04e7f72272431e641f7d1eb/qokit/sk.py#L13-L23"
+   }
+  ],
+  "benefit_type": "redirect",
+  "beneficiaries": "JPMC/Argonne, MIT, Google QAOA groups; quantum-optimization advantage assessors; funders",
+  "first_step": "Implement IAMP for SK with a numerically solved zero-temperature Parisi gamma; reproduce energy-vs-time at n=1e3-1e4 alongside SA and QOKit's QAOA p(eps) fit (P*-v_p ~ 0.93 p^-0.84).",
+  "measurement": "Fitted classical time-to-(1-eps) exponents vs QAOA's eps^-1.13 depth scaling; full gate-count vs wall-clock comparison table.",
+  "risks": "IAMP numerics near t->1 delicate; finite-n optima below P*; SA has no guarantee; extrapolation of QAOA beyond p=80.",
+  "scores": {
+   "impact": 3,
+   "reach": 2,
+   "directness": 3,
+   "practicality": 4,
+   "confidence": 4,
+   "effort": 3,
+   "time_to_value": 4
+  },
+  "verdict": "pursue now"
+ },
+ {
+  "id": "qadvantage-6",
+  "title": "Architecture note: native multi-controlled (C^kZ) gates cannot give constant-depth GHZ/fanout/parity",
+  "families": [
+   274
+  ],
+  "channels": [
+   "QUANT",
+   "CPLX"
+  ],
+  "tier": "T2",
+  "action": "REDIRECT",
+  "summary": "In the model of one-qubit gates plus layers of product-state reflections (covering Rydberg C^kZ/C^kX in any local basis), constant-depth poly-size circuits cannot compute parity or prepare GHZ-like (felinity) or Dicke states for large n. Resource estimates and architecture comparisons should budget log depth, measurement+feedforward, or a fanout/global gate; no explicit n0 is given.",
+  "targets": [
+   {
+    "name": "thm:parity",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Product-projection-localization-and-the-QAC0-parity-lower-bound-September-24-2026/build/sections/introduction.tex#L22-L35"
+   },
+   {
+    "name": "Product-state reflection model",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Product-projection-localization-and-the-QAC0-parity-lower-bound-September-24-2026/build/sections/localization.tex#L32-L50"
+   },
+   {
+    "name": "cor:state-preparation (GHZ/Dicke)",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Product-projection-localization-and-the-QAC0-parity-lower-bound-September-24-2026/build/sections/consequences.tex#L35-L49"
+   },
+   {
+    "name": "QOKit dicke_simple (linear-depth Dicke prep in use)",
+    "url": "https://github.com/jpmorganchase/QOKit/blob/a00cc72adc29ef72d04e7f72272431e641f7d1eb/qokit/dicke_state_utils.py#L205-L215"
+   }
+  ],
+  "benefit_type": "redirect",
+  "beneficiaries": "Neutral-atom and ion architecture teams; compiler/resource-estimation authors",
+  "first_step": "Add one paragraph to the qadvantage-1 note mapping thm:parity/cor:state-preparation onto native gate sets (multi-control vs multi-target/global vs dynamic circuits).",
+  "measurement": "Citations in architecture/resource-estimation papers.",
+  "risks": "Asymptotic only; excludes measurement+feedforward and fanout gates, which practice already uses; nobody currently plans constant-depth GHZ from C^kZ.",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 3,
+   "practicality": 2,
+   "confidence": 4,
+   "effort": 5,
+   "time_to_value": 5
+  },
+  "verdict": "monitor"
+ },
+ {
+  "id": "qadvantage-7",
+  "title": "Cite continuum (proton-only) QMA-hardness in quantum-chemistry advantage assessments",
+  "families": [
+   275
+  ],
+  "channels": [
+   "CPLX",
+   "PHYS",
+   "QUANT"
+  ],
+  "tier": "T2",
+  "action": "CERTIFY",
+  "summary": "Ground-state energy estimation for the full 3D continuum electronic Hamiltonian with unit-charge nuclei is QMA-hard under deterministic Karp reductions, closing the finite-basis loophole in O'Gorman et al. 2022. Generic 'quantum computers will solve chemistry' claims would imply QMA in BQP; advantage claims must name the structural assumption (guided state overlap, gap path). Real molecules are unaffected.",
+  "targets": [
+   {
+    "name": "Unit-charge Coulomb hardness thm:main",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/QMA-hardness-of-continuum-Coulomb-energy-with-unit-nuclear-charges-September-24-2026/build/introduction.tex#L91-L108"
+   },
+   {
+    "name": "O'Gorman et al. arXiv:2103.08215",
+    "url": "https://arxiv.org/abs/2103.08215"
+   },
+   {
+    "name": "Lee et al. Nat. Commun. 2023",
+    "url": "https://ideas.repec.org/a/nat/natcom/v14y2023i1d10.1038_s41467-023-37587-6.html"
+   }
+  ],
+  "benefit_type": "redirect",
+  "beneficiaries": "Quantum-chemistry advantage assessors, resource-estimation authors, science journalists",
+  "first_step": "Include one paragraph and citation in the qadvantage-1 note; suggest the citation to authors of chemistry-advantage reviews.",
+  "measurement": "Citation uptake in reviews.",
+  "risks": "Consensus already expected this; instances are polynomially stretched H clusters with unspecified large exponents; QMA membership not asserted.",
+  "scores": {
+   "impact": 2,
+   "reach": 3,
+   "directness": 3,
+   "practicality": 2,
+   "confidence": 4,
+   "effort": 5,
+   "time_to_value": 5
+  },
+  "verdict": "pursue now"
+ },
+ {
+  "id": "qadvantage-8",
+  "title": "Provable exp(O~(L)) algorithm for frustrated, globally gapped 2D ground states (2D analogue of LVV, subexponential)",
+  "families": [
+   265
+  ],
+  "channels": [
+   "QUANT",
+   "PHYS",
+   "ALGO"
+  ],
+  "tier": "T3",
+  "action": "RESEARCH",
+  "summary": "The 2D area law and polynomial PEPS are existence-only, and polynomial-time algorithms for the class are ruled out unless NP=RP (Abrahamsen 2020's classical unique-SAT instances are in the class). A meaningful follow-on is a subexponential exp(O~(sqrt n)) search algorithm matching the existence-level snake-MPS bound; the obvious AGSP route via prop:positive is circular because its centering needs the ground-state local energies.",
+  "targets": [
+   {
+    "name": "Area law thm:area",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-two-dimensional-area-law-from-a-global-spectral-gap-September-24-2026/build/sections/00-introduction.tex#L39-L53"
+   },
+   {
+    "name": "prop:positive (needs <Omega,h_i Omega>)",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-two-dimensional-area-law-from-a-global-spectral-gap-September-24-2026/build/sections/03-quasilocal.tex#L220-L256"
+   },
+   {
+    "name": "PEPS thm:main (existence only)",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Polynomial-PEPS-approximation-of-gapped-square-grid-ground-states-September-24-2026/build/sections/00-introduction.tex#L36-L66"
+   },
+   {
+    "name": "Abrahamsen arXiv:2004.02850",
+    "url": "https://arxiv.org/abs/2004.02850"
+   }
+  ],
+  "benefit_type": "capability",
+  "beneficiaries": "Hamiltonian-complexity theorists; long-run justification for 2D DMRG/PEPS practice",
+  "first_step": "Check whether the collar/information estimates plus a bootstrapped local-energy estimate yield an exp(O~(L)) RRG-style search on L x L grids.",
+  "measurement": "A theorem with explicit runtime; no practical benchmark expected.",
+  "risks": "Long, unrefereed, unformalized proofs; unspecified large exponent c; may be no easier than the frustration-free case already solved.",
+  "scores": {
+   "impact": 4,
+   "reach": 2,
+   "directness": 1,
+   "practicality": 2,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "verdict": "pursue as research"
+ },
+ {
+  "id": "qadvantage-9",
+  "title": "DO NOT: implement the general-graph FPRAS for hafnian / GBS benchmarking",
+  "families": [
+   113
+  ],
+  "channels": [
+   "ALGO",
+   "QUANT"
+  ],
+  "tier": "T4",
+  "action": "NONE",
+  "summary": "Transcribing the paper's explicit parameters gives at least 10^13155 chain steps at n=10 and 10^20792 at n=144; effective degree ~6,500; it beats exact O(n^3 2^{n/2}) only beyond n~2.8e5 where both cost ~10^42519. Galactic: zero practical value.",
+  "targets": [
+   {
+    "name": "Ladder parameters q=32L",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-Fully-Polynomial-Randomized-Approximation-Scheme-for-Perfect-Matchings-in-General-Graphs-September-23-2026/build/main.tex#L2249-L2253"
+   }
+  ],
+  "benefit_type": "speed",
+  "beneficiaries": "none",
+  "first_step": "",
+  "measurement": "",
+  "risks": "Wasted engineering; misleading 'classical FPRAS' benchmarks.",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 4,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 2,
+   "time_to_value": 1
+  },
+  "verdict": "do not pursue"
+ },
+ {
+  "id": "qadvantage-10",
+  "title": "DO NOT: use the 281 construction for QAOA angle/depth schedules or cite it as evidence of QAOA speedup",
+  "families": [
+   281
+  ],
+  "channels": [
+   "QUANT",
+   "OPT"
+  ],
+  "tier": "T3",
+  "action": "NONE",
+  "summary": "The theorem is existential in the thermodynamic-first limit with no depth bound and a word containing seed simulations, echoes, inverse and very large angles; numerically optimized QOKit angles dominate. It proves only that QAOA reaches what the (now unconditional) classical O(n^2) algorithm reaches, so it cannot support a polynomial-in-n speedup claim.",
+  "targets": [
+   {
+    "name": "QAOA-SK disclaimer",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/QAOA-attains-the-SK-ground-state-energy-in-the-thermodynamic-first-limit-September-25-2026/build/sections/01-introduction.tex#L129-L133"
+   }
+  ],
+  "benefit_type": "redirect",
+  "beneficiaries": "none",
+  "first_step": "",
+  "measurement": "",
+  "risks": "Overclaiming in press/vendor material.",
+  "scores": {
+   "impact": 1,
+   "reach": 2,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "verdict": "do not pursue"
+ },
+ {
+  "id": "qadvantage-11",
+  "title": "DO NOT: build a polynomial-time 2D gapped ground-state solver (classical or quantum) on the area law / PEPS existence",
+  "families": [
+   265
+  ],
+  "channels": [
+   "QUANT",
+   "PHYS",
+   "CPLX"
+  ],
+  "tier": "T4",
+  "action": "NONE",
+  "summary": "The theorem's hypothesis class contains classical frustration-free gap-1 unique-ground-state planar 3SAT encodings, so poly-time ground-state finding is NP-hard under randomized reductions (Abrahamsen 2020); neither classical nor quantum poly-time is possible unless NP in RP / BQP. The area law changes representability only; the exponent c gives no bond-dimension guidance.",
+  "targets": [
+   {
+    "name": "PEPS existence disclaimer",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Polynomial-PEPS-approximation-of-gapped-square-grid-ground-states-September-24-2026/build/sections/00-introduction.tex#L60-L66"
+   }
+  ],
+  "benefit_type": "redirect",
+  "beneficiaries": "none",
+  "first_step": "",
+  "measurement": "",
+  "risks": "Claims that '2D gapped is classically easy' would be wrong.",
+  "scores": {
+   "impact": 1,
+   "reach": 2,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "verdict": "do not pursue"
+ },
+ {
+  "id": "qadvantage-12",
+  "title": "DO NOT: feed exact factoring (279), oracle unitary synthesis (283) or the quartic separation (284) into roadmaps, compilers or resource estimates",
+  "families": [
+   279,
+   283,
+   284
+  ],
+  "channels": [
+   "QUANT",
+   "CPLX"
+  ],
+  "tier": "T4",
+  "action": "NONE",
+  "summary": "279's polynomials are explicitly not practical and Las Vegas Shor/Gidney-style estimates are unaffected; 283 needs a target-dependent oracle of unrestricted size and achieves only diamond error 1/2; 284 shows R=O(Q^4) is tight only for contrived pointer/cheat-sheet total functions, changing no practical speedup analysis.",
+  "targets": [
+   {
+    "name": "279 resource disclaimer",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/01-introduction.tex#L44-L50"
+   },
+   {
+    "name": "283 oracle disclaimer",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/01-introduction.tex#L46-L65"
+   },
+   {
+    "name": "284 thm:main",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/01-introduction.tex#L29-L42"
+   }
+  ],
+  "benefit_type": "redirect",
+  "beneficiaries": "none",
+  "first_step": "",
+  "measurement": "",
+  "risks": "None beyond wasted effort.",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "verdict": "do not pursue"
+ },
+ {
+  "id": "qadvantage-13",
+  "title": "DO NOT: change QAOA-on-LABS benchmarks because of unbounded merit factors (076); only fix 'asymptotically constant' wording",
+  "families": [
+   76
+  ],
+  "channels": [
+   "QUANT",
+   "COMM",
+   "OPT"
+  ],
+  "tier": "T4",
+  "action": "NONE",
+  "summary": "Max merit factor -> infinity is non-constructive with no rate; LABS time-to-exact-optimum benchmarks at N<=40-66 (QOKit, Shaydulin et al. 2024) are untouched. Only motivating text that says the asymptotic merit factor stays approximately constant should be corrected (can be folded into the qadvantage-1 note).",
+  "targets": [
+   {
+    "name": "Merit factor corollary",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Asymptotically-minimal-maxima-of-real-Littlewood-polynomials-September-23-2026/build/merit-morse.tex#L22-L36"
+   },
+   {
+    "name": "QOKit LABS optimal MF table",
+    "url": "https://github.com/jpmorganchase/QOKit/blob/a00cc72adc29ef72d04e7f72272431e641f7d1eb/qokit/labs.py#L15-L17"
+   }
+  ],
+  "benefit_type": "redirect",
+  "beneficiaries": "LABS benchmark text authors (minor)",
+  "first_step": "",
+  "measurement": "",
+  "risks": "None.",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 2,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 5,
+   "time_to_value": 5
+  },
+  "verdict": "do not pursue"
+ },
+ {
+  "id": "qadvantage-14",
+  "title": "DO NOT: use the QAC0 parity bound (274) as a concrete depth lower bound in compilers at n~10-1000",
+  "families": [
+   274
+  ],
+  "channels": [
+   "QUANT"
+  ],
+  "tier": "T4",
+  "action": "NONE",
+  "summary": "The theorem holds only for all sufficiently large n at fixed depth with no explicit threshold, and excludes measurement+feedforward and fanout-type gates that hardware already uses; it cannot certify any concrete depth for real devices.",
+  "targets": [
+   {
+    "name": "thm:parity",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Product-projection-localization-and-the-QAC0-parity-lower-bound-September-24-2026/build/sections/introduction.tex#L26-L35"
+   }
+  ],
+  "benefit_type": "guarantee",
+  "beneficiaries": "none",
+  "first_step": "",
+  "measurement": "",
+  "risks": "Misapplied lower bounds in architecture comparisons.",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 2,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "verdict": "do not pursue"
+ }
+]

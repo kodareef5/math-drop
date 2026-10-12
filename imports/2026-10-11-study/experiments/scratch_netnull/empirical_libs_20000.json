@@ -1,0 +1,164 @@
+{
+ "(4, 3, 3, 3, 1, 1, 1)": [
+  {
+   "lib": "networkx.double_edge_swap",
+   "TV_to_uniform": 0.0756,
+   "TV_to_deg_sw_law": 0.0147,
+   "corr(freq,deg_sw)": 0.986,
+   "sec": 1.1
+  },
+  {
+   "lib": "networkx.random_reference(conn=False)",
+   "TV_to_uniform": 0.0461,
+   "TV_to_deg_sw_law": 0.0774,
+   "corr(freq,deg_sw)": 0.194,
+   "K": 2,
+   "TV_to_rr_law": 0.0459,
+   "pred_TV_rr_vs_uniform": 0.0175,
+   "sec": 0.6
+  },
+  {
+   "lib": "igraph.Graph.rewire (C igraph_rewire)",
+   "TV_to_uniform": 0.0583,
+   "TV_to_deg_sw_law": 0.1052,
+   "corr(freq,deg_sw)": -0.018,
+   "sec": 0.1
+  },
+  {
+   "lib": "igraph.Graph.rewire n=10 (adjlist path)",
+   "TV_to_uniform": 0.0697,
+   "TV_to_deg_sw_law": 0.0872,
+   "corr(freq,deg_sw)": 0.198,
+   "sec": 0.0
+  },
+  {
+   "lib": "networkit.EdgeSwitchingInPlace",
+   "TV_to_uniform": 0.0559,
+   "TV_to_deg_sw_law": 0.0969,
+   "corr(freq,deg_sw)": 0.039,
+   "sec": 0.1
+  },
+  {
+   "lib": "networkit.Curveball (uniform random pair trades)",
+   "TV_to_uniform": 0.096,
+   "TV_to_deg_sw_law": 0.1235,
+   "corr(freq,deg_sw)": -0.123,
+   "sec": 8.6
+  },
+  {
+   "lib": "networkit.GlobalCurveball (1 global trade)",
+   "TV_to_uniform": 0.115,
+   "TV_to_deg_sw_law": 0.1462,
+   "corr(freq,deg_sw)": -0.13,
+   "sec": 0.1
+  }
+ ],
+ "(4, 4, 2, 2, 2, 2)": [
+  {
+   "lib": "networkx.double_edge_swap",
+   "TV_to_uniform": 0.0696,
+   "TV_to_deg_sw_law": 0.012,
+   "corr(freq,deg_sw)": 0.995,
+   "sec": 1.3
+  },
+  {
+   "lib": "networkx.random_reference(conn=False)",
+   "TV_to_uniform": 0.0406,
+   "TV_to_deg_sw_law": 0.0538,
+   "corr(freq,deg_sw)": 0.731,
+   "K": 3,
+   "TV_to_rr_law": 0.0295,
+   "pred_TV_rr_vs_uniform": 0.0223,
+   "sec": 0.8
+  },
+  {
+   "lib": "igraph.Graph.rewire (C igraph_rewire)",
+   "TV_to_uniform": 0.0435,
+   "TV_to_deg_sw_law": 0.0817,
+   "corr(freq,deg_sw)": 0.008,
+   "sec": 0.1
+  },
+  {
+   "lib": "igraph.Graph.rewire n=10 (adjlist path)",
+   "TV_to_uniform": 0.054,
+   "TV_to_deg_sw_law": 0.0816,
+   "corr(freq,deg_sw)": 0.325,
+   "sec": 0.0
+  },
+  {
+   "lib": "networkit.EdgeSwitchingInPlace",
+   "TV_to_uniform": 0.0397,
+   "TV_to_deg_sw_law": 0.0877,
+   "corr(freq,deg_sw)": -0.135,
+   "sec": 0.1
+  },
+  {
+   "lib": "networkit.Curveball (uniform random pair trades)",
+   "TV_to_uniform": 0.0556,
+   "TV_to_deg_sw_law": 0.07,
+   "corr(freq,deg_sw)": 0.254,
+   "sec": 0.9
+  },
+  {
+   "lib": "networkit.GlobalCurveball (1 global trade)",
+   "TV_to_uniform": 0.0935,
+   "TV_to_deg_sw_law": 0.0999,
+   "corr(freq,deg_sw)": 0.393,
+   "sec": 0.1
+  }
+ ],
+ "(3, 3, 3, 3, 3, 3)": [
+  {
+   "lib": "networkx.double_edge_swap",
+   "TV_to_uniform": 0.0605,
+   "TV_to_deg_sw_law": 0.0262,
+   "corr(freq,deg_sw)": 0.932,
+   "sec": 0.9
+  },
+  {
+   "lib": "networkx.random_reference(conn=False)",
+   "TV_to_uniform": 0.0809,
+   "TV_to_deg_sw_law": 0.0841,
+   "corr(freq,deg_sw)": 0.331,
+   "K": 3,
+   "TV_to_rr_law": 0.0738,
+   "pred_TV_rr_vs_uniform": 0.0245,
+   "sec": 0.7
+  },
+  {
+   "lib": "igraph.Graph.rewire (C igraph_rewire)",
+   "TV_to_uniform": 0.0699,
+   "TV_to_deg_sw_law": 0.0939,
+   "corr(freq,deg_sw)": 0.032,
+   "sec": 0.1
+  },
+  {
+   "lib": "igraph.Graph.rewire n=10 (adjlist path)",
+   "TV_to_uniform": 0.076,
+   "TV_to_deg_sw_law": 0.1058,
+   "corr(freq,deg_sw)": -0.218,
+   "sec": 0.0
+  },
+  {
+   "lib": "networkit.EdgeSwitchingInPlace",
+   "TV_to_uniform": 0.0884,
+   "TV_to_deg_sw_law": 0.1123,
+   "corr(freq,deg_sw)": -0.005,
+   "sec": 0.1
+  },
+  {
+   "lib": "networkit.Curveball (uniform random pair trades)",
+   "TV_to_uniform": 0.0785,
+   "TV_to_deg_sw_law": 0.0988,
+   "corr(freq,deg_sw)": -0.11,
+   "sec": 5.1
+  },
+  {
+   "lib": "networkit.GlobalCurveball (1 global trade)",
+   "TV_to_uniform": 0.1261,
+   "TV_to_deg_sw_law": 0.136,
+   "corr(freq,deg_sw)": 0.113,
+   "sec": 0.1
+  }
+ ]
+}

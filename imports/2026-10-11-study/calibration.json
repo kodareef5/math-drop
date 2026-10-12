@@ -1,0 +1,49 @@
+{
+ "_anchors": "impact: 5 field-redirecting or industry-wide correctness; 4 correctness in a major library used across many published analyses, or gates trust in the whole drop; 3 meaningful change for one major library or one subfield's claims; 2 useful correction for a niche community; 1 cosmetic. reach: 5 ubiquitous; 4 major general library (NetworkX-scale); 3 well-known specialist library or field; 2 niche specialist community; 1 a handful of groups.",
+ "lean-4": {
+  "scores": {
+   "reach": 2
+  },
+  "note": "Comparator has a small user base today; reach lowered 3→2."
+ },
+ "lean-1": {
+  "scores": {
+   "effort": 3
+  },
+  "note": "Needs a strong build machine plus an expert reviewer per statement; effort 4→3."
+ },
+ "lean-2": {
+  "scores": {
+   "impact": 2
+  },
+  "note": "Overlaps lean-1 (statement fidelity); impact 3→2."
+ },
+ "netnull-7": {
+  "note": "By-product of the audit; not a consequence of the drop's mathematics."
+ },
+ "netnull-3": {
+  "scores": {
+   "reach": 3
+  },
+  "note": "Certification text helps a smaller set of users than the NetworkX fix itself; reach 4→3."
+ },
+ "netnull-5": {
+  "scores": {
+   "reach": 4,
+   "impact": 3
+  },
+  "title": "Brain Connectivity Toolbox (MATLAB BCT and bctpy): randmio_* rewiring stops at the first successful swap, so its null model is non-uniform",
+  "note": "Independent check found the same loop in the original MATLAB BCT randmio_und, randmio_und_connected, randmio_dir, randmio_dir_connected and randmio_und_signed, the standard null model in network neuroscience; reach 3→4, impact 2→3. Provenance: the bias follows from a classical principle (rejected proposals must count as steps; Fosdick et al. 2018). Family 131's contribution is the proof that the corrected chain mixes rapidly for every degree sequence, which is what prompted this audit."
+ },
+ "netnull-1": {
+  "note": "Provenance: the bias follows from a classical principle (rejected proposals must count as steps; Fosdick et al. 2018). Family 131's contribution is the proof that the corrected chain mixes rapidly for every degree sequence, which is what prompted this audit."
+ },
+ "numtheory-1": {
+  "scores": {
+   "impact": 3,
+   "reach": 2
+  },
+  "title": "Extend unconditional complete class-number lists for imaginary quadratic fields beyond Watkins's h ≤ 100, using 003's Lean-checked 7/8 half-plane",
+  "note": "Impact 2→3: extending the unconditional class-number problem past h = 100 is a field-level result for computational number theory, and two independent derivations (Tatuzawa; Hecke's integral formula) agree. Still needs an expert check of 003 and of the wording for PARI's documented-correct range."
+ }
+}

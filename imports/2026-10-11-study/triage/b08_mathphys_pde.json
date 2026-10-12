@@ -1,0 +1,1587 @@
+[
+ {
+  "num": 260,
+  "title": "Spacetime Penrose inequalities: enclosing area, charge, rotation, and anti-de Sitter extensions",
+  "subject": "Mathematical physics",
+  "plain_english": "Proves sharp lower bounds on a black-hole spacetime's total mass in terms of horizon area (plus charge, spin, or AdS versions) for general initial data in general relativity.",
+  "constructive": "partial: equality cases identify explicit Schwarzschild/Kerr-Newman slices; no algorithm",
+  "explicit_constants": "sharp explicit inequalities (e.g. m^2 >= A/16pi + Q^2/2 + pi(Q^4+4J^2)/A)",
+  "galactic": null,
+  "channels": [
+   "FOUND",
+   "PHYS"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 2,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None of engineering value. Numerical relativists sometimes use Penrose-type inequalities as sanity checks on initial data and apparent-horizon finders, but the time-symmetric (Riemannian) version already covered that use; settling the spacetime version changes no code or decision.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "13 manuscripts; only a supporting CKS end-replacement result is Lean-formalized; the electromagnetic-tail paper shows the formulation-sensitive scope.",
+  "deep_dive": false,
+  "cross_links": [
+   264
+  ],
+  "evidence": [
+   "slice abstracts (13 manuscripts)",
+   "lean/docs/260.md"
+  ]
+ },
+ {
+  "num": 261,
+  "title": "Localization and delocalization in the Anderson model",
+  "subject": "Mathematical physics",
+  "plain_english": "Proves that in the 2D Anderson model of a disordered lattice all quantum states stay localized at any disorder strength, while in 3D or higher weak disorder leaves an energy band of extended (conducting) states.",
+  "constructive": "no: spectral-type statements",
+  "explicit_constants": "none (interval and disorder threshold existential)",
+  "galactic": null,
+  "channels": [
+   "FOUND",
+   "PHYS"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "This rigorously confirms the long-standing physics consensus from scaling theory (Simon's Problem 1). It does not change how disordered photonic, acoustic or electronic devices are modelled or simulated.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Uniform single-site law only; physics consensus already assumed these facts.",
+  "deep_dive": false,
+  "cross_links": [
+   219
+  ],
+  "evidence": [
+   "slice abstracts",
+   "lean/docs/261.md"
+  ]
+ },
+ {
+  "num": 262,
+  "title": "Sharp finite-matrix Lieb–Thirring inequalities and all equality cases",
+  "subject": "Mathematical physics",
+  "plain_english": "Determines the exact best constant in the 1D Lieb-Thirring inequality, which bounds the sum of powers of bound-state energies of a Schrodinger operator, for exponents between 1/2 and 3/2. It covers matrix-valued potentials and classifies when equality holds.",
+  "constructive": "yes for extremizers (explicit sech^2 solitons)",
+  "explicit_constants": "yes: C_gamma closed form (one-bound-state constant)",
+  "galactic": false,
+  "channels": [
+   "FOUND",
+   "PHYS"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 3,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "No applied channel. The constant that matters for stability-of-matter and orbital-free DFT kinetic-energy bounds is the 3D gamma=1 constant. The paper notes that the gamma=1 operator-valued case was already obtained by Read-Schulz 2026, so no improvement to 3D DFT kinetic bounds follows from the new range.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Finite matrices only; gamma=1 case not new.",
+  "deep_dive": false,
+  "cross_links": [
+   263
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Sharp-one-dimensional-Lieb-Thirring-inequalities-for-matrix-potentials-October-5-2026/build/sections/introduction.tex (thm:main)",
+   "/root/openai-math/preprints/Sharp-one-dimensional-Lieb-Thirring-inequalities-for-matrix-potentials-October-5-2026/build/notes/history.tex",
+   "lean/docs/262.md"
+  ]
+ },
+ {
+  "num": 263,
+  "title": "The ionization and generalized ionization conjectures",
+  "subject": "Mathematical physics",
+  "plain_english": "Proves that a molecule with M nuclei and total nuclear charge Z can bind at most Z + C*M electrons for a universal constant C. Neutral-atom first ionization energies and outer radii are bounded above and below by universal constants, and multi-electron ionization energies follow Thomas-Fermi asymptotics.",
+  "constructive": "no",
+  "explicit_constants": "C universal but not numerically specified; TF coefficient and (81 pi^2/2)^{1/3} radius constant explicit",
+  "galactic": null,
+  "channels": [
+   "FOUND",
+   "PHYS"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "This is a landmark mathematical-physics result with no engineering channel. Chemists already know from experiment and computation that atoms bind at most about Z+1 or Z+2 electrons. A non-explicit universal C cannot inform basis-set design, DFT functionals, or ionization-energy predictions.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Nonrelativistic; constant not effective.",
+  "deep_dive": false,
+  "cross_links": [
+   275,
+   278,
+   262
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Uniform-excess-charge-for-Coulomb-molecules-and-the-outer-radius-of-neutral-atoms-September-24-2026/build/sections/01-introduction.tex (thm:main, thm:radius, cor:first-ionization)",
+   "lean/docs/263.md"
+  ]
+ },
+ {
+  "num": 264,
+  "title": "Strong cosmic censorship near two-ended Kerr data",
+  "subject": "Mathematical physics",
+  "plain_english": "Shows that for generic small perturbations of a rotating (Kerr) black-hole spacetime, the interior cannot be extended past its natural boundary even in a weak sense. This is a local version of strong cosmic censorship.",
+  "constructive": "no (genericity/Baire argument)",
+  "explicit_constants": "none",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "Pure general relativity; no applied channel.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [
+   260
+  ],
+  "evidence": [
+   "slice abstracts (3 manuscripts)"
+  ]
+ },
+ {
+  "num": 265,
+  "title": "Area laws and tensor networks for two-dimensional gapped systems",
+  "subject": "Mathematical physics",
+  "plain_english": "Proves that the unique ground state of any gapped local Hamiltonian on a 2D square-lattice region has entanglement bounded by its boundary length (an area law). On LxL grids such a state can be written as a PEPS tensor network with polynomial bond dimension and 1/L error, but only as an existence statement.",
+  "constructive": "no: explicitly an existence theorem; tensors may depend arbitrarily on the ground state, and no efficient construction or contraction is claimed",
+  "explicit_constants": "no: bond dimension C*L^c with C,c depending on (q,J,Delta) only through compactness-style choices; internal error powers like L^-60 and patch ranks e^{C_Q(1+u)} indicate a very large exponent c",
+  "galactic": true,
+  "channels": [
+   "QUANT",
+   "PHYS",
+   "ALGO"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 4,
+   "reach": 3,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "This settles the 2D area law and the global-vector PEPS conjecture (Cirac-Garre-Rubio-Perez-Garcia Questions 7-8) for open square grids, which is a big result in quantum information theory. It does not by itself yield an efficient classical algorithm for 2D gapped ground states. The proof prepares the target vector as a free resource, gives no handle on finding the tensors, and general PEPS contraction is #P-hard. A 2D analogue of the Landau-Vazirani-Vidick 1D algorithm would need further research. The useful ingredients are the collar estimates and the positive operators with decaying tails that annihilate the ground state, which may support approximate-ground-state-projector (AGSP) style constructions. For tensor-network practitioners it only justifies, after the fact, an ansatz they already trust; the exponent gives no guidance on bond dimension.",
+  "targets": [
+   "PEPS / 2D tensor-network community (ITensor, TeNPy, quimb, peps-torch)",
+   "Hamiltonian-complexity theory (provable 2D ground-state algorithms)"
+  ],
+  "action": "RESEARCH",
+  "first_step": "Deep-dive: extract the dependence of c on Delta from 05-frames.tex (L^-60 frames), 03-patches.tex (rank e^{C_Q(1+u)}) and 07-assembly.tex. Then test whether the area-law paper's annihilating operators (Prop. positive) can serve as an efficiently implementable 2D AGSP.",
+  "caveats": "Not Lean-formalized; very long unrefereed proofs; open boundary only (torus translation-invariant formulation not covered); existence only.",
+  "deep_dive": true,
+  "cross_links": [
+   268,
+   269,
+   275
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/A-two-dimensional-area-law-from-a-global-spectral-gap-September-24-2026/build/sections/00-introduction.tex (thm:area, cor:rectangles, PEPS consequence paragraph)",
+   "/root/openai-math/preprints/A-two-dimensional-area-law-from-a-global-spectral-gap-September-24-2026/build/sections/00-history.tex",
+   "/root/openai-math/preprints/Polynomial-PEPS-approximation-of-gapped-square-grid-ground-states-September-24-2026/build/sections/00-introduction.tex (thm:main, 'no claim that its tensors can be found or contracted efficiently')",
+   "/root/openai-math/preprints/Polynomial-PEPS-approximation-of-gapped-square-grid-ground-states-September-24-2026/build/sections/00-history.tex",
+   "/root/openai-math/preprints/Polynomial-PEPS-approximation-of-gapped-square-grid-ground-states-September-24-2026/build/sections/07-assembly.tex (order of constants)",
+   "/root/openai-math/preprints/Polynomial-PEPS-approximation-of-gapped-square-grid-ground-states-September-24-2026/build/sections/03-patches.tex (rank bound)"
+  ]
+ },
+ {
+  "num": 266,
+  "title": "Exactly three mutually unbiased bases in dimension six",
+  "subject": "Mathematical physics",
+  "plain_english": "Proves that at most 3 mutually unbiased bases exist in dimension 6, so the complete set of 7 that exists in prime-power dimensions is impossible for d=6. The upper bound is a large floating-point computer search with certified rounding.",
+  "constructive": "yes (finite certified exhaustive search; the lower bound 3 is the known tensor-product construction)",
+  "explicit_constants": "exact answer N(6)=3; companion gives an exact rational certificate for N(6)<=5",
+  "galactic": false,
+  "channels": [
+   "QUANT",
+   "COMM",
+   "CRYPTO"
+  ],
+  "tier": "T2",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 5,
+   "practicality": 5,
+   "confidence": 3,
+   "effort": 5,
+   "time_to_value": 5
+  },
+  "opportunity": "Settles a design question that quantum-measurement and qudit-QKD designers face, in the same way 'no Barker code longer than 13' did for radar. Optimal (d+1)-basis tomography and full-MUB QKD protocols do not exist for a qubit-qutrit (d=6) system, so practitioners must use SIC-POVMs, overcomplete or product measurements, or other dimensions. Practice already assumed this after numerical evidence from 2007 onward, so the value is mainly certification and updating open-problem lists, textbooks and protocol surveys.",
+  "targets": [
+   "qudit (d=6, qubit-qutrit) state tomography",
+   "high-dimensional QKD protocol design (MUB-based d+1 protocols)",
+   "IQOQI/Kruger-Werner open quantum problems list (MUB entry)",
+   "Bengtsson-Zyczkowski 'Geometry of Quantum States' and MUB surveys (McNulty-Weigert)"
+  ],
+  "action": "CERTIFY",
+  "first_step": "Ask OpenAI to publish the missing verification/code/ directory (seed.cpp, covout.cpp, ub.cpp, patchx.cpp, atlas.cpp, stageB.cpp, stageC.cpp), extraction.json, REPRODUCE.md and the execution archive that execution.tex cites. Then rerun the roughly 75-minute pipeline independently, ideally with interval arithmetic instead of the binary64 and compiler assumptions.",
+  "caveats": "PROVENANCE GAP: the N(6)=3 paper cites a verification/code/ directory and an execution archive that are absent from the public repo (git ls-files shows only TeX/PDF), so the headline claim is not reproducible from the drop. The Lean formalization proves only N(6)<=5. I ran the exact rational <=5 verifier (Exact-Fourier-certificates.../verification/run.py): 87 s, and its output matches paper.tex lines 244-246.",
+  "deep_dive": true,
+  "cross_links": [
+   179
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/The-maximum-number-of-mutually-unbiased-bases-in-dimension-six-September-24-2026/build/sections/introduction.tex (thm:main, history)",
+   "/root/openai-math/preprints/The-maximum-number-of-mutually-unbiased-bases-in-dimension-six-September-24-2026/build/sections/execution.tex (execute:finite-theorem, wall times ~4470 s, verification/code/ reference)",
+   "git ls-files of that preprint dir (no verification/ folder)",
+   "/root/openai-math/preprints/Exact-Fourier-certificates-for-complex-Hadamard-matrices-of-order-six-September-24-2026/verification/run.py (executed; output matches build/paper.tex)",
+   "lean/docs/266.md"
+  ]
+ },
+ {
+  "num": 267,
+  "title": "Positive-temperature Bose–Einstein condensation and exact quantum depletion",
+  "subject": "Mathematical physics",
+  "plain_english": "Proves Bose-Einstein condensation at positive temperature for the dilute hard-sphere Bose gas. It also proves Bogoliubov's formula for the fraction of particles kicked out of the condensate at zero temperature, 8/(3 sqrt(pi)) sqrt(rho a^3).",
+  "constructive": "no",
+  "explicit_constants": "depletion constant 8/(3 sqrt pi) explicit; temperature/density thresholds existential",
+  "galactic": null,
+  "channels": [
+   "FOUND",
+   "PHYS"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 2,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "This rigorously confirms textbook Bogoliubov theory, which cold-atom experiments (for example uniform-trap depletion measurements) already use. No experimental or computational practice changes.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [
+   271
+  ],
+  "evidence": [
+   "slice abstracts (5 manuscripts)",
+   "lean/docs/267.md"
+  ]
+ },
+ {
+  "num": 268,
+  "title": "The spin-one Haldane gap",
+  "subject": "Mathematical physics",
+  "plain_english": "Proves the Haldane conjecture for the spin-1 antiferromagnetic Heisenberg chain on even rings: the energy gap above the ground state stays bounded away from zero as the chain grows, with an explicit lower bound.",
+  "constructive": "yes: computer-assisted with exact rational/interval data in verification/",
+  "explicit_constants": "yes: gap > log(20)/784 ~ 0.0038 for even L>=2304 and > (4/105)log(80/79) ~ 0.00048 for L>=60, against the DMRG value 0.4105",
+  "galactic": false,
+  "channels": [
+   "PHYS",
+   "QUANT"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 2,
+   "practicality": 2,
+   "confidence": 3,
+   "effort": 2,
+   "time_to_value": 2
+  },
+  "opportunity": "We considered and rejected the MBQC channel. Symmetry-protected Haldane-phase states are known computational wires (Else-Schwarz-Bartlett-Doherty). The companion boundary-field paper plus Tasaki's index theorem now rigorously place the Heisenberg point in that phase. However, phase membership was already established numerically by White-Huse 1993, practical MBQC uses AKLT or cluster states, and the proven gap bound is about 100x below the true gap. Nothing changes in practice.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Not Lean-formalized; bound far from sharp.",
+  "deep_dive": false,
+  "cross_links": [
+   265,
+   269,
+   271
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/The-periodic-spin-one-Haldane-gap-September-24-2026/build/introduction.tex (thm:main, method overview)",
+   "boundary-field companion abstract"
+  ]
+ },
+ {
+  "num": 269,
+  "title": "Uniform Laughlin gap and stability under bounded scalar disorder",
+  "subject": "Mathematical physics",
+  "plain_english": "Proves that the standard model Hamiltonian for the 1/3 fractional quantum Hall (Laughlin) state on a sphere has an energy gap bounded below uniformly in particle number. The gap survives weak bounded disorder.",
+  "constructive": "partial: sum-of-squares certificate with integer data (verification/rows.txt); flux threshold not explicit",
+  "explicit_constants": "gap >= 1/25 for sufficiently large systems (threshold not explicit); disorder threshold existential",
+  "galactic": null,
+  "channels": [
+   "PHYS",
+   "QUANT"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 2,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "We considered and rejected the topological-QC channel. Laughlin anyons are abelian and not universal for topological quantum computation, and the V1 pseudopotential gap is an idealization already characterized numerically (Haldane-Rezayi). Proving it rigorously does not change adiabatic state preparation on quantum simulators or FQH device modelling.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Sphere geometry, V1 only, non-explicit system-size threshold.",
+  "deep_dive": false,
+  "cross_links": [
+   265,
+   268
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/A-Fock-space-inequality-and-the-Laughlin-spectral-gap-September-24-2026/build/sections/01-introduction.tex (thm:fock, cor main)",
+   "/root/openai-math/preprints/A-Fock-space-inequality-and-the-Laughlin-spectral-gap-September-24-2026/verification/rows.txt",
+   "lean/docs/269.md"
+  ]
+ },
+ {
+  "num": 270,
+  "title": "Threshold and positive-energy bound states of the BFSS matrix model",
+  "subject": "Mathematical physics",
+  "plain_english": "Proves that the BFSS matrix model of M-theory has exactly one normalizable zero-energy state for every N. For SU(2) it also has infinitely many positive-energy bound states, contradicting a claim in the original BFSS paper.",
+  "constructive": "no",
+  "explicit_constants": "none",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "High-energy theory only. Lattice and Monte Carlo BFSS simulation groups might note the positive-energy bound states, but this is not an applied channel.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [
+   280,
+   282
+  ],
+  "evidence": [
+   "slice abstracts"
+  ]
+ },
+ {
+  "num": 271,
+  "title": "Bloch's law, its lattice correction, and the spherical magnetization law",
+  "subject": "Mathematical physics",
+  "plain_english": "Proves Bloch's T^(3/2) law for how magnetization of a 3D quantum Heisenberg ferromagnet drops at low temperature, with the exact coefficient and the first lattice correction. It also proves that spontaneous magnetization exists in dimension 3 and above.",
+  "constructive": "no",
+  "explicit_constants": "yes: leading coefficient and correction 3 zeta(5/2)(beta S)^{-5/2}/(128 pi^{3/2})",
+  "galactic": null,
+  "channels": [
+   "FOUND",
+   "PHYS"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 2,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "This rigorously confirms spin-wave theory (Bloch, Dyson) that magnetometry fits already use. Nothing changes in practice.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [
+   267,
+   268
+  ],
+  "evidence": [
+   "slice abstracts (4 manuscripts)",
+   "lean/docs/271.md"
+  ]
+ },
+ {
+  "num": 272,
+  "title": "Entanglement without distillable secret key",
+  "subject": "Mathematical physics",
+  "plain_english": "Builds an explicit entangled two-party state on C^10 x C^10 from which no secret key can be distilled, even with unlimited two-way public discussion. This answers the 2005 open problem 'secret key from all entangled states?' negatively. It also gives an explicit PPT channel whose square is not entanglement breaking, disproving the PPT-squared conjecture.",
+  "constructive": "yes: explicit integer matrices define the maps and state; exact-arithmetic verification scripts included",
+  "explicit_constants": "yes: explicit 10x10 state; trace-distance gap >= 1/10 from an ideal key bit for every protocol length",
+  "galactic": false,
+  "channels": [
+   "QUANT",
+   "CRYPTO"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 3,
+   "practicality": 3,
+   "confidence": 4,
+   "effort": 3,
+   "time_to_value": 3
+  },
+  "opportunity": "For QKD theory, entanglement is necessary but now provably not sufficient for key, even with two-way post-processing. The PPT-squared disproof reopens questions about key repeaters and PPT links in quantum networks, where limitation results (Bauml-Christandl-Horodecki-Winter) leaned on related structure. Deployed QKD already computes key rates numerically per protocol, so nothing changes in fielded systems. The explicit 10x10 state could serve as a test case for entanglement-detection and key-rate tools.",
+  "targets": [
+   "QKD security theory (private states, key repeaters)",
+   "numerical key-rate frameworks (Lutkenhaus-group openQKDsecurity)",
+   "entanglement-detection benchmark sets"
+  ],
+  "action": "RESEARCH",
+  "first_step": "Check which quantum-key-repeater no-go results assumed PPT-squared, and whether the M_21 channel Theta gives a two-link chain with positive repeated key.",
+  "caveats": "Zero-key result holds within the paper's 'admitted completed protocol' model. Lean covers the PPT-composition counterexamples, not the secrecy theorem.",
+  "deep_dive": false,
+  "cross_links": [
+   277,
+   273
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/introduction.tex (thm:main-state, thm:main-pair, thm:main-channel, history)",
+   "/root/openai-math/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/secret-key.tex (thm:zero-key)",
+   "/root/openai-math/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/combinatorial.tex (thm:old-construction)",
+   "lean/docs/272.md"
+  ]
+ },
+ {
+  "num": 273,
+  "title": "The entropy photon-number inequality",
+  "subject": "Mathematical physics",
+  "plain_english": "Proves the entropy photon-number inequality, the quantum-optics analogue of Shannon's entropy power inequality for beam-splitter mixing. Thermal light is the worst case at fixed entropy. Consequences include the exact minimum output entropy of multimode thermal attenuators with entangled inputs and the exact capacity region of the degraded two-receiver pure-loss bosonic broadcast channel.",
+  "constructive": "yes for consequences: optimal inputs are thermal / coherent-state superposition codes; region given in closed form",
+  "explicit_constants": "yes: closed-form capacity region R_B<=g(eta_B beta N), R_C<=g(eta_C N)-g(eta_C beta N)",
+  "galactic": false,
+  "channels": [
+   "COMM",
+   "QUANT"
+  ],
+  "tier": "T2",
+  "scores": {
+   "impact": 3,
+   "reach": 2,
+   "directness": 4,
+   "practicality": 4,
+   "confidence": 4,
+   "effort": 4,
+   "time_to_value": 4
+  },
+  "opportunity": "Closes a 2007 conjecture (Guha-Erkmen-Shapiro) on which a family of optical-communication capacity theorems were conditional. The paper itself makes the pure-loss broadcast region unconditional. Other results with converses that needed the multimode constrained minimum-output-entropy statement may also become unconditional, notably the bosonic wiretap capacity (Guha-Shapiro-Erkmen 2008) and the pure-loss trade-off capacities (Wilde-Hayden-Guha 2012); the paper explicitly does not claim these, so each must be checked. The beneficiaries are quantum optical communication theory (fiber, free-space, satellite links) and the textbooks that state these as conditional.",
+  "targets": [
+   "Guha/Shapiro/Wilde bosonic capacity literature (arXiv 0710.5666, 0801.0841, 1206.4886)",
+   "textbooks: Holevo 'Quantum Systems, Channels, Information', Serafini 'Quantum Continuous Variables', Wilde 'Quantum Information Theory'",
+   "optical/satellite quantum-limited communication capacity analyses"
+  ],
+  "action": "CERTIFY",
+  "first_step": "Deep-dive: list every published bosonic capacity theorem marked 'conditional on EPnI / minimum-output-entropy conjecture 2'. For each, check whether Cor. thermal-attenuator (identical thermal attenuators with entangled multimode inputs, including N_B=0) is exactly the missing converse ingredient.",
+  "caveats": "Finite-energy, finite-mode, identical attenuators only; the paper disclaims amplifier, wiretap, noisy-broadcast and quantum-capacity statements. Practical optical links operate far from Holevo limits, so the value is in theory and guarantees.",
+  "deep_dive": true,
+  "cross_links": [
+   276,
+   272
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/00-introduction.tex (thm:epni, cor:thermal-attenuator, context)",
+   "/root/openai-math/preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/06-broadcast.tex (cor:broadcast-capacity, scope disclaimer)",
+   "lean/docs/273.md",
+   "arXiv 0710.5666 and 0801.0841 abstracts (conditional capacity theorems)"
+  ]
+ },
+ {
+  "num": 274,
+  "title": "Parity is not in QAC<sup>0</sup>",
+  "subject": "Mathematical physics",
+  "plain_english": "Proves that constant-depth quantum circuits built from one-qubit gates and many-qubit Toffoli gates cannot compute the parity of n bits, even with polynomially many helper qubits. Consequences include obstructions to constant-depth fanout, majority, and preparation of cat-like (GHZ/Dicke) states in that gate model.",
+  "constructive": "no: lower bound",
+  "explicit_constants": "asymptotic only (holds for all sufficiently large n at fixed depth; threshold not explicit)",
+  "galactic": null,
+  "channels": [
+   "QUANT",
+   "CPLX"
+  ],
+  "tier": "T2",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 3,
+   "practicality": 2,
+   "confidence": 4,
+   "effort": 4,
+   "time_to_value": 4
+  },
+  "opportunity": "Settles an architecture question. Native multi-controlled-Z gates, of the kind Rydberg-blockade neutral-atom platforms offer, are provably not a substitute for fanout: without mid-circuit measurement plus feedforward, or a fanout-type global gate such as ion-trap global Molmer-Sorensen, parity and GHZ-type states cannot be produced in constant depth. This supports the dynamic-circuit route (constant-depth GHZ with measurement and feedforward) for compiler resource estimates and architecture comparisons.",
+  "targets": [
+   "neutral-atom compilation (QuEra Bloqade, Pasqal Pulser) native C^kZ gates",
+   "trapped-ion global MS gate architectures",
+   "dynamic-circuit GHZ preparation (IBM)",
+   "Qiskit/tket depth and resource estimation docs"
+  ],
+  "action": "REDIRECT",
+  "first_step": "Write a short note mapping the theorem and its fanout/Dicke corollaries onto native gate sets (C^kZ versus global MS) for architecture-comparison papers.",
+  "caveats": "Asymptotic; says nothing at n~100 with unspecified thresholds. Excludes measurement and feedforward; QAC0 with fanout gates remains powerful.",
+  "deep_dive": false,
+  "cross_links": [
+   279,
+   283,
+   284
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Product-projection-localization-and-the-QAC0-parity-lower-bound-September-24-2026/build/sections/introduction.tex (thm:parity)",
+   "/root/openai-math/preprints/Product-projection-localization-and-the-QAC0-parity-lower-bound-September-24-2026/build/sections/localization.tex (thm:localization)",
+   "/root/openai-math/preprints/Product-projection-localization-and-the-QAC0-parity-lower-bound-September-24-2026/build/sections/consequences.tex (state preparation, fanout)",
+   "lean/docs/274.md"
+  ]
+ },
+ {
+  "num": 275,
+  "title": "QMA-hardness of continuum Coulomb energy",
+  "subject": "Mathematical physics",
+  "plain_english": "Proves that estimating the ground-state energy of electrons around fixed nuclei in full 3D continuum space is QMA-hard, the quantum analogue of NP-hard, even when every nucleus is a proton. The hard instances are carefully spaced hydrogen-nucleus clusters that emulate a hard spin model.",
+  "constructive": "yes: deterministic poly-time reduction outputs nuclear positions and thresholds",
+  "explicit_constants": "polynomial but unspecified scales (k=ceil(C n^A), lambda=8k^3/rho with 'sufficiently large absolute' A,C)",
+  "galactic": true,
+  "channels": [
+   "CPLX",
+   "PHYS",
+   "QUANT"
+  ],
+  "tier": "T2",
+  "scores": {
+   "impact": 2,
+   "reach": 3,
+   "directness": 3,
+   "practicality": 2,
+   "confidence": 4,
+   "effort": 4,
+   "time_to_value": 4
+  },
+  "opportunity": "Removes the 'finite orbital basis' loophole in O'Gorman et al. 2022. Worst-case ab initio electronic structure, even with hydrogen only and full continuum minimization, has no efficient general algorithm on classical or quantum computers unless QMA collapses. This supports skeptical framing of claims of exponential quantum advantage in chemistry (it must come from structure, not generality). Practical quantum-chemistry codes are unaffected because real molecules are not these polynomially stretched gadget clusters.",
+  "targets": [
+   "quantum-advantage-in-chemistry assessments (e.g. Lee et al. 2023)",
+   "quantum-chemistry resource-estimation community (OpenFermion, Qiskit Nature)"
+  ],
+  "action": "REDIRECT",
+  "first_step": "Cite in quantum-advantage and complexity-of-chemistry discussions as the continuum and unit-charge version of the electronic-structure QMA-hardness result.",
+  "caveats": "Hardness only; QMA membership not asserted. Instances are galactic (polynomially stretched H clusters at unspecified large powers). Consensus already expected this.",
+  "deep_dive": false,
+  "cross_links": [
+   263,
+   278,
+   265
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/QMA-hardness-of-continuum-Coulomb-energy-with-unit-nuclear-charges-September-24-2026/build/introduction.tex (thm:main, input table, proof strategy)",
+   "/root/openai-math/preprints/QMA-hardness-of-continuum-Coulomb-energy-with-unit-nuclear-charges-September-24-2026/build/sections/implementation.tex (scale choices)",
+   "lean/docs/275.md"
+  ]
+ },
+ {
+  "num": 276,
+  "title": "Classical capacity of generalized amplitude damping",
+  "subject": "Mathematical physics",
+  "plain_english": "Computes exactly how many classical bits per use can be sent through a qubit generalized amplitude-damping channel, the standard model of energy relaxation at finite temperature. The answer is a one-variable maximization, and entangled inputs across channel uses do not help.",
+  "constructive": "yes: explicit formula and explicit optimal binary pure-state ensemble",
+  "explicit_constants": "yes: C = (1/ln2) max_p { h((1-gamma)p+gamma nu) - g(gamma nu(1-nu)+gamma(1-gamma)(p-nu)^2) }",
+  "galactic": false,
+  "channels": [
+   "QUANT",
+   "COMM"
+  ],
+  "tier": "T2",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 5,
+   "practicality": 5,
+   "confidence": 5,
+   "effort": 5,
+   "time_to_value": 5
+  },
+  "opportunity": "Settles an open problem flagged by Leditzky-Kaur-Datta-Wilde 2018. For thermal-relaxation noise, product (non-entangled) binary signalling achieves capacity, so code designers need not search over entangled input codewords; collective decoding is still required. It also yields additivity with any finite-dimensional partner channel. The formula can replace the upper and lower bounds (Khatri-Sharma-Wilde 2020, Fang 2026) in capacity tables.",
+  "targets": [
+   "Khatri-Wilde 'Principles of Quantum Communication Theory' / Khatri-Sharma-Wilde 2020 bounds",
+   "quantum Shannon theory textbooks and capacity tables",
+   "noise-model-aware capacity studies of superconducting-qubit links (thermal_relaxation-type noise)"
+  ],
+  "action": "CERTIFY",
+  "first_step": "Implement the one-line capacity function, reproduce the Khatri-Sharma-Wilde figure with the exact curve, and post a note or erratum to bound-table maintainers.",
+  "caveats": "Unassisted classical capacity only; quantum and private capacities are not addressed.",
+  "deep_dive": false,
+  "cross_links": [
+   273
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/paper.tex (thm:main lines 208-228; prior work 70-120)",
+   "/root/openai-math/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/special.tex (cor:ordinary, cor:unital)",
+   "lean/docs/276.md"
+  ]
+ },
+ {
+  "num": 277,
+  "title": "Threshold repetition for entangled games",
+  "subject": "Mathematical physics",
+  "plain_english": "Proves that for any two-player game played with quantum entanglement, the chance of winning well above the best single-game rate across k parallel repetitions decays exponentially in k. This lets such games be amplified to near-certain accept/reject.",
+  "constructive": "partial: bound is explicit for fixed question distributions",
+  "explicit_constants": "universal rate kappa0*delta^5/(1+log d) with kappa0=1/(16(4B4)^4), B4 non-explicit (Song's lemma); explicit cubic rate delta^3/(16384(1+kappa_mu)(1+log d))",
+  "galactic": true,
+  "channels": [
+   "QUANT",
+   "CRYPTO",
+   "CPLX"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 3,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 2,
+   "time_to_value": 2
+  },
+  "opportunity": "In principle this underpins parallel (one-shot) device-independent protocols, since threshold soundness is exactly what parallel DIQKD and randomness protocols need. In practice the explicit rate is galactic. For CHSH (kappa_mu=96, d=4) the cubic rate at delta=0.1 is about 2.6e-10 per round, so about 1e11 rounds are needed for 1e-10 soundness, against roughly 1e6-1e8 rounds in DIQKD experiments. Winning-probability concentration is also not a key-rate or min-entropy bound; entropy-accumulation (EAT) proofs remain the tool of choice.",
+  "targets": [
+   "parallel DIQKD / DI randomness theory (Jain-Miller-Shi; Vidick)",
+   "MIP* gap amplification without anchoring"
+  ],
+  "action": "RESEARCH",
+  "first_step": "",
+  "caveats": "Finite-dimensional strategies only. Lean formalizes only the weaker delta^13 rate. The delta^5 rate rests on an external lemma (Song 2026).",
+  "deep_dive": false,
+  "cross_links": [
+   272,
+   102,
+   105
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/00-introduction.tex (thm:main, cubic bound, related work)",
+   "/root/openai-math/preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/04-threshold.tex (prop:song-conditioning, kappa0)",
+   "/root/openai-math/preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/06-consequences.tex (cor:error-amplification)",
+   "lean/docs/277.md"
+  ]
+ },
+ {
+  "num": 278,
+  "title": "Failure of Kohn–Sham ensemble representation",
+  "subject": "Mathematical physics",
+  "plain_english": "Constructs a three-electron, two-nucleus Coulomb system whose true ground-state electron density cannot be reproduced by any ensemble of non-interacting electrons in one ordinary local potential. That is the existence assumption behind exact Kohn-Sham DFT. It also shows that the exchange-correlation potential has no local first-variation representative at that density.",
+  "constructive": "partial: explicit Hamiltonian form, but nuclear charge Z is specified only by a nonnumerical formula with D=10^200",
+  "explicit_constants": "no effective numerical bound on Z; separation (2D/Z) with D=10^200",
+  "galactic": true,
+  "channels": [
+   "PHYS"
+  ],
+  "tier": "T2",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 3,
+   "practicality": 2,
+   "confidence": 3,
+   "effort": 3,
+   "time_to_value": 3
+  },
+  "opportunity": "Gives analytic backing to numerically observed failures of Kohn-Sham density inversion (Trushin-Erhard-Gorling 2024; Erhard-Trushin-Gorling 2025). The mechanism, a nodal plane in the leading ionization amplitude that produces anomalous density decay (Gori-Giorgi-Gal-Baerends), is generic to open-shell systems, even though the certified instance is unphysical. Developers of exact-xc-potential inversion tools and ensemble DFT should treat non-convergence near nodal-plane asymptotics as possibly genuine and prefer regularized formulations (Moreau-Yosida / Kvaal-Ekstrom-Teale-Helgaker).",
+  "targets": [
+   "density-inversion codes (n2v, KS-pies; Wu-Yang/ZMP inversions in PySCF-based workflows)",
+   "ensemble DFT / GOK developers",
+   "Moreau-Yosida regularized DFT"
+  ],
+  "action": "REDIRECT",
+  "first_step": "Deep-dive: compare the paper's plane-obstruction hypotheses (Thm. obstruction) with the open-shell atoms where TEG24 saw inversion failures, and decide whether the obstruction plausibly applies to real systems.",
+  "caveats": "Potential class L^{3/2}+L^infty only (distributional potentials not excluded). Instance is galactic and its charge nonnumerical. Not Lean-formalized; single manuscript.",
+  "deep_dive": true,
+  "cross_links": [
+   373,
+   263,
+   275
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/main.tex (thm:main, relation to earlier work)",
+   "/root/openai-math/preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/05-plane-obstruction.tex (thm:obstruction, thm:qualitative-counterexample)",
+   "/root/openai-math/preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/07-functional-consequence.tex (cor:hxc-first-variation)"
+  ]
+ },
+ {
+  "num": 279,
+  "title": "Exact quantum factoring over a fixed finite gate set",
+  "subject": "Mathematical physics",
+  "plain_english": "Gives a polynomial-size quantum circuit family over a fixed finite gate set that factors every integer with probability exactly one, rather than with high probability.",
+  "constructive": "yes",
+  "explicit_constants": "polynomial but large; the paper says its 'large polynomial parameters are not intended as practical resource improvements'",
+  "galactic": true,
+  "channels": [
+   "QUANT",
+   "CPLX"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 2,
+   "directness": 2,
+   "practicality": 1,
+   "confidence": 5,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None for compilers or cryptographic resource estimates. Shor plus verification and retry is already Las Vegas with tiny failure probability, hardware noise dominates any gain from exactness, and the construction is costlier than Gidney-Ekera style circuits. It matters only for exact-quantum-complexity theory.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Lean-formalized.",
+  "deep_dive": false,
+  "cross_links": [
+   283,
+   274
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/01-introduction.tex (thm:main, resource disclaimer)",
+   "/root/openai-math/preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/06-exactness.tex",
+   "lean/docs/279.md"
+  ]
+ },
+ {
+  "num": 280,
+  "title": "Unitary vertex operator algebras and conformal nets",
+  "subject": "Mathematical physics",
+  "plain_english": "Shows that every well-behaved (unitary, strongly rational) vertex operator algebra yields a conformal net with the same braided representation category. This links two mathematical frameworks for 2D conformal field theory.",
+  "constructive": "no",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "Pure mathematical physics. The tie to unitary modular tensor categories (anyon models) is too remote to affect topological-QC engineering.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [
+   282,
+   270
+  ],
+  "evidence": [
+   "slice abstract",
+   "lean/docs/280.md"
+  ]
+ },
+ {
+  "num": 281,
+  "title": "QAOA attains the SK optimum in the thermodynamic-first limit",
+  "subject": "Mathematical physics",
+  "plain_english": "Proves that QAOA, a near-term quantum optimization heuristic, can get arbitrarily close to the optimal energy of the Sherrington-Kirkpatrick spin glass at some fixed depth, in the infinite-size limit. It gives no bound on that depth and no way to find the angles.",
+  "constructive": "no: existence of depth and angles; the paper says it gives 'no quantitative finite-size estimate, depth bound, or efficient procedure for choosing the angles'",
+  "explicit_constants": "none",
+  "galactic": null,
+  "channels": [
+   "QUANT",
+   "OPT"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 1,
+   "reach": 2,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "Practically this is a statement of no advantage. Montanari's classical message-passing algorithm already reaches (1-eps) of the SK optimum in polynomial time once the zero-temperature Parisi measure has full support, and the companion paper (independently of Chen 2026) proves that full support, making the classical algorithm unconditional. QAOA-on-SK benchmarks (Basso et al.; Google 2021 experiment) get no angle schedule or depth estimate.",
+  "targets": [
+   "QAOA benchmark literature (SK / MaxCut on large-degree regular graphs)"
+  ],
+  "action": "RESEARCH",
+  "first_step": "",
+  "caveats": "Thermodynamic limit first; Lean covers only the Parisi-variational identities and full support, not QAOA convergence.",
+  "deep_dive": false,
+  "cross_links": [
+   217,
+   221,
+   234,
+   227
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/QAOA-attains-the-SK-ground-state-energy-in-the-thermodynamic-first-limit-September-25-2026/build/sections/01-introduction.tex (thm:main, quantifier disclaimer)",
+   "/root/openai-math/preprints/QAOA-attains-the-SK-ground-state-energy-in-the-thermodynamic-first-limit-September-25-2026/build/sections/04-classical-synthesis.tex",
+   "lean/docs/281.md"
+  ]
+ },
+ {
+  "num": 282,
+  "title": "From scale symmetry to local conformal symmetry in four-dimensional QFT",
+  "subject": "Mathematical physics",
+  "plain_english": "Under strong axiomatic assumptions, proves that a 4D quantum field theory with scale symmetry also has local conformal symmetry.",
+  "constructive": "no",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "Pure QFT foundations; no applied channel.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Heavy hypotheses; local (not global) conformal conclusion.",
+  "deep_dive": false,
+  "cross_links": [
+   280
+  ],
+  "evidence": [
+   "slice abstract"
+  ]
+ },
+ {
+  "num": 283,
+  "title": "Polynomial-time unitary synthesis from a Boolean oracle",
+  "subject": "Mathematical physics",
+  "plain_english": "Shows that a fixed polynomial-size quantum circuit with access to a suitably chosen classical oracle can approximately implement any n-qubit unitary, with diamond-norm error 1/2.",
+  "constructive": "no for the oracle: the target-dependent Boolean oracle may have an exponential truth table, and no efficient classical construction is given",
+  "explicit_constants": "error 1/2 in diamond norm (very coarse)",
+  "galactic": true,
+  "channels": [
+   "QUANT",
+   "CPLX"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 2,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None for quantum compilers (Qiskit UnitarySynthesis, tket, BQSKit). Computing the oracle is the whole difficulty and is not addressed, and error 1/2 is useless for compilation. This is a quantum-complexity result about the Aaronson-Kuperberg problem.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Not formalized.",
+  "deep_dive": false,
+  "cross_links": [
+   279,
+   274
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/01-introduction.tex (thm:main, quantifier remark)"
+  ]
+ },
+ {
+  "num": 284,
+  "title": "The optimal quartic separation between randomized and quantum queries",
+  "subject": "Mathematical physics",
+  "plain_english": "Constructs Boolean functions where randomized algorithms need about the fourth power of the number of queries quantum algorithms need, so the known quartic upper bound is tight.",
+  "constructive": "yes (explicit function family)",
+  "explicit_constants": "polylog losses with unspecified constants",
+  "galactic": null,
+  "channels": [
+   "CPLX",
+   "QUANT"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "Query-complexity theory. It caps the polynomial quantum speedups possible for total functions, but no practical algorithm or decision depends on whether the cap is cubic or quartic.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Not formalized.",
+  "deep_dive": false,
+  "cross_links": [
+   192,
+   139
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/01-introduction.tex (thm:main)"
+  ]
+ },
+ {
+  "num": 362,
+  "title": "Global smoothness for relativistic Vlasov–Maxwell",
+  "subject": "Partial differential equations",
+  "plain_english": "Proves that the 3D relativistic Vlasov-Maxwell equations for a collisionless plasma of one particle species have a unique smooth solution for all time from any smooth initial data, with no size or symmetry restrictions.",
+  "constructive": "no: global regularity",
+  "explicit_constants": "none stated; momentum-support bound may grow with T and is not quantified in the theorem",
+  "galactic": null,
+  "channels": [
+   "PHYS",
+   "NUM"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 1,
+   "reach": 2,
+   "directness": 2,
+   "practicality": 2,
+   "confidence": 4,
+   "effort": 3,
+   "time_to_value": 3
+  },
+  "opportunity": "A priori error analyses of Vlasov-Maxwell solvers (PIC convergence proofs, DG and semi-Lagrangian error estimates) assume a smooth solution exists on [0,T]. For the one-species relativistic model that assumption is now a theorem, so such convergence results can be stated unconditionally. Production plasma codes are unaffected, and real plasmas are multi-species.",
+  "targets": [
+   "Vlasov-Maxwell numerical analysis (PIC/DG/semi-Lagrangian convergence proofs)",
+   "context: WarpX, OSIRIS, EPOCH, VPIC (no code change)"
+  ],
+  "action": "CERTIFY",
+  "first_step": "",
+  "caveats": "One species only; no quantitative growth bounds; whole-space, compact support.",
+  "deep_dive": false,
+  "cross_links": [
+   363,
+   364
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Global-classical-solutions-of-the-three-dimensional-relativistic-Vlasov-Maxwell-system-September-23-2026/build/sections/introduction.tex (thm:global, history)",
+   "lean/docs/362.md"
+  ]
+ },
+ {
+  "num": 363,
+  "title": "Nonuniqueness with local conservation for the hard-sphere Boltzmann equation",
+  "subject": "Partial differential equations",
+  "plain_english": "Builds rough initial gas data on a periodic box from which the hard-sphere Boltzmann equation has two different weak solutions, both conserving mass, momentum and energy locally.",
+  "constructive": "partial: construction via concentrating cold jets at geometrically shrinking scales",
+  "explicit_constants": "no",
+  "galactic": true,
+  "channels": [
+   "FOUND",
+   "PHYS"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. The nonuniqueness needs singular, unbounded-amplitude data at shrinking scales. DSMC and deterministic Boltzmann solvers (SPARTA, DSMC codes, discrete-velocity methods) work with bounded data, where uniqueness theory (Kaniel-Shinbrot, Ukai, Duan et al.) applies.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [
+   362,
+   364
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Nonuniqueness-with-local-conservation-for-the-hard-sphere-Boltzmann-equation-October-5-2026/build/paper/01-introduction.tex (thm:main, construction)",
+   "lean/docs/363.md"
+  ]
+ },
+ {
+  "num": 364,
+  "title": "Kinetic limits and fluctuations over the Boltzmann lifespan",
+  "subject": "Partial differential equations",
+  "plain_english": "Derives the Boltzmann equation from Newtonian particle dynamics for realistic short-range potentials, including attractive wells, over the whole time interval where the kinetic solution stays regular. A companion proves that fluctuations follow the linear fluctuating Boltzmann equation.",
+  "constructive": "no",
+  "explicit_constants": "convergence rates of form eps^c with unspecified c",
+  "galactic": null,
+  "channels": [
+   "FOUND",
+   "PHYS"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "This is a foundations-of-kinetic-theory result. It could be cited to justify fluctuating-Boltzmann noise models used in fluctuating DSMC and fluctuating hydrodynamics, but those communities already validate their models empirically and through Wagner-type DSMC convergence theorems. No action follows.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Regular kinetic interval only; hard spheres for fluctuations.",
+  "deep_dive": false,
+  "cross_links": [
+   362,
+   363
+  ],
+  "evidence": [
+   "slice abstracts",
+   "/root/openai-math/preprints/The-Boltzmann-Grad-limit-for-stable-radial-potentials-on-regular-kinetic-intervals-September-23-2026/build/sections/06-closure.tex (grep: eps^c rates)"
+  ]
+ },
+ {
+  "num": 365,
+  "title": "Joint metric and connection recovery from one boundary patch",
+  "subject": "Partial differential equations",
+  "plain_english": "Shows that electrical (Dirichlet-to-Neumann) measurements on any small patch of the boundary, with currents injected and voltages read on that same patch, determine a smooth anisotropic conductivity up to coordinate change, and a smooth scalar conductivity uniquely, in 3D and above. Conversely, two different rough (merely bounded) 3D conductivities can give identical full-boundary measurements.",
+  "constructive": "no for uniqueness (no reconstruction or stability); nonuniqueness pair built from an infinite nested hierarchy of scalar blocks",
+  "explicit_constants": "none (contrast C/c unspecified; no stability modulus)",
+  "galactic": null,
+  "channels": [
+   "GEO"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 2,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 2,
+   "time_to_value": 2
+  },
+  "opportunity": "Partial-data electrical impedance and resistivity tomography is the realistic setting: chest-belt EIT, and geophysical ERT with surface electrodes only. Same-patch uniqueness for smooth conductivities in 3D is the theoretical green light for those reconstructions. The rough-conductivity counterexample shows that regularity priors are mathematically necessary, not just convenient. It may also interest DC and thermal metamaterial 'illusion' design, as exact indistinguishable isotropic bounded conductivities, but the construction uses infinitely many nested scales. Neither result supplies stability estimates or algorithms, and EIT is only logarithmically stable.",
+  "targets": [
+   "EIT/ERT reconstruction (EIDORS, pyGIMLi, ResIPy, SimPEG DC resistivity)",
+   "DC/thermal metamaterial cloaking-illusion research"
+  ],
+  "action": "RESEARCH",
+  "first_step": "",
+  "caveats": "Uniqueness only. Lean formalizes the nonuniqueness pair only. Patch results are long and unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   372
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Smooth-Anisotropic-Uniqueness-in-the-Calderon-Problem-from-One-Boundary-Patch-September-24-2026/build/sections/01-introduction.tex (main:patch, main:full, main:scalar, history)",
+   "/root/openai-math/preprints/Nonuniqueness-for-Bounded-Measurable-Scalar-Conductivities-in-Three-Dimensions-September-23-2026/build/paper.tex (thm:main, cor:localized, block construction)",
+   "lean/docs/365.md"
+  ]
+ },
+ {
+  "num": 366,
+  "title": "The planar Mumford–Shah regularity conjecture and local weak-<i>L</i><sup>4</sup> gradient bounds",
+  "subject": "Partial differential equations",
+  "plain_english": "Proves that in the classic Mumford-Shah image-segmentation model, every optimal edge set in 2D is locally a smooth curve, a curve ending at a crack tip, or three curves meeting at 120 degrees, with finitely many pieces in any compact region.",
+  "constructive": "no",
+  "explicit_constants": "Holder exponent alpha and weak-L4 constants not explicit",
+  "galactic": null,
+  "channels": [
+   "GEO"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 1,
+   "reach": 2,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "This justifies structural assumptions (edges as finitely many regular arcs, triple junctions, crack tips) in curve-based Mumford-Shah segmentation and in 2D variational brittle fracture (Francfort-Marigo / Ambrosio-Tortorelli phase-field fracture). Practice already assumes this structure, and modern segmentation is mostly learned, so there is no operational change.",
+  "targets": [
+   "phase-field fracture (Ambrosio-Tortorelli in FEniCS/deal.II)",
+   "variational image segmentation (Mumford-Shah, Chan-Vese)"
+  ],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Interior only; bounded fidelity data; not formalized.",
+  "deep_dive": false,
+  "cross_links": [
+   367,
+   375
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/introduction.tex (thm:main)",
+   "/root/openai-math/preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/completion.tex (cor:weak-l4)"
+  ]
+ },
+ {
+  "num": 367,
+  "title": "The critical dimension for the one-phase Bernoulli problem",
+  "subject": "Partial differential equations",
+  "plain_english": "Shows that 7 is the first dimension where minimizers of the one-phase Bernoulli free-boundary problem can have singular points, so free boundaries are smooth up to dimension 6.",
+  "constructive": "partial: explicit 7D singular cone",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "Free-boundary and shape-optimization applications live in dimensions 2-3, where regularity was already known. No applied change.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [
+   366,
+   375
+  ],
+  "evidence": [
+   "slice abstract",
+   "lean/docs/367.md"
+  ]
+ },
+ {
+  "num": 368,
+  "title": "The three-dimensional Ball–Evans approximation problem",
+  "subject": "Partial differential equations",
+  "plain_english": "Proves that any finite-energy invertible deformation of a 3D body (a Sobolev homeomorphism) can be approximated arbitrarily well, in energy norm, by smooth invertible deformations onto the same target. The route passes through piecewise-linear invertible maps.",
+  "constructive": "partial: staged construction (locally bi-Lipschitz, then PL homeomorphism, then smoothing) built on Moise-Bing PL topology; not algorithmic",
+  "explicit_constants": "none",
+  "galactic": null,
+  "channels": [
+   "NUM",
+   "GEO"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 2,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 2,
+   "time_to_value": 2
+  },
+  "opportunity": "The paper's intermediate step (Prop. sm:bilip-pl) means injective piecewise-affine maps on tetrahedral meshes are W^{1,p}-dense among 3D Sobolev homeomorphisms. That is a density statement relevant to injectivity-constrained P1 finite elements in nonlinear elasticity and to foldover-free volumetric mapping in geometry processing. It does not give energy convergence for elastic energies with determinant blow-up (the paper says so), so the Lavrentiev-gap question in FEM remains open.",
+  "targets": [
+   "nonlinear-elasticity FEM with injectivity constraints",
+   "injective tetrahedral mesh mapping (geometry processing)"
+  ],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Locally finite (not finite) PL meshes; no rates; no energy convergence.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "/root/openai-math/preprints/Strong-diffeomorphic-approximation-in-three-dimensions-for-p-gt-2-September-24-2026/build/sections/01-introduction.tex (main:theorem)",
+   "/root/openai-math/preprints/Strong-diffeomorphic-approximation-in-three-dimensions-for-p-gt-2-September-24-2026/build/sections/02-smoothing.tex (sm:smoothing, sm:pl-smoothing, sm:bilip-pl)",
+   "/root/openai-math/preprints/Strong-diffeomorphic-approximation-in-three-dimensions-for-1-le-p-le-2-September-24-2026/build/sections/01-introduction.tex"
+  ]
+ },
+ {
+  "num": 369,
+  "title": "The hot spots conjecture for simply connected planar domains",
+  "subject": "Partial differential equations",
+  "plain_english": "Proves that on any smooth simply connected planar region, the second Neumann eigenfunction (the 'hot spots' mode) has no interior critical points, so its hottest and coldest points lie on the boundary.",
+  "constructive": "no",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND",
+   "GEO"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "We considered and rejected the shape-analysis channel. Graphics and shape-analysis pipelines already use Fiedler-vector extrema as heuristic boundary or diameter endpoints, and the graph version of hot spots can fail, so this continuum theorem changes nothing in practice.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "/root/openai-math/preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/01-introduction.tex (grep)",
+   "lean/docs/369.md"
+  ]
+ },
+ {
+  "num": 370,
+  "title": "The Lane–Emden and Hénon–Lane–Emden conjectures",
+  "subject": "Partial differential equations",
+  "plain_english": "Proves the Lane-Emden and Henon-Lane-Emden conjectures: certain coupled nonlinear elliptic PDE systems have no positive solutions on all of space in the subcritical range.",
+  "constructive": "no",
+  "explicit_constants": "sharp exponent criterion explicit",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "This is a Liouville theorem used inside PDE a-priori-bound arguments. It is unrelated to the astrophysical Lane-Emden ODE used in stellar modelling.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "slice abstract",
+   "lean/docs/370.md"
+  ]
+ },
+ {
+  "num": 371,
+  "title": "Stable blowup for the defocusing Schrödinger equation",
+  "subject": "Partial differential equations",
+  "plain_english": "For a very high-power defocusing nonlinear Schrodinger equation on the 12-dimensional torus, finds an open set of smooth initial data whose solutions blow up in finite time.",
+  "constructive": "partial",
+  "explicit_constants": "power 'sufficiently large'",
+  "galactic": true,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "Optical and BEC NLS models are 1-3D with cubic or quintic nonlinearity. Dimension 12 with huge powers has no physical or numerical relevance.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "slice abstract",
+   "lean/docs/371.md"
+  ]
+ },
+ {
+  "num": 372,
+  "title": "Global uniqueness in smooth isotropic elasticity",
+  "subject": "Partial differential equations",
+  "plain_english": "Proves that static boundary measurements on a 3D elastic body (displacements in, tractions out, over the whole surface) uniquely determine both spatially varying Lame elastic moduli, for any smooth coefficients.",
+  "constructive": "no: uniqueness only, no reconstruction or stability",
+  "explicit_constants": "none",
+  "galactic": null,
+  "channels": [
+   "GEO",
+   "PHYS"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 2,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 2,
+   "time_to_value": 2
+  },
+  "opportunity": "This settles the elastic Calderon uniqueness problem that underlies boundary-data elastic imaging and non-destructive testing. Clinical elastography (MRE, shear-wave ultrasound) uses interior and dynamic data, which is a different and easier inverse problem, so the practical effect is limited to theoretical justification of static boundary-only modalities.",
+  "targets": [
+   "elastic inverse problems / NDE community",
+   "context: MRE and shear-wave elastography (different data, no change)"
+  ],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Full boundary data; smooth coefficients; no stability.",
+  "deep_dive": false,
+  "cross_links": [
+   365
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/introduction.tex (thm:main, history incl. Nakamura-Uhlmann erratum)",
+   "lean/docs/372.md"
+  ]
+ },
+ {
+  "num": 373,
+  "title": "Nonattainment of the three-marginal Coulomb Monge problem",
+  "subject": "Partial differential equations",
+  "plain_english": "Constructs a smooth electron density for which the optimal 'strictly correlated electrons' arrangement of three electrons cannot be described by co-motion maps (positions of electrons 2 and 3 as functions of electron 1). The optimal energy can still be approached by such maps.",
+  "constructive": "yes: explicit mechanism (five small components, two families of optimal triples, 1/3 vs 1/6 mass imbalance) but neighborhoods chosen 'sufficiently small' via local calculus",
+  "explicit_constants": "no numerical radii; inverse-power Riesz extension for all d>=2, s>0",
+  "galactic": false,
+  "channels": [
+   "PHYS",
+   "GEO",
+   "OPT"
+  ],
+  "tier": "T2",
+  "scores": {
+   "impact": 2,
+   "reach": 1,
+   "directness": 3,
+   "practicality": 2,
+   "confidence": 4,
+   "effort": 3,
+   "time_to_value": 3
+  },
+  "opportunity": "Settles a design question for strictly-correlated-electron (SCE) DFT numerics. For N>=3 in 3D, solvers cannot assume the Monge or co-motion ansatz in general. Kantorovich-plan methods (multi-marginal Sinkhorn, Friesecke et al. GenCol) are the safe default, while map-parametrized solvers still give correct energies only in the infimum. A discretized version of the construction would make a good test instance: a correct multi-marginal OT solver must return the split two-branch plan.",
+  "targets": [
+   "SCE / multi-marginal OT DFT numerics (Gori-Giorgi, Friesecke, Nenna groups)",
+   "multi-marginal Sinkhorn (Benamou-Carlier-Nenna)",
+   "GenCol column generation for Coulomb MMOT"
+  ],
+  "action": "INSTANCES",
+  "first_step": "Instantiate the five-ball density numerically and run GenCol and multi-marginal Sinkhorn to check that both recover the non-Monge (branch-splitting) optimal plan.",
+  "caveats": "No external potential or ground-state realization (density is artificial). SCE energy and potential are unaffected since the infima agree.",
+  "deep_dive": false,
+  "cross_links": [
+   278,
+   374,
+   90,
+   360
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/build/sections/introduction.tex (thm:main, history, proof idea)",
+   "/root/openai-math/preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/build/sections/riesz.tex (thm:riesz)",
+   "/root/openai-math/preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/build/sections/certificate.tex (prop:certificate)",
+   "lean/docs/373.md"
+  ]
+ },
+ {
+  "num": 374,
+  "title": "Sharp one-third stability of Brenier maps",
+  "subject": "Partial differential equations",
+  "plain_english": "Proves that the optimal-transport (Brenier) map from a uniform distribution on a convex body to any target distribution varies with the target with Holder exponent 1/3 in the 2-Wasserstein distance. One constant works for all targets, including atomic ones, and three-atom examples show 1/3 cannot be improved.",
+  "constructive": "yes for constants: explicit C* = sqrt(12 d R^2 (1+sqrt162)^2 + 28 L^2 P_K/|K|); sharpness by explicit three-atom family",
+  "explicit_constants": "yes, but large: C*~96 for unit square to unit square, so the bound beats the trivial diam(Y) bound only when W2 < ~3e-6",
+  "galactic": false,
+  "channels": [
+   "STAT",
+   "GEO"
+  ],
+  "tier": "T2",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 4,
+   "practicality": 2,
+   "confidence": 5,
+   "effort": 4,
+   "time_to_value": 4
+  },
+  "opportunity": "Gives the sharp worst-case guarantee for linearized-OT (LOT) embeddings and plug-in or semi-discrete Monge-map estimators with a uniform reference. Map error is at most C W2^{1/3}, so a plug-in estimator from n samples has worst-case rate about n^{-1/(3d)} with no target regularity, and no estimator analysis can beat exponent 1/3 without extra assumptions. This improves the W1^{1/6} bound of Delalande-Merigot 2023 and refutes Letrouit's conjectured square-root bound. Useful for guarantee statements; the numerical constant is too large to certify anything at practical scales.",
+  "targets": [
+   "PyTransKit (linear OT embedding)",
+   "pysdot / sdot (semi-discrete OT)",
+   "POT (ot.mapping), OTT-JAX Monge-map estimators",
+   "LOT literature (Moosmuller-Cloninger)"
+  ],
+  "action": "CERTIFY",
+  "first_step": "Update the LOT and Monge-estimator stability statements (docs and survey tables) to the sharp W2^{1/3} uniform exponent, citing the three-atom sharpness family.",
+  "caveats": "Uniform source on a convex body only. Fully Lean-formalized (bound and sharpness).",
+  "deep_dive": false,
+  "cross_links": [
+   373,
+   360
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/introduction.tex (main:stability, history)",
+   "/root/openai-math/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/gradient.tex (gradient:finite, C0=162)",
+   "lean/docs/374.md"
+  ]
+ },
+ {
+  "num": 375,
+  "title": "De Giorgi's conjecture in dimension eight",
+  "subject": "Partial differential equations",
+  "plain_english": "Proves De Giorgi's conjecture in dimension 8: monotone entire solutions of the Allen-Cahn equation depend on only one direction.",
+  "constructive": "no",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "Phase-field (Allen-Cahn) simulations do not depend on classifying entire solutions in R^8.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Not formalized.",
+  "deep_dive": false,
+  "cross_links": [
+   366,
+   367
+  ],
+  "evidence": [
+   "slice abstract"
+  ]
+ },
+ {
+  "num": 376,
+  "title": "Universal computation in forced Navier–Stokes flows",
+  "subject": "Partial differential equations",
+  "plain_english": "Constructs smooth external forcings for the 3D Navier-Stokes equations, starting from fluid at rest, such that a marked fluid particle enters a target region exactly when a given Turing machine halts. This makes particle-reachability under designed forcing undecidable.",
+  "constructive": "yes: a terminating compiler from Turing machine to force program",
+  "explicit_constants": "effective but encodes the tape in exact real coordinates",
+  "galactic": true,
+  "channels": [
+   "FOUND",
+   "VERIF"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "No CFD implication. The construction stores unbounded information in exact real coordinates (the paper says it is not a bound on finite-precision recovery). Any finite-time, finite-precision simulation question remains decidable, and the forcing is adversarially designed, not physical. It does not show turbulence or CFD verification is undecidable.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Box-transport paper repaired on Oct 7 2026 (torus-projection and common-clock estimates).",
+  "deep_dive": false,
+  "cross_links": [
+   241,
+   242,
+   206
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/A-Fixed-Particle-Test-for-Computation-in-a-Forced-Viscous-Flow-September-27-2026/build/main.tex (thm:main, introduction)",
+   "lean/docs/376.md",
+   "/root/openai-math/history.md"
+  ]
+ },
+ {
+  "num": 377,
+  "title": "Interior $`C^{1,\\alpha}`$ regularity for infinity-harmonic functions",
+  "subject": "Partial differential equations",
+  "plain_english": "Proves that infinity-harmonic functions, the 'best Lipschitz extensions' of boundary data, are continuously differentiable with a Holder-continuous gradient in every dimension 3 and above.",
+  "constructive": "no: exponent from compactness",
+  "explicit_constants": "no: alpha_d in (0,1/3] not explicit",
+  "galactic": null,
+  "channels": [
+   "STAT",
+   "GEO"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "The infinity-Laplacian underlies AMLE image interpolation (Caselles-Morel-Sbert) and graph-based Lipschitz learning (Kyng-Rao-Sachdeva-Spielman; Calder). Continuum C^{1,alpha} regularity is the kind of input consistency and convergence-rate proofs for those schemes need, but the non-explicit exponent gives no usable rate.",
+  "targets": [
+   "graph-based Lipschitz learning (e.g. Calder's GraphLearning)",
+   "AMLE inpainting/interpolation"
+  ],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Interior only; not formalized.",
+  "deep_dive": false,
+  "cross_links": [
+   332
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/01-introduction.tex (thm:main, 'exponent is not explicit')"
+  ]
+ }
+]

@@ -1,0 +1,12 @@
+eta=0.5 N=1.0 p=0.1: Smax=1.4544b  C<= 1.2009b (qEPI)  C<= 1.1735b (EPnI)  improvement=0.0274b
+eta=0.5 N=1.0 p=0.3: Smax=1.5960b  C<= 1.0891b (qEPI)  C<= 1.0443b (EPnI)  improvement=0.0449b
+eta=0.5 N=1.0 p=0.5: Smax=1.7241b  C<= 1.1392b (qEPI)  C<= 1.0909b (EPnI)  improvement=0.0483b
+eta=0.5 N=10.0 p=0.1: Smax=3.9132b  C<= 3.6598b (qEPI)  C<= 3.6324b (EPnI)  improvement=0.0274b
+eta=0.5 N=10.0 p=0.3: Smax=3.9391b  C<= 3.4321b (qEPI)  C<= 3.3873b (EPnI)  improvement=0.0449b
+eta=0.5 N=10.0 p=0.5: Smax=3.9644b  C<= 3.3795b (qEPI)  C<= 3.3311b (EPnI)  improvement=0.0483b
+eta=0.9 N=1.0 p=0.1: Smax=1.9069b  C<= 1.8526b (qEPI)  C<= 1.8288b (EPnI)  improvement=0.0238b
+eta=0.9 N=1.0 p=0.3: Smax=1.9282b  C<= 1.8115b (qEPI)  C<= 1.7635b (EPnI)  improvement=0.0481b
+eta=0.9 N=1.0 p=0.5: Smax=1.9491b  C<= 1.8116b (qEPI)  C<= 1.7565b (EPnI)  improvement=0.0550b
+eta=0.9 N=10.0 p=0.1: Smax=4.6915b  C<= 4.6371b (qEPI)  C<= 4.6133b (EPnI)  improvement=0.0238b
+eta=0.9 N=10.0 p=0.3: Smax=4.6945b  C<= 4.5779b (qEPI)  C<= 4.5298b (EPnI)  improvement=0.0481b
+eta=0.9 N=10.0 p=0.5: Smax=4.6975b  C<= 4.5600b (qEPI)  C<= 4.5050b (EPnI)  improvement=0.0550b

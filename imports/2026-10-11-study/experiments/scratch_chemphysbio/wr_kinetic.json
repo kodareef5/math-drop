@@ -1,0 +1,4778 @@
+[
+ {
+  "id": "BIOMD0000000001",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000002",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 3,
+  "deficiency": 6,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000003",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000004",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 3,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000005",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 3,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000007",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 3,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000008",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000009",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 6,
+  "deficiency": 5,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000010",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 3,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000011",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 6,
+  "deficiency": 5,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000012",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000013",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 12,
+  "deficiency": 4,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000014",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 55,
+  "deficiency": 92,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000015",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 3,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000016",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000017",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 6,
+  "deficiency": 5,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000018",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 7,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000019",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 34,
+  "deficiency": 41,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000021",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000022",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000023",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 3,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000024",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000025",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000026",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 2,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000027",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000028",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 3,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000029",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000030",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 3,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000031",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000032",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 15,
+  "deficiency": 5,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000033",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 13,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000034",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000035",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 5,
+  "deficiency": 7,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000036",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000037",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 4,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000038",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 5,
+  "deficiency": 1,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000039",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 2,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000040",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 2,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000041",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 7,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000042",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 8,
+  "deficiency": 8,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000043",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 2,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000044",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 2,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000045",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000046",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 10,
+  "deficiency": 4,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000047",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000048",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 13,
+  "deficiency": 7,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000049",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 36,
+  "deficiency": 54,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000050",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 4,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000051",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 4,
+  "deficiency": 8,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000052",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 3,
+  "deficiency": 1,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000053",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000054",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000055",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000056",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 7,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000057",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000058",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000059",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 2,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000060",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000061",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 14,
+  "deficiency": 4,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000062",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000063",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 3,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000064",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 9,
+  "deficiency": 4,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000065",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000066",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 7,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000067",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000068",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000069",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 4,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000070",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 29,
+  "deficiency": 5,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000071",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 7,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000072",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 3,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000073",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000074",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000075",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 5,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000076",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000077",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 4,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000078",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000079",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000080",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 4,
+  "deficiency": 0,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000081",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 7,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000082",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 4,
+  "deficiency": 0,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000083",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000084",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 4,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000085",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 9,
+  "deficiency": 5,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000086",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 11,
+  "deficiency": 12,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000087",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 33,
+  "deficiency": 16,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000088",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 52,
+  "deficiency": 33,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000089",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000090",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 3,
+  "deficiency": 4,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000091",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 11,
+  "deficiency": 4,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000092",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000093",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 15,
+  "deficiency": 17,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000094",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 15,
+  "deficiency": 17,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000095",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000096",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000097",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000098",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000099",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000100",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000101",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 1,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000102",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 3,
+  "deficiency": 15,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000103",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 4,
+  "deficiency": 24,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000104",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000105",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 35,
+  "deficiency": 64,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000106",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000107",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000108",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 8,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000109",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 21,
+  "deficiency": 39,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000110",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000111",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000112",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 5,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000113",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000114",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000115",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000116",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000117",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000119",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000120",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000121",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000122",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 4,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000123",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 6,
+  "deficiency": 3,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000124",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000125",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000126",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000128",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000137",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 6,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000138",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000139",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 3,
+  "deficiency": 15,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000140",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 3,
+  "deficiency": 15,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000143",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 17,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000144",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000145",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 2,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000146",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 14,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000147",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 3,
+  "deficiency": 18,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000148",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000149",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 14,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000150",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000151",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 31,
+  "deficiency": 16,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000152",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 44,
+  "deficiency": 25,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000153",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 54,
+  "deficiency": 35,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000154",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000155",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000156",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000157",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000158",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000159",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000160",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000161",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 16,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000162",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 8,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000163",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 4,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000164",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 12,
+  "deficiency": 8,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000165",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 17,
+  "deficiency": 5,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000166",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000167",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000168",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000169",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 4,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000170",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000171",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000172",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 15,
+  "deficiency": 4,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000173",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 11,
+  "deficiency": 7,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000174",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000175",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 74,
+  "deficiency": 6,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000176",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 15,
+  "deficiency": 4,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000177",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 14,
+  "deficiency": 5,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000178",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000179",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000180",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000181",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000182",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 17,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000183",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 15,
+  "deficiency": 78,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000184",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000185",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000186",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 7,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000187",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 7,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000188",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 9,
+  "deficiency": 4,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000189",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 6,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000190",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000191",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000192",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 3,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000193",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 5,
+  "deficiency": 1,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000194",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 3,
+  "deficiency": 1,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000195",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000196",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000197",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000198",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 0,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000199",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000200",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 23,
+  "deficiency": 18,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000201",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000202",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000203",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000204",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000205",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 101,
+  "deficiency": 47,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000206",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 5,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000207",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000208",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000209",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000210",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000211",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 17,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000212",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000213",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000214",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000215",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000216",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000217",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 5,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000218",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000219",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000220",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 28,
+  "deficiency": 2,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000221",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000222",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000223",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 36,
+  "deficiency": 26,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000224",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 2,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000225",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000226",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 4,
+  "deficiency": 6,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000227",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 14,
+  "deficiency": 15,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000228",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000229",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000230",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 3,
+  "deficiency": 15,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000231",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 4,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000232",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 4,
+  "deficiency": 3,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000233",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 1,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000235",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 20,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000236",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000237",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 12,
+  "deficiency": 3,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000239",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 43,
+  "deficiency": 3,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000240",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000242",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000243",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 13,
+  "deficiency": 3,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000244",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 6,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000245",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 6,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000246",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000247",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 17,
+  "deficiency": 3,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000248",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 4,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000249",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000250",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 13,
+  "deficiency": 4,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000251",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000253",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000255",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 272,
+  "deficiency": 320,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000256",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 14,
+  "deficiency": 30,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000257",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 3,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000258",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000259",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000260",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000261",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000262",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 5,
+  "deficiency": 2,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000263",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 5,
+  "deficiency": 2,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000264",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 5,
+  "deficiency": 2,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000265",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 4,
+  "deficiency": 6,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000267",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000268",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 10,
+  "deficiency": 13,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000269",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000270",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 9,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000271",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 0,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000272",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 1,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000273",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000275",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000281",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 19,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000282",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000283",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000284",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000285",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 18,
+  "deficiency": 39,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000286",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 53,
+  "deficiency": 45,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000287",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 9,
+  "deficiency": 17,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000288",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000289",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000290",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000292",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000293",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 176,
+  "deficiency": 160,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000294",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000295",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000296",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000297",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000300",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000301",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000303",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 23,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000305",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 0,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000306",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000307",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000308",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000309",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000310",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000311",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000312",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000313",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 4,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000314",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 3,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000315",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 8,
+  "deficiency": 11,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000316",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000317",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000318",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000319",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000320",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000321",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000322",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 4,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000323",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 3,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000325",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000326",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 20,
+  "deficiency": 24,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000327",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000328",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000329",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000332",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 47,
+  "deficiency": 7,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000333",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 31,
+  "deficiency": 3,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000334",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 44,
+  "deficiency": 7,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000335",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 22,
+  "deficiency": 7,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000336",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 13,
+  "deficiency": 7,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000337",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000338",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 11,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000339",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 11,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000340",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 11,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000342",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 6,
+  "deficiency": 3,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000344",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 35,
+  "deficiency": 27,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000347",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 4,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000350",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000351",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000352",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000353",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 6,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000354",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000355",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000356",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 10,
+  "deficiency": 3,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000357",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000358",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 4,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000359",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 4,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000360",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 3,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000361",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 3,
+  "deficiency": 0,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000362",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 24,
+  "deficiency": 9,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000363",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000364",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 3,
+  "deficiency": 2,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000365",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 10,
+  "deficiency": 4,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000366",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 4,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000380",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000383",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000384",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000385",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000386",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000387",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000388",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000389",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 15,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000390",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 6,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000391",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 6,
+  "deficiency": 4,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000392",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 10,
+  "deficiency": 3,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000393",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 12,
+  "deficiency": 4,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000394",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 8,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000395",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 7,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000396",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 10,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000397",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 23,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000398",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 6,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000399",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 34,
+  "deficiency": 41,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000404",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 19,
+  "deficiency": 13,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000405",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 2,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000406",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 4,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000407",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 17,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000408",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 7,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000409",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000410",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 19,
+  "deficiency": 21,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000411",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000412",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 25,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000413",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000414",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000415",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000416",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000417",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000418",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000419",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000420",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000421",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000422",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 5,
+  "deficiency": 4,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000423",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 3,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000424",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 20,
+  "deficiency": 9,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000425",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000426",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 9,
+  "deficiency": 6,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000427",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 21,
+  "deficiency": 12,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000428",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 17,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000429",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 5,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000430",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 7,
+  "deficiency": 7,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000431",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 7,
+  "deficiency": 7,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000432",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 3,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000433",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 3,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000434",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000435",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000436",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000437",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 4,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000438",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 4,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000439",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 8,
+  "deficiency": 6,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000440",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 3,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000441",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 3,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000442",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 4,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000443",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 4,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000444",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 4,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000445",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000446",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000447",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 3,
+  "deficiency": 11,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000448",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 10,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000449",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 10,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000450",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 15,
+  "deficiency": 15,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000451",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 13,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000452",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 60,
+  "deficiency": 31,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000453",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 60,
+  "deficiency": 31,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000454",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 2,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000455",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000456",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 2,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000457",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 81,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000458",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000459",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000460",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000461",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000462",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 4,
+  "deficiency": 3,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000463",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 5,
+  "deficiency": 17,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000464",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 3,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000465",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 5,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000466",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 15,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000467",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 6,
+  "deficiency": 5,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000468",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 28,
+  "deficiency": 6,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000469",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 348,
+  "deficiency": 6,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000470",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 348,
+  "deficiency": 6,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000471",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 256,
+  "deficiency": 9,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000472",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 256,
+  "deficiency": 9,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000473",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 261,
+  "deficiency": 18,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000474",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 17,
+  "deficiency": 5,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000475",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 15,
+  "deficiency": 2,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000476",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000477",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000478",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 20,
+  "deficiency": 8,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000479",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 17,
+  "deficiency": 19,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000480",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 6,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000481",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000482",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 17,
+  "deficiency": 7,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000483",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 4,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000484",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000485",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000486",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000487",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 1,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000488",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 58,
+  "deficiency": 52,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000489",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 8,
+  "deficiency": 21,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000490",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000491",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000492",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000493",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000494",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 6,
+  "deficiency": 4,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000495",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000496",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 241,
+  "deficiency": 18,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000497",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 241,
+  "deficiency": 18,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000498",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 3,
+  "deficiency": 6,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000500",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 3,
+  "deficiency": 4,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000501",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 4,
+  "deficiency": 11,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000502",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 3,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000503",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 16,
+  "deficiency": 6,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000504",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 47,
+  "deficiency": 51,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000505",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 21,
+  "deficiency": 6,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000506",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 21,
+  "deficiency": 6,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000507",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000510",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 29,
+  "deficiency": 6,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000511",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 29,
+  "deficiency": 6,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000512",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000513",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 17,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000514",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 28,
+  "deficiency": 5,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000515",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 30,
+  "deficiency": 8,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000516",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 30,
+  "deficiency": 8,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000517",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 5,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000518",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 5,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000519",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 4,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000520",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 4,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000523",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 6,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000524",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 6,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000525",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 6,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000526",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 6,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000528",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000529",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000530",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 3,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000534",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 7,
+  "deficiency": 14,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000535",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 7,
+  "deficiency": 14,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000536",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 7,
+  "deficiency": 14,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000537",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 7,
+  "deficiency": 15,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000539",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000540",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 9,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000541",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 8,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000542",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 22,
+  "deficiency": 28,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000543",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 52,
+  "deficiency": 34,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000544",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 50,
+  "deficiency": 29,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000545",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 7,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000546",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000546",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000547",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 4,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000552",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000553",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000557",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 7,
+  "deficiency": 4,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000558",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000559",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 39,
+  "deficiency": 27,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000560",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 43,
+  "deficiency": 45,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000563",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 4,
+  "deficiency": 7,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000564",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000565",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 4,
+  "deficiency": 10,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000568",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 8,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000569",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 5,
+  "deficiency": 12,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000570",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 6,
+  "deficiency": 3,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000571",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 23,
+  "deficiency": 23,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000572",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 18,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000573",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000574",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 9,
+  "deficiency": 120,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000575",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 27,
+  "deficiency": 13,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000576",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 13,
+  "deficiency": 5,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000577",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000578",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 23,
+  "deficiency": 25,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000579",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 110,
+  "deficiency": 7,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000580",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 12,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000581",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 25,
+  "deficiency": 16,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000582",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 6,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000583",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000584",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 2,
+  "deficiency": 0,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000586",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 5,
+  "deficiency": 8,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000587",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 5,
+  "deficiency": 8,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000588",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 41,
+  "deficiency": 66,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000590",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000591",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 3,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000594",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 6,
+  "deficiency": 21,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000595",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 11,
+  "deficiency": 295,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000597",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000598",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000599",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 15,
+  "deficiency": 10,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000600",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 7,
+  "deficiency": 3,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000601",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000602",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000603",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000604",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000605",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000606",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000607",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000608",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 22,
+  "deficiency": 64,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000609",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 2,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000610",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000611",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 40,
+  "deficiency": 15,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000612",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 21,
+  "deficiency": 36,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000613",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000614",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000615",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000616",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000617",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000619",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000620",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000621",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000622",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 3,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000623",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 12,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000624",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 3,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000625",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000626",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000627",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 35,
+  "deficiency": 11,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000628",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 59,
+  "deficiency": 141,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000629",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 2,
+  "deficiency": 0,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000630",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 3,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000631",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000632",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000633",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 10,
+  "deficiency": 5,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000634",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 58,
+  "deficiency": 52,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000635",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 34,
+  "deficiency": 50,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000636",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 34,
+  "deficiency": 50,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000637",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 5,
+  "deficiency": 9,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000638",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 9,
+  "deficiency": 23,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000639",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000640",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 11,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000646",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 2,
+  "deficiency": 4,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000647",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 4,
+  "deficiency": 1,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000648",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 43,
+  "deficiency": 26,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000651",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 13,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000652",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 43,
+  "deficiency": 26,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000653",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 41,
+  "deficiency": 24,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000654",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 42,
+  "deficiency": 25,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000655",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 42,
+  "deficiency": 25,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000656",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 45,
+  "deficiency": 25,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000657",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000658",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 7,
+  "deficiency": 1,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000660",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 10,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000661",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000662",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000663",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000664",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000665",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000666",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 16,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000667",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 30,
+  "deficiency": 47,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000668",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000674",
+  "wr_flag": true,
+  "wr_kinetic": false,
+  "lc": 15,
+  "deficiency": 15,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000676",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 1,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000678",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000683",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000687",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 9,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000688",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 9,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000689",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000690",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000691",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 7,
+  "deficiency": 4,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000692",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 2,
+  "deficiency": 0,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000695",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 3,
+  "deficiency": 14,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000696",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 5,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000697",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 3,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000698",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000699",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 6,
+  "deficiency": 19,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000700",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 3,
+  "deficiency": 14,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000702",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 6,
+  "deficiency": 19,
+  "ma": true
+ },
+ {
+  "id": "BIOMD0000000703",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000704",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 3,
+  "deficiency": 2,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000705",
+  "wr_flag": true,
+  "wr_kinetic": true,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000706",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 1,
+  "deficiency": 0,
+  "ma": false
+ },
+ {
+  "id": "BIOMD0000000734",
+  "wr_flag": false,
+  "wr_kinetic": false,
+  "lc": 7,
+  "deficiency": 21,
+  "ma": false
+ }
+]

@@ -1,0 +1,75 @@
+[
+ {
+  "case": "karate",
+  "n": 34,
+  "m": 78,
+  "certified_pair_trades": "6.30e+04",
+  "global_rounds_equiv": "3.7e+03",
+  "networkit_default_rounds": 20,
+  "work_estimate_neighbour_ops": "5.8e+05"
+ },
+ {
+  "case": "les_mis",
+  "n": 77,
+  "m": 254,
+  "certified_pair_trades": "1.26e+06",
+  "global_rounds_equiv": "3.3e+04",
+  "networkit_default_rounds": 20,
+  "work_estimate_neighbour_ops": "1.7e+07"
+ },
+ {
+  "case": "n=200,m=1000",
+  "n": 200,
+  "m": 1000,
+  "certified_pair_trades": "3.94e+07",
+  "global_rounds_equiv": "3.9e+05",
+  "networkit_default_rounds": 20,
+  "work_estimate_neighbour_ops": "7.9e+08"
+ },
+ {
+  "case": "n=1000,m=1e4",
+  "n": 1000,
+  "m": 10000,
+  "certified_pair_trades": "1.22e+10",
+  "global_rounds_equiv": "2.4e+07",
+  "networkit_default_rounds": 20,
+  "work_estimate_neighbour_ops": "4.9e+11"
+ },
+ {
+  "case": "n=1e4,m=5e4",
+  "n": 10000,
+  "m": 50000,
+  "certified_pair_trades": "9.88e+12",
+  "global_rounds_equiv": "2.0e+09",
+  "networkit_default_rounds": 20,
+  "work_estimate_neighbour_ops": "2.0e+14"
+ },
+ {
+  "case": "sipoo 18x50",
+  "log_Omega_upper": 475,
+  "certified_curveball_trades": "3.64e+04",
+  "certified_tswap_trials": "2.23e+07",
+  "vegan_default_burnin": 0
+ },
+ {
+  "case": "30 sites x 100 spp, fill 25%",
+  "log_Omega_upper": 1683,
+  "certified_curveball_trades": "3.66e+05",
+  "certified_tswap_trials": "9.07e+08",
+  "vegan_default_burnin": 0
+ },
+ {
+  "case": "100 x 500, fill 10%",
+  "log_Omega_upper": 16249,
+  "certified_curveball_trades": "4.02e+07",
+  "certified_tswap_trials": "2.51e+12",
+  "vegan_default_burnin": 0
+ },
+ {
+  "case": "500 x 2000, fill 5%",
+  "log_Omega_upper": 198509,
+  "certified_curveball_trades": "1.24e+10",
+  "certified_tswap_trials": "1.24e+16",
+  "vegan_default_burnin": 0
+ }
+]

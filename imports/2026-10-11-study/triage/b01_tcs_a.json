@@ -1,0 +1,790 @@
+[
+ {
+  "num": 102,
+  "title": "The Unique Games Conjecture and optimal approximation thresholds",
+  "subject": "Theoretical computer science",
+  "plain_english": "Proves Khot's Unique Games Conjecture: Goemans-Williamson's 0.878 for Max-Cut and the factor 2 for Vertex Cover are now unconditionally the best ratios any polynomial-time algorithm can guarantee on worst-case inputs (unless P=NP). Separate direct reductions also give constant-factor hardness for Min-UnCut and directed feedback vertex set.",
+  "constructive": "yes (deterministic poly-time reductions from 3SAT; alphabet F_2^s with s fixed by eps,delta)",
+  "explicit_constants": "none useful: alphabet size and polynomial degree depend on eps,delta and are not tabulated; output instances are astronomically large for interesting eps",
+  "galactic": true,
+  "channels": [
+   "CPLX",
+   "OPT",
+   "QUANT"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 3,
+   "reach": 3,
+   "directness": 3,
+   "practicality": 2,
+   "confidence": 4,
+   "effort": 4,
+   "time_to_value": 4
+  },
+  "opportunity": "No code gets faster. What changes is the status of claims: the GW SDP rounding and the 2-approximation for Vertex Cover are provably optimal in the worst case, assuming only P!=NP. A non-obvious channel is quantum optimization. A QAOA or annealer algorithm that guaranteed better than 0.8786 on every graph would now imply NP in BQP, with no UGC assumption. Benchmarking groups should therefore frame advantage claims as instance-specific or average-case.",
+  "targets": [
+   "Qiskit Optimization / OpenQAOA Max-Cut advantage literature",
+   "D-Wave/annealer Max-Cut benchmarking",
+   "MQLib Max-Cut heuristic benchmark",
+   "Williamson-Shmoys approximation-algorithms curriculum (UGC-conditional results become unconditional)"
+  ],
+  "action": "REDIRECT",
+  "first_step": "Write a short note for quantum-optimization benchmarking groups: a worst-case ratio above alpha_GW, or below 2 for VC, now implies NP in BQP, so compare against GW+local search on concrete instance families instead.",
+  "caveats": "Worst-case only. Practitioners already used heuristics and UGC was widely assumed true, so the marginal change in practice is small. The reductions are too large to generate useful hard benchmark instances.",
+  "deep_dive": false,
+  "cross_links": [
+   96,
+   105,
+   106,
+   117,
+   125
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/The-Unique-Games-Theorem-September-23-2026/build/sections/00-introduction.tex (thm:ugc)",
+   "/root/openai-math/preprints/The-Unique-Games-Theorem-September-23-2026/build/sections/07-consequences.tex",
+   "/root/openai-math/preprints/The-Unique-Games-Theorem-September-23-2026/build/sections/06-finish.tex",
+   "lean/docs/102.md",
+   "lean/ComparatorChallenges/UniqueGamesTheorem.json"
+  ]
+ },
+ {
+  "num": 103,
+  "title": "Exact derandomization of logarithmic space: L=RL=BPL",
+  "subject": "Theoretical computer science",
+  "plain_english": "Every randomized log-space polynomial-time algorithm can be simulated deterministically in log space and polynomial time.",
+  "constructive": "yes (explicit compiler emitting deterministic machine and bounds K,H,c)",
+  "explicit_constants": "explicit but huge: time constant H=2^{(u+100)^2}(q_D+1) with u >= source transition-table bit length; exponent c=2S+1 source-dependent",
+  "galactic": true,
+  "channels": [
+   "CPLX",
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 2,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None in practice. The simulation is white-box: it inverts (I-S) on the machine's configuration graph and does not construct a pseudorandom generator or hitting set for read-once branching programs. It therefore cannot replace Nisan/INW generators in streaming or sketch derandomization, which practical sketches avoid anyway by using k-wise independent hashing. The compiler constants (2^{(u+100)^2}) are astronomical.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Theory landmark only. A practical channel would need a black-box PRG or hitting set, which this proof does not give.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "/root/openai-math/preprints/Exact-Derandomization-of-Logarithmic-Space-L-equals-RL-equals-BPL-September-23-2026/build/sections/introduction.tex (thm:main, thm:probability)",
+   "/root/openai-math/preprints/Exact-Derandomization-of-Logarithmic-Space-L-equals-RL-equals-BPL-September-23-2026/build/sections/compiler.tex (thm:effective-simulation, eq:compiler-output-bounds)",
+   "lean/docs/103.md"
+  ]
+ },
+ {
+  "num": 104,
+  "title": "Quasipolynomial algorithms for mean-payoff, stochastic and parity games",
+  "subject": "Theoretical computer science",
+  "plain_english": "Deterministic algorithms decide who wins mean-payoff games, mean-payoff parity games and turn-based stochastic mean-payoff games (including Condon's simple stochastic games) in 2^{O(log^2 L)} time, even with huge binary-encoded weights and probabilities.",
+  "constructive": "yes (fully specified recursive procedure Label(A,D,a,b) with exact integer/rational arithmetic; randomized variant has poly-time certificate check)",
+  "explicit_constants": "partly explicit: base case D<4096, factors 4/3, 8/5, rho=32/25; call bound (H+1)(B0+1)(1+Hs)^{B0} with s=2048n+3, B0~log_{1.28}(n^2); absolute C not tabulated",
+  "galactic": false,
+  "channels": [
+   "ALGO",
+   "VERIF",
+   "OPT"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 4,
+   "practicality": 2,
+   "confidence": 3,
+   "effort": 3,
+   "time_to_value": 3
+  },
+  "opportunity": "This is the only fully specified, implementable exact algorithm in the batch whose constants are not astronomical by construction. It is also the first deterministic quasipolynomial algorithm for simple stochastic games and binary-weight mean-payoff games. Quantitative verification and synthesis tools solve these games with value iteration or strategy iteration, which have exponential worst cases (Friedmann-type instances). An empirical test would show whether the new recursion is a useful robust fallback. The appendix's Lean-checked counterexample to Truffet's claimed strongly polynomial tropical LP rule is a small side redirect.",
+  "targets": [
+   "PRISM-games",
+   "Storm (stochastic games)",
+   "Oink parity-game solver",
+   "SYNTCOMP benchmark suite / Strix",
+   "PGSolver",
+   "mean-payoff/energy game solvers (Brim et al. value iteration, Bjorklund-Vorobyov strategy improvement)"
+  ],
+  "action": "BENCHMARK",
+  "first_step": "Implement Procedure Label (deterministic paper, Sec. 4) in exact arithmetic and run it against Zielonka/strategy-improvement on Friedmann lower-bound families and SYNTCOMP parity->mean-payoff reductions with large weights.",
+  "caveats": "The worst-case call bound is enormous even at n=100 (on the order of 10^300). Quasipolynomial parity algorithms (Calude et al.) were empirically slower than Zielonka in Oink. The deterministic paper is not Lean-formalized (the randomized one is). The binary-weight advantage matters only for huge weights.",
+  "deep_dive": true,
+  "cross_links": [],
+  "evidence": [
+   "/root/openai-math/preprints/Deterministic-quasipolynomial-time-mean-payoff-games-September-25-2026/build/source/sections/01-introduction.tex (thm:main)",
+   "/root/openai-math/preprints/Deterministic-quasipolynomial-time-mean-payoff-games-September-25-2026/build/source/sections/04-algorithm.tex (Procedure Label)",
+   "/root/openai-math/preprints/Deterministic-quasipolynomial-time-mean-payoff-games-September-25-2026/build/source/sections/06-complexity.tex (lem:node-count)",
+   "/root/openai-math/preprints/Turn-Based-Stochastic-Mean-Payoff-Games-in-Deterministic-Quasipolynomial-Time-October-5-2026/build/build/sections/introduction.tex",
+   "/root/openai-math/preprints/Randomized-quasipolynomial-time-mean-payoff-games-September-25-2026/build/source/sections/01-introduction.tex, 09-comparison.tex",
+   "lean/docs/104.md"
+  ]
+ },
+ {
+  "num": 105,
+  "title": "Perfect completeness for 2-to-1 games",
+  "subject": "Theoretical computer science",
+  "plain_english": "It is NP-hard to tell fully satisfiable 2-to-1 label-cover games from games where only a small fraction of constraints can be satisfied.",
+  "constructive": "yes (poly-time reduction from 3SAT)",
+  "explicit_constants": "alphabet q(delta) and polynomial degree depend on delta, not tabulated",
+  "galactic": true,
+  "channels": [
+   "CPLX",
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 2,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. This is an intermediate PCP/hardness tool, mainly feeding hardness of coloring results such as 106, with no practitioner-facing decision.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Pure complexity theory.",
+  "deep_dive": false,
+  "cross_links": [
+   102,
+   106
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Perfect-completeness-for-2-to-1-games-September-23-2026/build/00-introduction.tex (thm:main)",
+   "lean/docs/105.md"
+  ]
+ },
+ {
+  "num": 106,
+  "title": "Hardness of coloring three-colorable graphs",
+  "subject": "Theoretical computer science",
+  "plain_english": "Coloring a 3-colorable graph with any fixed number of colors is NP-hard, and finding an independent set of size delta*n in such graphs is NP-hard too.",
+  "constructive": "yes (poly-time reduction)",
+  "explicit_constants": "degree/constants depend on delta, not tabulated",
+  "galactic": true,
+  "channels": [
+   "CPLX",
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 2,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "No applied change. Graph-coloring users (register allocation, timetabling, frequency assignment) already rely on heuristics and exact solvers, and nobody relied on a constant-color guarantee for 3-colorable inputs. The result redirects only theoretical work on O(1)-coloring algorithms.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Theory redirect only. The hard instances from the reduction are not usable benchmarks.",
+  "deep_dive": false,
+  "cross_links": [
+   102,
+   105
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Hardness-of-finding-large-independent-sets-in-three-colorable-graphs-September-24-2026/build/source/sections/introduction.tex (thm:main)",
+   "lean/docs/106.md"
+  ]
+ },
+ {
+  "num": 107,
+  "title": "Matrix multiplication with exponent at most 9/4",
+  "subject": "Theoretical computer science",
+  "plain_english": "Proves that n x n complex matrices can be multiplied with O(n^{9/4+eps}) arithmetic operations, down from about n^2.371. Companion papers give omega<2.371055 over every field and better rectangular exponents.",
+  "constructive": "no for 9/4: existence via Strassen's asymptotic-spectrum duality; the final algorithm takes 'a fixed integer u and an exact rank decomposition of T_u of length r<u^{9/4+delta}' supplied by the definition of omega, so u and the decomposition are never computed. Companion 2.371 paper uses laser-method extraction with N->infinity strand counts.",
+  "explicit_constants": "none: paper states 'its proof does not specify a competitive finite matrix size'; 2.371 paper states 'do not give bit-complexity or practical crossover estimates'; coefficients over C (algebraic by Nullstellensatz)",
+  "galactic": true,
+  "channels": [
+   "CAS",
+   "CRYPTO"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "No implementation opportunity. The prior claim to 'add a kernel to FLINT nmod_mat_mul' is wrong on every count. (1) The 9/4 proof is non-constructive: it bounds all spectral points and never exhibits a bilinear algorithm. (2) Even the constructive laser-method family (Coppersmith-Winograd and descendants) has never been implemented because its crossover is astronomical. (3) Degeneration-based schemes need interpolation over many eps values and are numerically unstable. (4) FLINT, like every production library, uses Strassen-Winograd above a crossover of a few hundred plus BLAS-backed classical multiplication. The only real-world touchpoint is cost models that quote 'omega=2.37' (for example asymptotic columns in multivariate/lattice crypto estimators). These should not switch to 9/4, because conservative estimators already use omega=2 (MQEstimator default w=2).",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Huge theoretical significance (Lean-formalized), zero practical speedup at any size. Do not propagate it into crypto security estimates as a 'real' cost exponent.",
+  "deep_dive": false,
+  "cross_links": [
+   109,
+   120
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Matrix-Multiplication-Nine-Fourths-October-2-2026/build/paper.tex (thm:main, lem:growth, proof of thm:main, Remark after it)",
+   "/root/openai-math/preprints/Complex-Matrix-Multiplication-Below-2.258-and-Rectangular-Bounds-September-24-2026/build/introduction.tex (thm:main), tex/reproducibility.tex",
+   "/root/openai-math/preprints/Staggered-extraction-for-exact-matrix-multiplication-over-every-field-September-24-2026/build/sections/introduction.tex (thm:main)",
+   "lean/docs/107.md",
+   "lean/ComparatorChallenges/MatrixMultiplication.lean"
+  ]
+ },
+ {
+  "num": 108,
+  "title": "A cubic permanent-determinant lower bound",
+  "subject": "Theoretical computer science",
+  "plain_english": "Writing the m x m permanent as a determinant of affine-linear entries, even approximately (border sense), needs matrix size at least c*m^3.",
+  "constructive": "n/a (lower bound)",
+  "explicit_constants": "explicit: c=1/(5529600e), m>=1408",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. This is algebraic complexity (VP vs VNP / GCT) with no algorithmic consequence for computing permanents. Practical permanent and hafnian codes (Ryser/Glynn, The Walrus) are unaffected.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Pure lower bound.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "/root/openai-math/preprints/A-cubic-lower-bound-for-border-determinantal-complexity-of-the-permanent-September-24-2026/build/source/sections/introduction.tex (thm:main)",
+   "lean/docs/108.md"
+  ]
+ },
+ {
+  "num": 109,
+  "title": "Integer multiplication below n log n",
+  "subject": "Theoretical computer science",
+  "plain_english": "Two n-bit integers can be multiplied on a multitape Turing machine in O(n (log n)^{1-kappa}) time with kappa=2^-182, disproving Schonhage-Strassen's n log n optimality conjecture in that model.",
+  "constructive": "yes in principle (one fixed multitape TM) but only meaningful asymptotically",
+  "explicit_constants": "explicit and absurd: kappa=2^-182; d=floor(b^{2^-75}) with b=ceil(log2 n), so the multidimensional structure needs d>=2, i.e. n>=2^(2^(2^75)); paper says 'constants and thresholds in the construction are extremely large'",
+  "galactic": true,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. The claimed 'GMP/OpenSSL/CPython' opportunity is baseless. The saving factor is (lg n)^{2^-182}: even at n=2^(2^64) bits it is 1+O(10^-53). The construction's parameter d only exceeds 1 once n>=2^(2^(2^75)). The model is a multitape TM, not a word RAM. In practice, CPython uses Karatsuba, OpenSSL BN uses Karatsuba/Comba at 2-16 kbit crypto sizes, and GMP uses Toom-Cook and Schonhage-Strassen FFT. Even the O(n log n) Harvey-van der Hoeven algorithm it improves is itself galactic.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Not Lean-formalized. The 470KB proof is unreviewed and the claim is extraordinary (confidence 2). Even if true, it has no effect on any software.",
+  "deep_dive": false,
+  "cross_links": [
+   107,
+   130
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Integer-multiplication-below-n-log-n-September-23-2026/build/sections/00-introduction.tex (thm:main, cor:exact-arithmetic)",
+   "/root/openai-math/preprints/Integer-multiplication-below-n-log-n-September-23-2026/build/sections/08-assembly.tex (parameter block: eps=2^-75, kappa=2^-182, d=floor(b^eps))",
+   "/root/openai-math/preprints/Integer-multiplication-below-n-log-n-September-23-2026/build/sections/01-history.tex"
+  ]
+ },
+ {
+  "num": 110,
+  "title": "Optimal-order randomized k-server on arbitrary metrics",
+  "subject": "Theoretical computer science",
+  "plain_english": "There is a randomized online policy for moving k servers to requests whose expected cost is O(log^2 k) times the offline optimum on any metric. This matches the known worst-case lower bound.",
+  "constructive": "partial: main paper is existential ('no computational-efficiency claim'); companion gives a uniform algorithm via LP tables over bounded request words with delayed activation",
+  "explicit_constants": "multiplicative C=4(2a+1) (absolute, partly explicit, e.g. C=288 in travel lemma); additive movement constant 'finite, instance-dependent, may be enormous'",
+  "galactic": true,
+  "channels": [
+   "NET",
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. The computable version solves finite LPs over all bounded request words and serves an 'enormous initial number' of requests with a fixed fallback before activating, so the additive loss is unbounded in practice. Caching and dispatch systems use LRU/ARC-type or problem-specific heuristics. Coester-Cosson 2026 is already polynomial-time with O(log^2 k log n).",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Theory resolution of the randomized k-server question. Not a deployable policy.",
+  "deep_dive": false,
+  "cross_links": [
+   111
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Squared-logarithmic-randomized-k-server-on-arbitrary-metrics-September-24-2026/build/source/latex/sections/01_introduction.tex (thm:main)",
+   "/root/openai-math/preprints/Squared-logarithmic-randomized-k-server-on-arbitrary-metrics-September-24-2026/build/source/latex/sections/10_transfer.tex",
+   "/root/openai-math/preprints/Uniform-computation-of-the-squared-logarithmic-k-server-bound-September-24-2026/build/source/sections/01-introduction.tex (thm:main, proof ideas)",
+   "lean/docs/110.md"
+  ]
+ },
+ {
+  "num": 111,
+  "title": "One-sample matroid prophet inequalities against an almighty adversary",
+  "subject": "Theoretical computer science",
+  "plain_english": "With one past sample per item and any matroid constraint, an online selection rule earns a constant fraction of the offline optimum, even against an adversary who sees everything.",
+  "constructive": "partial: measurable rule, explicitly 'no running-time or polynomial independence-oracle guarantee'",
+  "explicit_constants": "explicit and vacuous: competitive ratio 2^-310 (proved 2^-293)",
+  "galactic": true,
+  "channels": [
+   "NET",
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. A 2^-310 guarantee is meaningless for posted pricing, ad allocation or online hiring, which use rules with 1/2 or 1/e-type guarantees under weaker adversaries, and the rule has no efficiency guarantee.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Theoretical constant-vs-loglog separation only.",
+  "deep_dive": false,
+  "cross_links": [
+   110
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/One-Sample-Suffices-for-Matroid-Prophet-Inequalities-against-an-Almighty-Adversary-September-23-2026/build/sections/introduction.tex (thm:main)",
+   "lean/docs/111.md"
+  ]
+ },
+ {
+  "num": 112,
+  "title": "Beyond the square-root exponent for depth-three circuits",
+  "subject": "Theoretical computer science",
+  "plain_english": "An explicit polynomial-time language needs 2^{omega(sqrt n)} gates in depth-3 OR-AND-OR circuits.",
+  "constructive": "n/a (lower bound, explicit language)",
+  "explicit_constants": "non-quantitative (omega(sqrt n), no fixed exponent)",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. This is circuit-complexity progress with no applied channel.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Pure.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "/root/openai-math/preprints/Beyond-the-Square-Root-Exponent-for-Depth-Three-Boolean-Circuits-September-23-2026/build/latex/sections/00_introduction.tex (thm:main)",
+   "lean/docs/112.md"
+  ]
+ },
+ {
+  "num": 113,
+  "title": "Approximate counting and entropy of perfect matchings",
+  "subject": "Theoretical computer science",
+  "plain_english": "Gives a randomized polynomial-time (1+eps)-approximate counter of perfect matchings in any graph, the first for non-bipartite graphs. It extends to counting subgraphs with prescribed degrees and matchings of fixed size. A companion proves the Anari-Oveis Gharan-Vinzant entropy conjecture and a deterministic 512^n-factor counter.",
+  "constructive": "yes (explicit annealing + replicated-tier product chain; deterministic subgradient algorithm in companion)",
+  "explicit_constants": "explicit but galactic: replica count q=32L with L=(10^4 N D)^100 (eq:energy-constants, eq:ladder-parameters); 'constants chosen for transparent estimates rather than practical efficiency'; companion deterministic factor 512^n",
+  "galactic": true,
+  "channels": [
+   "ALGO",
+   "QUANT",
+   "STAT"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 2,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 4,
+   "time_to_value": 4
+  },
+  "opportunity": "No usable code: the polynomial has degree in the hundreds. The non-obvious channel is quantum. Gaussian boson sampling 'graph applications' (Bradler et al. 2018, 'GBS for perfect matchings of arbitrary graphs'; Xanadu application stacks) motivate quantum speedups for estimating perfect-matching counts of general graphs. A classical FPRAS for unweighted general graphs removes any complexity-theoretic advantage claim for that task. GBS sampling-hardness arguments are untouched, since they rest on complex or general hafnians and exact sampling. The theory also pairs with 131 and 115 for degree-constrained null models.",
+  "targets": [
+   "Strawberry Fields / The Walrus GBS application literature (perfect-matching counting, graph similarity)",
+   "quantum-advantage benchmarking for GBS applications",
+   "Jerrum-Sinclair-Vigoda line of approximate-counting curricula"
+  ],
+  "action": "REDIRECT",
+  "first_step": "Write a short note for the GBS applications community: approximate counting of perfect matchings in unweighted general graphs is classically in FPRAS, so GBS application claims must target weighted or complex hafnians or exact-sampling tasks.",
+  "caveats": "Galactic polynomial, so practitioners will still use heuristics or exact Pfaffian methods (planar molecules/dimers). The FPRAS covers simple unweighted graphs; nonnegative weighted hafnians are only covered with the weak 512^n deterministic factor.",
+  "deep_dive": false,
+  "cross_links": [
+   115,
+   114,
+   126,
+   131
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/A-Fully-Polynomial-Randomized-Approximation-Scheme-for-Perfect-Matchings-in-General-Graphs-September-23-2026/build/main.tex (thm:main l.132, eq:energy-constants l.1595, eq:ladder-parameters l.2249, sec. complexity l.2843-3080, cor:prescribed-degree l.3100)",
+   "/root/openai-math/preprints/Entropy-and-Face-Dimension-of-the-Perfect-Matching-Polytope-September-23-2026/build/sections/01-introduction.tex (ent:main, thm:algorithm-guarantee)",
+   "/root/openai-math/preprints/Entropy-and-Face-Dimension-of-the-Perfect-Matching-Polytope-September-23-2026/build/sections/09-algorithm.tex",
+   "lean/docs/113.md"
+  ]
+ },
+ {
+  "num": 114,
+  "title": "Approximate counting of common integer polymatroid bases",
+  "subject": "Theoretical computer science",
+  "plain_english": "Gives a randomized polynomial-time approximate counter for objects that are simultaneously bases of two matroids, or integer bases of two polymatroids with huge capacities, using only rank or independence oracles.",
+  "constructive": "yes (annealing + Lorentzian-signature transport chain)",
+  "explicit_constants": "explicit but galactic: U=N^61000 with N>=10^10 (polymatroid paper); N_av=ceil(10^10 (L+1) n^14/eta^2) (matroid paper); 'large fixed exponents'",
+  "galactic": true,
+  "channels": [
+   "ALGO",
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 2,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None practical. The natural special cases are either already exact (arborescences via the matrix-tree theorem) or already covered (bipartite matchings via JSV), and exponents like N^61000 rule out implementation.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Theory resolution of a well-known counting question.",
+  "deep_dive": false,
+  "cross_links": [
+   113,
+   115
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/An-FPRAS-for-Common-Integer-Polymatroid-Bases-with-Binary-Capacities-October-5-2026/build/sections/introduction.tex (thm:main)",
+   "/root/openai-math/preprints/An-FPRAS-for-Common-Integer-Polymatroid-Bases-with-Binary-Capacities-October-5-2026/build/sections/counting.tex (U=N^61000)",
+   "/root/openai-math/preprints/Approximate-counting-of-common-bases-of-two-matroids-September-23-2026/build/main.tex (thm:main l.86, N_av l.1119)",
+   "lean/docs/114.md"
+  ]
+ },
+ {
+  "num": 115,
+  "title": "Sampling and counting contingency tables with arbitrary margins",
+  "subject": "Theoretical computer science",
+  "plain_english": "Gives polynomial-time uniform sampling (exact and approximate) of nonnegative integer matrices with given row and column sums, and approximate counting when each cell also has an upper bound (including structural zeros).",
+  "constructive": "yes (explicit padded small-cell chain + dense lattice-walk completion + GLMP exact correction)",
+  "explicit_constants": "explicit and galactic: d=10+(m+1)(n+1), padding L=d^12, threshold U=d^20, chain length T=d^200 (k+b)^2, exact-correction tabulation 2^{500db}; even a 2x2 table gives d=19, T~10^256 steps. Cell-bounded FPRAS: H=O(L^11 eps^-2), 'deliberately generous'",
+  "galactic": true,
+  "channels": [
+   "STAT",
+   "NET",
+   "ALGO"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 2,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 2,
+   "time_to_value": 2
+  },
+  "opportunity": "The prior mapping 'contingency tables -> statistics software' is mis-targeted. Fisher's exact test and R fisher.test(simulate.p.value=TRUE) need the hypergeometric law on tables, not the uniform law, and Patefield's r2dtable already samples it exactly and fast. Uniform tables matter for the Diaconis-Efron uniform test, for counting tables (Chen-Diaconis-Holmes-Liu sequential importance sampling), and for microcanonical null models of weighted bipartite and multigraph networks (vegan permatfull/permatswap fixed-fixed models, curveball/swap MCMC). There the new result proves the problem is in P but does not certify the swap or Diaconis-Gangolli chains people actually run, and its sampler is unusable. A follow-on research question is whether its padding/small-cell decomposition yields a practical sampler or a mixing proof for the standard chain.",
+  "targets": [
+   "R vegan permatswap/permatfull (quantitative fixed-margin null models)",
+   "Chen-Diaconis-Holmes-Liu SIS for table counting",
+   "Diaconis-Efron uniform-table test",
+   "bipartite multigraph null models (network science)"
+  ],
+  "action": "RESEARCH",
+  "first_step": "Pose the research question of whether the transversal/padding chain analysis yields an O(poly) mixing bound for the standard 2x2 +/-1 swap chain on integer tables, which would certify existing vegan/ecology practice the way 131 certifies edge switches.",
+  "caveats": "The degree-200 polynomial is unusable. The result does not apply to the hypergeometric conditional law used by exact tests. The 0/1 case was already covered by JSV 2004.",
+  "deep_dive": false,
+  "cross_links": [
+   113,
+   114,
+   131
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Exact-Uniform-Sampling-of-Contingency-Tables-with-Arbitrary-Margins-September-24-2026/build/sections/introduction.tex (thm:main)",
+   "/root/openai-math/preprints/Exact-Uniform-Sampling-of-Contingency-Tables-with-Arbitrary-Margins-September-24-2026/build/sections/algorithms.tex (T=d^200(k+b)^2, 2^{500db})",
+   "/root/openai-math/preprints/Exact-Uniform-Sampling-of-Contingency-Tables-with-Arbitrary-Margins-September-24-2026/build/sections/model-and-graph.tex (d,L,U definitions)",
+   "/root/openai-math/preprints/An-FPRAS-for-Cell-Bounded-Contingency-Tables-September-24-2026/build/sections/introduction.tex (thm:main), history.tex, algorithm.tex (H=O(L^11 eps^-2))",
+   "lean/docs/115.md"
+  ]
+ },
+ {
+  "num": 116,
+  "title": "Uniform black-box noncommutative identity testing across characteristics",
+  "subject": "Theoretical computer science",
+  "plain_english": "Gives one explicit tuple of rational matrices of size about 2ns^2 such that every nonzero noncommutative formula of size s in n variables evaluates to a nonzero matrix there. Zero-testing such expressions thus needs a single deterministic evaluation.",
+  "constructive": "yes (explicit deterministic construction, poly bit time)",
+  "explicit_constants": "explicit and moderate: d<=2ns^2 (char 0), entries O(log(ns)+ns^2 log n) bits; char p version dimension O(n^3 s^6)",
+  "galactic": false,
+  "channels": [
+   "CAS",
+   "VERIF"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 4,
+   "practicality": 3,
+   "confidence": 4,
+   "effort": 3,
+   "time_to_value": 3
+  },
+  "opportunity": "This is a small but real deterministic zero-test for noncommutative expressions given as formulas, where symbolic expansion can blow up exponentially. It could be added to noncommutative computer-algebra packages as a certificate-producing alternative to random matrix evaluation. Demand is niche, because randomized evaluation with Amitsur-Levitzki-size random matrices already works with negligible error.",
+  "targets": [
+   "NCAlgebra (Mathematica)",
+   "NCSOStools (MATLAB)",
+   "SageMath FreeAlgebra",
+   "GAP/Magma free-algebra identity checks"
+  ],
+  "action": "IMPLEMENT",
+  "first_step": "Prototype the char-0 tuple (One-Rational-Matrix-Hitting-Point construction.tex) in SageMath for small n,s and compare cost against random-matrix testing.",
+  "caveats": "Low demand for deterministic NC-PIT. Rational matrices of dimension 2ns^2 with roughly ns^2-bit entries get heavy for s beyond tens.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "/root/openai-math/preprints/One-Rational-Matrix-Hitting-Point-for-Noncommutative-Formulas-September-24-2026/build/introduction.tex (thm:main)",
+   "/root/openai-math/preprints/One-Rational-Matrix-Hitting-Point-for-Noncommutative-Formulas-September-24-2026/build/construction.tex",
+   "/root/openai-math/preprints/Uniform-Matrix-Hitting-Points-in-Every-Positive-Characteristic-October-4-2026 (abstract)",
+   "/root/openai-math/preprints/Polynomial-Hitting-Lists-for-Noncommutative-Rational-Formulas-September-24-2026 (abstract)",
+   "lean/docs/116.md"
+  ]
+ },
+ {
+  "num": 117,
+  "title": "Uniform sparsest cut: hardness and semidefinite gaps",
+  "subject": "Theoretical computer science",
+  "plain_english": "Approximating uniform sparsest cut within any constant factor is NP-hard. The ARV semidefinite relaxation's sqrt(log n) guarantee is essentially tight (gap sqrt(log n)/(loglog n)^3).",
+  "constructive": "partial: hardness reduction explicit; integrality-gap sequence existential along n->infinity",
+  "explicit_constants": "none useful (gap constant c unspecified, only along a sequence)",
+  "galactic": true,
+  "channels": [
+   "CPLX",
+   "NET",
+   "GEO"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "No practitioner impact. Graph-partitioning tools (METIS, KaHIP, Scotch) and spectral clustering are heuristic and do not use ARV SDPs. Removing the UGC/SSE assumption from constant-factor hardness changes nothing they do.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Theory redirect only. The Lean scope covers the integrality gap and not the hardness theorem.",
+  "deep_dive": false,
+  "cross_links": [
+   102
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Constant-factor-hardness-of-uniform-sparsest-cut-September-24-2026 (abstract)",
+   "/root/openai-math/preprints/Near-square-root-logarithmic-integrality-gaps-for-uniform-sparsest-cut-September-24-2026/build/source/main.tex (intro)",
+   "lean/docs/117.md"
+  ]
+ },
+ {
+  "num": 118,
+  "title": "Bin packing and unbounded configuration-LP gaps",
+  "subject": "Theoretical computer science",
+  "plain_english": "Disproves the Modified Integer Round-Up Conjecture: some bin-packing instances need more bins than the Gilmore-Gomory configuration LP value plus any fixed constant. It is also NP-hard to pack within OPT+c bins for any fixed c, even when every item exceeds 1/6.",
+  "constructive": "yes (explicit reduction from vertex cover; gap instance built from K4 by a finite deterministic procedure)",
+  "explicit_constants": "explicit and astronomical: P0=100^11, K=25(c+1)(1+5P0), d>=max(72K,120K/rho) (~2.4e27 for c=1), competing trees with 2d-1 phases of doubling levels, R=100(P+nK+1), denominators [100(D*+1)]^L 3^n; item count far beyond physical",
+  "galactic": true,
+  "channels": [
+   "OPT",
+   "CPLX"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 3,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 5,
+   "time_to_value": 4
+  },
+  "opportunity": "This settles a question the cutting-stock/OR community has pursued computationally for decades. Kartak, Ripatti, Scheithauer and Kurz enumerated non-IRUP instances and found gaps only slightly above 1. MIRUP is false, but every counterexample from this construction is astronomically large, so the empirical rule 'gap < 2 on real instances' and the use of ceil(LP) as a lower bound in branch-and-price/arc-flow solvers are unaffected. The actions are to update textbooks and surveys (the Williamson-Shmoys open problem is closed conditionally on P!=NP) and to stop small-instance searches aimed at refuting MIRUP while redirecting them to the smallest instance with gap >=2. The construction gives no usable benchmark instances.",
+  "targets": [
+   "cutting-stock/bin-packing research community (Scheithauer, Kartak, Rietz, Kurz)",
+   "BPPLIB / VPSolver arc-flow benchmark docs",
+   "Williamson-Shmoys Ch.17 open problem",
+   "Hoberg-Rothvoss O(log OPT) additive algorithm line"
+  ],
+  "action": "REDIRECT",
+  "first_step": "Send the cutting-stock community a short note: MIRUP is false with integral LP value, but witnesses are astronomically large, so the open practical question is the smallest instance with gap >=2.",
+  "caveats": "Galactic instances, so no benchmark use. Hardness is worst-case, and real solvers run exactly via branch-and-price. It does not give a log-OPT lower bound matching Hoberg-Rothvoss.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "/root/openai-math/preprints/Additive-hardness-and-unbounded-configuration-gaps-in-bin-packing-September-24-2026/build/source/introduction.tex (def:configuration-lp, thm:unbounded-gap, thm:additive-hardness, cor:complexity-equiv)",
+   "/root/openai-math/preprints/Additive-hardness-and-unbounded-configuration-gaps-in-bin-packing-September-24-2026/build/source/instance.tex (eq:parameters, eq:encoding-denominators)",
+   "/root/openai-math/preprints/Additive-hardness-and-unbounded-configuration-gaps-in-bin-packing-September-24-2026/build/source/trees.tex (lem:competing-trees)",
+   "/root/openai-math/preprints/Additive-hardness-and-unbounded-configuration-gaps-in-bin-packing-September-24-2026/build/source/consequences.tex",
+   "lean/docs/118.md"
+  ]
+ },
+ {
+  "num": 119,
+  "title": "The Courtade-Kumar and Hellinger conjectures",
+  "subject": "Theoretical computer science",
+  "plain_english": "Among all one-bit summaries of n uniform random bits, a single coordinate retains the most mutual information about a noisy (bit-flipped) copy of the input: I(f(X);Y) <= 1-h(eps). A Hellinger-distance analogue holds for every output bias.",
+  "constructive": "n/a (sharp inequality); proofs include finite exact-arithmetic certificates",
+  "explicit_constants": "explicit and sharp: 1-h2(eps) bits, equality for dictators; bias-refined curve psi(|rho| psi^-1(H(m)))",
+  "galactic": false,
+  "channels": [
+   "COMM",
+   "STAT"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 3,
+   "practicality": 4,
+   "confidence": 4,
+   "effort": 4,
+   "time_to_value": 4
+  },
+  "opportunity": "This is a closed-form, sharp converse that engineers can cite for one-bit summaries of noisy binary data (remote source coding with a one-bit compressor, one-bit feedback, information-bottleneck baselines, noisy Boolean sensing). It settles an information-theory design question with the answer 'no clever Boolean function beats forwarding one bit'. Practical demand is modest, since the setting (uniform inputs, BSC noise, one output bit) is stylized.",
+  "targets": [
+   "IEEE Trans. IT / information-bottleneck literature",
+   "distributed hypothesis testing / CEO problem one-bit bounds",
+   "Boolean function analysis curricula"
+  ],
+  "action": "CERTIFY",
+  "first_step": "Add the proved inequality (with bias refinement) as a citable sharp bound in information-bottleneck/one-bit-compression survey or benchmark docs that currently cite it as conjectural.",
+  "caveats": "Stylized model with uniform inputs, symmetric noise and a single output bit.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "/root/openai-math/preprints/Sharp-binary-information-contraction-on-the-discrete-cube-September-24-2026/build/main.tex (main:soft, main:ck)",
+   "/root/openai-math/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026 (abstract, README)",
+   "lean/docs/119.md"
+  ]
+ },
+ {
+  "num": 120,
+  "title": "Almost-linear-time exact matching and prescribed-degree factors in general graphs",
+  "subject": "Theoretical computer science",
+  "plain_english": "Finds a maximum-cardinality matching in any graph in (n+m)^{1+o(1)} time with probability 2/3, and likewise finds subgraphs with prescribed vertex degrees (f-factors).",
+  "constructive": "yes in principle (single uniform algorithm built on almost-linear min-ratio-cycle/flow machinery)",
+  "explicit_constants": "none: eta(p)->0 'without a convergence rate'; fixed-parameter runs S^{1+O(1/a)+o_a(1)} dovetailed; inherits subpolynomial overheads of Chen et al. almost-linear flow",
+  "galactic": true,
+  "channels": [
+   "ALGO",
+   "OPT"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None practical. The o(1) has no rate and the machinery (dynamic min-ratio cycles, routing sparsifiers, flat forests) is the almost-linear max-flow stack that has never been implemented competitively. Production matching codes (LEMON MaxMatching, Boost edmonds_maximum_cardinality_matching, NetworkX, Kolmogorov's Blossom V for weighted) run near-linearly on real sparse graphs already. The O(m log n) Benes-network f-factor reduction is a minor engineering curiosity next to Gabow's direct O(n^{2/3} m) algorithm.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Not Lean-formalized. It is very long and an extraordinary claim (confidence 2). Even if correct, it is galactic.",
+  "deep_dive": false,
+  "cross_links": [
+   107
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Almost-Linear-Time-Maximum-Cardinality-Matching-in-Sparse-General-Graphs-September-24-2026/build/sections/01-introduction.tex (thm:main, context, main ideas)",
+   "/root/openai-math/preprints/Almost-Linear-Time-Maximum-Cardinality-Matching-in-Sparse-General-Graphs-September-24-2026/build/sections/09-uniformization.tex (eta definition)",
+   "/root/openai-math/preprints/Almost-Linear-Time-Maximum-Cardinality-Matching-in-Sparse-General-Graphs-September-24-2026/build/sections/10-f-factors.tex (cor:f-factor, factor:reduction)"
+  ]
+ },
+ {
+  "num": 121,
+  "title": "Almost-linear approximation of edit distance",
+  "subject": "Theoretical computer science",
+  "plain_english": "For each fixed eps, a randomized algorithm estimates the edit distance between strings of total length N within factor 1+eps in N^{1+o(1)} expected time.",
+  "constructive": "yes (uniform algorithm), but below an astronomical threshold it runs the exact quadratic DP",
+  "explicit_constants": "explicit and absurd: exact DP whenever ell<2^1000, where ell~log2 log2 N, so the approximation branch starts only at N > 2^(2^(2^999)); branching B=H^{p*}, accuracy A_init=H^{p*+4}, tolerances ell^-40, Q1=ell^80; 'thresholds are very large'",
+  "galactic": true,
+  "channels": [
+   "ALGO",
+   "BIO"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. The proposed 'RapidFuzz opt-in approximate API' is baseless: any implementation faithful to the paper executes plain Wagner-Fischer DP on every input that can exist. RapidFuzz already uses bit-parallel Myers/Hyyro exact Levenshtein (O(N*ceil(M/64))). Bioinformatics uses edlib, WFA and banded or seed-and-extend aligners (minimap2), which exploit small distance or structure and beat any worst-case almost-linear scheme on real data.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Theory resolution of the (1+eps) approximation question. Lean-formalized, but the formal statement is asymptotic ('for all sufficiently large N').",
+  "deep_dive": false,
+  "cross_links": [
+   99
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/build/sections/01-introduction.tex (thm:main)",
+   "/root/openai-math/preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/build/sections/02-geometry.tex (accuracy-input handling: exact DP if ell<2^1000; parameter block)",
+   "lean/docs/121.md"
+  ]
+ }
+]

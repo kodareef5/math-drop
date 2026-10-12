@@ -1,0 +1,3 @@
+4099 random 1 seedgen=.776526913 ts=295.164108663 random N=4099 K=5 seedF_max=1.0440 seedF_mean=1.0146 | bestE 1865073 bestF 4.5043 restarts 4 steps 15000 seedF_first 0.9876 seedF_best 1.0364
+4099 random 2 seedgen=.598221384 ts=355.362104082 random N=4099 K=5 seedF_max=1.0800 seedF_mean=1.0056 | bestE 1871005 bestF 4.4900 restarts 5 steps 15000 seedF_first 0.9980 seedF_best 1.0800
+4099 random 3 seedgen=1.048492568 ts=431.527789721 random N=4099 K=5 seedF_max=1.0462 seedF_mean=0.9954 | bestE 1913289 bestF 4.3908 restarts 3 steps 15000 seedF_first 1.0462 seedF_best 1.0462

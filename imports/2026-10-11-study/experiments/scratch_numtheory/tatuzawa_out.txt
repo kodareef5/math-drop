@@ -1,0 +1,15 @@
+constant 0.655/(pi e) = 0.07670 ; e^11.2 = 73130
+(a) fundamental D in (-1000000, -73130): 281731 discriminants; min h*log|D|/sqrt|D| = 0.8345 at D=-111763 (h=24); bound 0.0767 holds: True
+(b) h, B(h) from 003+Tatuzawa, Watkins actual max |D| (unconditional, h<=100)
+    h=1       B(h)=7.313e+04  log2=16.2  Watkins max=163
+    h=10      B(h)=3.917e+06  log2=21.9  Watkins max=13843
+    h=50      B(h)=1.507e+08  log2=27.2  Watkins max=389467
+    h=100     B(h)=7.056e+08  log2=29.4  Watkins max=1856563
+    h=200     B(h)=3.263e+09  log2=31.6  Watkins max=-
+    h=500     B(h)=2.430e+10  log2=34.5  Watkins max=-
+    h=1000    B(h)=1.099e+11  log2=36.7  Watkins max=-
+    h=2000    B(h)=4.929e+11  log2=38.8  Watkins max=-
+    h=5000    B(h)=3.549e+12  log2=41.7  Watkins max=-
+    h=10000   B(h)=1.569e+13  log2=43.8  Watkins max=-
+    h=100000  B(h)=2.117e+15  log2=50.9  Watkins max=-
+(c) |D| < 2^40 covers every class number h <= 2900

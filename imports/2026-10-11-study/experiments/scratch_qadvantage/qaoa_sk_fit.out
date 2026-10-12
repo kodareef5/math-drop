@@ -1,0 +1,14 @@
+fit (p>=10): P* - v_p ~ 0.928 * p^-0.842
+  p=  1  v_p=0.3033  ratio v_p/P*=0.3974
+  p=  2  v_p=0.4075  ratio v_p/P*=0.5340
+  p=  5  v_p=0.5476  ratio v_p/P*=0.7176
+  p= 11  v_p=0.6408  ratio v_p/P*=0.8397
+  p= 20  v_p=0.6884  ratio v_p/P*=0.9020
+  p= 40  v_p=0.7222  ratio v_p/P*=0.9463
+  p= 60  v_p=0.7337  ratio v_p/P*=0.9614
+  p= 80  v_p=0.7397  ratio v_p/P*=0.9692
+  depth to reach 0.700 (0.917 of P*): p ~ 24
+  depth to reach 0.740 (0.970 of P*): p ~ 80
+  depth to reach 0.750 (0.983 of P*): p ~ 156
+  depth to reach 0.755 (0.989 of P*): p ~ 276
+  depth to reach 0.760 (0.996 of P*): p ~ 849

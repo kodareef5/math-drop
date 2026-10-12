@@ -1,0 +1,1104 @@
+[
+ {
+  "num": "211",
+  "title": "The geometric phase diagram, diffusion, and spectra of random planar maps",
+  "subject": "Probability and statistical mechanics",
+  "plain_english": "Random planar maps weighted by FK clusters are discrete models of 2D quantum gravity. For q<=4 they converge to Liouville-quantum-gravity spheres, and for q>4 they converge to a random tree. Random walks on these maps converge to Liouville Brownian motion.",
+  "constructive": "no: these are scaling-limit (convergence-in-law) theorems",
+  "explicit_constants": "Partly. The time acceleration equals the number of edges exactly. The distance normalizations are deterministic but unspecified.",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. Scaling limits of random surfaces matter to probability and 2D quantum-gravity theory. No computational or engineering workflow depends on them.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "The spectral and Brownian-motion results assume stated LQG/Brownian-map inputs. Lean covers only the q>4 continuum-random-tree limit.",
+  "deep_dive": false,
+  "cross_links": [
+   "223",
+   "226",
+   "230"
+  ],
+  "evidence": [
+   "slice abstracts (7 manuscripts)",
+   "lean/docs/211.md"
+  ]
+ },
+ {
+  "num": "212",
+  "title": "Planar first-passage geometry and the absence of bigeodesics",
+  "subject": "Probability and statistical mechanics",
+  "plain_english": "In planar first-passage percolation (random edge travel times on Z^2), no doubly infinite geodesic exists. For exponential weights, the asymptotic shape of the reachable set is strictly convex with a smooth (C^1) boundary.",
+  "constructive": "no: these are structural almost-sure statements",
+  "explicit_constants": "none",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. FPP is a toy model for growth and transport. Practitioners in KPZ-type growth and network routing get no new quantity: the limit shape and time constant are still not computed.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Lean covers only the Gamma-weight differentiability. Strict convexity is not formalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "220"
+  ],
+  "evidence": [
+   "slice abstracts",
+   "lean/docs/212.md"
+  ]
+ },
+ {
+  "num": "213",
+  "title": "Critical percolation on every quasi-transitive graph",
+  "subject": "Probability and statistical mechanics",
+  "plain_english": "At exactly the critical density, bond and site percolation on the cubic lattice Z^3 has no infinite cluster. The same holds for bond percolation on every infinite symmetric (quasi-transitive) graph. The percolation transition is therefore continuous.",
+  "constructive": "no: an almost-sure nonexistence statement",
+  "explicit_constants": "none: p_c is not computed, and no exponents or finite-size rates are given",
+  "galactic": null,
+  "channels": [
+   "FOUND",
+   "PHYS"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 5,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None in practice. Modellers of porous media, conductivity in composites and network robustness already assume the 3D transition is continuous and use numerically measured p_c and exponents. This settles a famous open problem without giving them any new number.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Infinite-volume and qualitative. Says nothing about finite systems or exponents.",
+  "deep_dive": false,
+  "cross_links": [
+   "214",
+   "223",
+   "224"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026/build/introduction.tex (Thm thm:main)",
+   "lean/docs/213.md"
+  ]
+ },
+ {
+  "num": "214",
+  "title": "The Benjamini–Schramm nonuniqueness conjecture",
+  "subject": "Probability and statistical mechanics",
+  "plain_english": "On every nonamenable symmetric graph (for example, hyperbolic lattices or free-group Cayley graphs), percolation has a nonempty density range with infinitely many infinite clusters, and the triangle condition holds at criticality.",
+  "constructive": "no",
+  "explicit_constants": "none",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 5,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. Real networks are finite and not quasi-transitive. Hyperbolic random-graph models used in network science are outside the theorem.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Applies only to infinite quasi-transitive graphs.",
+  "deep_dive": false,
+  "cross_links": [
+   "213"
+  ],
+  "evidence": [
+   "slice abstract",
+   "lean/docs/214.md"
+  ]
+ },
+ {
+  "num": "215",
+  "title": "Canonical O(3) continuum limit and exact O(4) mass asymptotics",
+  "subject": "Probability and statistical mechanics",
+  "plain_english": "The 2D lattice Heisenberg model (O(3)) and its O(n) relatives (n>=3) have exponentially decaying correlations (a mass gap) at every temperature. The O(3) continuum limit is a genuine interacting quantum field theory. The square-lattice O(4) mass is pinned exactly: m ~ 32 e^{pi/4-1/2} sqrt(beta) e^{-pi beta}.",
+  "constructive": "partial: the continuum limit is constructed, but no algorithm is given",
+  "explicit_constants": "Yes for the O(4) leading prefactor 32e^{pi/4-1/2}. The O(n) decay constants A and m are not explicit.",
+  "galactic": null,
+  "channels": [
+   "PHYS",
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "Validation only. The paper frames the O(4) prefactor as identifying the Hasenfratz–Maggiore–Niedermayer exact-mass prediction in lattice units. Lattice Monte Carlo practitioners already use that prediction to check asymptotic scaling of 2D sigma models. Making the mass gap rigorous (a Polyakov-type conjecture, now Lean-formalized for O(n) decay) changes no code or parameter choice.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "The O(4) mass relies on a companion sharp-order paper. Only the O(n) exponential decay is formalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "216",
+   "233"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Exact-mass-asymptotics-for-the-two-dimensional-O4-lattice-model-October-5-2026/build/sections/01-introduction.tex (Thm thm:main)",
+   "lean/docs/215.md"
+  ]
+ },
+ {
+  "num": "216",
+  "title": "Critical and near-critical XY scaling and BKT universality",
+  "subject": "Probability and statistical mechanics",
+  "plain_english": "For the 2D XY model of planar spins, the critical correlation decays as r^{-1/4}(log r)^{1/8}, and the correlation length has the predicted Kosterlitz–Thouless essential singularity. Related height models converge to Gaussian free fields.",
+  "constructive": "no",
+  "explicit_constants": "No: the amplitudes A_XY and B_XY are only shown to be positive and finite.",
+  "galactic": null,
+  "channels": [
+   "PHYS",
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None operational. The log-corrected ansatz is already the standard fitting form in finite-size-scaling Monte Carlo studies of the XY/BKT transition. The amplitudes are not computed, so fits gain no new input.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "The center-magnetization and spin-field results assume stated companion inputs. Nothing is formalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "215",
+   "225",
+   "232",
+   "233"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/The-critical-logarithmic-correction-for-the-planar-XY-model-October-5-2026/build/sections/introduction.tex (Thm thm:main)",
+   "slice abstracts"
+  ]
+ },
+ {
+  "num": "217",
+  "title": "The low-temperature Sherrington–Kirkpatrick fluctuation law",
+  "subject": "Probability and statistical mechanics",
+  "plain_english": "Below the spin-glass transition (beta>1), the SK model's log partition function fluctuates on the scale n^{1/6} (variance ~ c n^{1/3}), with a nondegenerate limiting law.",
+  "constructive": "no",
+  "explicit_constants": "No: c_beta>0 is unspecified.",
+  "galactic": null,
+  "channels": [
+   "PHYS",
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. Numerical spin-glass studies debate the ground-state (zero-temperature) fluctuation exponent. This result is at fixed positive temperature and gives no amplitude, so it does not settle that debate or feed any benchmark.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Fixed beta>1, zero field, Gaussian couplings. Not formalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "227",
+   "234",
+   "281"
+  ],
+  "evidence": [
+   "slice abstracts (2 manuscripts)"
+  ]
+ },
+ {
+  "num": "218",
+  "title": "Conformal universality for weakly interacting and random-bond Ising models",
+  "subject": "Probability and statistical mechanics",
+  "plain_english": "Adding weak extra multispin interactions, or weak random bond disorder, to the 2D critical Ising model does not change its conformally invariant scaling limits (SLE_3 interfaces and the bulk spin and energy correlations).",
+  "constructive": "no",
+  "explicit_constants": "No: 'sufficiently small' perturbation strengths are not quantified.",
+  "galactic": null,
+  "channels": [
+   "FOUND",
+   "PHYS"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. This confirms that weak disorder is irrelevant (the Harris-criterion marginal case) as physicists expect. No numerical or experimental practice changes.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Perturbation strengths are unquantified. Lean covers only a finite comparison lemma.",
+  "deep_dive": false,
+  "cross_links": [
+   "223"
+  ],
+  "evidence": [
+   "slice abstracts (6 manuscripts)",
+   "lean/docs/218.md"
+  ]
+ },
+ {
+  "num": "219",
+  "title": "GOE bulk universality for regular graphs with weak Anderson disorder",
+  "subject": "Probability and statistical mechanics",
+  "plain_english": "Eigenvalue spacings of a random d-regular graph's adjacency matrix follow random-matrix (GOE) statistics in the bulk, for every fixed d>=3. This persists with weak random on-site potentials.",
+  "constructive": "no",
+  "explicit_constants": "No: the disorder strength w_0(d,kappa) is unspecified.",
+  "galactic": null,
+  "channels": [
+   "PHYS",
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. The Anderson model on random regular graphs is a physics proxy for many-body localization. The theorem covers only weak disorder, far from the localization transition, where numerics already show GOE statistics.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Weak disorder only. Not formalized.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "/root/openai-math/preprints/Fixed-energy-universality-for-weak-Anderson-disorder-on-random-regular-graphs-October-5-2026/build (Thm thm:main)",
+   "slice abstracts"
+  ]
+ },
+ {
+  "num": "220",
+  "title": "Directional zero–one laws beyond iid environments and iid ballisticity",
+  "subject": "Probability and statistical mechanics",
+  "plain_english": "For random walks in random environments on Z^d, escape in a given direction has probability 0 or 1. In iid uniformly elliptic environments, directional transience forces a nonzero limiting speed (ballisticity).",
+  "constructive": "no",
+  "explicit_constants": "none",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 5,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. These are qualitative RWRE dichotomies with no computable velocity and no applied consumer.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [
+   "212"
+  ],
+  "evidence": [
+   "slice abstracts",
+   "lean/docs/220.md"
+  ]
+ },
+ {
+  "num": "221",
+  "title": "The Mézard–Parisi formula for diluted spin glasses",
+  "subject": "Probability and statistical mechanics",
+  "plain_english": "For sparse random spin systems (Viana–Bray, diluted even-p spin, soft even-K SAT) on Poisson random hypergraphs, the free energy equals the infimum of the physicists' hierarchical cavity (replica-symmetry-breaking) formula. Letting temperature go to zero gives the same statement for the optimal objective value per variable.",
+  "constructive": "partial: a variational formula. Any finite-depth trial gives a rigorous upper bound (already known from Panchenko–Talagrand). Equality holds only in the infimum over all depths, and no algorithm is given.",
+  "explicit_constants": "No rates. The ground-state value is a double limit (beta->inf of an infimum).",
+  "galactic": null,
+  "channels": [
+   "OPT",
+   "PHYS",
+   "QUANT"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 2,
+   "practicality": 2,
+   "confidence": 5,
+   "effort": 3,
+   "time_to_value": 2
+  },
+  "opportunity": "Non-obvious channel: the hypotheses (factorization e^theta=a(1+b f f) with E[(-b)^n]>=0) appear to cover the antiferromagnetic Ising model (b=-tanh beta). That is Max-Cut on sparse Poisson/Erdős–Rényi graphs, although the paper's corollary lists only symmetric couplings. The ground-state corollary would then make the limiting sparse-ER Max-Cut density equal the zero-temperature limit of the hierarchical cavity value. Population-dynamics (1RSB and beyond) Max-Cut estimates for benchmarking heuristics, Ising machines and QAOA on sparse random graphs would become rigorously anchored. It is still only an infimum: certified numbers need new computer-assisted work, and most QAOA benchmarks use random regular graphs, not Poisson graphs.",
+  "targets": [
+   "Max-Cut / spin-glass ground-state benchmark literature on sparse random graphs (QAOA, Ising machines, simulated annealing)",
+   "cavity/population-dynamics solvers used to produce reference values"
+  ],
+  "action": "RESEARCH",
+  "first_step": "Verify that J≡-1 (antiferromagnet, p=2) satisfies (model:factorization)-(model:positivity) and state the sparse-ER Max-Cut corollary. Then compare published 1RSB Max-Cut estimates to the finite-depth upper bounds.",
+  "caveats": "Poisson degrees and even arity only (the paper notes this excludes random 3-SAT). Finite-depth upper bounds were already rigorous. The infimum is not shown to be attained at low depth.",
+  "deep_dive": false,
+  "cross_links": [
+   "234",
+   "235",
+   "281",
+   "222",
+   "217"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/The-Mezard-Parisi-formula-for-diluted-spin-glasses-September-23-2026/build/sections/model.tex (Thm main:theorem, eqs model:factorization, model:positivity)",
+   "/root/openai-math/preprints/The-Mezard-Parisi-formula-for-diluted-spin-glasses-September-23-2026/build/sections/consequences.tex (Cor models:spin, models:sat, models:ground)",
+   "lean/docs/221.md"
+  ]
+ },
+ {
+  "num": "222",
+  "title": "Perceptron free energies and microscopic jamming exponents",
+  "subject": "Probability and statistical mechanics",
+  "plain_english": "This gives exact free-energy formulas for random perceptrons (binary or spherical weights, with bounded soft loss potentials) at every pattern density and positive temperature. It also proves sharp 'jamming' exponents (gamma≈0.41269, theta≈0.42311) for the negative-margin spherical perceptron, which physics uses as a mean-field model of sphere packing.",
+  "constructive": "partial: explicit variational formulas, plus a finite numerical certificate for the exponent intervals",
+  "explicit_constants": "The jamming exponents are certified to about 7 digits. The free-energy formulas are variational, with no convergence rates.",
+  "galactic": false,
+  "channels": [
+   "STAT",
+   "PHYS"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 2,
+   "practicality": 2,
+   "confidence": 4,
+   "effort": 2,
+   "time_to_value": 1
+  },
+  "opportunity": "Theory only. ML theory gets rigorous Gardner-type formulas for soft-loss 'Gibbs learning' of random labels at all densities; earlier rigorous results covered only small density. The certified exponents confirm the Franz–Parisi / Charbonneau et al. jamming predictions. The hard-constraint storage capacity that ML-theory papers usually cite is explicitly excluded, and there is no teacher–student or generalization setting, so practitioners see no change.",
+  "targets": [
+   "statistical-physics-of-learning / ML-theory community",
+   "jamming/glass physics (confirmation only)"
+  ],
+  "action": "RESEARCH",
+  "first_step": "Use the bi-orthogonally invariant spherical formula as a rigorous baseline in structured-data perceptron analyses (no engineering action).",
+  "caveats": "Positive temperature and bounded potentials only. Capacity (hard constraints) is excluded. Lean covers the spherical formula and only finiteness for the Ising variational value.",
+  "deep_dive": false,
+  "cross_links": [
+   "234",
+   "221",
+   "217"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/The-free-energy-of-the-Ising-random-perceptron-September-24-2026/build/sections/introduction.tex",
+   "/root/openai-math/preprints/Microscopic-jamming-in-the-negative-spherical-perceptron-September-24-2026/build/main.tex (main theorem, certificate section)",
+   "lean/docs/222.md"
+  ]
+ },
+ {
+  "num": "223",
+  "title": "Random-cluster interfaces: critical, disordered, thermal, and natural-time scaling",
+  "subject": "Probability and statistical mechanics",
+  "plain_english": "Critical FK random-cluster interfaces on the square lattice converge to SLE_kappa curves and CLE loop ensembles for 0<q<=4. This includes Cardy's crossing formula for square-lattice bond percolation with free boundaries.",
+  "constructive": "no",
+  "explicit_constants": "none (one deterministic normalization constant for natural time)",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. Cardy's formula is already used, as a conjecture checked numerically, to validate percolation codes. Making it rigorous for the square lattice changes no simulation practice.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Not formalized. Some cases require smooth domains.",
+  "deep_dive": false,
+  "cross_links": [
+   "218",
+   "224",
+   "211",
+   "230",
+   "237"
+  ],
+  "evidence": [
+   "slice abstracts (6 manuscripts)"
+  ]
+ },
+ {
+  "num": "224",
+  "title": "Critical and quenched near-critical universality for Poisson–Voronoi percolation",
+  "subject": "Probability and statistical mechanics",
+  "plain_english": "For percolation on a random Voronoi tessellation (randomly colored cells), critical crossing probabilities follow Cardy's conformal formula. Near-critical crossing thresholds match the triangular-lattice law even conditional on the tessellation.",
+  "constructive": "no",
+  "explicit_constants": "No: the pivotal amplitude constant is unspecified.",
+  "galactic": null,
+  "channels": [
+   "FOUND",
+   "PHYS"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None practical. Voronoi percolation models polycrystals and granular composites, but practitioners simulate actual geometries. Exact asymptotic crossing laws at p=1/2 do not alter those workflows.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "The quenched result takes Cardy's formula as an input. Not formalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "213",
+   "223"
+  ],
+  "evidence": [
+   "slice abstracts (3 manuscripts)"
+  ]
+ },
+ {
+  "num": "225",
+  "title": "Gaussian free field limits throughout the balanced six-vertex regime",
+  "subject": "Probability and statistical mechanics",
+  "plain_english": "The height function of the 2D square-ice (six-vertex) model with a=b=1, 0<c<=2 converges to a Gaussian free field with variance multiplier 1/arcsin(c/2).",
+  "constructive": "no",
+  "explicit_constants": "Yes: the variance multiplier is exactly 1/arcsin(c/2).",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. This confirms a known Bethe-ansatz/Coulomb-gas prediction for an exactly solvable model.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Not formalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "232",
+   "233",
+   "216"
+  ],
+  "evidence": [
+   "slice abstract"
+  ]
+ },
+ {
+  "num": "226",
+  "title": "The double-dimer loop ensemble converges to CLE4",
+  "subject": "Probability and statistical mechanics",
+  "plain_english": "Overlaying two independent random domino tilings of a Temperleyan square-lattice upper-half-plane domain produces loops that converge to the nested CLE_4 loop ensemble.",
+  "constructive": "no",
+  "explicit_constants": "none",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Half-plane Temperleyan case only. Not formalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "233",
+   "223"
+  ],
+  "evidence": [
+   "slice abstract"
+  ]
+ },
+ {
+  "num": "227",
+  "title": "Critical SK autocorrelation processes and dynamics across the temperature transition",
+  "subject": "Probability and statistical mechanics",
+  "plain_english": "For the SK spin glass, single-site heat-bath (Gibbs) sampling behaves as follows. Throughout the high-temperature phase (beta<1) it mixes fast, with a constant spectral gap and cutoff at log n/(2 lambda(beta)). At beta=1 it slows to n^{2/3} per site. For beta>1 it stays far from equilibrium for stretched-exponential time when started from a typical equilibrium state.",
+  "constructive": "partial: the standard Glauber sampler is certified, but the rate constants are implicit",
+  "explicit_constants": "No: lambda(beta) satisfies only 0<lambda<=(1-beta)^2, and C_beta is unspecified. The beta>1 barrier time exp(n^{1/10000}) and upper bound exp(n^{1-1/4e7}) are useless at simulable n.",
+  "galactic": true,
+  "channels": [
+   "STAT",
+   "PHYS"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 3,
+   "practicality": 2,
+   "confidence": 4,
+   "effort": 3,
+   "time_to_value": 2
+  },
+  "opportunity": "This extends rigorous fast-mixing guarantees for SK Gibbs sampling from beta<1/2 (+eps; Wang 2026, Boban–Li–Oveis Gharan) to the whole high-temperature phase. It also quantifies critical slowing down: n^{5/3} single-site attempts at beta=1. That is a qualitative certificate for high-temperature replicas in parallel-tempering ladders and for Gibbs samplers on dense Gaussian couplings. Constants are implicit, the results hold in probability over Gaussian disorder at zero field, and the low-temperature barriers are galactic, so no practitioner changes burn-in or ladder design.",
+  "targets": [
+   "spin-glass Monte Carlo (parallel tempering) practitioners",
+   "MCMC theory for Ising / Boltzmann-machine Gibbs samplers"
+  ],
+  "action": "CERTIFY",
+  "first_step": "Estimate lambda(beta) empirically for n<=10^4 and test whether log n/(2 lambda) predicts observed burn-in. If it does, cite the theorem in temperature-ladder heuristics.",
+  "caveats": "Zero field and Gaussian disorder, in probability. Cutoff is formalized only for beta<1/2. Algorithmic stochastic localization already samples SK in parts of this range.",
+  "deep_dive": false,
+  "cross_links": [
+   "217",
+   "281",
+   "131",
+   "221",
+   "234"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/A-spectral-gap-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/sections/introduction.tex (Thm thm:main + prior-work survey)",
+   "/root/openai-math/preprints/Cutoff-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/sections/01-introduction.tex (Thm thm:main); 08-exact.tex (eq:exact-lambda)",
+   "lean/docs/227.md"
+  ]
+ },
+ {
+  "num": "228",
+  "title": "Continuum phase transitions for radial pair potentials",
+  "subject": "Probability and statistical mechanics",
+  "plain_english": "This constructs stable, distance-dependent pair potentials for 3D classical particles whose free energy has a first-order (kink) temperature singularity over a range of densities. It answers Simon's continuum phase-transition problem for engineered radial potentials.",
+  "constructive": "partial: the potential is constructed, but its core scale e^{-t} uses an unspecified 'sufficiently large' t",
+  "explicit_constants": "beta_c lies in [7/8,9/8] and the density interval is centred at 5p/3. The construction parameter t is not explicit.",
+  "galactic": true,
+  "channels": [
+   "PHYS",
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 5,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. The potential is engineered with a microscopic core at scale e^{-t} for unspecified large t, so it cannot even be simulated in LAMMPS/HOOMD. The question that matters to molecular simulation, whether realistic potentials like Lennard-Jones have transitions, remains open.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Existence proof for an artificial interaction.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "/root/openai-math/preprints/A-radial-continuum-phase-transition-with-algebraic-decay-September-24-2026/build/sections/introduction.tex (Thm thm:main); foundations.tex (core psi_t, t sufficiently large)",
+   "lean/docs/228.md"
+  ]
+ },
+ {
+  "num": "229",
+  "title": "Exact three- and four-state reconstruction thresholds and four-state tree capacity",
+  "subject": "Probability and statistical mechanics",
+  "plain_english": "When a 3-state (either sign) or assortative 4-state symbol is broadcast down a tree through a noisy symmetric channel, the root can be recovered from far-away leaves exactly when d·lambda^2>1 (the Kesten–Stigum bound), for every degree. Consequently, 3 symmetric communities in a sparse stochastic block model can be weakly recovered iff (a-b)^2 > 3(a+2b).",
+  "constructive": "partial: the impossibility side is information-theoretic, and achievability reuses the existing O(n log n) Abbe–Sandon algorithm. The proofs are computer-assisted, with exact-arithmetic C++/Python verifiers shipped.",
+  "explicit_constants": "Yes: the thresholds are exact (d·lambda^2=1; SBM (a-b)^2=3(a+2b)).",
+  "galactic": false,
+  "channels": [
+   "STAT",
+   "NET",
+   "BIO"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 3,
+   "practicality": 4,
+   "confidence": 3,
+   "effort": 4,
+   "time_to_value": 3
+  },
+  "opportunity": "This certifies at every average degree the KS reference line that community-detection benchmarks (BP, non-backtracking spectral, line-graph GNN papers) plot against for q=3; previously only large degree was proven (Mossel–Sly–Sohn 2025). Non-obvious BIO channel: the ferromagnetic 4-state channel is exactly the Jukes–Cantor substitution model. The root (ancestral) state of a deep d-ary tree, including binary trees, is therefore unrecoverable exactly when per-branch change probability p >= (3/4)(1-1/sqrt d), about 0.22 for d=2. This pins the KS phase transition used in phylogenetic sequence-length theory. Both uses confirm what practitioners already assumed.",
+  "targets": [
+   "community-detection benchmark suites and papers using SBM KS threshold curves",
+   "phylogenetic reconstruction theory (Jukes–Cantor ancestral reconstruction / sequence-length phase transitions)"
+  ],
+  "action": "REDIRECT",
+  "first_step": "Cite the exact q=3 SBM threshold (and the q=4 assortative tree threshold) as the proven reference line in SBM benchmark generators and surveys. Note in phylogenetics theory surveys that KS-sharpness for Jukes–Cantor on regular and Poisson trees is now a (computer-assisted) theorem.",
+  "caveats": "Lean formalizes only the classical supercritical direction. The new non-reconstruction direction is unformalized and computer-assisted. The 4-state result is tree-only; an assortative 4-community SBM corollary likely follows via the same transfer but is not stated. Equal branch lengths and equal-size communities only.",
+  "deep_dive": false,
+  "cross_links": [
+   "236",
+   "231"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/The-exact-reconstruction-threshold-for-the-three-state-symmetric-channel-September-25-2026/build/sections/01-introduction.tex (Thm thm:threshold, Cor cor:sbm); 07-conclusion.tex (proof of cor:sbm)",
+   "/root/openai-math/preprints/The-Reconstruction-Threshold-for-the-Ferromagnetic-Four-State-Potts-Model-October-5-2026/build/sections/01-introduction.tex (Thm thm:main, channel eq:broadcast-channel)",
+   "/root/openai-math/preprints/A-Capacity-Criterion-for-Four-State-Potts-Reconstruction-on-Trees-October-5-2026/build/main.tex (Thm thm:main)",
+   "lean/docs/229.md"
+  ]
+ },
+ {
+  "num": "230",
+  "title": "Exact Hausdorff gauges for SLE",
+  "subject": "Probability and statistical mechanics",
+  "plain_english": "This finds the exact fine-scale size function r^d (log log 1/r)^{(2-d)/2} that gives SLE_kappa curves positive and finite Hausdorff measure.",
+  "constructive": "no",
+  "explicit_constants": "Yes: the gauge is explicit.",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Lean covers the lower bound (positivity).",
+  "deep_dive": false,
+  "cross_links": [
+   "223"
+  ],
+  "evidence": [
+   "slice abstracts",
+   "lean/docs/230.md"
+  ]
+ },
+ {
+  "num": "231",
+  "title": "The free uniform spanning forest is a factor of IID",
+  "subject": "Probability and statistical mechanics",
+  "plain_english": "The free uniform spanning forest on any infinite graph can be generated from independent per-vertex random labels by one symmetric rule that needs no root. The same holds for invariant strongly Rayleigh and determinantal processes on countable groups.",
+  "constructive": "no: Borel and non-finitary (Brownian-path/SDE readout via limsups), with no coding radius",
+  "explicit_constants": "none",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 5,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. The construction reads out a limsup of infinitely many Brownian paths and has no finitary coding radius, so it gives no local or parallel sampler. Practical spanning-tree and DPP sampling (Wilson's algorithm, spectral DPP samplers) is untouched.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Infinite graphs and groups only.",
+  "deep_dive": false,
+  "cross_links": [
+   "236",
+   "229"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/introduction.tex (Thm thm:main); decoder.tex (Prop prop:brownian-sampler)",
+   "lean/docs/231.md"
+  ]
+ },
+ {
+  "num": "232",
+  "title": "Gaussian fields and interfaces for triangular-lattice Lipschitz heights",
+  "subject": "Probability and statistical mechanics",
+  "plain_english": "Random Lipschitz height functions on the triangular lattice converge to Gaussian free fields. Their zero-level interface at a tuned boundary converges to SLE_4.",
+  "constructive": "no",
+  "explicit_constants": "Partly: an absolutely convergent finite-volume formula for the normalization in one case.",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "The Lipschitz-height manuscripts were among those repaired on Oct 7 2026. Not formalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "225",
+   "216",
+   "233"
+  ],
+  "evidence": [
+   "slice abstracts",
+   "/root/openai-math/history.md (repairs)"
+  ]
+ },
+ {
+  "num": "233",
+  "title": "The joint critical Ashkin–Teller current limit",
+  "subject": "Probability and statistical mechanics",
+  "plain_english": "Along the critical Ashkin–Teller line, including the 4-state Potts endpoint, the height field and current clusters converge jointly to a Gaussian free field and its level-set structures.",
+  "constructive": "no",
+  "explicit_constants": "none",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "The Ashkin–Teller current manuscripts were repaired on Oct 7 2026. Not formalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "225",
+   "226",
+   "232"
+  ],
+  "evidence": [
+   "slice abstract",
+   "/root/openai-math/history.md (repairs)"
+  ]
+ },
+ {
+  "num": "234",
+  "title": "All-temperature pressure of orthogonally invariant Ising spin glasses",
+  "subject": "Probability and statistical mechanics",
+  "plain_english": "This gives an exact free-energy formula, at every temperature, for Ising models whose coupling matrix is a Haar-random rotation of a given spectrum (for example, Hopfield/Wishart couplings G^T G). At zero temperature it gives the limiting optimum of max and min sigma^T J sigma over sign vectors, including the Gaussian ||G||_{inf->2} norm and the minimum ||sum sigma_i g_i||.",
+  "constructive": "partial: a variational formula (infimum over Parisi-type paths, using the edge-extended R-transform) with no algorithm",
+  "explicit_constants": "No rates. Values require numerically solving the variational problem.",
+  "galactic": null,
+  "channels": [
+   "OPT",
+   "STAT",
+   "PHYS"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 2,
+   "practicality": 2,
+   "confidence": 5,
+   "effort": 3,
+   "time_to_value": 2
+  },
+  "opportunity": "This supplies asymptotic optimal values for QUBO on rotationally invariant ensembles: Gaussian-pattern Hopfield/Wishart couplings, the random orthogonal model, and Gaussian vector balancing (min over signs of ||G sigma||). Once solved numerically, these could serve as ground-truth targets for benchmarking Ising machines, QAOA, simulated bifurcation and AMP/OAMP-type optimizers beyond SK, analogous to the Parisi value used in 281. External fields correlated with J, as in planted, CDMA or MIMO detection, are not covered.",
+  "targets": [
+   "Ising-machine / QUBO benchmarking on Hopfield/Wishart instance families",
+   "AMP/OAMP/VAMP optimization theory for rotationally invariant matrices"
+  ],
+  "action": "RESEARCH",
+  "first_step": "Numerically solve the zero-temperature formula for Wishart couplings at alpha=1 and compare with simulated-annealing ground states at n≈10^3–10^4.",
+  "caveats": "No outliers in the spectrum, and the deterministic external fields must have W1-convergent empirical laws. The infimum is not shown to be computable to certified precision.",
+  "deep_dive": false,
+  "cross_links": [
+   "281",
+   "221",
+   "222",
+   "217",
+   "227"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026/build/invariant-sk.tex (Thm thm:main)",
+   "/root/openai-math/preprints/All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026/build/60-general.tex (Cor gen:ground-state, Cor gen:wishart); 70-magnetic.tex (Thm mag:theorem)",
+   "lean/docs/234.md"
+  ]
+ },
+ {
+  "num": "235",
+  "title": "Limiting random SAT thresholds, sharp variance and computability",
+  "subject": "Probability and statistical mechanics",
+  "plain_english": "Random k-SAT has a sharp limiting satisfiability threshold for every k>=3. The number of clauses at which a growing random 3-SAT formula first becomes unsatisfiable fluctuates by Theta(sqrt n). The 3-SAT threshold is a computable real number, but no efficient way to compute it is given.",
+  "constructive": "partial: computability is via an unbounded certificate search with no efficiency bound. Lower certificates f_n/n - 2^67 n^{-1/6} are galactic, since they only become nontrivial for n>2^389. Upper certificates are finite rational RSB-type trials that can be evaluated exactly with interval arithmetic.",
+  "explicit_constants": "Var(H_n)<=Cn with C unspecified. The lower-certificate error is 2^67 n^{-1/6}. The threshold is not evaluated (the paper does not claim 4.267).",
+  "galactic": true,
+  "channels": [
+   "OPT",
+   "VERIF",
+   "CPLX"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 3,
+   "practicality": 3,
+   "confidence": 4,
+   "effort": 4,
+   "time_to_value": 3
+  },
+  "opportunity": "SAT benchmark generation: Theta(n) variance plus Wilson's lower bound gives a satisfiability window of Theta(sqrt n) clauses, a density window of order n^{-1/2}. That means finite-size-scaling exponent nu=2, contradicting the long-quoted empirical nu≈1.5 for 3-SAT. Generators of 'hard' random 3-SAT near clause/variable ratio 4.26 should expect the window to shrink as n^{-1/2}. The center's n-dependence has no rate, so per-n empirical calibration stays necessary. Secondary: finite rational upper certificates could, with certified interval evaluation of a good 1RSB-type trial, push the best rigorous upper bound below 4.4898. That project is of theory interest only.",
+  "targets": [
+   "random-SAT instance generators (SAT Competition random track; CNFgen / makewff-style tools)",
+   "random-CSP threshold theory (rigorous upper bounds)"
+  ],
+  "action": "REDIRECT",
+  "first_step": "Measure the 10–90% satisfiability window of random 3-SAT (clauses sampled with replacement) at n=50…2000 with a CDCL solver and check sqrt(n) clause-width scaling. Then correct generator documentation that quotes nu≈1.5.",
+  "caveats": "Carenini (ECCC TR26-229) has priority on threshold existence. The window is in clause count at fixed probability levels and concerns satisfiability, not solver hardness. The k=3 Theta(n) variance paper is not formalized (Lean covers O(n log n) for k=3). Computability gives no usable digits.",
+  "deep_dive": false,
+  "cross_links": [
+   "221"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Computing-the-Random-3-SAT-Threshold-September-27-2026/build/sections/introduction.tex (Thm thm:main); certificates.tex (Lemma cert:search); trials.tex (Lemma ctr:evaluation, Prop ctr:upper); probability.tex (Prop cp:finite-computation); proof-map.tex (2^67 n^{-1/6})",
+   "/root/openai-math/preprints/Linear-Variance-of-the-Random-3-SAT-Hitting-Time-October-5-2026/build/source/main.tex (Thm thm:main, Cor cor:window)",
+   "lean/docs/235.md"
+  ]
+ },
+ {
+  "num": "236",
+  "title": "The exact factor-of-IID threshold for free Ising spins on trees",
+  "subject": "Probability and statistical mechanics",
+  "plain_english": "The free Ising state on the infinite d-regular tree can be produced from independent per-vertex random labels by a symmetric rule exactly when tanh(beta) <= 1/sqrt(d-1), which is the reconstruction (Kesten–Stigum) threshold.",
+  "constructive": "no: a measurable, non-finitary factor. The paper explicitly asserts no finitary coding or coding-radius bound, and no parameter-uniform or computational bound.",
+  "explicit_constants": "The threshold is exact. There is no radius or complexity bound.",
+  "galactic": null,
+  "channels": [
+   "NET",
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 5,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "No operational channel. Factors of IID are the limit objects of local randomized (distributed/GNN) algorithms on random regular graphs. Without a coding-radius bound, the result yields no bounded-round distributed sampler and no limit on GNN design. The theoretical takeaway is that correlation-decay obstructions to local sampling of the free Ising state start at the reconstruction threshold, not at uniqueness.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Infinite tree, zero field, ferromagnetic only.",
+  "deep_dive": false,
+  "cross_links": [
+   "229",
+   "231"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/01-introduction.tex (Thm thm:main and the no-finitary-coding remark)",
+   "lean/docs/236.md"
+  ]
+ },
+ {
+  "num": "237",
+  "title": "The three-quarter exponent for honeycomb self-avoiding walk",
+  "subject": "Probability and statistical mechanics",
+  "plain_english": "A uniformly random n-step self-avoiding walk on the honeycomb lattice has diameter n^{3/4+o(1)}, matching Nienhuis's prediction for 2D polymers.",
+  "constructive": "no",
+  "explicit_constants": "No: o(1) exponent slack.",
+  "galactic": null,
+  "channels": [
+   "PHYS",
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. The 2D Flory exponent 3/4 has long been accepted in polymer physics and is numerically confirmed to many digits. Rigour adds no new quantity.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Lean covers only supporting summability, free-energy and strip-crossing statements.",
+  "deep_dive": false,
+  "cross_links": [
+   "223"
+  ],
+  "evidence": [
+   "slice abstracts (13 manuscripts)",
+   "lean/docs/237.md"
+  ]
+ },
+ {
+  "num": "238",
+  "title": "Optimal logarithmic mixing of the Thorp shuffle",
+  "subject": "Probability and statistical mechanics",
+  "plain_english": "The Thorp shuffle cuts the deck in half and randomly orders each pair of facing cards. It randomizes the entire order of N=2^d cards in Theta(log N) shuffles: 1600·log2 N shuffles suffice (Lean-verified), and about 2·log2 N are necessary.",
+  "constructive": "yes: the shuffle is the algorithm. The result certifies a fixed-depth, oblivious random switching network, equivalently the round function of the Morris–Rogaway–Stegers small-domain cipher.",
+  "explicit_constants": "Yes in the 1600d proof. Variants give 512d, 2048d and 32800d. Tracing constants: TV <= 8(1-M) + 0.5·sqrt(A^16·sum D^-3) with A=sqrt(32·C1), C1≈3.28, so TV ≈ 9e7·N^{-3/2} for large N: 3e-7 at N=2^32, 1e-21 at N=2^64. The companion bound 0.5·N^{-5} uses an unspecified absolute sweep count P.",
+  "galactic": false,
+  "channels": [
+   "CRYPTO",
+   "ALGO",
+   "NET"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 3,
+   "reach": 2,
+   "directness": 4,
+   "practicality": 2,
+   "confidence": 5,
+   "effort": 4,
+   "time_to_value": 3
+  },
+  "opportunity": "This is the first proof that a fixed-round (oblivious, constant-time) shuffle cipher is secure even against an adversary querying all N points, using Theta(lg N) rounds. Before, Thorp was proven only up to q < N/(4 lg N), or N^{1-1/r} queries with O(r lg N) rounds; full security in O(lg N) rounds needed the variable-time Sometimes-Recurse (SR) construction. It does not reduce rounds in practice. 1600·lg N rounds, doubled for CCA, is about 205k PRF calls per encryption at N=2^64, 100–200x more than swap-or-not/SR parameter sets of about 1000 rounds. It applies only to N=2^d, and its N^{-3/2} floor is weak exactly at FPE-sized domains (about 2^-19 at N=2^30). The reusable piece is the 'partial-permutation -> full law' Fourier transfer. It appears to turn Hoang–Morris–Rogaway's swap-or-not bound for 7N/8 fixed queries into full-permutation security with roughly 8x the rounds, qualitatively settling their full-security conjecture; that extrapolation is mine and unchecked.",
+  "targets": [
+   "small-domain / format-preserving encryption research (Thorp/MRS, swap-or-not, Sometimes-Recurse: Rogaway, Hoang, Morris, Tessaro)",
+   "NIST SP 800-38G FF1/FF3-1 (unaffected: Feistel-based)",
+   "Ethereum consensus-specs compute_shuffled_index (swap-or-not, SHUFFLE_ROUND_COUNT=90; unaffected)",
+   "oblivious-shuffle / mixnet switching-network designs (Atom iterated butterfly; Czumaj O(log^2 n) networks)"
+  ],
+  "action": "RESEARCH",
+  "first_step": "Write the swap-or-not corollary: plug HMR Thm 3 at q=7N/8 into the eight-block Fourier lift (Prop orbit-lift / Thm l:main), using sign mean 0 and N divisible by 8, and tabulate concrete rounds against SR. In parallel, compute the exact TV of the Thorp shuffle for N=8 and empirical statistics for N=16–64 to estimate the true constant, which is somewhere in [2,1600].",
+  "caveats": "Asymptotic in d. Powers of two only. The constant 1600 is a proof artifact, not a sharp value. The Fourier lift leaves a round-independent TV floor of about 1e8·N^{-3/2}. No deployed FPE standard uses Thorp (the Voltage-era patent US 8687802 exists). The swap-or-not transfer is an unverified extrapolation. Production oblivious shuffles (Waksman routing of a sampled permutation, bitonic sort) are already far cheaper.",
+  "deep_dive": true,
+  "cross_links": [
+   "131"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Optimal-order-mixing-of-the-Thorp-shuffle-September-26-2026/build/main.tex (Thm thm:mixing, Prop prop:averaged-marginal, Prop prop:orbit-lift, completion of proof)",
+   "/root/openai-math/preprints/Random-subspace-tests-and-trace-smoothing-for-coordinate-sweeps-September-26-2026/build/sections/introduction.tex (Thm ten:lowplanes:main); proof.tex l.570 (unspecified n_0, P)",
+   "/root/openai-math/preprints/Conditional-information-under-deterministic-coordinate-sweeps-September-26-2026/build/sections/00-introduction.tex (Thm thm:first-main); 02-first-route.tex (Lemma noise:halves, Prop noise:uniform-marginals)",
+   "/root/openai-math/preprints/Random-coordinate-frames-and-partial-permutation-laws-September-26-2026/build/sections/07c-transfer-applications.tex (Cor shear:cor:512)",
+   "/root/openai-math/preprints/From-partial-permutation-information-to-Fourier-bounds-September-26-2026/build/sections/introduction.tex (Thm l:main); core.tex (Cor l:isotypic-completion)",
+   "lean/docs/238.md",
+   "web: MRS CRYPTO'09 Thm 5; HMR CRYPTO'12 Thm 3; Morris–Rogaway SR (eprint 2013/560); eth2book shuffling; Atom (arXiv 1612.07841); Czumaj STOC'15",
+   "scratchpad thorp_bound.py / son_bound.py / compare.py (constant tracing)"
+  ]
+ },
+ {
+  "num": "239",
+  "title": "Sharp singularity rates for symmetric random sign matrices",
+  "subject": "Probability and statistical mechanics",
+  "plain_english": "A random symmetric matrix of ±1 entries is singular with probability (1/2+o(1))^n. With biased signs the probability is (p^2+(1-p)^2+o(1))^n, dominated by two equal rows.",
+  "constructive": "no",
+  "explicit_constants": "No: o(1) in the exponential base, with no rate.",
+  "galactic": null,
+  "channels": [
+   "NUM",
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. Numerical linear algebra and compressed sensing care about conditioning (least singular value) and real-valued ensembles, not the exact singularity probability of sign matrices, which is about 2^-n at any n where the theorem says something beyond the trivial equal-rows bound.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Not formalized.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "/root/openai-math/preprints/The-sharp-exponential-rate-of-singularity-for-symmetric-Bernoulli-matrices-October-3-2026/build/sections/01-introduction.tex (Thm thm:main)",
+   "slice abstracts"
+  ]
+ }
+]

@@ -1,0 +1,13 @@
+n= 9 p_edge=0.3 x= 3/4  sum_S x^|S| r(V\S) Haf(A_S)^2 = 97.3245   Haf(ladder) = 97.3245   equal=True
+n=10 p_edge=0.5 x=   1  sum_S x^|S| r(V\S) Haf(A_S)^2 = 7335.04   Haf(ladder) = 7335.04   equal=True
+n= 6 p_edge=0.3 x= 3/4  sum_S x^|S| r(V\S) Haf(A_S)^2 = 46.5198   Haf(ladder) = 46.5198   equal=True
+n=10 p_edge=0.8 x= 1/4  sum_S x^|S| r(V\S) Haf(A_S)^2 = 25.5055   Haf(ladder) = 25.5055   equal=True
+n= 8 p_edge=0.8 x= 5/2  sum_S x^|S| r(V\S) Haf(A_S)^2 = 1.3436e+06   Haf(ladder) = 1.3436e+06   equal=True
+n= 8 p_edge=0.5 x=   3  sum_S x^|S| r(V\S) Haf(A_S)^2 = 442466   Haf(ladder) = 442466   equal=True
+n=10 p_edge=0.3 x= 1/5  sum_S x^|S| r(V\S) Haf(A_S)^2 = 5.54418   Haf(ladder) = 5.54418   equal=True
+n= 8 p_edge=0.8 x= 2/3  sum_S x^|S| r(V\S) Haf(A_S)^2 = 104.34   Haf(ladder) = 104.34   equal=True
+n= 8 p_edge=0.3 x= 5/4  sum_S x^|S| r(V\S) Haf(A_S)^2 = 356.244   Haf(ladder) = 356.244   equal=True
+n= 6 p_edge=0.5 x=   4  sum_S x^|S| r(V\S) Haf(A_S)^2 = 2185.46   Haf(ladder) = 2185.46   equal=True
+n= 6 p_edge=0.5 x= 5/4  sum_S x^|S| r(V\S) Haf(A_S)^2 = 80.9691   Haf(ladder) = 80.9691   equal=True
+n= 9 p_edge=0.3 x=   4  sum_S x^|S| r(V\S) Haf(A_S)^2 = 350181   Haf(ladder) = 350181   equal=True
+ALL EQUAL

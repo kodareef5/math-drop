@@ -1,0 +1,8 @@
+047 H: terms 12 degree 7
+Delta x == 0: True  Delta H == p^3: True
+Q1 polynomial in P: True
+047 coordinate Phi^-1(p): Delta-nilpotency 1, 1 terms, degree 1, 0.0s
+047 coordinate Phi^-1(s): Delta-nilpotency 4, 10 terms, degree 12, 0.0s
+047 coordinate Phi^-1(u): Delta-nilpotency 2, 2 terms, degree 3, 0.0s
+047 coordinate Phi^-1(M): Delta-nilpotency 16, 669 terms, degree 58, 0.0s
+047 coordinate Phi^-1(e0): Delta-nilpotency 55, 128842 terms, degree 211, 2.7s

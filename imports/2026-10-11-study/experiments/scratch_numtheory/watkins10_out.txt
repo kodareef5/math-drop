@@ -1,0 +1,12 @@
+H=10, search bound B(H)=3917457, time 291s
+h=  1  003-derived: count=    9 max|D|=     163   Watkins: count=    9 max|D|=     163  OK
+h=  2  003-derived: count=   18 max|D|=     427   Watkins: count=   18 max|D|=     427  OK
+h=  3  003-derived: count=   16 max|D|=     907   Watkins: count=   16 max|D|=     907  OK
+h=  4  003-derived: count=   54 max|D|=    1555   Watkins: count=   54 max|D|=    1555  OK
+h=  5  003-derived: count=   25 max|D|=    2683   Watkins: count=   25 max|D|=    2683  OK
+h=  6  003-derived: count=   51 max|D|=    3763   Watkins: count=   51 max|D|=    3763  OK
+h=  7  003-derived: count=   31 max|D|=    5923   Watkins: count=   31 max|D|=    5923  OK
+h=  8  003-derived: count=  131 max|D|=    6307   Watkins: count=  131 max|D|=    6307  OK
+h=  9  003-derived: count=   34 max|D|=   10627   Watkins: count=   34 max|D|=   10627  OK
+h= 10  003-derived: count=   87 max|D|=   13843   Watkins: count=   87 max|D|=   13843  OK
+ALL MATCH

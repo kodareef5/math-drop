@@ -1,0 +1,788 @@
+[
+ {
+  "num": "122",
+  "title": "Quantitative trace-reconstruction bounds with a uniform decoder",
+  "subject": "Theoretical computer science",
+  "plain_english": "Given independent copies of an unknown n-bit string with each bit randomly deleted, the paper asks how many copies are needed to recover the string exactly. In the worst case n^{Omega(log log n)} copies are required, so a polynomial number is impossible. An explicit decoder recovers the string from quasipolynomially many copies, and from polynomially many when the deletion rate is at most n^{-eps}.",
+  "constructive": "yes: the decoder fixes one bit at a time and tests each candidate prefix for feasibility of a moment (SDP-type) system in exact rational arithmetic. The lower bound is information-theoretic, built from explicit Thue-Morse-type hard pairs.",
+  "explicit_constants": "No. Traces <= exp(C*B(n,p)) with B ~ p^-1 log n X^2 (1+log X)^6 and unspecified absolute C, c. The lower-bound exponent c<1/(4 ln 2) holds only asymptotically (q^3 log n -> infinity).",
+  "galactic": true,
+  "channels": [
+   "COMM",
+   "BIO",
+   "CPLX"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 2,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 2,
+   "time_to_value": 2
+  },
+  "opportunity": "The Lean-formalized lower bound settles the polynomial-sample question negatively. Uncoded worst-case reconstruction cannot have polynomial guarantees, so DNA-storage reliability has to come from codebook design (coded trace reconstruction) and average-case behaviour. Practitioners already work this way, so the result confirms practice rather than changing it. The decoder is useless at DNA-storage scale: at n=150 and q=0.01, B(n,p)~351, so the trace budget is exp(351C). Real pipelines use about 10-30 reads per strand with BMA, trellis-BMA, MSA or neural decoders under insertion, deletion and substitution noise.",
+  "targets": [
+   "DNA data-storage decoders (BMA / Trellis-BMA, DNAformer, MSA-based)",
+   "coded trace reconstruction / constrained-code design community",
+   "IDS-channel coding theory"
+  ],
+  "action": "REDIRECT",
+  "first_step": "Cite the Lean-formalized lower bound in DNA-storage coding surveys as the formal reason codebooks must exclude worst-case pairs. Optionally brute-force the minimum one-trace TV pairs for n<=24 to check whether Thue-Morse-type pairs already appear at small n and could serve as decoder stress tests.",
+  "caveats": "Deletion-only channel with a known rate and worst-case inputs. Real strands are coded and random-like, and real channels also have insertions and substitutions. The lower bound holds only in the regime q^3 log n -> infinity. The decoder's polynomial regime q<=n^-eps still has enormous exponents, and CDLSS21 already gave practical-ish polynomial reconstruction for q<=n^{-1/3-eps}.",
+  "deep_dive": false,
+  "cross_links": [
+   "121"
+  ],
+  "evidence": [
+   "preprints/Uniform-quasipolynomial-time-trace-reconstruction-October-5-2026/build/manuscript/main.tex (Thm 1.1, eq. budget)",
+   "preprints/Uniform-quasipolynomial-time-trace-reconstruction-October-5-2026/build/manuscript/history.tex",
+   "preprints/Uniform-quasipolynomial-time-trace-reconstruction-October-5-2026/build/manuscript/decoding.tex (Lemma prefix-slack, final resource proof)",
+   "preprints/quantitative-lower-bounds-for-trace-reconstruction-September-24-2026/build/sections/introduction.tex (Thm main, Thm tv)",
+   "lean/docs/122.md"
+  ]
+ },
+ {
+  "num": "124",
+  "title": "Polynomial-time scheduling on three identical machines",
+  "subject": "Theoretical computer science",
+  "plain_english": "This settles Garey-Johnson OPEN8, P3|prec,p_j=1|Cmax: unit-time jobs with arbitrary DAG precedence on exactly three identical machines, no release dates or communication delays. A minimum-makespan schedule can be computed, and deadline feasibility decided, in deterministic polynomial time.",
+  "constructive": "yes: a dynamic program over polynomially many bounded-size Boolean 'global descriptions' of interval job sets, built from precedence to or from job triples and rank thresholds in a linear extension.",
+  "explicit_constants": "O((L+2)^150020) multitape steps, with leaf allowance 10000. The authors state that no practical performance claim is made.",
+  "galactic": true,
+  "channels": [
+   "OPT",
+   "CPLX"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 2,
+   "practicality": 1,
+   "confidence": 5,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "This settles a famous complexity question but changes nothing for practitioners. Real DAG scheduling, such as compiler instruction scheduling, HPC task graphs, or Sugiyama layer assignment with width 3 (Coffman-Graham ranking), uses list scheduling, Coffman-Graham, CP-SAT or ILP, and these already handle realistic sizes. The remaining channel is research: whether the bounded-global-description decomposition leads to a practical exact DP. It also tells theorists to stop looking for an NP-hardness proof for m=3.",
+  "targets": [
+   "OGDF CoffmanGrahamRanking (width-bounded layering)",
+   "OR-Tools CP-SAT on P3|prec,pj=1|Cmax benchmarks",
+   "scheduling theory (Nederlof-Swennenhuis-Wegrzycki 2^{O(sqrt n log n)} line)"
+  ],
+  "action": "RESEARCH",
+  "first_step": "",
+  "caveats": "Exponent 150020. Covers unit jobs, identical machines and m=3 only; m>=4 is still open. No consequence for weighted or general processing times.",
+  "deep_dive": false,
+  "cross_links": [
+   "118"
+  ],
+  "evidence": [
+   "preprints/A-polynomial-time-algorithm-for-three-machine-unit-job-scheduling-September-24-2026/build/paper.tex (problem def, Thm 1.1)",
+   "preprints/A-polynomial-time-algorithm-for-three-machine-unit-job-scheduling-September-24-2026/build/conclusion.tex",
+   "lean/docs/124.md"
+  ]
+ },
+ {
+  "num": "125",
+  "title": "The metric k-median approximation threshold and recovery",
+  "subject": "Theoretical computer science",
+  "plain_english": "Choosing at most k facilities from a candidate list to minimise total client distance can be approximated within 1+2/e+eps, about 1.736, in deterministic polynomial time. This matches the known Max-k-Coverage hardness, so 1+2/e is the exact approximability threshold if P!=NP.",
+  "constructive": "yes: LP, then grid preparation, iterative directed-graph rounding with an O(1) facility surplus, derandomization, and Li-Svensson surplus removal.",
+  "explicit_constants": "The hardness constant is explicit. Running time is n^{O(c/eta)} from Li-Svensson enumeration, with grid Delta depending on eps; no explicit exponent is given.",
+  "galactic": true,
+  "channels": [
+   "OPT",
+   "CPLX"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 2,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 2,
+   "time_to_value": 1
+  },
+  "opportunity": "This closes the approximability question for k-median with candidate facilities. Practitioners (clustering, facility location, p-median) use local search, Lagrangian or LP heuristics and MIP, which on benchmarks get within a few percent of optimum, so the worst-case factor does not affect them. The only plausibly practical part is the pseudo-approximation stage (LP plus iterative rounding opening k+O(1) facilities) used as an LP-rounding heuristic. The surplus-removal stage is galactic.",
+  "targets": [
+   "OR-Library pmed / p-median benchmark studies",
+   "LP-rounding clustering research code"
+  ],
+  "action": "RESEARCH",
+  "first_step": "",
+  "caveats": "Hardness holds only in the explicit-candidate-facility model; F=J is different. The Li-Svensson enumeration and eps-dependent grid make it impractical. Local search already dominates in practice.",
+  "deep_dive": false,
+  "cross_links": [
+   "117"
+  ],
+  "evidence": [
+   "preprints/The-Approximation-Threshold-for-Metric-k-Median-September-24-2026/build/sections/introduction.tex (Thm 1.1, Cor threshold)",
+   "preprints/The-Approximation-Threshold-for-Metric-k-Median-September-24-2026/build/sections/preliminaries.tex (Li-Svensson n^{O(c/eta)})",
+   "lean/docs/125.md"
+  ]
+ },
+ {
+  "num": "126",
+  "title": "Exponential semidefinite complexity of perfect matching",
+  "subject": "Theoretical computer science",
+  "plain_english": "No polynomial-size semidefinite program can exactly describe the perfect matching polytope: its PSD rank is 2^{Omega(n)}. This extends Rothvoss's exponential LP extension-complexity bound to SDPs.",
+  "constructive": "no (lower bound)",
+  "explicit_constants": "The constant c in 2^{cn} is unspecified; Lean formalizes only superpolynomial growth.",
+  "galactic": null,
+  "channels": [
+   "CPLX",
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. This belongs to polyhedral and extended-formulation theory. Matching is solved combinatorially (Blossom, LEMON/Blossom V), and no modeler is waiting on compact SDP lifts of the matching polytope.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Lean formalization covers only the superpolynomial version.",
+  "deep_dive": false,
+  "cross_links": [
+   "113",
+   "120"
+  ],
+  "evidence": [
+   "preprints/Exponential-PSD-rank-of-positively-shifted-matching-matrices-October-5-2026/build/source/sections/introduction.tex (Thm main, Cor exact-lift)",
+   "lean/docs/126.md"
+  ]
+ },
+ {
+  "num": "127",
+  "title": "Average sensitivity of polynomial threshold functions",
+  "subject": "Theoretical computer science",
+  "plain_english": "For the sign of a degree-d polynomial on n Boolean inputs, a random single-bit flip changes the output for at most 8d*sqrt(n) coordinates on average. This gives an explicit O(d sqrt(eta)) noise-sensitivity bound and a uniform-distribution agnostic learner via L1 polynomial regression.",
+  "constructive": "partial: the bound is structural. The learning corollary is constructive (L1 regression of degree k=O(d^2 alpha^-2 log(1/alpha))).",
+  "explicit_constants": "yes: 8d sqrt(n); noise sensitivity <= 8 sqrt(2) d sqrt(eta); learner constant A=32*128.",
+  "galactic": true,
+  "channels": [
+   "STAT"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 2,
+   "practicality": 1,
+   "confidence": 5,
+   "effort": 2,
+   "time_to_value": 1
+  },
+  "opportunity": "This is a learning-theory improvement: it removes Kane's (log n)^{O(d log d)} 2^{O(d^2 log d)} losses for learning PTFs and degree-d sign classifiers under uniform inputs. There is no near-term practical channel. The n^{O(d^2/alpha^2)} learner is impractical, and real feature distributions are not uniform on the cube.",
+  "targets": [
+   "computational learning theory (agnostic learning of PTFs)"
+  ],
+  "action": "RESEARCH",
+  "first_step": "",
+  "caveats": "Uniform distribution only. The learner's time n^{k} with k ~ d^2/alpha^2 is impractical.",
+  "deep_dive": false,
+  "cross_links": [
+   "132",
+   "192"
+  ],
+  "evidence": [
+   "preprints/Average-Sensitivity-of-Polynomial-Threshold-Functions-September-25-2026/build/main.tex (Thm main)",
+   "preprints/Average-Sensitivity-of-Polynomial-Threshold-Functions-September-25-2026/build/sections/06-consequences.tex (Cor noise-sensitivity, Cor agnostic-learning)",
+   "lean/docs/127.md"
+  ]
+ },
+ {
+  "num": "128",
+  "title": "A factor-two approximation for shortest common superstring",
+  "subject": "Theoretical computer science",
+  "plain_english": "A deterministic polynomial-time algorithm builds a string containing every input string that is at most twice as long as the shortest possible. Along the way it computes a lower bound W <= OPT from forced substring-occurrence counts, and its output has length <= 2W.",
+  "constructive": "yes: forced counts m(s) over all substrings (extension rules plus a periodicity rule), a balanced hierarchical graph, decomposition into periodic layers, and connections paid from per-layer budgets, finished with an Euler tour. Fully deterministic.",
+  "explicit_constants": "The factor 2 is exact. Polynomial degree is not stated; a naive implementation enumerates O(L^2) substrings x periods x shifts x blocking words over V, roughly L^5-L^7 in total input length L.",
+  "galactic": false,
+  "channels": [
+   "ALGO",
+   "COMM",
+   "BIO"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 4,
+   "practicality": 2,
+   "confidence": 5,
+   "effort": 3,
+   "time_to_value": 3
+  },
+  "opportunity": "The prior claim that this algorithm should pack zstd dictionary phrases does not hold up. zstd's COVER/FASTCOVER dictionary builders choose segments by dmer-frequency coverage under a byte budget, zero out the frequencies of covered dmers, and memcpy segments end-to-end (legacy ZDICT merges by sample position). The objective is coverage, not shortest superstring, the leftover overlaps are small, and greedy merging would capture them. The more useful artifact is the certificate: W is a polynomially computable lower bound with OPT in [W,2W]. It can certify instance-wise gaps of greedy superstring tools, which are empirically near-optimal even though the Greedy conjecture was disproved (worst case >= 9/4). The natural target is k-mer-set superstrings (KmerCamel masked superstrings, which run greedy on the same hierarchical overlap graph), where inputs have bounded length and W may be tractable.",
+  "targets": [
+   "KmerCamel (masked superstrings / k-mer set representation; global & local greedy on hierarchical overlap graph)",
+   "k-mer set compression & SPSS tools (simplitigs, matchtigs, eulertigs) as baselines",
+   "SCS approximation benchmark suites"
+  ],
+  "action": "BENCHMARK",
+  "first_step": "Implement the m(s) recursion (extension rules plus the period rule) with a suffix automaton for fixed-length k-mer inputs, compute W on KmerCamel's benchmark k-mer sets, and report greedy/W ratios against the existing cycle-cover lower bound.",
+  "caveats": "Lean-formalized and fully constructive, but the period-rule and blocking-functional enumeration is a high-degree polynomial in total length, so naive code is infeasible beyond about L=10^3-10^4. W may be weaker than cycle-cover bounds in practice. The guarantee is worst-case, and greedy already performs well empirically. zstd/ZDICT is not a fit (see opportunity).",
+  "deep_dive": true,
+  "cross_links": [
+   "121"
+  ],
+  "evidence": [
+   "preprints/A-Polynomial-Time-2-Approximation-for-Shortest-Common-Superstring-September-24-2026/build/sections/01-introduction.tex (Thm 1.1)",
+   "preprints/A-Polynomial-Time-2-Approximation-for-Shortest-Common-Superstring-September-24-2026/build/sections/02-counts.tex (rules eq. extension/period, Lemma counts, Lemma base)",
+   "preprints/A-Polynomial-Time-2-Approximation-for-Shortest-Common-Superstring-September-24-2026/build/sections/06-cycles.tex (Thm connection)",
+   "preprints/A-Polynomial-Time-2-Approximation-for-Shortest-Common-Superstring-September-24-2026/build/sections/07-algorithm.tex (runtime)",
+   "lean/docs/128.md",
+   "zstd lib/dictBuilder/cover.c and zdict.c (fetched)"
+  ]
+ },
+ {
+  "num": "129",
+  "title": "Exponential state costs for two-way automata",
+  "subject": "Theoretical computer science",
+  "plain_english": "Two-way nondeterministic finite automata cannot be complemented with polynomially many states, and one-way NFAs cannot be simulated by two-way DFAs with polynomially many states, when the alphabet is allowed to grow. This resolves the alphabet-growing form of Sakoda-Sipser.",
+  "constructive": "partial: explicit witness automata; the content is lower bounds.",
+  "explicit_constants": "yes: (1/2)2^{floor((n-4)/127)}-1 and 4(s+2)^2 >= 2^{floor((h-2)/31)}.",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 5,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. Two-way automata are not used in regex engines, model checkers or protocol verifiers, and the separation needs growing alphabets.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Growing alphabets only; the fixed-alphabet Sakoda-Sipser question remains open.",
+  "deep_dive": false,
+  "cross_links": [
+   "134"
+  ],
+  "evidence": [
+   "preprints/An-exponential-state-lower-bound-for-two-way-nondeterministic-complementation-September-25-2026/build/sections/introduction.tex (main theorem)",
+   "preprints/An-exponential-two-way-deterministic-state-lower-bound-for-one-way-liveness-September-25-2026/build/sections/introduction.tex (Thm main)",
+   "lean/docs/129.md"
+  ]
+ },
+ {
+  "num": "130",
+  "title": "Exact Fourier transforms below n log n",
+  "subject": "Theoretical computer science",
+  "plain_english": "A DFT algorithm runs in O(n (log n)^{1-10^-13}) operations at every length, but only in an idealized model: exact complex arithmetic, unbounded coefficients, a supplied root of unity, and no numerical-stability guarantee.",
+  "constructive": "yes: an explicit uniform algorithm built from a fixed network for tensor powers of C=(1/2)[[1+i,1-i],[1-i,1+i]], a Newton-interpolation local compiler, Good-Thomas CRT axes and a Bluestein chirp.",
+  "explicit_constants": "yes: m=10^6, W*=2^71, Delta=6871402692000000, theta=1-2.1e-13. The authors say the constants are 'enormous, so these are asymptotic existence and explicitness results, with no useful crossover estimate'.",
+  "galactic": true,
+  "channels": [
+   "NUM",
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 2,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. The saving factor (log n)^{2e-13} is about 1+10^-12 for any physical n. It is swamped by the (log log n)^4 overhead (about 18-55 at n=2^20-2^64) and by recursion blocks of W*=2^71 arrays. The model also ignores floating-point error. FFTW/genfft, MKL, cuFFT and pocketfft are unaffected; constant-factor work such as split-radix and Alman-Rao-type rigidity savings is the relevant line. The prior mapping of this result to FFTW genfft is a keyword match with no practical basis.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Exact arithmetic model only, with no bit-complexity or stability claim. The companion nonuniform circuit result is subsequential.",
+  "deep_dive": false,
+  "cross_links": [
+   "109",
+   "107"
+  ],
+  "evidence": [
+   "preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/build/sections/introduction.tex (eq. main-constants, Thm main, Cor decimal)",
+   "preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/build/sections/all-lengths.tex (final estimates)",
+   "preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/build/sections/network.tex (W*=2^71)",
+   "preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/build/sections/01-introduction.tex (Thm main)",
+   "lean/docs/130.md"
+  ]
+ },
+ {
+  "num": "131",
+  "title": "Rapid mixing of graph switches for every degree sequence",
+  "subject": "Theoretical computer science",
+  "plain_english": "The degree-preserving 'edge swap' random walk, used to generate random networks with the same degrees as an observed one, converges to the uniform distribution in polynomial time for every degree sequence. The lazy version that picks four vertices at random mixes within 2n^8 steps. There is also an exact uniform sampler.",
+  "constructive": "yes: the chain itself, with explicit Poincare constants, plus an exact sampler based on a rare residual-mixture branch.",
+  "explicit_constants": "yes: t_mix(1/4) <= 2n^8; spectral gap >= 1/(24 n^2 C(n,4)); Var <= 2n^2 <f,Lf> for the switch-graph Laplacian; H^2 >= H for pair (Curveball) resampling, which implies Var <= sum_a ||h_a f||^2.",
+  "galactic": false,
+  "channels": [
+   "STAT",
+   "NET",
+   "ALGO"
+  ],
+  "tier": "T2",
+  "scores": {
+   "impact": 4,
+   "reach": 4,
+   "directness": 4,
+   "practicality": 3,
+   "confidence": 5,
+   "effort": 4,
+   "time_to_value": 4
+  },
+  "opportunity": "This removes the standing caveat that switch-chain mixing was proven only for regular, bounded or P-stable degree sequences, a caveat that sits under every configuration-model null model in network science (motif z-scores, rich-club normalization, small-world sigma/omega, modularity nulls). Three concrete consequences follow. (1) Documentation for the NetworkX, igraph, graph-tool and NetworKit swap samplers can cite polynomial mixing for every degree sequence, but only for chains that count rejected proposals as holding steps. (2) NetworkX double_edge_swap and random_reference loop until nswap successful swaps, so their stationary law is proportional to the number of valid swaps, not uniform. An exhaustive check on four small degree sequences gives TV 0.023-0.029 from uniform and max/min probability ratios of 1.25-1.52. (3) Rescaling the paper's Poincare inequality gives explicit budgets that are much better for sparse graphs. A uniform-edge-pair proposal that counts rejections (NetworkX-style, P(G,G')=1/m^2) has gap >= 1/(2n^2 m^2). A random-pair Curveball heat-bath has gap >= 1/C(n,2), which was checked numerically: observed gaps 0.14-0.26 against bounds 0.028-0.048.",
+  "targets": [
+   "NetworkX nx.double_edge_swap / nx.random_reference / nx.rich_club_coefficient(normalized=True) / nx.sigma, nx.omega",
+   "igraph rewire() and degree_sequence_game(method='edge_switching_simple')",
+   "graph-tool random_rewire(model='configuration')",
+   "NetworKit EdgeSwitching / Curveball / GlobalCurveball",
+   "Curveball null-model users in ecology/network science (undirected variant; bipartite is FQW26/115)"
+  ],
+  "action": "CERTIFY",
+  "first_step": "Open a NetworkX issue/PR that (a) adds a lazy option counting rejected attempts as steps to double_edge_swap, with a docstring citing the theorem and the 1/(2n^2 m^2) gap, and (b) attaches the exhaustive small-instance bias table.",
+  "caveats": "Worst-case budgets (2n^8, or about n^2 m^3 log n for edge-pair proposals) are far above the 10-100 swaps per edge used in practice. The result certifies polynomial mixing, not current step counts. It covers simple undirected graphs only; directed and bipartite cases are separate. Connectivity-preserving variants (random_reference) are not covered. The exact sampler is impractical (enumerates the state space on a rare branch). The Lean formalization covers the chain estimates, not the exact sampler. The Curveball-gap and NetworkX-gap corollaries are this triage's own rescaling and need a careful write-up.",
+  "deep_dive": true,
+  "cross_links": [
+   "115",
+   "113"
+  ],
+  "evidence": [
+   "preprints/Polynomial-Mixing-of-the-Switch-Chain-for-Every-Graphical-Degree-Sequence-September-25-2026/build/sections/introduction.tex (Thm 1.1, Cor exact-sampling)",
+   "preprints/Polynomial-Mixing-of-the-Switch-Chain-for-Every-Graphical-Degree-Sequence-September-25-2026/build/sections/setup.tex (pair operators, H)",
+   "preprints/Polynomial-Mixing-of-the-Switch-Chain-for-Every-Graphical-Degree-Sequence-September-25-2026/build/sections/mixing.tex (Prop mix:global, Cor mix:poincare, Lemma mix:comparison, proof of Thm 1.1)",
+   "preprints/Polynomial-Mixing-of-the-Switch-Chain-for-Every-Graphical-Degree-Sequence-September-25-2026/build/sections/exact-sampling.tex",
+   "lean/docs/131.md",
+   "networkx 3.6.1 algorithms/swap.py, algorithms/smallworld.py (read locally)",
+   "scratchpad swapbias2.py / curveball.py exhaustive checks"
+  ]
+ },
+ {
+  "num": "132",
+  "title": "A superquadratic separation of sensitivity and block sensitivity",
+  "subject": "Theoretical computer science",
+  "plain_english": "There are total Boolean functions whose block sensitivity exceeds sensitivity^alpha for some alpha>2. This disproves the conjectured quadratic upper bound bs(f) <= O(s(f)^2).",
+  "constructive": "yes: explicit function family.",
+  "explicit_constants": "bs/s^2 >= 2^d/(4(d+2)^2); alpha>2 is fixed but not stated numerically.",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 5,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. This is query-complexity structure theory with no applied channel.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [
+   "127",
+   "192",
+   "284"
+  ],
+  "evidence": [
+   "preprints/A-superquadratic-separation-between-sensitivity-and-block-sensitivity-September-25-2026/build/paper.tex (Thm main)",
+   "lean/docs/132.md"
+  ]
+ },
+ {
+  "num": "133",
+  "title": "The computational complexity of Weisfeiler-Leman refinement",
+  "subject": "Theoretical computer science",
+  "plain_english": "Deciding whether two graphs are indistinguishable by k-dimensional Weisfeiler-Leman refinement needs n^{Omega(k)} time with no complexity assumption, for very large fixed k. When k is part of the input in binary, both equivalence (even on subcubic graphs) and 'does k-WL identify this graph' are EXPTIME-complete.",
+  "constructive": "partial: explicit hard graph-pair constructions (parity lifts, compressed CFI); the main statements are lower bounds.",
+  "explicit_constants": "The unconditional bound uses c=c0=1e-9 and needs k large enough that floor(floor(k/1000)/1000) beats the simulation constants (k on the order of 10^6), so the exponent is about 10^-9 k. The ETH-conditional version has unspecified c and K>=4. Parity-lift graph order is A*(t*2^{t-2+3C(t-1,2)}+12C(t,3)), about 10^7*A at k=4 (joint).",
+  "galactic": true,
+  "channels": [
+   "CPLX",
+   "NET",
+   "STAT"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "This is mostly a theory confirmation. GNN expressivity work (k-GNNs, k-WL kernels) already assumes n^k cost is intrinsic; the unconditional bound only covers k on the order of 10^6 and the conditional one has unspecified constants, so practical k=2-3 is untouched. Graph isomorphism tools (nauty, Traces, bliss, saucy) use colour refinement plus individualization and are unaffected. Hard-instance generation for GNN or GI benchmarks such as BREC and CFI suites is impractical: about 10^7 vertices at k=4 joint, about 8000*A vertices at k=4 separate.",
+  "targets": [
+   "GNN expressivity theory (k-WL hierarchy, BREC benchmark)",
+   "graph isomorphism benchmark suites (nauty/Traces/bliss)"
+  ],
+  "action": "REDIRECT",
+  "first_step": "",
+  "caveats": "The unconditional result applies only at astronomically large k. EXPTIME results need binary-encoded k. Identification hardness does not affect fixed small k.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "preprints/Unconditional-time-lower-bounds-for-Weisfeiler-Leman-equivalence-September-25-2026/build/main.tex (Thm main)",
+   "preprints/Unconditional-time-lower-bounds-for-Weisfeiler-Leman-equivalence-September-25-2026/build/sections/05-transfer.tex (eq. trans:parameters c0=1e-9)",
+   "preprints/Parity-lifts-and-bounded-treewidth-witnesses-for-Weisfeiler-Leman-equivalence-September-25-2026/build/sections/01-introduction.tex (Thm choice-reduction, Thm eth)",
+   "preprints/The-complexity-of-identifying-a-graph-by-Weisfeiler-Leman-refinement-September-25-2026/build/sections/01-introduction.tex (Thm main)",
+   "lean/docs/133.md"
+  ]
+ },
+ {
+  "num": "134",
+  "title": "Generalized star height at most three",
+  "subject": "Theoretical computer science",
+  "plain_english": "Every regular language has a regular expression with complement allowed and at most three nested Kleene stars.",
+  "constructive": "yes in principle (expression construction via finite-monoid computations), but expressions are huge and size is not controlled.",
+  "explicit_constants": "Star height <= 3; no size bounds.",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 5,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. Practical regex and automata engines (RE2, Hyperscan, PCRE, automata libraries) do not use complement-based generalized expressions, and expression length is uncontrolled.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Whether star height <= 1 suffices (the original generalized star-height problem) remains open.",
+  "deep_dive": false,
+  "cross_links": [
+   "129"
+  ],
+  "evidence": [
+   "preprints/Generalized-Star-Height-at-Most-Three-September-25-2026/build/paper.tex (Thm main)",
+   "lean/docs/134.md"
+  ]
+ },
+ {
+  "num": "135",
+  "title": "Homogeneous depth-five lower bounds for iterated matrix multiplication",
+  "subject": "Theoretical computer science",
+  "plain_english": "Any homogeneous depth-5 arithmetic circuit computing the (1,1) entry of a product of n generic n-by-n matrices needs n^{Theta(sqrt n)} gates.",
+  "constructive": "no (lower bound; matching upper construction n^{sqrt n+4})",
+  "explicit_constants": "yes: n^{sqrt n/400}",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 5,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. This is algebraic circuit complexity (the VP vs VNP program) with no applied channel.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [
+   "108",
+   "107"
+  ],
+  "evidence": [
+   "preprints/Homogeneous-depth-five-lower-bounds-for-iterated-matrix-multiplication-September-25-2026/build/paper.tex (Thm main)",
+   "lean/docs/135.md"
+  ]
+ },
+ {
+  "num": "136",
+  "title": "A quasilinear PCP theorem for PPAD",
+  "subject": "Theoretical computer science",
+  "plain_english": "Finding an end of a line in an exponential graph reduces, with only quasilinear blow-up, to finding a point that approximately satisfies all but a constant fraction of the gates of an arithmetic generalized circuit. This is the PCP-for-PPAD conjecture of Babichenko, Papadimitriou and Rubinstein.",
+  "constructive": "yes (reduction R and decoder D)",
+  "explicit_constants": "eps, delta are fixed rationals but not stated numerically; size A N ceil(log N)^b.",
+  "galactic": null,
+  "channels": [
+   "CPLX",
+   "NET"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "Under ETH-for-PPAD this sharpens lower bounds for constant-approximate two-player Nash and related equilibrium problems toward n^{Omega(log n)}, matching Lipton-Markakis-Mehta. It tells equilibrium-computation and market-design theorists that quasipolynomial support enumeration is essentially optimal. Practical solvers (Gambit, Lemke-Howson, support enumeration, market-clearing heuristics) are unaffected.",
+  "targets": [
+   "algorithmic game theory / equilibrium computation theory"
+  ],
+  "action": "REDIRECT",
+  "first_step": "",
+  "caveats": "Hardness consequences still need ETH-for-PPAD. Not Lean-formalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "104"
+  ],
+  "evidence": [
+   "preprints/The-PCP-for-PPAD-conjecture-a-quasilinear-reduction-September-25-2026/build/sections/01-introduction.tex (Def eol, Def gcircuit, Thm main)"
+  ]
+ },
+ {
+  "num": "137",
+  "title": "One-tape time simulation in two-fifths-power space",
+  "subject": "Theoretical computer science",
+  "plain_english": "A one-tape Turing machine running for T steps can be simulated with about T^{2/5} space, improving the square-root bound for this model.",
+  "constructive": "yes (simulator), with unbounded simulation time",
+  "explicit_constants": "O(T^{2/5} log^C T); C unspecified.",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 5,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. This is a space-time tradeoff in a restricted machine model. The time blow-up is unbounded, so there is no use for memory-constrained computing.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "One writable tape only; multitape is excluded.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "preprints/Simulating-One-Tape-Time-in-Two-Fifths-Power-Space-September-25-2026/build/source (Thm main)",
+   "lean/docs/137.md"
+  ]
+ },
+ {
+  "num": "138",
+  "title": "Subset Sum in O(2^{0.49n}) time",
+  "subject": "Theoretical computer science",
+  "plain_english": "This is the first worst-case Subset Sum algorithm (n integers of polynomially many bits) with running-time exponent below the 50-year-old meet-in-the-middle 2^{n/2}: 2^{0.49n}, randomized with bounded error. A companion paper keeps 2^{n/2} time but uses only 2^{n/5} memory.",
+  "constructive": "yes: a randomized algorithm combining isolation, a filtered Fourier 'checksum' estimate with a random prime modulus, and representation-method enumeration of modular aliases.",
+  "explicit_constants": "Intermediate bound 2^{0.489995n} poly(n+b+2), with an unspecified polynomial. Parameters eta=.51772, tau=.48996, gamma=.48925 come from numerical certificates. The low-space variant has an (n+b+2)^15 2^{0.199n} space factor.",
+  "galactic": true,
+  "channels": [
+   "ALGO",
+   "CPLX",
+   "CRYPTO"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 2,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "There is no cryptographic consequence. Knapsack and subset-sum cryptanalysis is average-case at density ~1, where representation methods (HGJ, BCJ, BBSS) already reach about 2^{0.28-0.29n}, and deployed lattice schemes (Kyber/ML-KEM, Dilithium/ML-DSA) are parameterized by lattice attacks, not worst-case Subset Sum. The 0.01n exponent gain only beats Horowitz-Sahni once 2^{0.01n} exceeds the polynomial overhead, around n~2*10^4 for an n^15-type factor, where both are astronomically infeasible. The real effect is on fine-grained complexity: the hypothesis that worst-case Subset Sum needs 2^{n/2} time is refuted, and reductions that assume it must be rechecked.",
+  "targets": [
+   "fine-grained complexity hypothesis lists (Subset Sum / k-SUM style lower-bound assumptions)"
+  ],
+  "action": "REDIRECT",
+  "first_step": "",
+  "caveats": "Not Lean-formalized. The argument is long and relies on numerical certificates. Worst-case only, randomized. The 2^{0.49n} constant absorbs a polynomial using only 2^{0.000005n} slack, so constants are enormous.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/introduction.tex (model, Thm main)",
+   "preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/aliases.tex (Thm aliases, parameters)",
+   "preprints/A-Low-Space-Algorithm-for-Worst-Case-Subset-Sum-September-26-2026/build/introduction.tex (Thm main, Cor target)"
+  ]
+ },
+ {
+  "num": "139",
+  "title": "Subpolynomial query complexity for log-concave sampling",
+  "subject": "Theoretical computer science",
+  "plain_english": "To draw an approximate sample (TV 1/10) from exp(-V) on R^d when V is smooth and very well conditioned (I <= Hessian <= 2I) with a known minimizer, C_eps d^eps gradient evaluations suffice for every eps>0, and at least about log d are needed. So the dimension exponent of gradient-query cost is zero.",
+  "constructive": "partial: an explicit measurable algorithm (high-order Picard/collocation flows with recursive noisy conditional means), but with unbounded real computation between queries and eps-dependent approximation orders.",
+  "explicit_constants": "No. C_eps is unspecified, presumably enormous for small eps, and no arithmetic-cost bound is given. The lower bound c log d also has an unspecified c.",
+  "galactic": true,
+  "channels": [
+   "STAT"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 3,
+   "reach": 2,
+   "directness": 2,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "This redirects sampling theory rather than software. It shows that the d^{1/3} (shifted composition) to d^{1/6}-d^{1/5} (Picard, cloud) gradient-query barriers are not intrinsic, so the research target is practical high-order samplers whose gradient cost grows very slowly with dimension. Bayesian software (Stan NUTS, PyMC, NumPyro, BlackJAX) is unaffected. Its targets have condition numbers far above 2, the query count ignores computation between queries, and C_eps is unquantified.",
+  "targets": [
+   "log-concave sampling theory (Langevin/HMC/Picard/proximal samplers)",
+   "BlackJAX / NumPyro research samplers (long-term)"
+  ],
+  "action": "RESEARCH",
+  "first_step": "",
+  "caveats": "Condition number <=2, known minimizer, exact gradients, fixed TV 1/10. Oracle complexity only: arbitrary real computation between queries is free.",
+  "deep_dive": false,
+  "cross_links": [
+   "093",
+   "091"
+  ],
+  "evidence": [
+   "preprints/Subpolynomial-query-complexity-for-well-conditioned-log-concave-sampling-September-26-2026/build/sections/introduction.tex (model, Thm main, history)",
+   "preprints/Subpolynomial-query-complexity-for-well-conditioned-log-concave-sampling-September-26-2026/build/sections/sampling.tex (Thm upper and proof)",
+   "lean/docs/139.md"
+  ]
+ },
+ {
+  "num": "140",
+  "title": "Memory-sample lower bounds for noiseless Gaussian regression",
+  "subject": "Theoretical computer science",
+  "plain_english": "A one-pass learner that keeps at most A*d^2 bits between exact Gaussian linear measurements needs Omega(d log(1/eps)) measurements to recover a unit vector to angle eps. Extra memory at constant precision does not reduce the number of samples below what Kaczmarz or SGD already uses.",
+  "constructive": "no (lower bound; Kaczmarz shows tightness with real registers)",
+  "explicit_constants": "Partly: 2^{-16} d log2(1/eps) for o(d^2) memory (subsphere paper); c_A unspecified for A d^2 memory.",
+  "galactic": false,
+  "channels": [
+   "STAT"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 2,
+   "practicality": 2,
+   "confidence": 4,
+   "effort": 2,
+   "time_to_value": 2
+  },
+  "opportunity": "This certifies that streaming Kaczmarz/SGD-type regression, at O(d log 1/eps) samples with O(d) words of memory, is sample-optimal among learners with subquadratic or constant-precision quadratic memory. The audience is memory- or quantization-constrained streaming least squares (on-device learning, sketch-and-solve). It gives a formal reason not to spend memory budget on partial Gram or sketch states expecting fewer samples. It is a clean theoretical certificate, but no practitioner decision currently depends on it.",
+  "targets": [
+   "streaming / online least-squares theory (randomized Kaczmarz, SGD)",
+   "memory-constrained learning literature (Raz-style memory-sample tradeoffs)"
+  ],
+  "action": "CERTIFY",
+  "first_step": "",
+  "caveats": "Noiseless Gaussian design, uniform spherical prior, and fixed A only. It does not cover d^2 log(1/eps) bits, which is what RLS uses to solve in d samples.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "preprints/Memory-and-precision-in-noiseless-Gaussian-regression-September-27-2026/build/sections/introduction.tex (Def h:model, Thm h:main, Cors, Kaczmarz benchmark)",
+   "lean/docs/140.md"
+  ]
+ },
+ {
+  "num": "141",
+  "title": "Existential-universal real sentences in the counting hierarchy",
+  "subject": "Theoretical computer science",
+  "plain_english": "Deciding whether a system of polynomial equations and inequalities has a real solution (the existential theory of the reals), and even one exists-forall alternation, can be done in a fixed level of the counting hierarchy (ETR in C_26), which is well inside PSPACE.",
+  "constructive": "partial (complexity-class membership; no practical procedure)",
+  "explicit_constants": "ETR in counting level 26; level j for exists-forall unspecified.",
+  "galactic": null,
+  "channels": [
+   "VERIF",
+   "CPLX"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 2,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None in practice. SMT solvers for nonlinear real arithmetic (z3 nlsat, cvc5, Yices2 MCSat, QEPCAD/CAD) are unaffected, and exists-R-complete problems such as neural-network training and art gallery stay as hard as before. This is a structural complexity refinement inside PSPACE.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Not Lean-formalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "004"
+  ],
+  "evidence": [
+   "preprints/Existential-universal-real-sentences-in-the-counting-hierarchy-October-4-2026/build/sections/01-introduction.tex (Thm main, history)",
+   "preprints/Existential-universal-real-sentences-in-the-counting-hierarchy-October-4-2026/build/sections/08-existential-bound.tex (Thm etr-bound)"
+  ]
+ },
+ {
+  "num": "142",
+  "title": "Deterministic polynomial factorization over prime fields",
+  "subject": "Theoretical computer science",
+  "plain_english": "This gives the first deterministic, GRH-free algorithm that factors any degree-n polynomial over F_p in time polynomial in n and log p. Randomized Cantor-Zassenhaus has done this in expected polynomial time since 1981.",
+  "constructive": "yes: Berlekamp algebra, then a separating element, then even-degree tournament splitting with a 2-primary generator or odd-degree splitting via cyclic curves Y^q=F(X), lambda-division in Jacobians and norm equations in cyclic algebras. Auxiliary primes l are found by upward search.",
+  "explicit_constants": "Bit cost O(((n+1)ceil(log2 p))^{10^12}); refined O(B^{400000100}) with B=20+(n+1)(L+1). The algebraic part is O(B^{500000}+B^{100}E^{20}), where E is the largest auxiliary prime, guaranteed <= c0 B^{2*10^7} via a zero-free strip delta=1e-6. The large-characteristic machinery runs only for p>B^{200000}, i.e. primes of at least ~4.8 million bits even at n=2. Every smaller p uses Berlekamp with exhaustive scalar search costing about p trials.",
+  "galactic": true,
+  "channels": [
+   "CAS",
+   "CRYPTO"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 2,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 4,
+   "time_to_value": 2
+  },
+  "opportunity": "This is not practical against Cantor-Zassenhaus. CZ, Kaltofen-Shoup and Kedlaya-Umans run in expected roughly O~(n^2 log p) or n^{1.5+o(1)} log p field operations, and their output is Las Vegas and checkable (product plus irreducibility tests), so randomness never threatens correctness. For every prime anyone uses (up to a few thousand bits), the algorithm falls into its small-characteristic branch, which is deterministic Berlekamp with exhaustive search, i.e. exponential in log p. The one action is REDIRECT: once refereed, textbook and library-doc statements that deterministic polynomial-time factoring is open need updating. FLINT, NTL, SymPy and PARI should not implement it. The algebraic reduction alone also gives the first GRH-conditional deterministic polynomial-time algorithm, improving Evdokimov's quasipolynomial bound.",
+  "targets": [
+   "FLINT fmpz_mod_poly_factor / gr_poly factor docs",
+   "NTL CanZass/Berlekamp docs",
+   "SymPy galoistools gf_factor docs",
+   "PARI/GP factormod",
+   "von zur Gathen-Gerhard 'Modern Computer Algebra' ch. 14 notes"
+  ],
+  "action": "REDIRECT",
+  "first_step": "Do not implement. Record in CAS documentation and survey notes that deterministic polynomial-time factorization over F_p is claimed, flagging that it depends on the unformalized companion Hecke zero-free theorem (family 029).",
+  "caveats": "The unconditional claim rests on an extraordinary, unformalized analytic input: a uniform zero-free strip of width 1e-6 for all finite-order Hecke L-functions over cyclotomic fields containing mu_12 (companion 029). Exponent 10^12. Determinism has no practical value because CZ output is verifiable.",
+  "deep_dive": false,
+  "cross_links": [
+   "029",
+   "003"
+  ],
+  "evidence": [
+   "preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/00-introduction.tex (Thm factorization, Thm reduction, history)",
+   "preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/08-driver.tex (Procedure Factor, small/large branch)",
+   "preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/09-complexity.tex (Prop complexity:bound)",
+   "preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/10-analytic.tex (Thm analytic:hecke, Prop analytic:auxiliary)",
+   "preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/01-table.tex"
+  ]
+ }
+]

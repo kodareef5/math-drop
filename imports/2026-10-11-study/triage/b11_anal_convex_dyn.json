@@ -1,0 +1,1559 @@
+[
+ {
+  "num": "071",
+  "title": "Koebe's circle-domain conjecture",
+  "subject": "Real and complex analysis",
+  "plain_english": "Every planar domain, even one with uncountably many holes, can be conformally mapped to a domain whose holes are round disks or points. Such maps are rigid when the boundary is conformally removable.",
+  "constructive": "no (existence via exhaustion/compactness)",
+  "explicit_constants": "none",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "Numerical conformal mapping to circle domains (Schottky-Klein prime-function methods, multiply connected potential flow, circle packing software) only handles finitely many holes, where Koebe's theorem has been classical since about 1920. Countably many holes were already settled by He-Schramm. The new uncountable-boundary case has no computational counterpart.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "slice summary+abstracts",
+   "lean/docs/071.md",
+   "keyword grep build/sections/*.tex"
+  ]
+ },
+ {
+  "num": "072",
+  "title": "Brennan's conjecture and the integral-means spectrum",
+  "subject": "Real and complex analysis",
+  "plain_english": "If phi maps a simply connected domain conformally onto the disk, then |phi'|^s is area-integrable for every 4/3<s<4. This settles a sharp universal integral-means exponent.",
+  "constructive": "no",
+  "explicit_constants": "sharp exponents; strict B_b(-1)<1/4 with unspecified margin",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "In principle, integrability of conformal-map derivatives feeds into error analysis of numerical conformal mapping and polynomial approximation on rough domains. No method's practical convergence depends on the endpoint exponents settled here.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "slice summary+abstracts",
+   "lean/docs/072.md"
+  ]
+ },
+ {
+  "num": "073",
+  "title": "The Falconer distance conjecture",
+  "subject": "Real and complex analysis",
+  "plain_english": "Any compact set in R^d with Hausdorff dimension greater than d/2 has a set of pairwise distances with positive length (positive Lebesgue measure).",
+  "constructive": "no",
+  "explicit_constants": "none (threshold d/2 sharp)",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "This is fractal geometric measure theory with no algorithmic or engineering consumer. Finite-point distance problems such as Erdos distinct distances are different statements.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "slice summary+abstract",
+   "lean/docs/073.md"
+  ]
+ },
+ {
+  "num": "074",
+  "title": "Kakeya in three and four dimensions",
+  "subject": "Real and complex analysis",
+  "plain_english": "Sets containing a unit segment in every direction must be 'full-dimensional' (dimension 4 in R^4), and the 3D Kakeya maximal operator has the conjectured L^3 bound up to delta^-epsilon losses.",
+  "constructive": "no",
+  "explicit_constants": "C_epsilon unspecified",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "Euclidean Kakeya has no applied channel. The finite-field Kakeya bounds used in randomness extractors and mergers are a different, already-solved problem (Dvir).",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Very major claim and not formalized.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "slice summary+abstracts",
+   "keyword grep build TeX (applications mentioned are within harmonic analysis/PDE only)"
+  ]
+ },
+ {
+  "num": "075",
+  "title": "The L log L Fourier-convergence conjecture",
+  "subject": "Real and complex analysis",
+  "plain_english": "The ordinary Fourier series of every function in L log L on the circle converges almost everywhere.",
+  "constructive": "no",
+  "explicit_constants": "none",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "Signal processing never relies on a.e. convergence of raw partial sums. It uses Fejer/filtered sums, L^2 convergence or finite DFTs, so a.e. convergence for L log L changes nothing.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "slice summary+abstract",
+   "lean/docs/075.md"
+  ]
+ },
+ {
+  "num": "076",
+  "title": "Real ultraflat Littlewood polynomials and unbounded binary merit factors",
+  "subject": "Real and complex analysis",
+  "plain_english": "For every large length N there is a +/-1 sequence whose 'spectrum' (the polynomial on the unit circle) has modulus within (1 +/- eps) sqrt(N) everywhere. As a corollary, the best binary merit factor (signal energy over sidelobe energy) tends to infinity, disproving the long-held belief (Turyn; Golay's ~12.3 heuristic) that it stays bounded.",
+  "constructive": "partial: the proof chains tools that are randomized-algorithmic in principle (Pippenger-Spencer/Alon-Yuster near-perfect hypergraph packing; Lovett-Meka partial colouring for rounding). But the auxiliary torus polynomial, its integer frequency vectors, the prime q, the block count H and the cutoffs are only shown to exist for each delta, and the paper explicitly asserts 'no useful convergence rate or efficient signing algorithm'.",
+  "explicit_constants": "None. N0(eta) is unspecified. The auxiliary polynomial p_d needs d~8/delta torus variables (energy recursion M_j>=M_{j-1}+(1-M_{j-1})^2/8), and its Fourier support roughly squares at each step, so it is doubly exponential in d. The Lovett-Meka rounding constant C is unspecified. To beat F~12 one needs eta~0.04, hence tiny delta, so N0 is astronomically large.",
+  "galactic": true,
+  "channels": [
+   "COMM",
+   "QUANT",
+   "OPT"
+  ],
+  "tier": "T2",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 2,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 4,
+   "time_to_value": 4
+  },
+  "opportunity": "The real applied value is a REDIRECT, not new codes. The belief that the asymptotic optimal binary merit factor is finite is now known to be false. That covers Turyn's conjecture, Golay's 12.32 estimate and extrapolations of exhaustive LABS data (Mertens: F_opt(inf)>9). Surveys, radar/sonar/CDMA sequence-design texts and LABS-as-benchmark papers, including QAOA scaling studies, should stop quoting a finite asymptotic optimum. Nothing changes at lengths anyone uses: exact LABS optima are known only to N~66, search records are F>9 to N~250 and ~7.8 near N~500, and the best explicit long families give 6.34. The proof gives no N at which it beats any of these. A speculative secondary BENCHMARK: the proof's pipeline (a flat real-valued quadratic-phase waveform, then defect-sensitive discrepancy rounding to signs) could be tried as a seed generator for memetic/tabu LABS solvers at N=10^3-10^5, where the bar is only ~6.3-6.5.",
+  "targets": [
+   "LABS benchmark community (Mertens optimal tables; Bošković/Brglez xLastovka; Gallardo et al. memetic-tabu; Dimitrov et al. long-length records)",
+   "QAOA-on-LABS quantum-optimization benchmark (Shaydulin et al., JPMorgan/Argonne 2024)",
+   "binary radar/sonar/CDMA code-design literature (Golay merit factor; Jedwab-Katz-Schmidt 6.34 families)",
+   "BPSK-OFDM PMEPR literature (Rudin-Shapiro / Golay complementary sequences, PMEPR<=2)"
+  ],
+  "action": "REDIRECT",
+  "first_step": "Write a one-page note for LABS/QAOA benchmark maintainers: max_A F(A) -> infinity through all N (Lean-formalized via m_N -> 1), but with no effective N. Then spend 2-3 days testing relax-and-round (a sampled real quadratic-phase waveform plus Lovett-Meka or Gram-Schmidt-walk rounding) against Legendre-rotation seeds at N=10^3-10^4.",
+  "caveats": "Purely asymptotic and existential with no rate. It does not touch finite-N optima or quantum-advantage claims at N<=~100. Unbounded merit factor was already known for complex unimodular sequences (Kahane, Bombieri-Bourgain ultraflat) and for polyphase families, so the novelty is the binary (+/-1) constraint. Ultraflat BPSK would mean PMEPR->1 for binary OFDM, but this is equally non-constructive. el Abdalaoui's contrary preprints are rebutted in an appendix.",
+  "deep_dive": true,
+  "cross_links": [
+   "179",
+   "144",
+   "097"
+  ],
+  "evidence": [
+   "preprints/Asymptotically-minimal-maxima-of-real-Littlewood-polynomials-September-23-2026/build/introduction.tex (Thm 1.1 + 'no useful convergence rate or efficient signing algorithm')",
+   "preprints/Asymptotically-minimal-maxima-of-real-Littlewood-polynomials-September-23-2026/build/merit-morse.tex (Cor. merit: F(A_N)>=1/(m_N^2-1), 'no quantitative rate')",
+   "preprints/Asymptotically-minimal-maxima-of-real-Littlewood-polynomials-September-23-2026/build/reduction.tex (Prop almost-signs, Lemma rounding)",
+   "preprints/Asymptotically-minimal-maxima-of-real-Littlewood-polynomials-September-23-2026/build/spreading.tex (Prop auxiliary; binary recursion p_j)",
+   "preprints/Asymptotically-minimal-maxima-of-real-Littlewood-polynomials-September-23-2026/build/packing.tex (signed interval packing via Pippenger-Spencer)",
+   "preprints/Ultraflat-real-Littlewood-polynomials-October-5-2026/build/sections/introduction.tex (Thm 1.1 two-sided)",
+   "preprints/Nearly-minimal-maxima-and-positive-minima-of-Littlewood-polynomials-October-5-2026/build/sections/introduction.tex (Thm 1.1; rounding bound)",
+   "lean/docs/076.md; lean/ComparatorChallenges/AsymptoticallyMinimalLittlewood.lean; lean/OAI/Analysis/Littlewood (27 files, 0 sorry)",
+   "web: Mertens LABS page (optima to N=48 there; F>9 extrapolation); arXiv 2409.07222 (optima N<=66, F>9 skew to N<=247, 7.78 at N=455)"
+  ]
+ },
+ {
+  "num": "077",
+  "title": "Fourier restriction for positively curved surfaces",
+  "subject": "Real and complex analysis",
+  "plain_english": "The Fourier extension operator for any compact positively curved surface in R^3 is bounded L^p -> L^p for all p>3. This is the 3D restriction conjecture in its diagonal form.",
+  "constructive": "no",
+  "explicit_constants": "operator constants unspecified",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "Restriction estimates feed dispersive-PDE well-posedness theory (Strichartz-type bounds). They do not feed numerical solvers, imaging or diffraction computations, which work in L^2 or with finite data.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Major open-problem claim, not formalized.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "slice summary+abstracts",
+   "keyword grep build TeX"
+  ]
+ },
+ {
+  "num": "078",
+  "title": "The three-dimensional Bochner–Riesz conjecture",
+  "subject": "Real and complex analysis",
+  "plain_english": "Smoothly tapered spherical Fourier cutoffs (Bochner-Riesz means of order delta) are bounded on L^p(R^3) for the full conjectured range of delta.",
+  "constructive": "no",
+  "explicit_constants": "unspecified",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "Bochner-Riesz means are literally radial spectral filters, but practical filtering uses L^2 or L^infinity stability, and L^infinity boundedness for delta>(d-1)/2 is classical. The critical L^p range settled here is not used by any numerical or imaging method.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Major claim, not formalized.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "slice summary+abstract",
+   "keyword grep build TeX"
+  ]
+ },
+ {
+  "num": "079",
+  "title": "Local smoothing in three dimensions",
+  "subject": "Real and complex analysis",
+  "plain_english": "Solutions of the 3D wave equation, averaged over a time interval, gain (almost) the conjectured amount of smoothness in L^p for every 2<p<infinity (Sogge's conjecture).",
+  "constructive": "no",
+  "explicit_constants": "epsilon losses, unspecified constants",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "Local smoothing is a tool for nonlinear wave PDE theory. It has no counterpart in wave simulation codes or seismic imaging.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Major claim, not formalized.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "slice summary+abstract",
+   "keyword grep build TeX"
+  ]
+ },
+ {
+  "num": "080",
+  "title": "The exact Sobolev endpoint for Schrödinger convergence",
+  "subject": "Real and complex analysis",
+  "plain_english": "The free Schrödinger evolution converges pointwise almost everywhere to its initial data for every initial state in the sharp Sobolev space H^{n/(2(n+1))}.",
+  "constructive": "no",
+  "explicit_constants": "none",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "Pointwise convergence as t->0 for rough data is irrelevant to quantum simulation and numerical PDE, which measure errors in L^2/H^s norms.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Endpoint claim, not formalized.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "slice summary+abstracts",
+   "keyword grep build TeX"
+  ]
+ },
+ {
+  "num": "081",
+  "title": "Riesz transforms and rectifiability in higher codimension",
+  "subject": "Real and complex analysis",
+  "plain_english": "In R^d, an n-dimensional regular measure whose Riesz transform is L^2-bounded must be uniformly rectifiable (built from Lipschitz pieces) for 2<=n<=d-2.",
+  "constructive": "no",
+  "explicit_constants": "bounds depend only on dimension/regularity/operator norm (not explicit)",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "This is geometric measure theory and singular integrals. The only conceivable channel is boundary-integral methods on fractal-like surfaces, and none of them depends on this characterization.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "slice summary+abstract",
+   "lean/docs/081.md"
+  ]
+ },
+ {
+  "num": "082",
+  "title": "Annular variation and dyadic absolute bounds for the triangular Hilbert transform",
+  "subject": "Real and complex analysis",
+  "plain_english": "It proves the long-sought L^3 x L^3 -> L^{3/2} bounds for the 'triangular' bilinear Hilbert transform at its symmetric point, including maximal and variational forms.",
+  "constructive": "no",
+  "explicit_constants": "dyadic form constant 40 (explicit); others unspecified",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "Multilinear singular integrals are pure harmonic analysis with no applied consumer. The explicit constant 40 for the dyadic form is a curiosity.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "slice summary+abstracts",
+   "lean/docs/082.md"
+  ]
+ },
+ {
+  "num": "083",
+  "title": "Hilbert transforms along Lipschitz directions",
+  "subject": "Real and complex analysis",
+  "plain_english": "Taking a Hilbert transform along a Lipschitz-varying direction field in the plane is L^2-bounded at short scales. This answers Stein's question at that scale.",
+  "constructive": "no",
+  "explicit_constants": "absolute constants unspecified",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "Directional singular integrals appear in the analysis of directional image filters only heuristically. No algorithm or guarantee changes.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "slice summary+abstract",
+   "lean/docs/083.md"
+  ]
+ },
+ {
+  "num": "084",
+  "title": "The geometric case of the Erdős similarity conjecture",
+  "subject": "Real and complex analysis",
+  "plain_english": "For any ratio q, there are large-measure compact subsets of [0,1] that contain no scaled-and-shifted copy of the geometric sequence {q^n}.",
+  "constructive": "yes (explicit compact sets)",
+  "explicit_constants": "measure arbitrarily close to 1",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "This is a question in real analysis and additive combinatorics with no applied channel.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "slice summary+abstracts",
+   "lean/docs/084.md"
+  ]
+ },
+ {
+  "num": "085",
+  "title": "Endpoint Sobolev regularity of centered disk averages",
+  "subject": "Real and complex analysis",
+  "plain_english": "Applying the centered disk maximal filter to a W^{1,1} function in the plane increases its total gradient (total variation) by at most a constant factor.",
+  "constructive": "no",
+  "explicit_constants": "absolute C unspecified",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "Maximal/sup-of-averages filters exist in image processing, but nobody relies on an unspecified-constant TV bound for them. The channel is too weak to act on.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "slice summary+abstract",
+   "lean/docs/085.md"
+  ]
+ },
+ {
+  "num": "086",
+  "title": "An L^3 bound for the trilinear Hilbert transform",
+  "subject": "Real and complex analysis",
+  "plain_english": "The trilinear Hilbert transform with slopes 1,2,3 is bounded from L^3 x L^3 x L^3 to L^1.",
+  "constructive": "no",
+  "explicit_constants": "unspecified",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "This is pure multilinear harmonic analysis (linked to ergodic/additive-combinatorics questions). There is no applied channel.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Very major open-problem claim, not formalized.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "slice summary+abstract",
+   "keyword grep build TeX"
+  ]
+ },
+ {
+  "num": "087",
+  "title": "The Mahler conjectures, functional inequalities and polar-product symplectic width",
+  "subject": "Convex and metric geometry",
+  "plain_english": "The product of a convex body's volume and its polar's volume is minimized by cubes and Hanner polytopes (symmetric case) or simplices (general case). Symmetric polar products have Gromov width 4.",
+  "constructive": "no (inequality); extremizers explicit",
+  "explicit_constants": "sharp: 4^n/n!, (n+1)^{n+1}/(n!)^2",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "Geometry-of-numbers transference bounds used in lattice cryptanalysis rely on Banaszczyk's l2 transference, not Mahler constants. Interior-point/Santalo-point uses are theoretical. No applied channel.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [
+   "101"
+  ],
+  "evidence": [
+   "slice summary+abstracts",
+   "lean/docs/087.md"
+  ]
+ },
+ {
+  "num": "088",
+  "title": "Sharp projection-body inequalities and a counterexample to simplex maximization",
+  "subject": "Convex and metric geometry",
+  "plain_english": "Among convex bodies of fixed volume, ellipsoids uniquely minimize the volume of the projection body (Petty, n>=4). The product of two 10-simplices beats the 20-simplex for the reverse problem.",
+  "constructive": "yes for the counterexample (explicit ratio 22355476/22020096)",
+  "explicit_constants": "explicit counterexample ratio",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "Projection bodies connect to shadow/X-ray tomography only in the abstract. No reconstruction method uses these affine isoperimetric inequalities.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "slice summary+abstracts",
+   "lean/docs/088.md"
+  ]
+ },
+ {
+  "num": "089",
+  "title": "Bounded-distortion L1 embeddings of planar and bounded-treewidth graphs",
+  "subject": "Convex and metric geometry",
+  "plain_english": "Shortest-path distances in any planar graph (or any graph of bounded treewidth) can be written as a positive combination of cut metrics, distorting each distance by at most a constant factor. Equivalently, in such networks the minimum sparsest-cut ratio is within a constant factor of the maximum concurrent multicommodity flow.",
+  "constructive": "partial: the planar proof is an explicit randomized multiscale cut process on finite grids that could in principle be sampled, but no algorithm or running time is claimed. The treewidth constant comes from an ultrafilter/compactness argument and is non-explicit.",
+  "explicit_constants": "Planar: fixed parameters R=1e-8, eps=1e-24, a1<=1e-33, kappa_A=a1/1e6, success probability p=2^-(2M_pack+10), separation b below all these. The resulting distortion is ~16m/(pb), roughly 1e60 or more. Treewidth: C_k non-explicit ('compactness argument establishes a positive uniform lower factor without an explicit numerical estimate').",
+  "galactic": true,
+  "channels": [
+   "ALGO",
+   "OPT",
+   "NET"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 2,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 2,
+   "time_to_value": 1
+  },
+  "opportunity": "This settles the planar and bounded-treewidth cases of the GNRS conjecture. The multicommodity-flow (metric) LP has O(1) integrality gap for nonuniform sparsest cut on planar and bounded-treewidth graphs. The paper notes that combining with Gupta-Talwar-Witmer / Cohen-Addad-Mömke-Verdugo gives (2+eps)C_k-distortion embeddings in FPT time for bounded treewidth. However, the planar constant is astronomically large and C_k is not computable from the proof. Rao's O(sqrt(log n)) is <5 for any real n, and Cohen-Addad-Gupta-Klein-Li already give a quasi-polynomial (2+eps) planar algorithm, so nothing changes for graph-partitioning practice (METIS/KaHIP/Scotch are heuristic anyway). The value is theoretical: a polynomial-time O(1) planar sparsest-cut rounding is now plausible via the LP, and making the column/chart process algorithmic with sane constants is a research program.",
+  "targets": [
+   "approximation-algorithms community (planar / minor-free nonuniform sparsest cut; GNRS conjecture)",
+   "multicommodity flow-cut gap theory (Linial-London-Rabinovich, Aumann-Rabani line)"
+  ],
+  "action": "RESEARCH",
+  "first_step": "Check whether the planar construction (shortest-path-tree column realization, radial-layer charts, randomized interpolation offsets) can be run as a polynomial-time sampler of cuts given the LP metric. Then estimate empirical distortion on grid, Delaunay and road-network planar graphs.",
+  "caveats": "The distortion constant is galactic or non-explicit. GNRS for general minor-closed families is still open (needs clique-sum closure). The almost-embeddable corollary composes with Lee-Sidiropoulos's stochastic distortion D.",
+  "deep_dive": false,
+  "cross_links": [
+   "117",
+   "102",
+   "094",
+   "099"
+  ],
+  "evidence": [
+   "preprints/Planar-Graph-Metrics-Embed-into-L1-with-Constant-Distortion-September-23-2026/build/sections/introduction.tex (Thm 1.1; flow-cut consequence)",
+   "preprints/Planar-Graph-Metrics-Embed-into-L1-with-Constant-Distortion-September-23-2026/build/sections/scale-setup.tex (numerical constants)",
+   "preprints/Planar-Graph-Metrics-Embed-into-L1-with-Constant-Distortion-September-23-2026/build/sections/assembly.tex (Prop pad:success p=2^-(2M_pack+10); final map pb/(8m))",
+   "preprints/Planar-Graph-Metrics-Embed-into-L1-with-Constant-Distortion-September-23-2026/build/sections/consequences.tex (almost-embeddable corollary)",
+   "preprints/L1-Embeddings-of-Graphs-of-Bounded-Treewidth-September-23-2026/build/01-introduction.tex (Thm 1.1; FPT algorithmic remark)",
+   "preprints/L1-Embeddings-of-Graphs-of-Bounded-Treewidth-September-23-2026/build/07-conclusion.tex (non-explicit C_k)",
+   "lean/docs/089.md; lean/OAI/Combinatorics/PlanarL1 (63 files, 0 sorry); lean/OAI/Combinatorics/TreewidthL1 (33 files, 0 sorry)",
+   "web: arXiv 2105.15187 (quasi-poly (2+eps) planar sparsest cut; Rao O(sqrt log n) poly-time)"
+  ]
+ },
+ {
+  "num": "090",
+  "title": "Triangular-lattice optimality, long-range Riesz and Coulomb energies, and spherical logarithmic energy",
+  "subject": "Convex and metric geometry",
+  "plain_english": "In the plane, the hexagonal (triangular) lattice has the lowest energy per particle for every 'completely monotone' pair interaction (Gaussian, inverse-power, screened Coulomb, ...) and for renormalized Coulomb/Riesz energies. This settles the Abrikosov-vortex (Sandier-Serfaty) conjecture and fixes the O(n) term in the optimal log-energy of n points on the sphere.",
+  "constructive": "yes: explicit radial Schwartz Fourier certificates verified with rigorous interval arithmetic (python-flint scripts and C++ certificate code in verification/). The sphere result is asymptotic.",
+  "explicit_constants": "Explicit: packing density pi/(2 sqrt 3), Brauchart-Hardin-Saff constant C_BHS = 2log2 + 1/2 log(2/3) + 3 log(sqrt(pi)/Gamma(1/3)). Sphere expansion error is o(n) with no rate.",
+  "galactic": false,
+  "channels": [
+   "PHYS",
+   "GEO",
+   "NUM"
+  ],
+  "tier": "T2",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 3,
+   "practicality": 4,
+   "confidence": 4,
+   "effort": 4,
+   "time_to_value": 4
+  },
+  "opportunity": "The action is CERTIFY: practice already assumes all of this, and these results upgrade it to theorems with machine-checkable certificates. Point-set designers benchmarking minimum-log-energy sphere configurations (Smale's 7th problem, RBF-FD/quadrature node sets) can quote the proven C_BHS as the asymptotic O(n) target. 2D crystallization papers (colloids, dusty plasmas, Wigner crystals, Gaussian-core and Yukawa models, all completely monotone in r^2) and Ginzburg-Landau/Abrikosov vortex-lattice work can cite a ground-state theorem instead of numerics. The supplied interval-arithmetic certificate pipeline is also a reusable template for Cohn-Elkies-type LP bounds. There is no new algorithm, and nothing changes for 3D or Lennard-Jones systems.",
+  "targets": [
+   "minimum-energy point sets on S^2 (Womersley tables; Hardin-Saff-Sloane; RBF-FD node generation for spherical PDE)",
+   "Smale's 7th problem numerics",
+   "2D Coulomb gas / jellium and Ginzburg-Landau vortex-lattice community (Sandier-Serfaty, Lewin, Petrache)",
+   "2D colloid / dusty-plasma / Wigner-crystal simulation",
+   "python-flint interval certificates (verification/ folders)"
+  ],
+  "action": "CERTIFY",
+  "first_step": "Run the shipped verifiers (python-flint 0.9.0 in Universal-optimality.../verification, C++ certificate in Triangular-minimality.../verification). Then add the proven expansion E_log(n)=(1/2-log2)n^2-(n/2)log n+C_BHS n+o(n) as the reference line in a script that scores published sphere configurations.",
+  "caveats": "Results compare configurations at fixed density at zero temperature. The sphere asymptotics have an o(n) error with unknown rate. Lennard-Jones and other non-completely-monotone potentials are not covered, and the 3D analogue is open. Physicists already believed every statement.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "preprints/Triangular-minimality-for-planar-Coulomb-renormalized-energy-September-23-2026/build/sections/01-introduction.tex (Thm main, Thm torus, Cor BHS; 'not a construction of near-optimal point sets')",
+   "preprints/Universal-optimality-of-the-triangular-lattice-September-23-2026/build/sections/ (section list; Petrache-Serfaty jellium transfer)",
+   "preprints/Universal-optimality-of-the-triangular-lattice-September-23-2026/verification/inputs.py (python-flint 0.9.0 certificate, 37310 Bernstein checks)",
+   "preprints/A-sharp-Fourier-certificate-for-planar-circle-packing-September-23-2026/README.md (verification instructions)",
+   "lean/docs/090.md"
+  ]
+ },
+ {
+  "num": "091",
+  "title": "Logarithmic and L_p Brunn–Minkowski inequalities and the B-conjecture",
+  "subject": "Convex and metric geometry",
+  "plain_english": "The volume of the 'logarithmic mixture' of two symmetric convex bodies is at least the geometric mean of their volumes. This yields the L_p Brunn-Minkowski inequality for 0<p<1 and the B-conjecture for even log-concave measures.",
+  "constructive": "no",
+  "explicit_constants": "sharp (no constants)",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "These are convex-geometry inequalities. The B-conjecture concerns Gaussian measure of dilates, with only remote links to concentration in statistics. No applied consumer.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [
+   "093",
+   "101"
+  ],
+  "evidence": [
+   "slice summary+abstract",
+   "lean/docs/091.md"
+  ]
+ },
+ {
+  "num": "092",
+  "title": "The optimal order of convex-body covering density",
+  "subject": "Convex and metric geometry",
+  "plain_english": "Any convex body in R^n can cover space by translates along a single lattice with density at most C n log n, and some symmetric bodies need c n log n. So the worst case is Theta(n log n).",
+  "constructive": "no (Rogers-Schmidt mean-hole averaging + Eldan-Klartag marginals + binary-correction hierarchy; existence of the lattice only)",
+  "explicit_constants": "absolute C, c unspecified",
+  "galactic": null,
+  "channels": [
+   "COMM",
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "The vector-quantization/lattice-code channel is empty. Information-theoretic 'good for covering' lattices (Erez-Litsyn-Zamir) only require covering density 2^{o(n)}, and n^{O(1)} factors are invisible there. Practical quantizers use specific small-dimension lattices (E8, Leech, Barnes-Wall, A_n*) whose covering densities are computed directly. Removing a (log log n)^{O(1)} factor in an existential bound changes no code.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "preprints/A-single-lattice-covering-bound-of-order-n-log-n-September-23-2026/build/overview.tex (Thm 1.1, history, method)",
+   "slice abstract of translative lower-bound paper",
+   "lean/docs/092.md"
+  ]
+ },
+ {
+  "num": "093",
+  "title": "Dimension-free logarithmic Sobolev inequality for subgaussian log-concave measures",
+  "subject": "Convex and metric geometry",
+  "plain_english": "Take a log-concave probability distribution whose one-dimensional projections all have Gaussian-like tails with scale a. It satisfies a log-Sobolev inequality with constant C a^2, independent of dimension. This is the functional inequality that makes Langevin-type samplers converge fast in KL divergence.",
+  "constructive": "no: the proof argues by contradiction through compactness, a Gaussian-channel/information argument and a tensor hierarchy. C is universal but not given.",
+  "explicit_constants": "absolute C, unspecified",
+  "galactic": null,
+  "channels": [
+   "STAT"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 3,
+   "reach": 2,
+   "directness": 2,
+   "practicality": 2,
+   "confidence": 3,
+   "effort": 2,
+   "time_to_value": 2
+  },
+  "opportunity": "LSI with constant O(a^2) plugs straight into existing sampler analyses: Vempala-Wibisono ULA-in-KL, proximal/In-and-Out samplers, and Langevin bounds without warm-start dependence. That yields mixing guarantees with a dimension-free LSI constant for log-concave targets that are not strongly log-concave but have psi_2 marginals. Examples are uniform measures on psi_2 convex bodies (cube, l_p balls with p>=2) and constrained or flat-prior posteriors with subgaussian tails. Previously only Poincare/KLS-type or n^{1/4}-dependent LSI bounds (Bizeul) were available. Because C is non-explicit, the gain is in complexity statements and theory texts, not in certified step counts in software.",
+  "targets": [
+   "log-concave sampling theory (Chewi, 'Log-Concave Sampling'; Kook-Vempala-Zhang In-and-Out / proximal sampler analyses)",
+   "volesti / uniform polytope sampling (theory side)",
+   "Bayesian computation community (mixing guarantees)"
+  ],
+  "action": "RESEARCH",
+  "first_step": "Write the corollary: KL mixing of ULA/proximal sampler for centered log-concave targets with linear subgaussian parameter a, with no dimension dependence through the LSI constant. Then check which practical targets satisfy uniform psi_2 marginals after rounding (generic polytopes and flux polytopes are typically only psi_1).",
+  "caveats": "Requires a centered measure and a uniform linear subgaussian parameter. Many practical log-concave targets are psi_1 only, and strongly log-concave targets are already covered by Bakry-Emery. C is non-explicit and the result is not formalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "139",
+   "101",
+   "091"
+  ],
+  "evidence": [
+   "preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/build/sections/01-introduction.tex (Thm 1.1, Cor transport-entropy, history incl. Bobkov n a^2 and Bizeul sqrt(n) a^2 bounds, proof strategy)",
+   "grep of sections/*.tex for compactness/contradiction (non-explicit constant)"
+  ]
+ },
+ {
+  "num": "094",
+  "title": "Subpolynomial dimension reduction in L_p",
+  "subject": "Convex and metric geometry",
+  "plain_english": "For 1<p<infinity with p!=2, any n points in L_p can be mapped into l_p^d with distortion D using d=exp(C (log n)^{gamma(p)}) coordinates, which is less than any power of n. Exact (distortion-1) embeddings need about n^2 coordinates.",
+  "constructive": "no (convex-separation minimax + Maurey sampling; 'existential and does not assert an efficient embedding algorithm')",
+  "explicit_constants": "C_{p,D} unspecified; no uniformity as D->1",
+  "galactic": null,
+  "channels": [
+   "GEO",
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "Practitioners who sketch l_p distances use Indyk-style p-stable linear sketches with median/estimator decoding, which already give (1+eps) estimates with O(log n/eps^2) numbers. They do not need the target to be a normed l_p space. A nonconstructive, nonlinear embedding with super-logarithmic dimension and unspecified C therefore changes no sketching or NN-search system. The n^2 lower bound for exact embeddings is a nice negative fact with no consumer.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [
+   "098",
+   "099"
+  ],
+  "evidence": [
+   "preprints/Subpolynomial-dimension-reduction-in-Lp-September-23-2026/build/paper.tex (Thm 1.1 lines 75-108, method lines 160-215, dimension bounds Sec. 'Dimension bounds')",
+   "lean/docs/094.md"
+  ]
+ },
+ {
+  "num": "095",
+  "title": "Hyperbolicity cones without semidefinite lifts",
+  "subject": "Convex and metric geometry",
+  "plain_english": "Some convex cones defined by real-rooted ('hyperbolic') polynomials cannot be written as a projection of any semidefinite-programming feasible set, however many extra variables are allowed. So hyperbolic programming is strictly more expressive than SDP. A companion paper gives an explicit 23-variable, degree-20 cone that is not an SDP in its own coordinates but has an explicit 100x100 SDP lift with 307 auxiliary variables.",
+  "constructive": "partial: the nonspectrahedral cone p(X,Z,y)=det((det X)Z - Phi_y(adj X)) and its 100x100 lift (finite coefficient rule) are explicit. The no-lift cone is built from a finite-field-certified rank-20 Hankel seed plus choices with N>10*36^2, so its matrix size is r=20N-1 >~ 2.6e5 and its degree is huge.",
+  "explicit_constants": "explicit polynomial (degree 20, or 16 after dividing by det X, in 23 vars) and explicit lift sizes; the no-lift example is enormous",
+  "galactic": null,
+  "channels": [
+   "OPT"
+  ],
+  "tier": "T2",
+  "scores": {
+   "impact": 2,
+   "reach": 1,
+   "directness": 4,
+   "practicality": 3,
+   "confidence": 4,
+   "effort": 4,
+   "time_to_value": 4
+  },
+  "opportunity": "(1) REDIRECT: any plan to compile every hyperbolicity cone to SDP for MOSEK-class solvers (generalized or projected Lax) is impossible in general. That justifies native hyperbolic-barrier solvers such as DDS (Karimi-Tuncel) and custom cones in Hypatia.jl. However, no practically arising hyperbolic cone is shown non-liftable: derivative relaxations and elementary-symmetric cones are known to be liftable. (2) INSTANCES: the explicit 23-variable cone with its explicit 100x100 lift is a ready-made benchmark. Solve the same conic program natively (degree-20 hyperbolic barrier) and via the lift in MOSEK/Clarabel/SCS, and use the cone as a test case for spectrahedral-representability heuristics.",
+  "targets": [
+   "DDS (Domain-Driven Solver, Karimi-Tuncel) hyperbolic-polynomial constraints",
+   "Hypatia.jl custom cones",
+   "MOSEK / Clarabel / SCS (for the 100x100 lift)",
+   "Renegar hyperbolic-programming community",
+   "Netzer-Sanyal-Scheiderer spectrahedral-shadow theory"
+  ],
+  "action": "INSTANCES",
+  "first_step": "Implement p and its gradient/Hessian oracle for DDS; generate the 100x100, 307-aux lift from the coefficient rule in the companion's Section 'lift'; compare native vs lifted solve time and accuracy on random linear objectives.",
+  "caveats": "Niche community. The separating (no-lift) cone exists only at astronomical size, and the explicit small cone is SDP-liftable, so the separation is not visible at practical sizes. The no-lift paper is not formalized; the nonspectrahedral paper is.",
+  "deep_dive": true,
+  "cross_links": [
+   "126"
+  ],
+  "evidence": [
+   "preprints/Hyperbolicity-Cones-Without-Semidefinite-Lifts-October-5-2026/build/source/01-introduction.tex (Thm 1.1; construction m=330, r=20N-1, N>10*36^2)",
+   "preprints/A-Nonspectrahedral-Hyperbolicity-Cone-September-24-2026/build/sections/01-introduction.tex (explicit polynomial, Thm 1.1, Cor reduced degree 16)",
+   "preprints/An-Exact-Semidefinite-Lift-of-a-Nonspectrahedral-Hyperbolicity-Cone-October-5-2026/build/sections/introduction.tex (Thm 1.1: A_1..A_23, B_1..B_307 in Sym^100)",
+   "lean/docs/095.md; lean/OAI/Analysis/HyperbolicCones (101 files, 0 sorry)"
+  ]
+ },
+ {
+  "num": "096",
+  "title": "The Gaussian propeller conjecture in every dimension",
+  "subject": "Convex and metric geometry",
+  "plain_english": "However you split Gaussian space into pieces, the sum of the squared lengths of the pieces' Gaussian centers of mass is at most 9/(8 pi), achieved by three 120-degree sectors. Combined with the separately claimed Unique Games theorem, this makes the known SDP-rounding factor for a kernel-clustering problem optimal for polynomial-time algorithms.",
+  "constructive": "yes for the extremizer (explicit propeller); hardness is a reduction",
+  "explicit_constants": "sharp 9/(8 pi); threshold alpha_k=(8 pi/9)(1-1/k)",
+  "galactic": false,
+  "channels": [
+   "CPLX",
+   "STAT"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 3,
+   "practicality": 3,
+   "confidence": 3,
+   "effort": 4,
+   "time_to_value": 4
+  },
+  "opportunity": "This pins the worst-case approximability of Khot-Naor identity-target kernel clustering on centered PSD inputs at (8 pi/9)(1-1/k), matching the SDP rounding guarantee. The message is to stop looking for better polynomial-time worst-case algorithms for this objective. Practitioners use k-means/spectral heuristics and are not bound by worst-case ratios, so the effect stays inside approximation-algorithms theory. The NP-hardness also inherits all risk of family 102's Unique Games proof.",
+  "targets": [
+   "approximation-algorithms / hardness-of-approximation community (Khot-Naor kernel clustering)"
+  ],
+  "action": "REDIRECT",
+  "first_step": "",
+  "caveats": "Hardness depends on 102 (the UGC claim), which is not formalized in this family. The ratio is worst-case only.",
+  "deep_dive": false,
+  "cross_links": [
+   "102",
+   "117"
+  ],
+  "evidence": [
+   "preprints/The-Gaussian-Propeller-Bound-in-Every-Dimension-September-24-2026/build/sections/kernel-application.tex (Thm kc:main, alpha_k)",
+   "lean/docs/096.md (propeller formalized; clustering consequence not)"
+  ]
+ },
+ {
+  "num": "097",
+  "title": "The Euclidean Steinitz–Bergström bound",
+  "subject": "Convex and metric geometry",
+  "plain_english": "Given any sequence of vectors of length at most 1 in R^d, you can choose a +/- sign for each so that every running sum stays within C sqrt(d), no matter how long the sequence is. Consequently, any zero-sum family can be reordered so that all partial sums stay within C sqrt(d), which is optimal.",
+  "constructive": "no: the authors say it 'does not supply an online rule or an efficient algorithm'. The proof builds a Gaussian/Ornstein-Uhlenbeck filtered convex body and uses shifted Steiner symmetrization.",
+  "explicit_constants": "absolute C=2 D_* A_0/sigma (kappa=1/100, delta=1/4 fixed), but A_0, H_0 and c_1 come from unquantified absolute constants, so C is not numerically specified",
+  "galactic": null,
+  "channels": [
+   "OPT",
+   "ALGO"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 2,
+   "practicality": 2,
+   "confidence": 4,
+   "effort": 2,
+   "time_to_value": 2
+  },
+  "opportunity": "IP proximity (Eisenbrand-Weismantel): EW's DP and proximity use the l_inf Steinitz bound m*Delta, giving (2m Delta+1)^m states. For columns with Euclidean norm <= Delta_2, the new bound puts prefix sums in an l2 ball of radius C sqrt(m) Delta_2, whose integer-point count is ~(C' Delta_2)^m. That is a factor of about m^{m/2} fewer states in the worst case (Delta_2 <= sqrt(m) Delta), and a dimension-free base for sparse-column IPs. The same improvement applies to the colorful Steinitz bound for block-structured IPs (2-stage stochastic, n-fold). Reality check: Jansen-Rohwedder already get (sqrt(m) Delta)^{2m} via Spencer discrepancy, a 2026 preprint gives an optimal Euclidean proximity sqrt(det(AA^T))-1, and the DP radius needs an explicit C. With C unspecified (plausibly >=100), the gain only appears at m where these DPs are already infeasible, and production MIP solvers do not use them. Prefix-discrepancy applications such as online covariate balancing and scheduling need algorithms, which Dutta-Jha-Jiang 2026 provide at O(sqrt(d)+d^{1/4} log^{7/4} N).",
+  "targets": [
+   "Eisenbrand-Weismantel / Jansen-Rohwedder proximity + DP algorithms for IPs with few constraints (research codes)",
+   "block-structured IP proximity (Cslovjecsek-Eisenbrand-Pilipczuk-Venzin-Weismantel; Oertel-Paat-Weismantel colorful Steinitz)",
+   "online vector balancing / covariate-balancing experimental design (Gram-Schmidt walk design line)"
+  ],
+  "action": "RESEARCH",
+  "first_step": "Extract an explicit numerical C by tracing A_0, H_0, c_1 and C_phi through survival.tex/matrix.tex; then redo the EW proximity count with an l2 ball to see the crossover m against (2m Delta+1)^m and Jansen-Rohwedder.",
+  "caveats": "It is existential, and C is not explicit. It does not improve the l_inf Steinitz constant (conjectured O(sqrt(d))), which is what EW's analysis directly uses, and l2->l_inf conversion recovers only O(m Delta).",
+  "deep_dive": false,
+  "cross_links": [
+   "076"
+  ],
+  "evidence": [
+   "preprints/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026/build/introduction.tex (Thms signing/steinitz; 'no online rule or efficient algorithm'; DJJ 2026 comparison)",
+   "preprints/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026/build/assembly.tex (Prop filtered; C=2D_*A_0/sigma)",
+   "preprints/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026/build/consequences.tex (l_p corollary; colorful Steinitz 2C sqrt d)",
+   "preprints/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026/build/survival.tex (absolute constants A_0>c_1 sqrt C_phi)",
+   "lean/docs/097.md; lean/OAI/Analysis/Steinitz (29 files, 0 sorry)",
+   "web: arXiv 1707.00481 (EW: l_inf Steinitz m Delta; 'asymptotic improvement [of l_inf conjecture] would directly improve'); arXiv 1803.04744 (JR (sqrt m Delta)^{2m} via Spencer herdisc); arXiv 2606.13579 (optimal proximity sqrt(det AA^T)-1)"
+  ]
+ },
+ {
+  "num": "098",
+  "title": "Compact counterexamples to bi-Lipschitz dimension reduction",
+  "subject": "Convex and metric geometry",
+  "plain_english": "Hilbert space contains a compact set with low 'intrinsic dimension' (doubling constant <= 76800) that cannot be embedded into any finite-dimensional space with bounded distortion. So low doubling dimension alone does not allow faithful low-dimensional coordinates.",
+  "constructive": "yes (explicit multiscale strip construction with r_j=1000^-j)",
+  "explicit_constants": "doubling constant <= 300*16^2 = 76800; no quantitative finite-n distortion lower bound",
+  "galactic": null,
+  "channels": [
+   "GEO"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 2,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 3,
+   "time_to_value": 2
+  },
+  "opportunity": "This answers negatively the Gupta-Krauthgamer-Lee question, posed for algorithmic dimension reduction, of whether doubling subsets of l2 embed bi-Lipschitzly into R^k with k and D depending only on the doubling constant. Theory should stop seeking such reductions and keep using snowflakes (Assouad, Naor-Neiman, Gottlieb-Krauthgamer) or algorithms that work with doubling dimension directly (cover trees, navigating nets). Practitioners already do that. By compactness, finite counterexamples exist for each (k,D), but with no size bound, so no data-scale consequence.",
+  "targets": [
+   "metric-embedding / dimension-reduction theory (GKL question)"
+  ],
+  "action": "REDIRECT",
+  "first_step": "",
+  "caveats": "The result is qualitative only, with no n-point quantitative distortion lower bound. Doubling-dimension NN algorithms are unaffected.",
+  "deep_dive": false,
+  "cross_links": [
+   "094",
+   "099"
+  ],
+  "evidence": [
+   "preprints/A-doubling-Hilbert-subset-with-no-finite-dimensional-bi-Lipschitz-embedding-September-25-2026/build/main.tex (Thm 1, Prop doubling 76800, construction)",
+   "lean/docs/098.md"
+  ]
+ },
+ {
+  "num": "099",
+  "title": "The sharp exponential scale of edit-distance distortion",
+  "subject": "Convex and metric geometry",
+  "plain_english": "The best possible distortion when representing edit distance between strings of length <= d as l1 distances is exp(Theta(sqrt(log d log log d))). The known Ostrovsky-Rabani embedding is therefore optimal up to the constant in the exponent.",
+  "constructive": "yes: the lower-bound witnesses are explicit binary strings (prime-period hierarchical words with markers, plus a delimiter code), and the upper bound is the known constructive Ostrovsky-Rabani embedding",
+  "explicit_constants": "c, C, d0 absolute but unspecified; witness length d=exp(Theta(k^2 log k)) for distortion exp(Omega(k log k))",
+  "galactic": true,
+  "channels": [
+   "GEO",
+   "BIO",
+   "ALGO"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 2,
+   "directness": 3,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 4,
+   "time_to_value": 3
+  },
+  "opportunity": "This closes the l1-embedding route for edit distance (previous lower bound Omega(log d), Krauthgamer-Rabani). The message to theory is to stop trying to beat Ostrovsky-Rabani via l1 embeddings for edit-distance NN search and sketching, and to use other primitives instead: CGK random-walk embeddings for small distances, direct approximation algorithms (cf. family 121), or q-gram/MinHash sketches. DNA similarity tools (BLAST, minimap2, Mash/sourmash) never used l1 embeddings, so they are unaffected. The explicit hard words could in principle stress-test learned edit-distance embeddings (CNN-ED, NeuroSEED), but with unspecified c the distortion forced at realistic d (10^3-10^6, sqrt(log d log log d) ~ 3-6) is unknown and probably tiny.",
+  "targets": [
+   "edit-distance sketching / NN-search theory (Ostrovsky-Rabani, Andoni-Krauthgamer line)",
+   "learned sequence-embedding work for DNA similarity (NeuroSEED, CNN-ED) as a stress-test source"
+  ],
+  "action": "REDIRECT",
+  "first_step": "",
+  "caveats": "Lower-bound witnesses only bite asymptotically, and the constants in the exponent are unspecified. Nothing changes for practical alignment or k-mer tools.",
+  "deep_dive": false,
+  "cross_links": [
+   "121",
+   "094",
+   "089"
+  ],
+  "evidence": [
+   "preprints/Edit-Distance-in-l1-Matching-Bounds-up-to-Constants-in-the-Exponent-September-27-2026/build/sections/introduction.tex (Thm 1.1, prior bounds, construction sketch: log word length O(k^2 log k))",
+   "lean/docs/099.md"
+  ]
+ },
+ {
+  "num": "100",
+  "title": "Cylinder coverings below the half-area bound",
+  "subject": "Convex and metric geometry",
+  "plain_english": "A regular tetrahedron can be covered by finitely many triangular-based cylinders whose total cross-section area is less than half its smallest shadow. This disproves Bang-type half-area bounds.",
+  "constructive": "yes (explicit perturbed two-cylinder covers; saving (13/6000) eps^2)",
+  "explicit_constants": "explicit but tiny saving",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "This is a plank/covering problem in discrete geometry. No covering, sensing or tomography application uses this half-area bound.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "slice summary+abstracts",
+   "lean/docs/100.md"
+  ]
+ },
+ {
+  "num": "101",
+  "title": "The sharp simplex conjecture for isotropic constants",
+  "subject": "Convex and metric geometry",
+  "plain_english": "Among all convex bodies, simplices have the largest isotropic constant (the slicing problem in its sharp form). Equivalently, every log-concave random vector has entropy h >= m + 1/2 log det Cov, with equality only for (affine images of) products of exponential variables.",
+  "constructive": "n/a (sharp inequality; extremizers explicit)",
+  "explicit_constants": "sharp and explicit: h(f) >= m + 1/2 log det Cov(f). The gap to a Gaussian with the same covariance is <= m(1/2 log(2 pi e) - 1) = 0.4189 nats = 0.604 bits per dimension.",
+  "galactic": false,
+  "channels": [
+   "COMM",
+   "STAT"
+  ],
+  "tier": "T2",
+  "scores": {
+   "impact": 2,
+   "reach": 1,
+   "directness": 4,
+   "practicality": 5,
+   "confidence": 3,
+   "effort": 5,
+   "time_to_value": 4
+  },
+  "opportunity": "The sharp entropy bound drops straight into information-theory guarantees that currently use Marsiglietti-Kostina-type constants (my derivation, not stated in the paper). For any log-concave noise vector (dependent coordinates allowed), additive-noise channel capacity exceeds the Gaussian-noise capacity at equal covariance by at most 0.604 bits per dimension, and the bound is sharp. For log-concave sources under MSE, the rate-distortion gap to the Shannon lower bound is <= 0.604 bits per dimension, versus ~1.05 bits from Marsiglietti-Kostina. This is a CERTIFY-type tightening of textbook-level bounds. It is real but low-stakes, since codec and modem designers do not operate on these worst-case gaps.",
+  "targets": [
+   "information-theory community (Marsiglietti-Kostina log-concave entropy bounds; reverse EPI; rate-distortion with non-Gaussian sources)",
+   "convex-geometry slicing literature"
+  ],
+  "action": "CERTIFY",
+  "first_step": "Re-derive the capacity and SLB-gap corollaries with the sharp constant and check them against Marsiglietti-Kostina (arXiv 1704.07766) Theorems 3-5. Confirm the vector case needs no extra assumptions.",
+  "caveats": "The paper does not state the IT corollaries (they are mine and need checking). It is not formalized. The bound is worst-case over log-concave laws, and real sources/noise are often close to Gaussian anyway.",
+  "deep_dive": false,
+  "cross_links": [
+   "087",
+   "093"
+  ],
+  "evidence": [
+   "preprints/A-sharp-entropy-bound-and-the-simplex-inequality-for-isotropic-constants-October-5-2026/build/manuscript/introduction.tex (Thm simplex, Thm entropy, Mahler consequence)",
+   "web: arXiv 1704.07766 abstract (MK gaps log sqrt(pi e/2) ~ 1 bit)"
+  ]
+ },
+ {
+  "num": "143",
+  "title": "Hilbert's sixteenth problem: uniform bounds for limit cycles",
+  "subject": "Dynamical systems and ergodic theory",
+  "plain_english": "A planar polynomial vector field of degree d has at most B(d) limit cycles (isolated periodic orbits), with B(d) depending only on d but not computed. Separately, the classical Lienard oscillator x'' + f(x)x' + x = 0 with damping polynomial of degree <= 4 has at most 2 limit cycles, and 2 is attained.",
+  "constructive": "no for B(d) ('does not furnish an effective formula'); the quintic Lienard bound is exact",
+  "explicit_constants": "B(d) non-effective; quintic Lienard: exactly 2",
+  "galactic": null,
+  "channels": [
+   "PHYS",
+   "BIO"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 3,
+   "practicality": 3,
+   "confidence": 3,
+   "effort": 5,
+   "time_to_value": 4
+  },
+  "opportunity": "The uniform bound is foundational, with no computable B(d). The quintic Lienard result gives one small but genuine modeling rule. In any classical Lienard oscillator (linear restoring force) whose damping polynomial has degree <= 4, there are at most two limit cycles, which means at most one stable cycle surrounding or surrounded by an unstable one. Birhythmicity (two coexisting stable oscillations) therefore requires damping of degree >= 6, as in Kaiser-type modified van der Pol models of enzyme or circadian birhythmicity. Modelers can cite this instead of perturbative arguments, and it is Lean-formalized.",
+  "targets": [
+   "nonlinear-oscillator / birhythmicity modeling (modified van der Pol, Kaiser model)",
+   "bifurcation-analysis users (AUTO, MatCont) as documentation of global cycle counts"
+  ],
+  "action": "CERTIFY",
+  "first_step": "",
+  "caveats": "The global count applies only to the classical form x'=y-F(x), y'=-x with deg F<=5. The uniform B(d) theorem is an enormous unformalized claim that also disputes Ilyashenko's 1991 argument. Only the Lienard part is formalized.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "preprints/uniform-bounds-for-planar-polynomial-limit-cycles-September-24-2026/build/sections/01-introduction.tex (Thm uniform; 'does not furnish an effective formula for B(d)')",
+   "preprints/two-limit-cycles-for-quintic-lienard-systems-September-24-2026/build/sections/introduction.tex (Thm 1.1; history; Rosales four-cycle claim refuted)",
+   "lean/docs/143.md; lean/OAI/Analysis/LienardCycles (146 files, 0 sorry)"
+  ]
+ },
+ {
+  "num": "144",
+  "title": "Banach's simple Lebesgue-spectrum problem",
+  "subject": "Dynamical systems and ergodic theory",
+  "plain_english": "There is a smooth volume-preserving map of the 3-torus whose Koopman operator looks exactly like multiplication by the circle coordinate on L^2. One observable's iterates form an orthonormal basis.",
+  "constructive": "yes (explicit smooth construction)",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "Koopman-operator/DMD practitioners deal with spectra of concrete systems. An exotic constructed example with simple Lebesgue spectrum offers no algorithmic lever.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [
+   "076"
+  ],
+  "evidence": [
+   "slice summary+abstract",
+   "lean/docs/144.md"
+  ]
+ },
+ {
+  "num": "145",
+  "title": "Rokhlin's multiple-mixing problem",
+  "subject": "Dynamical systems and ergodic theory",
+  "plain_english": "If a measure-preserving transformation is mixing, then it is automatically mixing of all orders: correlations of any number of sets decouple as the time gaps grow.",
+  "constructive": "no",
+  "explicit_constants": "none (qualitative, no rates)",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "Rate-free qualitative mixing has no use for MCMC or statistical-physics practice, where explicit rates matter.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [
+   "154"
+  ],
+  "evidence": [
+   "slice summary+abstract",
+   "lean/docs/145.md"
+  ]
+ },
+ {
+  "num": "146",
+  "title": "Positive metric entropy for the standard map",
+  "subject": "Dynamical systems and ergodic theory",
+  "plain_english": "For all sufficiently large kick strengths k, the Chirikov standard map is chaotic on a positive-area set (positive Lyapunov exponent and metric entropy), as Sinai conjectured.",
+  "constructive": "no (proof by contradiction; k0 exists but is not given)",
+  "explicit_constants": "k0 unspecified",
+  "galactic": null,
+  "channels": [
+   "PHYS",
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "Accelerator, plasma and kicked-rotor physicists already know numerically that for large K the chaotic sea fills almost all phase space, with Lyapunov exponent ~log(K/2). A theorem valid for k>=k0 with unspecified k0 changes no design or simulation decision.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Physics channel is certification of the already-believed; k0 non-explicit.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "preprints/Positive-Metric-Entropy-for-the-Standard-Map-at-Large-Parameters-September-23-2026/build/sections/introduction.tex (Thm main:entropy)",
+   "lean/docs/146.md; lean/OAI/Dynamics/StandardMap (274 files, 0 sorry)"
+  ]
+ },
+ {
+  "num": "147",
+  "title": "The near-boundary Birkhoff conjecture",
+  "subject": "Dynamical systems and ergodic theory",
+  "plain_english": "A smooth convex billiard table whose phase space near the boundary is fully foliated by invariant curves (caustics) must be an ellipse.",
+  "constructive": "no",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "Billiard rigidity has distant ties to inverse spectral problems ('hearing the shape' of a domain), but no measurement or design method depends on it.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "slice summary+abstracts",
+   "keyword grep build TeX"
+  ]
+ },
+ {
+  "num": "148",
+  "title": "The entropy-rate dimension formula for self-similar measures",
+  "subject": "Dynamical systems and ergodic theory",
+  "plain_english": "The fractal dimension of any self-similar measure on the line equals min(1, random-walk entropy / Lyapunov exponent), even with overlaps.",
+  "constructive": "n/a (formula)",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "Fractal-dimension formulas for IFS measures have no engineering consumer.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [
+   "153"
+  ],
+  "evidence": [
+   "slice summary+abstract",
+   "lean/docs/148.md"
+  ]
+ },
+ {
+  "num": "149",
+  "title": "Classwise permanence for weakly reversible mass-action systems",
+  "subject": "Dynamical systems and ergodic theory",
+  "plain_english": "In any chemical reaction network where every reaction can be 'undone' by some chain of reactions (weak reversibility), with mass-action kinetics and any fixed positive rate constants, concentrations never blow up and never approach zero. Within each conservation class, all trajectories eventually enter one common compact region.",
+  "constructive": "partial: the trapping polytope is built from a finite affine family via an induction/compactness argument. The existence is constructive in form, but the bounds eps_P are not computable from the proof as written.",
+  "explicit_constants": "eps_P exists, depending on network, rates and class; not explicit",
+  "galactic": false,
+  "channels": [
+   "BIO",
+   "PHYS"
+  ],
+  "tier": "T2",
+  "scores": {
+   "impact": 3,
+   "reach": 2,
+   "directness": 4,
+   "practicality": 4,
+   "confidence": 4,
+   "effort": 5,
+   "time_to_value": 5
+  },
+  "opportunity": "This settles the boundedness and persistence conjectures (Feinberg; Anderson) and permanence for weakly reversible mass-action networks. It also gives an independent route to the global-attractor conclusion for complex-balanced systems and to the existence of a positive equilibrium in every class. CRNT tools already test the hypothesis (e.g. Catalyst.jl isweaklyreversible) but report only deficiency-theorem conclusions. They can now attach a rate-independent dynamical certificate: a weakly reversible network has bounded, persistent, permanent dynamics for all positive rate constants, so no species goes extinct and nothing blows up. The same applies to model-checking in systems biology and molecular programming. No new numerics are needed, only a structural check plus a theorem citation.",
+  "targets": [
+   "Catalyst.jl network analysis (isweaklyreversible, deficiency, iscomplexbalanced; CRNT docs page)",
+   "CRNToolbox (Feinberg)",
+   "CoNtRol / ERNEST / CRNT4SBML",
+   "systems-biology model curation (BioModels) and molecular-programming compilers (DNA strand-displacement CRN design)"
+  ],
+  "action": "CERTIFY",
+  "first_step": "Draft a PR to Catalyst.jl's 'Chemical Reaction Network Theory' docs (and optionally a helper returning a persistence/permanence certificate when isweaklyreversible holds) citing the boundedness/persistence theorem (Lean-formalized) and the permanence theorem. Check overlap with Craciun's 2015/2026 GAC preprint first.",
+  "caveats": "Requires mass-action with constant rates (permanence for time-varying rates is not claimed here). The bounds are not explicit. Only the trajectorywise boundedness/persistence paper is Lean-formalized; the classwise permanence paper is not. Practitioners simulate anyway, so the certificate is a documentation-level gain. Craciun's toric-differential-inclusion work may already cover GAC.",
+  "deep_dive": true,
+  "cross_links": [],
+  "evidence": [
+   "preprints/Uniform-Permanence-in-Weakly-Reversible-Mass-Action-Systems-October-5-2026/build/sections/introduction.tex (Thm 1.1; history; proof overview)",
+   "preprints/Boundedness-and-persistence-of-weakly-reversible-mass-action-systems-September-25-2026/build/sections/01-introduction.tex (history; GAC remark)",
+   "preprints/Boundedness-and-persistence-of-weakly-reversible-mass-action-systems-September-25-2026/build/sections/02-affine.tex (Lemma affine, construction)",
+   "preprints/Boundedness-and-persistence-of-weakly-reversible-mass-action-systems-September-25-2026/build/sections/03-dynamics.tex (Prop polytope; Cor positive equilibrium; Remark complex-balanced convergence)",
+   "lean/docs/149.md; lean/ComparatorChallenges/MassAction.lean; lean/OAI/Analysis/MassAction (71 files, 0 sorry)",
+   "web: docs.sciml.ai Catalyst CRNT page (has isweaklyreversible/deficiency/iscomplexbalanced; no persistence/boundedness statements)"
+  ]
+ },
+ {
+  "num": "150",
+  "title": "Weak mixing of triangular billiards with an irrational angle",
+  "subject": "Dynamical systems and ergodic theory",
+  "plain_english": "Billiards in any triangle with an angle that is an irrational multiple of pi are ergodic and even weakly mixing. A generic trajectory explores everything and decorrelates in the weak sense.",
+  "constructive": "no",
+  "explicit_constants": "no rates",
+  "galactic": null,
+  "channels": [
+   "PHYS",
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "This certifies what Casati-Prosen-type numerics already show for polygonal billiards (pseudointegrable transport, quantum chaos studies). It has no rates, so no transport or simulation decision changes.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "slice summary+abstracts",
+   "lean/docs/150.md"
+  ]
+ },
+ {
+  "num": "151",
+  "title": "A C^1 counterexample to the entropy conjecture",
+  "subject": "Dynamical systems and ergodic theory",
+  "plain_english": "A once-differentiable (noninvertible) self-map of a compact manifold can have zero topological entropy even though its action on homology grows like 2^n. This refutes the C^1 form of Shub's conjecture.",
+  "constructive": "yes (explicit construction)",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "Topological-entropy lower bounds from homology are not used in applied dynamics or in computational topology of time series.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "slice summary+abstract",
+   "lean/docs/151.md"
+  ]
+ },
+ {
+  "num": "152",
+  "title": "Zero entropy does not guarantee a smooth positive-volume model",
+  "subject": "Dynamical systems and ergodic theory",
+  "plain_english": "There is a zero-entropy ergodic system that cannot be realized as any smooth volume-preserving diffeomorphism of a compact manifold.",
+  "constructive": "yes (construction)",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "This is pure realization theory in ergodic theory.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "slice summary+abstract",
+   "lean/docs/152.md (formalized statement is the finite-entropy version)"
+  ]
+ },
+ {
+  "num": "153",
+  "title": "Arithmetic classification and non-Pisot singularity for Bernoulli convolutions",
+  "subject": "Dynamical systems and ergodic theory",
+  "plain_english": "It gives an exact arithmetic criterion for when a random series sum of +/- lambda^n has a singular distribution, and shows singularity at reciprocals of quartic Salem numbers.",
+  "constructive": "no ('an infinite approximation condition, not a finite membership algorithm')",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "This is pure fractal and probability theory. The authors explicitly disclaim any decision algorithm.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [
+   "148"
+  ],
+  "evidence": [
+   "slice summary+abstract"
+  ]
+ },
+ {
+  "num": "154",
+  "title": "Pointwise multiple ergodic averages for mixing transformations",
+  "subject": "Dynamical systems and ergodic theory",
+  "plain_english": "For mixing systems, multiple ergodic averages (1/N) sum f1(T^n x) f2(T^{2n} x)... converge almost everywhere to the product of the integrals.",
+  "constructive": "no",
+  "explicit_constants": "no rates",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "These are rate-free pointwise ergodic theorems with no consumer in simulation or statistics.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "",
+  "deep_dive": false,
+  "cross_links": [
+   "145"
+  ],
+  "evidence": [
+   "slice summary+abstracts"
+  ]
+ }
+]

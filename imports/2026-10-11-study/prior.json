@@ -1,0 +1,85 @@
+[
+ {
+  "claim": "RapidFuzz: opt-in approximate edit distance from paper 121",
+  "target": "Levenshtein_impl.hpp:908, uniform_levenshtein_distance",
+  "verdict": "do not pursue",
+  "why": "The algorithm runs the exact quadratic dynamic program whenever ℓ < 2^1000 (ℓ ≈ log log N), so the approximation branch never executes for N < 2^(2^(2^999)). A faithful implementation is the exact DP RapidFuzz already beats with bit-parallel Myers.",
+  "check": "Confirmed. sections/02-geometry.tex: \"Use exact dynamic programming also if $\\ell<2^{1000}$ or $\\ell\\varepsilon<10$. It uses $O((N+1)^2)$ word operations\", with H = least power of two >= ceil(log2(N+2)) and ell = least power of two >= log2 H. So the approximate branch needs N+2 > 2^(2^(2^999)) (and ell*eps >= 10 on top), and thm:main is pointwise in eps with eps-dependent thresholds."
+ },
+ {
+  "claim": "FLINT: new nmod_mat_mul kernel from ω ≤ 9/4 (paper 107)",
+  "target": "nmod_mat/mul.c:46, mul_strassen.c:121",
+  "verdict": "do not pursue",
+  "why": "The 9/4 bound is non-constructive: it assumes an exact rank decomposition of a fixed tensor that is never computed, and the paper says it gives no competitive finite matrix size. The constructive companions (2.371, 2.258) are laser-method limits with no crossover estimate.",
+  "check": "Confirmed. Nine-Fourths paper.tex, sec:growth: \"The definition of $\\nu$ supplies a fixed integer $u\\geq2$ and an exact rank decomposition of $T_u$ of length $r<u^{9/4+\\delta}$\" (never exhibited; nu<=9/4 itself rests on lem:existence, proved by separation, compactness and a fixed-point theorem), and sec:intro says the proof \"does not specify a competitive finite matrix size\". The companions say the same: Staggered thm:main omega_F<2.371054886006746 \"do not give bit-complexity or practical crossover estimates\", and 2.258 thm:main omega<1129/500 \"does not claim a practical crossover size\"."
+ },
+ {
+  "claim": "FLINT: faster fmpz_mat multi-modular multiplication via the same kernel",
+  "target": "fmpz_mat/mul_multi_mod.c:88",
+  "verdict": "do not pursue",
+  "why": "Inherits the previous row: there is no kernel to inherit.",
+  "check": "Confirmed. Nine-Fourths paper.tex, sec:growth: \"The definition of $\\nu$ supplies a fixed integer $u\\geq2$ and an exact rank decomposition of $T_u$ of length $r<u^{9/4+\\delta}$\" (never exhibited; nu<=9/4 itself rests on lem:existence, proved by separation, compactness and a fixed-point theorem), and sec:intro says the proof \"does not specify a competitive finite matrix size\". The companions say the same: Staggered thm:main omega_F<2.371054886006746 \"do not give bit-complexity or practical crossover estimates\", and 2.258 thm:main omega<1129/500 \"does not claim a practical crossover size\"."
+ },
+ {
+  "claim": "Zstd: pack dictionary phrases with the SCS 2-approximation (paper 128)",
+  "target": "FASTCOVER_buildDictionary, zdict.c:1064",
+  "verdict": "do not pursue",
+  "why": "COVER/FASTCOVER maximize k-mer coverage under a byte budget; the objective is not superstring length. Measured on a 17.8 MB corpus: merging the selected segments could save at most 1.05% (COVER) or 1.29% (FASTCOVER) of dictionary bytes, and plain greedy merging already captures all of it.",
+  "check": "Confirmed. zstd HEAD 49cf517: cover.c:483-490 and fastcover.c:140-147 score Score(S)=sum of F(dmer) and zero the covered dmers, and both build loops fill until tail==0 with segmentSize=MIN(...,tail), i.e. coverage under a byte budget with no superstring objective; ZDICT_trainFromBuffer (zdict.c:1111) defaults to fastCover. A rerun reproduced the segment logs byte for byte, and an independent cycle-cover bound equals greedy: 1,186 B = 1.053% (COVER) and 1,452 B = 1.289% (FASTCOVER) of 112,640, so the method is sound (the '1.06%' equals 1186/111454, i.e. divided by the merged length, not the dictionary size)."
+ },
+ {
+  "claim": "FLINT: deterministic prime-field factoring option (paper 142)",
+  "target": "gr_poly/factor_finite_field.c:55",
+  "verdict": "do not pursue",
+  "why": "Cost bound O(((n+1) log p)^(10^12)). The new curve machinery only activates for p > B^200000 (primes of millions of bits); every practical prime takes an exponential fallback. Cantor–Zassenhaus output is cheaply checkable, so determinism buys nothing. The unconditional claim also rests on an unformalized zero-free strip (family 029).",
+  "check": "Confirmed. thm:factorization gives O(((n+1)ceil(log2 p))^{10^{12}}); 08-driver calls p \"small when $p\\le B^{200000}$\" (B=20+(n+1)(L+1)) and then tests gcd(h,b-a) for a=0..p-1, so the curve branch needs primes of at least about 4.6M bits. Unconditionality rests on Theorem analytic:hecke = [OpenAIPrimitive26, Thm 1.2] (family 029, strip Re s>1-10^{-6}, which the catalogue lists as not formalized)."
+ },
+ {
+  "claim": "SymPy: deterministic factoring method in galoistools (paper 142)",
+  "target": "galoistools.py:2188 _factor_methods",
+  "verdict": "do not pursue",
+  "why": "Same as FLINT. At most a docstring note that deterministic polynomial-time factoring over F_p is now claimed in theory.",
+  "check": "Confirmed. thm:factorization gives O(((n+1)ceil(log2 p))^{10^{12}}); 08-driver calls p \"small when $p\\le B^{200000}$\" (B=20+(n+1)(L+1)) and then tests gcd(h,b-a) for a=0..p-1, so the curve branch needs primes of at least about 4.6M bits. Unconditionality rests on Theorem analytic:hecke = [OpenAIPrimitive26, Thm 1.2] (family 029, strip Re s>1-10^{-6}, which the catalogue lists as not formalized)."
+ },
+ {
+  "claim": "NTL: deterministic EDF entry point (paper 142)",
+  "target": "ZZ_pXFactoring.cpp:823 EDF, CanZass:941",
+  "verdict": "do not pursue",
+  "why": "Same as FLINT.",
+  "check": "Confirmed. thm:factorization gives O(((n+1)ceil(log2 p))^{10^{12}}); 08-driver calls p \"small when $p\\le B^{200000}$\" (B=20+(n+1)(L+1)) and then tests gcd(h,b-a) for a=0..p-1, so the curve branch needs primes of at least about 4.6M bits. Unconditionality rests on Theorem analytic:hecke = [OpenAIPrimitive26, Thm 1.2] (family 029, strip Re s>1-10^{-6}, which the catalogue lists as not formalized)."
+ },
+ {
+  "claim": "GMP: prototype a huge-operand backend from sub-n log n multiplication (paper 109)",
+  "target": "mpn/generic/mul_fft.c:919",
+  "verdict": "do not pursue",
+  "why": "The exponent saving is 2^-182 and the construction leaves its trivial case only at n ≥ 2^(2^(2^75)) bits. At n = 2^(2^64) bits the speedup is about 1 + 10^-53. There is no crossover to measure.",
+  "check": "Confirmed. thm:main gives one multitape Turing machine with T_A(n)=O(n(lg n)^{1-kappa}), kappa=2^{-182}, and eq:fixed-parameters sets epsilon=2^{-75}. In 08-assembly.tex b=ceil(log2 n) and d=floor(b^epsilon), so d>=2 iff b>=2^(2^75), i.e. n > 2^(2^(2^75)-1), with \"schoolbook multiplication\" below the cutoff."
+ },
+ {
+  "claim": "OpenSSL: new BN multiplication backend (paper 109)",
+  "target": "bn_mul.c:497, bn_mont.c:36",
+  "verdict": "do not pursue",
+  "why": "Same galactic threshold. ChatGPT already rated it low priority; it is zero priority.",
+  "check": "Confirmed. thm:main gives one multitape Turing machine with T_A(n)=O(n(lg n)^{1-kappa}), kappa=2^{-182}, and eq:fixed-parameters sets epsilon=2^{-75}. In 08-assembly.tex b=ceil(log2 n) and d=floor(b^epsilon), so d>=2 iff b>=2^(2^75), i.e. n > 2^(2^(2^75)-1), with \"schoolbook multiplication\" below the cutoff."
+ },
+ {
+  "claim": "CPython: extra huge-integer path beside k_mul (paper 109)",
+  "target": "Objects/longobject.c:4070",
+  "verdict": "do not pursue",
+  "why": "Same galactic threshold.",
+  "check": "Confirmed. thm:main gives one multitape Turing machine with T_A(n)=O(n(lg n)^{1-kappa}), kappa=2^{-182}, and eq:fixed-parameters sets epsilon=2^{-75}. In 08-assembly.tex b=ceil(log2 n) and d=floor(b^epsilon), so d>=2 iff b>=2^(2^75), i.e. n > 2^(2^(2^75)-1), with \"schoolbook multiplication\" below the cutoff."
+ },
+ {
+  "claim": "FFTW: test the sub-n log n exact DFT in genfft (paper 130)",
+  "target": "genfft/fft.ml:241",
+  "verdict": "do not pursue",
+  "why": "The saving is (log n)^(2·10^-13) ≈ 1 + 10^-12 in an exact-arithmetic model, the recursion only starts at transform length 2^(7.2·10^7), and it processes 2^71 arrays at once. The paper itself says there is no useful crossover estimate.",
+  "check": "Confirmed. thm:main: O(n(log n)^theta(log log n)^{4-theta}) with theta=log_m(m-Delta/W_*), m=10^6, W_*=2^71, Delta=6871402692000000, so 1-theta=2.106e-13 and cor:decimal gives O(n(log n)^{1-10^{-13}}); the paper says \"The constants in the algorithm are enormous ... with no useful crossover estimate\". Wording nit in prior.json: 2^71 is the number of batched arrays, not a block length, and the recursion only engages for transform length 2^k with k>=K=72*10^6."
+ },
+ {
+  "claim": "Exclude zlib, Brotli and LZMA from the backlog",
+  "target": "deflate.c longest_match, Zopfli shortest path, LzmaEnc GetOptimum",
+  "verdict": "monitor",
+  "why": "Agree. None of the drop's results addresses LZ parsing. This was the one fully correct call in the list."
+ }
+]

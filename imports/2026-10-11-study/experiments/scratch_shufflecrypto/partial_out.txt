@@ -1,0 +1,15 @@
+Partial-domain CCA rounds (and AES calls) at eps=2^-64
+N, q | MRS'09 Thorp CCA | new Thorp fixed-list (nCPA x2 for CCA via MPR) rounds / AES(5x) | HMR SN CCA rounds=AES
+2^20, N/(8 lgN): MRS 5694 | Thorp 994 rounds / 199 AES | SN 354
+2^20, N/2: MRS None | Thorp 2032 rounds / 406 AES | SN 838
+2^20, 7N/8: MRS None | Thorp 8290 rounds / 1658 AES | SN 3655
+2^32, N/(8 lgN): MRS 10584 | Thorp 1214 rounds / 243 AES | SN 424
+2^32, N/2: MRS None | Thorp 2454 rounds / 491 AES | SN 1009
+2^32, 7N/8: MRS None | Thorp 9910 rounds / 1982 AES | SN 4417
+2^64, N/(8 lgN): MRS 29210 | Thorp 1802 rounds / 360 AES | SN 613
+2^64, N/2: MRS None | Thorp 3580 rounds / 716 AES | SN 1466
+2^64, 7N/8: MRS None | Thorp 14230 rounds / 2846 AES | SN 6455
+Eth2 N=2^20 q=128: TV bound at r=90: 2^-21.5; rounds for 2^-40: 127
+Eth2 N=2^20 q=2048: TV bound at r=90: 2^-21.4; rounds for 2^-40: 127
+Eth2 N=2^21 q=128: TV bound at r=90: 2^-20.0; rounds for 2^-40: 129
+Eth2 N=2^21 q=2048: TV bound at r=90: 2^-20.0; rounds for 2^-40: 130

@@ -1,0 +1,34 @@
+[
+ {
+  "d": [
+   4,
+   4,
+   2,
+   2,
+   2,
+   2
+  ],
+  "lib": "bctpy.randmio_und",
+  "K_attempts": 3,
+  "TV_uniform": 0.0272,
+  "p_uniform": 5.47e-34,
+  "pred_TV_uniform": 0.0223,
+  "p_pred": 0.045
+ },
+ {
+  "d": [
+   3,
+   3,
+   3,
+   3,
+   3,
+   3
+  ],
+  "lib": "bctpy.randmio_und",
+  "K_attempts": 3,
+  "TV_uniform": 0.031,
+  "p_uniform": 3.74e-06,
+  "pred_TV_uniform": 0.0245,
+  "p_pred": 0.355
+ }
+]

@@ -1,0 +1,212 @@
+[
+ {
+  "id": "BIOMD0000000001",
+  "deficiency": 0,
+  "lc": 1,
+  "n_compartment_volumes": 1,
+  "all_rates_positive": true,
+  "complex_balanced_at_curated_rates": true,
+  "events": 1,
+  "rules": 0
+ },
+ {
+  "id": "BIOMD0000000002",
+  "deficiency": 6,
+  "lc": 3,
+  "n_compartment_volumes": 1,
+  "all_rates_positive": true,
+  "complex_balanced_at_curated_rates": false,
+  "events": 0,
+  "rules": 0
+ },
+ {
+  "id": "BIOMD0000000038",
+  "deficiency": 1,
+  "lc": 5,
+  "n_compartment_volumes": 1,
+  "all_rates_positive": true,
+  "complex_balanced_at_curated_rates": false,
+  "events": 0,
+  "rules": 0
+ },
+ {
+  "id": "BIOMD0000000060",
+  "deficiency": 0,
+  "lc": 1,
+  "n_compartment_volumes": 1,
+  "all_rates_positive": true,
+  "complex_balanced_at_curated_rates": true,
+  "events": 0,
+  "rules": 0
+ },
+ {
+  "id": "BIOMD0000000085",
+  "deficiency": 5,
+  "lc": 9,
+  "n_compartment_volumes": 1,
+  "all_rates_positive": true,
+  "complex_balanced_at_curated_rates": false,
+  "events": 0,
+  "rules": 0
+ },
+ {
+  "id": "BIOMD0000000086",
+  "deficiency": 12,
+  "lc": 11,
+  "n_compartment_volumes": 1,
+  "all_rates_positive": true,
+  "complex_balanced_at_curated_rates": false,
+  "events": 0,
+  "rules": 0
+ },
+ {
+  "id": "BIOMD0000000150",
+  "deficiency": 0,
+  "lc": 1,
+  "n_compartment_volumes": 1,
+  "all_rates_positive": true,
+  "complex_balanced_at_curated_rates": true,
+  "events": 0,
+  "rules": 0
+ },
+ {
+  "id": "BIOMD0000000199",
+  "deficiency": 0,
+  "lc": 1,
+  "n_compartment_volumes": 1,
+  "all_rates_positive": true,
+  "complex_balanced_at_curated_rates": true,
+  "events": 0,
+  "rules": 1
+ },
+ {
+  "id": "BIOMD0000000307",
+  "deficiency": 0,
+  "lc": 1,
+  "n_compartment_volumes": 1,
+  "all_rates_positive": false,
+  "complex_balanced_at_curated_rates": false,
+  "events": 0,
+  "rules": 2
+ },
+ {
+  "id": "BIOMD0000000309",
+  "deficiency": 0,
+  "lc": 1,
+  "n_compartment_volumes": 1,
+  "all_rates_positive": false,
+  "complex_balanced_at_curated_rates": false,
+  "events": 0,
+  "rules": 2
+ },
+ {
+  "id": "BIOMD0000000311",
+  "deficiency": 0,
+  "lc": 1,
+  "n_compartment_volumes": 1,
+  "all_rates_positive": false,
+  "complex_balanced_at_curated_rates": false,
+  "events": 0,
+  "rules": 2
+ },
+ {
+  "id": "BIOMD0000000486",
+  "deficiency": 0,
+  "lc": 1,
+  "n_compartment_volumes": 1,
+  "all_rates_positive": true,
+  "complex_balanced_at_curated_rates": true,
+  "events": 0,
+  "rules": 0
+ },
+ {
+  "id": "BIOMD0000000491",
+  "deficiency": 0,
+  "lc": 1,
+  "n_compartment_volumes": 1,
+  "all_rates_positive": true,
+  "complex_balanced_at_curated_rates": true,
+  "events": 0,
+  "rules": 0
+ },
+ {
+  "id": "BIOMD0000000492",
+  "deficiency": 0,
+  "lc": 1,
+  "n_compartment_volumes": 1,
+  "all_rates_positive": true,
+  "complex_balanced_at_curated_rates": true,
+  "events": 0,
+  "rules": 0
+ },
+ {
+  "id": "BIOMD0000000500",
+  "deficiency": 4,
+  "lc": 3,
+  "n_compartment_volumes": 1,
+  "all_rates_positive": true,
+  "complex_balanced_at_curated_rates": false,
+  "events": 0,
+  "rules": 0
+ },
+ {
+  "id": "BIOMD0000000501",
+  "deficiency": 11,
+  "lc": 4,
+  "n_compartment_volumes": 1,
+  "all_rates_positive": true,
+  "complex_balanced_at_curated_rates": false,
+  "events": 0,
+  "rules": 0
+ },
+ {
+  "id": "BIOMD0000000584",
+  "deficiency": 0,
+  "lc": 2,
+  "n_compartment_volumes": 1,
+  "all_rates_positive": true,
+  "complex_balanced_at_curated_rates": true,
+  "events": 0,
+  "rules": 14
+ },
+ {
+  "id": "BIOMD0000000629",
+  "deficiency": 0,
+  "lc": 2,
+  "n_compartment_volumes": 1,
+  "all_rates_positive": true,
+  "complex_balanced_at_curated_rates": true,
+  "events": 0,
+  "rules": 0
+ },
+ {
+  "id": "BIOMD0000000668",
+  "deficiency": 0,
+  "lc": 1,
+  "n_compartment_volumes": 1,
+  "all_rates_positive": false,
+  "complex_balanced_at_curated_rates": false,
+  "events": 0,
+  "rules": 6
+ },
+ {
+  "id": "BIOMD0000000678",
+  "deficiency": 0,
+  "lc": 1,
+  "n_compartment_volumes": 1,
+  "all_rates_positive": false,
+  "complex_balanced_at_curated_rates": false,
+  "events": 0,
+  "rules": 2
+ },
+ {
+  "id": "BIOMD0000000692",
+  "deficiency": 0,
+  "lc": 2,
+  "n_compartment_volumes": 1,
+  "all_rates_positive": true,
+  "complex_balanced_at_curated_rates": true,
+  "events": 0,
+  "rules": 0
+ }
+]

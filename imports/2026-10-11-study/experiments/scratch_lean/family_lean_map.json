@@ -1,0 +1,3534 @@
+[
+ {
+  "family": "003",
+  "configs": [
+   "DirichletSevenEighths",
+   "HeckeSevenEighths",
+   "QuasiRiemannHypothesis",
+   "SiegelZeros"
+  ],
+  "configs_in_yaml": 4,
+  "closure_files": 3232,
+  "closure_lines": 556376,
+  "main_dirs": [
+   "NumberTheory/DirichletL",
+   "NumberTheory/SiegelZeros"
+  ],
+  "ext": [
+   "PrimeNumberTheoremAnd",
+   "RellichKondrachov"
+  ]
+ },
+ {
+  "family": "005",
+  "configs": [
+   "Catalan"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 988,
+  "closure_lines": 574902,
+  "main_dirs": [
+   "NumberTheory/Catalan",
+   "NumberTheory/ZetaFive"
+  ],
+  "ext": [
+   "PrimeNumberTheoremAnd"
+  ]
+ },
+ {
+  "family": "007",
+  "configs": [
+   "OrdinaryElliott",
+   "OrdinaryTwoPointCorrelations"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 2167,
+  "closure_lines": 224233,
+  "main_dirs": [
+   "NumberTheory/TwoPoint",
+   "NumberTheory/OrdinaryCorrelations",
+   "NumberTheory/Jacobsthal"
+  ],
+  "ext": [
+   "PrimeNumberTheoremAnd",
+   "StrongPNT"
+  ]
+ },
+ {
+  "family": "008",
+  "configs": [
+   "DeligneDrinfeld"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 21,
+  "closure_lines": 29733,
+  "main_dirs": [
+   "Algebra/Drinfeld"
+  ],
+  "ext": []
+ },
+ {
+  "family": "009",
+  "configs": [
+   "BogomolovPopInjectivity"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 5,
+  "closure_lines": 3339,
+  "main_dirs": [
+   "Algebra/BogomolovPop"
+  ],
+  "ext": []
+ },
+ {
+  "family": "012",
+  "configs": [
+   "JointDickman"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 1792,
+  "closure_lines": 176462,
+  "main_dirs": [
+   "NumberTheory/JointDickman",
+   "NumberTheory/TwoPointCorrelations",
+   "NumberTheory/Jacobsthal"
+  ],
+  "ext": [
+   "PrimeNumberTheoremAnd",
+   "StrongPNT"
+  ]
+ },
+ {
+  "family": "013",
+  "configs": [
+   "OstmannComplete",
+   "OstmannPrimes"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 7518,
+  "closure_lines": 630964,
+  "main_dirs": [
+   "NumberTheory/Ostmann",
+   "NumberTheory/Jacobsthal",
+   "NumberTheory/PrimeGaps"
+  ],
+  "ext": [
+   "BernoulliRegular",
+   "PrimeNumberTheoremAnd",
+   "StrongPNT"
+  ]
+ },
+ {
+  "family": "015",
+  "configs": [
+   "DukePrimeDegree"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 877,
+  "closure_lines": 130452,
+  "main_dirs": [
+   "NumberTheory/DukePrimeDegree",
+   "NumberTheory/PrimePackets"
+  ],
+  "ext": [
+   "ClassFieldTheory"
+  ]
+ },
+ {
+  "family": "017",
+  "configs": [
+   "PiExponent"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 869,
+  "closure_lines": 94948,
+  "main_dirs": [
+   "NumberTheory/PiExponent"
+  ],
+  "ext": []
+ },
+ {
+  "family": "020",
+  "configs": [
+   "PowerFreeValues"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 63,
+  "closure_lines": 23269,
+  "main_dirs": [
+   "NumberTheory/PowerFree"
+  ],
+  "ext": []
+ },
+ {
+  "family": "021",
+  "configs": [
+   "Jacobsthal",
+   "JacobsthalImproved"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 819,
+  "closure_lines": 152494,
+  "main_dirs": [
+   "NumberTheory/Jacobsthal"
+  ],
+  "ext": [
+   "AbsorptionCutoff",
+   "PrimeNumberTheoremAnd",
+   "StrongPNT"
+  ]
+ },
+ {
+  "family": "023",
+  "configs": [
+   "PattersonFirstMoment"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 3594,
+  "closure_lines": 306361,
+  "main_dirs": [
+   "NumberTheory/CubicMoment",
+   "NumberTheory/CubicGram",
+   "NumberTheory/DirichletL"
+  ],
+  "ext": [
+   "PrimeNumberTheoremAnd",
+   "RellichKondrachov",
+   "StrongPNT"
+  ]
+ },
+ {
+  "family": "024",
+  "configs": [
+   "TotientAsymptotic",
+   "TotientCompanionZero"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 811,
+  "closure_lines": 73021,
+  "main_dirs": [
+   "NumberTheory/TotientAsymptotic",
+   "NumberTheory/TotientFibers"
+  ],
+  "ext": [
+   "PrimeNumberTheoremAnd"
+  ]
+ },
+ {
+  "family": "025",
+  "configs": [
+   "EgyptianFractions",
+   "ShortEgyptianFractions"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 348,
+  "closure_lines": 44201,
+  "main_dirs": [
+   "NumberTheory/EgyptianFractions",
+   "NumberTheory/ShortEgyptian"
+  ],
+  "ext": []
+ },
+ {
+  "family": "026",
+  "configs": [
+   "PrimeGaps"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 56,
+  "closure_lines": 22533,
+  "main_dirs": [
+   "NumberTheory/PrimeGaps"
+  ],
+  "ext": []
+ },
+ {
+  "family": "027",
+  "configs": [
+   "CharacterVarietiesAllSeamsSupport"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 79,
+  "closure_lines": 27381,
+  "main_dirs": [
+   "AlgebraicGeometry/CharacterVarieties"
+  ],
+  "ext": []
+ },
+ {
+  "family": "028",
+  "configs": [
+   "GaussianMoat"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 41,
+  "closure_lines": 12703,
+  "main_dirs": [
+   "NumberTheory/GaussianMoat"
+  ],
+  "ext": []
+ },
+ {
+  "family": "033",
+  "configs": [
+   "LogKodairaFiberNegative"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 14,
+  "closure_lines": 3902,
+  "main_dirs": [
+   "AlgebraicGeometry/LogKodaira"
+  ],
+  "ext": []
+ },
+ {
+  "family": "039",
+  "configs": [
+   "MaximalSeshadriConstants",
+   "Nagata"
+  ],
+  "configs_in_yaml": 2,
+  "closure_files": 538,
+  "closure_lines": 93549,
+  "main_dirs": [
+   "AlgebraicGeometry/Seshadri",
+   "AlgebraicGeometry/PlaneCurves"
+  ],
+  "ext": []
+ },
+ {
+  "family": "047",
+  "configs": [
+   "ComplexCancellation"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 55,
+  "closure_lines": 5573,
+  "main_dirs": [
+   "Algebra/AffineCancellation"
+  ],
+  "ext": []
+ },
+ {
+  "family": "049",
+  "configs": [
+   "AbhyankarSathaye",
+   "CommutingDerivations",
+   "StableCoordinateFour"
+  ],
+  "configs_in_yaml": 3,
+  "closure_files": 145,
+  "closure_lines": 18197,
+  "main_dirs": [
+   "AlgebraicGeometry/StableCoordinate",
+   "AlgebraicGeometry/CommutingDerivations",
+   "AlgebraicGeometry/AbhyankarSathaye"
+  ],
+  "ext": []
+ },
+ {
+  "family": "050",
+  "configs": [
+   "QuadricBundles"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 34,
+  "closure_lines": 12256,
+  "main_dirs": [
+   "Geometry/QuadricBundles"
+  ],
+  "ext": []
+ },
+ {
+  "family": "052",
+  "configs": [
+   "KahlerSplitting",
+   "SplitTangentIntegrability"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 61,
+  "closure_lines": 32266,
+  "main_dirs": [
+   "Geometry/KahlerSplitting",
+   "Geometry/SplitTangent"
+  ],
+  "ext": []
+ },
+ {
+  "family": "058",
+  "configs": [
+   "SymmetricDomains"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 335,
+  "closure_lines": 48720,
+  "main_dirs": [
+   "Analysis/SymmetricDomains"
+  ],
+  "ext": []
+ },
+ {
+  "family": "066",
+  "configs": [
+   "CartierChartCompactnessSupport"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 13,
+  "closure_lines": 1620,
+  "main_dirs": [
+   "AlgebraicGeometry/CartierSections"
+  ],
+  "ext": []
+ },
+ {
+  "family": "071",
+  "configs": [
+   "KoebeCircleDomains"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 2790,
+  "closure_lines": 272799,
+  "main_dirs": [
+   "Analysis/CircleDomains",
+   "Geometry/Cannon",
+   "Analysis/DiskMaximal"
+  ],
+  "ext": [
+   "Schoenflies",
+   "all"
+  ]
+ },
+ {
+  "family": "072",
+  "configs": [
+   "Brennan",
+   "BrennanSharp",
+   "StrictMeans"
+  ],
+  "configs_in_yaml": 3,
+  "closure_files": 141,
+  "closure_lines": 29928,
+  "main_dirs": [
+   "Analysis/StrictMeans",
+   "Analysis/IntegralMeans"
+  ],
+  "ext": []
+ },
+ {
+  "family": "073",
+  "configs": [
+   "FalconerAllDimensions",
+   "PlanarFalconer"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 2386,
+  "closure_lines": 185263,
+  "main_dirs": [
+   "MeasureTheory/Falconer"
+  ],
+  "ext": []
+ },
+ {
+  "family": "075",
+  "configs": [
+   "FourierLLogL"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 156,
+  "closure_lines": 29665,
+  "main_dirs": [
+   "Analysis/FourierLLogL",
+   "Analysis/Fourier"
+  ],
+  "ext": []
+ },
+ {
+  "family": "076",
+  "configs": [
+   "AsymptoticallyMinimalLittlewood",
+   "LittlewoodFiniteFlatness"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 28,
+  "closure_lines": 9712,
+  "main_dirs": [
+   "Analysis/Littlewood",
+   "MeasureTheory/Integral"
+  ],
+  "ext": []
+ },
+ {
+  "family": "081",
+  "configs": [
+   "RieszQuantitative"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 824,
+  "closure_lines": 65638,
+  "main_dirs": [
+   "Analysis/RieszRectifiability"
+  ],
+  "ext": [
+   "FixedPointTheorems"
+  ]
+ },
+ {
+  "family": "082",
+  "configs": [
+   "TriangularHilbert"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 105,
+  "closure_lines": 10861,
+  "main_dirs": [
+   "Analysis/TriangularHilbert"
+  ],
+  "ext": []
+ },
+ {
+  "family": "083",
+  "configs": [
+   "LipschitzHilbert"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 1910,
+  "closure_lines": 185580,
+  "main_dirs": [
+   "Analysis/LipschitzHilbert"
+  ],
+  "ext": []
+ },
+ {
+  "family": "084",
+  "configs": [
+   "DyadicAvoidance"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 75,
+  "closure_lines": 8455,
+  "main_dirs": [
+   "MeasureTheory/DyadicAvoidance"
+  ],
+  "ext": []
+ },
+ {
+  "family": "085",
+  "configs": [
+   "DiskMaximal",
+   "SignedFiniteBand"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 69,
+  "closure_lines": 36504,
+  "main_dirs": [
+   "Analysis/SignedDisk",
+   "Analysis/DiskMaximal"
+  ],
+  "ext": []
+ },
+ {
+  "family": "087",
+  "configs": [
+   "GeneralMahler",
+   "MahlerConjecture",
+   "SymmetricMahlerEquality",
+   "SymmetricPolar"
+  ],
+  "configs_in_yaml": 3,
+  "closure_files": 585,
+  "closure_lines": 80769,
+  "main_dirs": [
+   "Geometry/Convex",
+   "Analysis/Mahler",
+   "Geometry/PolarProducts"
+  ],
+  "ext": []
+ },
+ {
+  "family": "088",
+  "configs": [
+   "PettyProjectionVolume",
+   "ProjectionCounterexample",
+   "ProjectionVolume"
+  ],
+  "configs_in_yaml": 3,
+  "closure_files": 103,
+  "closure_lines": 20050,
+  "main_dirs": [
+   "Geometry/ProjectionBodies",
+   "Geometry/ProjectionBody",
+   "Geometry/ProjectionVolume"
+  ],
+  "ext": []
+ },
+ {
+  "family": "089",
+  "configs": [
+   "BoundedTreewidthL1",
+   "PlanarL1"
+  ],
+  "configs_in_yaml": 2,
+  "closure_files": 96,
+  "closure_lines": 48719,
+  "main_dirs": [
+   "Combinatorics/PlanarL1",
+   "Combinatorics/TreewidthL1"
+  ],
+  "ext": []
+ },
+ {
+  "family": "090",
+  "configs": [
+   "AtomicGaussian",
+   "PlanarPacking",
+   "TriangularEnergy",
+   "TriangularGaussian"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 791,
+  "closure_lines": 982136,
+  "main_dirs": [
+   "Analysis/PlanarPacking",
+   "Analysis/Triangular"
+  ],
+  "ext": []
+ },
+ {
+  "family": "091",
+  "configs": [
+   "LogBrunnMinkowski"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 1,
+  "closure_lines": 24490,
+  "main_dirs": [
+   "Geometry/LogVolume"
+  ],
+  "ext": []
+ },
+ {
+  "family": "092",
+  "configs": [
+   "CoveringDensity",
+   "SingleLatticeCovering"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 143,
+  "closure_lines": 40097,
+  "main_dirs": [
+   "Geometry/TranslativeCovering",
+   "Geometry/LatticeCovering",
+   "Geometry/CoveringDensity"
+  ],
+  "ext": []
+ },
+ {
+  "family": "094",
+  "configs": [
+   "SubpolynomialLp"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 44,
+  "closure_lines": 7844,
+  "main_dirs": [
+   "Analysis/LpDimension"
+  ],
+  "ext": []
+ },
+ {
+  "family": "095",
+  "configs": [
+   "HyperbolicCones"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 86,
+  "closure_lines": 5649,
+  "main_dirs": [
+   "Analysis/HyperbolicCones"
+  ],
+  "ext": []
+ },
+ {
+  "family": "096",
+  "configs": [
+   "GaussianPropeller"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 47,
+  "closure_lines": 11622,
+  "main_dirs": [
+   "Probability/GaussianPropeller"
+  ],
+  "ext": []
+ },
+ {
+  "family": "097",
+  "configs": [
+   "SteinitzBergstrom"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 29,
+  "closure_lines": 15082,
+  "main_dirs": [
+   "Analysis/Steinitz"
+  ],
+  "ext": []
+ },
+ {
+  "family": "098",
+  "configs": [
+   "CompactBanach",
+   "DoublingHilbert"
+  ],
+  "configs_in_yaml": 2,
+  "closure_files": 28,
+  "closure_lines": 4664,
+  "main_dirs": [
+   "Geometry/DoublingHilbert"
+  ],
+  "ext": []
+ },
+ {
+  "family": "099",
+  "configs": [
+   "BinaryEditLower",
+   "EditDistance",
+   "FiniteCircle",
+   "TreeEdit"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 185,
+  "closure_lines": 50461,
+  "main_dirs": [
+   "Combinatorics/BinaryEdit",
+   "Combinatorics/EditDistance",
+   "Combinatorics/FiniteCircle"
+  ],
+  "ext": []
+ },
+ {
+  "family": "100",
+  "configs": [
+   "CylinderCovering",
+   "RuledCovering",
+   "TriangularCovering"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 641,
+  "closure_lines": 70623,
+  "main_dirs": [
+   "Geometry/CylinderCovering",
+   "Geometry/RuledCovering",
+   "Geometry/TriangularCovering"
+  ],
+  "ext": []
+ },
+ {
+  "family": "102",
+  "configs": [
+   "DirectedFeedback",
+   "MinUncut",
+   "OptimalMaxCut",
+   "UniqueGamesTheorem",
+   "VertexCover"
+  ],
+  "configs_in_yaml": 3,
+  "closure_files": 1800,
+  "closure_lines": 752474,
+  "main_dirs": [
+   "Computability/UniqueGames",
+   "Computability/MinUncut",
+   "Computability/MaxCut"
+  ],
+  "ext": [
+   "Std"
+  ]
+ },
+ {
+  "family": "103",
+  "configs": [
+   "LogspaceEquality"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 39,
+  "closure_lines": 43045,
+  "main_dirs": [
+   "Computability/Logspace"
+  ],
+  "ext": []
+ },
+ {
+  "family": "104",
+  "configs": [
+   "RandomizedMeanPayoff",
+   "TruffetCounterexample"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 91,
+  "closure_lines": 27624,
+  "main_dirs": [
+   "Computability/MeanPayoff",
+   "Computability/RandomMean",
+   "Optimization/Tropical"
+  ],
+  "ext": []
+ },
+ {
+  "family": "105",
+  "configs": [
+   "PerfectCompleteness"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 863,
+  "closure_lines": 257263,
+  "main_dirs": [
+   "Computability/PerfectCompleteness",
+   "Computability/UniqueGames"
+  ],
+  "ext": [
+   "Std"
+  ]
+ },
+ {
+  "family": "106",
+  "configs": [
+   "IndependentSets"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 454,
+  "closure_lines": 94095,
+  "main_dirs": [
+   "Combinatorics/IndependentSets"
+  ],
+  "ext": []
+ },
+ {
+  "family": "107",
+  "configs": [
+   "MatrixFields",
+   "MatrixMultiplication"
+  ],
+  "configs_in_yaml": 2,
+  "closure_files": 858,
+  "closure_lines": 264374,
+  "main_dirs": [
+   "LinearAlgebra/MatrixMultiplication",
+   "LinearAlgebra/MatrixFields"
+  ],
+  "ext": [
+   "FixedPointTheorems",
+   "Std"
+  ]
+ },
+ {
+  "family": "108",
+  "configs": [
+   "PermanentCubic",
+   "SmoothInitialForm"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 51,
+  "closure_lines": 20739,
+  "main_dirs": [
+   "Algebra/Determinantal"
+  ],
+  "ext": []
+ },
+ {
+  "family": "110",
+  "configs": [
+   "KServer",
+   "UniformKServer"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 447,
+  "closure_lines": 87625,
+  "main_dirs": [
+   "Combinatorics/UniformKServer",
+   "Combinatorics/KServer"
+  ],
+  "ext": []
+ },
+ {
+  "family": "111",
+  "configs": [
+   "MatroidProphet",
+   "MatroidSecretary"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 243,
+  "closure_lines": 25927,
+  "main_dirs": [
+   "Probability/MatroidProphet",
+   "Probability/MatroidSecretary"
+  ],
+  "ext": []
+ },
+ {
+  "family": "112",
+  "configs": [
+   "DepthThree"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 175,
+  "closure_lines": 24309,
+  "main_dirs": [
+   "Computability/DepthThree"
+  ],
+  "ext": []
+ },
+ {
+  "family": "113",
+  "configs": [
+   "BinaryMatching",
+   "MatchingEntropy",
+   "MatchingEntropyBounds",
+   "MatchingFPRAS",
+   "SingletonLoopMatching",
+   "TriangleFace"
+  ],
+  "configs_in_yaml": 3,
+  "closure_files": 592,
+  "closure_lines": 91657,
+  "main_dirs": [
+   "Combinatorics/MatchingCount",
+   "Computability/MatchingCount",
+   "Combinatorics/PerfectMatching"
+  ],
+  "ext": []
+ },
+ {
+  "family": "114",
+  "configs": [
+   "CommonBasesFPRAS"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 1,
+  "closure_lines": 26126,
+  "main_dirs": [
+   "Combinatorics/MatroidCounting"
+  ],
+  "ext": []
+ },
+ {
+  "family": "115",
+  "configs": [
+   "ContingencyTables"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 1297,
+  "closure_lines": 191813,
+  "main_dirs": [
+   "Combinatorics/ContingencyTables",
+   "Combinatorics/MatchingCount",
+   "Analysis/KLS"
+  ],
+  "ext": []
+ },
+ {
+  "family": "116",
+  "configs": [
+   "FormulaHitting",
+   "RationalHitting"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 77,
+  "closure_lines": 18585,
+  "main_dirs": [
+   "Computability/RationalHitting",
+   "Algebra/FormulaHitting"
+  ],
+  "ext": []
+ },
+ {
+  "family": "117",
+  "configs": [
+   "UniformSparsestCut"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 55,
+  "closure_lines": 9934,
+  "main_dirs": [
+   "Combinatorics/SparsestCut"
+  ],
+  "ext": []
+ },
+ {
+  "family": "118",
+  "configs": [
+   "BinPackingGap"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 284,
+  "closure_lines": 158527,
+  "main_dirs": [
+   "Computability/BinPacking"
+  ],
+  "ext": [
+   "Std"
+  ]
+ },
+ {
+  "family": "119",
+  "configs": [
+   "CourtadeKumar",
+   "SoftChannel204"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 71,
+  "closure_lines": 11657,
+  "main_dirs": [
+   "InformationTheory/BooleanNoise",
+   "InformationTheory/SoftChannel",
+   "Combinatorics/GotsmanLinial"
+  ],
+  "ext": []
+ },
+ {
+  "family": "121",
+  "configs": [
+   "EditApproximation"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 1024,
+  "closure_lines": 137267,
+  "main_dirs": [
+   "Combinatorics/EditApproximation",
+   "Combinatorics/EditDistance"
+  ],
+  "ext": []
+ },
+ {
+  "family": "122",
+  "configs": [
+   "TraceReconstruction"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 31,
+  "closure_lines": 33984,
+  "main_dirs": [
+   "Probability/TraceReconstruction",
+   "Probability/TraceReconstruction.lean"
+  ],
+  "ext": []
+ },
+ {
+  "family": "124",
+  "configs": [
+   "ThreeMachine"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 53,
+  "closure_lines": 18572,
+  "main_dirs": [
+   "Computability/Scheduling"
+  ],
+  "ext": []
+ },
+ {
+  "family": "125",
+  "configs": [
+   "KMedianRecovery",
+   "KMedianRefinedRecovery",
+   "KMedianThreshold",
+   "MetricKMedian"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 1277,
+  "closure_lines": 142414,
+  "main_dirs": [
+   "Combinatorics/KMedian",
+   "Combinatorics/KMedianRecovery"
+  ],
+  "ext": []
+ },
+ {
+  "family": "126",
+  "configs": [
+   "MatchingAffineLift",
+   "MatchingPSD"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 66,
+  "closure_lines": 7542,
+  "main_dirs": [
+   "Combinatorics/MatchingPSD"
+  ],
+  "ext": []
+ },
+ {
+  "family": "127",
+  "configs": [
+   "GotsmanLinial"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 22,
+  "closure_lines": 4022,
+  "main_dirs": [
+   "Combinatorics/GotsmanLinial"
+  ],
+  "ext": []
+ },
+ {
+  "family": "128",
+  "configs": [
+   "Superstring"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 51,
+  "closure_lines": 20361,
+  "main_dirs": [
+   "Computability/Superstring"
+  ],
+  "ext": []
+ },
+ {
+  "family": "129",
+  "configs": [
+   "OneWayLiveness",
+   "TwoWayComplementation",
+   "TwoWayDeterminization"
+  ],
+  "configs_in_yaml": 3,
+  "closure_files": 41,
+  "closure_lines": 8477,
+  "main_dirs": [
+   "Combinatorics/TwoWayAutomata",
+   "Combinatorics/Automata"
+  ],
+  "ext": []
+ },
+ {
+  "family": "130",
+  "configs": [
+   "ExactFourier",
+   "UniformFourier"
+  ],
+  "configs_in_yaml": 2,
+  "closure_files": 139,
+  "closure_lines": 34377,
+  "main_dirs": [
+   "Computability/FourierTransform",
+   "Computability/FourierCircuit"
+  ],
+  "ext": []
+ },
+ {
+  "family": "131",
+  "configs": [
+   "SwitchChain"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 165,
+  "closure_lines": 22691,
+  "main_dirs": [
+   "Probability/SwitchChain"
+  ],
+  "ext": []
+ },
+ {
+  "family": "132",
+  "configs": [
+   "SensitivitySeparation"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 42,
+  "closure_lines": 3836,
+  "main_dirs": [
+   "Combinatorics/Sensitivity"
+  ],
+  "ext": []
+ },
+ {
+  "family": "133",
+  "configs": [
+   "ParityLifts",
+   "VariableWL",
+   "WLIdentification",
+   "WeisfeilerLeman"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 193,
+  "closure_lines": 65771,
+  "main_dirs": [
+   "Computability/WLIdentification",
+   "Combinatorics/VariableWL",
+   "Computability/WeisfeilerLeman"
+  ],
+  "ext": []
+ },
+ {
+  "family": "134",
+  "configs": [
+   "GeneralizedStarHeight"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 37,
+  "closure_lines": 11956,
+  "main_dirs": [
+   "Computability/StarHeight"
+  ],
+  "ext": []
+ },
+ {
+  "family": "135",
+  "configs": [
+   "DepthFive"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 164,
+  "closure_lines": 20323,
+  "main_dirs": [
+   "Algebra/DepthFive"
+  ],
+  "ext": []
+ },
+ {
+  "family": "137",
+  "configs": [
+   "OneTapeSpace"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 49,
+  "closure_lines": 8328,
+  "main_dirs": [
+   "Computability/SpaceSimulation"
+  ],
+  "ext": []
+ },
+ {
+  "family": "139",
+  "configs": [
+   "LogConcaveQuery"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 326,
+  "closure_lines": 63748,
+  "main_dirs": [
+   "Probability/LogConcave"
+  ],
+  "ext": []
+ },
+ {
+  "family": "140",
+  "configs": [
+   "GaussianFiniteEntropy",
+   "GaussianInformation",
+   "GaussianReplacement",
+   "MemoryPrecision",
+   "NoiselessRegression",
+   "PosteriorReplicas",
+   "ProjectionMoments",
+   "SubsphereCurrent"
+  ],
+  "configs_in_yaml": 5,
+  "closure_files": 415,
+  "closure_lines": 74493,
+  "main_dirs": [
+   "Probability/PosteriorReplicas",
+   "Probability/GaussianInformation",
+   "Probability/MemoryPrecision"
+  ],
+  "ext": []
+ },
+ {
+  "family": "143",
+  "configs": [
+   "QuinticLienard"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 146,
+  "closure_lines": 16659,
+  "main_dirs": [
+   "Analysis/LienardCycles"
+  ],
+  "ext": []
+ },
+ {
+  "family": "144",
+  "configs": [
+   "ThreeTorus"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 37,
+  "closure_lines": 33818,
+  "main_dirs": [
+   "Dynamics/ThreeTorus"
+  ],
+  "ext": []
+ },
+ {
+  "family": "145",
+  "configs": [
+   "Rokhlin"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 13,
+  "closure_lines": 27889,
+  "main_dirs": [
+   "Dynamics/MultipleMixing"
+  ],
+  "ext": []
+ },
+ {
+  "family": "146",
+  "configs": [
+   "StandardMapComponents",
+   "StandardMapEntropy",
+   "StandardMapLyapunov"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 274,
+  "closure_lines": 54864,
+  "main_dirs": [
+   "Dynamics/StandardMap"
+  ],
+  "ext": []
+ },
+ {
+  "family": "148",
+  "configs": [
+   "SelfSimilar",
+   "SelfSimilarCorollaries"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 64,
+  "closure_lines": 12093,
+  "main_dirs": [
+   "MeasureTheory/SelfSimilar"
+  ],
+  "ext": []
+ },
+ {
+  "family": "149",
+  "configs": [
+   "MassAction"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 71,
+  "closure_lines": 7758,
+  "main_dirs": [
+   "Analysis/MassAction"
+  ],
+  "ext": []
+ },
+ {
+  "family": "150",
+  "configs": [
+   "IrrationalTriangleBilliard"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 39,
+  "closure_lines": 12363,
+  "main_dirs": [
+   "Dynamics/TriangleBilliards"
+  ],
+  "ext": []
+ },
+ {
+  "family": "151",
+  "configs": [
+   "C1EntropyCounterexample"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 201,
+  "closure_lines": 22878,
+  "main_dirs": [
+   "Dynamics/EntropyCounterexample",
+   "Geometry/SingularHomology",
+   "Combinatorics/PerfectMatching"
+  ],
+  "ext": []
+ },
+ {
+  "family": "152",
+  "configs": [
+   "SmoothObstruction"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 53,
+  "closure_lines": 30090,
+  "main_dirs": [
+   "Dynamics/SmoothObstruction"
+  ],
+  "ext": []
+ },
+ {
+  "family": "155",
+  "configs": [
+   "PeriodicTilingThree"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 122,
+  "closure_lines": 16899,
+  "main_dirs": [
+   "Geometry/PeriodicTiling"
+  ],
+  "ext": []
+ },
+ {
+  "family": "156",
+  "configs": [
+   "BorsukNine"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 269,
+  "closure_lines": 78964,
+  "main_dirs": [
+   "Geometry/Borsuk"
+  ],
+  "ext": []
+ },
+ {
+  "family": "157",
+  "configs": [
+   "HadwigerCounterexample",
+   "ListHadwiger"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 339,
+  "closure_lines": 59351,
+  "main_dirs": [
+   "Combinatorics/HadwigerCounterexample",
+   "Combinatorics/ListHadwiger",
+   "Combinatorics/HadwigerMatching"
+  ],
+  "ext": []
+ },
+ {
+  "family": "158",
+  "configs": [
+   "EuclideanFiveColor",
+   "PlaneColoring"
+  ],
+  "configs_in_yaml": 2,
+  "closure_files": 79,
+  "closure_lines": 30855,
+  "main_dirs": [
+   "Geometry/PlaneColoring",
+   "Analysis/PlaneSpectrum",
+   "MeasureTheory/CompactFactors"
+  ],
+  "ext": []
+ },
+ {
+  "family": "159",
+  "configs": [
+   "ErdosReciprocal"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 4774,
+  "closure_lines": 1122983,
+  "main_dirs": [
+   "Combinatorics/Progressions"
+  ],
+  "ext": []
+ },
+ {
+  "family": "160",
+  "configs": [
+   "QuantitativeVanDerWaerden"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 115,
+  "closure_lines": 14837,
+  "main_dirs": [
+   "Combinatorics/ProgressionColoring"
+  ],
+  "ext": []
+ },
+ {
+  "family": "161",
+  "configs": [
+   "SidorenkoCounterexample"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 35,
+  "closure_lines": 23761,
+  "main_dirs": [
+   "Combinatorics/Sidorenko"
+  ],
+  "ext": []
+ },
+ {
+  "family": "162",
+  "configs": [
+   "BalancedRyser",
+   "RyserCovering",
+   "RyserOddExtensions"
+  ],
+  "configs_in_yaml": 2,
+  "closure_files": 918,
+  "closure_lines": 116039,
+  "main_dirs": [
+   "Combinatorics/BalancedRyser",
+   "Combinatorics/Ryser"
+  ],
+  "ext": [
+   "all"
+  ]
+ },
+ {
+  "family": "165",
+  "configs": [
+   "BipartiteCrossing",
+   "CompleteCrossing"
+  ],
+  "configs_in_yaml": 2,
+  "closure_files": 385,
+  "closure_lines": 38663,
+  "main_dirs": [
+   "Combinatorics/Crossing",
+   "Combinatorics/CompleteCrossing"
+  ],
+  "ext": []
+ },
+ {
+  "family": "167",
+  "configs": [
+   "PinnedDistances",
+   "PlanarUnitDistances"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 87,
+  "closure_lines": 43770,
+  "main_dirs": [
+   "Geometry/PinnedDistances",
+   "Geometry/UnitDistances"
+  ],
+  "ext": []
+ },
+ {
+  "family": "168",
+  "configs": [
+   "KLInvariance"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 34,
+  "closure_lines": 42948,
+  "main_dirs": [
+   "RepresentationTheory/KazhdanLusztig"
+  ],
+  "ext": []
+ },
+ {
+  "family": "169",
+  "configs": [
+   "ElementaryPositivity"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 549,
+  "closure_lines": 74575,
+  "main_dirs": [
+   "Combinatorics/Chromatic"
+  ],
+  "ext": []
+ },
+ {
+  "family": "170",
+  "configs": [
+   "RamseyFive",
+   "SharpLogRamsey"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 858,
+  "closure_lines": 123565,
+  "main_dirs": [
+   "Combinatorics/RamseyFive",
+   "Combinatorics/SharpRamsey"
+  ],
+  "ext": []
+ },
+ {
+  "family": "172",
+  "configs": [
+   "EuclideanRamsey",
+   "EuclideanRamseyCircle",
+   "EuclideanRamseyNine",
+   "EuclideanRamseyQuadratic",
+   "EuclideanRamseySpherical",
+   "EuclideanRamseyTransitive",
+   "GrahamSpherical"
+  ],
+  "configs_in_yaml": 2,
+  "closure_files": 65,
+  "closure_lines": 9589,
+  "main_dirs": [
+   "Combinatorics/EuclideanRamsey",
+   "Combinatorics/SphericalRamsey"
+  ],
+  "ext": []
+ },
+ {
+  "family": "173",
+  "configs": [
+   "SeymourSecondNeighborhood"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 43,
+  "closure_lines": 4861,
+  "main_dirs": [
+   "Combinatorics/SecondNeighborhood"
+  ],
+  "ext": []
+ },
+ {
+  "family": "174",
+  "configs": [
+   "AlgorithmicThinTrees",
+   "StrongThinTree"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 736,
+  "closure_lines": 101101,
+  "main_dirs": [
+   "Analysis/MatrixSigning",
+   "Combinatorics/ThinTrees"
+  ],
+  "ext": []
+ },
+ {
+  "family": "175",
+  "configs": [
+   "TalagrandDiscreteConvexity",
+   "TalagrandExpectationThreshold"
+  ],
+  "configs_in_yaml": 2,
+  "closure_files": 83,
+  "closure_lines": 9093,
+  "main_dirs": [
+   "Combinatorics/ExpectationThreshold",
+   "Combinatorics/DiscreteConvexity"
+  ],
+  "ext": []
+ },
+ {
+  "family": "176",
+  "configs": [
+   "SecondKahnKalai"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 37,
+  "closure_lines": 6753,
+  "main_dirs": [
+   "Combinatorics/GraphThreshold"
+  ],
+  "ext": []
+ },
+ {
+  "family": "177",
+  "configs": [
+   "CoboundaryExpanders"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 36,
+  "closure_lines": 33125,
+  "main_dirs": [
+   "Combinatorics/Coboundary",
+   "GroupTheory/Congruence",
+   "Geometry/Coboundary"
+  ],
+  "ext": []
+ },
+ {
+  "family": "179",
+  "configs": [
+   "CirculantHadamard",
+   "EvenBarker"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 73,
+  "closure_lines": 9773,
+  "main_dirs": [
+   "LinearAlgebra/CirculantHadamard",
+   "LinearAlgebra/Barker"
+  ],
+  "ext": []
+ },
+ {
+  "family": "180",
+  "configs": [
+   "BarnetteHamiltonian"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 31,
+  "closure_lines": 8936,
+  "main_dirs": [
+   "Combinatorics/Hamiltonian"
+  ],
+  "ext": []
+ },
+ {
+  "family": "181",
+  "configs": [
+   "CycleDecomposition"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 34,
+  "closure_lines": 21451,
+  "main_dirs": [
+   "Combinatorics/CycleDecomposition"
+  ],
+  "ext": []
+ },
+ {
+  "family": "182",
+  "configs": [
+   "SquareDifference"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 81,
+  "closure_lines": 24221,
+  "main_dirs": [
+   "Combinatorics/SquareDifference"
+  ],
+  "ext": []
+ },
+ {
+  "family": "183",
+  "configs": [
+   "HalvingLines"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 47,
+  "closure_lines": 18237,
+  "main_dirs": [
+   "Combinatorics/HalvingLines"
+  ],
+  "ext": []
+ },
+ {
+  "family": "184",
+  "configs": [
+   "CliqueFreeLog"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 31,
+  "closure_lines": 5539,
+  "main_dirs": [
+   "Combinatorics/CliqueFree"
+  ],
+  "ext": []
+ },
+ {
+  "family": "185",
+  "configs": [
+   "InfiniteMatroid",
+   "InfiniteMatroidCorollaries"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 33,
+  "closure_lines": 4477,
+  "main_dirs": [
+   "Combinatorics/InfiniteMatroid"
+  ],
+  "ext": []
+ },
+ {
+  "family": "186",
+  "configs": [
+   "SharpThreshold"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 78,
+  "closure_lines": 7699,
+  "main_dirs": [
+   "Combinatorics/SharpThreshold"
+  ],
+  "ext": []
+ },
+ {
+  "family": "187",
+  "configs": [
+   "SnakyCertificate",
+   "SnakyConditional",
+   "SnakyTwentyOne"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 354,
+  "closure_lines": 129400,
+  "main_dirs": [
+   "GameTheory/SnakyConditional",
+   "GameTheory/SnakyTwentyOne",
+   "Combinatorics/SnakyCertificate"
+  ],
+  "ext": []
+ },
+ {
+  "family": "188",
+  "configs": [
+   "TriangleRemoval"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 287,
+  "closure_lines": 33800,
+  "main_dirs": [
+   "Combinatorics/TriangleRemoval"
+  ],
+  "ext": []
+ },
+ {
+  "family": "189",
+  "configs": [
+   "CycleCliqueRamsey"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 443,
+  "closure_lines": 2795707,
+  "main_dirs": [
+   "Combinatorics/Ramsey"
+  ],
+  "ext": []
+ },
+ {
+  "family": "190",
+  "configs": [
+   "MatrixRemoval"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 61,
+  "closure_lines": 7609,
+  "main_dirs": [
+   "Combinatorics/MatrixRemoval"
+  ],
+  "ext": []
+ },
+ {
+  "family": "191",
+  "configs": [
+   "HeilbronnTriangle"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 195,
+  "closure_lines": 24275,
+  "main_dirs": [
+   "Geometry/HeilbronnTriangle"
+  ],
+  "ext": []
+ },
+ {
+  "family": "192",
+  "configs": [
+   "SquareRootDegree"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 21,
+  "closure_lines": 3641,
+  "main_dirs": [
+   "Combinatorics/BooleanFunctions"
+  ],
+  "ext": []
+ },
+ {
+  "family": "194",
+  "configs": [
+   "DuttaDomain"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 278,
+  "closure_lines": 53953,
+  "main_dirs": [
+   "RingTheory/Multiplicity"
+  ],
+  "ext": []
+ },
+ {
+  "family": "195",
+  "configs": [
+   "SurfaceConeCandidateSupport"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 11,
+  "closure_lines": 7844,
+  "main_dirs": [
+   "AlgebraicGeometry/SurfaceCones"
+  ],
+  "ext": []
+ },
+ {
+  "family": "196",
+  "configs": [
+   "TorsionFreeZeroDivisors"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 123,
+  "closure_lines": 44340,
+  "main_dirs": [
+   "Algebra/GroupRing"
+  ],
+  "ext": []
+ },
+ {
+  "family": "197",
+  "configs": [
+   "GroupRingDeterminant",
+   "KaplanskyDirectFiniteness",
+   "KaplanskyFinitelyPresented",
+   "OddKaplansky"
+  ],
+  "configs_in_yaml": 3,
+  "closure_files": 246,
+  "closure_lines": 29665,
+  "main_dirs": [
+   "RingTheory/DirectFiniteness",
+   "Algebra/OddKaplansky",
+   "Analysis/GroupDeterminants"
+  ],
+  "ext": []
+ },
+ {
+  "family": "198",
+  "configs": [
+   "FinitisticAsymmetry",
+   "LittleFinitistic"
+  ],
+  "configs_in_yaml": 2,
+  "closure_files": 588,
+  "closure_lines": 50191,
+  "main_dirs": [
+   "Algebra/Finitistic",
+   "Algebra/FinitisticAsymmetry"
+  ],
+  "ext": []
+ },
+ {
+  "family": "199",
+  "configs": [
+   "AuslanderReiten",
+   "Tachikawa"
+  ],
+  "configs_in_yaml": 2,
+  "closure_files": 763,
+  "closure_lines": 84473,
+  "main_dirs": [
+   "Algebra/AuslanderReiten",
+   "RingTheory/Tachikawa"
+  ],
+  "ext": []
+ },
+ {
+  "family": "205",
+  "configs": [
+   "Saxl",
+   "UniversalTensorSquares"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 573,
+  "closure_lines": 217185,
+  "main_dirs": [
+   "RepresentationTheory/UniversalSquare",
+   "RepresentationTheory/Saxl"
+  ],
+  "ext": []
+ },
+ {
+  "family": "206",
+  "configs": [
+   "FiniteCongruenceGraph"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 2,
+  "closure_lines": 469,
+  "main_dirs": [
+   "Algebra/Universal"
+  ],
+  "ext": []
+ },
+ {
+  "family": "207",
+  "configs": [
+   "BassTorsionFree",
+   "BassTrace"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 73,
+  "closure_lines": 24157,
+  "main_dirs": [
+   "RingTheory/BassTrace"
+  ],
+  "ext": []
+ },
+ {
+  "family": "210",
+  "configs": [
+   "FoulkesHowe"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 63,
+  "closure_lines": 5029,
+  "main_dirs": [
+   "RepresentationTheory/FoulkesHowe"
+  ],
+  "ext": []
+ },
+ {
+  "family": "211",
+  "configs": [
+   "FKCRT"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 61,
+  "closure_lines": 40208,
+  "main_dirs": [
+   "Probability/FKMaps"
+  ],
+  "ext": []
+ },
+ {
+  "family": "212",
+  "configs": [
+   "GammaPassage",
+   "PlanarFirstPassage"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 376,
+  "closure_lines": 36801,
+  "main_dirs": [
+   "Probability/GammaPassage",
+   "Probability/FirstPassage",
+   "Probability/LatticePassage"
+  ],
+  "ext": []
+ },
+ {
+  "family": "213",
+  "configs": [
+   "CriticalPercolation",
+   "CriticalZ3"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 661,
+  "closure_lines": 78582,
+  "main_dirs": [
+   "Probability/CriticalPercolation",
+   "Probability/CriticalZ3"
+  ],
+  "ext": []
+ },
+ {
+  "family": "214",
+  "configs": [
+   "BenjaminiSchramm",
+   "CayleyPercolation"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 990,
+  "closure_lines": 154132,
+  "main_dirs": [
+   "Probability/CriticalPercolation",
+   "Probability/BenjaminiSchramm",
+   "Probability/UnimodularPercolation"
+  ],
+  "ext": []
+ },
+ {
+  "family": "215",
+  "configs": [
+   "ClassicalON"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 117,
+  "closure_lines": 12907,
+  "main_dirs": [
+   "Probability/ClassicalON"
+  ],
+  "ext": []
+ },
+ {
+  "family": "218",
+  "configs": [
+   "BufferedIsing"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 15,
+  "closure_lines": 3114,
+  "main_dirs": [
+   "Probability/Ising"
+  ],
+  "ext": []
+ },
+ {
+  "family": "220",
+  "configs": [
+   "DirectionalBallisticity",
+   "DirectionalWalk",
+   "VelocityHemisphere"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 585,
+  "closure_lines": 116839,
+  "main_dirs": [
+   "Probability/Ballisticity",
+   "Probability/DirectionalWalk"
+  ],
+  "ext": []
+ },
+ {
+  "family": "221",
+  "configs": [
+   "DilutedSpin"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 405,
+  "closure_lines": 56285,
+  "main_dirs": [
+   "Probability/DilutedSpin"
+  ],
+  "ext": []
+ },
+ {
+  "family": "222",
+  "configs": [
+   "IsingFiniteness",
+   "PerceptronFreeEnergy",
+   "SphericalField"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 598,
+  "closure_lines": 125425,
+  "main_dirs": [
+   "Probability/Perceptron",
+   "Probability/SphericalField",
+   "Probability/IsingPerceptron"
+  ],
+  "ext": []
+ },
+ {
+  "family": "227",
+  "configs": [
+   "CriticalSK",
+   "CriticalSKMixing",
+   "SKBarriers",
+   "SKHighTemperature",
+   "SKRatio"
+  ],
+  "configs_in_yaml": 2,
+  "closure_files": 1427,
+  "closure_lines": 221557,
+  "main_dirs": [
+   "Probability/SKBarriers",
+   "Probability/SKGap",
+   "Probability/SKRatio"
+  ],
+  "ext": []
+ },
+ {
+  "family": "228",
+  "configs": [
+   "ContinuumTransition",
+   "RadialDensityInterval",
+   "RadialTransition"
+  ],
+  "configs_in_yaml": 2,
+  "closure_files": 265,
+  "closure_lines": 29318,
+  "main_dirs": [
+   "Probability/ContinuumTransition",
+   "Probability/RadialTransition"
+  ],
+  "ext": []
+ },
+ {
+  "family": "229",
+  "configs": [
+   "ThreeStateSupercritical",
+   "ThreeStateTreeClauses"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 58,
+  "closure_lines": 15483,
+  "main_dirs": [
+   "Probability/ThreeStateClauses",
+   "Probability/ThreeState"
+  ],
+  "ext": []
+ },
+ {
+  "family": "230",
+  "configs": [
+   "SLELowerPositivity"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 65,
+  "closure_lines": 45103,
+  "main_dirs": [
+   "Probability/SLE"
+  ],
+  "ext": []
+ },
+ {
+  "family": "231",
+  "configs": [
+   "FreeUniformSpanningForest",
+   "StronglyRayleighDPP"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 331,
+  "closure_lines": 37372,
+  "main_dirs": [
+   "Probability/SpanningForest",
+   "Probability/StrongRayleigh"
+  ],
+  "ext": [
+   "all"
+  ]
+ },
+ {
+  "family": "234",
+  "configs": [
+   "InvariantIsing"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 2123,
+  "closure_lines": 210755,
+  "main_dirs": [
+   "Probability/InvariantIsing",
+   "Probability/IsingPerceptron",
+   "Analysis/KLS"
+  ],
+  "ext": []
+ },
+ {
+  "family": "235",
+  "configs": [
+   "FixedClauseThreshold",
+   "SATComputability",
+   "SATSharpness",
+   "SATVariance"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 627,
+  "closure_lines": 94276,
+  "main_dirs": [
+   "Probability/DilutedSpin",
+   "Probability/SATComputability",
+   "MathematicalPhysics/RapidForcing"
+  ],
+  "ext": []
+ },
+ {
+  "family": "236",
+  "configs": [
+   "FreeIsing"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 891,
+  "closure_lines": 117435,
+  "main_dirs": [
+   "Probability/FreeIsing"
+  ],
+  "ext": []
+ },
+ {
+  "family": "237",
+  "configs": [
+   "CriticalStripMass",
+   "HoneycombBridgeFiniteness",
+   "HoneycombBridgeMassSupport",
+   "HoneycombFreeEnergy"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 272,
+  "closure_lines": 134842,
+  "main_dirs": [
+   "Combinatorics/StripMass",
+   "Combinatorics/HoneycombChords",
+   "Combinatorics/HoneycombCorridor"
+  ],
+  "ext": []
+ },
+ {
+  "family": "238",
+  "configs": [
+   "BinarySweep",
+   "CoordinateSweeps",
+   "CoordinateTrace",
+   "FourRowPermanent",
+   "OccupiedOverlap",
+   "PartialPermutation",
+   "SignedSweepMoment",
+   "SpinAngle",
+   "ThorpFirstReciprocal",
+   "ThorpRemaining",
+   "ThorpRouting",
+   "ThorpWeightedCompatibility",
+   "WeightedSweepMoments"
+  ],
+  "configs_in_yaml": 4,
+  "closure_files": 806,
+  "closure_lines": 267721,
+  "main_dirs": [
+   "Probability/BinarySweep",
+   "Probability/SignedSweeps",
+   "Probability/ThorpRouting"
+  ],
+  "ext": []
+ },
+ {
+  "family": "240",
+  "configs": [
+   "CHObstruction"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 15,
+  "closure_lines": 5089,
+  "main_dirs": [
+   "ModelTheory/Categoricity"
+  ],
+  "ext": []
+ },
+ {
+  "family": "241",
+  "configs": [
+   "DegreeRigidity"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 974,
+  "closure_lines": 84081,
+  "main_dirs": [
+   "Computability/DegreeRigidity"
+  ],
+  "ext": []
+ },
+ {
+  "family": "242",
+  "configs": [
+   "SingleFold"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 28,
+  "closure_lines": 7598,
+  "main_dirs": [
+   "NumberTheory/SingleFold"
+  ],
+  "ext": []
+ },
+ {
+  "family": "243",
+  "configs": [
+   "ChoicelessPolynomialTime",
+   "WitnessedChoice"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 53,
+  "closure_lines": 44842,
+  "main_dirs": [
+   "Computability/WitnessedChoice",
+   "ModelTheory/Choiceless"
+  ],
+  "ext": []
+ },
+ {
+  "family": "244",
+  "configs": [
+   "PartitionConsistency",
+   "PartitionPrinciple"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 1018,
+  "closure_lines": 266449,
+  "main_dirs": [
+   "SetTheory/PartitionPrinciple",
+   "SetTheory/PartitionConsistency"
+  ],
+  "ext": [
+   "Init"
+  ]
+ },
+ {
+  "family": "245",
+  "configs": [
+   "TypeSystemNormalization"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 33,
+  "closure_lines": 29547,
+  "main_dirs": [
+   "Computability/TypeSystem"
+  ],
+  "ext": []
+ },
+ {
+  "family": "246",
+  "configs": [
+   "CannonGeometricAction"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 299,
+  "closure_lines": 69536,
+  "main_dirs": [
+   "Geometry/Cannon"
+  ],
+  "ext": []
+ },
+ {
+  "family": "247",
+  "configs": [
+   "PeriodicGroup"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 63,
+  "closure_lines": 38076,
+  "main_dirs": [
+   "GroupTheory/PeriodicGroups"
+  ],
+  "ext": []
+ },
+ {
+  "family": "248",
+  "configs": [
+   "ThompsonNonamenability"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 68,
+  "closure_lines": 9457,
+  "main_dirs": [
+   "GroupTheory/Thompson"
+  ],
+  "ext": []
+ },
+ {
+  "family": "249",
+  "configs": [
+   "EilenbergGanea"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 40,
+  "closure_lines": 34123,
+  "main_dirs": [
+   "Topology/EilenbergGanea",
+   "AlgebraicTopology/Cubical",
+   "AlgebraicTopology/CWComplex"
+  ],
+  "ext": []
+ },
+ {
+  "family": "250",
+  "configs": [
+   "BooneHigman",
+   "SimpleOvergroups",
+   "UniversalFInfinity"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 290,
+  "closure_lines": 111394,
+  "main_dirs": [
+   "GroupTheory/FiniteType",
+   "GroupTheory/SimpleOvergroups",
+   "GroupTheory/UniversalGroup"
+  ],
+  "ext": []
+ },
+ {
+  "family": "251",
+  "configs": [
+   "Dixmier",
+   "DixmierAllDiscrete"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 39,
+  "closure_lines": 4092,
+  "main_dirs": [
+   "Analysis/Unitarizability"
+  ],
+  "ext": []
+ },
+ {
+  "family": "252",
+  "configs": [
+   "TorsionFreeHyperbolic"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 29,
+  "closure_lines": 10737,
+  "main_dirs": [
+   "GroupTheory/Hyperbolic"
+  ],
+  "ext": []
+ },
+ {
+  "family": "253",
+  "configs": [
+   "SimpleAmenable"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 550,
+  "closure_lines": 84848,
+  "main_dirs": [
+   "GroupTheory/SimpleAmenable"
+  ],
+  "ext": []
+ },
+ {
+  "family": "254",
+  "configs": [
+   "ArtinCAT0",
+   "ArtinParabolicIntersections",
+   "HarmonicArtin"
+  ],
+  "configs_in_yaml": 2,
+  "closure_files": 901,
+  "closure_lines": 91315,
+  "main_dirs": [
+   "Topology/ArtinGroups",
+   "GroupTheory/ArtinCAT0"
+  ],
+  "ext": []
+ },
+ {
+  "family": "255",
+  "configs": [
+   "PolycyclicRecognition"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 2679,
+  "closure_lines": 232617,
+  "main_dirs": [
+   "GroupTheory/PolycyclicRecognition",
+   "GroupTheory/Thompson",
+   "Probability/CriticalPercolation"
+  ],
+  "ext": [
+   "Gromov"
+  ]
+ },
+ {
+  "family": "256",
+  "configs": [
+   "Kervaire"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 47,
+  "closure_lines": 11273,
+  "main_dirs": [
+   "GroupTheory/Kervaire"
+  ],
+  "ext": []
+ },
+ {
+  "family": "257",
+  "configs": [
+   "HyperbolicObstruction"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 417,
+  "closure_lines": 56644,
+  "main_dirs": [
+   "Geometry/HyperbolicGroups"
+  ],
+  "ext": []
+ },
+ {
+  "family": "260",
+  "configs": [
+   "CKSBondiPenrose"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 336,
+  "closure_lines": 58903,
+  "main_dirs": [
+   "Geometry/Relativity"
+  ],
+  "ext": []
+ },
+ {
+  "family": "261",
+  "configs": [
+   "PlanarAndersonSpectrum"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 1,
+  "closure_lines": 767,
+  "main_dirs": [
+   "MathematicalPhysics/PlanarAnderson"
+  ],
+  "ext": []
+ },
+ {
+  "family": "262",
+  "configs": [
+   "LiebThirring"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 38,
+  "closure_lines": 13717,
+  "main_dirs": [
+   "Analysis/LiebThirring"
+  ],
+  "ext": []
+ },
+ {
+  "family": "263",
+  "configs": [
+   "CoulombIonization",
+   "CoulombRadii"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 1035,
+  "closure_lines": 172608,
+  "main_dirs": [
+   "Analysis/CoulombIonization",
+   "Analysis/CoulombRadii"
+  ],
+  "ext": []
+ },
+ {
+  "family": "266",
+  "configs": [
+   "HadamardCubeFiber",
+   "MUBSix"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 3387,
+  "closure_lines": 2835607,
+  "main_dirs": [
+   "Analysis/MutuallyUnbiased",
+   "LinearAlgebra/Hadamard"
+  ],
+  "ext": []
+ },
+ {
+  "family": "267",
+  "configs": [
+   "HardSphere"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 466,
+  "closure_lines": 71853,
+  "main_dirs": [
+   "Analysis/HardSphere"
+  ],
+  "ext": []
+ },
+ {
+  "family": "269",
+  "configs": [
+   "Laughlin",
+   "LaughlinFock",
+   "LaughlinGap",
+   "LaughlinPlanar"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 1675,
+  "closure_lines": 228815,
+  "main_dirs": [
+   "Analysis/Laughlin",
+   "Analysis/LaughlinFock",
+   "Analysis/LaughlinGap"
+  ],
+  "ext": []
+ },
+ {
+  "family": "271",
+  "configs": [
+   "Heisenberg"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 128,
+  "closure_lines": 25400,
+  "main_dirs": [
+   "MathematicalPhysics/Heisenberg"
+  ],
+  "ext": []
+ },
+ {
+  "family": "272",
+  "configs": [
+   "DimensionTenChannel",
+   "DimensionTenPair"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 148,
+  "closure_lines": 44673,
+  "main_dirs": [
+   "Analysis/Quantum",
+   "InformationTheory/SecretKey",
+   "InformationTheory/DimensionTen"
+  ],
+  "ext": []
+ },
+ {
+  "family": "273",
+  "configs": [
+   "EntropyPhotonNumber"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 26,
+  "closure_lines": 27838,
+  "main_dirs": [
+   "InformationTheory/PhotonNumber",
+   "MathematicalPhysics/Fock",
+   "Analysis/TensorLp.lean"
+  ],
+  "ext": []
+ },
+ {
+  "family": "274",
+  "configs": [
+   "QACParity",
+   "RegularParity"
+  ],
+  "configs_in_yaml": 2,
+  "closure_files": 22,
+  "closure_lines": 3658,
+  "main_dirs": [
+   "InformationTheory/QuantumCircuit"
+  ],
+  "ext": []
+ },
+ {
+  "family": "275",
+  "configs": [
+   "ContinuumCoulombHardness"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 2086,
+  "closure_lines": 222484,
+  "main_dirs": [
+   "MathematicalPhysics/ContinuumCoulomb",
+   "Computability/QuantumFactoring",
+   "Analysis/CoulombRadii"
+  ],
+  "ext": [
+   "RellichKondrachov"
+  ]
+ },
+ {
+  "family": "276",
+  "configs": [
+   "AmplitudeDamping"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 35,
+  "closure_lines": 6206,
+  "main_dirs": [
+   "InformationTheory/AmplitudeDamping"
+  ],
+  "ext": []
+ },
+ {
+  "family": "277",
+  "configs": [
+   "EntangledGames"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 30,
+  "closure_lines": 7234,
+  "main_dirs": [
+   "Probability/EntangledGames"
+  ],
+  "ext": []
+ },
+ {
+  "family": "279",
+  "configs": [
+   "ExactQuantumFactoring"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 546,
+  "closure_lines": 54007,
+  "main_dirs": [
+   "Computability/QuantumFactoring"
+  ],
+  "ext": []
+ },
+ {
+  "family": "280",
+  "configs": [
+   "VertexAlgebraNet"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 77,
+  "closure_lines": 28634,
+  "main_dirs": [
+   "RepresentationTheory/VertexAlgebra"
+  ],
+  "ext": []
+ },
+ {
+  "family": "281",
+  "configs": [
+   "SKFullSupport",
+   "SKValue"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 347,
+  "closure_lines": 50201,
+  "main_dirs": [
+   "Probability/SKValue",
+   "Probability/SKSupport"
+  ],
+  "ext": []
+ },
+ {
+  "family": "287",
+  "configs": [
+   "InterpolatedFactors"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 77,
+  "closure_lines": 26804,
+  "main_dirs": [
+   "Analysis/InterpolatedFactors",
+   "Analysis/FreeGroupFactor"
+  ],
+  "ext": []
+ },
+ {
+  "family": "288",
+  "configs": [
+   "KadisonSimilarity",
+   "UniformCommutator"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 1472,
+  "closure_lines": 194936,
+  "main_dirs": [
+   "Analysis/Commutator",
+   "Analysis/KadisonSimilarity",
+   "Analysis/BoundedHochschild"
+  ],
+  "ext": []
+ },
+ {
+  "family": "289",
+  "configs": [
+   "StrongKadisonKastler"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 2652,
+  "closure_lines": 326060,
+  "main_dirs": [
+   "Analysis/KadisonKastler",
+   "Analysis/KadisonSimilarity",
+   "Analysis/BoundedHochschild"
+  ],
+  "ext": []
+ },
+ {
+  "family": "290",
+  "configs": [
+   "BoundedRecovery"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 27,
+  "closure_lines": 8104,
+  "main_dirs": [
+   "Analysis/ModularRecovery"
+  ],
+  "ext": []
+ },
+ {
+  "family": "291",
+  "configs": [
+   "UniformGamma"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 51,
+  "closure_lines": 17302,
+  "main_dirs": [
+   "Analysis/TracialSplitting"
+  ],
+  "ext": []
+ },
+ {
+  "family": "292",
+  "configs": [
+   "NuclearUltrapower"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 39,
+  "closure_lines": 18473,
+  "main_dirs": [
+   "Analysis/NuclearUltrapower"
+  ],
+  "ext": []
+ },
+ {
+  "family": "293",
+  "configs": [
+   "BackwardIntertwiners",
+   "ContinuousCircleWeight",
+   "FiniteFactor",
+   "HyperinvariantSubspaces",
+   "IrrationalRotation",
+   "ProductBrown"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 1108,
+  "closure_lines": 130034,
+  "main_dirs": [
+   "Analysis/IrrationalRotation",
+   "Analysis/FiniteFactor",
+   "Analysis/RotationWeights"
+  ],
+  "ext": []
+ },
+ {
+  "family": "294",
+  "configs": [
+   "KaplanskyQuasitrace",
+   "KaplanskyStableFiniteness"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 181,
+  "closure_lines": 37896,
+  "main_dirs": [
+   "Analysis/Kaplansky",
+   "Geometry/ComplexBundle",
+   "AlgebraicTopology/IntegralHomology"
+  ],
+  "ext": []
+ },
+ {
+  "family": "295",
+  "configs": [
+   "KadisonRingrose"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 372,
+  "closure_lines": 62822,
+  "main_dirs": [
+   "Analysis/BoundedHochschild",
+   "Analysis/TracialCohomology",
+   "Analysis/Naimark"
+  ],
+  "ext": []
+ },
+ {
+  "family": "296",
+  "configs": [
+   "FactorGeneration",
+   "RelativeGeneration"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 102,
+  "closure_lines": 36021,
+  "main_dirs": [
+   "Analysis/FactorGeneration",
+   "Analysis/RelativeGeneration",
+   "Analysis/FreeGroupFactor"
+  ],
+  "ext": []
+ },
+ {
+  "family": "297",
+  "configs": [
+   "Naimark"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 16,
+  "closure_lines": 25931,
+  "main_dirs": [
+   "Analysis/Naimark"
+  ],
+  "ext": []
+ },
+ {
+  "family": "298",
+  "configs": [
+   "FiniteEntropySeparation"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 153,
+  "closure_lines": 15557,
+  "main_dirs": [
+   "Analysis/FreeEntropy"
+  ],
+  "ext": []
+ },
+ {
+  "family": "299",
+  "configs": [
+   "CharacterCriterion"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 62,
+  "closure_lines": 25294,
+  "main_dirs": [
+   "Analysis/CharacterCriterion"
+  ],
+  "ext": []
+ },
+ {
+  "family": "301",
+  "configs": [
+   "TraceIdealTransportSupport"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 3,
+  "closure_lines": 1147,
+  "main_dirs": [
+   "Analysis/TraceCone"
+  ],
+  "ext": []
+ },
+ {
+  "family": "303",
+  "configs": [
+   "ExactInfiniteness",
+   "IndividualStrongInfiniteness"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 1012,
+  "closure_lines": 150750,
+  "main_dirs": [
+   "Analysis/WeakInfiniteness",
+   "Analysis/OInfinity",
+   "Analysis/JiangSu"
+  ],
+  "ext": []
+ },
+ {
+  "family": "307",
+  "configs": [
+   "CoarseAssembly"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 347,
+  "closure_lines": 44622,
+  "main_dirs": [
+   "Topology/CoarseAssembly",
+   "Analysis/NuclearUltrapower",
+   "Topology/CoarseAssembly.lean"
+  ],
+  "ext": []
+ },
+ {
+  "family": "312",
+  "configs": [
+   "GrothendieckElementaryExpansion"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 58,
+  "closure_lines": 12753,
+  "main_dirs": [
+   "CategoryTheory/Globular"
+  ],
+  "ext": []
+ },
+ {
+  "family": "317",
+  "configs": [
+   "ThomasonModelStructures"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 85,
+  "closure_lines": 65284,
+  "main_dirs": [
+   "CategoryTheory/Thomason"
+  ],
+  "ext": []
+ },
+ {
+  "family": "322",
+  "configs": [
+   "TingleySphereIsometry"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 67,
+  "closure_lines": 9273,
+  "main_dirs": [
+   "Analysis/SphereIsometry"
+  ],
+  "ext": []
+ },
+ {
+  "family": "323",
+  "configs": [
+   "SeparableQuotientNegative"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 51,
+  "closure_lines": 14178,
+  "main_dirs": [
+   "Analysis/SeparableQuotients"
+  ],
+  "ext": []
+ },
+ {
+  "family": "324",
+  "configs": [
+   "C0Absorption",
+   "LipschitzEquivalence"
+  ],
+  "configs_in_yaml": 2,
+  "closure_files": 94,
+  "closure_lines": 18725,
+  "main_dirs": [
+   "Analysis/LipschitzEquivalence",
+   "Analysis/C0Absorption"
+  ],
+  "ext": []
+ },
+ {
+  "family": "325",
+  "configs": [
+   "CompleteCrouzeix",
+   "CrouzeixHilbert",
+   "DirectCrouzeix",
+   "HilbertCrouzeix",
+   "StructuralCrouzeix"
+  ],
+  "configs_in_yaml": 3,
+  "closure_files": 199,
+  "closure_lines": 39133,
+  "main_dirs": [
+   "Analysis/Crouzeix",
+   "Analysis/NumericalRange",
+   "Analysis/DirectCrouzeix"
+  ],
+  "ext": []
+ },
+ {
+  "family": "326",
+  "configs": [
+   "Cotype"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 125,
+  "closure_lines": 11759,
+  "main_dirs": [
+   "Analysis/Cotype"
+  ],
+  "ext": []
+ },
+ {
+  "family": "327",
+  "configs": [
+   "MarkovType"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 207,
+  "closure_lines": 27054,
+  "main_dirs": [
+   "Analysis/MarkovType"
+  ],
+  "ext": [
+   "Init"
+  ]
+ },
+ {
+  "family": "328",
+  "configs": [
+   "ReflexiveFixedPoints"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 86,
+  "closure_lines": 11540,
+  "main_dirs": [
+   "Analysis/Nonexpansive"
+  ],
+  "ext": []
+ },
+ {
+  "family": "329",
+  "configs": [
+   "MetricEntropyDuality"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 52,
+  "closure_lines": 6520,
+  "main_dirs": [
+   "Analysis/MetricEntropy"
+  ],
+  "ext": []
+ },
+ {
+  "family": "330",
+  "configs": [
+   "DiscreteLipschitzFree",
+   "RealL1Renorming"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 34,
+  "closure_lines": 4614,
+  "main_dirs": [
+   "Analysis/LipschitzFree"
+  ],
+  "ext": []
+ },
+ {
+  "family": "331",
+  "configs": [
+   "BoundedTreePotentials",
+   "DaugavetModuli",
+   "DiamondDistortion",
+   "ForestSpace",
+   "IndependentProducts",
+   "MidpointLenses",
+   "RecursivePotentials"
+  ],
+  "configs_in_yaml": 7,
+  "closure_files": 171,
+  "closure_lines": 49376,
+  "main_dirs": [
+   "Analysis/TreePotential",
+   "Analysis/DiamondDistortion",
+   "Analysis/Daugavet"
+  ],
+  "ext": []
+ },
+ {
+  "family": "333",
+  "configs": [
+   "SurfaceImmersion"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 1883,
+  "closure_lines": 167865,
+  "main_dirs": [
+   "Geometry/SurfaceImmersion",
+   "Geometry/Immersion"
+  ],
+  "ext": [
+   "SphereEversion"
+  ]
+ },
+ {
+  "family": "334",
+  "configs": [
+   "IsometricImmersion"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 446,
+  "closure_lines": 56586,
+  "main_dirs": [
+   "Geometry/IsometricImmersion"
+  ],
+  "ext": []
+ },
+ {
+  "family": "337",
+  "configs": [
+   "FillingCoefficient",
+   "SharpCAT0Filling"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 442,
+  "closure_lines": 65872,
+  "main_dirs": [
+   "Geometry/CAT0Fillings",
+   "Geometry/IntegralFillings"
+  ],
+  "ext": []
+ },
+ {
+  "family": "342",
+  "configs": [
+   "TamingCompatibility"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 582,
+  "closure_lines": 83060,
+  "main_dirs": [
+   "Geometry/TamingCompatibility"
+  ],
+  "ext": []
+ },
+ {
+  "family": "343",
+  "configs": [
+   "BallPacking",
+   "BallPackingNecessity"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 207,
+  "closure_lines": 107119,
+  "main_dirs": [
+   "Geometry/BallPacking"
+  ],
+  "ext": []
+ },
+ {
+  "family": "347",
+  "configs": [
+   "ArnoldCounterexample"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 36,
+  "closure_lines": 5841,
+  "main_dirs": [
+   "Geometry/Arnold"
+  ],
+  "ext": []
+ },
+ {
+  "family": "348",
+  "configs": [
+   "EinsteinFour"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 402,
+  "closure_lines": 207815,
+  "main_dirs": [
+   "Geometry/EinsteinFour",
+   "Geometry/Manifold"
+  ],
+  "ext": [
+   "RellichKondrachov"
+  ]
+ },
+ {
+  "family": "350",
+  "configs": [
+   "NodalLength",
+   "SmoothYau",
+   "YauCounterexample"
+  ],
+  "configs_in_yaml": 2,
+  "closure_files": 1563,
+  "closure_lines": 206812,
+  "main_dirs": [
+   "Geometry/NodalSets",
+   "Geometry/SmoothYau",
+   "Analysis/NodalLength"
+  ],
+  "ext": []
+ },
+ {
+  "family": "353",
+  "configs": [
+   "AffineBernstein"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 322,
+  "closure_lines": 40454,
+  "main_dirs": [
+   "Analysis/AffineBernstein"
+  ],
+  "ext": []
+ },
+ {
+  "family": "354",
+  "configs": [
+   "CubicTorus"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 162,
+  "closure_lines": 140491,
+  "main_dirs": [
+   "Geometry/CubicTorus"
+  ],
+  "ext": []
+ },
+ {
+  "family": "356",
+  "configs": [
+   "WeakHessian"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 542,
+  "closure_lines": 65542,
+  "main_dirs": [
+   "Geometry/WeakHessian"
+  ],
+  "ext": []
+ },
+ {
+  "family": "358",
+  "configs": [
+   "ConjugatePoints"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 19,
+  "closure_lines": 24974,
+  "main_dirs": [
+   "Geometry/ConjugatePoints"
+  ],
+  "ext": []
+ },
+ {
+  "family": "359",
+  "configs": [
+   "PinchedKahler"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 119,
+  "closure_lines": 18688,
+  "main_dirs": [
+   "Geometry/Kahler"
+  ],
+  "ext": []
+ },
+ {
+  "family": "360",
+  "configs": [
+   "BiholderTransport",
+   "WeakMTWGlobalSupport"
+  ],
+  "configs_in_yaml": 2,
+  "closure_files": 855,
+  "closure_lines": 93495,
+  "main_dirs": [
+   "Analysis/BiholderTransport",
+   "Geometry/WeakMTW"
+  ],
+  "ext": []
+ },
+ {
+  "family": "361",
+  "configs": [
+   "HarmonicGrowth"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 36,
+  "closure_lines": 36732,
+  "main_dirs": [
+   "Geometry/HarmonicGrowth"
+  ],
+  "ext": []
+ },
+ {
+  "family": "362",
+  "configs": [
+   "VlasovMaxwell"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 207,
+  "closure_lines": 89993,
+  "main_dirs": [
+   "Analysis/VlasovMaxwell"
+  ],
+  "ext": []
+ },
+ {
+  "family": "363",
+  "configs": [
+   "BoltzmannNonuniqueness"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 525,
+  "closure_lines": 159510,
+  "main_dirs": [
+   "MathematicalPhysics/Boltzmann"
+  ],
+  "ext": []
+ },
+ {
+  "family": "365",
+  "configs": [
+   "Conductivity"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 595,
+  "closure_lines": 75520,
+  "main_dirs": [
+   "Analysis/Conductivity"
+  ],
+  "ext": []
+ },
+ {
+  "family": "367",
+  "configs": [
+   "BernoulliNonflatInSeven"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 91,
+  "closure_lines": 13545,
+  "main_dirs": [
+   "Analysis/BernoulliCone"
+  ],
+  "ext": []
+ },
+ {
+  "family": "369",
+  "configs": [
+   "HotSpots"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 31,
+  "closure_lines": 29338,
+  "main_dirs": [
+   "Analysis/HotSpots"
+  ],
+  "ext": []
+ },
+ {
+  "family": "370",
+  "configs": [
+   "HenonEmden"
+  ],
+  "configs_in_yaml": 1,
+  "closure_files": 96,
+  "closure_lines": 12709,
+  "main_dirs": [
+   "Analysis/HenonEmden"
+  ],
+  "ext": []
+ },
+ {
+  "family": "371",
+  "configs": [
+   "DefocusingNLS"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 2415,
+  "closure_lines": 180149,
+  "main_dirs": [
+   "MathematicalPhysics/DefocusingNLS"
+  ],
+  "ext": [
+   "FixedPointTheorems"
+  ]
+ },
+ {
+  "family": "372",
+  "configs": [
+   "ElasticityUniqueness"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 42,
+  "closure_lines": 31645,
+  "main_dirs": [
+   "MathematicalPhysics/Elasticity"
+  ],
+  "ext": []
+ },
+ {
+  "family": "373",
+  "configs": [
+   "CoulombCounterexample"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 97,
+  "closure_lines": 10668,
+  "main_dirs": [
+   "Analysis/CoulombTransport"
+  ],
+  "ext": []
+ },
+ {
+  "family": "374",
+  "configs": [
+   "Brenier"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 89,
+  "closure_lines": 33020,
+  "main_dirs": [
+   "Analysis/Brenier"
+  ],
+  "ext": []
+ },
+ {
+  "family": "376",
+  "configs": [
+   "BalancedBoxRouting",
+   "BalancedThreeStack",
+   "ForcedNavierStokesComputation",
+   "NavierStokesAlternating",
+   "NavierStokesVelocity",
+   "SolenoidalSheetPrograms"
+  ],
+  "configs_in_yaml": 0,
+  "closure_files": 286,
+  "closure_lines": 51806,
+  "main_dirs": [
+   "MathematicalPhysics/NavierStokes",
+   "MathematicalPhysics/AlternatingFlow",
+   "MathematicalPhysics/SheetFlows"
+  ],
+  "ext": []
+ }
+]

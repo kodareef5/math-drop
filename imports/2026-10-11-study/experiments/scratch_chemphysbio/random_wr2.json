@@ -1,0 +1,34 @@
+{
+ "open=False,d=4": {
+  "total": 150,
+  "ads_persistent": 29,
+  "single_lc": 22,
+  "dimS_le2": 11,
+  "multi_def0": 50,
+  "only_149": 38
+ },
+ "open=False,d=6": {
+  "total": 148,
+  "ads_persistent": 56,
+  "single_lc": 18,
+  "dimS_le2": 5,
+  "multi_def0": 61,
+  "only_149": 8
+ },
+ "open=True,d=4": {
+  "total": 147,
+  "ads_persistent": 20,
+  "single_lc": 24,
+  "dimS_le2": 12,
+  "multi_def0": 54,
+  "only_149": 37
+ },
+ "open=True,d=6": {
+  "total": 146,
+  "ads_persistent": 37,
+  "single_lc": 18,
+  "dimS_le2": 8,
+  "multi_def0": 74,
+  "only_149": 9
+ }
+}

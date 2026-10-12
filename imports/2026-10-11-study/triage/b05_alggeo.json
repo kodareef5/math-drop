@@ -1,0 +1,1293 @@
+[
+ {
+  "num": "032",
+  "title": "The rational Hodge conjecture for CM abelian varieties",
+  "subject": "Algebraic and complex geometry",
+  "plain_english": "Claims the Hodge conjecture for every abelian variety with complex multiplication, i.e. that every rational Hodge class on these varieties is built from algebraic subvarieties. Through results of Milne, that would also give the Tate conjecture for all abelian varieties over finite fields. The family also contains Kuga–Satake and Weil-class algebraicity papers.",
+  "constructive": "no: cycles come from theta lifts on ball quotients plus p-adic Hodge arguments; nothing is computable",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 1,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. CRYPTO was checked and rejected. Isogeny cryptography (SQIsign, CSIDH, 2D isogeny/Kani methods), the CM method for genus-2 curves (Igusa class polynomials, CMH/AVIsogenies) and pairings use only endomorphisms and divisor-level facts. Those are Tate's 1966 theorem and Honda–Tate, which were already known. Higher-codimension Tate classes and the Hodge standard conjecture appear in no algorithm or security argument. CAS was also checked. The only touchpoint is that LMFDB abelian-variety-over-F_q pages could read their 'Tate class' dimensions as ranks of algebraic cycles mod numerical equivalence. That is not worth doing on a claim at this confidence level.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "WITHDRAWAL FLAG: this family is in the same area as the Oct 7 2026 withdrawals, which were the split-abelian-eightfold Weil-class paper and two Kuga–Satake/K3 dependents. I found no direct citation of the withdrawn papers. The CM paper's only OAI citation is Milne-rationality (family 001), and the K3-quadratic-locus paper cites no OAI work. However: (a) the CM theorem effectively claims algebraicity of split Weil classes on CM abelian varieties via André's reduction, the same kind of object as the withdrawn eightfold claim; (b) the withdrawn K3 Kuga–Satake papers generalized the K3-quadratic-locus paper in this family; (c) 'Weil classes on abelian powers' and 'Abelian covers/Gale' rest on the CM theorem; (d) the claims are extraordinary (Tate conjecture for all abelian varieties over F_q, Hodge standard conjecture for abelian varieties) and nothing is formalized. Confidence is set to 1.",
+  "deep_dive": false,
+  "cross_links": [
+   "001"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/01-introduction.tex (Thm thm:cm, proof outline)",
+   "/root/openai-math/preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/07-consequences.tex (Cor cc:ghc, cc:tate, cc:standard, Remark cc:algebraic-specialization)",
+   "/root/openai-math/preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-{September-30,October-6}-2026/build/references.bib (diffed; no withdrawn-paper citation)",
+   "/root/openai-math/preprints/Algebraic-Kuga-Satake-correspondences-and-Hodge-conjectures-on-a-K3-quadratic-locus-September-30-2026/build/paper.tex (Thm ext:criterion, main:theorem, bibliography)",
+   "/root/openai-math/preprints/Weil-classes-and-Hodge-classes-on-abelian-powers-October-6-2026/build/paper.tex (intro, Markman dependence)",
+   "/root/openai-math/preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/build/sections/05_reduction.tex (uses CM theorem for corollary only)",
+   "/root/openai-math/history.md and withdrawn READMEs (Algebraicity-of-Weil-classes..., Algebraicity-of-Kuga-Satake..., products-of-K3)",
+   "web: LMFDB av/fq + exceptional Tate classes literature (arXiv 2003.05380, 2505.09589)"
+  ]
+ },
+ {
+  "num": "033",
+  "title": "Iitaka subadditivity, variation, and logarithmic additivity",
+  "subject": "Algebraic and complex geometry",
+  "plain_english": "Proves Iitaka's subadditivity of Kodaira dimension and logarithmic and orbifold variants: for a fibration, the 'amount of canonical positivity' of the total space is at least that of the fibre plus the base.",
+  "constructive": "no: existence/structure theorem",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. This is a structural inequality in birational classification with no algorithmic or applied use.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Extraordinary claim (full Iitaka C_{n,m} conjecture). Lean covers only the negative-fibre branch of logarithmic additivity, not the top line. It is the root of the abundance/MMP chain in 034, 036, 056 and 066.",
+  "deep_dive": false,
+  "cross_links": [
+   "034",
+   "036",
+   "056",
+   "057",
+   "066"
+  ],
+  "evidence": [
+   "slice summary+abstracts",
+   "/root/openai-math/lean/docs/033.md"
+  ]
+ },
+ {
+  "num": "034",
+  "title": "Log abundance for compact Kähler spaces under logarithmic Iitaka subadditivity",
+  "subject": "Algebraic and complex geometry",
+  "plain_english": "Claims log abundance in every dimension: on a log canonical pair, if K_X+Δ is nef then it is semiample. Also claims an effective Iitaka fibration (one uniform pluricanonical degree m(d) per dimension) and uniform indices for log Calabi–Yau pairs.",
+  "constructive": "no: existence/structure theorem",
+  "explicit_constants": "non-explicit (m(d), a(d,Phi) existential)",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 1,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. CAS was checked. If m(d) were explicit, Kodaira dimension and Iitaka fibrations would become decidable by computing finitely many plurigenera in Macaulay2/Singular. But m(d) and the index bounds are pure existence results from boundedness/ACC arguments with no value given, so no algorithm follows.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Extraordinary claims (abundance conjecture). Six Kähler MMP/abundance manuscripts were repaired on Oct 7, including two in this family. Everything depends on the 033 Iitaka subadditivity. Constants are non-explicit.",
+  "deep_dive": false,
+  "cross_links": [
+   "033",
+   "035",
+   "036",
+   "056",
+   "066"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Uniform-Pluricanonical-Iitaka-Fibrations-October-3-2026/build/sections/introduction.tex (Thm thm:main, thm:lc-index)",
+   "version notes of family READMEs",
+   "companion-citation graph (grep of build/ dirs)"
+  ]
+ },
+ {
+  "num": "035",
+  "title": "Log-canonical threefold abundance in numerical dimension one",
+  "subject": "Algebraic and complex geometry",
+  "plain_english": "Proves the numerical-dimension-one case of log abundance for threefold pairs in characteristic p > 3.",
+  "constructive": "no: existence/structure theorem",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. This is pure birational geometry in positive characteristic.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "034",
+   "036"
+  ],
+  "evidence": [
+   "slice summary+abstracts"
+  ]
+ },
+ {
+  "num": "036",
+  "title": "Numerical semiampleness and generalized minimal models",
+  "subject": "Algebraic and complex geometry",
+  "plain_english": "Claims generalized abundance (a nef adjoint K+B+M is numerically semiample) and existence of minimal models or Mori fibre spaces for generalized log canonical pairs.",
+  "constructive": "no: existence/structure theorem",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 1,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. Existence of minimal models gives no implementable procedure, and there is no general MMP software beyond toric/Mori-dream-space cases.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Depends on 034's characteristic-zero log abundance. The Kähler manuscript was repaired on Oct 7. Extraordinary claim.",
+  "deep_dive": false,
+  "cross_links": [
+   "033",
+   "034",
+   "056",
+   "066"
+  ],
+  "evidence": [
+   "slice summary+abstracts",
+   "README version notes"
+  ]
+ },
+ {
+  "num": "037",
+  "title": "The ordinary-double-point volume gap",
+  "subject": "Algebraic and complex geometry",
+  "plain_english": "Proves that every singular klt singularity of dimension n has 'normalized volume' at most 2(n-1)^n. The maximum is achieved only by the ordinary double point (the cone z_0^2+...+z_n^2=0).",
+  "constructive": "n/a (sharp inequality with characterized equality)",
+  "explicit_constants": "explicit and sharp: 2(n-1)^n (162 for n=4)",
+  "galactic": false,
+  "channels": [
+   "PHYS"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 3,
+   "practicality": 4,
+   "confidence": 3,
+   "effort": 4,
+   "time_to_value": 3
+  },
+  "opportunity": "Physics corollary, of curiosity value only. For Calabi–Yau cones with a Ricci-flat metric, normalized volume equals n^n·Vol(L)/Vol(S^{2n-1}) for the Sasaki–Einstein link L (Martelli–Sparks–Yau, Li–Liu–Xu). The new n=4 case therefore says every Sasaki–Einstein 7-manifold other than round S^7 has volume ≤ Vol(V_{5,2}) = (81/128)Vol(S^7). In AdS4/CFT3, F_{S^3} ∝ N^{3/2}Vol^{-1/2}, which gives a universal large-N free-energy gap F ≥ sqrt(128/81)·F_{S^7} ≈ 1.257·F_{S^7} for M2-brane SCFTs with non-maximally-supersymmetric Sasaki–Einstein duals. The n=3 (AdS5, conifold/T^{1,1}) case was already known (Liu–Xu 2019). Only hep-th theorists benefit; no computation changes.",
+  "targets": [
+   "AdS4/CFT3 / F-theorem literature (hep-th)",
+   "Sasaki–Einstein geometry community"
+  ],
+  "action": "RESEARCH",
+  "first_step": "Write a one-page note stating the SE7 volume gap and the F_{S^3} gap, and check it against the tabulated SE7 volumes (V_{5,2}, Q^{111}, M^{111}, N^{010}, toric families).",
+  "caveats": "Unformalized, though it builds on established normalized-volume theory and the dimension-4 base case is a separate companion paper. The physics translation assumes the Ricci-flat cone exists (K-polystable), which holds for Sasaki–Einstein links by definition. Known volumes (Q^{111}=π^4/8, M^{111}=9π^4/128) are consistent with the bound V_{5,2}=27π^4/128.",
+  "deep_dive": false,
+  "cross_links": [
+   "066"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/The-ordinary-double-point-gap-in-every-dimension-September-24-2026/build/sections/01-introduction.tex (Thm thm:main, Cor cor:global, history)",
+   "/root/openai-math/preprints/The-normalized-volume-gap-in-dimension-four-September-24-2026/build/paper.tex (Thm thm:main: nvol ≤ 162)"
+  ]
+ },
+ {
+  "num": "038",
+  "title": "Fujita’s freeness conjecture",
+  "subject": "Algebraic and complex geometry",
+  "plain_english": "Proves Fujita's freeness conjecture: on a smooth projective n-fold, K_X+mL is generated by global sections for every ample L and every m ≥ n+1.",
+  "constructive": "no: existence/structure theorem",
+  "explicit_constants": "explicit (m ≥ n+1) but no computational consumer",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. CAS was checked. Adjoint systems are used algorithmically only for surfaces, e.g. Schicho-style rational-surface parametrization in Magma, where Reider's theorem (1988) already gives the bound. Dimensions 3–5 were already known. CAS works with embedded varieties and computes global generation directly.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Extraordinary claim (long-standing conjecture), single manuscript, unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "051"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Fujitas-freeness-conjecture-September-23-2026/build/main.tex (history: Angehrn–Siu, Ye–Zhu)"
+  ]
+ },
+ {
+  "num": "039",
+  "title": "Nagata’s conjecture and maximal Seshadri constants",
+  "subject": "Algebraic and complex geometry",
+  "plain_english": "Proves Nagata's conjecture: a plane curve of degree d through r ≥ 10 very general points with multiplicities m_i satisfies Σm_i < d·sqrt(r). Equivalently, the r-point Seshadri constant of P^2 is 1/sqrt(r). Also shows multipoint Seshadri constants are maximal for large r on any polarized variety.",
+  "constructive": "no: degeneration argument at very general points; certifies no explicit configuration",
+  "explicit_constants": "explicit (sqrt r) for Nagata; r_0(X,L) non-explicit for higher-dim Seshadri",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 5,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None after checking the three channels that were asked about. (1) Splines/interpolation: through inverse systems (Emsalem–Iarrobino, Geramita–Schenck), trivariate C^r spline dimension on a vertex star with s interior faces involves R/(ℓ_i^{r+1}), which is dual to fat points of multiplicity d−r in P^2. Nagata only says this vanishes for d ≥ r·sqrt(s)/(sqrt(s)−1). For practical smoothness (r ≤ 2) that is trivial, because s ≥ 10 generic powers already span R_{r+1}. In general, Nagata adds nothing for m ≤ 11, where SHGH was already verified (Dumnicki–Jarnicki). Spline and Hermite poisedness questions need SHGH non-speciality, not Nagata. Real meshes and grids are not 'very general': my mod-p check found nonzero systems throughout the Nagata range for points on a conic. (2) AG codes: Hansen's bound d ≥ n − L^2/e uses the Seshadri constant at the F_q-rational evaluation points. Those are maximally special, and the char-p result is only at the geometric generic (transcendental) tuple, so no code bound improves. (3) The Waldschmidt constant (Macaulay2 SymbolicPowers 'waldschmidt') equals sqrt(r) only for very general points and certifies nothing for a given rational point set.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Top line is Lean-formalized (OAI.Nagata.nagata_conjecture; the PlaneCurves dir has no sorry/axiom). The large-r Seshadri threshold r_0(X,L) is non-explicit (Lean doc). The 'very general' hypothesis means a countable union of exceptional loci, so no specific configuration is certified.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "/root/openai-math/preprints/Nagatas-Conjecture-for-Plane-Curves-September-23-2026/build/sections/introduction.tex (Thm thm:main, proof strategy)",
+   "/root/openai-math/preprints/Nagatas-Conjecture-for-Plane-Curves-September-23-2026/build/sections/consequences.tex (Cor cor:fields, cor:sesha)",
+   "/root/openai-math/preprints/Nagatas-Conjecture-for-Plane-Curves-September-23-2026/build/sections/04-interpolation.tex (Lemma lem:interpolation, Prop prop:full-rank)",
+   "/root/openai-math/lean/docs/039.md; lean/ComparatorChallenges/Nagata.lean",
+   "scratch: exact mod-p rank of fat-point systems at d=floor(m*sqrt r), random vs on-a-conic points (random: 0; conic: 6–91)",
+   "web: Little 'AG codes from higher-dimensional varieties' §3.3 (Hansen Seshadri bound at F_q-points); Dumnicki–Jarnicki math/0505183 (SHGH for m ≤ 11); Macaulay2 SymbolicPowers waldschmidt doc"
+  ]
+ },
+ {
+  "num": "040",
+  "title": "Bloch’s conjecture for complex surfaces",
+  "subject": "Algebraic and complex geometry",
+  "plain_english": "Proves Bloch's conjecture: on a complex surface with no holomorphic 2-forms (p_g=0), the group of degree-zero 0-cycles is exactly the Albanese variety.",
+  "constructive": "no: existence/structure theorem",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. This is about Chow groups of surfaces, with no computational or applied consumer.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Extraordinary claim, unformalized. No Hodge/Kuga–Satake dependence (grep checked).",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "slice summary+abstracts",
+   "grep of build/ for Kuga/Hodge-conjecture dependence"
+  ]
+ },
+ {
+  "num": "041",
+  "title": "Hyperkähler SYZ and projective-space bases",
+  "subject": "Algebraic and complex geometry",
+  "plain_english": "Proves the strong hyperkähler SYZ conjecture (isotropic nef line bundles on compact hyperkähler manifolds give Lagrangian torus fibrations), and that the base of any such fibration is projective space.",
+  "constructive": "no: existence/structure theorem",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. String compactification (PHYS) was checked. The result is structural: no string or mirror-symmetry computation (periods, GV invariants, Seiberg–Witten integrable systems, whose bases are non-compact) uses compact-HK base classification as an input.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Extraordinary claims (Matsushita base conjecture in full), unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "055",
+   "065"
+  ],
+  "evidence": [
+   "slice summary+abstracts",
+   "grep of build/ for physics references (mentions only)"
+  ]
+ },
+ {
+  "num": "042",
+  "title": "Oka classification for minimal compact complex surfaces: Kodaira dimension zero and class VII",
+  "subject": "Algebraic and complex geometry",
+  "plain_english": "Proves every K3 surface (projective or not) is an Oka manifold, so maps into it satisfy a strong approximation principle. Also classifies which minimal surfaces of Kodaira dimension 0 and class VII are Oka.",
+  "constructive": "no: existence/structure theorem",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. This is pure complex analysis.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "060"
+  ],
+  "evidence": [
+   "slice summary+abstracts"
+  ]
+ },
+ {
+  "num": "043",
+  "title": "<i>P</i> = <i>W</i> for fixed-determinant SL<sub><i>n</i></sub> moduli spaces",
+  "subject": "Algebraic and complex geometry",
+  "plain_english": "Proves the P=W conjecture (perverse = weight filtrations) for fixed-determinant SL_n Higgs moduli in composite rank, completing the coprime case.",
+  "constructive": "no: existence/structure theorem",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. This is nonabelian Hodge theory. Its mirror-symmetry content gives no computation.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Unformalized. The GL_n and prime-rank cases were already known.",
+  "deep_dive": false,
+  "cross_links": [
+   "044",
+   "069"
+  ],
+  "evidence": [
+   "slice summary+abstracts"
+  ]
+ },
+ {
+  "num": "044",
+  "title": "The equivariant cohomological Hikita conjecture",
+  "subject": "Algebraic and complex geometry",
+  "plain_english": "Proves the equivariant Hikita conjecture for arbitrary quivers: the equivariant cohomology of a Nakajima quiver variety equals the coordinate ring of a fixed-point scheme on the dual Coulomb branch (3d mirror symmetry).",
+  "constructive": "no: existence/structure theorem",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. Physics (3d N=4 gauge theory) was checked: the result is a structural identity used only in representation theory and math-physics.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "043",
+   "069"
+  ],
+  "evidence": [
+   "slice summary+abstracts"
+  ]
+ },
+ {
+  "num": "046",
+  "title": "Shafarevich counterexamples in dimension two and with large fundamental group",
+  "subject": "Algebraic and complex geometry",
+  "plain_english": "Constructs projective varieties (a surface, and a fourfold with large fundamental group) whose universal covers are not holomorphically convex, disproving Shafarevich's conjecture.",
+  "constructive": "partial: explicit construction of a variety, not a computational object",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Surprising counterexample, unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "057",
+   "058"
+  ],
+  "evidence": [
+   "slice summary+abstracts"
+  ]
+ },
+ {
+  "num": "047",
+  "title": "Zariski cancellation and affine fibrations over the complex numbers",
+  "subject": "Algebraic and complex geometry",
+  "plain_english": "Gives an explicit 4-dimensional complex variety X that is not affine 4-space even though X × line is affine 5-space, disproving Zariski cancellation over C in dimension 4.",
+  "constructive": "yes: explicit polynomial H and explicit automorphism",
+  "explicit_constants": "explicit small-degree polynomials",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 5,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. CAS was checked. The explicit hypersurface H in 5 variables and the automorphism could serve as regression tests for Singular/Macaulay2 routines on locally nilpotent derivations and subalgebras. No user, and no solver that decides 'is this affine space', depends on it, and the multivariate-crypto 'tame automorphism' schemes work over F_q, where this is irrelevant.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Lean-formalized top line (OAI.ComplexCancellation.main, no sorry/axiom in dir).",
+  "deep_dive": false,
+  "cross_links": [
+   "049"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/An-explicit-failure-of-complex-affine-space-cancellation-September-23-2026/build/sections/01-introduction.tex (eq:example, Thm thm:main)",
+   "/root/openai-math/lean/docs/047.md"
+  ]
+ },
+ {
+  "num": "048",
+  "title": "A characteristic-zero counterexample to Lipman–Zariski",
+  "subject": "Algebraic and complex geometry",
+  "plain_english": "Constructs a singular normal affine surface whose module of derivations is free, disproving the Lipman–Zariski conjecture in characteristic 0.",
+  "constructive": "partial: existence via Artin approximation; no explicit equations",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. CAS/resolution was checked: smoothness tests in CAS use the Jacobian criterion, not freeness of derivations.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "The example comes from an analytic construction plus Artin algebraization, so no explicit equations are given. Unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "059",
+   "064"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/A-singular-normal-affine-surface-with-free-tangent-sheaf-September-23-2026/build/01-introduction.tex (Thm thm:main)"
+  ]
+ },
+ {
+  "num": "049",
+  "title": "A stable-coordinate counterexample in four variables",
+  "subject": "Algebraic and complex geometry",
+  "plain_english": "Gives an explicit degree-5 polynomial in 4 variables that is not a coordinate but becomes one after adding a variable. Every fibre is affine 3-space, which disproves the stable-coordinate and Abhyankar–Sathaye conjectures in dimension 4.",
+  "constructive": "yes: explicit degree-5 polynomial and stabilizing automorphism",
+  "explicit_constants": "explicit",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 5,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. It is an explicit object, but no software or applied community needs to decide coordinate-hood; see 047. At most it is a regression instance for LND/invariant routines.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Lean-formalized (StableCoordinateFour, AbhyankarSathaye).",
+  "deep_dive": false,
+  "cross_links": [
+   "047"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/A-stable-coordinate-that-is-not-a-coordinate-in-four-variables-October-5-2026/build/source/sections/01-introduction.tex (Thm thm:main: Q=x2^2-x4^2+x1x3, f=x1-2Q(Q(x2+x4)+x1x4))",
+   "/root/openai-math/lean/docs/049.md"
+  ]
+ },
+ {
+  "num": "050",
+  "title": "A counterexample to Griffiths’ positivity conjecture",
+  "subject": "Algebraic and complex geometry",
+  "plain_english": "Constructs explicit ample rank-2 vector bundles on P^1×P^1 that admit no Griffiths-positive Hermitian metric, disproving Griffiths' conjecture.",
+  "constructive": "yes: explicit bundle",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 5,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Lean-formalized.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "slice summary+abstracts",
+   "/root/openai-math/lean/docs/050.md"
+  ]
+ },
+ {
+  "num": "051",
+  "title": "Kobayashi’s canonical-ampleness conjecture",
+  "subject": "Algebraic and complex geometry",
+  "plain_english": "Proves that a compact Kähler manifold with no entire holomorphic curves has ample canonical bundle (Kobayashi).",
+  "constructive": "no: existence/structure theorem",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Extraordinary claim, unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "038",
+   "058"
+  ],
+  "evidence": [
+   "slice summary+abstracts"
+  ]
+ },
+ {
+  "num": "052",
+  "title": "Tangent splittings and product decompositions",
+  "subject": "Algebraic and complex geometry",
+  "plain_english": "Proves that if the tangent bundle of a compact Kähler manifold splits into two integrable pieces, the universal cover splits as a product. On rationally connected manifolds integrability is automatic.",
+  "constructive": "no: existence/structure theorem",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 5,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Lean-formalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "067"
+  ],
+  "evidence": [
+   "slice summary+abstracts",
+   "/root/openai-math/lean/docs/052.md"
+  ]
+ },
+ {
+  "num": "053",
+  "title": "A counterexample to Pixton completeness in Chow",
+  "subject": "Algebraic and complex geometry",
+  "plain_english": "Constructs a tautological class on the moduli space of curves that is zero in Chow and cohomology but not implied by Pixton's relations, disproving Pixton's completeness conjecture. The example has genus 10^60.",
+  "constructive": "yes in principle, but astronomically large",
+  "explicit_constants": "explicit: g=10^60",
+  "galactic": true,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. The only software touchpoint is admcycles (Sage): generating_indices/toTautbasis compute a basis 'assuming the generalized Faber–Zagier relations give a complete set'. The counterexample is at g=10^60, far beyond any feasible computation (admcycles works at g ≲ 5), so no output changes. A docs caveat is at most cosmetic.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Galactic object (g = 10^60, n = 3·C(g,3)). Unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "065"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/A-high-arity-counterexample-to-Pixton-completeness-in-Chow-September-24-2026/build/sections/01-introduction.tex (Thm thm:main)",
+   "web: admcycles paper arXiv 2002.01709 §3.3 (completeness assumption)"
+  ]
+ },
+ {
+  "num": "054",
+  "title": "Irrational cubic fourfolds with Hodge-theoretic and categorical K3 associations",
+  "subject": "Algebraic and complex geometry",
+  "plain_english": "Shows that very general cubic fourfolds in Hassett divisors of large enough discriminant are irrational, even though they have associated K3 surfaces. This disproves Kuznetsov's rationality conjecture.",
+  "constructive": "no: existence/structure theorem",
+  "explicit_constants": "ineffective threshold d_0",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "The discriminant threshold d_0 is ineffective. Unformalized. Extraordinary. No Kuga–Satake dependence found.",
+  "deep_dive": false,
+  "cross_links": [],
+  "evidence": [
+   "slice summary+abstracts",
+   "grep for Hodge/Kuga dependence"
+  ]
+ },
+ {
+  "num": "055",
+  "title": "Gepner symmetry and large-volume stability on threefolds",
+  "subject": "Algebraic and complex geometry",
+  "plain_english": "Constructs Bridgeland stability conditions with the exact 'physical' large-volume central charge Z = −∫e^{−B−itH}ch·sqrt(td) on every Calabi–Yau threefold, and a Gepner-point stability condition on every quintic threefold. It also proves a Bayer–Macrì–Toda-type tilt inequality ch3 ≤ (a²/6 + k)H²ch1 on every smooth projective threefold, with correction k = 0 beyond a volume threshold R_*.",
+  "constructive": "partial: explicit hearts/charges, but thresholds come from existence arguments",
+  "explicit_constants": "no: k, R_*, T depend on (X,H,B) through non-effective constants (C_0 from Frobenius presentation)",
+  "galactic": null,
+  "channels": [
+   "PHYS"
+  ],
+  "tier": "T3",
+  "scores": {
+   "impact": 2,
+   "reach": 1,
+   "directness": 2,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "The most credible string-theory channel in the batch, but weak. Rigorous GV/PT/rank-0 DT computations for compact CY3s (Feyzbakhsh–Thomas wall-crossing; Alexandrov–Feyzbakhsh–Klemm–Pioline–Schimannek Castelnuovo bounds and modular D4-D2-D0 predictions) depend on the BMT inequality. That inequality is proven only for X5 and X_{4,2} (weaker for X6, X8) and is open for the other hypergeometric models. This paper gives a corrected BMT inequality on every threefold, but the constants k and R_* come from a Frobenius-limit/spreading-out argument and are not computed. The large-volume tail does not reach the finite-volume walls those computations need. Making k explicit for the 13 hypergeometric one-parameter CY3 models is the research step; it would let topological-string groups extend rigorous boundary data.",
+  "targets": [
+   "Feyzbakhsh–Thomas rank-0 DT wall-crossing program",
+   "AFKPS / topological-string GV computations for one-parameter hypergeometric CY3s (X6, X8, X10, ...)"
+  ],
+  "action": "RESEARCH",
+  "first_step": "Trace C_0 in Lemma lem:frobenius-presentation and the apex constant A, C for X = sextic X6. Check whether an explicit k results and whether ch3 ≤ (a²/6+k)H²ch1 suffices for Feyzbakhsh's empty-chamber argument at the walls AFKPS use.",
+  "caveats": "Constants k, R_* are non-explicit. Applies only at large volume unless k is made effective. The Gepner result adds symmetry to the existence result Li already proved, so nothing new is computable. Unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "065",
+   "041"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Prescribed-large-volume-charges-on-threefolds-with-trivial-canonical-bundle-September-24-2026/build/01-introduction.tex (Thm thm:geometric-sector, thm:uniform-inequality, Cor cor:quadratic-tail)",
+   "/root/openai-math/preprints/Prescribed-large-volume-charges-on-threefolds-with-trivial-canonical-bundle-September-24-2026/build/05-wall.tex (Prop prop:apex-transport, R_0, k_0 formulas)",
+   "/root/openai-math/preprints/Prescribed-large-volume-charges-on-threefolds-with-trivial-canonical-bundle-September-24-2026/build/04-apex.tex (Lemma lem:frobenius-presentation, non-explicit C_0)",
+   "/root/openai-math/preprints/A-Gepner-stability-condition-on-every-smooth-quintic-threefold-September-24-2026/build/sections/introduction.tex (Thm thm:main)",
+   "web: arXiv 2301.08066 (AFKPS; BMT status for hypergeometric CY3s)"
+  ]
+ },
+ {
+  "num": "056",
+  "title": "Termination of projective and Kähler fourfold minimal model programs",
+  "subject": "Algebraic and complex geometry",
+  "plain_english": "Proves that every sequence of flips terminates for log canonical fourfolds (projective, characteristic 0) and for generalized pairs on compact Kähler fourfolds, so minimal model programs in dimension 4 always stop.",
+  "constructive": "no: existence/structure theorem",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 1,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. CAS was checked: no software runs general 4-fold MMPs (contractions and flips are not effectively computable). Toric/Mori-dream-space MMP implementations terminate trivially.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Three of five manuscripts were repaired on Oct 7. The projective result depends on 034 log abundance and 066 complements. Unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "034",
+   "036",
+   "066"
+  ],
+  "evidence": [
+   "slice summary+abstracts",
+   "README version notes",
+   "companion-citation graph"
+  ]
+ },
+ {
+  "num": "057",
+  "title": "Fundamental groups of special complex varieties and root orbifolds",
+  "subject": "Algebraic and complex geometry",
+  "plain_english": "Proves Campana's abelianity conjecture: 'special' compact Kähler manifolds have virtually abelian fundamental groups. Also proves 2-step nilpotent linear monodromy for special quasi-projective varieties.",
+  "constructive": "no: existence/structure theorem",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Extraordinary claim, unformalized. Uses 033 orbifold subadditivity.",
+  "deep_dive": false,
+  "cross_links": [
+   "046",
+   "058",
+   "033"
+  ],
+  "evidence": [
+   "slice summary+abstracts",
+   "companion-citation graph"
+  ]
+ },
+ {
+  "num": "058",
+  "title": "Semialgebraic universal covers and bounded domains",
+  "subject": "Algebraic and complex geometry",
+  "plain_english": "Proves the Kollár–Pardon conjecture: universal covers of projective varieties that are semialgebraic are exactly products of a bounded symmetric domain, C^m and a simply connected projective variety.",
+  "constructive": "no: existence/structure theorem",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 4,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "The bounded-domain half is Lean-formalized. The main theorem uses 034 log abundance and 057.",
+  "deep_dive": false,
+  "cross_links": [
+   "046",
+   "057",
+   "051"
+  ],
+  "evidence": [
+   "slice summary+abstracts",
+   "/root/openai-math/lean/docs/058.md"
+  ]
+ },
+ {
+  "num": "059",
+  "title": "Counterexamples to Zariski’s multiplicity conjecture",
+  "subject": "Algebraic and complex geometry",
+  "plain_english": "Constructs pairs of isolated hypersurface singularities that are topologically the same (ambiently homeomorphic) but have different multiplicities (2 vs 3; 4 vs 5 in C^4), disproving Zariski's multiplicity conjecture.",
+  "constructive": "partial: explicit families with sufficiently large parameters",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. CAS/resolution was checked. Resolution algorithms (Villamayor, Bierstone–Milman; Singular resolve.lib) use multiplicity as an algebraic invariant and never assume it is topological. Nothing changes.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Semi-explicit germs ('for sufficiently large a,b'). Unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "064",
+   "048"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Ambiently-homeomorphic-isolated-hypersurface-germs-in-C4-with-multiplicities-four-and-five-September-27-2026/build/sections/01-introduction.tex (Thm thm:main), 04-tube.tex (Thm thm:tube)"
+  ]
+ },
+ {
+  "num": "060",
+  "title": "The Global Spherical Shell conjecture",
+  "subject": "Algebraic and complex geometry",
+  "plain_english": "Proves the Global Spherical Shell conjecture: every minimal class VII surface with b_2 > 0 contains a global spherical shell, which essentially classifies these surfaces as Kato surfaces.",
+  "constructive": "no: existence/structure theorem",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Extraordinary, single manuscript, unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "042"
+  ],
+  "evidence": [
+   "slice summary+abstracts"
+  ]
+ },
+ {
+  "num": "062",
+  "title": "Projective contact classification and the LeBrun–Salamon conjecture",
+  "subject": "Algebraic and complex geometry",
+  "plain_english": "Proves the LeBrun–Salamon conjecture: positive quaternionic-Kähler manifolds are symmetric (Wolf spaces). It also classifies projective contact manifolds.",
+  "constructive": "no: existence/structure theorem",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. PHYS was checked: N=2 supergravity hypermultiplet targets are negative-curvature quaternionic-Kähler (Bagger–Witten), so classifying positive QK manifolds does not restrict them.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Extraordinary (decades-old conjecture), unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "063",
+   "067"
+  ],
+  "evidence": [
+   "slice summary+abstracts"
+  ]
+ },
+ {
+  "num": "063",
+  "title": "The generalized Mukai conjecture",
+  "subject": "Algebraic and complex geometry",
+  "plain_english": "Proves the generalized Mukai conjecture bounding the Picard number of Fano manifolds by dimension and pseudoindex: ρ(ι−1) ≤ n.",
+  "constructive": "no: existence/structure theorem",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "062",
+   "067"
+  ],
+  "evidence": [
+   "slice summary+abstracts"
+  ]
+ },
+ {
+  "num": "064",
+  "title": "Topological triviality of <i>μ</i>-constant surface singularities",
+  "subject": "Algebraic and complex geometry",
+  "plain_english": "Proves that a 1-parameter family of isolated surface singularities in C^3 with constant Milnor number is topologically trivial. This settles the last open case of the Lê–Ramanujam μ-constant problem.",
+  "constructive": "no: existence/structure theorem",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. CAS was checked. μ is computable (Singular sing.lib 'milnor'), so μ-constancy is now a computable certificate of topological triviality for surface families in C^3. But no applied workflow needs it; catastrophe-theory uses (optics caustics) involve simple/unimodal quasi-homogeneous families, where triviality was already known.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Long-standing problem, unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "059"
+  ],
+  "evidence": [
+   "slice summary+abstracts"
+  ]
+ },
+ {
+  "num": "065",
+  "title": "Virasoro constraints for complete intersections and projective-bundle towers",
+  "subject": "Algebraic and complex geometry",
+  "plain_english": "Proves the Virasoro constraints, symmetries of the generating function of Gromov–Witten curve counts, for all smooth complete intersections in projective space and for projective bundles over bases that satisfy them.",
+  "constructive": "no: existence/structure theorem",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. Mirror symmetry/topological strings (PHYS) was checked. For CY3 complete intersections such as the quintic, Virasoro was already known (Getzler 1999), and higher-genus GV computations use holomorphic anomaly plus gap/Castelnuovo boundary conditions, not Virasoro. For Fano and general-type complete intersections, descendant GW computation is a pure-math activity.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "055",
+   "053"
+  ],
+  "evidence": [
+   "/root/openai-math/preprints/Virasoro-Constraints-for-Projective-Complete-Intersections-September-24-2026/build/sections/introduction.tex (Thm thm:main, prior work)"
+  ]
+ },
+ {
+  "num": "066",
+  "title": "Bounded klt complements for Fano contractions",
+  "subject": "Algebraic and complex geometry",
+  "plain_english": "Proves Shokurov's bounded klt complements conjecture (finite rational coefficients): Fano-type contractions have klt complements of index bounded by dimension and ε.",
+  "constructive": "no: existence/structure theorem",
+  "explicit_constants": "non-explicit index bound n(d,ε)",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 2,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None. Bounds are existential.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Lean covers only a supporting compactness lemma. Depends on the generalized-lc minimal models of 036, which use 034.",
+  "deep_dive": false,
+  "cross_links": [
+   "056",
+   "037",
+   "036"
+  ],
+  "evidence": [
+   "slice summary+abstracts",
+   "/root/openai-math/lean/docs/066.md",
+   "companion-citation graph"
+  ]
+ },
+ {
+  "num": "067",
+  "title": "The Campana–Peternell conjecture in dimension six",
+  "subject": "Algebraic and complex geometry",
+  "plain_english": "Proves Campana–Peternell in dimension 6: Fano sixfolds with nef tangent bundle are rational homogeneous spaces.",
+  "constructive": "no: existence/structure theorem",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Unformalized.",
+  "deep_dive": false,
+  "cross_links": [
+   "062",
+   "063",
+   "052"
+  ],
+  "evidence": [
+   "slice summary+abstracts"
+  ]
+ },
+ {
+  "num": "068",
+  "title": "Anticanonical nonvanishing in every dimension",
+  "subject": "Algebraic and complex geometry",
+  "plain_english": "Proves that if the anticanonical bundle of a smooth projective variety has a smooth semipositive metric, some power has a nonzero section (anticanonical nonvanishing).",
+  "constructive": "no: existence/structure theorem",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Unformalized; 7-manuscript chain.",
+  "deep_dive": false,
+  "cross_links": [
+   "034"
+  ],
+  "evidence": [
+   "slice summary+abstracts"
+  ]
+ },
+ {
+  "num": "069",
+  "title": "Global quantum geometric Langlands at irrational level",
+  "subject": "Algebraic and complex geometry",
+  "plain_english": "Proves the quantum geometric Langlands equivalence at irrational level for all simple groups and curves.",
+  "constructive": "no: existence/structure theorem",
+  "explicit_constants": "n/a",
+  "galactic": null,
+  "channels": [
+   "FOUND"
+  ],
+  "tier": "T4",
+  "scores": {
+   "impact": 1,
+   "reach": 1,
+   "directness": 1,
+   "practicality": 1,
+   "confidence": 3,
+   "effort": 1,
+   "time_to_value": 1
+  },
+  "opportunity": "None.",
+  "targets": [],
+  "action": "NONE",
+  "first_step": "",
+  "caveats": "Unformalized; builds on the 2024 Gaitsgory et al. proof of geometric Langlands.",
+  "deep_dive": false,
+  "cross_links": [
+   "043",
+   "044"
+  ],
+  "evidence": [
+   "slice summary+abstracts"
+  ]
+ }
+]

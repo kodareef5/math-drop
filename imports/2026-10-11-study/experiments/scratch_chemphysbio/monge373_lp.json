@@ -1,0 +1,180 @@
+{
+ "m1_r0.0": {
+  "n_centre": 1,
+  "n_atoms": 5,
+  "lp_value": 2.4999999999999996,
+  "dual_certificate_value": 2.5,
+  "lp_minus_dual": -4.440892098500626e-16,
+  "lp_seconds": 0.01,
+  "centre_atoms_split": 1,
+  "centre_atoms": 1,
+  "max_offbranch_fraction": 0.0,
+  "example_split": [
+   [
+    0.5,
+    0.5
+   ]
+  ],
+  "barycentric_projection_cost": 2.8451779686442453,
+  "barycentric_rel_error": 0.13807118745769834,
+  "sinkhorn": [
+   {
+    "eps": 0.05,
+    "iters": 4999,
+    "cost": 2.506339213336661,
+    "rel_gap": 0.0025356853346645285,
+    "branch_split_first": [
+     0.485,
+     0.485,
+     0.031
+    ]
+   },
+   {
+    "eps": 0.02,
+    "iters": 4999,
+    "cost": 2.4999741280046566,
+    "rel_gap": -1.034879813719414e-05,
+    "branch_split_first": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   },
+   {
+    "eps": 0.01,
+    "iters": 4999,
+    "cost": 2.4999609488580647,
+    "rel_gap": -1.5620456773923765e-05,
+    "branch_split_first": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   }
+  ]
+ },
+ "m3_r0.02": {
+  "n_centre": 7,
+  "n_atoms": 35,
+  "lp_value": 2.4996661124769046,
+  "dual_certificate_value": 2.499666112476904,
+  "lp_minus_dual": 4.440892098500626e-16,
+  "lp_seconds": 1.09,
+  "centre_atoms_split": 7,
+  "centre_atoms": 7,
+  "max_offbranch_fraction": 0.0,
+  "example_split": [
+   [
+    0.5,
+    0.5
+   ],
+   [
+    0.5,
+    0.5
+   ],
+   [
+    0.5,
+    0.5
+   ]
+  ],
+  "barycentric_projection_cost": 2.8446429244803193,
+  "barycentric_rel_error": 0.1380091566155526,
+  "sinkhorn": [
+   {
+    "eps": 0.05,
+    "iters": 4999,
+    "cost": 2.506979669810246,
+    "rel_gap": 0.0029258136904109153,
+    "branch_split_first": [
+     0.007,
+     0.006,
+     0.987
+    ]
+   },
+   {
+    "eps": 0.02,
+    "iters": 4999,
+    "cost": 2.500474389722422,
+    "rel_gap": 0.0003233540837645854,
+    "branch_split_first": [
+     0.007,
+     0.007,
+     0.986
+    ]
+   },
+   {
+    "eps": 0.01,
+    "iters": 4999,
+    "cost": 2.500434444469941,
+    "rel_gap": 0.0003073738485317792,
+    "branch_split_first": [
+     0.008,
+     0.007,
+     0.984
+    ]
+   }
+  ]
+ },
+ "m4_r0.03": {
+  "n_centre": 8,
+  "n_atoms": 40,
+  "lp_value": 2.499636966513204,
+  "dual_certificate_value": 2.499636966513204,
+  "lp_minus_dual": 0.0,
+  "lp_seconds": 1.46,
+  "centre_atoms_split": 8,
+  "centre_atoms": 8,
+  "max_offbranch_fraction": 0.0,
+  "example_split": [
+   [
+    0.5,
+    0.5
+   ],
+   [
+    0.5,
+    0.5
+   ],
+   [
+    0.5,
+    0.5
+   ]
+  ],
+  "barycentric_projection_cost": 2.844593042965636,
+  "barycentric_rel_error": 0.13800247038817748,
+  "sinkhorn": [
+   {
+    "eps": 0.05,
+    "iters": 4999,
+    "cost": 2.5070396807599544,
+    "rel_gap": 0.0029615157504558525,
+    "branch_split_first": [
+     0.008,
+     0.008,
+     0.984
+    ]
+   },
+   {
+    "eps": 0.02,
+    "iters": 4999,
+    "cost": 2.5005262355446565,
+    "rel_gap": 0.0003557592735928564,
+    "branch_split_first": [
+     0.008,
+     0.008,
+     0.984
+    ]
+   },
+   {
+    "eps": 0.01,
+    "iters": 4999,
+    "cost": 2.500490593682831,
+    "rel_gap": 0.0003415004582916919,
+    "branch_split_first": [
+     0.009,
+     0.009,
+     0.983
+    ]
+   }
+  ]
+ }
+}

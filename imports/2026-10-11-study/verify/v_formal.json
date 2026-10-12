@@ -1,0 +1,37 @@
+[
+  {
+    "id": "lean-1",
+    "status": "confirmed",
+    "note": "lean/OAI (122,458 files, 26.06M lines) has 0 sorry, 0 native_decide, 0 @[extern]/implemented_by, and `admit` appears only in prose doc-comments. The only `axiom` declaration in OAI+ComparatorChallenges is `axiom mainStatement : MainClaim` in ComparatorChallenges/HarmonicGrowth.lean L100. All 416 configs permit exactly propext/Quot.sound/Classical.choice, formalization.yaml L1773-1778 reads `review: status: unchecked`, I found no Comparator log or attestation in the repo, and every permalink (Comparator README L46-49, QRH L5-7, SwitchChain L155-165, HarmonicArtin L54-61) says what is claimed. Caveats: the scan covers OAI only (the 23 dependency patches add no sorry/axiom, but upstream dependencies are unscanned), only 2 of 416 configs set enable_nanoda: true, and the CirculantHadamard OAI closure is about 9.6k lines, not 9.8k."
+  },
+  {
+    "id": "lean-4",
+    "status": "confirmed",
+    "note": "Comparator @ca04cfc Compare.lean L63-65 (definitionHoleMatches) compares only toConstantVal (name, levels, type) and safety, never the value. L89-104 pushes only the hole's name, and the loop at L50-52 follows only that hole's type constants. README L88-138 documents this and says holes must be sorried and checked by a human. Of the 10 configs with definition_names, 8 list only fully written bodies (Brenier.json L8-21 lists all 12, none sorried), DefocusingNLS is mixed (sobolevProduct has `by sorry`), and ElementaryPositivity is a genuine sorry hole, so 63 of 65 listed names have complete bodies. My challenge-vs-solution body diff of all 10 configs found them identical up to binder renaming and proof terms, so no exploitation."
+  },
+  {
+    "id": "seqdesign-1",
+    "status": "confirmed",
+    "note": "TeX introduction.tex L21-24 (orders exactly {1,4}) and cor:barker L43-49 ({2,3,4,5,7,11,13}, odd case cited to Turyn-Storer and Schmidt-Willms) match the claim. The Lean exists_iff_order_one_or_four (Main.lean L19-34) and even_length_eq_two_or_four (Barker/Main.lean L63-73) match their Comparator challenges, and the import closure is Mathlib plus 73 sorry-free OAI modules. lean/docs/179.md confirms the odd Barker case is not in Lean. Live text still says conjecture: Wikipedia Barker code ('even Barker sequence longer than 4 remains open'), Wikipedia Hadamard matrix ('circulant Hadamard matrix conjecture'), OEIS A091704 ('It is conjectured...', Borwein-Mossinghoff window), MathWorld ('conjectured'), MATLAB ('maximum known Barker code length is 13'), and formal-conjectures L49-51 (`category research open`)."
+  },
+  {
+    "id": "seqdesign-3",
+    "status": "corrected",
+    "note": "cor:merit (merit-morse.tex L22-36 in the Sept-23 'Asymptotically minimal maxima' preprint) is stated as claimed and follows in three lines from thm:main via 1/F <= m_N^2-1. However, it is not formalized itself: lean/docs/076.md covers only the max-modulus and L^p flatness statements, and 'merit' appears nowhere in lean/OAI. Replacement texts should therefore say 'follows from a Lean-checked theorem', not 'Lean-checked'. All cited wording is verified: Shaydulin et al. (DOI 10.1126/sciadv.adm6761) main text 'asymptotic limit predicts ... approximately constant' and Supp. S1 'conjectured asymptotic limit of F -> 12.32'; 2504.00987 '12.3248 ... as proposed by Golay'; 2506.17391 'Golay conjectured ... asymptotic upper bound'; Packebusch-Mertens 'common belief ... bounded' (body text, not abstract)."
+  },
+  {
+    "id": "cas-1",
+    "status": "corrected",
+    "note": "The theorem scope is confirmed: introduction.tex L22-30 covers every Coxeter matrix on finite S, including infinite labels and disconnected diagrams. Lean `salvetti_cover_contractible [Finite S]` (HarmonicArtin.lean L57-61) has a sorry-free solution closure of 660 OAI modules. All HAP lines at 415d365 say what is claimed: newResolutions.xml L18 'known to hold in certain cases'; aboutArtinGroups L300-303 names a nonexistent ResolutionArtin(D); tutorialResolutions L279-280 says B7 'depends on' K(pi,1); the E8 remark is at L342. Two corrections: 'HAP handles in seconds' holds only for [5,3,3,3] (H0-H5 in 3.0 s, HAP 1.62), while E10 needed 67 s just to build 5 terms and an 11-term run did not finish in 5 min; and homotopy:=fail is at resArtin.gi L168, not inside the cited L44-50."
+  },
+  {
+    "id": "cas-2",
+    "status": "confirmed",
+    "note": "A fresh sparse clone is exactly 0835358. artin.py L526-536 lists torsion-freeness, 'Finite type ... Z(A_M)=ZZ and infinite type ... trivial center', the solvable word problem and K(pi,1) as conjectures 'known when the Artin group is finite type and a number of other cases'. This is wrong for reducible diagrams (A1xA1 has center Z^2; 254's cor:artin-structural gives Z^k, with k the number of irreducible spherical components). L615-623 sends non-finite, non-RAAG types to the generic class, and ArtinGroupElement (L42-58) defines no comparison, so == falls back to the libGAP richcmp in libgap_wrapper.pyx L638-656. Sage was not installed, so I reproduced the hang in standalone GAP 4.12.1: aba==bab in affine A~2 and (ab)^2==(ba)^2 in (4,4,4) both hit a 60 s timeout."
+  },
+  {
+    "id": "optimization-3",
+    "status": "confirmed",
+    "note": "introduction.tex L87-118 states thm:unbounded-gap (every c: LP(I)=B, OPT>B+c, sizes >1/6, also for individual-copy LP), thm:additive-hardness and cor:complexity-equiv (OPT+C iff P=NP). Lean `OAI.BinPackingGap.main_results` states the same plus I.n=5B, and its solution closure (284 OAI modules) has no sorry. P0=100^11, d>=2.4e27 (c=1, rho=1/8), 2d-1 phases, denominators [100(D*+1)]^L and 3^n (exponential in n) are all confirmed, and VPSolver @c01e1d3 has no irup/mirup code. I could not read the W-S book (PDF blocked). Hoberg-Rothvoss describe W-S Problem #3 as 'whether the Gilmore-Gomory LP has a constant integrality gap', which the unconditional theorem already answers, so 'closes Problem 3 conditionally on P!=NP' undersells it."
+  }
+]

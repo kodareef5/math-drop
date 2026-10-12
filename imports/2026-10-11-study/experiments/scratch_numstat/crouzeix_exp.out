@@ -1,0 +1,28 @@
+== (a) FOV-bound iteration counts: k = ceil(log(C/tol)/-log(rho)), tol=1e-8
+rho=   0.5: k(1+sqrt2)=    28  k(2)=    28  saved=   0 (0.00%)
+rho=   0.9: k(1+sqrt2)=   184  k(2)=   182  saved=   2 (1.09%)
+rho=  0.99: k(1+sqrt2)=  1921  k(2)=  1902  saved=  19 (0.99%)
+rho= 0.999: k(1+sqrt2)= 19293  k(2)= 19105  saved= 188 (0.97%)
+
+== (b) GMRES actual vs FOV bounds C*rho^k (W(A) a disk => min-max = rho^k exactly)
+Jordan-type alpha=0.9 k= 10: actual=1.601e-01  2.414*rho^k=8.408e-01  2*rho^k=6.965e-01  ratio actual/(2rho^k)=0.230
+Jordan-type alpha=0.9 k= 60: actual=7.833e-04  2.414*rho^k=4.307e-03  2*rho^k=3.568e-03  ratio actual/(2rho^k)=0.220
+Jordan-type alpha=0.9 k=120: actual=1.408e-06  2.414*rho^k=7.683e-06  2*rho^k=6.365e-06  ratio actual/(2rho^k)=0.221
+Jordan-type alpha=0.9 k=180: actual=2.529e-09  2.414*rho^k=1.370e-08  2*rho^k=1.135e-08  ratio actual/(2rho^k)=0.223
+  iterations to 1e-8: actual 167  bound(1+sqrt2) 183  bound(2) 182
+conv-diff m=200 c=0.6: W(A) real range [0.0002,3.9998], enclosing-disk rho=0.99988
+  iterations to 1e-8: actual None  disk-FOV bound(1+sqrt2) 158019  bound(2) 156478
+
+== (c) Frechet derivative of exp: exact ||L_exp(A)||_{F->F} vs bounds C*max_{W(A)}|exp'| = C*exp(omega(A))
+matrix                                      ||L||  1*e^w (lognorm)      4*e^w   5.83*e^w
+random/sqrt(n)                              3.347            3.546      14.18      20.67
+grcar(12)                                   13.24            14.89      59.56      86.79
+-I + 3*shift                                6.529            6.772      27.09      39.47
+stable triangular, strong nonnormal         19.49            61.95      247.8      361.1
+
+== (d) Crouzeix-Kressner nilpotent example: A=B=[[0,1],[0,0]], f(x,y)=xy
+  ||f{A,B}|| = 1.0000, max_W(A)xW(B)|xy| = 0.25, ratio = 4.0000 (sharp constant 4; CK proved 5.83; scalar-2 + CP-complete gives 4.83)
+
+== (e) Frechet-derivative worst-case ratio search ||Df{A}||/max_W|f'| for f=z^k, small A (lower bound on best constant)
+  best ratio found by random search: 1.2589 at (n,k)=(np.int64(3), np.int64(2))  (known upper bound now 4; earlier 5.83)
+  2x2 Jordan, f=z^2: ratio 1.4142
